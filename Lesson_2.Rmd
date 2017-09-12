@@ -122,6 +122,11 @@ If we only know the average score on IMDB for these movies, we would believe tha
 You can see that for the other 5 films, the ratings follow what is essentially a normal distribution. Peple seem to agree on these films. Very few people think that *xXx: Return of Xander Cage* is a terrible movie, meriting a score of 1 or 2, but also very few people thing that it's great, worthy of a 9 or a 10. Instead, most people think that it's a mediocre film, and give it a 5 or a 6 out of 10. This pattern is reflected in all the other films, **with the exception of Al Gore's film**. What's going on there? Well it appears that people either love it, giving it a score of 10, or they absolutely hate it, giving it a score of 1. Because of this, when all the scores are added up and divided by the total number of people who have rated the film, we get a value in the middle, 5.2, just like we did for *xXx: Return of Xander Cage*. Except while most viewiers agree that film is mediocre, most people are **not** evaluating *An Inconvenient Sequel: Truth to Power* as mediocre. In fact we see that most people are saying it's great or it's terrible. And this is why distribution also matters. 
 
 
+#Histograms
+
+[Follow this interactive essay on histograms](http://tinlizzie.org/histograms/)
+
+
 
 
 
