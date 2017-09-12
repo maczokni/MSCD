@@ -1,0 +1,48 @@
+---
+title: 'Lab session 3'
+author: "Reka Solymosi"
+date: "09/08/2017"
+output:
+  html_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Learning outcomes
+
+- Bivariate analysis
+- Categorical v categorical
+    + Crosstabs
+    + Stacked bar
+- Categorical v numeric 
+    + Boxplots
+    + Summaries by group
+- Numeric v numeric
+    + Scatterplot
+    + Correlation
+    
+    
+#Bivariate
+
+Here's an example of a bivariate frequency table. Remember **bivariate** just means that there are **two variables**.  Let's say we have this data set of waiters and waitresses who work at Lil' Bits restaurant. But this time we don't just have their gender, we also have some information about their tip earnings. We know whether they are high earners or low earners. Here is our data in table format:
+
+
+![](imgs/waiter_height_and_tip.png)
+
+
+Again, all we are doing with a frequency table is counting the number of occurrences. Except this time we need to know the number of occurrences of variable *pairs*. So we need to know not only the number of times that *female* appears, but when the pair of *female* and *high earner* appear. Again, I made a gif to illustrate: 
+
+
+![](imgs/bivar_freq_table_gif.gif)
+
+
+This two-way frequency table is also called a **cross table** or **crosstab**. 
+
+
+
+Pivot table [here](http://www.excel-easy.com/data-analysis/pivot-tables.html#insert-pivot-table)
+
+

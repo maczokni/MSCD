@@ -1,0 +1,55 @@
+---
+title: 'Lab session 4'
+author: "Reka Solymosi"
+date: "09/08/2017"
+output:
+  html_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Learning outcomes
+
+- Conceptualisation
+- Operationalisation
+- Measurement
+- Multi-item scales
+- Summated scales
+- Recoding
+- Latent/ observed variables
+- Reliability
+- Validity
+- Sampling
+
+
+
+#Measurement
+
+Remember this from week 1?
+
+> In science, we use measurement to make accurate observations. All measurement must begin with a classification process—a process that in science is carried out according to systematic criteria. This process implies that we can place units of scientific study in clearly defined categories. The end result of classification is the development of variables.
+
+- *Chapter 2 Statistics in Criminal Justice - David Weisburd, Chester Britt*
+
+
+Data that arises from measurement are referred to as **empirical** data. 
+
+
+
+> Empirical data arise from our observations of the world. (...) Among the many prevailing views of the role of empirical data in modern science, there are two opposing extremes. On the one hand, the realist assumes data are manifestations of latent phenomena. In this view, data are pointers to universal, underlying truths. On the other hand, the nominalist assumes data are what they describe. From this latter point of view, as the philosopher Ludwig Feuerbach noted, “you are what you eat.” We use the historical realist-nominalist terminology to emphasize that these differing perspectives, in one form or another, have origins in Medieval theological controversies and their classical antecedents in Greek philosophy. Many working scientists adopt some form of a realist position, particularly those in the natural sciences. Even social scientists, despite the myriad particulars of their field, have often endorsed a similar position. 
+
+- Leland Wilkinson (2005) *The Grammar of Graphics*
+
+#Recoding
+
+> Transforms are transformations on variables. One purpose of transforms is to
+make statistical operations on variables appropriate and meaningful. Another
+is to create new variables, aggregates, or other types of summaries. 
+
+- Leland Wilkinson (2005) *The Grammar of Graphics*
+
+
+

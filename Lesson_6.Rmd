@@ -1,0 +1,150 @@
+---
+title: 'Lab session 6'
+author: "Reka Solymosi"
+date: "09/08/2017"
+output:
+  html_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Learning outcomes
+
+- Visualising data
+- Principles of good data visualisation
+    + Ink to data ratio
+- Grammar of graphics
+- Exploratory viz
+- Communicating results
+
+
+#Visualising data
+
+
+A picture is worth a thousand words; when presenting and interpreting data this basic idea also applies. There has been, indeed, a growing shift in data analysis toward more visual approaches to both interpretation and dissemination of numerical analysis. Part of the new data revolution consists in the mixing of ideas from visualisation of statistical analysis and visual design. Indeed data visualisation is one of the most interesting areas of development in the field.
+
+Good graphics not only help researchers to make their data easier to understand by the general public. They are also a useful way for understanding the data ourselves. In many ways it is very often a more intuitive way to understand patterns in our data than trying to look at numerical results presented in a tabular form. 
+
+Recent research has revealed that papers which have good graphics are perceived as overall more clear and more interesting, and their authors perceived as smarter (see [this presentation](https://vimeo.com/181771433))
+
+##What graph should I use?
+
+
+There are a lot of points to consider when you are choosing what graph to use to visually represent your data. There are some best practice guidelines, but at the end of the day, you need to consider what is best for your data. What do you want to show? What graph will best communicate your message? Is it a comparison between groups? Is it the frequency distribution of 1 variable? 
+
+
+As some guidance, you can use the below [cheatsheet, taken from Nathan Yau's blog Flowingdata](https://flowingdata.com/2009/01/15/flow-chart-shows-you-what-chart-to-use/):
+
+
+![](https://i1.wp.com/flowingdata.com/wp-content/uploads/2009/01/chart-chart1.jpg)
+
+
+However, keep in mind that this is more of a guideline, aimed to nudge you in the right direction. There are many ways to visualise the same data, and sometimes you might want to experiment with some of these, see what the differences are. You can also consider some inspiration [here](http://datavizproject.com/). 
+
+
+#Anatomy of a plot - the Grammar of Graphics
+
+
+>  The grammar of graphics takes us beyond a limited set
+of charts (words) to an almost unlimited world of graphical forms (statements).
+The rules of graphics grammar are sometimes mathematical and
+sometimes aesthetic. 
+
+- Leland Wilkinson (2005) *The Grammar of Graphics*
+
+
+The grammar of graphics is about creating graphs mathematically. Essentially the philosophy behind this as that all graphics are made up of layers, the idea that you can build every graph from the same few components: a data set, a set of geoms—visual marks that represent data points, and a coordinate system.
+
+Take this example (taken from *Wickham, H. (2010). A layered grammar of graphics. Journal of Computational and Graphical Statistics, 19(1), 3-28.*)
+
+You have a table such as: 
+
+![](/Users/reka/Desktop/course-incubator/images/table.png)
+
+You then want to plot this. To do so, you want to create a plot that combines the following layers: 
+
+![](/Users/reka/Desktop/course-incubator/images/layers.png)
+
+This will result in a final plot: 
+
+![](/Users/reka/Desktop/course-incubator/images/combined.png)
+
+
+> We often call graphics charts (from or Latin charta, a leaf of paper or papyrus). There are pie charts, bar charts, line charts, and so on. [The Grammar of Graphics] shuns chart typologies. For one thing, charts are usually instances of much more general objects. Once we understand that a pie is a divided bar in polar coordinates, we can construct other polar graphics that are less well known. We will also come to realize why a histogram is not a bar chart and why many other graphics that look similar nevertheless have different grammars. (...) The concept of a graphic is so general that we need organizing principles to create instances of graphics. We may not want to put a pie chart in a catalog, but we need to give users some simple way to produce one. 
+
+- Leland Wilkinson (2005) *The Grammar of Graphics*
+
+
+#Principles of good data visualisation 
+
+
+There is a vast amount of research into what works in displaying quantitative information. 
+The classic book is [The Visual Dispay of Quantitative Information by Edward Tufte](https://www.edwardtufte.com/tufte/books_vdqi), but since him there are many other researchers as well who focus on approaches to displaying data. Your reading for this week will provde you a crash course into data viz. 
+
+
+They tend to result in recommendations on what to use (and not use) in certain contexts
+
+
+For example, most data visualisation experts agree that you should not use 3D graphics unless there is a meaning to the third dimension. So using 3D graphics just for decoration, as in [this case](https://mir-s3-cdn-cf.behance.net/project_modules/disp/2505dd10837923.56030acd2ef20.jpg) is normally frowed upon. However there are cases when including a third dimension is vital to communicating your findings. See this [example](http://www.visualisingdata.com/2015/03/when-3d-works/).
+
+
+
+
+
+
+#Exploratory data visualisation
+
+
+Data visualisation helps you unlock the hidden meaning in your data. It is the first tool of the data analyst. When you are given a heap of data, the only way to start getting some insight into it is to start making some visualisations. If you remember in weeks 2 and 3, when we did our univariate and bivariate analyses, we always started with graphing our data. And in some instances, visualising data itself can lead to surprising insights. 
+
+
+I suggest that you listen to [this episode of the datastories podcast]() which consists of an interview with , the author of the blog [I Quant NY]
+
+
+#Communicating results
+
+
+The most important thing when communicating your results is that you know your audience. Know what they understand, what they don't, and what you can tell them in one graph. Your graph has to tell a story. Think about why you are making it? What is the message that you want to convey? What is the story this graph is telling? You need to be clear with this to yourself, to make sure that your graph accomplishes it's mission in telling an interesting story about your data. 
+
+
+On the other hand, your audience might have some sort of expectations for what they require from you. You will have to manage a route between what you might be told that you need to produce, for example by a boss, and what is the best method for visualising your data in a way that communicates your results effectively. 
+
+
+A good example of this dilemma is the pie chart. 
+
+> A pie chart is perhaps the most ubiquitous of modern graphics. It has been reviled by statisticians (unjustifiably) and adored by managers (unjustifiably). It may be the most concrete chart, in the sense that it is a pie. A five-year-old can look at a slice and be a fairly good judge of proportion. (To prevent bias, give the child the knife and someone else the first choice of slices.) The pie is so popular nowadays that graphical operating systems include a primitive function for drawing a pie slice.
+
+- Leland Wilkinson (2005) *The Grammar of Graphics*
+
+
+Indeed, a lot of people shun the pie chart (see for example this blog entry titled [death to pie charts](http://www.storytellingwithdata.com/blog/2011/07/death-to-pie-charts)) or this story from Business Insider titled [pie charts are the words](http://www.businessinsider.com/pie-charts-are-the-worst-2013-6?IR=T), but managers have a particular affinity towards it.  While these seem emotional and unfair, there is actually justification for these. People are actually *not* that great in telling proportions from pie charts. If you are interested, have a look at [this study](https://eagereyes.org/blog/2016/a-reanalysis-of-a-study-about-square-pie-charts-from-2009), where researchers found that a square pie chart performs the best, when people have to guess the proportion that it represets. 
+
+
+There are other charts as well, which are less popular to hate, but in certain situations may obscure important information. In some cases bar plots can hide important features of your data, and might not be the most appropriate means for comparison. See the below image for example, where the same data about 2 groups, green and purple, are visualised using 3 different methods, a histogram, which shows the green group following a normal distribution, and the purple group following a heavily skewed distribution (remember week 5), a boxplot that shows the same, and finally a bar plot, which makes the green and purple group appear identical: 
+
+
+![](https://pagepiccinini.files.wordpress.com/2016/02/barplot_psa1.jpg)
+
+
+Now potentially, the  [kickstarter campaign](https://www.kickstarter.com/projects/1474588473/barbarplots/description) around actually banning bar plots might be a bit of an extreme leap, but it is important to keep in mind that the kind of visualisation that you choose might greatly impact the conclusions that people will draw about your data, and the story that you are able to tell. 
+
+
+But it is not always enough for you to know the perfect visualisation, it is important that you also know that your audience is comfortable interpreting these types of visualisations. Before I became a lecturer at Manchester, I worked as a crime analyst. I love data, and I was just coming out of my education, so I felt very comfortable with stats and data analysis, however my lack of real-world experience was made very evident when I entered my first ever briefing, with 3 Chief Inspectors from the Met Police to present them the work I'd done analysing confidence in police. My second slide was a set of boxplots, comparing the scores on a public attitudes survey between their sectors. It might have looked something like this (the data is fictitious by the way): 
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+library(ggplot2)
+ggplot(mtcars, aes(y=mpg, x=as.factor(cyl)))+
+  geom_boxplot() +
+  ylab("Confidence score (out of 50)") +
+  scale_x_discrete(name ="Sector",labels=c("North","East","Central"))
+
+
+```
+
+
+It was useless. I spent basically all my alloted time trying to talk through the graph, and it achieved the opposite effect of clearly displaying information, and telling the story of the different levels of confidence in each Sector. I did not take my audience into account, and that made my visualisation ineffective. It was not a great moment, but at least I got an embarassing story to tell when teaching people about data visualisation. 
