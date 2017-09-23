@@ -22,7 +22,7 @@ But before that, a quick intro into what these sessions will look like.
 When you come into a lesson, you will be able to sit at a PC and get started straight away. You will find the instructions for each week under the relevant Blackboard section. You can open up the link, and read through the instructions chronologically. That just means start at the top, and read through to the bottom. We will start with some general introduction to the topc, with links to [videos](http://www.gapminder.org/videos/the-joy-of-stats/) or further [reading](http://flowingdata.com/2015/10/26/top-brewery-road-trip-routed-algorithmically/). You should come equipped with headphones to watch the videos. 
 
 
-These introductions will be accompanied by tasks. You should do these tasks in the lab, and ask for our help when you are stuck, or if you do not understand a concept. These tasks will help you with your learning, but also will contribute towards your homework. The homework exercises will always mirror the in-lab tasks. Don't forget your homework is graded, and counts towards your final mark. But you get to practice for them with the tasks in the lab. If you complete these tasks here, you will be more confident in the homework exercises. 
+These introductions will be accompanied by activities. You should do these activities in the lab, and ask for our help when you are stuck, or if you do not understand a concept. These activities will help you with your learning, but also will contribute towards your homework. The tasks that you have to complete in order to be able to take the homework quiz will always mirror the in-lab activities. Don't forget your homework is graded, and counts towards your final mark. But you get to practice for completing the tasks with the activities in the lab. And if you have time left over, you can always complete these tasks here in the lab. No matter where you do them, by havign the tasks completed and with you when you take the quiz, you will be more confident in the homework quiz exercises. 
 
 
 
@@ -228,7 +228,7 @@ So for example, *month* is a variable in our data, and for every row (which is e
 Let's have a go at recording some crimes and putting them into a database, to give you some hands on experience here. 
 
 
-##Task 1: Building your own data
+##Activity 1: Building your own data
 
 
 <!--Often you will have data readily created for you, such as we saw with the police.uk data set, which can be downloaded in the rectangle format, where your columns are your variables, and your rows are your observations. But data can take many forms. So we will have a go at dealing with some data that comes in a very unruly form: tweets!-->
@@ -246,7 +246,7 @@ I have collected for you a set of tweets. Your task is to turn this into a recta
 So first things first, we need a tool. As discussed we'll mostly be using Excel in this course. So open up excel and create a brand new spreadsheet. 
 
 
-Your first task is to create a column header for each variable we want to collect. The easiest way to do this is just to make the first row your column headers. You can go ahead and create a column for each of the variables we are interested in collecting about each tweet. These are: 
+Your first activity is to create a column header for each variable we want to collect. The easiest way to do this is just to make the first row your column headers. You can go ahead and create a column for each of the variables we are interested in collecting about each tweet. These are: 
 
 - Month: The month in which the tweet was sent
 - Day: The day of the month in which the tweet was sent
@@ -370,7 +370,7 @@ Why would we do this? Well turning information into data allows us to ask questi
 
 
 
-##Task 2: Thinking about what our data tells us
+##Activity 2: Thinking about what our data tells us
 
 Take a moment to look at your data to answer this question (*Which tweet has the highest number of likes?*). Which one is it? Read the content, have a think, and turn to the person next to you to ask them, why they think that this particular tweet has the highest number of likes in the group. Now try to come up with an alternative explanation. I would like you to now talk about your two possible explanations for why this tweet has the highest number of likes, and note these down somewhere. Keep this for later. 
 
@@ -395,7 +395,7 @@ As Leland Wilkinson points out, data can be numeric, but it can be other things 
 If we set out to collect our own data, we make sure that we collect all the variables needed to answer our question, from all the observations that we have. The kinds of variables we have, determine the kinds of questions that we ask. For example, if we want to ask questions such as the one about the tweets above: "*Which tweet has the highest number of likes?*" we need to have **numeric** a variable. **Numeric** variables let us answer questions about quantity. For example, if we want to know the *average number of crimes per month*, we will need a numeric variable of number of crimes, for each month. Just like for the tweets, we had a numeric variable of the *number of likes* for each tweet. Put simply, number questions are answered by **numeric** variables. 
 
 
-##Task 3.1: Levels of measurement pt. 1
+##Activity 3.1: Levels of measurement pt. 1
 Have a look back at your tweet data that you created. Which variables are numeric?
 
 
@@ -416,10 +416,7 @@ You're back! Yay! Now I hope at this point you have talked through your thoughts
 
 
 
-So is this the same as you thought? If yes, nice work! Here's a round of applause from Zoidberg for you:
-
-
-![](https://media.giphy.com/media/7QwCxAnnn3Uc0/giphy.gif)
+So is this the same as you thought? If yes, nice work! 
 
 
 
@@ -431,10 +428,10 @@ If you did not get this right, was that because you also selected the day and th
 
 
 
-Why are day and hour not numeric variables? After all they *are* numbers, right? Well a simple way to think about that is - does it make sense to calculate the average hour for tweets to be sent? If I told you, the average hour for GMP tweets if 13.5, is that something meaningful? Or if I told you that the average day is 15? Not hugely. Hour of the day, and day of the month, which is what these variables represent, are variables which fall into a different level of measurement. These are **ordinal** variables. What does that mean? Well the clue is in the name, **ordinal** variables that are not numeric, but they do fall into a natural order. *Natural order*?? What's that? Well natural order just means that there is a meaningful order that you can put these variables in. You know which comes after which one. For example you can consider letters of the alphabet to follow a natural order, so common we call it alphabetical order. If I tell you to arrange the letters d, a, b, c, f, and e, you know that what I mean is to put them in this order: a, b, c, d, e, f. **Ordinal variables** are variables where such a known order exists. 
+Why are day and hour not numeric variables? After all they *are* numbers, right? Well a simple way to think about that is - does it make sense to calculate the average hour for tweets to be sent? If I told you, the average hour for GMP tweets if 13.5, is that something meaningful? Or if I told you that the average day is 15? Not hugely. Hour of the day, and day of the month, which is what these variables represent, are variables which fall into a different level of measurement. These are **ordinal** variables. What does that mean? Well the clue is in the name, **ordinal** variables that are not numeric, but they do fall into a natural order. *Natural order*?? What's that? Well natural order just means that there is a meaningful order that you can put these variables in. You know which comes after which one. For example you can consider letters of the alphabet to follow a natural order, so common we call it alphabetical order. If I tell you to arrange medium, large, small, you know that what I mean is to put them in this order: small, medium, large. **Ordinal variables** are variables where such a known order exists. 
 
 
-##Task 3.2: Levels of measurement pt. 2
+##Activity 3.2: Levels of measurement pt. 2
 So on that note - can you find the other ordinal variables in your tweets data? 
 
 
@@ -657,8 +654,11 @@ What about this one:
 
 We want to see whether men consume more illegal drugs than women. To be able to explore this we need information about the gender and the drug consupmtion of each... 
 ... 
+
 ... 
+
 ... 
+
 ... person!
 
 
@@ -666,7 +666,7 @@ Are you seeing the pattern? If you are comparing things, whether thats populatio
 
 
 
-#Task 4: *Abstract*-ing the unit of analysis
+##Activity 4: *Abstract*-ing the unit of analysis
 
 Let's do an exercise. Read this abstract: 
 
@@ -748,10 +748,10 @@ Getting your data into this format requires some upfront work, but that work pay
 (If you’d like to learn more about the underlying theory, you might enjoy the Tidy Data paper published in the Journal of Statistical Software, [http://www.jstatsoft.org/v59/i10/paper](http://www.jstatsoft.org/v59/i10/paper).)
 
 
-So how do we tidy data? You can do this many ways. The ideal approach is to do it programatically, and you will deal with this more in the second semester. For now, I just want you to have a go at thinking about turning some messy data into tidy data. And that leads us to our final task for today. 
+So how do we tidy data? You can do this many ways. The ideal approach is to do it programatically, and you will deal with this more in the second semester. For now, I just want you to have a go at thinking about turning some messy data into tidy data. And that leads us to our final activity for today. 
 
 
-##Task 5: Tidy data
+##Activity 5: Tidy data
 
 
 The Home Office collects statistics on [football related arrests and banning orders in England and Wales](https://www.gov.uk/government/publications/football-related-arrests-and-banning-orders-england-and-wales-season-2015-to-2016/football-related-arrests-and-banning-orders-england-and-wales-season-2015-to-2016). Isn't that exciting? We can ask all sorts of questions. For example, we could ask which club's supporters have the most banning orders. Or whether supporters of teams in Premier League or Championship League have more banning orders? 
@@ -922,8 +922,8 @@ From your readings you should also be comfortable with:
 
 - reliability
 - validity
-- missing data
-- 
+- descriptive statistics
+- inferential statistics
 
 
 

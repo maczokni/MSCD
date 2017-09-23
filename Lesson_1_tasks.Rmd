@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 #Tasks
 
 
-1.) Ensure you understand the levels of measurement for variables (at least nominal, ordinal, numeric), and unit of analysis. 
+1.) Ensure you understand the levels of measurement for variables (at least nominal, ordinal, numeric). 
 
 <!--
 Qs:
@@ -53,7 +53,7 @@ Nominal, Ordinal, Numeric
 -->
 
 
- 2.) Find the data dictionary for the [police.uk](police.uk) data. 
+ 2.) Find the data dictionary for the [police.uk](https://data.police.uk/) data, and copy it into a word document. 
  
  
   <!-- 
@@ -85,7 +85,7 @@ T/F
 -->
  
  
- 3.) Download the .xls data file about Domestic abuse in England and Wales from [here](https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/domesticabuseinenglandandwalesbulletintables). Open it up in Excel, and select the sheet that is titled **Figure 2** (*Proportion of adults aged 16 to 59 who experienced domestic abuse in the last year, by sex and age group, three year combined dataset, April 2013 to March 2016 CSEW*). Tidy this data set, so that you have three variables, which are: *age group*, *gender*, and *% victims once or more*. 
+ 3.) Download the .xls data file about Domestic abuse in England and Wales from [here](https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/domesticabuseinenglandandwalesbulletintables). Open it up in Excel, and select the sheet that is titled **Figure 2** (*Proportion of adults aged 16 to 59 who experienced domestic abuse in the last year, by sex and age group, three year combined dataset, April 2013 to March 2016 CSEW*). Tidy this data set, so that you have three variables, which are: *age group*, *gender*, and *% victims once or more*. Copy your new table that you have created into the same word document where you also saved the police.uk data dictionary.  
  
  <!-- 
  

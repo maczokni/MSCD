@@ -59,8 +59,10 @@ If you want to read something cover to cover, I would recommend [Tiger That Isn`
 - This paper on [Crime seasonality and its variations across space](http://www.sciencedirect.com/science/article/pii/S0143622813001410)
 
 ##Week 8. Qualitative data
+- TBD
 
 ##Week 9. Qualitative data analysis
+- TBD
 
 ##Week 10. Wrap up and project support
 
