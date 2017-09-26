@@ -71,7 +71,7 @@ When working with data, you have to consider your workspace. It helps immensely 
 Normally, say when you are working on a Windows PC at home, you can save files to your c: drive, and easily access them the next time you turn the computer on. When you are using computers at the university, however, you cannot be certain of being able to use the same computer again when you want to find and use your file again. Fortunately, once you have logged on to a computer at the university, a personal drive is available for you to use, and in effect, this drive follows you around to whichever PC you are logged on to. All students and staff have a personal file storage space on the network - known as the P: drive as this is usually the network drive letter allocated to it. Wherever you log on to the campus network your P: drive is available (in PC Clusters the My Documents icon on the desktop is a shortcut to the P: drive).
 
 
-You should already have a username and password with which to log on. Your user name has 7 or 8 letters/digits, typically beginning 'msr...'. On the computers in the Faculty clusters (where you work in class time) you will see the Faculty computer 'image' and a version of the operating systems Windows 7.
+You should already have a username and password with which to log on. Your username has 7 or 8 letters/digits, typically beginning 'm...'. On the computers in the Faculty clusters (where you work in class time) you will see the Faculty computer 'image' and a version of the operating systems Windows 7.
 
 
 Away from the campus you can download and upload files to and from your P: drive over an Internet connection - for example to and from your home computer, but please remember that large files may take a long time to upload/download depending on the speed of your home internet connection. [See here for details about remote access](http://servicedesk.manchester.ac.uk/portal/app/portlets/results/viewsolution.jsp?solutionid=040918305513985&SToken=A9F6241A4BCC47E813D7C92C68B579F7).
@@ -250,7 +250,7 @@ Your first activity is to create a column header for each variable we want to co
 
 - Month: The month in which the tweet was sent
 - Day: The day of the month in which the tweet was sent
-- Hour: The hour when the tweet was sent
+- Hour: The hour when the tweet was sent, in 24h format (where 13:00 is 1pm and 01:00 is 1am)
 - Account: The account who tweeted this tweet
 - Tweet: The content of the tweet
 - Likes: Number of likes for this tweet
@@ -288,7 +288,31 @@ So when you enter these values, your data will look like this:
 ![](imgs/tweet1_entered.png)
 
 
-Make sure that you are copy and pasting the 'Tweet' variable, rather than typing it out yourself, to save time and also ensure accuracy. OK, ready? Then let's build our data by adding the following tweets as additional rows: 
+Make sure that you are copy and pasting the 'Tweet' variable, rather than typing it out yourself, to save time and also ensure accuracy. 
+
+
+NOTE: It is possible that you see a slightly different time than what I have here. This could be because you are logged into your own twitter account, and [twitter shows you the time in your own time zone](http://www.adweek.com/digital/tweet-timestamps/). If this is the case, just log out of twitter (or open an incognito window in Chrome) and it will give you the time in Pacific Time Zone, which is the time zone they are on in California. Now that means they are 9 hours behind us (most of the time, sometimes this varies with daylight savings changes, but should be OK for this exercise). So if you have this problem, you can enter the "hour" variable like this, to get the Greenwich Mean Time version: 
+
+
+`= hour + 9`
+
+
+So for example, if you see the time of 10:57pm for the above tweet, you should have
+
+
+`= 22 + 9`
+
+
+If this number is greater than 24 (which in this case it is), just subtract 24 - this is because we've ventured over to the following day: 
+
+
+`= 22 + 9 - 24`
+
+
+Some of you by now are thinking: "but then we also have to chane the date!" Indeed, if you have stepped ahead to the next day, then the date provided with the tweet is also wrong. I don't know why twitter prefers to display things in Pactific time zone instead of the time zone from which it was tweeted, but unfortunately this is the case. So if you do have a twitter account, I would recommend you log in, and set your time zone to GMT ([see how to here](https://support.twitter.com/articles/20169405)) as it just makes life easier... 
+
+
+OK, ready? Then let's build our data by adding the following tweets as additional rows: 
 
 - [Tweet 2](https://twitter.com/GMPCityCentre/status/891762454337867776)
 - [Tweet 3](https://twitter.com/GMPCityCentre/status/894515606321590273)
@@ -503,7 +527,7 @@ One variable you can see there is the one called **Crime.type**. This variable c
 But not all variables are categorical, some are **numeric** . These types of varibles are numbers, and include things like the *number of burglaries*. For example, suppose we have created this data set, which has 2 variables, one *Borough* variable with the name of each borough, and one *Number of burglaries* variable, with... you guessed it... the number of burglaries in that borough. 
 
 
-it would look something like this: 
+It would look something like this: 
 
 
 ```{r, echo=FALSE}
@@ -641,7 +665,7 @@ The unit of analysis is the major entity that is being analyzed in a study. It i
 Take this example:
 
 
-We want to see whether boroughs with higher population count have higher numbers of crime. To be able to explore this question, we need information about the number of crimes, and the number of the population in each...
+We want to see whether boroughs with higher population count have higher numbers of crimes. To be able to explore this question, we need information about the number of crimes, and the number of the population in each...
 
 ...
 
@@ -723,7 +747,7 @@ Have a watch of this quick video [here](https://www.youtube.com/watch?v=XHXTR8je
 
 > There are three separate factors that affect the quality of a measure. The researcher should strive for a measure that has (1) a high scale of measurement (one that uses the most information); (2) a high level of validity (one that provides an accurate reflection of the concept being studied); and (3) a high level of reliability (one that provides consistent results across subjects or units of study).
 
-- Weisburd & Britt ()
+- Weisburd & Britt (2014)
 
 
 There are some very important considerations about considering the quality of your data. You want to consider the **validity** - is it measuring what you think it's measuring, and the **reliability** - is it consistently measuring the thing it's measuring, of your data. There is a lot of emphasis on this in your textbooks and in social science methods teaching in general. You will be able to read up on these, and so I will not spend too much time on that in the exercises. Instead I want to cover something here that is not so much discussed, but if you will be dealing with data, it will be a large part of your everyday life. And a source of great pain and misery. But it needs to be done. [Data scientists spend about 80% of their time cleaning data](https://www.forbes.com/sites/gilpress/2016/03/23/data-preparation-most-time-consuming-least-enjoyable-data-science-task-survey-says/#5d6a72af6f63) and I can tell you, it's that much or more for crime analysts. Yet no one teaches you this. Well I'm changing that. I would like to initiate you to the pain of messy data. 
@@ -743,7 +767,7 @@ But what makes data messy? What is it like when it's clean? Most of the time, in
 > Tidy data is important because the consistent structure lets you focus your struggle on questions about the data, not fighting to get the data into the right form for different functions. 
 Getting your data into this format requires some upfront work, but that work pays off in the long term. Once you have tidy data and the tidy tools provided by packages in the tidyverse, you will spend much less time munging data from one representation to another, allowing you to spend more time on the analytic questions at hand.
 
-- [Hadley Wickham](http://r4ds.had.co.nz/) 
+- [Garret Grolemund & Hadley Wickham](http://r4ds.had.co.nz/) 
 
 (If you’d like to learn more about the underlying theory, you might enjoy the Tidy Data paper published in the Journal of Statistical Software, [http://www.jstatsoft.org/v59/i10/paper](http://www.jstatsoft.org/v59/i10/paper).)
 
@@ -791,7 +815,7 @@ Right. So now we know what we want our data to look like. Go ahead and download 
 `Course Content > Week 1 > Data for week 1` 
 
 
-You will see an item called football banning order data, you should be able to download ths, and save it to your working directory. Once you've saved it to your working directory, open it up with excel. You can either double click the icon for it, and excel shoul dbe the default programme to open it, or you can right-click on the icon, and select "open with..." and then select excel as the application to open your data with. 
+You will see an item called football banning order data, you should be able to download this, and save it to your working directory. Once you've saved it to your working directory, open it up with excel. You can either double click the icon for it, and excel shoul dbe the default programme to open it, or you can right-click on the icon, and select "open with..." and then select excel as the application to open your data with. 
 
 
 Once you've opened it, it will look something like this: 
@@ -824,7 +848,7 @@ So let's learn some formulas. For you to tell excel that you are writing a formu
 Easy peasy. Now, to copy over some values from one cell to the other, you simply use the `=` sign and name the cell you want to copy from. Cells are names by combining their column letter and row number. So the topmost left hand cell is A1. You can either type the name of the cell you want to copy from, or you can click on it. This is called a cell reference.  Cell references allow users to include the values of external cells in formulas dynamically — rather than hard-coding particular values manually. To copy from another sheet, simply select from that sheet. 
 
 
-So in this case, let's start by copying over the first cell. You just click in the first column of the first row, type `=`, and then click to the other tab, and select the first value for club name, in this case *Arsenal*. 
+So in this case, let's start by copying over the first cell. You just click in the first column of the first row, type `=`, and then click to the other tab, and select the first value for club name, in this case *Arsenal*. Once you clicked on the cell, just press **Enter**.  Please note that you need to hit enter while still on the original sheet of data in order for it to fill the cells on your new sheet you are creating. If you type the =, go to the other sheet and click on the cell you want, then go back to the new sheet without having already hit enter, it will fill the cell with the wrong sheet's info. So instead of it being ='fbo-table-2'!A5 it will be =Sheet1!A5. 
 
 
 ![](imgs/copy_over_sh.gif)
@@ -838,7 +862,9 @@ So if we want to copy over the cells next to the one that said 'Arsenal', we don
 
 
 ![](imgs/drag_copy.gif)
- Keep dragging until you get 0s as results. You don't want that, so you can drag back up, to make sure you're only copying data over, not empty cells. Now you want to copy over the league as well.
+
+
+Keep dragging until you get 0s as results. You don't want that, so you can drag back up, to make sure you're only copying data over, not empty cells. Now you want to copy over the league as well.
  
  
 Click on the first row of the 'league' column, type `=` and go back to the first sheet and click on 'Premier League'. The same process as we did for copying over 'Arsenal' above. 
@@ -854,6 +880,9 @@ Now there is another neat trick here. If you were to drag the cell to copy the f
 This is because excel adjusts the formatting for you to match what you are moving - you are using **relative cell references**. By default, Excel uses relative cell references, which change dynamically as they are copied and pasted around a sheet. For example, if a reference to cell A1 is copied and pasted one row down and one column to the right, the new reference will point to cell B2. This allows users to perform similar calculations on different ranges of cells quickly and easily. We made use of this function when copying over the club names and the associated number of banning orders. 
 
 In contrast, **absolute cell references** do not change when they are copied and pasted to other locations within a sheet. Absolute cell references can be used on either rows, columns, or both at the same time, and are indicated using the \$ sign. For example, if a reference to cell \$A\$1 is copied and pasted one row down and one column to the right, the new reference will point to cell A1 — it won't change at all, because both the row and column are locked. If a reference to cell \$A1 is copied and pasted one row down and one column to the right, the new reference will point to cell A2 — only the row number will change, because the column letter is locked.
+
+
+[Here is a quick video to explain the use of the \$ symbol](https://www.youtube.com/watch?v=b3i6AgMEssI)
 
 
 So in this case, we want to put in two `$`s because you want it to fix both column and row. So click on the cell where it now says *Premier League* and you will see the formula appear in the formula bar. Click in the formula bar, and insert two `$`s to change the formula from `=banning_orders.csv!A4` to `=banning_orders.csv!$A$4`. 
