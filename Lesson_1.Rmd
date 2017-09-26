@@ -484,7 +484,7 @@ us a method for associating a concept like income with a set of data.
 - Leland Wilkinson (2005) *The Grammar of Graphics*
 -->
 
-Let's glance back at the crimes data set first:
+Let's glance at the crimes data set first:
 
 
 ```{r, echo=FALSE}
@@ -785,10 +785,16 @@ I know this seems silly, you might be thinking, *SHOW ME THE DATA!*. But it's ac
 Did your drawing look similar? If you are at all confused at this point stick your hand up in the air, and ask us to talk you through it. Don't be shy, we're here to help. Ask away. 
 
 
-Right. So now we know what we want our data to look like. Go ahead and download the .csv file from blackboard. Once you've saved it to your working directory, open it up with excel. 
+Right. So now we know what we want our data to look like. Go ahead and download the .csv file from blackboard. Remember that whenever you need some data for the activities in the course, you will find this data in the relevant week's folder. Do in this case, the data will be in:
 
 
-It will look something like this: 
+`Course Content > Week 1 > Data for week 1` 
+
+
+You will see an item called football banning order data, you should be able to download ths, and save it to your working directory. Once you've saved it to your working directory, open it up with excel. You can either double click the icon for it, and excel shoul dbe the default programme to open it, or you can right-click on the icon, and select "open with..." and then select excel as the application to open your data with. 
+
+
+Once you've opened it, it will look something like this: 
 
 ![](imgs/messy_fbo.png)
 
