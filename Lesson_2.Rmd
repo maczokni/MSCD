@@ -14,13 +14,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Lesson 2 todo
 
-- barchard in excel
+
 - histogram in excel
-- boxplot in excel
-- calculating the quartiles
-- mean in excel
-- median in excel
-- quartiles in excel
 - clean up std dev/ variance bit
 
 
@@ -283,9 +278,47 @@ ggplot(., aes(x=Crime.type, y=number.of.crimes))+
 I hope that you can see the resemblance between the table on its side and the bar chart now!
 
 
-OK so let's make our own bar chart in excel
+OK so let's make our own bar chart in excel. Go back to your pivot table, that has the frequency of each crime type. Click anywhere in the table, to highlight it all. 
 
-[Make barchart in excel steps here]
+![](imgs/crime_type_table.png)
+
+
+WHen highlighted, click on the charts tab on the top menu:
+
+
+
+![](imgs/click_charts_tab.png)
+
+
+
+Once you click on that you will see a whole menu of possible charts appear. Click on the one that says 'Column'. More options will appear. Choose 'Clustered Column'. 
+
+
+
+![](imgs/click_column.png)
+
+
+And that's it! Once you click on that, a chart will appear! Yay!
+
+
+![](imgs/chart_appears.png)
+
+
+Now you can stylize your graph. First, you might want to arrange crime type in an order from most to least frequent, rather than alphabetical order. To do this, you must sort the data in the table. 
+
+Highlight the values in the total column, and click the data tab. Click the little arrow next to the sort icon, and choose descending. 
+
+
+![](imgs/sort_graph.png)
+
+
+
+You can also stylize your graph. 
+
+- [Here is some information on how to change the layout or style of your graph](https://support.office.com/en-gb/article/Change-the-layout-or-style-of-a-chart-a346e438-d22a-4540-aa87-bce9feb719cf). 
+- [8 ways to make beautiful charts](http://www.upslide.net/blog/ways-to-make-beautiful-financial-charts-and-graphs-in-excel/)
+
+
 
 
 #Summarising numeric data
@@ -310,10 +343,14 @@ per_borough_crimes %>%
 
 
 If you consider this frequency table your new data, you can see that you have two columns, which means two variables. You have one variabe for the name of each borough. And you have another one, that is the *number of burglaries*. While the borough name is a nominal variable, the *number* of burglaries is... 
+
 ... 
+
 ...
+
 ...
-...numeric! Yay! 
+
+... numeric! Yay! 
 
 
 So how do we talk about a numeric variable. You can imagine why a frequency table doesn't quite make sense.  A numeric variable can take any form between two limits, the *minimum* value and the *maximum* value. Because they don't map neatly into a few categories like categorical variables, it is likely that most of them would have a frequency value of 1. And that is not very interesting. 
@@ -330,6 +367,7 @@ per_borough_crimes %>%
   knitr::kable()
 
 ```
+
 
 **Important note** If you are not sure *why* this is the case, or if anything about the above is confusing, *raise your hand now*. Ask us to explain this. It's not as complicated as it might sound at first, but it's important that you understand what happens. 
 
@@ -353,23 +391,33 @@ So let's do this for our number of crimes per borough. We have 10 boroughs in to
 
 What is the total number of crimes? Well it's the sum of the number.of.crimes column. The total number of crimes is the sum of the crimes for each borough. In this case, the total number is: 
 
+
 `22587 + 24588 + 33115 + 34506 + 34619 + 35122 + 37073 + 40058 + 40751 + 117663 `
+
 
 This number incidentally is `r I(sum(per_borough_crimes$number.of.crimes))`. So how do we get the mean? As I said above, and as your readings mention, you take the sum of all the values, and you divide by the number of observations. 
 
+
 You can say:
+
 
 `sum(values)/n`
 
+
 or in this case
+
 
 `(22587 + 24588 + 33115 + 34506 + 34619 + 35122 + 37073 + 40058 + 40751 + 117663)/10`
 
+
 which is 
+
 
 `420208/10`
 
+
 or
+
 
 `42020.8`.
 
@@ -436,17 +484,6 @@ Woohoo! The mean of the middle two numbers, which is the median is `r I(sum(3461
 
 If you are confused about any of this just now then let us know by raising your hand, and asking one of us to clarify. But first, watch [this video by Chris Wilde](https://www.youtube.com/watch?v=U3lk2nQYfAQ&amp=&list=PL8CRAVedURQrlxeFfme0TEgaj1_h67JUR&amp=&index=4) to explain this to you using some pretty nifty visual aids. You can skip ahead and start from 2:41 if you wish. Now ask away. We are here to help!
 
-
-##Mean and median in Excel
-
-Now that you understand how the mean and median are calculated, what they reprepsent, and what situations are best to each one of them in, let's move on to the practicalities of how you calculate these in excel. It's actually very easy, so hopefully you will get the hang of it very quickly. 
-
-
-
-[mean and median in excel]
-
-
-Measures of central tendency can be useful when we want to talk about our data in a single number. Sometimes it can be helpful to know what the average number of crimes are, or the average numer of arrests per police force, or the average age of offenders, or the average height for basketball players. These can tell us very qick reference values, which we can use to describe our data. It is much more meaningful to tell someone that the average height of basketball players is 200cm, than to list all the heights of every person who has ever played for the NBA. But the using a single number to summarise your data can also hide important information. Remember the white rainbow, from the Tiger that Isn't. If you don't, then go read this chapter. You will understand what I mean. The next section shows you another, current example of what sort of interesting information can be hidden by focusing only on the measures of central tendency. 
 
 
 ##Distributions
@@ -572,8 +609,9 @@ If it does, then that is excellent, and you can move on now. If it does **not** 
 So looking back up at our crimes per borough histogram, you can now see that the majority of observations fall between some values relatively close together, but there is one observation that has a very high crime score. This is what we discussed earlier, when we were talking about **outliers**. No surprises there. But what is interesting now, is that you can **see the distribution** of your data, and you can see exactly how far this outlier sits. Just like the distribution of the IMDB scores for the Al Gore movie, a histogram of the number of crimes per borough also tells a story. 
 
 
-So how do you build a histogram? Of course I won't make you draw one manually, every time you need to build one, so let's get to excel and make our own using chart builder. 
+So how do you build a histogram? Of course I won't make you draw one manually, every time you need to build one, so let's get to excel and make our own [put in here histo with data analsis toolpak]
 
+Note: At this point it's worth to stop and think about the difference between a histogram. Take a moment to discuss with the person next to you 
 
 
 <!--
@@ -675,6 +713,32 @@ You will notice that some authors talk about the 5-number summary of a distribut
 These numbers are useful because you can begin to get a feel for your data, not just in terms of a single number summary, such as the mean or median number of crimes in a neighbourhood, but you can begin to describe the spread of the data, and think about what that means. Earlier I asked you to discuss with a partner about why you think that Manchester borough is so far away from the others in terms of numbers of crimes. I hope that your discussion had to do with populations, and that the city centre is contained there, with it's central shopping areas, which can act as crime attractors and generators. As well as major transport hubs, and many many people passing through. This is all interesting to know, but not something that would show up, if you were just considering the average number of crimes per borough. 
 
 
+To calculate the quartile in excel, you can use the `=QUARTILE()` function. Take a moment and read about how this works [here](https://support.office.com/en-gb/article/QUARTILE-function-93cf8f62-60cd-4fdb-8a92-8451041e1a2a). 
+
+
+The idea behind this formula is that inside the brackets you have to specify two things. First you have to specity the range from which to calculate. You can specify this by using the drag and drop method, or you can type it out. The other value you have to specify is the one that tells excel which quartile you want. There are, 5 possible values, from 0 to 4. You can see what each number corresponds to in the above link. For example, 0 means the minimum value, and 4 is the maxiumum value. Let's here type 1, to return the value for the first quartile: 
+
+![](imgs/quartile.gif)
+
+
+
+You can set the last parameter of all the values, from 0 to 4, in order to produce all the 5 numbers, minimum, 1st quartile, median, 3rd quartile, and maximum. The 
+
+
+##Mean in Excel
+
+Now that you understand how the mean and median are calculated, what they reprepsent, and what situations are best to each one of them in, let's move on to the practicalities of how you calculate these in excel. It's actually very easy, so hopefully you will get the hang of it very quickly. 
+
+
+`=average()`
+
+
+
+
+Measures of central tendency can be useful when we want to talk about our data in a single number. Sometimes it can be helpful to know what the average number of crimes are, or the average numer of arrests per police force, or the average age of offenders, or the average height for basketball players. These can tell us very qick reference values, which we can use to describe our data. It is much more meaningful to tell someone that the average height of basketball players is 200cm, than to list all the heights of every person who has ever played for the NBA. But the using a single number to summarise your data can also hide important information. Remember the white rainbow, from the Tiger that Isn't. If you don't, then go read this chapter. You will understand what I mean. The next section shows you another, current example of what sort of interesting information can be hidden by focusing only on the measures of central tendency. 
+
+
+
 
 ##Boxplot: visualising the 5-number summary
 
@@ -692,31 +756,57 @@ In truth the boxplots produced by many software packages are a variation of this
 ![](http://www.cms.murdoch.edu.au/areas/maths/statsnotes/samplestats/images/boxplot5.jpg)
 
 
-[Make a boplot in excel](https://support.office.com/en-gb/article/Create-a-box-plot-10204530-8cdf-40fe-a711-2eb9785e510f)
+
+
+At this stage it is enough that you understand how to *read* a boxplot. If you don't, speak up now. Raise your hand and we will come help try to explain. 
+
+If you want to go ahead and learn how to build one in excel, you can do so by folowing the tutorial below: 
+
+- [Make a boplot in excel](https://support.office.com/en-gb/article/Create-a-box-plot-10204530-8cdf-40fe-a711-2eb9785e510f)
 
 
 ##Standard deviation
 
-Let’s now discuss the standard deviation. The interquartile range is always a reasonably summary of spread, but because it uses only the two quartiles of the data, it ignores much of the information about how individual values vary. Clearly 3 homicides per 100,000 is very different from 20 or 70, for example. Yet, that’s not something that the interquartile range takes into account. 
-A more powerful approach for measuring spread uses the standard deviation. Like the mean, the standard deviation only provides a good summary when we do not have highly skewed distributions. What is the standard deviation? This is the most complex concept we have covered so far and by now you may be a bit tired and overwhelmed with all we have covered today; thus, do not worry too much if you get a bit confused. We will come back to it also next week. 
+Let’s now discuss the standard deviation. The interquartile range is always a reasonably summary of spread, but because it uses only the two quartiles of the data, it ignores much of the information about how individual values vary. Clearly 117,663 crimes is very different from 33,46 or 39,312, for example. Yet, that’s not something that the interquartile range takes into account. 
 
-One way of thinking about spread is to examine how far each data value is from the mean. This difference is called a deviation. If we look at our dataset we see that Albania had 4 homicides per 100,000 inhabitants in 2010. If the mean for all the countries is 10.32 then Albania has a deviation of 6.32 (=10.32-4).
+
+A more powerful approach for measuring spread uses the **standard deviation**. Like the mean, the standard deviation only provides a good summary when we do not have highly skewed distributions. What is the standard deviation? This is the most complex concept we have covered so far and by now you may be a bit tired and overwhelmed with all we have covered today; thus, do not worry too much if you get a bit confused. We will come back to it also next week. 
+
+One way of thinking about spread is to examine how far each data value is from the mean. This difference is called a deviation. If we look at our dataset we see that Trafford had 22,587 crimes recorded in our data. If the mean for all the boroughs is 42,008 then Trafford has a deviation of 19,421 (= 42,008 - 22,587).
  
 The standard deviation tries to measure what this deviation is on average. That is, what the typical distance to the mean is for all the cases in your data. 
 Unfortunately, if you just sum all the deviations in your sample and then divide them by the number of cases (if you attempt to take the mean of the deviations), the positive and negative differences will cancel each other out. As a result you will get “0”. 
+
+
 So to “average” the deviations first you need to square these deviations and only then add them up. If you then divide the resulting value of summing up the squared deviations by the number of cases, you will obtain the average squared deviation. This value is called the variance. 
-If you want to go back to the original scale of measurement, to the original metric, you need to take the square root of the variance (remember the variance is the average squared deviation). The square root of the variance is the standard deviation. It is another way of saying that is the average distance of each observation from the mean. 
+
+
+If you want to go back to the original scale of measurement, to the original metric, you need to take the square root of the variance (remember the variance is the average squared deviation). The square root of the variance is the standard deviation. It is another way of saying that is the average distance of each observation from the mean.
+
+
 Conceptually understanding the variance and the standard deviation will possibly take you a while. We will come back to it, so don’t worry too much if you feel a bit confused right now. Make sure you read the recommended textbooks. 
-Mean		sd  		IQR 	0%	25%	50%	75%	100%	n	NA
-10.32094	13.35499 	13.3	0	1.5	4.2	14.8	91.6	191	3
-The standard deviation for our data is 13.35. But, wait a minute! That is a bit large, isn’t it? How is it that most people have a value below 4.2, the mean is 10.32, and you are telling me the standard deviation, in other words, the average distance of each individual value to the mean is 13.35? This makes no sense? Shouldn’t the standard deviation be smaller, given that most countries should be close to the mean? 
+
+So now we know that to summarise our data, we can produce the following numbers: 
+
+- Mean: `r I(as.character(mean(per_borough_crimes$number.of.crimes)))`
+- Standard deviation: `r I(sd(per_borough_crimes$number.of.crimes)))`
+- IQR: `r I(as.character(IQR(per_borough_crimes$number.of.crimes)))`
+- 0%: `r I(as.character(min(per_borough_crimes$number.of.crimes)))`
+- 25%: `r I(as.character(quantile(per_borough_crimes$number.of.crimes)[2])`
+- 50%: `r I(as.character(quantile(per_borough_crimes$number.of.crimes)[3]))`
+- 75%: `r I(as.character(quantile(per_borough_crimes$number.of.crimes)[4]))`
+- 100%: `r I(as.character(max(per_borough_crimes$number.of.crimes)))`
+
+
+The standard deviation for our data is `r I(sd(per_borough_crimes$number.of.crimes))`. But, wait a minute! That is a bit large, isn’t it? How is it that half the boroughs have a value below `r I(quantile(per_borough_crimes$number.of.crimes)[3])`, the mean is `r I(mean(per_borough_crimes$number.of.crimes))`, and you are telling me the standard deviation, in other words, the average distance of each individual value to the mean is `r I(sd(per_borough_crimes$number.of.crimes))`? This makes no sense? Shouldn’t the standard deviation be smaller, given that most countries should be close to the mean? 
+
+
 Remember what I said at the outset. The standard deviation does not quite work when you have highly skewed distributions or outliers. When your standard deviation is larger than the mean, it signifies that you have a skewed distribution. The larger the difference is, the greater the skew. In fact, the more important use of the standard deviation in such cases is as a sign to conclude that you are dealing with a skewed distribution.
 
 
 
 
-
-#Writing it all up
+# Writing it all up
 
 
 This is all well and good, but what happens now that we have done all this analysis? Well most of the time you will want to write up your results. You will want to interpret them, of course, and you will want to present these interpretations, as well as supporting evidence from your analysis to share with the world. I will show a brief example here, of how to begin thinking about your report. 
@@ -805,17 +895,21 @@ When you are preparing a research report where you describe the results of some 
 So what do we want to say. Well this is where your critical thinking skills should come in. What do you think that someone would like to know about the frequency of crimes in our data? What do you think is interesting here? What do you think is worth menioning or highlighting? Remember that the whole point here is to *make sense of the data*. We want to tell a story using our data, and we want that story to be meaningful, and comprehensive. So if we are tasked with telling a story about the frequency of each crime type, then we want that to be an interesting story. 
 
 
+In this week's task we'll be building a report like this together. It will be quite hand-hold-y, so don't worry, it's meant to guide you through building a research report. It will feel a bit like a fill in the blanks exercise even. When you get to your final assignment, that's when you'll have more freedom to discuss what you wish. So at this point, go ahead and download the task for week 2, and get started on that. 
+
+
+<!--
 So let's put in a few "headline figures". Maybe we want to name the top three most common crime types. Maybe we want to comment on the most and least frequent crime types. This will depend on our angle, on the purpose of the story we are hoping to tell. For example, a crime analyst looking to help their team reduce total crime numbers might want to highlight the most frequent crime categories, and recommend that these be the focus of some problem-solving initiatives, aimed to drive the numbers down. On the other hand, someone looking to explore potential issues with reporting crime to the police might be interested on crimes that show up with low frequency in these data, as it might be that these are not necessarily infrequently occurring crimes, but perhaps just frequently underreported crimes. In this case we might want to look at the bottom three categories. 
 
 
 In any case, let's put in some summaries, but also present our table, in case the people reading it want to choose for themselves where to focus. 
 
 
-This is actually quite simple. Just open up a word document. Then return to your pivot table, and highlight the whole thing. You can highlight all in a few ways. One method is to click on the bottom right cell, and just drag the mouse over to the top left cell. When you let go of the mouse, everything will be highlighted. Alternatively you can also click on any cell inside your pivot table and hit `Ctrl+A` on a PC, or `cmd+A` on a mac. 
+This is actually quite simple. Just open up a word document. Then return to your pivot table, and highlight the whole thing. You can highlight all in a few ways. One method is to click on the bottom right cell, and just drag the mouse over to the top left cell. When you let go of the mouse, everything will be highlighted. Alternatively you can also click on any cell inside your pivot table and hit `Ctrl+A` on a PC, or `cmd+A` on a mac. Then copy all the table, and paste it over in your word doc. This is an easy way to transfer tables and grapsh from excel into a word doc. 
 
 
 
-
+-->
 
 
 
