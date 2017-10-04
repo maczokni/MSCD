@@ -144,7 +144,7 @@ Luckily excel makes this much easier for us.
 ##Creating a frequency table in Excel
 
 
-Making a frequency table in excel is quite simple, and it is achieved by using something called a **pivot table**. As far as I know this name is specific to Excel. If you apply to public sector jobs, especially where excel is a requirement, the word pivot table is likely to come up in interview. It's a handy tool for summarising categorical data. A pivot table is a tool that let's you build different types of summary tables from your data. One of these is a frequency table. 
+Making a frequency table in excel is quite simple, and it is achieved by using something called a **pivot table**. As far as I know this name is specific to Excel. If you apply to public sector jobs, especially where excel is a requirement, the word pivot table is likely to come up in interview. It's a handy tool for summarising categorical data. A pivot table is a tool that lets you build different types of summary tables from your data. One of these is a frequency table. 
 
 > PivotTables are a great way to summarize, analyze, explore, and present your data, and you can create them with just a few clicks. PivotTables are highly flexible and can be quickly adjusted depending on how you need to display your results.
 
@@ -203,7 +203,7 @@ Basically steal steps from [here](http://documents.routledge-interactive.s3.amaz
 -->
 
 
-Now you should see all your variables on the side there as well, in this little pane that has just appeared. 
+Now you should see all your variables on the side there as well, in this little panel that has just appeared. 
 
 
 You can scroll through and find crime type. This is the variable we want to look at in this case. 
@@ -279,7 +279,7 @@ Bar charts are a simple way of visually presenting a frequency table. You will h
 
 
 
-In any case, bar charts represent your data by creating a bar for every categori, and then varying the height of this bar to represent the frequency. Imagine our frequency table turned on its side!
+In any case, bar charts represent your data by creating a bar for every category, and then varying the height of this bar to represent the frequency. Imagine our frequency table turned on its side!
 
 
 ![](imgs/table_on_side.png)
@@ -318,20 +318,32 @@ OK so let's make our own bar chart in Excel. Go back to your pivot table, that h
 
 
 
-When the whole pivot table is highlighted, click on the charts tab on the top menu:
+When the whole pivot table is highlighted, click on the charts tab on the top menu if you are using a mac:
 
 
 
 ![](imgs/click_charts_tab.png)
 
 
+Or the "Insert" tab on a PC: 
+
+
+![](imgs/on_pc_insert.png)
 
 Once you click on that you will see a whole menu of possible charts appear. Click on the one that says 'Column'. More options will appear. Choose 'Clustered Column'. 
 
 
+On mac:
+
 
 ![](imgs/click_column.png)
 
+
+
+On PC: 
+
+
+![](imgs/pc_cluster_bar.png)
 
 
 And that's it! Once you click on that, a chart will appear! Yay!
@@ -351,6 +363,8 @@ Highlight the values in the total column, and click the data tab. Click the litt
 ![](imgs/sort_graph.png)
 
 
+Note, depending on the version of excel you have and if you use PC or Mac, it may say "smallest to largest" instead of ascending and "largest to smallest" instead of descending - but these mean the same thing!
+
 
 You can also stylize your graph, to make it look the way you like. As I mentioned, we will go through some theory behind data visualisation, but if you want to spend some time making your graphs nice now, then below are some links you might find helpful: 
 
@@ -367,7 +381,13 @@ So we saw that for categorical data the way we would carry out univariate analys
 
 
 
-But first, to get some numeric data to summarise, let's make another pivot table, to create a new data set, that tells me the **number** of crimes per borough. To do this, let's create a new frequency table in excel, this time using the 'borough' variable. I will leave you on your own to do this. You can refer back up to the steps above which we followed to create the crime type frequency table. But instead of crime type, this time you want to count the frequency of crimes per borough. So in the end you should end up with a table where there are two columns, one for 'borough' and one for 'number of crimes'. In this case, each row will be one borough. Your table will look like this: 
+But first, to get some numeric data to summarise, let's make another pivot table, to create a new data set, that tells me the **number** of crimes per borough. To do this, let's create a new frequency table in excel, this time using the 'borough' variable. I will leave you on your own to do this. You can refer back up to the steps above which we followed to create the crime type frequency table. But instead of crime type, this time you want to count the frequency of crimes per borough. So in the end you should end up with a table where there are two columns, one for 'borough' and one for 'number of crimes'. 
+
+
+Note that the column with the number of crimes in it might initially be labelled by your pivot table as something else, for example, it could be labelled as count of borough (as it counts the occurrence of each borough, and might not automatically realise that each row/ observation is one crime). So feel free to rename this column, by simply clicking in the cell, and writing "number of crimes". 
+
+
+In this case, each row will be one borough. Your table will look like this: 
 
 
 
@@ -386,7 +406,7 @@ per_borough_crimes %>%
 
 
 
-If you consider this frequency table your new data, you can see that you have two columns, which means two variables. You have one variabe for the name of each borough. And you have another one, that is the *number of burglaries*. While the borough name is a nominal variable, the *number* of burglaries is... 
+If you consider this frequency table your new data, you can see that you have two columns, which means two variables. You have one variabe for the name of each borough. And you have another one, that is the *number of crimes*. While the borough name is a nominal variable, the *number* of crimes is... 
 
 ... 
 
@@ -427,7 +447,7 @@ Right, so what's a better way to summarise numeric data? It is easier to summari
 
 
 
-You will often hear numeric variables summarised by the measure of central tendency. These are the **mean** and the **median**. You will have encountered the mean before, but possible referred to as the **average**. In statistical langueg you will hear people talk about *the mean number of crimes per borough is `r I(as.character(mean(per_borough_crimes$number.of.crimes)))` crimes*. This is the exact same thing as talking about the average number of crimes per borough is `r I(as.character(mean(per_borough_crimes$number.of.crimes)))` crimes. And you would calculate it the same exact same way. 
+You will often hear numeric variables summarised by the measure of central tendency. These are the **mean** and the **median**. You will have encountered the mean before, but possible referred to as the **average**. In statistical language you will hear people talk about *the mean number of crimes per borough is `r I(as.character(mean(per_borough_crimes$number.of.crimes)))` crimes*. This is the exact same thing as talking about the average number of crimes per borough is `r I(as.character(mean(per_borough_crimes$number.of.crimes)))` crimes. And you would calculate it the same exact same way. 
 
 
 To calculate the mean, you add up all your observations, and then divide by the number of observations that you have. 
@@ -469,7 +489,7 @@ which is
 `42008.2`.
 
 
-So what is the mean number of crimes per borough? You guessed it, *the mean number of crimes per borough is 42,008.2. That means that on avaerage, there are about 42,000 crimes per borough. And this measure is the mean. 
+So what is the mean number of crimes per borough? You guessed it, the mean number of crimes per borough is 42,008.2. That means that on average, there are about 42,000 crimes per borough. And this measure is the mean. 
 
 
 Is this a good way of describing your data? Well one way to think about it is to consider how much you distort the data if you use that measurement to talk about it. Normally when we think about average, we think that this is a measure that represents a value somewhere in the middle. But if we look at this value, *42,008.2*, we see that actually this number is higher than almost all the boroughs. There is only one borough with a number of crimes that is higher than the average. All the other boroughs have below average crime rates. Why do you think this is?
@@ -526,7 +546,7 @@ I'll calculate too:
 `r I(as.character(sum(34619 + 35122)))` `/2=` `r I(as.character(sum(34619 + 35122)/2))`
 
 
-Woohoo! The mean of the middle two numbers, which is the median is `r I(sum(34619 + 35122)/2)`. And this gives us our second measure of central tendency. We can see that this number is actually quite far off from our mean number of crimes per borough. This means that our data is **skewed** by our outlier! When our data is **not skewed** our mean and our median should be the *same value*. The more different they are, the greater the skew in our data! We will talk about skew and things like the normal distribution a bit later, and more in your next term, but you should have a basic understanding of the difference between the mean and the median, and what this difference means, and when each one is appropriate to use. 
+Woohoo! The mean of the middle two numbers, which is the median is `r I(as.character(sum(34619 + 35122)/2))`. And this gives us our second measure of central tendency. We can see that this number is actually quite far off from our mean number of crimes per borough. This means that our data is **skewed** by our outlier! When our data is **not skewed** our mean and our median should be the *same value*. The more different they are, the greater the skew in our data! We will talk about skew and things like the normal distribution a bit later, and more in your next term, but you should have a basic understanding of the difference between the mean and the median, and what this difference means, and when each one is appropriate to use. 
 
 
 If you are confused about any of this just now then let us know by raising your hand, and asking one of us to clarify. But first, watch [this video by Chris Wilde](https://www.youtube.com/watch?v=U3lk2nQYfAQ&amp=&list=PL8CRAVedURQrlxeFfme0TEgaj1_h67JUR&amp=&index=4) to explain this to you using some pretty nifty visual aids. You can skip ahead and start from 2:41 if you wish. Now ask away. We are here to help!
@@ -549,7 +569,7 @@ The formula for calulcating the mean (which is the statistical term for the aver
 Inside the brackets  you have to enter *what* it is that you want to calulate the average of. Remember, you can either type in the cells you want to include manually, or you can highlight by clicking on them, and then hitting Enter (remember where you were copying values over from one sheet to the other for the football banning orders...!). 
 
 
-So choose a cell where you would like your average value to appear. Type `=AVERAGE(` and then select the cells which you want to include in the calculations. This should be the value for number of crimes for each borough. Take care to *not* select the grand total in your calulcations. Then close the bracket by typing `)` and hit enter. The value that appears is the **mean** number of crimes for the 10 boroughs of Greater Manchester:
+So choose a cell where you would like your average value to appear. Type `=AVERAGE(` and then select the cells which you want to include in the calculations (both lower case and all caps work for this, exel likes to shout at you, so it will translate to all caps, but it will understand even if you type `=average(`. This should be the value for number of crimes for each borough. Take care to *not* select the grand total in your calulcations. Then close the bracket by typing `)` and hit enter. The value that appears is the **mean** number of crimes for the 10 boroughs of Greater Manchester:
 
 
 ![](imgs/calc_avg.gif)
@@ -603,7 +623,7 @@ If we only know the average score on IMDB for these movies, we would believe tha
 
 
 
-You can see that for the other 5 films, the ratings follow what is essentially a normal distribution (we will return to what a "normal distribution" is later). Peple seem to agree on these films. Very few people think that *xXx: Return of Xander Cage* is a terrible movie, meriting a score of 1 or 2, but also very few people thing that it's great, worthy of a 9 or a 10. Instead, most people think that it's a mediocre film, and give it a 5 or a 6 out of 10. This pattern is reflected in all the other films, **with the exception of Al Gore's film**. What's going on there? Well it appears that people either love it, giving it a score of 10, or they absolutely hate it, giving it a score of 1. Because of this, when all the scores are added up and divided by the total number of people who have rated the film, we get a value in the middle, 5.2, just like we did for *xXx: Return of Xander Cage*. Except while most viewiers agree that film is mediocre, most people are **not** evaluating *An Inconvenient Sequel: Truth to Power* as mediocre. In fact we see that most people are saying it's great or it's terrible. And this is why distribution also matters. 
+You can see that for the other 5 films, the ratings follow what is essentially a normal distribution (we will return to what a "normal distribution" is later). People seem to agree on these films. Very few people think that *xXx: Return of Xander Cage* is a terrible movie, meriting a score of 1 or 2, but also very few people thing that it's great, worthy of a 9 or a 10. Instead, most people think that it's a mediocre film, and give it a 5 or a 6 out of 10. This pattern is reflected in all the other films, **with the exception of Al Gore's film**. What's going on there? Well it appears that people either love it, giving it a score of 10, or they absolutely hate it, giving it a score of 1. Because of this, when all the scores are added up and divided by the total number of people who have rated the film, we get a value in the middle, 5.2, just like we did for *xXx: Return of Xander Cage*. Except while most viewiers agree that film is mediocre, most people are **not** evaluating *An Inconvenient Sequel: Truth to Power* as mediocre. In fact we see that most people are saying it's great or it's terrible. And this is why distribution also matters. 
 
 
 What you are seeing in the histograms above are the **distributions** of the scores that are given to each film on the IMDB website. 
@@ -710,7 +730,7 @@ So looking back up at our crimes per borough histogram, you can now see that the
 
 ###Histograms in Excel
 
-So how do you build a histogram? Of course I won't make you draw one manually, every time you need to build one, so let's get to excel and make our own. This time it's slightly different than just inserting a bar chart. Remeber that bar charts represent the frequenty of a categorical variable. Building one for a numeric variable, such as number of crimes, would not make sense. If you are unsure why, look back at our frequenxy table for the number of crimes variable. All the frequencies are 1. So your bars would all be the same height, and we would be none the wiser about any distribution. One important feature of numeric variables is that **the distance between numbers is meaningful**. Right? Remember this from the definitions for levels of measurement? So that is why we know how far for example 117,663 is from 40,751, and how much farther it is than 40,751 is from the next number in our data, 40,058. A histogram will display this for you. 
+So how do you build a histogram? Of course I won't make you draw one manually, every time you need to build one, so let's get to excel and make our own. This time it's slightly different than just inserting a bar chart. Remeber that bar charts represent the frequency of a categorical variable. Building one for a numeric variable, such as number of crimes, would not make sense. If you are unsure why, look back at our frequency table for the number of crimes variable. All the frequencies are 1. So your bars would all be the same height, and we would be none the wiser about any distribution. One important feature of numeric variables is that **the distance between numbers is meaningful**. Right? Remember this from the definitions for levels of measurement? So that is why we know how far for example 117,663 is from 40,751, and how much farther it is than 40,751 is from the next number in our data, 40,058. A histogram will display this for you. 
 
 
 So to build a histogram in Excel, you will have to have your data, and you also have to have an idea of the **bins** that you want. How do you decide this? Well this is again one of those things where the answer is that *it depends* on your data. What are meaningful bins? What are interesting sizes to group the numeric data into? For example, in this case, would it make sense for a bin width of 10 crimes? If we used a bin width of 10, we would see something like this: 
@@ -794,6 +814,8 @@ In the window that pops up, you have to populate the `Input range` and the `Bin 
 
 Then do the same for the bin range, but select the bin range variables:
 
+
+![](imgs/build_histo.gif)
 
 
 Once you have filled these fields, also click the tick-box next to the `Chart output` option. When this is ticked as well, just click "OK". Your histogram is now ready, and should appear in a new sheet on your excel workbook: 
@@ -884,7 +906,7 @@ Now the quartiles are just the medians for the two halves of the data (which wer
 ![](imgs/crimes_dotplot_quart.png)
 
 
-One quarter of the data lies below the lower quartile, and one quarter of the data lies above the upper quartile, so half the data lies between them. The quartiles border the middle half of the data. The difference between the lower and the upper quartile tells us how much territory the middle half of the data covers and is called the interquartile range (IQR). The lower quartile is also called the 25th percentile, 25% of the cases lies below it, and the upper quartile is also called the 75th percentile, 75% of the cases lies below it. 
+One quarter of the data lies below the lower quartile, and one quarter of the data lies above the upper quartile, so half the data lies between them. The quartiles border the middle half of the data. The difference between the lower and the upper quartile tells us how much territory the middle half of the data covers and is called the interquartile range (IQR). The lower quartile is also called the 25th percentile, 25% of the cases lies below it, and the upper quartile is also called the 75th percentile, 75% of the cases lies below it. The 1st quartile is also called the lower quartile, and the 3rd quartile is also called the upper quarile. So we are sometimes just saying different names for the same thing. The 0th quartile = the minimum value (although actually no one says 0th quartile...) 1st quartile = the lower quartile, the 2rd quartile = the mediad, the 3rd quartile is the upper quartile, and the 4th quartile is the maximum. 
 
 
 In the table with our numerical results we saw the lower quartile for number of crimes (or the 25th percentile) is 33,463 (25% of the boroughs have less crimes than that) and the upper quartile (or 75% percentile) was 39,312 (about 25% of the countries have more crimes than that). The interquartile range then is `r I(39312-33463)` (`upper quartile - lower quartile = 39312-33463 = ``r I(39312-33463)`).
@@ -904,7 +926,7 @@ You will notice that some authors talk about the 5-number summary of a distribut
 
 
 
-These numbers are useful because you can begin to get a feel for your data, not just in terms of a single number summary, such as the mean or median number of crimes in a neighbourhood, but you can begin to describe the spread of the data, and think about what that means. Earlier I asked you to discuss with a partner about why you think that Manchester borough is so far away from the others in terms of numbers of crimes. I hope that your discussion had to do with populations, and that the city centre is contained there, with it's central shopping areas, which can act as crime attractors and generators. As well as major transport hubs, and many many people passing through. This is all interesting to know, but not something that would show up, if you were just considering the average number of crimes per borough. 
+These numbers are useful because you can begin to get a feel for your data, not just in terms of a single number summary, such as the mean or median number of crimes in a neighbourhood, but you can begin to describe the spread of the data, and think about what that means. Earlier I asked you to discuss with a partner about why you think that Manchester borough is so far away from the others in terms of numbers of crimes. I hope that your discussion had to do with populations, and that the city centre is contained there, with it's central shopping areas, which can act as crime attractors and generators (if you are not sure what crime attractors/ generators are, I suggest you take some tyime to learn about them [here](http://www.popcenter.org/learning/60steps/index.cfm?stepNum=17)). As well as major transport hubs, and many many people passing through. This is all interesting to know, but not something that would show up, if you were just considering the average number of crimes per borough. 
 
 
 To calculate the quartile in excel, you can use the `=QUARTILE()` function. Take a moment and read about how this works [here](https://support.office.com/en-gb/article/QUARTILE-function-93cf8f62-60cd-4fdb-8a92-8451041e1a2a). 
@@ -944,7 +966,7 @@ At this stage it is enough that you understand how to *read* a boxplot. If you d
 
 As an optional extra though, I'll leave this here: if you want to go ahead and learn how to build one in excel, you can do so by folowing the tutorial below: 
 
-- [Make a boplot in excel](https://support.office.com/en-gb/article/Create-a-box-plot-10204530-8cdf-40fe-a711-2eb9785e510f)
+- [Make a boxplot in excel](https://support.office.com/en-gb/article/Create-a-box-plot-10204530-8cdf-40fe-a711-2eb9785e510f)
 
 
 ##Standard deviation
@@ -1000,7 +1022,7 @@ Finally, I will leave you with a note on how to calculate the standard deviation
 This is all well and good, but what happens now that we have done all this analysis? Well most of the time you will want to write up your results. You will want to interpret them, of course, and you will want to present these interpretations, as well as supporting evidence from your analysis to share with the world. I will show a brief example here, of how to begin thinking about your report. 
 
 
-The structure of your report will always depend on what is the purpose you are writing it for. If you are writing a journal article, you will have to conform to journal guidelines. For example, if you were hoping to submit something to the *British Journal of Criminology* you will have to follow their [author guidelines](https://academic.oup.com/bjc/pages/General_Instructions). If you were writing a [What Workd Briefing](http://whatworks.college.police.uk/Research/Briefings/Pages/default.aspx) for the [College of Policing](http://www.college.police.uk/Pages/Home.aspx), you would follow their guidelines to make your report follow the [format and structure of other reports](http://whatworks.college.police.uk/Research/Briefings/Documents/What%20Works%20Street%20Lighting%20final%20version%20June%202013.pdf). For the assignment for this class, you will also be given specific guidelines that you will have to adhere to, both in terms of content and format. But these provide just a skeleton, which you populate with your own research, findings, and interpretations of your data. So while there are guidelines and tempaltes, every report is unique. 
+The structure of your report will always depend on what is the purpose you are writing it for. If you are writing a journal article, you will have to conform to journal guidelines. For example, if you were hoping to submit something to the *British Journal of Criminology* you will have to follow their [author guidelines](https://academic.oup.com/bjc/pages/General_Instructions). If you were writing a [What Works Briefing](http://whatworks.college.police.uk/Research/Briefings/Pages/default.aspx) for the [College of Policing](http://www.college.police.uk/Pages/Home.aspx), you would follow their guidelines to make your report follow the [format and structure of other reports](http://whatworks.college.police.uk/Research/Briefings/Documents/What%20Works%20Street%20Lighting%20final%20version%20June%202013.pdf). For the assignment for this class, you will also be given specific guidelines that you will have to adhere to, both in terms of content and format. But these provide just a skeleton, which you populate with your own research, findings, and interpretations of your data. So while there are guidelines and templates, every report is unique. 
 
 
 Here, we will build a report based on the analysis we carried out above, to give you a bit of experience in building reports. I'll walk you through this one, but make sure to ask about anything that might make you uncertain, as you will be writing your own report for this week's Task. 
@@ -1032,7 +1054,7 @@ You also want to quickly discuss about your data. Where does it come from? What 
 
 **Methods**
 
-After a disucssion of your background and your data, you want to mention your methods, and why they were the appropriate choice for interpreting your data. You want to go into enough detail so that people can reproduce your work from reading your description here, and also justify your choices so people know why you chose a particular approach over another. So for example, when you are talking about the frequency of different types of crime in the data, you would mention that you used a frequency table, as this is the appropriate method for univariate analysis for categorical variables. 
+After a discussion of your background and your data, you want to mention your methods, and why they were the appropriate choice for interpreting your data. You want to go into enough detail so that people can reproduce your work from reading your description here, and also justify your choices so people know why you chose a particular approach over another. So for example, when you are talking about the frequency of different types of crime in the data, you would mention that you used a frequency table, as this is the appropriate method for univariate analysis for categorical variables. 
 
 
 **Findings**
