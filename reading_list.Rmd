@@ -54,6 +54,9 @@ If you want to read something cover to cover, I would recommend [Tiger That Isn`
 
 ##Week 7. Looking at trends
 
+
+- Chapter 13 (p.95-102)['Models Are Stories Are Not Real Life' in Statistics in Society]()
+
 - [Read this ONS report on the seasonality of crime](www.ons.gov.uk/ons/guide-method/method-quality/specific/crime-statistics-methodology/methodological-note--seasonality-of-property-crime.pdf) - download link
 - Chapter 14: Time (p.407-449) [Grammar of Graphics](https://link-springer-com.manchester.idm.oclc.org/chapter/10.1007/0-387-28695-0_14)
 - This paper on [Crime seasonality and its variations across space](http://www.sciencedirect.com/science/article/pii/S0143622813001410)
