@@ -20,10 +20,13 @@ Much of statistics is about making comparisons. Human beings are not good at sif
 Tables of summary statistics are very common (we have already created some of these last week) – nearly all published studies in criminology will contain a table of basic summary statistics describing their sample.However, figures offer a visually more appealing interpretation of our data, that allows people to easily identify trends from large amounts of information. This is also true for exploring relationships between two variables. In this course we will have a look at ways of producing these visuals (and some tables) that can help you get started in thinking about the relationships between different variables in your data. Not only do we want to be able to summarise one variable, but we want to know, is it related to another variable. Because this is where the interesting questions are that we can start asking. 
 
 
+For example here are some criminological papers that explore the relationship between two variables: 
+
+
 - [Do older people have higher fear of crime?](http://onlinelibrary.wiley.com/doi/10.1111/j.1745-9125.1989.tb01051.x/full) compares the variables age and worry about crime
-- [Is there a relationship between adolescent drug use and psychological health?](http://psycnet.apa.org/record/1990-22928-001)
-- [Does design of a street affect burglary risk of the houses on it?](https://link.springer.com/article/10.1007/s10940-009-9084-8)
--[Does ethnicity affect trust in the police?](http://journals.sagepub.com/doi/abs/10.1177/1098611104271105)
+- [Is there a relationship between adolescent drug use and psychological health?](http://psycnet.apa.org/record/1990-22928-001) compares the variable measuring psychological health with drug use in adolescence
+- [Does design of a street affect burglary risk of the houses on it?](https://link.springer.com/article/10.1007/s10940-009-9084-8) looks at the variable of design of street, and considers its relationship with increased burglary risk
+- [Does ethnicity affect trust in the police?](http://journals.sagepub.com/doi/abs/10.1177/1098611104271105) looks at the variable of ethnicity, and its relationship with variable measuring trust in the police.
 
 
 And so on and so on and so on. You will notice that most of the research questions that criminological research attempts to address are based on comparisons. You want to be able to explore the relationship that one variable has with other variables. That is where exciting new insights come from. We will talk next week about how you can go about identifying what variables to test against each other to be able to answer your research questions, including how to measure these variables, or even define them in the first place. But today we will explore how to go about assessing any *bivariate* (meaning two-way) relationships - relationships between two variables. 
@@ -71,13 +74,13 @@ This two-way frequency table is also called a **cross table** or **crosstab**. A
 
 
 
-For example, a researcher might be investigating the relationship between the class on which a passenger was travelling on the RMS Titanic (which, in case you're not familiar, was a British passenger liner that sank in the North Atlantic Ocean in 1912, after it collided with an iceberg) and whether that person survived or not. The two variables would be class (1st, 2nd, 3rd, or crew) and survived (yes/no). The question is "Is there a significant relationship between class of passenger and survival?" In the second term course, you'll learn how to answer this question with *inferential statistics*. Here we will only begin to explore this question (and other questions of comparison) using *descriptive statistics*. If you are unsure about the difference, ask now, or consult your readings from the first week. 
+For example, a researcher might be investigating the relationship between the class on which a passenger was travelling on the RMS Titanic (which, in case you're not familiar, was a British passenger liner that sank in the North Atlantic Ocean in 1912, after it collided with an iceberg) and whether that person survived or not. The two variables would be class (1st, 2nd, 3rd, or crew) and survived (yes/no). The question is "Is there a significant relationship between class of passenger and survival?" In this course, we don't yet learn how to answer this question with *inferential statistics*. Instead, here we  only begin to explore this question (and other questions of comparison) using *descriptive statistics*. If you are unsure about the difference, ask now, or consult your readings from the first week. 
 
 
-But let's return to our question about survival in the Titanic. You can actually get a frequency table that tells you about survival between different groups, [you can read a bit about the data here, and also find the data dictionary](http://www.public.iastate.edu/~hofmann/data/titanic.html). You can download the data from blackboard. 
+So let's return to our question about survival in the Titanic. We want to know the relationship between the variable for class of passenger, and the variable for survival. First, we need some data. Data about the fate of the RMS Titanic's passengers is actually available open data, so we can use it to explore any questions we might have about it. [You can read a bit about the data here, and also find the data dictionary](http://www.public.iastate.edu/~hofmann/data/titanic.html). In this instance though, you can download the data from blackboard. As always it's in a folder under course content > week 3 > data for week 3. It is the one labelled "Titanic survivors data". Under it you will see a link to titanic3.xls. Right click and select "Save link as", and save it in your working directory you had set up for this course. 
 
 
-Once you download the data open it up in excel. You should see it's the usual setting of your variables in your columns, and your observations in your rows. Each observation is one passenger who was on board the ship. The variable "Class" tells whether the passenger was travelling 1st class, 2nd class, 3rd class, or as a member of the crew. The variable "Survived" tells whether that person has survived the RMS Titanic's collision with the iceberg or not. 
+Once you download the data open it up in excel. You should see it's the usual dimension of your variables in your columns, and your observations in your rows. Each observation is one passenger who was on board the ship. The variable "Class" tells whether the passenger was travelling 1st class, 2nd class, 3rd class, or as a member of the crew. The variable "Survived" tells whether that person has survived the RMS Titanic's collision with the iceberg or not. 
 
 
 We might be interested in looking at the rate of survival by passenegrs who were travelling on various class tickets. For example, we might have seen the 1997 classic film [Titanic](http://www.imdb.com/title/tt0120338/) by James Cameron, and might be wondering - was there a priority given to first class passengers when boarding the lifeboats, and did that result in them being more likely to survive? Well to be able to answer questions like this, we would need to compare the survival (yes/no) between the class (1st/2nd/3rd/crew) variables. Both of these are categorical, and so to be able to talk about their relationship, we will have to build a **crosstab**.
@@ -114,7 +117,14 @@ Great, now you can create your two-way frequency table. First, drag the "Class" 
 
 
 
-But we don't want *univariate* analysis on the "Class" variable. We want to compare the survival of passengers between these classes, so we want *bivariate* analysis on the "Class" variable with the "Survival" variable. There is really only one more step we need to take to achieve this. Drag the "Survival" variable into the "Column Labels" box. Once you've done that, you should see your frequency table appear:
+We can take a moment to look at the frequency table of just the class variable. It tells us how many passengers were travelling aboard the ship in each group. You can see there were the most people travelling as crew, while the least populous group is the 2nd class ticket holders. 
+
+
+But to answer our question about the relationship between survival and class, we don't want *univariate* analysis on the "Class" variable. We want to compare the survival of passengers between these classes, so we want *bivariate* analysis on the "Class" variable with the "Survival" variable.
+
+
+Luckily, there is really only one more step we need to take to achieve this, which is to introduce the Survival variable into our pivot table. To do this, drag the "Survival" variable into the "Column Labels" box. Once you've done that, you should see your frequency table appear:
+
 
 
 ![](imgs/crosstabl_pivot.png)
@@ -146,7 +156,11 @@ Then copy over the values from your pivot table, making sure that your rows are 
 
 
 
-So you can see here the number of people who survived or died on the Titanic, by the class on which they were travelling. Do you see any interesting patterns? If you've heard of the incident, or watched that film with Kate Winslet and Leo Dicaprio, then you might be expecint to see more 1st class ticket holders amongst the survivors than 2nd and 3rd class, or crew. However if we look at the number of people who survived, is there a lot of difference? What about if you look at the column that represents the number of people who didn't survive instead? Now we see that a lot more people, volume-wise, did not survive in the 3rd class and Crew groups. But how can we make meaningful comparisons between these groups? How do we make sense of this?
+So you can see here the number of people who survived or died on the Titanic, by the class on which they were travelling. Do you see any interesting patterns? If you've heard of the incident, or watched that film with Kate Winslet and Leo Dicaprio, then you might be expecting to see more 1st class ticket holders amongst the survivors than 2nd and 3rd class, or crew. However if we look at the number of people who survived, is there a lot of difference? In fact it looks like more crew members survived than did 1st class passengers... 
+
+
+
+But what about if you look at the column that represents the number of people who didn't survive instead? Now we see that a lot more people, volume-wise, did not survive in the 3rd class and Crew groups. But how can we make meaningful comparisons between these groups? How do we make sense of this?
 
 
 
@@ -270,7 +284,7 @@ Then you will end up with some results like this:
 ![](imgs/all_col_perc.png)
 
 
-So what does that tell you? Well this tells you about the % of Survivors who were travelling in each class. So we can now see that of all the survivors, 28.6% were 1st class, 16.6% were 2nd class, 25% were 3rd class, and 30% were crew. This doesn't really illustrate any huge disproportionality, does it? Well again, that's because it doesn't compare to those who died. Instead it just looks the the distribution of the survivors between those travelling in different class. And this is why it's really important for you to consider - what is the best way of presenting the data, that considers all angles, and presents the most truthful story? There is a popular book used to teach statistics called [How to Lie With Statistics](). This is a good point to illustrate again, how important it is for you to understand how to make sense of data, and how to draw meaning from it, in order to be able to scrutinize what stories people may tell you. Depending on what results would be presented from this analysis, we could easily write a different headline. 
+So what does that tell you? Well this tells you about the % of Survivors who were travelling in each class. So we can now see that of all the survivors, 28.6% were 1st class, 16.6% were 2nd class, 25% were 3rd class, and 30% were crew. This doesn't really illustrate any huge disproportionality, does it? Well again, that's because it doesn't compare to those who died. Instead it just looks the the distribution of the survivors between those travelling in different class. And this is why it's really important for you to consider - what is the best way of presenting the data, that considers all angles, and presents the most truthful story? There is a popular book used to teach statistics called [How to Lie With Statistics](https://en.wikipedia.org/wiki/How_to_Lie_with_Statistics). This is a good point to illustrate again, how important it is for you to understand how to make sense of data, and how to draw meaning from it, in order to be able to scrutinize what stories people may tell you. Depending on what results would be presented from this analysis, we could easily write a different headline. 
 
 
 Consider this: 
@@ -397,8 +411,6 @@ You might be wondering - how does excel know that you want the row percentages, 
 
 
 
-
-
 Another way to visually display the differences in your data, while still presenting the numbers in a table, is to use conditional formatting. To do this, select again the cells with your percentage values in it:
 
 
@@ -507,6 +519,17 @@ Well on the right hand side of the item "Sum of Age" in the Values box there is 
 ![](imgs/change_from_sum.png)
 
 
+
+If you're on a PC, when you click on the downward arrow this set of options will appear: 
+
+
+![](imgs/windows_pivot_change_sum.png)
+
+
+In this case seelect "Value Field Settings..." - this is the same as the steps we followed last week to add the column of percentages for out univariate frequency table. Then the popup that appears will look roughly the same, with the option to change the Field Name (as "Custom Name") and the Summarize by (as "Summarize Values By"). 
+
+
+
 In the new popup window, you can see that you have a list of options in a window under the description that says "Summarize by". You can see that initially (by default) this is set to sum: 
 
 
@@ -568,7 +591,14 @@ Note: for creating the standard deviation column you have two choices there, Std
 
 
 
-Right, so now, we can finally answer our first question, *Which reason for arrest do you think has the oldest arrestee*? So, which is it? Well the oldest arrestee appears to have been arrested for Assault, at the age of 82 years old. Is this the category you were expecting the oldest offender in our sample to appear? Why or why not? Take a moment to try to interpret the data. It's important to always return to the meaning that we can extract from our numbers. Talk to someone next to you about this. 
+Right, so now, we can finally answer our first question, *Which reason for arrest do you think has the oldest arrestee*? So, which is it? 
+
+
+![](https://uproxx.files.wordpress.com/2012/02/grampa-turtle.gif?w=650)
+
+
+
+Well the oldest arrestee appears to have been arrested for *Assault*, at the age of 82 years old. Is this the category you were expecting the oldest offender in our sample to appear? Why or why not? Take a moment to try to interpret the data. It's important to always return to the meaning that we can extract from our numbers. Talk to someone next to you about this. 
 
 
 
@@ -994,4 +1024,37 @@ But in other cases its much more subtle. And can happen between variables that y
 
 
 ![](https://imgs.xkcd.com/comics/correlation.png)
+
+
+
+
+#Summary
+
+
+In sum, you should now be able to begin to make comparisons between two variables in your data set, and talk about the possible relationships between them, and support (or question) the assumptions that you might have with some evidence. You should be comfortable with the following terms: 
+
+- bivariate
+- crosstab (or two-way frequency table, or contingency table)
+- row percentage
+- column percentage
+- stacked bar chart
+- conditional formatting
+- producing summary statsistics by groups
+- if statemnts in excel
+- box plots in excel
+- association/ direction of a relationship between numeric variables
+  + positive relationship
+  + negative relationship
+- form of a relationship between numeric variables 
+  + linear relationship
+  + non-linear relationship
+- strength of a relationship between numeric variables
+  + weak
+  + moderate
+  + strong
+- scatterplot
+- trendline
+- correlation
+- correlation does not mean causation
+
 
