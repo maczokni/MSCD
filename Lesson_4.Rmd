@@ -11,7 +11,18 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
 #Learning outcomes
+
+We as researchers all start off with a general area that we're interested in. As someone studying Criminology, you are likely to be interested in Criminology-related topics. You might want to learn about policing, or criminal justice practices, or you might be interested in something like [situational crime prevention](). These are very broad interests that you may have, and within these there are many many sub-topics, and potentially research questions that you might want to explore. During the research process, the researcher becomes an expert in his or her field and the methods and techniques to be used for research. The researcher goes through several stages and must deal with the concept of variable and the assumption of its measurement. 
+
+
+So far in this course we have always started with our variables. We obtain a data set which has variables that measure the things that we are interested in. The police.uk data has crime records, that we can use to explore difference in volume of different crim types, or difference in number of crimes betweeen neighbourhoods, or potentially look at home crime rates change over time, with seasons for example. Or with the arrestee survey we saw variables that related to people's experiences with their arrests, and in the business victimisation survey with businesse's experiences of victimisation, and their perceptions of safety, as well as the precautions they take, measured in terms of their spending on IT security for example. 
+
+
+In all these cases, we were presented with a set of variables, but without having much say in how the variables are defined in terms of representing the concepts that we want to be able to talk about when making sense of our data. A variable is a structure of characteristics, qualities, or quantities that in some form provide information about a specific descriptive phenomenon. Information that is provided by variables that are under study is fundamental for the researcher and data analyst. However, this information and its quality will depend on how variables are quantified and on the quality of its measurements. In all these cases we started with the data, but actually, most of the time, you are much more likely to start with the research questions you're answersing. As a researcher you are interested to learn more about your chosen topic. Whether that's drugs, probation, stop and search practices of the police, online cryptomarkets, fear of crime, transport crime, police use of twitter, hate crimes, whatever it is, you want to focus on exploring your topic. You can explore these topics throgh data, if you can collect data, or data is already available for you to analyse. But how do you go from research topics and ideas and questions to actual variables? Well this is what we will learn today. 
+
+##Terms for today:
 
 - Conceptualisation
 - Operationalisation
@@ -20,36 +31,419 @@ knitr::opts_chunk$set(echo = TRUE)
 - Summated scales
 - Recoding
 - Latent/ observed variables
-- Reliability
-- Validity
 - Sampling
+
+
+
+#Conceptualisation
+
+
+**Conceptualisation** is the first step in the process of turning your research questions and topics of interest into variables that you can measure and collect data, in order to be able to answer your questions. **Conceptualisation** is the process by which you define the things you're interested in, and define them as **concepts**. This means you have to decide what you will and what you won't include as relevant to your topic, or to your concept. Let's illustrate with an example. Let's assume that you are interested in studying hate crime. In particular you are interested in hate speech over social media. Let's say you pick twitter as your case study. Now you have to **conceptualise** what it is that you mean by hate speech. This is important so that both you, and anyone reading your study later is clear about what should be included in your study, and what should be excluded. You can imagine that this is a very important step, since what is included/ excluded. 
+
+
+
+Define hate crime
+
+
+
+OK now let's test your conceptualisation. Relying strictly on the way that you conceptualised hate crime, for each of the following tweets, record whether it would be included in your study as exhibiting hate speech or not: 
+
+
+
+
+How did you do? Did you include everything according to your criteria that you would have liked to include, based on your human understanding of what hate speech means? 
+
+
+To be fair I started you off with a tough one. Hate crime in general is very complex, and therefore tough to conceptualise and define. There is no criminological consensus on the definition or even the validity of the concept of hate crime. There is legislation in this country to account for hate crime, and generally they reflect the core belief that hate crime policy should support a basic human right to be free from crime fuelled by hostility because of an individual’s personal characteristics, but even in legislation this is quite hard to pin down.
+
+
+But conceptualising what you mean (and therefore also what you don't mean) by hate crime a is very important step in your research, as it can influence what data you collect, and therefore the outcomes of your study, and the findings you'll be able to report. For the purposes of a research study, it can influence who your results are relevant for. Remember when we spoke about generalisability and validity in the first week's feedback session? I'll return to these later, but it's important to consider that the way that you conceptualise your concepts will determine how much you can generalise from your results, or how valid your measurements are. Conceptualisation is therefore a very important step, that affects the measurement we will discuss in the next section. 
+
+
+You will have seen this in your preparatory reading, in Chapter 5 ("Research Design") of the book 'The Practice of Social Research' by Earl Babbie, but I will quickly re-iterate here: based on your conceptualisation of your variable, it will fall into one of three categories: 
+
+
+- *Directly observable*: something that you can observe through measuring or counting or physical observation. Examples include physical characteristics of a person. 
+- *Indirectly observable*: somethin that you can measure with a single question. Examples include the person's salary, or their ethnicity - you can just ask one question and this will be enough to identify the value for that variable for the person responding. 
+- *Constructs* : a more abstract concept, something that isn't necessarily "out there" to be measured using simple measurement tools. Constructs are often representative of complex social processes, and require more intricate measurement approaches. Examples include fear of crime, and trust in the police. 
+
+
+So our concept of hate speech, which one of these objectives does it fall under? Can you mearuse it directly or indirectly with a simple question? Or is it a more complex concept, that perhaps requires the measurement of multiple indicators of hate, in order to build a fully complete picture of what is hate speech? 
+
+
+
+Think about this for a moment. Turn to someone next to you and talk through which one of these you think hate speech would fall under. Discuss why you think this. Then read on, to see if you thought the same. 
+
+
+
+So you've hopefully taken some time to formulate your own thoughts on this topic, and now I can go on to discuss some approaches conceptualising hate speech. First let's consult the legislation: 
+
+
+Not all hate incidents will amount to criminal offences, but those that do become hate crimes. The Association of Chief Police Officers and the CPS have agreed a common definition of hate crime: "Any criminal offence which is perceived by the victim or any other person, to be motivated by hostility or prejudice based on a person's race or perceived race; religion or perceived religion; sexual orientation or perceived sexual orientation; disability or perceived disability and any crime motivated by hostility or prejudice against a person who is transgender or perceived to be transgender."
+
+
+This definition is quite an important one, because it has an effect on sentencing, when it comes to criminal offences. If evidence can be presented that the offence was motivated by hate, or for any other strand of hate crime, the CPS can request enhanced sentencing. So this seems a pretty important definition. But how can we translate this into a concept of hate speech? How do we make sure that our concept encapsulates all the possible versions of hate speech that we are interested to study?
+
+
+One approach could be to conceptualise hate speech as an **indirectly observable** variable. You, could, as was done in this paper looking at [Cyber Hate Speech on Twitter](http://onlinelibrary.wiley.com/doi/10.1002/poi3.85/full) consider hate speech to be the extent to which people consider a tweet offensive or antagonistic. In this case (we are jumping slightly ahead into measurement, but it all link in any way), this would be measured with a single-item question where you just present people with a tweet, and ask “is this text offensive or antagonistic in terms of race ethnicity or religion?”, providing people with a set of possible answers of yes, no, or undecided. (You might notice that this study did *not* include all protected characteristics, mentioned in the CPS definition, instead they focus on race ethnicity and religion only). In this particular study, they presented the same tweets to many many people, and so possibly the single-item measure could have worked as an indicator of hate, since multiple people rating the same tweet would eventually cancel out people who have a very high or very low threshold for classifying something as offensive or antagonistic. In this case, hate speech is conceptualised as people considering a tweet as antagonistic or offensive in terms of race ethnicity or religion.
+
+
+
+However if you were surveying individuals only about each tweet, and were interested in what certain people class as hate speech or not hate speech, you might want to consider a more complex assessment. You might conceptualise something being hate speech as something that evokes a variety of emotions from people and you might want to ask about all these measures in separate questions, to make sure that you are really tapping into what hate crime means to people. In this case, you would be conceptualising hate speech as a **construct**. If you recall from the reading (or above) *constructs are theoretical creations tat are based on observations, but that cannot be observed directly or indirectly. Concepts such as compassion and prejudice are construcs created from your conception of them, my conception of them, and the conceptions of all those who have ever used these terms, Tey cannot be observed directly or indirectly, because they don't exist. We made them up.* Constructs are usually complex and not easily measured with a single item. Instead we tend to approach them my measuring their many indicators, and assembling the responses to those to create a measure that is more reliable and less prone to random measurement errors than single-item measures, since a single item often cannot discriminate between fine degrees of an attribute. So if you have conceptualised hate crime as something more abstract and complex, and therefore a construct, that would mean you would have to measure in a different way, than the example given from the paper above. In the next section we'll explore exactly how conceptuaisation affects measurement. 
+
+
+
 
 
 
 #Measurement
 
-Remember this from week 1?
+
 
 > In science, we use measurement to make accurate observations. All measurement must begin with a classification process—a process that in science is carried out according to systematic criteria. This process implies that we can place units of scientific study in clearly defined categories. The end result of classification is the development of variables.
 
 - *Chapter 2 Statistics in Criminal Justice - David Weisburd, Chester Britt*
 
 
-Data that arises from measurement are referred to as **empirical** data. 
 
+The point of conceptualising your topics into concepts is to be able to come up with the optimal approach to measuring them, in order to be able to draw conclusions, and talk about criminological concepts with the support of empirical data. Data that arises from measurement are referred to as **empirical** data. So what can be empirical data? Well it's anything that criminologists, data analysts, or anyone interested in and carrying our research will measure, in order to be able to answer their reseach questions, and be able to talk about their topics of study. 
 
 
 > Empirical data arise from our observations of the world. (...) Among the many prevailing views of the role of empirical data in modern science, there are two opposing extremes. On the one hand, the realist assumes data are manifestations of latent phenomena. In this view, data are pointers to universal, underlying truths. On the other hand, the nominalist assumes data are what they describe. From this latter point of view, as the philosopher Ludwig Feuerbach noted, “you are what you eat.” We use the historical realist-nominalist terminology to emphasize that these differing perspectives, in one form or another, have origins in Medieval theological controversies and their classical antecedents in Greek philosophy. Many working scientists adopt some form of a realist position, particularly those in the natural sciences. Even social scientists, despite the myriad particulars of their field, have often endorsed a similar position. 
 
 - Leland Wilkinson (2005) *The Grammar of Graphics*
 
+
+Depending on how you've conceptualised your topics you're interested in will affect how you can measure them. To measure is a process that involves observing and registering information to reflect qualities or quantities of a particular concept of interest. 
+
+
+Think back to some of the studies you might be leraning about in your other courses. What sort of questions do they answer? How do they decide how to measure the concepts that they are interested in? It's worth going though some papers you might be interested in, in order to see how they all go about these steps. You will normally find this sort of detail in the *methodology* section of a paper. 
+
+
+For example, in this paper by Tom R. Tyler about [ethnic group differences in trust and confidence in the police](http://journals.sagepub.com/doi/abs/10.1177/1098611104271105) if you find the *method* section, you will see a brief discussion of the sample, followed by a list of the concepts of interest (which will be the variables in the analysis, if you skip ahead to results, you will see this), and a description of how they were measured. For example therse are a few listed: 
+
+
+- *Cooperation with the police*: People responded to three questions, which asked “How likely would you be to call the police to report a crime that was occurring in your neighborhood?” “How likely would you be to help the police to find someone suspected of committing a crime by providing them with information?” “How likely would you be to report dangerous or suspicious activities in your neighborhood to the police?”
+- *Cooperation with the community*: People responded to three questions, which asked the following: “How likely would you be to volunteer your time on nights or weekends to help the police in your community?” “How likely would you be to volunteer your time on nights or weekends to patrol the streets as part of a neighborhood watch program?” “How likely would you be to volunteer your time on nights or weekends to attend a community meeting to discuss crime in your community?”
+
+
+
+So how do we get to this step of measurement, from the conceptualisation step? 
+
+Remember the points from above, and from the reading about how concepts can be directly observable, indirectly observable, or constructs? Well depending on what these are, will affec their operationalisation, or how we can go about measuring them.
+
+
+
+Exact sciences work with directly observable variables, such as people's height, body temperature, heart rate, and so on. These are easy to measure through direct observation. There are instances when varaibles of interest in social sciences as well would fall into the category of directly observable. Directly observable variables are those which you can Can you think of any? 
+
+
+
+![](https://media.giphy.com/media/e5nFlFChqFC0M/giphy.gif)
+
+
+
+One example of directly observable variables would be the number of people on the street, at any given time. This would be an important variable to know if we are trying to accurately estimate crime risk. Crime risk is calculated by dividing the number of crimes in an area by a relevant measure of the population at risk. For example, you will often hear about crimes per 100,000 population. This would be important to calculate because sometimes a location can seem like it has very high crime counts, but perhaps that's because there are a lot more people there. Remember when we compared the number of crimes per borough in Greater Manchester, and actually found that Manchester had significantly more than anywhere else? Well Manchester has also a lot more people going through it. So if we are trying to estimate *risk* it's a different question. So if there are two streets, both had 100 robberies on them last year, but one street is oxford road, and the other is a quiet side street with much fewer people passing by, then even thought the count is the same, the risk to each individual is very different. So to be able to calculate this, we would need to count the number of people who walk down each street, to find an accurate measure of the total possible people who *could* become victims, and be able to use this number to calculate risk. This is a **directly observable** variable, and so the approach to measuring it can be something like counting the number of people who walk down the street. 
+
+
+
+The next category is the **indirectly observable** variable. They are "terms whose application calls for relatively more subtle, complex, or indirect observations, in which inferences play an acknowledged part. Such inferences concern presumed connections, usually causal, between what is directly observed and what the term signifies" [Kaplan, A. (1964). The conduct of inquiry: Methodology for behavioral science. San Francisco, CA: Chandler Publishing Company, p. 55.](https://books.google.co.uk/books?id=wxwuDwAAQBAJ&pg=PT89&lpg=PT89&dq=%22terms+whose+application+calls+for+relatively+more+subtle,+complex,+or+indirect+observations,+in+which+inferences+play+an+acknowledged+part.+Such+inferences+concern+presumed+connections,+usually+causal,+between+what+is+directly+observed+and+what+the+term+signifies%22&source=bl&ots=0_ySczx0oG&sig=WVdwNE7mUzF_d8dfBk2R_Tq4clw&hl=en&sa=X&ved=0ahUKEwihna-v5OrWAhXMYVAKHXvEBpIQ6AEIJjAA#v=onepage&q=%22terms%20whose%20application%20calls%20for%20relatively%20more%20subtle%2C%20complex%2C%20or%20indirect%20observations%2C%20in%20which%20inferences%20play%20an%20acknowledged%20part.%20Such%20inferences%20concern%20presumed%20connections%2C%20usually%20causal%2C%20between%20what%20is%20directly%20observed%20and%20what%20the%20term%20signifies%22&f=false). If we conducted a study for which we wished to know a person’s income, we’d probably have to ask them their income, perhaps in an interview or a survey. Thus we have observed income, even if it has only been observed indirectly. Birthplace might be another indirect observable. We can ask study participants where they were born, but chances are good we won’t have directly observed any of those people being born in the locations they report. The way that you would measure these concepts is usually thourgh single-item questionnaires. What does this mean? Single-item just means that you ask one single question , and the answer given to that one question is sufficient to 
+
+
+
+The next category is where it gets a bit more complicated, but this is where the beauty of social science measurement really comes to life. Because we are interested in complex behaviours, interactions, relationships, and perceptions and opinions, our concepts in social sciences are often too abstract to be approaches through direct or indirect observation. Consider the example from the paper on ethnicity and trust in the police linked above. You can see that each one of those concepts is measured by people's answers to multiple questions, which all come together to indocate the concept. These sort of complex concepts, that require such measurements are our last category, the **constructs**. Constructs such as *cooperation with the police* or *cooperation with the community* are more abstract than either observational terms or indirect observables, but we can detect them based on the observation of some collection of observables. Let's explore how this works. 
+
+
+
+
+
+##Measuring constructs with latent variables 
+
+
+
+**Constructs** are. As researchers we try to measure our constructs as best as we can.  Often we can see and measure indicators of the constructs, but we can not directly observe or measure the constructs themselves. Inseat we infer these constructs,  which are unobserved, hidden, or *latent*, from the data we collect on *related variables* which we *can* observe and directly measure.
+
+
+Latent refers to the fact that even though these variables were not measured directly in the research design, finding out about them is the ultimate goal of the project.
+
+
+In statistics, **latent variables** (as opposed to observable variables), are variables that are not directly observed but are rather inferred from the measurement of other variables. Latent variables can correspond to constructs, like *confidence in the police*, or the *fear of crime*, or they can represent aspects of physical reality that potentially *could* be measures, but it may not be practical to do so. 
+
+
+
+Sometimes latent variables correspond to aspects of physical reality, which could in principle be measured, but may not be for practical reasons. In this situation, the term hidden variables is commonly used (reflecting the fact that the variables are "really there", but hidden). Other times, latent variables correspond to abstract concepts, like categories, behavioral or mental states, or data structures. The terms hypothetical variables or hypothetical constructs may be used in these situations.
+
+One advantage of using latent variables is that they can serve to reduce the dimensionality of data. A large number of observable variables can be aggregated in a model to represent an underlying concept, making it easier to understand the data. In this sense, they serve a function similar to that of scientific theories. At the same time, latent variables link observable ("sub-symbolic") data in the real world to symbolic data in the modeled world.
+
+
+
+Characteristics of a latent variable: 
+
+- abstract concept
+- cannot be measured directly 
+- examples: attitudes, satisfaction
+
+
+So if we can't measure these concepts, how can we collect data about them? Well, it is possible to measure **indicators** of the **latent variable**. 
+
+- use observed responses to questionnaire items
+
+
+
+
+Constructs/ latent variables are normally measured using a multi-item scale. 
+
+
+##Multi-item scales
+
+This post discusses how to calculate scale scores for multi-item scales. A lot of psychological research uses multi-item scales (e.g., personality tests, symptoms check lists, surveys, etc.). This post focuses on the issues involved with computing these scale scores.
+
+
+One primary technique for measuring concepts important for theory development is the use of multi-item scales. In many cases, single-item questions pertaining to a construct are not reliable and should not be used in drawing conclusions. There have been examination of the performance of single-item questions versus multi-item scaled in terms of reliability, and [By comparing the reliability of a summated, multi-item scale versus a single-item question, the authors show how unreliable a single item is; and therefore it is not appropriate to make inferences based upon the analysis of single-item questions which are used in measuring a construct](https://scholarworks.iupui.edu/handle/1805/344). 
+
+
+
+
+Oftentimes information gathered in the social sciences, marketing, medicine, and
+business, relative to attitudes, emotions, opinions, personalities, and description’s of people’s
+environment involves the use of Likert-type scales.  As individuals attempt to quantify constructs
+which are not directly measurable they oftentimes use multiple-item scales and summated ratings
+to quantify the construct(s) of interest.  The Likert scale’s invention is attributed to Rensis Likert
+(1931), who described this technique for the assessment of attitudes.
+McIver and Carmines (1981) describe the Likert scale as follows:
+A set of items, composed of approximately an equal number of favorable and unfavorable
+statements concerning the attitude object, is given to a group of subjects.  They are asked
+to respond to each statement in terms of their own degree of agreement or disagreement.
+Typically, they are instructed to select one of five responses: strongly agree, agree,
+undecided, disagree, or strongly disagree.  The specific responses to the items are
+combined so that individuals with the most favorable attitudes will have the highest
+scores while individuals with the least favorable (or unfavorable) attitudes will have the
+lowest scores.  While not all summated scales are created according to Likert’s specific
+procedures, all such scales share the basic logic associated with Likert scaling.  (pp. 22-
+23)
+Spector (1992) identified four characteristics that make a scale a summated rating scale
+as follows:
+First, a scale must contain multiple items. The use of 
+summated 
+in the name implies that
+multiple items will be combined or summed.  Second, each individual item must measure
+something that has an underlying, quantitative measurement continuum.  In other words,
+it measures a property of something that can vary quantitatively rather than qualitatively
+
+An attitude, for example, can vary from being very favorable to being very unfavorable.
+Third, each item has no “right” answer, which makes the summated rating scale different
+from a multiple-choice test.  Thus summated rating scales cannot be used to test for
+knowledge or ability.  Finally, each item in a scale is a statement, and respondents are
+asked to give rating about each statement.  This involves asking subjects to indicate
+which of several response choices best reflects their response to the item.  (pp. 1-2)
+Nunnally and Bernstein (1994), McIver and Carmines (1981), and Spector (1992) discuss
+the reasons for using multi-item measures instead of a single item for measuring psychological
+attributes.  They identify the following: First, individual items have considerable random
+measurement error, i.e. are unreliable.  Nunnally and Bernstein (1994) state, “Measurement error
+averages out when individual scores are summed to obtain a total score” (p. 67).  Second, an
+individual item can only categorize people into a relatively small number of groups.  An
+individual item cannot discriminate among fine degrees of an attribute.  For example, with a
+dichotomously scored item one can only distinguish between two levels of the attribute, i.e. they
+lack precision.  Third, individual items lack scope.  McIver and Carmines (1981) say, “It is very
+unlikely that a single item can fully represent a complex theoretical concept or any specific
+attribute for that matter” (p. 15).  They go on to say,
+The most fundamental problem with single item measures is not merely that they tend to
+be less valid, less accurate, and less reliable than their multiitem equivalents.  It is rather,
+that the social scientist rarely has sufficient information to estimate their measurement
+properties.  Thus their degree of validity, accuracy, and reliability is often unknowable.
+(p. 15).
+Blalock (1970) has observed, “With a single measure of each variable, one can remain blissfully
+unaware of the possibility of measurement [error], but in no sense will this make his inferences
+more valid” (p. 111).
+Given this brief background on the benefits of Likert-type scales with their associated
+multi-item scales and summated rating scores, many individuals consistently invalidate research
+findings due to improper data analysis.  This paper will show how data analysis errors can
+adversely affect the inferences one wishes to make.
+
+
+
+
+Advantages of Multi-item Scales
+
+Latent variables  are usually complex and not easily measured with a single item
+
+Usually more reliable and less prone to random measurement errors than single-item measures
+
+A single item often cannot discriminate between fine degrees of an attribute
+
+
+
+
+Creating multi-item scales is associated with test results for validity and reliability with respect to each scale are disclosed. 
+
+
+One important reason for constructing multi-item scales, as opposed to single-item
+measurements, is that the nature of the multiple items permits us to validate the
+consistency of the scales. For example, if all the items that belong to one multi-item
+scale are expected to be correlated and behave in a similar manner to each other,
+rogue items that do not reflect the investigator’s intended construct can be detected.
+With single items, validation possibilities are far more restricted.
+
+Multi-item scales open up a whole new range of techniques for construct validity
+beyond those described in Chapter 4. For the main part, we shall be making use of
+correlations: correlations between items in the same scale, correlations between an
+item and items in other scales, correlations between a scale score and its constituent
+items, and correlations between items and external scales or other external variables.
+
+
+[detail on validation here](http://onlinelibrary.wiley.com.manchester.idm.oclc.org/doi/10.1002/9780470024522.ch5/pdf)
+
+
+
+
+> Under most conditions typically encountered in practical applications, multi-item scales clearly outperform single items in terms of predictive validity. Only under very specific conditions do single items perform equally well as multi-item scales. Therefore, the use of single-item measures in empirical research should be approached with caution, and the use of such measures should be limited to special circumstances.
+
+- [Guidelines for choosing between multi-item and single-item scales for construct measurement: a predictive validity perspective](https://link.springer.com/article/10.1007/s11747-011-0300-3)
+
+
+
+
+#Creating a composite score
+
+
+#Cronbach's alpha
+
+The Cronbach's alpha speaks to the consistency of the response in the survey, i.e. a measurement of consistency of a particular tagged question. For example, a survey may contain 50 questions and a researcher wants to test the consistency of question #10 and the sample size is 200 surveys returned. Here n = 200 and the answer score for question #10 is tabulated for Cronbach's alpha testing. The tests uses a scale between 0 - 1.00, hence a ratio test. Assume that the answer in #10 among 200 samples scores high (say 0.80) on the Cronbach's alpha test, what does it mean? It means that the answer in #10 is 0.80 consistent in a 1.00 scale. Does it tell anything more? No, it does not. In order to find a relationship, for instance, at least two variables are required. Nevertheless, practitioners mistake it for a test of reliability.
+As for the issue of reliability, Cronbach's alpha does not help. In fact, it has nothing to do with reliability. Take for example, a researcher uses a Likert scale, i.e. 1 = lowest , ..., 5 = highest. How can the issue of reliability be addressed? We must not ask "whether the SURVEY is reliable?' we must ask "whether the INDIVIDUAL QUESTION is reliable?" In this case, if a conventional 95% confidence interval is used, a Likert scale of 1 - 5 fails because it can achieve only 80%, i.e. expected error distribution is 0.20: E = ([n - n(1 - df(a)]/n), where n = number of answer choice in the question and df = n -1, and a = 0.05 or precision level. reliability must come from instrument calibration.
+
+Cronbach's alpha is used frequently as a measure in constructing a summary scale for Likert type questions or opinons (strongly agree - strongly disagree). The Cronbach's alpha gives a measure of the internal consistency or reliabilty of a scale, but one needs to do more than simply test reliability of a series of questions. I have seen researchers report high Cronbach alphas for scales with 16 or more question items. As one increases the numbers of items in a scale, it is more likely that the alpha will be high, but score may be meaningless because it does not represent an underlying construct or worse - it represents muliple underlying constructs. Prior to doing scale construction, make sure you check the individual data items to see if normally distributed. I often run principal components analysis on a series of questions that are supposed to represent a theme to see if indeed they do - or if there are multiple constructs. Then I follow up with reliability analysis of the pertinent items to develop the most parsimonious scales. The Cronbach alpha assessment should be one of the last steps in developing a scale from a series of opinion or Likert scales, but not the first.
+Note that different samples will exhibit varying responses. A validated scale with a high alpha in one sample may not work the same in a different application. Important to always check reliability in your sample if using a validated instrument as well. Hope this helps...
+
+very true, I always report the results of anther two internal consistency reliability indicators, namely inter-item correlation and item-to-total correlation in order to measures how well a set of items measures a single unidirectional latent construct.
+
+Cronbach's Alpha measures only the reliability of scale of measurement of responses of the cases, in a Likert Scale. But it hardly measures the reliability of the respondents' opinion leading to the latent construct. In that case, useful measurements are factor loadings, average variance extracted and construct reliability. Factor loadings are standardised regression weights, where from you can calculate item reliability to arrive at average variance extracted (should be at least greater than .05) by summing the squares of the factor loadings and also can calculate construct reliability with the help of item reliability. This gives you the convergence validity, i.e., whatever opinions the respondents give that converge to form the latent construct. This can be confirmed not through Exploratory Factor Analysis but through Confirmatory Factor Analysis.
+
+
+Usually, for the sake of the integrity of the research, it is recommended to run a series of tests including principle components analysis, factor analysis, Cronbach's alpha, and other indicators. Having an integrated set of tests adds more to the value of the research in question.
+
+
+Reliability is defined as "the degree to which measures are free from error and therefore yield consistent results"(Peter 1979, p. 6).
+Reliability may be calculated in a number of ways, the most commonly accepted measure is internal consistency reliability using Cronbach's Alpha. Price & Mueller, 1986, (Hinkin (1995).
+Coefficient Alpha was developed by Lee Cronbach in 1951 to provide a measure of the internal consistency of a test or scale; it is expressed as a number between 0 and 1. Tavakol, M., & Dennick, R. (2011, p .51).
+Coefficient alpha is the most widely used indicator of reliability. Peterson, (1994).
+Coefficient alpha is the only reliability index that can be performed with one test administration, thus requiring much less effort than either the split-half, alternative form, or retest methods (Ferketich, 1990, DeVon, H. A., et al.2007).
+Nunnally (1978) suggested that an alpha of 0.70 be the minimum acceptable standard for demonstrating internal consistency.
+The reliability of the measure should be assessed after unidimensionality has been established (Gerbing & Anderson, 1988, p.190).
+Improper use of alpha can lead to situations in which either a test or scale is wrongly discarded or the test is criticized for not generating trustworthy results.
+To avoid this situation an understanding of the associated concepts of internal consistency, homogeneity or unidimensionality can help to improve the use of alpha.Tavakol, M., & Dennick, R. (2011).
+Internal consistency is concerned with the interrelatedness of a sample of test items, whereas homogeneity refers to unidimensionality. Tavakol, M., & Dennick, R. (2011).
+Unidimensionality refers to the existence of a single trait or construct underlying a set of measures. Gerbing, D. W., & Anderson, J. C. (1988, p 186).
+Confirmatory factor analysis affords a stricter interpretation of unidimensionality than can be provided by more traditional methods such as coefficient alpha, item-total correlations, and exploratory factor analysis. Gerbing, D. W., & Anderson, J. C. (1988, p 186).
+Sharma, D. (2016). Understanding Coefficient Alpha: Assumptions and Interpretations (No. WP2016-03-38). Indian Institute of Management Ahmedabad, Research and Publication Department.
+
+
+
+
+
+
+
+
+
+#A note on Validity and Reliability
+
+All measurements, from blood pressures to QoL assessments, should satisfy basic
+properties if they are to be clinically useful. These are primarily validity, reliability,
+repeatability, sensitivity and responsiveness.
+Validation
+of instruments is the process of determining whether there are grounds
+for believing that the instrument measures what it is intended to measure, and that it is
+useful for its intended purpose. For example, to what extent is it reasonable to claim
+that a ‘quality-of-life questionnaire’ really is assessing QoL? Since we are attempting
+to measure an ill-defined and unobservable latent variable (QoL), we can only infer
+that the instrument is valid in so far as it correlates with other observable behaviour.
+This validation process consists of a number of stages, in which it is hoped to collect
+convincing evidence that the instrument taps into the intended constructs and that it
+produces useful measurements reflecting patients’ QoL. Validity can be subdivided
+into three main aspects.
+Content validity
+concerns the extent to which the items are sensible and reflect
+the intended domain of interest.
+Criterion validity
+considers whether the scale has
+empirical association with external criteria, such as other established instruments.
+Construct validity
+examines the theoretical relationship of the items to each other and
+to the hypothesised scales. Of these three types of validity, construct validity is the
+most amenable to exploration by numerical analysis. Two aspects of construct validity
+are
+convergent validity
+and
+discriminant validity
+. Some items or scales, such as
+anxiety and depression, may be expected to be highly correlated, or convergent. Others
+may be expected to be relatively unrelated, or divergent, and possessing discriminant
+validity. If a group of patients with a wide range of diagnoses and treatments is
+included, a very high scale-to-scale correlation could imply low discriminant validity
+and might suggest that the two scales measure similar things. On the other hand,
+if scale-to-scale correlations do not correspond roughly to what is expected, the
+postulated relationships between the constructs are questionable.
+Reliability
+and
+repeatability
+concern the random variability associated with
+measurements. Ideally, patients whose QoL status has not changed should make very
+similar, or repeatable, responses each time they are assessed. If there is considerable
+random variability, the measurements are unreliable. It would be difficult to know
+how to interpret the results from individual patients if the measurements are not
+reliable. Poor reliability can sometimes be a warning that validity might be suspect,
+and that the measurement is detecting something different from what we intend it to
+measure.
+Sensitivity
+is the ability of measurements to detect differences between patients
+or groups of patients. If we can demonstrate that a measurement is sensitive and
+detects differences believed to exist between groups of patients, such as differences
+between poor and good prognosis patients, we will be more confident that it is valid
+and measuring what we believe it to be measuring. Sensitivity is also important in
+clinical trials since a measurement is of little use if it cannot detect the differences
+in QoL that may exist between the randomised groups.
+Responsiveness
+is similar to sensitivity, but relates to the ability to detect changes
+when a patient improves or deteriorates. A measurement has limited use for patient
+monitoring unless it reflects changes in the patient’s condition. A sensitive measure-
+ment is usually, but not necessarily, also responsive to changes.
+Validity, reliability, sensitivity and responsiveness are interrelated, yet each is
+independently important. Assessing validity, in particular, is a complex and never-
+ending task. In QoL research, scales can never be proved to be valid. Instead, the
+process of validation consists of accruing more and more evidence that the scales are
+sensible and that they behave in the manner that is anticipated.
+
+[read more here](http://onlinelibrary.wiley.com.manchester.idm.oclc.org/doi/10.1002/9780470024522.ch4/pdf)
+
+
+
+
+The below image might help you conceptualise reliability and validity. Reliability refers to getting consistent results each time you measure your concept. Validity refers to the extent to which your measurement of the concept actually reflects the concept itself. So you can have a reliable but not valid measure, or a valid but not reliable measure. Imagine it like this: 
+
+
+![](http://4.bp.blogspot.com/-Px8qzh8Umy0/UHxrSqVczCI/AAAAAAAABLE/oRAbLSGTQUM/s1600/bullseye.jpg)
+
+
+
+
+
+
+
 #Recoding
 
-> Transforms are transformations on variables. One purpose of transforms is to
-make statistical operations on variables appropriate and meaningful. Another
-is to create new variables, aggregates, or other types of summaries. 
+> Transforms are transformations on variables. One purpose of transforms is tonmake statistical operations on variables appropriate and meaningful. Another is to create new variables, aggregates, or other types of summaries. 
 
 - Leland Wilkinson (2005) *The Grammar of Graphics*
 
 
+#Sampling
 
+
+#Terms
+
+- conceptualisation
+- measurement 
+- empirical data
+
+
+
+#Sources
+-[](http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0080-62342014000100146)
