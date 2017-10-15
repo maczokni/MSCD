@@ -30,14 +30,14 @@ This disinction might seem intuitive, but whether we're talking about our popula
 
 ##Terms for today:
 
+- Sample and population
 - Conceptualisation
 - Operationalisation
 - Measurement
+- Constructs and composite variables
 - Multi-item scales
-- Summated scales
+- Reliability and validity (round 2)
 - Recoding
-- composite variables
-- Sampling
 
 
 
@@ -231,26 +231,58 @@ Now, why are we talking about this again? Well this will all come in handy when 
 #Conceptualisation
 
 
-We will start this week with introducong the term **conceptualisation**, which seems appropriate, as you would start most of your research with this step of the data anaysis process. **Conceptualisation** is the first step in the process of turning your research questions and topics of interest into variables that you can measure and collect data, in order to be able to answer your questions. **Conceptualisation** is the process by which you define the things you're interested in, and define them as **concepts**. This means you have to decide what you will and what you won't include as relevant to your topic, or to your concept. Let's illustrate with an example. Let's assume that you are interested in studying hate crime. In particular you are interested in hate speech over social media. Let's say you pick twitter as your case study. Now you have to **conceptualise** what it is that you mean by hate speech. This is important so that both you, and anyone reading your study later is clear about what should be included in your study, and what should be excluded. You can imagine that this is a very important step, since what is included/ excluded. 
+We will start this week with introducong the term **conceptualisation**, which seems appropriate, as you would start most of your research with this step of the data anaysis process. **Conceptualisation** is the first step in the process of turning your research questions and topics of interest into variables that you can measure and collect data, in order to be able to answer your questions. **Conceptualisation** is the process by which you define the things you're interested in, and define them as **concepts**. This means you have to decide what you will and what you won't include as relevant to your topic, or to your concept. Let's illustrate with an example. 
 
 
 
-Define hate crime
+Let's say we're interested in studying education. Defining what we mean by education here is the process of conceptualisation of this topic. Let's say we conceptualise education as “Amount of knowledge and training acquired in school." Then we can say that we want to consider all the education that people learned while enrolled in the K-12 system, but that means that we would not include in this definition non-traditional approaches to education, such as home schooling, or people who return to school later, or take classes from prison, for example. You can start to get a sense of what impact conceltualisation can have on your findings, no?
+
+
+Let's take another example, let's consider that we want to study "social status”. How we conceptualise socual status will have implications for what it is that we might consider in the scope of our study, and what we would not. For example, if we consider social status to be made up of the *dimensions* of wealth, prestige, and power, then we want to somehow collect data about these particular elements of social status. But we might ignore other elements of the concept, which others might deem relevant, such as social capital (the networks of relationships among people who live and work in a particular society, enabling that society to function effectively). Now this is important, because if someone else wants to also study social status, and has a look at our study, they should be clear on what was and what was not included, and so they can make their own decisions about our study and approach, but at least we are transparent about this, and can use this to make sure that we can justify our results.
 
 
 
-OK now let's test your conceptualisation. Relying strictly on the way that you conceptualised hate crime, for each of the following tweets, record whether it would be included in your study as exhibiting hate speech or not: 
+To really demonstrate this, it's a good idea for you to have a go at conceptualising something yourself. Let's assume that you are interested in studying hate crime. In particular you are interested in hate speech over social media. Let's say you pick twitter as your case study. Now you have to **conceptualise** what it is that you mean by hate speech. This is important so that both you, and anyone reading your study later is clear about what should be included in your study, and what should be excluded. You can imagine that this is a very important step, since what is included/ excluded. 
 
 
 
-
-How did you do? Did you include everything according to your criteria that you would have liked to include, based on your human understanding of what hate speech means? 
-
-
-To be fair I started you off with a tough one. Hate crime in general is very complex, and therefore tough to conceptualise and define. There is no criminological consensus on the definition or even the validity of the concept of hate crime. There is legislation in this country to account for hate crime, and generally they reflect the core belief that hate crime policy should support a basic human right to be free from crime fuelled by hostility because of an individual’s personal characteristics, but even in legislation this is quite hard to pin down.
+So imagine you are about to embark on a study of *hate speech*. You have some twitter data, which includes 100,000 tweets, and you want to be able to select which one of these tweets includes hate speech, and which one does not. For you to be able to carry out this research, and be transparent about it as well, ensuring reproducability of your work, you need to conceptualise hate speech in a clear, detailed, and specific way. So take a moment now, and working with someone near you, conceptualise hate speech. Write down the your conceptualisation of hate speech - how you definte hate speech for the purposes of your study. When you have your concept ready, talk it over, and make sure that this is a comprehensive definition that you are all happy with. 
 
 
-But conceptualising what you mean (and therefore also what you don't mean) by hate crime a is very important step in your research, as it can influence what data you collect, and therefore the outcomes of your study, and the findings you'll be able to report. For the purposes of a research study, it can influence who your results are relevant for. Remember when we spoke about generalisability and validity in the first week's feedback session? I'll return to these later, but it's important to consider that the way that you conceptualise your concepts will determine how much you can generalise from your results, or how valid your measurements are. Conceptualisation is therefore a very important step, that affects the measurement we will discuss in the next section. 
+
+It's important that you play along and do this step. I'll wait here while you discuss. 
+
+
+
+![](https://media.giphy.com/media/3o6ZsUdQYvPAyT1hxm/giphy.gif)
+
+
+
+OK, ready? Great, now let's test your conceptualisation of hate speech. *Relying strictly on the way that you conceptualised hate crime in the steps above*, for each of the following tweets, record whether it would be included in your study as exhibiting hate speech or not: 
+
+
+![](http://www.pressgazette.co.uk/wp-content/uploads/2017/05/Katie-Hopkins-Western-Men-TWEET.jpg)
+
+
+
+What about this one?
+
+![](https://ichef.bbci.co.uk/news/624/media/images/80000000/jpg/_80000045_sweaty.jpg)
+
+
+And finally this third one?
+
+
+![](http://www.pressgazette.co.uk/wp-content/uploads/2017/05/hoops.jpg)
+
+
+All three tweets were considered hateful and as exhibiting hate speech by many people (see [here for the first and last one](http://www.pressgazette.co.uk/katie-hopkins-leaving-lbc-radio-effective-immediately-station-announces/), and [here about the second one](http://www.bbc.co.uk/news/uk-scotland-glasgow-west-30641705). By reading them, with our human sentiment, we can appreciate that all three tweets are hateful. But how did they do against the way that you conceptualised hate speech? Would they all be included in your study?  Did you include everything according to your criteria that you would have liked to include, based on your human understanding of what hate speech means? 
+
+
+If you did, that is very impressive. If you did not, don't despair,  I started you off with a tough one. Hate crime in general is very complex, and therefore tough to conceptualise and define. There is no criminological consensus on the definition or even the validity of the concept of hate crime. There is legislation in this country to account for hate crime, and generally they reflect the core belief that hate crime policy should support a basic human right to be free from crime fuelled by hostility because of an individual’s personal characteristics, but even in legislation this is quite hard to pin down.
+
+
+But conceptualising what you mean (and therefore also what you don't mean) by hate crime a is very important step in your research, as it can influence what data you collect, and therefore the outcomes of your study, and the findings you'll be able to report. For the purposes of a research study, it can influence who your results are relevant for. Remember when we spoke about generalisability and validity in the first week's feedback session? I'll return to these later, but it's important to consider that the way that you conceptualise your concepts will determine how much you can generalise from your results, or how valid your measurements are. For example, did you include hate against all the protected characteristics? Did you consider hate as only threats of violence, or also general antagony as well? Conceptualisation is a very important step, that affects the measurement we will discuss in the next section, but that affects all the next steps in your study. How you decide what to measure has implications for what sorts of conclusions you can draw from your data after analysis. 
 
 
 You will have seen this in your preparatory reading, in Chapter 5 ("Research Design") of the book 'The Practice of Social Research' by Earl Babbie, but I will quickly re-iterate here: based on your conceptualisation of your variable, it will fall into one of three categories: 
@@ -544,7 +576,7 @@ Meaningful grouping is the nonstatistical combination of selected original varia
 
 
 
-<!--
+
 Three common composite measures include:
 
 - **indexes** - measures that summarize and rank specific observations, usually on the ordinal scale
@@ -552,7 +584,11 @@ Three common composite measures include:
 - **typologies** - measures that classify observations in terms of their attributes on multiple variables, usually on a nominal scale
 
 
+Here we will consider scales for creating composite variables from numeric indicators, and indexes for creating composite variables from categorical indicators.
 
+
+
+<!--
 Sometimes latent variables correspond to aspects of physical reality, which could in principle be measured, but may not be for practical reasons. In this situation, the term hidden variables is commonly used (reflecting the fact that the variables are "really there", but hidden). Other times, latent variables correspond to abstract concepts, like categories, behavioral or mental states, or data structures. The terms hypothetical variables or hypothetical constructs may be used in these situations.
 
 One advantage of using latent variables is that they can serve to reduce the dimensionality of data. A large number of observable variables can be aggregated in a model to represent an underlying concept, making it easier to understand the data. In this sense, they serve a function similar to that of scientific theories. At the same time, latent variables link observable ("sub-symbolic") data in the real world to symbolic data in the modeled world.
@@ -744,12 +780,13 @@ But as I was saying, building reliable and valid measurement is tough work. Peop
 
 
 
-But if I've still not convinced you, and you want to go out and collect your own data, by taking the topics that you are interested in and conceptualising and operationalising them your way, and you want to develop your own multi-item scales, and then test their validity and reliability, well then, I guess I should equip you with some basic abilities to know how. You might get asked to create a questionnaire in your next workplace. While creating questionnaires is very tough and nuanced job, and I could write a whole course on only that, replying this to your line manager, when they ask you to build a survey will not win you many brownie points. Instead it's best that you make at least some sort of attempt to ensure that your constructs are being measured by the most valid and reliable measures possible, or at least you can have some indication as to the error produced by your measurement. So to do this, lets discuss something called Cronbach's alpha. 
+But if I've still not convinced you, and you want to go out and collect your own data, by taking the topics that you are interested in and conceptualising and operationalising them your way, and you want to develop your own multi-item scales, and then test their validity and reliability, well then, I guess I should equip you with some basic abilities to know how. You might get asked to create a questionnaire in your next workplace. While creating questionnaires is very tough and nuanced job, and I could write a whole course on only that, replying this to your line manager, when they ask you to build a survey will not win you many brownie points. Instead it's best that you make at least some sort of attempt to ensure that your constructs are being measured by the most valid and reliable measures possible, or at least you can have some indication as to the error produced by your measurement. Later in this lab we will address this through something called Cronbach's alpha. But first, let's calculate a summative score for "feelings of unsafety ". 
 
 
 
 
-#Testing your questions: Cronbach's alpha
+#Calculating a summative score
+
 
 
 So back to our data about collecting people's feelings of unsafety, in their neighbourhoods. We have our three indicator questions: 
@@ -825,14 +862,41 @@ To return this:
 ![](imgs/first_lookup.png)
 
 
-We can quickly verify that this looks right, since the value there in the 'Walkdark' column is "very safe", we know that this should numerically raturn "1". And it does, so we are happy. Now copy the formula down the column, and also repeat for the other two variables as well. You should finally end up with a table like this: 
+We can quickly verify that this looks right, since the value there in the 'Walkdark' column is "very safe", we know that this should numerically return "1". And it does, so we are happy. Now copy the formula down the column, and also repeat for the other two variables as well. You should finally end up with a table like this: 
 
 
 
 ![](imgs/final_lookup.png)
 
 
-Now you can use these values to calculate your Cronbach alpha. As I mentioned, Cronbach alpha has to do with variance across the different indicators for the same construct, in this case the three questions about feeling unsafe, within each individual person's answers. Remember that each row is one person, so in each row you have the answers to the questiosn from the same individual. 
+
+
+Now you have your numeric values for the indicators of the constrcut. As this is a summative score, it just means that the score is the result of the **sum** of the indicators. So to calculate the value for our composite variable, we need to calculate the total score people achieved, by summing their answers to all three questions. I can do this by creating a new "total" column, and populating it with the sums using the `SUM()` function: 
+
+
+
+![](imgs/tot_sum_alpha.png)
+
+
+
+And the values in this column represent the score that these people have on the composite variable "feelings of unsafety". That's it, now you've created this summative score. Woohoo! But to what extent do these measures all indicate the same concept? Is someone who feels the same towards their safety going to answer similarly on all onf these questions? We want to try to find this out, in order to be able to speak about the our measure confidently. And as mentioned earlier, you can put a number to the extent to which you can rely on your measures, using Cronbach alpha.
+
+
+
+#Testing your questions: Cronbach’s alpha
+
+
+Cronbach's alpha is a measure of internal consistency, that is, how closely related a set of items are as a group. It is considered to be a measure of scale reliability. Cronbach’s alpha is a measure used to assess the reliability, or internal consistency, of a set of scale or test items. In other words, the reliability of any given measurement refers to the extent to which it is a consistent measure of a concept, and Cronbach’s alpha is one way of measuring the strength of that consistency.
+
+
+Cronbach’s alpha can be written as a function of the number of test items and the average inter-correlation among the items. 
+
+
+`(number of items/(number of items-1))*(1 - the variance associated with each item/ the variance associated with the observed total scores)`
+
+
+
+With this in mind, we can apply this formula to excel, and use excel to calculate our Cronbach alpha. As I mentioned, Cronbach alpha has to do with variance across the different indicators for the same construct, in this case the three questions about feeling unsafe, within each individual person's answers. Remember that each row is one person, so in each row you have the answers to the questiosn from the same individual. 
 
 
 So to do this, you first need some values: 
@@ -842,9 +906,11 @@ So to do this, you first need some values:
 
 
 
-So you need the number of indicators, the 
-sum of variance, and the 
-population variance. 
+So you need: 
+
+- the number of indicators, 
+- the sum of variance, and 
+- the population variance. 
 
 
 The last value in there is the alpha, which we obtain at the end. 
@@ -870,15 +936,7 @@ Repeat these for the other two columns as well. Now I have my variance for each 
 
 
 
-Now finally I need the variance between the total scores, between the people. So to get this number, I need to calculate the total score people achieved, by summing their answers to all three questions. I can do this by creating a new "total" column, and populating it with the sums using the `SUM()` function: 
-
-
-
-![](imgs/tot_sum_alpha.png)
-
-
-
-Now in cell B21 you just have to calculate the variance of these values, again using the `VARP()` function: 
+Now finally I need the variance between the total scores, between the people. For this, in cell B21 you just have to calculate the variance of these values, again using the `VARP()` function: 
 
 
 ![](imgs/pop_var_alpha.png)
@@ -910,8 +968,6 @@ Yay!
 
 
 A note of caution though. There are some issues with Cronbach alphas. For example, you might see quite high scored for scales with lots and lots of question items. As one increases the numbers of items in a scale, it is more likely that the alpha will be high, but score may be meaningless because it does not represent an underlying construct or worse - it represents muliple underlying constructs. Cronbach's Alpha measures only the reliability of scale of measurement of responses of the cases, in a Likert Scale. But it does not measure the reliability of the respondents' opinion leading to the latent construct. In that case, useful measurements are those of validity. Usually, for the sake of the integrity of the research, it is recommended that the researcher run a series of tests to test reliability and validity of questionnaires. While the Cronbach's alpha is one of these tests, further tests include principle components analysis, factor analysis, and other indicators. Having an integrated set of tests adds more to the value of the research in question. If you are interested, you can read up a bit more [detail on validation here](http://onlinelibrary.wiley.com.manchester.idm.oclc.org/doi/10.1002/9780470024522.ch5/pdf). But that is not something that we will worry about now, instead we can move on to the final part of the day, recoding. 
-
-
 
 
 
@@ -1054,12 +1110,17 @@ What could we do to split our data exactly in half? Well I'll leave this questio
 - law of large numbers
 - central limit theorem
 - VLOOKUP()
+- reliability
+- validity
+- Crobach's alpha
+- re-coding variables
+- binary variable
 
 
 
 
 
 #Sources
-- [](http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0080-62342014000100146)
-- [](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5459482/)
-- [](http://onlinelibrary.wiley.com.manchester.idm.oclc.org/doi/10.1002/9780470024522.ch4/pdf)
+- [Analysis of variables that are not directly observable: influence on decision-making during the research process](http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0080-62342014000100146)
+- [Composite Variables: When and How](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5459482/)
+- [Scores and measurements: validity, reliability, sensitivity](http://onlinelibrary.wiley.com.manchester.idm.oclc.org/doi/10.1002/9780470024522.ch4/pdf)
