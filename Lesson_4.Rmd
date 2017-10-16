@@ -879,7 +879,11 @@ Now you have your numeric values for the indicators of the constrcut. As this is
 
 
 
-And the values in this column represent the score that these people have on the composite variable "feelings of unsafety". That's it, now you've created this summative score. Woohoo! But to what extent do these measures all indicate the same concept? Is someone who feels the same towards their safety going to answer similarly on all onf these questions? We want to try to find this out, in order to be able to speak about the our measure confidently. And as mentioned earlier, you can put a number to the extent to which you can rely on your measures, using Cronbach alpha.
+And the values in this column represent the score that these people have on the composite variable "feelings of unsafety". That's it, now you've created this summative score. Woohoo! You can see that the person with the highest score has achieved a score of 10 - this is the hightest score on feeling unsafe in this mini sample. On the other hand, the person with the lowest score are actually two people who achieved a score of 3. They score low on feeling unsafe. 
+
+
+
+But to what extent do these measures all indicate the same concept? Is someone who feels the same towards their safety going to answer similarly on all onf these questions? We want to try to find this out, in order to be able to speak about the our measure confidently. And as mentioned earlier, you can put a number to the extent to which you can rely on your measures, using Cronbach alpha.
 
 
 
