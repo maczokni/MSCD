@@ -19,10 +19,10 @@ This week we are interested in in taking a step back even further from the analy
 
 
 
-Much of the data that we work with are collected as part of reserach. There are many many different approaches to this process, and you will have come across a good sample of them in your readings.  Research design can be described as a general plan about what you will do to answer your research question. Research design is the overall plan for connecting the conceptual research problems to the pertinent (and achievable) empirical research. In other words, the research design articulates what data will be required, what methods are going to be used to collect and analyse the data, and how all of this is going to answer your research question. Both data and methods, and the way in which these will be configured in the research project, need to be the most effective in producing the answers to the research question (taking into account practical and other constraints of the study). Different design logics are used for different types of study, and the best choice depeds on what sorts of reaserach questions you want to be able to answer. 
+Much of the data that we work with are collected as part of research. There are many many different approaches to this process, and you will have come across a good sample of them in your readings.  Research design can be described as a general plan about what you will do to answer your research question. Research design is the overall plan for connecting the conceptual research problems to the pertinent (and achievable) empirical research. In other words, the research design articulates what data will be required, what methods are going to be used to collect and analyse the data, and how all of this is going to answer your research question. Both data and methods, and the way in which these will be configured in the research project, need to be the most effective in producing the answers to the research question (taking into account practical and other constraints of the study). Different design logics are used for different types of study, and the best choice depends on what sorts of reaserach questions you want to be able to answer. 
 
 
-Since your reading provides a comprehensive overview of different typesof research designs, I will not attempt to replicate this here. Instead I will cover some general practical points, with focus on two different study designs. These are experiments, and longitudinal studies. However the skills we will practice today are relevant for data collected from various research resigns. For example, missing data is something that is an issue for cross sectional studies as well as longitudinal ones. Similarly, the Gantt chart as a way to plan your study design can be applied to any form of research design. 
+Since your reading provides a comprehensive overview of different types of research designs, I will not attempt to replicate this here. Instead I will cover some general practical points, with focus on two different study designs. These are experiments, and longitudinal studies. However the skills we will practice today are relevant for data collected from various research resigns. For example, missing data is something that is an issue for cross sectional studies as well as longitudinal ones. Similarly, the Gantt chart as a way to plan your study design can be applied to any form of research design. 
 
 #Terms for today
 
@@ -40,7 +40,7 @@ Since your reading provides a comprehensive overview of different typesof resear
 #Research Design 
 
 
-When you're designing your reserach, and developing your research design, you can imagine yourself as the architect of the research project. You lay down the blueprints and identify all the tasks and elements that will need to be realised in order for your research project to be successful. The type of research design used in a crime and justice study influences its conclusions. Studies suggest that design does have a systematic effect on outcomes in criminal justice studies. For example, when determining the effect of an invervention (known as evaluation research, as you are *evaluating* the effect of the intervention), when comparing randomized studies with strong quasi-experimental research designs, systematic and statistically significant differences are observed ([Weisburd et al 2001](http://cebcp.org/wp-content/publications/Does%20Research%20Design%20Affect%20Study%20Outcomes.pdf)). 
+When you're designing your research, and developing your research design, you can imagine yourself as the architect of the research project. You lay down the blueprints and identify all the tasks and elements that will need to be realised in order for your research project to be successful. The type of research design used in a crime and justice study influences its conclusions. Studies suggest that design does have a systematic effect on outcomes in criminal justice studies. For example, when determining the effect of an intervention (known as evaluation research, as you are *evaluating* the effect of the intervention), when comparing randomized studies with strong quasi-experimental research designs, systematic and statistically significant differences are observed ([Weisburd et al 2001](http://cebcp.org/wp-content/publications/Does%20Research%20Design%20Affect%20Study%20Outcomes.pdf)). 
 
 
 
@@ -54,7 +54,7 @@ Those interested in the study of criminology and criminal justice have at their 
 - (4) *evaluative* (determine the effects of an intervention on an outcome). 
 
 
-Your readings will have gone through a lot of examples and details about each one of these approaches, and what reserach design you can use to answer which sort of categories of research questions. These books give you a fantastic theoretical overview of the methods, and so I will not reiterate those here. Instead I will try to focus on the practicalities associated with some research designs. While I will use the example of evaluative research here, you can use similar methods when appropriate for all sorts of research design. 
+Your readings will have gone through a lot of examples and details about each one of these approaches, and what research design you can use to answer which sort of categories of research questions. These books give you a fantastic theoretical overview of the methods, and so I will not reiterate those here. Instead I will try to focus on the practicalities associated with some research designs. While I will use the example of evaluative research here, you can use similar methods when appropriate for all sorts of research design. 
 
 <!--
 
@@ -130,7 +130,7 @@ The first, by Eric Hirsch, used a combination of methods, including participant 
 
 The second example is from John Laub and Robert Sampson. For quite some time, these two scholars have been working on the reanalysis of one of the classic data sets in criminology, the Unraveling Juvenile Delinquency (UJD) study that was initiated by Sheldon and Eleanor Glueck in 1940. The data contain the original case records of all one thousand sample members as well as detailed archival life records that included information from the "home investigation," which consisted of an interview with family members and offered an opportunity for the investigators to observe the home and family life of sample members. Furthermore, the UJD study included interviews with key informants such as social workers, settlement house workers, clergymen, schoolteachers, neighbors, employers, and criminal justice and social welfare officials. When this detailed information is combined with the statistical information on criminal behavior and other life events, one can begin to appreciate the richness with which Laub and Sampson have been able to document these one thousand lives and contribute much needed information regarding crime over the life course.
 
-The future of criminological and criminal justice research will likely come full circle. Early studies of crime and criminality began with qualitative observations almost to the exclusion of quantitative research. New research topics were observed and highlighted by scholars who wished to forge ahead in the understanding of crime and criminality. Once these topics were brought to the forefront of the field, quantitative research became the choice method of analysis. The future of criminological research must focus on the blending of the two. As John Clausen notes, both case history and statistical data are required "if we are to understand the influences on the lives of persons who have lived through a particular slice of American history" (p. 43).
+The future of criminological and criminal justice research will likely come full circle. Early studies of crime and criminality began with qualitative observations almost to the exclusion of quantitative research. New research topics were observed and highlighted by scholars who wished to forge ahead in the understanding of crime and criminality. Once these topics were brough to the forefront of the field, quantitative research became the choice method of analysis. The future of criminological research must focus on the blending of the two. As John Clausen notes, both case history and statistical data are required "if we are to understand the influences on the lives of persons who have lived through a particular slice of American history" (p. 43).
 
 
 What is
@@ -153,7 +153,7 @@ Experimental criminology is a family of research methods that involves the contr
 - How can murder be prevented among high-risk groups of young men?
 
 
-These and other urgent questionscan be answered most clearly by the use of a research design called the "randomized controlled trial." This method takes large samples of people--or places, or schools, prisons, police beats or other units of analysis--who might become, or have already been, involved in crimes, eitheras victims or offenders. It then uses a statistical formula to select a portion of them forone treatment, and (with equal likelihood) another portion to receive a different treatment. Any difference, on average, in the two groupsin their subsequent rates of crime or other dimensions of life can then be interpreted as having been caused by the randomly assigned difference in thetreatment. All other differences, on average, between thetwo groups can usually be ruledout as potential causes of the difference in outcome. That is because with large enough samples, random assignment usually assures that there will be no other differences between the two groups except the treatment being tested.
+These and other urgent questions can be answered most clearly by the use of a research design called the "randomized controlled trial." This method takes large samples of people--or places, or schools, prisons, police beats or other units of analysis--who might become, or have already been, involved in crimes, either as victims or offenders. It then uses a statistical formula to select a portion of them for one treatment, and (with equal likelihood) another portion to receive a different treatment. Any difference, on average, in the two groups in their subsequent rates of crime or other dimensions of life can then be interpreted as having been caused by the randomly assigned difference in the treatment. All other differences, on average, between the two groups can usually be ruled out as potential causes of the difference in outcome. That is because with large enough samples, random assignment usually assures that there will be no other differences between the two groups except the treatment being tested.
 
 
 
@@ -198,7 +198,7 @@ To be able to answer such questions we can devise experiments, in the form of re
 Well first we need to establish our dependent and independent variables, to determine what we expect is evoking a change in what. 
 
 
-What is a **dependent variable**. It's what you are looking to explain. Remember in week 3, when we were talking about bivaraite analysis to assess the relationship between two variables? And we spoke about one of them being a **response** variable and the other the **predictor** variable, and how do we determine which variable is which? In general, the explanatory variable attempts to explain, or predict, the observed outcome. The response variable measures the outcome of a study. One may even consider exploring whether one variable causes the variation in another variable – for example, a popular research study is that taller people are more likely to receive higher salaries. In this case, age at first arrest would be the explanatory variable used to explain the variation in the response variable number of arrests.
+What is a **dependent variable**? It's what you are looking to explain. Remember in week 3, when we were talking about bivariate analysis to assess the relationship between two variables? And we spoke about one of them being a **response** variable and the other the **predictor** variable, and how do we determine which variable is which? In general, the explanatory variable attempts to explain, or predict, the observed outcome. The response variable measures the outcome of a study. One may even consider exploring whether one variable causes the variation in another variable – for example, a popular research study is that taller people are more likely to receive higher salaries. In this case, age at first arrest would be the explanatory variable used to explain the variation in the response variable number of arrests.
 
 
 Well these variables can also be called **dependent** and **independent** variables. **Dependent variables** are another name for response variables. They *depend* on the values of the independent variable. It can also have a third name, and be called an *outcome variable*.  The **independent variable** on the other hand is another name for predictor variables. 
@@ -217,7 +217,7 @@ So what about in the case of an experiment? Let's return to our example with the
 Now which influences which one? Well the clue is always in our question. And our question is whether kids who participate in scared straight offend less than they would have if they didn't participate. So for this we know that we have one variable (in this case offending) that *depends on* the other (participating in scared straight or not). So what does this mean for which is dependent variable and which is the independent?
 
 
-Take a moment to try to answer this yourself. Think about which one is *predicting* which *outcome* if the depentend/independent division doesn't work for you. You should definitely have a go at trying to guess here, because I will give you the answer later, and it will help you check your understanding, and if you are unsure, then do ask now. The dependent/independent variable discinction will be important throughout your data analysis career, even if that is only this one course. 
+Take a moment to try to answer this yourself. Think about which one is *predicting* which *outcome* if the dependent/independent division doesn't work for you. You should definitely have a go at trying to guess here, because I will give you the answer later, and it will help you check your understanding, and if you are unsure, then do ask now. The dependent/independent variable distinction will be important throughout your data analysis career, even if that is only this one course. 
 
 
 
@@ -232,7 +232,7 @@ So take a moment to think through, and decide which variable is dependent or ind
 Right so now you're hopefully read after your own consideration, and you may have found that your **dependent variable** is the one that depends on the intervention, which is - whether the young person exposed to the scared straight programme offends or not. So your *dependent* variable is *future offending*. This would have to be conceptualised (how far in the future, what counts as offending, etc) and then in turn operationalised, to be measured somehow. 
 
 
-Your independent variable on the other hand is the thing that you want to see the effect of, in this case, it's participation in the scared straight programme. Right? You are interested in whether participation causes less offending in the future. So your *independent* variable is *participatin gin scared straight*. Again you would have to conceptualise scared straight participation (can they go to one event, do they have to attend many? does it matter what happens to them? whether they get yelled at or not? whether they go into prison or not, etc) and then also operationalised in a way (do we just measure did this young person ever take part as a yes/no categorical variable? Do we cound the number of times they took part?)
+Your independent variable on the other hand is the thing that you want to see the effect of, in this case, it's participation in the scared straight programme. Right? You are interested in whether participation causes less offending in the future. So your *independent* variable is *participating in scared straight*. Again you would have to conceptualise scared straight participation (can they go to one event, do they have to attend many? does it matter what happens to them? whether they get yelled at or not? whether they go into prison or not, etc) and then also operationalised in a way (do we just measure did this young person ever take part as a yes/no categorical variable? Do we count the number of times they took part?)
 
 
 But no matter how you conceptualise and operationalise these variables, you will still have to be able to determine the effect of one or the other. And the *research design* of your study will greatly affect whether or not you can do that. 
@@ -241,7 +241,7 @@ But no matter how you conceptualise and operationalise these variables, you will
 Experiments provide you with a research design that *does* allow you to make these cause and effect conclusions. If you design your study as experiments, you will be able to control for certain variation, and employ methods that give you certainty about what causes what, and which event came first. This is a huge strength of experimental design. When talking about causation, or in evaluations, experimental design has features that mean that it is an optimal methodology for evaluation. Of course this does *not* mean it's the *only* appropriate design. But it's one approach that we will cover here in detail. 
 
 
-So for your research design to be considered an experiment the three criteria listed above should be met. You need your dependent and independent variables, but you also need variation in your independent variable (usually between 2 groups). So the first thing you need is two groups, between who you can compare the value of the dependent variable, after hanving exposed them to some difference in the independent variable. What you need from these two groups, is that they are *different* on this value of the independent variable. This is because you want to compare them. As you will have picked up from your readings, these two groups are often called your **treatment** and your **control** groups, because one group is administered some treatment (such as they took part in the intervention you are hoping to evaluate) while the other one receives the business as usual apporach. Think back to the Philadelphia foot patrol video above: one group of street segments (treatment) received foot patrols, right? That's where beats were drawn up to, and where foot patrol officers went on their shifts, to do their thing, and keep the streets safe. But there were also another set of street segments, right? The ones that were assigned to the control groups did *not* receive foot patrol. Police still responses to calls for service, and everything went on as usual, but there was no patrol there - this is the control group. 
+So for your research design to be considered an experiment the three criteria listed above should be met. You need your dependent and independent variables, but you also need variation in your independent variable (usually between 2 groups). So the first thing you need is two groups, between who you can compare the value of the dependent variable, after having exposed them to some difference in the independent variable. What you need from these two groups, is that they are *different* on this value of the independent variable. This is because you want to compare them. As you will have picked up from your readings, these two groups are often called your **treatment** and your **control** groups, because one group is administered some treatment (such as they took part in the intervention you are hoping to evaluate) while the other one receives the business as usual approach. Think back to the Philadelphia foot patrol video above: one group of street segments (treatment) received foot patrols, right? That's where beats were drawn up to, and where foot patrol officers went on their shifts, to do their thing, and keep the streets safe. But there were also another set of street segments, right? The ones that were assigned to the control groups did *not* receive foot patrol. Police still responses to calls for service, and everything went on as usual, but there was no patrol there - this is the control group. 
 
 
 
@@ -255,7 +255,7 @@ For another angle [this video](https://www.youtube.com/watch?v=aLesk8fujH8) is a
 
 
 
-Now the last point there is to do with random assignment. Our main goal is to assess change in the dependent variable bewteen the two groups, after exposing them differently to the independent variable. But we want to be entirely sure that one group isn't systematically different to the other. One way to achieve this is to use random assignment into the groups. Randomization is what makes the comparison group in a true experiment a powerful approach for identifying the effects of the treatment. Assigning groups randomly to the experimental and comparison groups ensures that systematic bias does not affect the assignment of subjects to groups. This is important if researchers wish to generalize their findings regarding cause and effect among key variables within and across groups. Remember all our discussion around validity and reliability last week!
+Now the last point there is to do with random assignment. Our main goal is to assess change in the dependent variable between the two groups, after exposing them differently to the independent variable. But we want to be entirely sure that one group isn't systematically different to the other. One way to achieve this is to use random assignment into the groups. Randomization is what makes the comparison group in a true experiment a powerful approach for identifying the effects of the treatment. Assigning groups randomly to the experimental and comparison groups ensures that systematic bias does not affect the assignment of subjects to groups. This is important if researchers wish to generalize their findings regarding cause and effect among key variables within and across groups. Remember all our discussion around validity and reliability last week!
 
 
 Random assignment is a criteria for experiment research. A research (or evaluation) design is experimental if subjects are randomly assigned to treatment groups and to control (comparison) groups. A research (or evaluation) design is quasi-experimental if subjects are not randomly assigned to the treatment or control conditions but rather if statistical controls are used to study cause and effect. You will have learned about quasi-experimental design in your readings, so here I will focus on experimental designs. 
@@ -284,7 +284,7 @@ An example of the before-and-after design is the Pierce and Bowers analysis of t
 -->
 
 
-You can read about these studies above for some examples of experiments in criminal justice research. The Philadeplhia foot patrol experiment was just one of many. In particular, the Philadeplhia foot patrol experiment is an example of a **randomised control trial**. You will have read about a few types of experimental design in your texbooks, but here we will focus on this particular one. The randomised controlled trial (RCT for short) is considered often as the most rigorous method of determining whether a cause-effect relationship exists between an intervention and outcome . The strength of the RCT lies in the process of randomisation that is unique to this type of research study design.
+You can read about these studies above for some examples of experiments in criminal justice research. The Philadelphia foot patrol experiment was just one of many. In particular, the Philadelphia foot patrol experiment is an example of a **randomised control trial**. You will have read about a few types of experimental design in your textbooks, but here we will focus on this particular one. The randomised controlled trial (RCT for short) is considered often as the most rigorous method of determining whether a cause-effect relationship exists between an intervention and outcome . The strength of the RCT lies in the process of randomisation that is unique to this type of research study design.
 
 
 
@@ -320,7 +320,7 @@ Are there any confounding variables between the groups?
 
 -->
 
-Do engage with the reading around the advantaes and disadvantages of RCTs. They are often looked at as the gold standard for determining the effect of a particular intervention, but that does not mean they are without flaws, or are the only way forward, there are situations where they may or may not be appropriate. But here we are getting practical, so let's make the assumption, that for our evaluation of scared straight, we have decided that we are going to evaluate using an RCT. 
+Do engage with the reading around the advantages and disadvantages of RCTs. They are often looked at as the gold standard for determining the effect of a particular intervention, but that does not mean they are without flaws, or are the only way forward, there are situations where they may or may not be appropriate. But here we are getting practical, so let's make the assumption, that for our evaluation of scared straight, we have decided that we are going to evaluate using an RCT. 
 
 
 So the first step is to design our study. 
@@ -329,7 +329,7 @@ So the first step is to design our study.
 ##Designing an RTC
 
 
-When you are designing any research, you will have to map out all the elements of the study in detail. One of the key issues with designing your research that you have to keep in mind is that it is feasible to carry out, given the resources which you have. These resources include your time, funding, any available staff, and basically everything that you need to be able to carry out your work. It can be wuite a large task to try to estimate all elements of a study. In order to help you break down your tasks into individual elements, and to be able to assign a time element to each one, to be able to more accurately estimate the time it will take you to carry out your study, you can use all sorts of project planning tools. One of these is a Gantt chart. We will illustrate the use of a Gannt chart here through planing an RCT, to evaluate the effectiveness of the scared straight programme. But you can use a Gantt chart to plan any sort of research project. You could even use it to plan your dissertations next year!
+When you are designing any research, you will have to map out all the elements of the study in detail. One of the key issues with designing your research that you have to keep in mind is that it is feasible to carry out, given the resources which you have. These resources include your time, funding, any available staff, and basically everything that you need to be able to carry out your work. It can be write a large task to try to estimate all elements of a study. In order to help you break down your tasks into individual elements, and to be able to assign a time element to each one, to be able to more accurately estimate the time it will take you to carry out your study, you can use all sorts of project planning tools. One of these is a Gantt chart. We will illustrate the use of a Gantt chart here through planning an RCT, to evaluate the effectiveness of the scared straight programme. But you can use a Gantt chart to plan any sort of research project. You could even use it to plan your dissertations next year!
 
 
 ###What is a Gantt chart?!
@@ -362,7 +362,7 @@ Gantt charts can help you make sure that your project is feasible in the time yo
 
 
 
-So how is this helpful in resarch design? Well let's consider the example of designing an RCT to evaluate Scared Straight. In order to be able to carry out this RCT, we need to be able to grab a basic outline for one, and turn it into a Gantt chart. Then we can assess how long this will take, what resources we will need, and whether or not this would be feasible for us to carry out. 
+So how is this helpful in research design? Well let's consider the example of designing an RCT to evaluate Scared Straight. In order to be able to carry out this RCT, we need to be able to grab a basic outline for one, and turn it into a Gantt chart. Then we can assess how long this will take, what resources we will need, and whether or not this would be feasible for us to carry out. 
 
 
 Let's start with the basic outline
@@ -383,18 +383,18 @@ The basic outline of the design of a randomised controlled trial will vary from 
 
 
 This is not necessarily always a linear process. It can be that after data analysis you return for more data collection, or even go back to the conceptualisation stage. 
-But as I metioned above, the aim of the Gantt chart is to break down these tasks into the smallest possible components. Why is this?
+But as I mentioned above, the aim of the Gantt chart is to break down these tasks into the smallest possible components. Why is this?
 
 
 Well let's try to build a Gantt chart with just these elements first to illustrate. As I said you need to know the approximate duration for your project, the tasks, and how long they will take. 
 
 
-Let's say that we have 1.5 years to carry out our RCT for Scared Straight. This is our approximate duration. We also have our list of tasks, up there. Bu thow long will each of these take? How long should you budget for Planning and conceptualisation? What about for Operationalisation and data collection or the Data analysis? Take a moment to think about this.
+Let's say that we have 1.5 years to carry out our RCT for Scared Straight. This is our approximate duration. We also have our list of tasks, up there. But how long will each of these take? How long should you budget for Planning and conceptualisation? What about for Operationalisation and data collection or the Data analysis? Take a moment to think about this.
 
 
 
 
-Was it difficult to estimate? Why would you think that is? Do you think it would be easier if you had more experience with research? Well probably not by much. Each research project comes with its own coplexity and nuance, and to estimate how long something as vague as "data analysis" will take, would be an incredible tough task even for the most seasoned researcher. Instead, the way to be able to better guestimate the length for tasks is to break them into their components, which can give you a better indicator of how long things will take. 
+Was it difficult to estimate? Why would you think that is? Do you think it would be easier if you had more experience with research? Well probably not by much. Each research project comes with its own complexity and nuance, and to estimate how long something as vague as "data analysis" will take, would be an incredible tough task even for the most seasoned researcher. Instead, the way to be able to better guestimate the length for tasks is to break them into their components, which can give you a better indicator of how long things will take. 
 
 
 Let's try this for the Scared Straight RCT. 
@@ -457,7 +457,7 @@ Something like this:
 The *tasks* column refers to the overarching, large categories. You need to include these, because you can use these to colour-code the tasks in your Gantt chart. These are your main overall steps, that you've broken down into smaller steps, so they're an easy way to keep a rough eye on where you are spending a lot of time in your project. 
 -->
 
-The *Task* column refers to each individual activity, that are the detailed steps that we have to take, in order to be able to complete our project. These are all the activities that we've broken the tasks into. If we were consdiering this Gantt chart table as a data set, you can now begin to guess, that our unit of analysis is the *task*. Each one activity we have to do is one row. These include the bigger group that each sub-task it belongs to as well as the sub tasks themselves. This will be meaningful later on. 
+The *Task* column refers to each individual activity, that are the detailed steps that we have to take, in order to be able to complete our project. These are all the activities that we've broken the tasks into. If we were considering this Gantt chart table as a data set, you can now begin to guess, that our unit of analysis is the *task*. Each one activity we have to do is one row. These include the bigger group that each sub-task it belongs to as well as the sub tasks themselves. This will be meaningful later on. 
 
 In the other columns, *start date*, *end date*, and *duration* we will record the temporal information around each task - that is - when will it start? when will it end? how long will it take?
 
@@ -470,7 +470,7 @@ So as a first step, let's populate the *task* column. You can copy and paste fro
 
 
 
-Great, now how will we populate the start date and end date columns. This is where the Gantt chart is very much a tool for you to plan your research project. How can we know how long will something take? The short answer is: we can't.  We don't have a crystal ball. But we can *guess*. We can start with the project start date (or if you work better counting backwards, you can start with the project end date i if it's a known hard deadline), and then just try to estimate how long each phase will take to complete, and when we can start the next. 
+Great, now how will we populate the start date and end date columns. This is where the Gantt chart is very much a tool for you to plan your research project. How can we know how long will something take? The short answer is: we can't.  We don't have a crystal ball. But we can *guess*. We can start with the project start date (or if you work better counting backwards, you can start with the project end date if it's a known hard deadline), and then just try to estimate how long each phase will take to complete, and when we can start the next. 
 
 
 Tasks can run simultaneously. You don't always have to wait for one task to finish before you start the next. Sometimes one task needs to finish for the next to start, for example: you cannot begin data analysis until you have finished data collection. On the other hand, you can (and should) begin writing while still continuing your data analysis. So you can have temporal overlap - or be working on multiple projects at once. 
@@ -478,10 +478,10 @@ Tasks can run simultaneously. You don't always have to wait for one task to fini
 
 Now let's say that we are starting our Scared Straight evaluation quite soon, we have a start date of the 1st of November. Using some very rough guessing, this is the relative timeline that I've come up with: 
 
-- Background/review of published literature:	01/10/17	to 01/12/17
+- Background/review of published literature:	01/11/17	to 01/12/17
 - Formulation of hypotheses	01/12/17	07/12/17
 - Set the objectives of the trial	02/12/17	08/12/17
-- Development of a comprehensive study protocol	/12/17 to	18/12/17
+- Development of a comprehensive study protocol	08/12/17 to 18/12/17
 - Ethical considerations	08/12/17 to	18/12/17
 - Sample size calculations	18/12/17 to	19/12/17
 - Define reference population	18/12/17 to	28/12/17
@@ -491,7 +491,7 @@ Now let's say that we are starting our Scared Straight evaluation quite soon, we
 - Informed consent procedures	22/01/18 to	23/01/18
 - Collection of baseline measurements, including all variables considered or known to affect the outcome(s) of interest	23/01/18 to	23/01/18
 - Random allocation of study participants to treatment groups (standard or placebo vs. new)	21/01/18 to	23/01/18
-- Follow-up of all treatment groups, with assessment of outcomes continuously or intermittently	22/01/19 to	23/01/19
+- Follow-up of all treatment groups, with assessment of outcomes continuously or intermittently	24/01/18 to	23/01/19
 - Descriptive analysis	24/01/19 to	24/02/19
 - Comparison of treatment groups	30/01/19 to	24/02/19
  - Interpretation (assess the strength of effect, alternative explanations such as sampling variation, bias)	20/02/19 to	20/03/19
@@ -519,7 +519,7 @@ Notice that I did not give a start or end time to the *overarching categories* o
 
 
 
-Make sure that you only select the sub-tasks that belong to each individual overatching task. So for example, for Planning and conceptualisation, only select up until "Ethical considerations" and *do not* also include the "Operationalisation and data collection" stage!
+Make sure that you only select the sub-tasks that belong to each individual overarching task. So for example, for Planning and conceptualisation, only select up until "Ethical considerations" and *do not* also include the "Operationalisation and data collection" stage!
 
 
 Once you have all your start and end dates, your table should look something like this: 
@@ -531,7 +531,7 @@ Once you have all your start and end dates, your table should look something lik
 
 
 
-You might find that Excel changes the formatting of your dates in some of the cells, like mine did on the first 8 rows. You can see in those, the date is formatted as 01-Dec for example, whereas later it is formatted the way we entered it, such as 22/01/19. This is because Excel *knows* that the value you are entering here is a *date*.  It doesn't just think you're entering some weird words, it deduces that if what you are entering follows this rought format of 2 digits/ 2 digits / 2 digits, then it's likely to be a date. This is really handy, because you can do calculations on these cells now, that you would not be able to do, if Excel just thought that these were weird words. We will take advantage of this to calculate the duration column here. Do you really want to count out how many days are between the start and end date? Well in some cases it might be easy. It could be that you thought, "well I will start my random allocation of study participants into treatment and control groups on the 21st of January, and I think it will take about 2 days to do this, so I will end on the 23rd of January", but often you will have deadlines, that you need to work towards, or you might want to double check that you are counting correctly. In any case, to get the last, *duration* column, you can simply use an equation, where you subtract the start date from the end date, and you get the number of days that are inbetween. Isn't that neat? You can simply apply some simple maths notations to your date data in Excel, and you get meaningful results, such as the number of days that exist between two dates! We will play around more with dates and such in week 7 of this course, so you can see some more date-related tricks then!
+You might find that Excel changes the formatting of your dates in some of the cells, like mine did on the first 8 rows. You can see in those, the date is formatted as 01-Dec for example, whereas later it is formatted the way we entered it, such as 22/01/19. This is because Excel *knows* that the value you are entering here is a *date*.  It doesn't just think you're entering some weird words, it deduces that if what you are entering follows this rough format of 2 digits/ 2 digits / 2 digits, then it's likely to be a date. This is really handy, because you can do calculations on these cells now, that you would not be able to do, if Excel just thought that these were weird words. We will take advantage of this to calculate the duration column here. Do you really want to count out how many days are between the start and end date? Well in some cases it might be easy. It could be that you thought, "well I will start my random allocation of study participants into treatment and control groups on the 21st of January, and I think it will take about 2 days to do this, so I will end on the 23rd of January", but often you will have deadlines, that you need to work towards, or you might want to double check that you are counting correctly. In any case, to get the last, *duration* column, you can simply use an equation, where you subtract the start date from the end date, and you get the number of days that are inbetween. Isn't that neat? You can simply apply some simple maths notations to your date data in Excel, and you get meaningful results, such as the number of days that exist between two dates! We will play around more with dates and such in week 7 of this course, so you can see some more date-related tricks then!
 
 
 Right, back to our dates, so remember, all formulas start with the `=` equation, and here all we are doing is subtracting the value of one cell (start date) from another cell (end date). Like so: 
@@ -685,14 +685,14 @@ Now your Gantt chart is basically ready. It can be that yours looks sort of in a
 ![](imgs/final_gantt.png)
 
 
-So what's going to take the longest? As you can see there, the longest duration is for the operationalisation and data collection tab. It's an overarching category, but there are not any sub-tasks associated with it for the majority of its duration. Well, the thing is, even though we are not actively colelcting data in that longer period, we are still in the data collection phase. Can you think why?
+So what's going to take the longest? As you can see there, the longest duration is for the operationalisation and data collection tab. It's an overarching category, but there are not any sub-tasks associated with it for the majority of its duration. Well, the thing is, even though we are not actively collecting data in that longer period, we are still in the data collection phase. Can you think why?
 
 
 Well we want to know if scared straight works on reducing offending right? So for this, we need to recruit our people, assign them into a control and a treatment group, and then *wait for a pre-determined amount of time* before we can collect the follow-up data - or the *after* data. 
 
 
 
-Remember back ton conceptualisation. How do we conceptualise reoffending? Well in this case, we conceptualise it as if the person has offended in the 12 months following taking part in the scared straight programme. because of this, we have to wait 12 months untill we collect our "after" data. 
+Remember back ton conceptualisation. How do we conceptualise reoffending? Well in this case, we conceptualise it as if the person has offended in the 12 months following taking part in the scared straight programme. Because of this, we have to wait 12 months until we collect our "after" data. 
 
 
 
@@ -725,14 +725,14 @@ But fast forward to the point where you have your sample. Let's say you've carri
 ##Random assignment into control and treatment
 
 
-So how does random assignment work? Well we could achieve this by going old-school, and writing everyone's name on a piece of paper, and drawing the names out of a hat. But here we will use Excel's ability to programatically assign people into treatment or control.  You are all Excel pros by now, with your formulas, and your lookups and pivot tables. So might as well hone these skills some more. 
+So how does random assignment work? Well we could achieve this by going old-school, and writing everyone's name on a piece of paper, and drawing the names out of a hat. But here we will use Excel's ability to programmatically assign people into treatment or control.  You are all Excel pros by now, with your formulas, and your lookups and pivot tables. So might as well hone these skills some more. 
 
 
 ![http://dilbert.com/strip/2001-10-25](http://resources.infosecinstitute.com/wp-content/uploads/121411_1611_SecureRando1.png)
 
 
 
-So to have random assigment to a group, each member of your sample has to have the same probability of being selected for each group. Let's say we want to assign two groups. We want to assign people to a **control group** and a **treatment group**. Remember that the control and the treatment must be must be coming from the same sample, so that they are similar in all characteristics *except* in the particular thing you are interested in finding out the effect of. By random assignment, each person has the same probability of being in the treatment or the control group, and so there is no chance for systematic bias, as there would be for example if you were asking people to *self-select* into tratement or control. If people were given the chance to volunteer (*self-select*) it would leave open a possibility that people with certain traits are more likely to volunteer, and there might besome systematic differences between your two groups. 
+So to have random assignment to a group, each member of your sample has to have the same probability of being selected for each group. Let's say we want to assign two groups. We want to assign people to a **control group** and a **treatment group**. Remember that the control and the treatment must be must be coming from the same sample, so that they are similar in all characteristics *except* in the particular thing you are interested in finding out the effect of. By random assignment, each person has the same probability of being in the treatment or the control group, and so there is no chance for systematic bias, as there would be for example if you were asking people to *self-select* into treatment or control. If people were given the chance to volunteer (*self-select*) it would leave open a possibility that people with certain traits are more likely to volunteer, and there might be some systematic differences between your two groups.  
 
 
 So let's say we have our sample of people who will be assigned either to the treatment group, of recieving the scared straigh treatment, or the control group, who do not have to go through this treatment. Well let's say we have our class here. We've got a total of 58 students enrolled in the class. Go ahead and download this list, from Blackboard. You can find it under week 5 > data > student.xlsx
@@ -770,7 +770,7 @@ Did you get a different number for Julia there, than I did? Chances are, you did
 ![](imgs/rand_nums.png)
 
 
-Now we can use these values, which have been assigned *randomly* to assign students to a control or treatment groups. Remember last week when we were doing some re-coding? Remember when we were recoding the numeric variable into a categorical one? And I left a little bonus question at the end? Well the bonus question was asking essentially, what value can you use, as a cutoff point, to make sure that 50% of your data get put into one group, and 50% of your data into the other group? This question should already be familir to you, but let me re-phrase: what measure of central tendency cuts your data right in half based on considering the values on a numeric variable? 
+Now we can use these values, which have been assigned *randomly* to assign students to a control or treatment groups. Remember last week when we were doing some re-coding? Remember when we were recoding the numeric variable into a categorical one? And I left a little bonus question at the end? Well the bonus question was asking essentially, what value can you use, as a cut-off point, to make sure that 50% of your data get put into one group, and 50% of your data into the other group? This question should already be familir to you, but let me re-phrase: what measure of central tendency cuts your data right in half based on considering the values on a numeric variable? 
 
 
 Are you thinking **median**??
@@ -798,13 +798,13 @@ What is our condition here. Well we are using this time the median to divide our
 Let's say anyone with a random number above the median will be in the treatment group, and anyone with a random number below the median will be in the control group. What is our condition in this case? What is it that we are testing each number against?
 
 
-Well in this case we are testing people agains whether their ranomd number is greater than the median of all the random numbers. If their random number is greater than the median of all random numbers, then they are part of the treatment group (what happens if condition is true). On the other hand, if their random number is **not** greater than the median of all the random numbers, then they are assigned to the control group (what happens if condition is false). If any of this is unclear for you at the moment, then please raise your hand, and make one of us explain this. 
+Well in this case we are testing people against whether their random number is greater than the median of all the random numbers. If their random number is greater than the median of all random numbers, then they are part of the treatment group (what happens if condition is true). On the other hand, if their random number is **not** greater than the median of all the random numbers, then they are assigned to the control group (what happens if condition is false). If any of this is unclear for you at the moment, then please raise your hand, and make one of us explain this. 
 
 
 Translated into Excel language, our formula is: 
 
 
-`=IF(randum number value > median(all random numbers), "Treatment", "Control")`
+`=IF(random number value > median(all random numbers), "Treatment", "Control")`
 
 
 
@@ -867,18 +867,18 @@ Now you've been exposed to either the treatment or the control condition. I'll b
 
 Randomization is important because it is almost the only way to assign all the other variables equally except for the factor (A and B) in which we are interested. However, some very important confounding variables can often be assigned unequally to the two groups. This possibility increases when the number of samples is smaller, and we can stratify the variables and assign the two groups equally in this case.
 
-For example, if the smoking status is very important, what will you do? First, we have our method of randomization that we learned previously. Just to put a name to this, the approach we dfollowed was **simple randomisation** There are two randomly assigned separate sequences for smokers and non-smokers. Smokers are assigned to the smoker's sequences, and non-smokers are assigned to the non-smoker's sequences. Therefore, both smokers and non-smokers groups will be placed equally with the same numbers.
+For example, if the smoking status is very important, what will you do? First, we have our method of randomization that we learned previously. Just to put a name to this, the approach we had followed was **simple randomisation** There are two randomly assigned separate sequences for smokers and non-smokers. Smokers are assigned to the smoker's sequences, and non-smokers are assigned to the non-smoker's sequences. Therefore, both smokers and non-smokers groups will be placed equally with the same numbers.
 
 So we can use 'simple randomization with/without stratification'. However, if there are multiple stratified variables, it is difficult to place samples in both groups equally with the same numbers. Usually two or fewer stratified variables are recommended.
 
 
-What does that look like? Well let's illustrate again with assigning you, the class, into control and treatment groups for the scared straight programme. Let's say that we knew that there was a different effect of Scared Straight possibly on those in BA Criminology and BA Social Sciences programme participants. This means that we've identified the *program* variable to be a **confounding variable**. A confounding variable is an outside influence that changes the effect of a dependent and independent variable. To account for this, we want the same number of BA Crim and BA Social Science students in both groups. Because if we didn't control for this, it could be that through the random assignment alone, one group would have only BA Crim students, and the other have all the BA Social Science students. Now if we think that program is a **confounding variable**, in otherwords it's something that might influence our dependent variable, then we want to account for this, because otherwise, even if we find a difference between the two groups, we'll be unable to say whether it's due to the Scared Straigh intervention, or this variable of degree program!  
+What does that look like? Well let's illustrate again with assigning you, the class, into control and treatment groups for the scared straight programme. Let's say that we knew that there was a different effect of Scared Straight possibly on those in BA Criminology and BA Social Sciences programme participants. This means that we've identified the *program* variable to be a **confounding variable**. A confounding variable is an outside influence that changes the effect of a dependent and independent variable. To account for this, we want the same number of BA Crim and BA Social Science students in both groups. Because if we didn't control for this, it could be that through the random assignment alone, one group would have only BA Crim students, and the other have all the BA Social Science students. Now if we think that program is a **confounding variable**, in other words it's something that might influence our dependent variable, then we want to account for this, because otherwise, even if we find a difference between the two groups, we'll be unable to say whether it's due to the Scared Straigh intervention, or this variable of degree program!  
 
 
 So how can we make sure that both BA Criminology and BA Social Sciences groups will be placed equally with the same numbers?
 
 
-Well to do this, you would go back to your random numbers that we created with the `=RAND()` function. The important thing here is, that you consider how we assigned people into control/treatment groups. We decided that everyone with a random number above the total group median gets treatment, and everyone below get's control. The total group median was used to divide the total group into two. So what do you think can be done to do this for 2 groups? You guessed it, *you have to assign each group based on their own group median!*. 
+Well to do this, you would go back to your random numbers that we created with the `=RAND()` function. The important thing here is, that you consider how we assigned people into control/treatment groups. We decided that everyone with a random number above the total group median gets treatment, and everyone below gets control. The total group median was used to divide the total group into two. So what do you think can be done to do this for 2 groups? You guessed it, *you have to assign each group based on their own group median!*. 
 
 
 There are two ways of doing this, the long manual hard way, or the easy lazy code way. Let's start with the code way. 
@@ -902,7 +902,7 @@ The outer IF statement remains exactly the same procedure as it was for the one 
 To change, we change only the condition. The condition here is the `D2>MEDIAN(D:D)` part. That part assesses whether the person's random number was above the total median. Well now we need to introduce another IF into this equation, to make sure that we are calculating the appropriate group median, for the program. So if they student's value for the program variable is BA Crim, we should calculate the crim median, and if it's BA Soc Sci, then we should calculate the soc sci median. Sounds familiar?
 
 
-So if total median is `MEDIAN(D:D)`, then our conditional mean calulation is...:
+So if total median is `MEDIAN(D:D)`, then our conditional mean calculation is...:
 
 
 `MEDIAN(IF(C2=C2:C59, D2:D59))`
@@ -1002,10 +1002,10 @@ Note
 ##A final note on evidence: Meta Analysis
 
 
-So let's say we ran our RCT on Scared Straigh and we found some sort of effect between those exposed to it and those not. While we make all arrangements possible to ensure the reliability, validity, and generalisability of our study, we are only human, and we can make mistakes. Even if we don't make mistakes, the way that inferential statistics works, is that one out of every 20 studies will be wrong, just probabilistically. This will make more sense if you move on to study inferential statistics, but basically we, as social scientists, resign ourselves to work with a 95% confidence rate, so on the whole, we are admiting to be wrong about 5% of the time (1 out of 20). So yes, while RCTs are strong, robust evidence for or against a programme, often they can still be disputed. 
+So let's say we ran our RCT on Straight and we found some sort of effect between those exposed to it and those not. While we make all arrangements possible to ensure the reliability, validity, and generalisability of our study, we are only human, and we can make mistakes. Even if we don't make mistakes, the way that inferential statistics works, is that one out of every 20 studies will be wrong, just probabilistically. This will make more sense if you move on to study inferential statistics, but basically we, as social scientists, resign ourselves to work with a 95% confidence rate, so on the whole, we are admitting to be wrong about 5% of the time (1 out of 20). So yes, while RCTs are strong, robust evidence for or against a programme, often they can still be disputed. 
 
 
-This is very well illustrated in reception of actual evaluations of Scared Straigh programmes. And there are many. This is mostly because studies either find **no effect** or a **negative effect** of the programme on at-risk youth. This means that it either doesn't stop their offending, OR MAKES IT WORSE, compared with control groups. Hold on a second?!? Why are we implementing programmes that *at best* don't work, and at worst, make offending worse? Well like all businesses, Scared Straight programmes will tug at the credibility of individual studies, and if you are up against something that is making a lot of money for someone, you will need to produce quite robust evidence to bring it down. 
+This is very well illustrated in reception of actual evaluations of Straight programmes. And there are many. This is mostly because studies either find **no effect** or a **negative effect** of the programme on at-risk youth. This means that it either doesn't stop their offending, OR MAKES IT WORSE, compared with control groups. Hold on a second?!? Why are we implementing programmes that *at best* don't work, and at worst, make offending worse? Well like all businesses, Scared Straight programmes will tug at the credibility of individual studies, and if you are up against something that is making a lot of money for someone, you will need to produce quite robust evidence to bring it down. 
 
 
 You may have come across something called the "evidence pyramid". This is a visual representation of the hierarchy of evidence, so basically the credibility of a study in evaluating an intervention, based on its study design. The most robust evidence is at the top, while the least is at the bottom. 
@@ -1016,7 +1016,7 @@ Here it is:
 ![](http://integratedtreatmentservices.co.uk/wp-content/uploads/2014/12/Screen-Shot-2014-12-18-at-10.20.50.png)
 
 
-Well here is *a* version. There are many versions of this out there. But you can see, for all we've been praising RCTs here, there is actually a step above. This is *systematic reviews*. I'm not going to hugely go into this, but essentially these represent the *stufy of studies*. So what a systematic review, and in particular, it's subset, the **meta-analysis** do, is consider *all previous studies* and evaluate their results. That way, you can draw conclusions and say that many studies are all finding that Scared Straight has no or negative effect, and it becomes much harder to criticise! 
+Well here is *a* version. There are many versions of this out there. But you can see, for all we've been praising RCTs here, there is actually a step above. This is *systematic reviews*. I'm not going to hugely go into this, but essentially these represent the *study of studies*. So what a systematic review, and in particular, it's subset, the **meta-analysis** do, is consider *all previous studies* and evaluate their results. That way, you can draw conclusions and say that many studies are all finding that Scared Straight has no or negative effect, and it becomes much harder to criticise! 
 
 
 Meta-analysis is the quantitative analysis of findings from multiple studies. At its core, meta-analysis involves researchers pulling together the results of several studies and making summary, empirical statements about some cause and effect relationship. A classic example of meta-analysis in criminology was performed by Wells and Rankin and concerned the relationship between broken homes and delinquency.
@@ -1034,7 +1034,7 @@ If you are still interested in the outcomes of Scared Straight, you can read a [
 There are two commonly used longitudinal research designs,** panel **and **cohort** studies. Both study the same group over a period of time and are generally concerned with assessing within- and between-group change. Panel studies follow the same group or sample over time, while cohort studies examine more specific populations (i.e., cohorts) as they change over time. Panel studies typically interview the same set of people at two or more periods of time. 
 
 
-For example, the 1970 British Cohort Study (BCS70) follows the lives of more than 17,000 people born in England, Scotland and Wales in a single week of 1970. Over the course of cohort members' lives, the BCS70 has has broadened from a strictly medical focus at birth to collect  information on health, physical, educational and social development, and economic circumstances among other factors.
+For example, the 1970 British Cohort Study (BCS70) follows the lives of more than 17,000 people born in England, Scotland and Wales in a single week of 1970. Over the course of cohort members' lives, the BCS70 has broadened from a strictly medical focus at birth to collect  information on health, physical, educational and social development, and economic circumstances among other factors.
 
 The Millennium Cohort Study (MCS), which began in 2000, is conducted by the Centre for Longitudinal Studies (CLS). It aims to chart the conditions of social, economic and health advantages and disadvantages facing children born at the start of the 21st century.
 
@@ -1046,14 +1046,14 @@ These are some examples from the UK Data Service ([see those and more here](http
 
 
 
-The main advantage of longitudinal studies is that you can track change over time, and you meet the temporal criteria for causailty. You collect data from people across multiple **waves**. Waves refer to the times of data collection in your data. For example, if you follow a cohort from birth until their 30th birthday, and you take measurements every 10 years, once at point of birth, once at age 10, once at age 20, and finally at age 30, then you will have 4 waves in this longitudinal data about these people you're following. 
+The main advantage of longitudinal studies is that you can track change over time, and you meet the temporal criteria for causality. You collect data from people across multiple **waves**. Waves refer to the times of data collection in your data. For example, if you follow a cohort from birth until their 30th birthday, and you take measurements every 10 years, once at point of birth, once at age 10, once at age 20, and finally at age 30, then you will have 4 waves in this longitudinal data about these people you're following. 
 
 
 ##What does longitudinal data look like?
 
 
 So far we've only shown you cross-sectional data. Each row was one observation, each column as one variable, and they were collected at a single point in time. So what do longitudinal data look like? 
-A longitudinal study generally yields multiple or “repeated” measurements on each subject. So you will have many, repeated measure, from the same person, or neighbourhood, or whatever it is that you are studying (most likely people though... when you take repeated observations about places it's more likely to be a time-series designs. Time-series designs typically involve variations of multiple observations of the same group (i.e., person, city, area, etc.) over time or at successive points in time. Typically, they analyze a single variable (such as the crime rate) at successive time periods, and are especially useful for studies of the impact of new laws or social programs. An example of a time-series design would be to examine the burglary rate across the boroughs of Greater Manchester over the last five years. We'll be dealing with time serias in week 7.)
+A longitudinal study generally yields multiple or “repeated” measurements on each subject. So you will have many, repeated measure, from the same person, or neighbourhood, or whatever it is that you are studying (most likely people though... when you take repeated observations about places it's more likely to be a time-series designs. Time-series designs typically involve variations of multiple observations of the same group (i.e., person, city, area, etc.) over time or at successive points in time. Typically, they analyze a single variable (such as the crime rate) at successive time periods, and are especially useful for studies of the impact of new laws or social programs. An example of a time-series design would be to examine the burglary rate across the boroughs of Greater Manchester over the last five years. We'll be dealing with time series in week 7.)
 
 
 Okay so what do these data actually look like? Well have a look at the description for the [Next Steps (formerly the Longitudinal Study of Young People in England (LSYPE1))](https://discover.ukdataservice.ac.uk/series/?sn=2000030). Briefly mentioned above, the Next Steps (formerly the Longitudinal Study of Young People in England (LSYPE1)) is a major longitudinal study that follows the lives of around 16,000 people born in 1989-90 in England. The first seven sweeps of the study (2004-2010) were funded and managed by the Department for Education (DfE) and mainly focused on the educational and early labour market experiences of young people.
@@ -1066,15 +1066,15 @@ In 2013 the management of Next Steps was transferred to the Centre for Longitudi
 There are now two separate studies that began under the LSYPE programme. The second study, Our Future (formerly LSYPE2), began in 2013 and will track a sample of over 13,000 young people from the age of 13/14 annually through to the age of 20 (seven waves).
 
 
-There are a lot of interesting variables in there for those interested in young people and delinquent behaviour. There is some data about drug and alcohol, some about offending such as graffiti, vandalist, shoplifting, as well as social control factors such as family relationship, bullying, and so on. If you are interested in the data, you can always have a browse through the [site here](https://discover.ukdataservice.ac.uk/Catalogue/?sn=5545&type=Data%20catalogue&lt) and [have a read of one of the questionnaires as well](http://doc.ukdataservice.ac.uk/doc/5545/mrdoc/pdf/5545age_25_survey_questionnaire.pdf). 
+There are a lot of interesting variables in there for those interested in young people and delinquent behaviour. There is some data about drug and alcohol, some about offending such as graffiti, vandalism, shoplifting, as well as social control factors such as family relationship, bullying, and so on. If you are interested in the data, you can always have a browse through the [site here](https://discover.ukdataservice.ac.uk/Catalogue/?sn=5545&type=Data%20catalogue&lt) and [have a read of one of the questionnaires as well](http://doc.ukdataservice.ac.uk/doc/5545/mrdoc/pdf/5545age_25_survey_questionnaire.pdf). 
 
 
-In any case, we should get back to our question, what does this data look like. And it looks exactly as you would imagine, it looks like the resuls of survey questionnaires, completed by people, but over time. If you were to download the next steps data for example, you will end up with a separate file for each wave. But in each wave, you would have **repeat measures** of the same variables, from the same people. So each wave you see the exact same variables, and the exact same people making up the rows of answers, but you know that time has passed. 
+In any case, we should get back to our question, what does this data look like. And it looks exactly as you would imagine, it looks like the results of survey questionnaires, completed by people, but over time. If you were to download the next steps data for example, you will end up with a separate file for each wave. But in each wave, you would have **repeat measures** of the same variables, from the same people. So each wave you see the exact same variables, and the exact same people making up the rows of answers, but you know that time has passed. 
 
 The benefit of a longitudinal study is that researchers are able to detect developments or changes in the characteristics of the target population at both the group and the individual level. The key here is that longitudinal studies extend beyond a single moment in time. As a result, they can establish sequences of events. It is generally admitted that causes precede their effects in time. This usually justifies the preference for longitudinal studies over cross-sectional ones, because the former allow the modelling of the dynamic process generating the outcome, while the latter cannot. Supporters of the longitudinal view make two interrelated claims: (i) causal inference requires following the same individuals over time, and (ii) no causal inference can be drawn from cross-sectional data. 
 
 
-Anyway have a look at a small subset of 3 waves of the data. There are 4 variables in each wave. The first one,  "NSID" is the unique idntifier for each person. Then there are three variables that contain the answers that each person gave to some questions. * W1canntryYP*	is the answer to whether the young perso ever tried Cannabis. *W1alceverYP*	is the answer to whether the young person ever had proper alcoholic drink, and *W1cignowYP*	is the answer to whether the young person ever smoked cigarettes.
+Anyway have a look at a small subset of 3 waves of the data. There are 4 variables in each wave. The first one,  "NSID" is the unique identifier for each person. Then there are three variables that contain the answers that each person gave to some questions. * W1canntryYP*	is the answer to whether the young person ever tried Cannabis. *W1alceverYP*	is the answer to whether the young person ever had proper alcoholic drink, and *W1cignowYP*	is the answer to whether the young person ever smoked cigarettes.
 
 
 So you can download these three waves of young people being surveyed from blackboard. You can find them labelled wave_1.xlsx, wave_2.xlsx, and wave_3.xlsx in the data folder for this week on BB. Download all three onto your computer, and open them up in excel. 
@@ -1084,7 +1084,7 @@ So you can download these three waves of young people being surveyed from blackb
 ##Linking data
 
 
-So hopefully if I've taught you anything about the strucutre of data, is that you have *all* your observations in your rows and *all* your variables in your columns. So if you want to be able to look at changes in people's responses over time, for example, you will need to be able to link these data sets together into one spreadsheet. 
+So hopefully if I've taught you anything about the structure of data, is that you have *all* your observations in your rows and *all* your variables in your columns. So if you want to be able to look at changes in people's responses over time, for example, you will need to be able to link these data sets together into one spreadsheet. 
 
 
 So how do we do this? Well what you can do is to link one data set with another.  Data linking is used to bring together information from different sources in order to create a new, richer dataset. This involves identifying and combining information from corresponding records on each of the different source datasets. The records in the resulting linked dataset contain some data from each of the source datasets. Most linking techniques combine records from different datasets if they refer to the same entity. (An entity may be a person, organisation, household or even a geographic region.) 
@@ -1103,7 +1103,7 @@ To merge tables, you can use the VLOOKUP function to lookup and retrieve data fr
 This is a standard "exact match" `VLOOKUP()` formula (remember that means you have to set the last parameter to 'FALSE' for an exact match). 
 
 
-So first things first, open up all three waves in three selarate excel spreadsheets. Have a look at them all. You can see the first one has the following columns: 
+So first things first, open up all three waves in three separate excel spreadsheets. Have a look at them all. You can see the first one has the following columns: 
 
 - *NSID*: the unique ID
 - *W1canntryYP*: ever tried cannabis	
@@ -1134,7 +1134,7 @@ So why doesn't the NSID column change? Well this is the same value for all parti
 ![](imgs/fn2187.png)
 
 
-You need a uniqie identifier to be present for each row in all the data sets that you wish to join. This is how Excel knows what values belong to what row! What you are doing is matching each value from one table to the next, using this unique identified column, that exists in both tables. For example, let's say we have two data sets from some people in Hawkins, Indiana. In one data set we collected information about their age. In another one, we collected information about their hair colour. If we collected some information that is unique to each observation, and this is the *same* in both sets of data, for example their names, then we can link them up, based on this information.  Something like this: 
+You need a unique identifier to be present for each row in all the data sets that you wish to join. This is how Excel knows what values belong to what row! What you are doing is matching each value from one table to the next, using this unique identified column, that exists in both tables. For example, let's say we have two data sets from some people in Hawkins, Indiana. In one data set we collected information about their age. In another one, we collected information about their hair colour. If we collected some information that is unique to each observation, and this is the *same* in both sets of data, for example their names, then we can link them up, based on this information.  Something like this: 
 
 
 ![](imgs/merge_logic_1.png)
@@ -1213,7 +1213,7 @@ Something like this:
 ![](imgs/select_from_w2.gif)
 
 
-You can see that by going to the sheed and highlighting the appropriate columns, your formula bar there, in your original file, is populated with the code to refer to those columns in that file! Just like we did when grabbing data from a different sheet within the same file. 
+You can see that by going to the  sheet and highlighting the appropriate columns, your formula bar there, in your original file, is populated with the code to refer to those columns in that file! Just like we did when grabbing data from a different sheet within the same file. 
 
 
 Remember the reference of a cell is `column letter + row number`? The reference for a cell from a sheet is `sheet name + ! + column letter + row number`? Well the reference for a cell from a sheet on an entirely different file is `[ + file name + ] + sheet name + ! + column letter + row number`. 
@@ -1241,13 +1241,30 @@ So our final formula looks like this:
 
 
 
+
+**NOTE** it's possible that for some of you (likely those on PCs) there will be quotes around the sheet reference in this formula, something like this: 
+
+
+`=VLOOKUP(A2,'[wave_2(1).xlsx]wave_2.csv'!$A:$D,4,FALSE) `
+
+
+see the `'` around the `[wave_2(1).xlsx]wave_2.csv`? You *might* see this in your version. But still achieves the same thing. 
+
+
+
 Double click on the little blue square on the bottom right hand of the blue frame around this cell to copy the formula all the way to the bottom. 
 
 
 To get the other two columns from the same sheet, you use the *exact same formula* except you change the column index number. Does it make sense why you do this? Because you're grabbing a *different column*. You're always grabbing the one that corresponds to your header, which you've copied over. If this is unclear make sure to raise your hand, so we can go through this. It's worth going through it even if you feel like you get it, as you will be doing this again in your task, and it's something much easier explained in person!
 
 
-So now, copy the formula for the next two columns, change the column index number to 3 and to 4 as appropriate, and you will see the values for each person from both wave 1 and wave 2 in there:
+So now, copy the formula for the next two columns, change the column index number to 3 and to 4 as appropriate:
+
+
+![](imgs/VLOOKUP.jpg)
+
+
+and you will see the values for each person from both wave 1 and wave 2 in there:
 
 
 
@@ -1267,7 +1284,7 @@ What you are seeing here are the presence of people who took part in wave 1, but
 Attrition is only one cause of **missing data**. Sooner or later (usually sooner), anyone who does statistical analysis runs into problems with missing data. In a typical data set, information is missing for some variables for some cases. In surveys that ask people to report their income, for example, a sizable fraction of the respondents typically refuse to answer. Outright refusals are only one cause of missing data. In self-administered surveys, people often overlook or forget to answer some of the questions. Even trained interviewers occasionally may neglect to ask some questions. Sometimes respondents say that they just do not know the answer or do not have the information available to them. Sometimes the question is inapplicable to some respondents, such as asking unmarried people to rate the quality of their marriage. In longitudinal studies, people who are interviewed in one wave may die or move away before the next wave. When data are collated from multiple administrative records, some records may have become inadvertently lost.
 
 
-You can see our second person with NAs there, NS15760C, also has NA values for the first wave. This means that while NS15760C was interviewed in the 1st wave (and potentially in waves 2 and 3 as well), they did not answer these questions! This could be because they put one of the answers that were coded as "NA", such as Refused to answer, wrote "Not applicable", or responses "Don't know", or because they were unable to complete or refused this whole section. Missing data is important, and it's importat to know *why* your data is missing. When people refuse to answer something, it might be motivated by very different things than when people say "don't know" to something. If people with certain characteristics are more likely to not respond, then there might be systematic biases introduced through missing data. This is important to keep in mind. 
+You can see our second person with NAs there, NS15760C, also has NA values for the first wave. This means that while NS15760C was interviewed in the 1st wave (and potentially in waves 2 and 3 as well), they did not answer these questions! This could be because they put one of the answers that were coded as "NA", such as Refused to answer, wrote "Not applicable", or responses "Don't know", or because they were unable to complete or refused this whole section. Missing data is important, and it's important to know *why* your data is missing. When people refuse to answer something, it might be motivated by very different things than when people say "don't know" to something. If people with certain characteristics are more likely to not respond, then there might be systematic biases introduced through missing data. This is important to keep in mind. 
 
 
 OK so let's copy over wave 3 as well, and then we can have a look at our attrition and so on rates. 
@@ -1287,12 +1304,12 @@ Then, when that is done, you will see a final data set with all the three waves 
 
 
 
-We picked up in the #N/A last time, there is another issue with longitudinal, and generally self-report data collection methods, available to spot here. Remember that all of our questions are asking people whether they have *ever* smoked, or *ever* tried cannabis, or *ever* had an alcoholic drink. So surely, once someone answers yes, you would expect them to keep answering yes, correct? Well, have a look at respondent number "NS23533L". While in wave 2, they admit to trying all cannabis and cigarettes and aclohol, in wave three they seem to have forgotten this experience, and report that they have not ever tried either cannabis or cigarettes. The issue here is called **response bias**. 
+We picked up in the #N/A last time, there is another issue with longitudinal, and generally self-report data collection methods, available to spot here. Remember that all of our questions are asking people whether they have *ever* smoked, or *ever* tried cannabis, or *ever* had an alcoholic drink. So surely, once someone answers yes, you would expect them to keep answering yes, correct? Well, have a look at respondent number "NS23533L". While in wave 2, they admit to trying all cannabis and cigarettes and  alcohol, in wave three they seem to have forgotten this experience, and report that they have not ever tried either cannabis or cigarettes. The issue here is called **response bias**. 
 
-Response bias is a general term for anything that influences the responses of participants away from an accurate or truthful response. These biases are most prevalent in the types of studies and research that involve participant self-report, such as structured interviews or surveys. It can be caused by a variety of factors, for example the phrasing of questions in surveys, the demeanor of the researcher, the way the experiment is conducted, or the desires of the participant to be a good experimental subject and to provide socially desirable responses may affect the response in some way. All of these "artifacts" of survey and self-report research may have the potential to damage the validity of a measure or study. Because of response bias, it is possible that some study results are due to a systematic response bias rather than the hypothesized effect, which can have a profound effect on psychological and other types of research using questionnaires or surveys. It is therefore important for researchers to be aware of response bias and the effect it can have on their research so that they can attempt to prevent it from impacting their findings in a negative manner. Response biases can have a large impact on the validity of questionnaires or surveys.
+Response bias is a general term for anything that influences the responses of participants away from an accurate or truthful response. These biases are most prevalent in the types of studies and research that involve participant self-report, such as structured interviews or surveys. It can be caused by a variety of factors, for example the phrasing of questions in surveys, the demeanour of the researcher, the way the experiment is conducted, or the desires of the participant to be a good experimental subject and to provide socially desirable responses may affect the response in some way. All of these " artefact" of survey and self-report research may have the potential to damage the validity of a measure or study. Because of response bias, it is possible that some study results are due to a systematic response bias rather than the hypothesized effect, which can have a profound effect on psychological and other types of research using questionnaires or surveys. It is therefore important for researchers to be aware of response bias and the effect it can have on their research so that they can attempt to prevent it from impacting their findings in a negative manner. Response biases can have a large impact on the validity of questionnaires or surveys.
 
 
-There isn't much that we can do (at the stage of data analysis) to control for this. If you suspect that you will encounter response bias, you should consider this in your research design, and build measures into the data collection phase, that try to accout for or at least identify sources of response bias in your survey. 
+There isn't much that we can do (at the stage of data analysis) to control for this. If you suspect that you will encounter response bias, you should consider this in your research design, and build measures into the data collection phase, that try to  account for or at least identify sources of response bias in your survey. 
 
 
 
@@ -1349,7 +1366,7 @@ If you did the same thing to me, you should have 622 cases left. Pretty big attr
 Now, finally, since we've worked so hard on this data, let's have a look at it. Can you tell me, whether the percent of those who answered all questions in all three waves who *have* tried cannabis increases from wave to wave? 
 
 
-If your gut reaction to this question was to do with fear and confusion, one thing you could do is think back to all the skills that we've learned so far, and which one of these you would need to draw on, to be able to answer this question. First, if you want to know if the percent of people who have tried cannabis (that is - answered yes to the question about trying canabis) is greater for each wave than the wave before, you need to find out: what percent of people tried cannabis in wave 1, what about wave 2, and what about wave 3? In our newly created, complete cases data set, we know that we have one variable for cannabis trying in each wave. These are W1canntryYP for wave 1, W2canntryYP for wave 2, and W3canntryYP for wave 3. How can you find out the % who said yes for each one of these? Well remember our univariate analysis of a categorical variable, where we can find out the count of values for each variable with a pivot table? And then how we can translate those into percentages? 
+If your gut reaction to this question was to do with fear and confusion, one thing you could do is think back to all the skills that we've learned so far, and which one of these you would need to draw on, to be able to answer this question. First, if you want to know if the percent of people who have tried cannabis (that is - answered yes to the question about trying cannabis) is greater for each wave than the wave before, you need to find out: what percent of people tried cannabis in wave 1, what about wave 2, and what about wave 3? In our newly created, complete cases data set, we know that we have one variable for cannabis trying in each wave. These are W1canntryYP for wave 1, W2canntryYP for wave 2, and W3canntryYP for wave 3. How can you find out the % who said yes for each one of these? Well remember our univariate analysis of a categorical variable, where we can find out the count of values for each variable with a pivot table? And then how we can translate those into percentages? 
 
 
 If not, then refer back to your notes from the 2nd week on univariate analysis. If yes, you now know you need to make 3 pivot tables, and save the answers from each. You can then combine those into a **complex table**. Remember complex tables from the feedback session after the bivariate analysis labs, on week 3? 
@@ -1368,7 +1385,7 @@ In the end you will end up with a table like this:
 ![](imgs/final_cc_ct.png)
 
 
-And you can even get fancy and plot this change over time, to emphasise that indeed, there is an increase in the percent of respondents who answer yes to trying canabis wave on wave: 
+And you can even get fancy and plot this change over time, to emphasise that indeed, there is an increase in the percent of respondents who answer yes to trying cannabis wave on wave: 
 
 
 ![](imgs/incr_yes_can.png)
@@ -1425,7 +1442,7 @@ Watch [this 7 minute video that gives a good introduction to research ethics](ht
 - justice
 
 
-The "IRB" section is specific to the USA, however, we also have our own code of ethics, and all research needs to undergo an ethical review. Internally, the Unviersity of Manchester has created an ethics decision tool. You can navigate through this tool to determine whether or not your research requires ethical approval. You can access the tool, and read more about the university's ethics procedures [here](https://www.manchester.ac.uk/research/environment/governance/ethics/)
+The "IRB" section is specific to the USA, however, we also have our own code of ethics, and all research needs to undergo an ethical review. Internally, the University of Manchester has created an ethics decision tool. You can navigate through this tool to determine whether or not your research requires ethical approval. You can access the tool, and read more about the university's ethics procedures [here](https://www.manchester.ac.uk/research/environment/governance/ethics/)
 
 
 
