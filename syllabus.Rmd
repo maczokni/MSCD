@@ -1,7 +1,7 @@
 ---
 title: "Syllabus"
 author: "Reka Solymosi"
-date: "09/08/2017"
+date: "09/08/2018"
 output: html_document
 ---
 
@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 This course is designed to get you working with data related to crime and criminal justice, as well as other aspects of everyday life. It is meant to be both fun, and a lot of hard work, as you will be acquiring a new skill. The teaching team are here to help you make this enjoyable, and we guarantee that as long as you put in the effort, you will find this course easy. Nothing we teach you requires any sort of previous knowledge or special disposition towards maths or stats, instead all you will need is an inquiring mind, and a willingness to learn. Your main job is to do all the reading, watch all the videos, ask questions, follow all the tasks and activities, try new things, make mistakes, get feedback, ask questions, ask for help, help each other, ask questions, ask for help, ask questions. If you get stuck anywhere do not suffer in silence. Our job here is to make sure that you engage with the topic and make this course work for you, so help us do this by keeping up, and asking for help when you fall behind.
 
 
-##Rationale
+## Rationale
 
 
 > Imagine you assembled an extensive library comprised of the finest literary works in the world. How valuable would it be to someone who is illiterate? Until they can read and appreciate it, the library remains just a useless collection of inked paper. Similarly, all of the rich data visualizations and intelligence built into today’s self-service analytics tools can be negated by a simple deficiency in data literacy, which can be defined as the ability to understand, use and communicate data effectively. Increasingly, this data literacy divide will impede organizations of all shapes and sizes from reaping higher rewards from their data investments.
@@ -41,51 +41,51 @@ This course will put you on the right track to acquiring the transferable skills
 This course is designed to make you data literate criminologists, who can not only consume data in an informed manner, use it as evidence to support your arguments, or to question those made by others, and draw meaningful conclusions from the ever-increasing firehose of data being generated in our domain.  
 
 
-##Course unit overview
+## Course unit overview
 
-###1. Data sets & variables 
-  - Lab: Thursday 28/09/2017
-  - Feedback session: Tuesday 03/10/2017
+### 1. Data sets & variables 
+  - Lab: Thursday 27/09/2018 or Friday 28/09/2018
+  - Feedback session: Tuesday 02/10/2018
   
-###2. Describing and visualising single variables
-  - Lab: Thursday 05/10/2017
-  - Feedback session: Tuesday 10/10/2017
+### 2. Describing and visualising single variables
+  - Lab: Thursday 04/10/2018 or Friday 05/10/2018
+  - Feedback session: Tuesday 09/10/2018
   
-###3. Making comparisons I: the basics
-  - Lab: Thursday 12/10/2017
-  - Feedback session: Tuesday 17/10/2017
+### 3. Making comparisons I: the basics
+  - Lab: Thursday 11/10/2018 or Friday 12/10/2018
+  - Feedback session: Tuesday 16/10/2018
   
-###4. Concepts, operationalisation, measurement
-  - Lab: Thursday 19/10/2017
-  - Feedback session: Tuesday 24/10/2017
+### 4. Concepts, operationalisation, measurement
+  - Lab: Thursday 18/10/2018 or Friday 19/10/2018
+  - Feedback session: Tuesday 23/10/2018
   
-###5. Making comparisons II: the relevance of research design
-  - Lab: Thursday 26/10/2017
-  - Feedback session: Tuesday 07/11/2017
+### 5. Making comparisons II: the relevance of research design
+  - Lab: Thursday 25/10/2018 or Friday 26/10/2018
+  - Feedback session: Tuesday 06/11/2018
   
-###6. Data visualisation
-  - Lab: Thursday 09/11/2017
-  - Feedback session: Tuesday 14/11/2017
+### 6. Data visualisation
+  - Lab: Thursday 08/11/2018 or Friday 09/11/2018
+  - Feedback session: Tuesday 13/11/2018
   
-###7. Looking at trends
-  - Lab: Thursday 16/11/2017
-  - Feedback session: Tuesday 21/11/2017
+### 7. Looking at trends
+  - Lab: Thursday 15/11/2018 or Friday 16/11/2018
+  - Feedback session: Tuesday 20/11/2018
   
-###8. Qualitative data
-  - Lab: Thursday 23/11/2017
-  - Feedback session: Tuesday 28/11/2017
+### 8. Qualitative data
+  - Lab: Thursday 22/11/2018 or Friday 23/11/2018
+  - Feedback session: Tuesday 27/11/2018
   
-###9. Qualitative data analysis
-  - Lab: Thursday 30/11/2017
-  - Feedback session: Tuesday 05/12/2017
+### 9. Qualitative data analysis
+  - Lab: Thursday 29/11/2018 or Friday 30/11/2018
+  - Feedback session: Tuesday 04/12/2018
   
-###10. Wrap up and project support
-  - Lab: Thursday 07/12/2017
-  - Feedback session: Tuesday 12/12/2017
+### 10. Wrap up and project support
+  - Lab: Thursday 06/12/2018 or Friday 07/12/2018
+  - Feedback session: Tuesday 11/12/2018
   
 
 
-##Structure
+## Structure
 
 *Lab sessions - 20 hours: *
 The course will consist of lab sessions, where students will be expected to work through previously constructed readings, videos, and exercises, while recieving support from the teaching staff. Students will be able to work individually and move through the course materials at their own pace, while also coming together occasionally in group-based tasks and activities. 
@@ -94,7 +94,7 @@ The course will consist of lab sessions, where students will be expected to work
 *Feedback sessions - 10 hours*: There will be weekly feedback sessions which will take the form of interactive lectures, where sometimes students can receive feedback on their work, and ask questions. General concepts will be clarified, and students will be able to use this opportunity to catch up, and ensure their learning. **Attendance at these sessions is mandatory and monitored**
 
 
-##Aims
+## Aims
 
 The course hopes to achieve the following aims: 
 
@@ -106,9 +106,9 @@ The course hopes to achieve the following aims:
 - To develop students’ autonomy and independence as learners whilst promoting collaborative practices needed to work as part of a team
 
 
-##Learning outcomes
+## Learning outcomes
 
-###After this course, students should be able to: 
+### After this course, students should be able to: 
 
 - Identify the principal data sources for a number of key areas in criminology and other cognate areas of social policy
 - Demonstrate a critical awareness of key data quality issues and how they are linked to research design decisions
@@ -118,19 +118,19 @@ The course hopes to achieve the following aims:
 - Become aware of the range of existing qualitative data and basic approaches to their analysis
 
 
-###Knowledge and understanding
+### Knowledge and understanding
 
 - Identify the principal data sources for a number of key areas in criminology and other cognate areas of social policy
 
 - Demonstrate a critical awareness of key data quality issues
 
 
-###Intellectual skills
+### Intellectual skills
 
 - Develop a critical understanding of social statistics, in academic writing, the news, and official reports.
 
 
-###Practical skills
+### Practical skills
 
 - Read and interpret quantitative information in the form of tables and graphs
 
@@ -143,7 +143,7 @@ The course hopes to achieve the following aims:
 - Be in a position to consider conducting secondary data analysis for their third year UG dissertations (after taking Modelling Criminological data in their 2nd term).
 
 
-##Teaching and learning methods
+## Teaching and learning methods
 
 Teaching methods will combine lab sessions, lectures, group discussion, interactive teaching and private study. Each week we will have a two-hour lab session and a feedback workshop to discuss homework solutions and to clarify understanding. We used something close to the ["flip teaching" method](https://search.proquest.com/openview/8916edc229140a1a54cf66e839682e79/1?pq-origsite=gscholar&cbl=25066). This means that there is a greater expectation that you will come prepared to class (i.e., have done the required reading) and it also means that you will spend most of the contact time working through a set of computer exercises trying to put to practice the knowledge acquired through your reading. **YOU HAVE TO DO THE READING BEFORE YOU COME TO THE LAB SESSION ON THURSDAYS**. The course will not work for you otherwise. 
 
@@ -157,7 +157,7 @@ Although there won’t be much formal lecturing during most of the lab sessions,
 From week 2 to 11 of the semester we will have one-hour Feedback Support Sessions. These sessions will focus on explaining the answers to the previous week homework and further clarifying concepts.
 
 
-##Assessment methods
+## Assessment methods
 
 **Final project 80%**. Students will be required to produce a report of 3,000 words incorporating charts, tables and graphs, to be produced to a good quality standard. 
 
@@ -172,7 +172,7 @@ Each week, homework will be assigned for students to work on in their own time. 
 None
 
 
-##Recommended reading
+## Recommended reading
 
 - Blastland, Michael, and Andrew W. Dilnot. The tiger that isn't: seeing through a world of numbers. Profile books, 2008.
 - E. Babbie, The Practice of Social Research, (Most recent edition) 
@@ -180,10 +180,10 @@ None
 - Martin Slattery, Official Statistics (London: Tavistock 1986). 
 
 
-##Scheduled activity hours
+## Scheduled activity hours
 
- -Lectures	20  
- -Seminars	10  
+ -Labs	20  
+ -Lectures	10  
 
 
 
