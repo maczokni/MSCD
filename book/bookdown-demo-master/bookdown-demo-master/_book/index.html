@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Making Sense of Crim Data</title>
+  <meta name="description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Making Sense of Crim Data" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Making Sense of Crim Data" />
+  
+  <meta name="twitter:description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester" />
+  
+
+<meta name="author" content="Reka Solymosi">
+
+
+<meta name="date" content="2018-09-11">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+
+<link rel="next" href="week1.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a><ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#disclaimer"><i class="fa fa-check"></i><b>0.1</b> Disclaimer</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#overview"><i class="fa fa-check"></i><b>0.2</b> Overview of course</a><ul>
+<li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#module-structure"><i class="fa fa-check"></i><b>0.2.1</b> Module structure</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="week1.html"><a href="week1.html"><i class="fa fa-check"></i><b>1</b> Week 1</a><ul>
+<li class="chapter" data-level="1.1" data-path="week1.html"><a href="week1.html#learning-outcomes"><i class="fa fa-check"></i><b>1.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="1.2" data-path="week1.html"><a href="week1.html#setting-up-your-working-environment"><i class="fa fa-check"></i><b>1.2</b> Setting up your working environment</a></li>
+<li class="chapter" data-level="1.3" data-path="week1.html"><a href="week1.html#getting-to-know-excel"><i class="fa fa-check"></i><b>1.3</b> Getting to know Excel</a></li>
+<li class="chapter" data-level="1.4" data-path="week1.html"><a href="week1.html#data-variables-and-observations"><i class="fa fa-check"></i><b>1.4</b> Data: Variables and observations</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="week1.html"><a href="week1.html#activity-1-building-your-own-data"><i class="fa fa-check"></i><b>1.4.1</b> Activity 1: Building your own data</a></li>
+<li class="chapter" data-level="1.4.2" data-path="week1.html"><a href="week1.html#code-books"><i class="fa fa-check"></i><b>1.4.2</b> Code books</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="week1.html"><a href="week1.html#questions-about-your-data"><i class="fa fa-check"></i><b>1.5</b> Questions about your data</a><ul>
+<li class="chapter" data-level="1.5.1" data-path="week1.html"><a href="week1.html#activity-2-thinking-about-what-our-data-tells-us"><i class="fa fa-check"></i><b>1.5.1</b> Activity 2: Thinking about what our data tells us</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="week1.html"><a href="week1.html#levels-of-measurement"><i class="fa fa-check"></i><b>1.6</b> Levels of measurement</a><ul>
+<li class="chapter" data-level="1.6.1" data-path="week1.html"><a href="week1.html#activity-3.1-levels-of-measurement-pt.-1"><i class="fa fa-check"></i><b>1.6.1</b> Activity 3.1: Levels of measurement pt. 1</a></li>
+<li class="chapter" data-level="1.6.2" data-path="week1.html"><a href="week1.html#activity-3.2-levels-of-measurement-pt.-2"><i class="fa fa-check"></i><b>1.6.2</b> Activity 3.2: Levels of measurement pt. 2</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="week1.html"><a href="week1.html#unit-of-analysis"><i class="fa fa-check"></i><b>1.7</b> Unit of analysis</a><ul>
+<li class="chapter" data-level="1.7.1" data-path="week1.html"><a href="week1.html#activity-4-abstract-ing-the-unit-of-analysis"><i class="fa fa-check"></i><b>1.7.1</b> Activity 4: <em>Abstract</em>-ing the unit of analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="week1.html"><a href="week1.html#summary"><i class="fa fa-check"></i><b>1.8</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="week2.html"><a href="week2.html"><i class="fa fa-check"></i><b>2</b> Week 2</a><ul>
+<li class="chapter" data-level="2.1" data-path="week2.html"><a href="week2.html#learning-outcomes-1"><i class="fa fa-check"></i><b>2.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="week2.html"><a href="week2.html#terms-for-today"><i class="fa fa-check"></i><b>2.1.1</b> Terms for today:</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="week2.html"><a href="week2.html#univariate-analysis"><i class="fa fa-check"></i><b>2.2</b> Univariate analysis</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="week2.html"><a href="week2.html#the-importance-of-level-of-measurement"><i class="fa fa-check"></i><b>2.2.1</b> The importance of level of measurement</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="week2.html"><a href="week2.html#summarising-categorical-data"><i class="fa fa-check"></i><b>2.3</b> Summarising categorical data</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="week2.html"><a href="week2.html#activity-1-crime-types"><i class="fa fa-check"></i><b>2.3.1</b> Activity 1: Crime types</a></li>
+<li class="chapter" data-level="2.3.2" data-path="week2.html"><a href="week2.html#frequency-tables"><i class="fa fa-check"></i><b>2.3.2</b> Frequency tables</a></li>
+<li class="chapter" data-level="2.3.3" data-path="week2.html"><a href="week2.html#creating-a-frequency-table-in-excel"><i class="fa fa-check"></i><b>2.3.3</b> Creating a frequency table in Excel</a></li>
+<li class="chapter" data-level="2.3.4" data-path="week2.html"><a href="week2.html#activity-2-looking-at-frequency"><i class="fa fa-check"></i><b>2.3.4</b> Activity 2: Looking at frequency</a></li>
+<li class="chapter" data-level="2.3.5" data-path="week2.html"><a href="week2.html#visualising-a-frequency-table-with-bar-charts"><i class="fa fa-check"></i><b>2.3.5</b> Visualising a frequency table with bar charts</a></li>
+<li class="chapter" data-level="2.3.6" data-path="week2.html"><a href="week2.html#activity-3-bar-charts-in-excel"><i class="fa fa-check"></i><b>2.3.6</b> Activity 3: Bar charts in Excel</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="week2.html"><a href="week2.html#summarising-numeric-data"><i class="fa fa-check"></i><b>2.4</b> Summarising numeric data</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="week2.html"><a href="week2.html#measures-of-central-tendency"><i class="fa fa-check"></i><b>2.4.1</b> Measures of central tendency</a></li>
+<li class="chapter" data-level="2.4.2" data-path="week2.html"><a href="week2.html#activity-4-mean-and-median-in-excel"><i class="fa fa-check"></i><b>2.4.2</b> Activity 4: Mean and median in excel</a></li>
+<li class="chapter" data-level="2.4.3" data-path="week2.html"><a href="week2.html#distributions"><i class="fa fa-check"></i><b>2.4.3</b> Distributions</a></li>
+<li class="chapter" data-level="2.4.4" data-path="week2.html"><a href="week2.html#histograms"><i class="fa fa-check"></i><b>2.4.4</b> Histograms</a></li>
+<li class="chapter" data-level="2.4.5" data-path="week2.html"><a href="week2.html#activity-5-histograms-in-excel"><i class="fa fa-check"></i><b>2.4.5</b> Activity 5: Histograms in Excel</a></li>
+<li class="chapter" data-level="2.4.6" data-path="week2.html"><a href="week2.html#five-number-summary"><i class="fa fa-check"></i><b>2.4.6</b> Five-number summary</a></li>
+<li class="chapter" data-level="2.4.7" data-path="week2.html"><a href="week2.html#activity-6-calculate-quartiles"><i class="fa fa-check"></i><b>2.4.7</b> Activity 6: Calculate quartiles</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="week2.html"><a href="week2.html#standard-deviation"><i class="fa fa-check"></i><b>2.5</b> Standard deviation</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="week2.html"><a href="week2.html#activity-7-standard-deviation-in-excel"><i class="fa fa-check"></i><b>2.5.1</b> Activity 7: Standard Deviation in Excel</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="week2.html"><a href="week2.html#writing-it-all-up"><i class="fa fa-check"></i><b>2.6</b> Writing it all up</a><ul>
+<li class="chapter" data-level="2.6.1" data-path="week2.html"><a href="week2.html#build-a-structure"><i class="fa fa-check"></i><b>2.6.1</b> Build a structure</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="week2.html"><a href="week2.html#summary-1"><i class="fa fa-check"></i><b>2.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="week3.html"><a href="week3.html"><i class="fa fa-check"></i><b>3</b> Week 3</a><ul>
+<li class="chapter" data-level="3.1" data-path="week3.html"><a href="week3.html#learning-outcomes-2"><i class="fa fa-check"></i><b>3.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="week3.html"><a href="week3.html#terms-for-today-1"><i class="fa fa-check"></i><b>3.1.1</b> Terms for today</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="week3.html"><a href="week3.html#categorical-v-categorical"><i class="fa fa-check"></i><b>3.2</b> Categorical v categorical</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="week3.html"><a href="week3.html#activity-1-surviving-the-titanic"><i class="fa fa-check"></i><b>3.2.1</b> Activity 1: Surviving the Titanic</a></li>
+<li class="chapter" data-level="3.2.2" data-path="week3.html"><a href="week3.html#row-percentage-column-percentage-or-total-percentage"><i class="fa fa-check"></i><b>3.2.2</b> Row percentage, column percentage, or total percentage</a></li>
+<li class="chapter" data-level="3.2.3" data-path="week3.html"><a href="week3.html#a-note-on-formatting-cells"><i class="fa fa-check"></i><b>3.2.3</b> A note on formatting cells</a></li>
+<li class="chapter" data-level="3.2.4" data-path="week3.html"><a href="week3.html#activity-3-visualising-the-relationship---stacked-bar-charts-and-conditional-formatting"><i class="fa fa-check"></i><b>3.2.4</b> Activity 3: Visualising the relationship - stacked bar charts, and conditional formatting</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="week3.html"><a href="week3.html#categorical-v-numeric"><i class="fa fa-check"></i><b>3.3</b> Categorical v numeric</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="week3.html"><a href="week3.html#activity-4-age-of-offenders"><i class="fa fa-check"></i><b>3.3.1</b> Activity 4: Age of offenders</a></li>
+<li class="chapter" data-level="3.3.2" data-path="week3.html"><a href="week3.html#activity-5-adding-a-column-for-median"><i class="fa fa-check"></i><b>3.3.2</b> Activity 5: Adding a column for median</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="week3.html"><a href="week3.html#numeric-v-numeric"><i class="fa fa-check"></i><b>3.4</b> Numeric v numeric</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="week3.html"><a href="week3.html#correlation-does-not-mean-causation"><i class="fa fa-check"></i><b>3.4.1</b> Correlation does not mean causation</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="week3.html"><a href="week3.html#summary-2"><i class="fa fa-check"></i><b>3.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="week4.html"><a href="week4.html"><i class="fa fa-check"></i><b>4</b> Week 4</a><ul>
+<li class="chapter" data-level="4.1" data-path="week4.html"><a href="week4.html#learning-outcomes-3"><i class="fa fa-check"></i><b>4.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="week4.html"><a href="week4.html#terms-for-today-2"><i class="fa fa-check"></i><b>4.1.1</b> Terms for today:</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="week4.html"><a href="week4.html#population-parameters-versus-sample-statistics"><i class="fa fa-check"></i><b>4.2</b> Population parameters versus sample statistics</a></li>
+<li class="chapter" data-level="4.3" data-path="week4.html"><a href="week4.html#conceptualisation"><i class="fa fa-check"></i><b>4.3</b> Conceptualisation</a></li>
+<li class="chapter" data-level="4.4" data-path="week4.html"><a href="week4.html#measurement"><i class="fa fa-check"></i><b>4.4</b> Measurement</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="week4.html"><a href="week4.html#measuring-constructs-with-composite-variables"><i class="fa fa-check"></i><b>4.4.1</b> Measuring constructs with composite variables</a></li>
+<li class="chapter" data-level="4.4.2" data-path="week4.html"><a href="week4.html#multi-item-scales-for-categorical-constructs"><i class="fa fa-check"></i><b>4.4.2</b> Multi-item scales for categorical constructs</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="week4.html"><a href="week4.html#a-note-on-validity-and-reliability"><i class="fa fa-check"></i><b>4.5</b> A note on Validity and Reliability</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="week4.html"><a href="week4.html#activity-1-calculating-a-summative-score"><i class="fa fa-check"></i><b>4.5.1</b> Activity 1: Calculating a summative score</a></li>
+<li class="chapter" data-level="4.5.2" data-path="week4.html"><a href="week4.html#activity-2-testing-your-questions-cronbachs-alpha"><i class="fa fa-check"></i><b>4.5.2</b> Activity 2: Testing your questions: Cronbach’s alpha</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="week4.html"><a href="week4.html#recoding-some-more-transforming-your-variables-to-fit-with-your-concepts"><i class="fa fa-check"></i><b>4.6</b> Recoding some more: Transforming your variables to fit with your concepts</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="week4.html"><a href="week4.html#activity-3-recoding-variables"><i class="fa fa-check"></i><b>4.6.1</b> Activity 3: Recoding Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="week4.html"><a href="week4.html#summary-3"><i class="fa fa-check"></i><b>4.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="week5.html"><a href="week5.html"><i class="fa fa-check"></i><b>5</b> Week 5</a><ul>
+<li class="chapter" data-level="5.1" data-path="week5.html"><a href="week5.html#learning-outcomes-4"><i class="fa fa-check"></i><b>5.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="week5.html"><a href="week5.html#terms-for-today-3"><i class="fa fa-check"></i><b>5.1.1</b> Terms for today</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="week5.html"><a href="week5.html#research-design"><i class="fa fa-check"></i><b>5.2</b> Research Design</a></li>
+<li class="chapter" data-level="5.3" data-path="week5.html"><a href="week5.html#experiments-and-evaluation"><i class="fa fa-check"></i><b>5.3</b> Experiments and evaluation</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="week5.html"><a href="week5.html#rct"><i class="fa fa-check"></i><b>5.3.1</b> RCT</a></li>
+<li class="chapter" data-level="5.3.2" data-path="week5.html"><a href="week5.html#designing-an-rtc"><i class="fa fa-check"></i><b>5.3.2</b> Designing an RTC</a></li>
+<li class="chapter" data-level="5.3.3" data-path="week5.html"><a href="week5.html#activity-1-research-planning-with-gantt-charts-design-an-rtc-example"><i class="fa fa-check"></i><b>5.3.3</b> Activity 1: Research Planning with Gantt Charts: Design an RTC example</a></li>
+<li class="chapter" data-level="5.3.4" data-path="week5.html"><a href="week5.html#activity-2-random-assignment-into-control-and-treatment"><i class="fa fa-check"></i><b>5.3.4</b> Activity 2: Random assignment into control and treatment</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="week5.html"><a href="week5.html#activity-3-stratified-randomisation"><i class="fa fa-check"></i><b>5.4</b> Activity 3: Stratified randomisation</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="week5.html"><a href="week5.html#freeze"><i class="fa fa-check"></i><b>5.4.1</b> Freeze!</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="week5.html"><a href="week5.html#a-final-note-on-evidence-meta-analysis"><i class="fa fa-check"></i><b>5.5</b> A final note on evidence: Meta Analysis</a></li>
+<li class="chapter" data-level="5.6" data-path="week5.html"><a href="week5.html#longitudinal-data"><i class="fa fa-check"></i><b>5.6</b> Longitudinal data</a><ul>
+<li class="chapter" data-level="5.6.1" data-path="week5.html"><a href="week5.html#what-does-longitudinal-data-look-like"><i class="fa fa-check"></i><b>5.6.1</b> What does longitudinal data look like?</a></li>
+<li class="chapter" data-level="5.6.2" data-path="week5.html"><a href="week5.html#activity-4-linking-data"><i class="fa fa-check"></i><b>5.6.2</b> Activity 4: Linking data</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="week5.html"><a href="week5.html#complete-cases-an-approach-to-missing-data"><i class="fa fa-check"></i><b>5.7</b> Complete cases (an approach to missing data)</a><ul>
+<li class="chapter" data-level="5.7.1" data-path="week5.html"><a href="week5.html#activity-5-selecting-complete-cases"><i class="fa fa-check"></i><b>5.7.1</b> Activity 5: Selecting Complete Cases</a></li>
+</ul></li>
+<li class="chapter" data-level="5.8" data-path="week5.html"><a href="week5.html#ethics"><i class="fa fa-check"></i><b>5.8</b> Ethics</a></li>
+<li class="chapter" data-level="5.9" data-path="week5.html"><a href="week5.html#summary-4"><i class="fa fa-check"></i><b>5.9</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="week6.html"><a href="week6.html"><i class="fa fa-check"></i><b>6</b> Week 6</a><ul>
+<li class="chapter" data-level="6.1" data-path="week6.html"><a href="week6.html#learning-outcomes-5"><i class="fa fa-check"></i><b>6.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="6.2" data-path="week6.html"><a href="week6.html#visualising-data"><i class="fa fa-check"></i><b>6.2</b> Visualising data</a></li>
+<li class="chapter" data-level="6.3" data-path="week6.html"><a href="week6.html#why-visualise-data"><i class="fa fa-check"></i><b>6.3</b> Why visualise data?</a></li>
+<li class="chapter" data-level="6.4" data-path="week6.html"><a href="week6.html#anatomy-of-a-plot---the-grammar-of-graphics"><i class="fa fa-check"></i><b>6.4</b> Anatomy of a plot - the Grammar of Graphics</a></li>
+<li class="chapter" data-level="6.5" data-path="week6.html"><a href="week6.html#principles-of-good-data-visualisation"><i class="fa fa-check"></i><b>6.5</b> Principles of good data visualisation</a><ul>
+<li class="chapter" data-level="6.5.1" data-path="week6.html"><a href="week6.html#criticisms"><i class="fa fa-check"></i><b>6.5.1</b> Criticisms</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="week6.html"><a href="week6.html#what-makes-a-bad-graph-bad"><i class="fa fa-check"></i><b>6.6</b> What makes a bad graph bad?</a></li>
+<li class="chapter" data-level="6.7" data-path="week6.html"><a href="week6.html#what-graph-should-i-use"><i class="fa fa-check"></i><b>6.7</b> What graph should I use?</a></li>
+<li class="chapter" data-level="6.8" data-path="week6.html"><a href="week6.html#edges-contrasts-and-colors"><i class="fa fa-check"></i><b>6.8</b> Edges, Contrasts and Colors</a></li>
+<li class="chapter" data-level="6.9" data-path="week6.html"><a href="week6.html#colour"><i class="fa fa-check"></i><b>6.9</b> Colour</a><ul>
+<li class="chapter" data-level="6.9.1" data-path="week6.html"><a href="week6.html#activity-1-custom-colours-in-excel-graphs."><i class="fa fa-check"></i><b>6.9.1</b> Activity 1: Custom colours in Excel graphs.</a></li>
+</ul></li>
+<li class="chapter" data-level="6.10" data-path="week6.html"><a href="week6.html#reading-between-the-lines-points"><i class="fa fa-check"></i><b>6.10</b> Reading between the lines (points)</a></li>
+<li class="chapter" data-level="6.11" data-path="week6.html"><a href="week6.html#exploratory-data-visualisation"><i class="fa fa-check"></i><b>6.11</b> Exploratory data visualisation</a><ul>
+<li class="chapter" data-level="6.11.1" data-path="week6.html"><a href="week6.html#comparing-categories"><i class="fa fa-check"></i><b>6.11.1</b> Comparing categories</a></li>
+<li class="chapter" data-level="6.11.2" data-path="week6.html"><a href="week6.html#activity-2-exploring-trends"><i class="fa fa-check"></i><b>6.11.2</b> Activity 2: Exploring trends</a></li>
+<li class="chapter" data-level="6.11.3" data-path="week6.html"><a href="week6.html#activity-3-making-a-chart-template"><i class="fa fa-check"></i><b>6.11.3</b> Activity 3: Making a chart template</a></li>
+<li class="chapter" data-level="6.11.4" data-path="week6.html"><a href="week6.html#activity-4-saving-your-graph"><i class="fa fa-check"></i><b>6.11.4</b> Activity 4: Saving your graph</a></li>
+</ul></li>
+<li class="chapter" data-level="6.12" data-path="week6.html"><a href="week6.html#acvitity-5-more-complex-graphs"><i class="fa fa-check"></i><b>6.12</b> Acvitity 5: More complex graphs</a></li>
+<li class="chapter" data-level="6.13" data-path="week6.html"><a href="week6.html#more-guidance-on-chart-design"><i class="fa fa-check"></i><b>6.13</b> More guidance on chart design</a></li>
+<li class="chapter" data-level="6.14" data-path="week6.html"><a href="week6.html#communicating-results"><i class="fa fa-check"></i><b>6.14</b> Communicating results</a><ul>
+<li class="chapter" data-level="6.14.1" data-path="week6.html"><a href="week6.html#activity-6-interpreting-results"><i class="fa fa-check"></i><b>6.14.1</b> Activity 6: Interpreting results</a></li>
+</ul></li>
+<li class="chapter" data-level="6.15" data-path="week6.html"><a href="week6.html#summary-5"><i class="fa fa-check"></i><b>6.15</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="week7.html"><a href="week7.html"><i class="fa fa-check"></i><b>7</b> Week 7</a><ul>
+<li class="chapter" data-level="7.1" data-path="week7.html"><a href="week7.html#learning-outcomes-6"><i class="fa fa-check"></i><b>7.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="7.2" data-path="week7.html"><a href="week7.html#crime-and-incident-trend-identification"><i class="fa fa-check"></i><b>7.2</b> Crime and incident trend identification</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="week7.html"><a href="week7.html#activity-1-extracting-temporal-variables-from-dates"><i class="fa fa-check"></i><b>7.2.1</b> Activity 1: Extracting temporal variables from dates</a></li>
+<li class="chapter" data-level="7.2.2" data-path="week7.html"><a href="week7.html#activity-2-extract-year-from-date-column"><i class="fa fa-check"></i><b>7.2.2</b> Activity 2: Extract year from date column</a></li>
+<li class="chapter" data-level="7.2.3" data-path="week7.html"><a href="week7.html#activity-3-extract-day-of-week-from-date-column"><i class="fa fa-check"></i><b>7.2.3</b> Activity 3: Extract day of week from date column</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="week7.html"><a href="week7.html#aggregating-to-simple-intervals"><i class="fa fa-check"></i><b>7.3</b> Aggregating to simple intervals</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="week7.html"><a href="week7.html#activity-4-aggregate-to-hour"><i class="fa fa-check"></i><b>7.3.1</b> Activity 4: Aggregate to hour</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="week7.html"><a href="week7.html#visualising-time"><i class="fa fa-check"></i><b>7.4</b> Visualising time</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="week7.html"><a href="week7.html#activity-5-line-graphs"><i class="fa fa-check"></i><b>7.4.1</b> Activity 5: Line graphs</a></li>
+<li class="chapter" data-level="7.4.2" data-path="week7.html"><a href="week7.html#activity-6-radar-graphs"><i class="fa fa-check"></i><b>7.4.2</b> Activity 6: Radar graphs</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="week7.html"><a href="week7.html#activity-7-heatmaps"><i class="fa fa-check"></i><b>7.5</b> Activity 7: Heatmaps</a></li>
+<li class="chapter" data-level="7.6" data-path="week7.html"><a href="week7.html#summary-6"><i class="fa fa-check"></i><b>7.6</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="week8.html"><a href="week8.html"><i class="fa fa-check"></i><b>8</b> Week 8</a><ul>
+<li class="chapter" data-level="8.1" data-path="week8.html"><a href="week8.html#learning-outcomes-7"><i class="fa fa-check"></i><b>8.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="8.2" data-path="week8.html"><a href="week8.html#why-use-software-in-qualitative-data-analysis"><i class="fa fa-check"></i><b>8.2</b> Why use software in qualitative data analysis?</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="week8.html"><a href="week8.html#activity-1"><i class="fa fa-check"></i><b>8.2.1</b> Activity 1:</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="week8.html"><a href="week8.html#what-kinds-of-data-can-i-input-into-nvivo-for-analysis"><i class="fa fa-check"></i><b>8.3</b> What kinds of data can I input into NVivo for analysis?</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="week8.html"><a href="week8.html#activity-2-find-some-data"><i class="fa fa-check"></i><b>8.3.1</b> Activity 2: Find some data…</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="week8.html"><a href="week8.html#creating-your-nvivo-project"><i class="fa fa-check"></i><b>8.4</b> Creating your NVivo project</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="week8.html"><a href="week8.html#activity-3-getting-started-with-nvivo"><i class="fa fa-check"></i><b>8.4.1</b> Activity 3: Getting started with NVivo</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="week8.html"><a href="week8.html#understanding-the-interface"><i class="fa fa-check"></i><b>8.5</b> Understanding the interface</a></li>
+<li class="chapter" data-level="8.6" data-path="week8.html"><a href="week8.html#navigation-view"><i class="fa fa-check"></i><b>8.6</b> Navigation View</a><ul>
+<li class="chapter" data-level="8.6.1" data-path="week8.html"><a href="week8.html#sources"><i class="fa fa-check"></i><b>8.6.1</b> Sources</a></li>
+<li class="chapter" data-level="8.6.2" data-path="week8.html"><a href="week8.html#the-internals-section"><i class="fa fa-check"></i><b>8.6.2</b> The ‘internals’ section:</a></li>
+<li class="chapter" data-level="8.6.3" data-path="week8.html"><a href="week8.html#memos"><i class="fa fa-check"></i><b>8.6.3</b> Memos</a></li>
+<li class="chapter" data-level="8.6.4" data-path="week8.html"><a href="week8.html#activity-4-folders"><i class="fa fa-check"></i><b>8.6.4</b> Activity 4: Folders</a></li>
+</ul></li>
+<li class="chapter" data-level="8.7" data-path="week8.html"><a href="week8.html#importing-data"><i class="fa fa-check"></i><b>8.7</b> Importing Data</a><ul>
+<li class="chapter" data-level="8.7.1" data-path="week8.html"><a href="week8.html#activity-5-import-data"><i class="fa fa-check"></i><b>8.7.1</b> Activity 5: Import data</a></li>
+</ul></li>
+<li class="chapter" data-level="8.8" data-path="week8.html"><a href="week8.html#memos-1"><i class="fa fa-check"></i><b>8.8</b> Memos</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="week8.html"><a href="week8.html#activity-6-memos"><i class="fa fa-check"></i><b>8.8.1</b> Activity 6: Memos</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="week8.html"><a href="week8.html#word-frequency"><i class="fa fa-check"></i><b>8.9</b> Word frequency</a><ul>
+<li class="chapter" data-level="8.9.1" data-path="week8.html"><a href="week8.html#activity-7-word-frequency"><i class="fa fa-check"></i><b>8.9.1</b> Activity 7: Word frequency</a></li>
+</ul></li>
+<li class="chapter" data-level="8.10" data-path="week8.html"><a href="week8.html#summary-7"><i class="fa fa-check"></i><b>8.10</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="week9.html"><a href="week9.html"><i class="fa fa-check"></i><b>9</b> Week 9</a><ul>
+<li class="chapter" data-level="9.1" data-path="week9.html"><a href="week9.html#learning-outcomes-8"><i class="fa fa-check"></i><b>9.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="9.2" data-path="week9.html"><a href="week9.html#deduction-induction-adaption-key-analytical-strategies-for-qualitative-data"><i class="fa fa-check"></i><b>9.2</b> Deduction, induction, adaption – key analytical strategies for qualitative data</a></li>
+<li class="chapter" data-level="9.3" data-path="week9.html"><a href="week9.html#coding-qualitative-data-using-nodes"><i class="fa fa-check"></i><b>9.3</b> ‘Coding’ qualitative data using ‘nodes’</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="week9.html"><a href="week9.html#what-are-nodes"><i class="fa fa-check"></i><b>9.3.1</b> What are ‘Nodes’?</a></li>
+<li class="chapter" data-level="9.3.2" data-path="week9.html"><a href="week9.html#activity-1-coding"><i class="fa fa-check"></i><b>9.3.2</b> Activity 1: Coding</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="week9.html"><a href="week9.html#using-mind-maps-to-organise-your-analytical-process-and-framework"><i class="fa fa-check"></i><b>9.4</b> Using ‘mind maps’ to organise your ‘analytical process and framework’</a><ul>
+<li class="chapter" data-level="9.4.1" data-path="week9.html"><a href="week9.html#activity-2-deductive-coding"><i class="fa fa-check"></i><b>9.4.1</b> Activity 2: Deductive coding</a></li>
+<li class="chapter" data-level="9.4.2" data-path="week9.html"><a href="week9.html#activity-3-inductive-coding"><i class="fa fa-check"></i><b>9.4.2</b> Activity 3: Inductive coding</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="week9.html"><a href="week9.html#abductive-coding"><i class="fa fa-check"></i><b>9.5</b> Abductive coding</a><ul>
+<li class="chapter" data-level="9.5.1" data-path="week9.html"><a href="week9.html#activity-4-retrieval-viewing-coded-data"><i class="fa fa-check"></i><b>9.5.1</b> Activity 4: Retrieval – viewing coded data</a></li>
+<li class="chapter" data-level="9.5.2" data-path="week9.html"><a href="week9.html#activity-5-viewing-more-context"><i class="fa fa-check"></i><b>9.5.2</b> Activity 5: Viewing more context</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="week9.html"><a href="week9.html#export-coded-data"><i class="fa fa-check"></i><b>9.6</b> Export coded data</a><ul>
+<li class="chapter" data-level="9.6.1" data-path="week9.html"><a href="week9.html#activity-6-exporting-via-the-list-pane"><i class="fa fa-check"></i><b>9.6.1</b> Activity 6: Exporting via the list pane</a></li>
+</ul></li>
+<li class="chapter" data-level="9.7" data-path="week9.html"><a href="week9.html#reports-note-windows-only-users-not-supported-by-mac-yet"><i class="fa fa-check"></i><b>9.7</b> Reports (NOTE: WINDOWS ONLY USERS! NOT SUPPORTED BY MAC, YET!!)</a></li>
+<li class="chapter" data-level="9.8" data-path="week9.html"><a href="week9.html#some-other-useful-things-to-do"><i class="fa fa-check"></i><b>9.8</b> Some other useful things to do</a><ul>
+<li class="chapter" data-level="9.8.1" data-path="week9.html"><a href="week9.html#create-another-word-cloud"><i class="fa fa-check"></i><b>9.8.1</b> Create another Word Cloud:</a></li>
+<li class="chapter" data-level="9.8.2" data-path="week9.html"><a href="week9.html#create-a-word-tree"><i class="fa fa-check"></i><b>9.8.2</b> Create a Word Tree:</a></li>
+<li class="chapter" data-level="9.8.3" data-path="week9.html"><a href="week9.html#create-a-concept-map-windows-only"><i class="fa fa-check"></i><b>9.8.3</b> Create a Concept Map (WINDOWS ONLY!!)</a></li>
+</ul></li>
+<li class="chapter" data-level="9.9" data-path="week9.html"><a href="week9.html#other-features"><i class="fa fa-check"></i><b>9.9</b> Other features…</a><ul>
+<li class="chapter" data-level="9.9.1" data-path="week9.html"><a href="week9.html#graphicspictures---making-linked-notes-and-coding"><i class="fa fa-check"></i><b>9.9.1</b> Graphics/pictures - making linked notes and coding</a></li>
+<li class="chapter" data-level="9.9.2" data-path="week9.html"><a href="week9.html#coding-audiovideo-data"><i class="fa fa-check"></i><b>9.9.2</b> Coding audio/video data</a></li>
+</ul></li>
+<li class="chapter" data-level="9.10" data-path="week9.html"><a href="week9.html#more-on-capturing-web-material"><i class="fa fa-check"></i><b>9.10</b> More on capturing web material</a></li>
+<li class="chapter" data-level="9.11" data-path="week9.html"><a href="week9.html#summary-8"><i class="fa fa-check"></i><b>9.11</b> Summary</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Making Sense of Crim Data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Making Sense of Crim Data</h1>
+<h4 class="author"><em>Reka Solymosi</em></h4>
+<h4 class="date"><em>2018-09-11</em></h4>
+</div>
+<div id="introduction" class="section level1 unnumbered">
+<h1>Introduction</h1>
+<p>This workbook contains the lab materials and homework assignments for an introduction to data analysis course designed for LAWS20441 Making Sense of Criminological Data, a 2nd year undergraduates on the BA Criminology programme at the University of Manchester.</p>
+<p>It makes use of Excel, as we have identified a gap in training students to use Excel, despite it being a primary tool for data analysis (whether we like it or not) in many public and private sector organisations. As many students take <a href="https://www.humanities.manchester.ac.uk/q-step/">Q-step internships</a>, this skill was identified as important.</p>
+<p>Making Sense of Crim Data introduces students to data, and the concepts of descriptive data analysis. The role of this term is to familiarise students with basic concepts of data analysis, and get aquainted with descriptive statistics to be able to talk about data about crime, policing, and criminal justice topics. Details can be found in the Syllabus.</p>
+<div id="disclaimer" class="section level2">
+<h2><span class="header-section-number">0.1</span> Disclaimer</h2>
+<p>Please beware that:</p>
+<ul>
+<li>In making these notes, while I briefly cover some concepts, students are expected to do the weekly reading, and attend the weekly lectures, as well as participate in lab disucssions to receive a complete course experience. These notes are <em>not</em> intended to be a stand-alone reference or textbook, rather a set of exercises to gain hands-on practice with the concepts introduced during the course.</li>
+<li>These pages are the content of the BA Criminology 2nd year course Making Sense of Criminological Data. They are meant to (very gently) introduce undergraduates to the concept of data analysis, and cover descriptive statsitics and the key concepts required to build an understanding of quantitative data analysis in crime research. It is followed in the second term by Modeling Criminological Data where students cover inferential statistics. The notes presented here are supported by compulsory reading and some lectures, and so do not provide a comprehensive description of these techniques and tools and how to use them.</li>
+<li>The handouts below use, among other data sets, dara from the UK data service such as the Crime Survey for England and Wales that is available under a Open Government Licence. This dataset is designed to be a learning resource and should not be used for research purposes or the production of summary statistics.</li>
+</ul>
+
+</div>
+<div id="overview" class="section level2">
+<h2><span class="header-section-number">0.2</span> Overview of course</h2>
+<!--
+You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+
+Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+
+
+```r
+par(mar = c(4, 4, .1, .1))
+plot(pressure, type = 'b', pch = 19)
+```
+
+<div class="figure" style="text-align: center">
+<img src="bookdown-demo_files/figure-html/nice-fig-1.png" alt="Here is a nice figure!" width="80%" />
+<p class="caption">(\#fig:nice-fig)Here is a nice figure!</p>
+</div>
+
+Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+
+
+```r
+knitr::kable(
+  head(iris, 20), caption = 'Here is a nice table!',
+  booktabs = TRUE
+)
+```
+
+
+
+Table: (\#tab:nice-tab)Here is a nice table!
+
+ Sepal.Length   Sepal.Width   Petal.Length   Petal.Width  Species 
+-------------  ------------  -------------  ------------  --------
+          5.1           3.5            1.4           0.2  setosa  
+          4.9           3.0            1.4           0.2  setosa  
+          4.7           3.2            1.3           0.2  setosa  
+          4.6           3.1            1.5           0.2  setosa  
+          5.0           3.6            1.4           0.2  setosa  
+          5.4           3.9            1.7           0.4  setosa  
+          4.6           3.4            1.4           0.3  setosa  
+          5.0           3.4            1.5           0.2  setosa  
+          4.4           2.9            1.4           0.2  setosa  
+          4.9           3.1            1.5           0.1  setosa  
+          5.4           3.7            1.5           0.2  setosa  
+          4.8           3.4            1.6           0.2  setosa  
+          4.8           3.0            1.4           0.1  setosa  
+          4.3           3.0            1.1           0.1  setosa  
+          5.8           4.0            1.2           0.2  setosa  
+          5.7           4.4            1.5           0.4  setosa  
+          5.4           3.9            1.3           0.4  setosa  
+          5.1           3.5            1.4           0.3  setosa  
+          5.7           3.8            1.7           0.3  setosa  
+          5.1           3.8            1.5           0.3  setosa  
+
+You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+
+
+-->
+<div id="module-structure" class="section level3">
+<h3><span class="header-section-number">0.2.1</span> Module structure</h3>
+<p>Hi there and welcome to this course for making sense of criminological data. This introduction will explain the structure of the course.</p>
+<p>The course is 10 weeks, each week made up of 5 elements:</p>
+<ol style="list-style-type: decimal">
+<li>Preparatory reading</li>
+<li>Lab session</li>
+<li>Post-lab task</li>
+<li>Homework quiz</li>
+<li>Lecture</li>
+</ol>
+<div id="preparatory-reading" class="section level4">
+<h4><span class="header-section-number">0.2.1.1</span> 1) Preparatory reading</h4>
+<p>For each week you will receive some preliminary reading or videos to watch, before coming to the session. It is very important that you read these before coming to the lab session, as it will make engaging with the lab material easier. Also, you can take the labs as an opportunity to ask questions about the readings, and discuss with myself and the teaching assistants during the 2-hour lab sessions.</p>
+</div>
+<div id="lab-session" class="section level4">
+<h4><span class="header-section-number">0.2.1.2</span> 2) Lab session</h4>
+<p>Lab sessions are the two-hour sessions in computer labs, where you are to work through the lab notes included in this book. You should take time to engage with these notes, and ask lots of questions from myself and the teaching assistants present. This is a time to really engage with the materials.</p>
+<p>When you come into a lesson, you will be able to sit at a PC and get started straight away. You will find the instructions for each week in this booklet. You can open up the link via Blackboard, and read through the instructions chronologically. That just means start at the top, and read through to the bottom.</p>
+<p>Usually within the notes there are some general introduction to the topic covered that week, with links to <a href="http://www.gapminder.org/videos/the-joy-of-stats/">videos</a> or further <a href="http://flowingdata.com/2015/10/26/top-brewery-road-trip-routed-algorithmically/">reading</a>. You should come equipped with headphones to watch the videos.</p>
+<p>These lab notes also contain within them activities. <span style="color:#d95f02">Activities will be denoted by red colour text, just like this one </span> You should do these activities in the lab, and ask for our help when you are stuck, or if you do not understand a concept. These activities will help you with your learning, but also will contribute towards your homework. You are welcome to discuss with each other, and with us, but please do make sure that when it comes to understanding the learning behind these activities, you are confident in your ability. The final essay will rely heavily on your ability to take the concepts you learn duing the activities, and apply them in a way that shows your understanding.</p>
+</div>
+<div id="post-lab-task" class="section level4">
+<h4><span class="header-section-number">0.2.1.3</span> 3) Post-lab task</h4>
+<p>Each week, after you have completed the lab notes, you must complete some post-lab tasks. These will take the form of a worksheet. You can find each worksheet and relevant material (eg: data) on Blackboard in the folder for that week. There will also always be a link at the bottom of the lab notes. You have to complete these tasks in order to be able to take the homework quiz (which is assessed). The tasks will always mirror the in-lab activities, so if you get through those, the task should be a breeze.</p>
+</div>
+<div id="homework-quiz" class="section level4">
+<h4><span class="header-section-number">0.2.1.4</span> 4) Homework quiz</h4>
+<p>Each week you will have to complete a homework quiz. This quiz is assessed, and your score on all the quizzes combined counts for 20% of your final mark (the other 80% is your final essay). The questions in the homework quiz will ask about key concepts from your reading, and about the answers to the post-lab task. Make sure that you have finished the task before you begin your homework quiz, and have it with you while you do so. The homework quiz will be available on Blackboard, and will be open on each Friday at 11:00am, and close the following Thursday at 9:00am. You can take the homework quiz any time between these times. You can take it only once. Once you activate the quiz, you will have only 30 minutes to complete it. Please make sure you are in a quiet environment where you will not be disturbed, with your reading notes and your post-lab task with you, so you can complete the homework quiz successfully. Upon submission you will receive immediate feedback.</p>
+<p>Don’t forget your homework is graded, and counts towards your final mark. But you get to practice for completing the tasks with the activities in the lab. And if you have time left over, you can always complete these tasks here in the lab. No matter where you do them, by havign the tasks completed and with you when you take the quiz, you will be more confident in the homework quiz exercises.</p>
+</div>
+<div id="lectures" class="section level4">
+<h4><span class="header-section-number">0.2.1.5</span> 5) Lectures</h4>
+<p>In the lectures we will go over one last time the basic concepts covered in that week. The lecture is the final event that should pull together all your learning from that week. It is your chance to ask questions, discuss, and further interrogate the material we cover. I encourage you to bring your own examples to lectures wherever you encounter them. Lectures are podcast, however they are also attendance monitored. You must attend, and sign in to these lectures to receive attendance credit.</p>
+<!--
+
+
+, which will be indicated by special notation (colour):
+
+
+<span style="color:#a50026">Where you see text in red, this is an instruction to carry out a task or activity. Make sure you do these in the lab, so if you have any questions about it, you can ask the teaching team!</span>
+
+<span style="color:#313695">Where you see text in blue, this is an instruction to carry out a task or activity that will then feed into your final assignment. You can do these in the lab, or you can do these on your own time and bring them to get some feedback, however you will not get as much feedback as you would on the homework, as this will be all going into your final assignment. There is a list of all of these tasks available on your [document about the final assigment](), however they are included in each week's lab notes to help you build towards it, and not have to do everything in one large panicked go at the end of term. Because you wouldn't do that would you. You are a forward planning, non-procastinating student. Good. </span>
+-->
+
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="week1.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/index.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

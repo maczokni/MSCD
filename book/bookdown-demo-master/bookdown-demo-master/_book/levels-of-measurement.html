@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Making Sense of Crim Data</title>
+  <meta name="description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Making Sense of Crim Data" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Making Sense of Crim Data" />
+  
+  <meta name="twitter:description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester" />
+  
+
+<meta name="author" content="Reka Solymosi">
+
+
+<meta name="date" content="2018-09-09">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="questions-about-your-data.html">
+<link rel="next" href="unit-of-analysis.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#disclaimer"><i class="fa fa-check"></i><b>1.1</b> Disclaimer</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>2</b> Overview of course</a></li>
+<li class="chapter" data-level="3" data-path="module-structure.html"><a href="module-structure.html"><i class="fa fa-check"></i><b>3</b> Module structure</a><ul>
+<li class="chapter" data-level="3.1" data-path="module-structure.html"><a href="module-structure.html#preparatory-reading"><i class="fa fa-check"></i><b>3.1</b> 1) Preparatory reading</a></li>
+<li class="chapter" data-level="3.2" data-path="module-structure.html"><a href="module-structure.html#lab-session"><i class="fa fa-check"></i><b>3.2</b> 2) Lab session</a></li>
+<li class="chapter" data-level="3.3" data-path="module-structure.html"><a href="module-structure.html#post-lab-task"><i class="fa fa-check"></i><b>3.3</b> 3) Post-lab task</a></li>
+<li class="chapter" data-level="3.4" data-path="module-structure.html"><a href="module-structure.html#homework-quiz"><i class="fa fa-check"></i><b>3.4</b> 4) Homework quiz</a></li>
+<li class="chapter" data-level="3.5" data-path="module-structure.html"><a href="module-structure.html#lectures"><i class="fa fa-check"></i><b>3.5</b> 5) Lectures</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="week1.html"><a href="week1.html"><i class="fa fa-check"></i><b>4</b> Week 1</a></li>
+<li class="chapter" data-level="5" data-path="setting-up-your-working-environment.html"><a href="setting-up-your-working-environment.html"><i class="fa fa-check"></i><b>5</b> Setting up your working environment</a></li>
+<li class="chapter" data-level="6" data-path="getting-to-know-excel.html"><a href="getting-to-know-excel.html"><i class="fa fa-check"></i><b>6</b> Getting to know Excel</a></li>
+<li class="chapter" data-level="7" data-path="data-variables-and-observations.html"><a href="data-variables-and-observations.html"><i class="fa fa-check"></i><b>7</b> Data: Variables and observations</a><ul>
+<li class="chapter" data-level="7.1" data-path="data-variables-and-observations.html"><a href="data-variables-and-observations.html#activity-1-building-your-own-data"><i class="fa fa-check"></i><b>7.1</b> Activity 1: Building your own data</a></li>
+<li class="chapter" data-level="7.2" data-path="data-variables-and-observations.html"><a href="data-variables-and-observations.html#code-books"><i class="fa fa-check"></i><b>7.2</b> Code books</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="questions-about-your-data.html"><a href="questions-about-your-data.html"><i class="fa fa-check"></i><b>8</b> Questions about your data</a><ul>
+<li class="chapter" data-level="8.1" data-path="questions-about-your-data.html"><a href="questions-about-your-data.html#activity-2-thinking-about-what-our-data-tells-us"><i class="fa fa-check"></i><b>8.1</b> Activity 2: Thinking about what our data tells us</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="levels-of-measurement.html"><a href="levels-of-measurement.html"><i class="fa fa-check"></i><b>9</b> Levels of measurement</a><ul>
+<li class="chapter" data-level="9.1" data-path="levels-of-measurement.html"><a href="levels-of-measurement.html#activity-3.1-levels-of-measurement-pt.-1"><i class="fa fa-check"></i><b>9.1</b> Activity 3.1: Levels of measurement pt. 1</a></li>
+<li class="chapter" data-level="9.2" data-path="levels-of-measurement.html"><a href="levels-of-measurement.html#activity-3.2-levels-of-measurement-pt.-2"><i class="fa fa-check"></i><b>9.2</b> Activity 3.2: Levels of measurement pt. 2</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="unit-of-analysis.html"><a href="unit-of-analysis.html"><i class="fa fa-check"></i><b>10</b> Unit of analysis</a><ul>
+<li class="chapter" data-level="10.1" data-path="unit-of-analysis.html"><a href="unit-of-analysis.html#activity-4-abstract-ing-the-unit-of-analysis"><i class="fa fa-check"></i><b>10.1</b> Activity 4: <em>Abstract</em>-ing the unit of analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>11</b> Methods</a></li>
+<li class="chapter" data-level="12" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>12</b> Applications</a><ul>
+<li class="chapter" data-level="12.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>12.1</b> Example one</a></li>
+<li class="chapter" data-level="12.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>12.2</b> Example two</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>13</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Making Sense of Crim Data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="levels-of-measurement" class="section level1">
+<h1><span class="header-section-number">Chapter 9</span> Levels of measurement</h1>
+<p>If we set out to collect our own data, we make sure that we collect all the variables needed to answer our question, from all the observations that we have. The kinds of variables we have, determine the kinds of questions that we ask. For example, if we want to ask questions such as the one about the tweets above: “<em>Which tweet has the highest number of likes?</em>” we need to have <strong>numeric</strong> a variable. <strong>Numeric</strong> variables let us answer questions about quantity. For example, if we want to know the <em>average number of crimes per month</em>, we will need a numeric variable of number of crimes, for each month. Just like for the tweets, we had a numeric variable of the <em>number of likes</em> for each tweet. Put simply, number questions are answered by <strong>numeric</strong> variables.</p>
+<div id="activity-3.1-levels-of-measurement-pt.-1" class="section level2">
+<h2><span class="header-section-number">9.1</span> Activity 3.1: Levels of measurement pt. 1</h2>
+<p><span style="color:#d95f02">
+Have a look back at your tweet data that you created. Which variables are numeric?</p>
+<p>Stop here again and turn to the person next to you. Discuss with them which variables you think are numeric. Do you agree on your choices?</p>
+<p></span></p>
+<p>NOTE: It’s important that you take some time to actually try to think of this on your own - and I would recommend that you talk this through with someone. If you are happy to chat to the person next to you - do this now. If not, then raise your hand, and myself or one of the TAs will come over. Tell us that you don’t want the answer, you just want to talk through which variables you think are numeric. We will listen, and not judge. I’ll just wait a moment while you take time to speak to someone now.</p>
+<p><img src="imgs/num_vars.png" /></p>
+<p>So is this the same as you thought? If yes, nice work!</p>
+<p>If you did not get this right, was that because you also selected the <strong>day</strong> and the <strong>hour</strong> variables? If it was, then that is perfect, because that is what I was secretly hoping you would do!</p>
+<p>Why are day and hour not numeric variables? After all they <em>are</em> numbers, right? Well a simple way to think about that is - does it make sense to calculate the average hour for tweets to be sent? If I told you, the average hour for GMP tweets if 13.5, is that something meaningful? Or if I told you that the average day is 15? Not hugely. Hour of the day, and day of the month, which is what these variables represent, are variables which fall into a different level of measurement. These are <strong>ordinal</strong> variables. What does that mean? Well the clue is in the name, <strong>ordinal</strong> variables that are not numeric, but they do fall into a natural order. <em>Natural order</em>?? What’s that? Well natural order just means that there is a meaningful order that you can put these variables in. You know which comes after which one. For example you can consider letters of the alphabet to follow a natural order, so common we call it alphabetical order. If I tell you to arrange medium, large, small, you know that what I mean is to put them in this order: small, medium, large. <strong>Ordinal variables</strong> are variables where such a known order exists.</p>
+</div>
+<div id="activity-3.2-levels-of-measurement-pt.-2" class="section level2">
+<h2><span class="header-section-number">9.2</span> Activity 3.2: Levels of measurement pt. 2</h2>
+<p><span style="color:#d95f02">
+So on that note - can you find the other ordinal variables in your tweets data?
+</span></p>
+<p>Yes you are right, it’s <em>Month</em>. You know that if I say January, February, March, then the value to follow is April, and not November. There is an order that these values fall, making <em>Month</em> an <strong>ordinal</strong> variable.</p>
+<p>So what about the others? <em>Account</em> and <em>Tweet</em>? These are <strong>nominal</strong> variables. These are sometimes also referred to qualitative variables. But you can still carry out quantitative analysis on them. You will very often see <strong>nominal</strong> variables in quantitative analysis. In this case, the <em>Account</em> variable tells you who is tweeting, and if you have tweets from many different accounts, for example we also looked at @gmptraffic and @GMPMcrAirport, we could compare tweets between them. These variables are <strong>nominal</strong> and <strong>not</strong> ordinal, because they do not fall into any particular order. You can arrange them in any order, and it would look just as legitimate as any other order.</p>
+<p>Starting to make sense? To recap, there are levels of measurement that each variable can fall into , and these are <strong>numeric</strong>, <strong>ordinal</strong>, or <strong>nominal</strong>. By the way, <strong>ordinal</strong> and <strong>nominal</strong> are also called <strong>categorical</strong> variables, because they assign each observation into a <em>category</em>. Then, depending on whether the category values can be put in a meaningful order or not, you can tell if it’s an ordinal-categorical, or nominal-categorical variable.</p>
+<p>Confused? Let’s look at this again, but with the crimes data.</p>
+<!--
+
+
+
+
+> In science, we use measurement to make accurate observations. All measurement must begin with a classification process—a process that in science is carried out according to systematic criteria. This process implies that we can place units of scientific study in clearly defined categories. The end result of classification is the development of variables.
+
+- *Chapter 2 Statistics in Criminal Justice - David Weisburd, Chester Britt*
+
+
+We will talk more about how to create these measurements, and what that means for your research in week 4, but for now it is enough to understand that data are a way of representing information about the world, which can be used to answer questions that we may have. 
+
+
+For example, we can ask the question: Which borough in Greater Manchester had the highest number of burglaries in this time period. Take a moment to think about this - what sort of data would you need to be able to answer this question? 
+
+
+You would need to know firstly the name of all the boroughs - right? So you would know how to identify them. Then you would also need to know the number of burglaries that occurred in each borough. Can you imagine what the data will look like? 
+
+
+Well 
+
+
+
+> The word variable is derived from the Latin variare, to vary. A variable gives
+us a method for associating a concept like income with a set of data. 
+
+- Leland Wilkinson (2005) *The Grammar of Graphics*
+-->
+<p>Let’s glance at the crimes data set first:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">X</th>
+<th align="left">Month</th>
+<th align="left">Reported.by</th>
+<th align="left">Falls.within</th>
+<th align="right">Longitude</th>
+<th align="right">Latitude</th>
+<th align="left">Location</th>
+<th align="left">LSOA.code</th>
+<th align="left">LSOA.name</th>
+<th align="left">Crime.type</th>
+<th align="left">Last.outcome.category</th>
+<th align="left">Context</th>
+<th align="left">borough</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">2016-05</td>
+<td align="left">Greater Manchester Police</td>
+<td align="left">Greater Manchester Police</td>
+<td align="right">-2.462774</td>
+<td align="right">53.6221</td>
+<td align="left">On or near Scout Road</td>
+<td align="left">E01012628</td>
+<td align="left">Blackburn with Darwen 018D</td>
+<td align="left">Violence and sexual offences</td>
+<td align="left">Unable to prosecute suspect</td>
+<td align="left">NA</td>
+<td align="left">Blackburn with Darwen</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="left">2016-05</td>
+<td align="left">Greater Manchester Police</td>
+<td align="left">Greater Manchester Police</td>
+<td align="right">-2.464422</td>
+<td align="right">53.6125</td>
+<td align="left">On or near Parking Area</td>
+<td align="left">E01004768</td>
+<td align="left">Bolton 001A</td>
+<td align="left">Anti-social behaviour</td>
+<td align="left"></td>
+<td align="left">NA</td>
+<td align="left">Bolton</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="left">2016-05</td>
+<td align="left">Greater Manchester Police</td>
+<td align="left">Greater Manchester Police</td>
+<td align="right">-2.464422</td>
+<td align="right">53.6125</td>
+<td align="left">On or near Parking Area</td>
+<td align="left">E01004768</td>
+<td align="left">Bolton 001A</td>
+<td align="left">Anti-social behaviour</td>
+<td align="left"></td>
+<td align="left">NA</td>
+<td align="left">Bolton</td>
+</tr>
+</tbody>
+</table>
+<p>One variable you can see there is the one called <strong>Crime.type</strong>. This variable can take a value that corresponds to one of the crime types listed in the <a href="https://www.police.uk/about-this-site/faqs/#what-do-the-crime-categories-mean">Police.UK FAQ</a>. For every crime incident recorded, an officer will have to classify this crime incident into one of these categories. All of these categories are all the possible <strong>values</strong> that the Crime.type <strong>variable</strong> can take. This is a <strong>categorical</strong> variable, as its possible values are categories. Further subset, this is a <strong>nominal</strong> variable, because the categories do not fall into a natural order. These categories are mutually exclusive (a crime is classed as either a Burglary or Vehicle Crime, but not both at the same time) and cannot be ordered in a meaningful way (alphabetical is not meaningful!). If they did have a meaningful order (for example days of the week have an order, or the values <em>small, medium, large</em> have an order) they would be <strong>ordinal</strong> variables. Both ordinal and nominal variables are categorical, because they deal with values that can take a finite number of values, or in other words, belong to a set number of categories. They group your data into one of the available categories.</p>
+<p>But not all variables are categorical, some are <strong>numeric</strong> . These types of varibles are numbers, and include things like the <em>number of burglaries</em>. For example, suppose we have created this data set, which has 2 variables, one <em>Borough</em> variable with the name of each borough, and one <em>Number of burglaries</em> variable, with… you guessed it… the number of burglaries in that borough.</p>
+<p>It would look something like this:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">borough</th>
+<th align="right">number.of.burglaries</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Manchester</td>
+<td align="right">8028</td>
+</tr>
+<tr class="even">
+<td align="left">Stockport</td>
+<td align="right">3765</td>
+</tr>
+<tr class="odd">
+<td align="left">Wigan</td>
+<td align="right">3525</td>
+</tr>
+<tr class="even">
+<td align="left">Bolton</td>
+<td align="right">3433</td>
+</tr>
+<tr class="odd">
+<td align="left">Rochdale</td>
+<td align="right">2958</td>
+</tr>
+<tr class="even">
+<td align="left">Oldham</td>
+<td align="right">2834</td>
+</tr>
+<tr class="odd">
+<td align="left">Tameside</td>
+<td align="right">2754</td>
+</tr>
+<tr class="even">
+<td align="left">Salford</td>
+<td align="right">2647</td>
+</tr>
+<tr class="odd">
+<td align="left">Bury</td>
+<td align="right">2106</td>
+</tr>
+<tr class="even">
+<td align="left">Trafford</td>
+<td align="right">1795</td>
+</tr>
+</tbody>
+</table>
+<p>This data set is made up of 10 <strong>observations</strong> and 2 <strong>variables</strong>. You might notice that this maps nicely onto your 10 rows of 2 columns. As noted in the previous section, the columns represent your <strong>variables</strong>. The rows reporesent your <strong>observations</strong>. Your observations (or rows) are every single record in your data. So in the case above, every borough has one observation, or the number of crimes in each area. For each observation, we record 2 variables. One variable is the name of the borough. This variable is called <em>borough</em>. The other varible is the number of burglaries that took place in that borough. It’s called <em>number.of.burglaries</em>, and it is a <strong>numeric</strong> variable.</p>
+<p><strong>Numeric</strong> variables can also be assigned into sub groups. <strong>Interval</strong> variables have values of equal intervals that mean something. For example, if you have results from an IQ score, the difference of 1 score between 90 and 91 is the same as 91 to 92. But there is no <em>true</em> zero value, and it doesn’t make sense to say someone is twice as smart as someone else. <strong>Ratio</strong> variables however have an absolute zero (a point where none of the quality being measured exists), and using a ratio scale permits comparisons such as being twice as high, or one-half as much. This can get somewhat confusing, and there are sometimes people who argue that a particular type of variable belongs to one group or the other. For example, if you have a Likert scale of Strongly agree, Agree, Neutral, Disagree, Strongly disagree, you can say that this is an ordinal variable (categories that have a natural order). But you could also translate them into numbers, saying it measures agreement from a scale of 1 (Strongly disagree) to 5 (Strongly agree). In this case it is possible to treat this as an interval scale variable. The truth is, you can choose either option, <strong>but you have to have some good justification why</strong>. Did someone else do this before you? Did you read a recent paper where one method was argued to be better than the other? For some instances it will always be clear what type of variable you have. But you should always take time to consider what the level of measurement of your variable is, and what that means for what you can say about your data. As a personal preference, I’d advise against treating ordinal data as numeric, but others will advise that it’s generally OK to take means and apply statistical tests to ordinal data, just be careful about making interval claims such as “twice as satisfied.” <a href="http://www.usablestats.com/lessons/noir">2</a></p>
+<!--It's nice to know the distinction between these (see Chapter 2 Statistics in Criminal Justice - David Weisburd, Chester Britt for interval/ratio, or for discrete/continuous), but for the purposes of what we cover here it's not vital. -->
+<p>The reason we need to know what type of variable we are dealing with, is because this will determine the kinds of analyses we can do to it, further down the line. For example, next week we’ll talk about summarising data. As discussed above, for a numeric variable, we can take the average, and use this to summarise it, whereas for a categorical variable you can’t.Think about if someone asked you: “what is the average gender in the class?” This doesn’t make sense, instead you would look at the proportions. Gender is a categorical variable. However, if someone asked you what is the average age in the class, that is a more possible query to answer. Because age is a numeric variable.</p>
+<p>Here are some more examples of each:</p>
+<ul>
+<li>Nominal variables:
+<ul>
+<li>Gender: Male, Female, Other.</li>
+<li>Hair Color: Brown, Black, Blonde, Red, Other.</li>
+<li>Type of living accommodation: House, Apartment, Trailer, Other.</li>
+<li>Religious preference: Buddhist, Mormon, Muslim, Jewish, Christian, Other.</li>
+</ul></li>
+<li>Ordinal variables:
+<ul>
+<li>Socioeconomic status: poor, middle class, rich.</li>
+<li>The Likert Scale: strongly disagree, disagree, neutral, agree, strongly agree.</li>
+<li>Level of Agreement: yes, maybe, no.</li>
+<li>Time of Day: dawn, morning, noon, afternoon, evening, night.</li>
+</ul></li>
+<li>Interval variables:
+<ul>
+<li>Celsius Temperature.</li>
+<li>Fahrenheit Temperature.</li>
+<li>IQ (intelligence scale).</li>
+<li>SAT scores.</li>
+</ul></li>
+<li>Ratio variables:
+<ul>
+<li>Bank account balance</li>
+<li>Age in years</li>
+<li>Height in cm</li>
+<li>Number of children</li>
+</ul></li>
+</ul>
+<p>Now before we move on to the exercise, have another dose of these concepts through the power of video. Remember in school when the teacher put on the video to watch? That was the best. Here I will do this too, keep the nostalgia alive.</p>
+<p>Start with this quick one: - <a href="https://www.youtube.com/watch?v=hZxnzfnt5v8">Levels of measurement summary here</a> 6.19min</p>
+<p>and then continue by watching Chris Wilde describe them:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=_ROBwTFVldo&amp;list=PL8CRAVedURQpYNoFt7w6maxaQCn3ZLytu&amp;index=3">Data Organisation</a> 5.18min</li>
+<li><a href="https://www.youtube.com/watch?v=38oQwFeCEag&amp;list=PL8CRAVedURQrlxeFfme0TEgaj1_h67JUR&amp;index=2">Categorical variables</a> 4.58min</li>
+<li><a href="https://www.youtube.com/watch?v=xmRuRRHsUeg&amp;index=3&amp;list=PL8CRAVedURQrlxeFfme0TEgaj1_h67JUR">Ordering categories</a> 2.27min</li>
+<li><a href="https://www.youtube.com/watch?v=U3lk2nQYfAQ&amp;list=PL8CRAVedURQrlxeFfme0TEgaj1_h67JUR&amp;index=4">Numeric variables</a> 5.52min</li>
+</ul>
+<p>Great, by now you are an expert on levels of measurement.</p>
+<!--Your data should look something like this: 
+
+
+
+
+
+So now you have some data, where you have 8 variables for 10 observations of tweets by GMP City Centre. Your first variable is *Month*. What *level of measurement* is this variable?
+
+
+To answer this question, think of the levels of measurement as going through a flowchart. Ask yourself - is this a category or a number? If it's a category - does it have an order or not? Maybe something like this: 
+
+-->
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="questions-about-your-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="unit-of-analysis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-literature.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

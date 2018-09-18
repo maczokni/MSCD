@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Making Sense of Crim Data</title>
+  <meta name="description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Making Sense of Crim Data" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Making Sense of Crim Data" />
+  
+  <meta name="twitter:description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester" />
+  
+
+<meta name="author" content="Reka Solymosi">
+
+
+<meta name="date" content="2018-09-09">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="getting-to-know-excel.html">
+<link rel="next" href="questions-about-your-data.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#disclaimer"><i class="fa fa-check"></i><b>1.1</b> Disclaimer</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>2</b> Overview of course</a></li>
+<li class="chapter" data-level="3" data-path="module-structure.html"><a href="module-structure.html"><i class="fa fa-check"></i><b>3</b> Module structure</a><ul>
+<li class="chapter" data-level="3.1" data-path="module-structure.html"><a href="module-structure.html#preparatory-reading"><i class="fa fa-check"></i><b>3.1</b> 1) Preparatory reading</a></li>
+<li class="chapter" data-level="3.2" data-path="module-structure.html"><a href="module-structure.html#lab-session"><i class="fa fa-check"></i><b>3.2</b> 2) Lab session</a></li>
+<li class="chapter" data-level="3.3" data-path="module-structure.html"><a href="module-structure.html#post-lab-task"><i class="fa fa-check"></i><b>3.3</b> 3) Post-lab task</a></li>
+<li class="chapter" data-level="3.4" data-path="module-structure.html"><a href="module-structure.html#homework-quiz"><i class="fa fa-check"></i><b>3.4</b> 4) Homework quiz</a></li>
+<li class="chapter" data-level="3.5" data-path="module-structure.html"><a href="module-structure.html#lectures"><i class="fa fa-check"></i><b>3.5</b> 5) Lectures</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="week1.html"><a href="week1.html"><i class="fa fa-check"></i><b>4</b> Week 1</a></li>
+<li class="chapter" data-level="5" data-path="setting-up-your-working-environment.html"><a href="setting-up-your-working-environment.html"><i class="fa fa-check"></i><b>5</b> Setting up your working environment</a></li>
+<li class="chapter" data-level="6" data-path="getting-to-know-excel.html"><a href="getting-to-know-excel.html"><i class="fa fa-check"></i><b>6</b> Getting to know Excel</a></li>
+<li class="chapter" data-level="7" data-path="data-variables-and-observations.html"><a href="data-variables-and-observations.html"><i class="fa fa-check"></i><b>7</b> Data: Variables and observations</a><ul>
+<li class="chapter" data-level="7.1" data-path="data-variables-and-observations.html"><a href="data-variables-and-observations.html#activity-1-building-your-own-data"><i class="fa fa-check"></i><b>7.1</b> Activity 1: Building your own data</a></li>
+<li class="chapter" data-level="7.2" data-path="data-variables-and-observations.html"><a href="data-variables-and-observations.html#code-books"><i class="fa fa-check"></i><b>7.2</b> Code books</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="questions-about-your-data.html"><a href="questions-about-your-data.html"><i class="fa fa-check"></i><b>8</b> Questions about your data</a><ul>
+<li class="chapter" data-level="8.1" data-path="questions-about-your-data.html"><a href="questions-about-your-data.html#activity-2-thinking-about-what-our-data-tells-us"><i class="fa fa-check"></i><b>8.1</b> Activity 2: Thinking about what our data tells us</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="levels-of-measurement.html"><a href="levels-of-measurement.html"><i class="fa fa-check"></i><b>9</b> Levels of measurement</a><ul>
+<li class="chapter" data-level="9.1" data-path="levels-of-measurement.html"><a href="levels-of-measurement.html#activity-3.1-levels-of-measurement-pt.-1"><i class="fa fa-check"></i><b>9.1</b> Activity 3.1: Levels of measurement pt. 1</a></li>
+<li class="chapter" data-level="9.2" data-path="levels-of-measurement.html"><a href="levels-of-measurement.html#activity-3.2-levels-of-measurement-pt.-2"><i class="fa fa-check"></i><b>9.2</b> Activity 3.2: Levels of measurement pt. 2</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="unit-of-analysis.html"><a href="unit-of-analysis.html"><i class="fa fa-check"></i><b>10</b> Unit of analysis</a><ul>
+<li class="chapter" data-level="10.1" data-path="unit-of-analysis.html"><a href="unit-of-analysis.html#activity-4-abstract-ing-the-unit-of-analysis"><i class="fa fa-check"></i><b>10.1</b> Activity 4: <em>Abstract</em>-ing the unit of analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>11</b> Methods</a></li>
+<li class="chapter" data-level="12" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>12</b> Applications</a><ul>
+<li class="chapter" data-level="12.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>12.1</b> Example one</a></li>
+<li class="chapter" data-level="12.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>12.2</b> Example two</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>13</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Making Sense of Crim Data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-variables-and-observations" class="section level1">
+<h1><span class="header-section-number">Chapter 7</span> Data: Variables and observations</h1>
+<p>We know that in the period from May 2016 to May 2017, Greater Manchester police recorded a total of 420228 crimes. We also know that the largest number were recorded in Anti-social behaviour crime categeory, with 122443 instances, while the fewest in Possession of weapons, with 2009 instances.</p>
+<p>We can also track changes in the number of crimes over time:</p>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>How do we do this? Well, in the United Kingdom, since 2011 data regarding individual police recorded crimes have been made openly available to the public via the <a href="http://www.police.uk/">police.uk</a> website <a href="http://www.tandfonline.com/doi/abs/10.1080/15230406.2014.972456">1</a>. This means that by visiting the <a href="https://data.police.uk/">data.police.uk/</a> website you can access data about street-level crime, outcome, and stop and search information, broken down by police force. What does this mean? What do these data look like? Let’s have a look:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">X</th>
+<th align="left">Month</th>
+<th align="left">Reported.by</th>
+<th align="left">Falls.within</th>
+<th align="right">Longitude</th>
+<th align="right">Latitude</th>
+<th align="left">Location</th>
+<th align="left">LSOA.code</th>
+<th align="left">LSOA.name</th>
+<th align="left">Crime.type</th>
+<th align="left">Last.outcome.category</th>
+<th align="left">Context</th>
+<th align="left">borough</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">2016-05</td>
+<td align="left">Greater Manchester Police</td>
+<td align="left">Greater Manchester Police</td>
+<td align="right">-2.462774</td>
+<td align="right">53.6221</td>
+<td align="left">On or near Scout Road</td>
+<td align="left">E01012628</td>
+<td align="left">Blackburn with Darwen 018D</td>
+<td align="left">Violence and sexual offences</td>
+<td align="left">Unable to prosecute suspect</td>
+<td align="left">NA</td>
+<td align="left">Blackburn with Darwen</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="left">2016-05</td>
+<td align="left">Greater Manchester Police</td>
+<td align="left">Greater Manchester Police</td>
+<td align="right">-2.464422</td>
+<td align="right">53.6125</td>
+<td align="left">On or near Parking Area</td>
+<td align="left">E01004768</td>
+<td align="left">Bolton 001A</td>
+<td align="left">Anti-social behaviour</td>
+<td align="left"></td>
+<td align="left">NA</td>
+<td align="left">Bolton</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="left">2016-05</td>
+<td align="left">Greater Manchester Police</td>
+<td align="left">Greater Manchester Police</td>
+<td align="right">-2.464422</td>
+<td align="right">53.6125</td>
+<td align="left">On or near Parking Area</td>
+<td align="left">E01004768</td>
+<td align="left">Bolton 001A</td>
+<td align="left">Anti-social behaviour</td>
+<td align="left"></td>
+<td align="left">NA</td>
+<td align="left">Bolton</td>
+</tr>
+</tbody>
+</table>
+<p>In this data set each row is one crime record:</p>
+<div class="figure">
+<img src="imgs/rowIsObservation.png" alt="Each row is one observation" />
+<p class="caption">Each row is one observation</p>
+</div>
+<p>For every single crime event recorded in this data, there is a row, and it contains all the information that we know about this crime incident. It will have a value for each variable that we are interested in. The variables are the columns.</p>
+<p>So for example, <em>month</em> is a variable in our data, and for every row (which is every crime incident) this variable can take a value. Every crime incident occurred at one specific month, and that month when each incident happened will be the value that the <em>month</em> variable will take. And the month column will contain all the instances of the month variable for each crime incident recorded. Each observation (crime) will have a value for this variable (the month that it was recorded).</p>
+<div class="figure">
+<img src="imgs/columnIsVariable.png" alt="Each column is a variable" />
+<p class="caption">Each column is a variable</p>
+</div>
+<p>Let’s have a go at recording some crimes and putting them into a database, to give you some hands on experience here.</p>
+<div id="activity-1-building-your-own-data" class="section level2">
+<h2><span class="header-section-number">7.1</span> Activity 1: Building your own data</h2>
+<!--Often you will have data readily created for you, such as we saw with the police.uk data set, which can be downloaded in the rectangle format, where your columns are your variables, and your rows are your observations. But data can take many forms. So we will have a go at dealing with some data that comes in a very unruly form: tweets!-->
+<p><span style="color:#d95f02"> You will get a better understanding of how data represents what you are measuring if you have a go at building your own data set. We will do this here by using data from twitter. You are most likely familiar with twitter. You probably even tweet yourself. But even if you have never used twitter, you will no doubt know someone who does. In fact, many police forces use twitter. GMP is one of these forces, and in particular, GMP city centre like to keep their followers updated. Recently, the MEN had an article based on following GMP city centre’s tweets for one Saturday night. <a href="http://www.manchestereveningnews.co.uk/news/greater-manchester-news/what-police-city-centre-deal-13441129">You can read about that here</a>.</p>
+<p>Evidently tweets present really exciting and rich data. However they do not come in a format that is readily available for analysis in the form that we just presented here. But what you can do is collect data from tweets. And this is your task for your first lab activity.</p>
+<p>I have collected for you a set of tweets. Your task is to turn this into a rectangular data format, with the columns as variables, and the rows as observations (tweets). Don’t worry though, I’ll walk you through it.</p>
+<p>So first things first, we need a tool. As discussed we’ll mostly be using Excel in this course. So open up excel and create a brand new spreadsheet.</p>
+<p>Your first activity is to create a column header for each variable we want to collect. The easiest way to do this is just to make the first row your column headers. You can go ahead and create a column for each of the variables we are interested in collecting about each tweet. These are:</p>
+<ul>
+<li>Month: The month in which the tweet was sent</li>
+<li>Day: The day of the month in which the tweet was sent</li>
+<li>Hour: The hour when the tweet was sent, in 24h format (where 13:00 is 1pm and 01:00 is 1am)</li>
+<li>Account: The account who tweeted this tweet</li>
+<li>Tweet: The content of the tweet</li>
+<li>Likes: Number of likes for this tweet</li>
+<li>Retweets: Number of times this tweet was retweeted</li>
+<li>Comments: Number of comments made as reply to this tweet</li>
+</ul>
+<p><img src="imgs/column_headers_tweets.png" /></p>
+<p>Now you will just have to create a new row for each tweet, and populate a value for each variable we are collecting in our data. I’ll go through the first tweet with you, so we’re clear on what’s happening.
+This is tweet number 1:</p>
+<ul>
+<li><a href="https://twitter.com/GMPCityCentre/status/891900693585506304">Tweet 1</a></li>
+</ul>
+<p>You will see this open in a new window. Now let’s try to find the value for each variable in this tweet:</p>
+<div class="figure">
+<img src="imgs/tweet1.png" alt="Tweet1" />
+<p class="caption">Tweet1</p>
+</div>
+<ul>
+<li><em>Month</em>: July</li>
+<li><em>Day</em>: 31</li>
+<li><em>Hour</em>: 06</li>
+<li><em>Account</em>: GMPCityCentre</li>
+<li><em>Tweet</em>: Man left £1000 Stella McCartney bag on seat in Village bar with person he had just met, and when returned, woman and his bag had gone</li>
+<li><em>Likes</em>: 14</li>
+<li><em>Retweets</em>: 49</li>
+<li><em>Comments</em>: 22</li>
+</ul>
+<p>So when you enter these values, your data will look like this:</p>
+<p><img src="imgs/tweet1_entered.png" /></p>
+<p>Make sure that you are copy and pasting the ‘Tweet’ variable, rather than typing it out yourself, to save time and also ensure accuracy.</p>
+<p>NOTE: It is possible that you see a slightly different time than what I have here. This could be because you are logged into your own twitter account, and <a href="http://www.adweek.com/digital/tweet-timestamps/">twitter shows you the time in your own time zone</a>. If this is the case, just log out of twitter (or open an incognito window in Chrome) and it will give you the time in Pacific Time Zone, which is the time zone they are on in California. Now that means they are 9 hours behind us (most of the time, sometimes this varies with daylight savings changes, but should be OK for this exercise). So if you have this problem, you can enter the “hour” variable like this, to get the Greenwich Mean Time version:</p>
+<p><code>= hour + 9</code></p>
+<p>So for example, if you see the time of 10:57pm for the above tweet, you should have</p>
+<p><code>= 22 + 9</code></p>
+<p>If this number is greater than 24 (which in this case it is), just subtract 24 - this is because we’ve ventured over to the following day:</p>
+<p><code>= 22 + 9 - 24</code></p>
+<p>Some of you by now are thinking: “but then we also have to chane the date!” Indeed, if you have stepped ahead to the next day, then the date provided with the tweet is also wrong. I don’t know why twitter prefers to display things in Pactific time zone instead of the time zone from which it was tweeted, but unfortunately this is the case. So if you do have a twitter account, I would recommend you log in, and set your time zone to GMT (<a href="https://support.twitter.com/articles/20169405">see how to here</a>) as it just makes life easier…</p>
+<p>OK, ready? Then let’s build our data by adding the following tweets as additional rows:</p>
+<ul>
+<li><a href="https://twitter.com/GMPCityCentre/status/891762454337867776">Tweet 2</a></li>
+<li><a href="https://twitter.com/GMPCityCentre/status/894515606321590273">Tweet 3</a></li>
+<li><a href="https://twitter.com/GMPCityCentre/status/894024570109386752">Tweet 4</a></li>
+<li><a href="https://twitter.com/GMPCityCentre/status/891247668772708352">Tweet 5</a></li>
+<li><a href="https://twitter.com/GMPCityCentre/status/891254643078176768">Tweet 6</a></li>
+<li><a href="https://twitter.com/GMPCityCentre/status/890871354924421120">Tweet 7</a></li>
+<li><a href="https://twitter.com/GMPCityCentre/status/890594946536927233">Tweet 8</a></li>
+<li><a href="https://twitter.com/GMPCityCentre/status/890161961626996736">Tweet 9</a></li>
+<li><a href="https://twitter.com/GMPCityCentre/status/889084990495051776">Tweet 10</a></li>
+</ul>
+<p>Once you have entered all these, you should have a pretty solid set of tweets. The twitter data contains all the variables we have gathered here. You can see there are some tweets of information, some tweets for community engagement, and some appeals to the public for information, such as asking to locate people they might recognise from CCTV footage.</p>
+<p>Once you are done, save your data. You can do this by clicking on “file” and then “save as” and navigating to your working directory to save your file. You can save it as a <em>comma separated value</em> file, or .csv . Next term you will be dealing with data in this format. This way any formatting that you do to the spreadsheet (eg making the column titles bold etc) will <em>not</em> be preserved, however the data is available to read by more software, not just excel. It doesn’t hugely matter at this stage how you save your data.</p>
+<p>In any case, if you follow these steps, you will have a saved set of data, in a csv file, hopefully with some meaningful name:</p>
+<p><img src="imgs/save_tweets.png" /></p>
+<p>And now you have created your first data set. Your columns are your variables, which correspond to Month, Day, Hour, Account, Tweet, Likes, Retweets, and Comments. Your rows are the 10 tweets which you have collected this information about.
+</span></p>
+</div>
+<div id="code-books" class="section level2">
+<h2><span class="header-section-number">7.2</span> Code books</h2>
+<p>Creating data is a gift that keeps on giving, not just for yourself, but for others as well. Data collected by researchers is often shared and made available for others to use as well, so that they can explore their own research questions. For example, the <a href="https://www.ukdataservice.ac.uk/">UK Data Service</a> is a large repository of data where you can sign up, and access secondary data to analyse. You may have heard of the <a href="http://www.crimesurvey.co.uk/">Crime Survey for England and Wales</a> or the <a href="http://content.digital.nhs.uk/catalogue/PUB17879">Smoking, Drinking and Drug Use among Young People Survey</a>. The data collected by these surveys are online. Many many variables collected about individuals, neighbourhoods, and other units of analysis (to be returned to later) are available to us. Isn’t that really cool!? If you want to know, what thousands of people replied to the question asking them what the most important issue was to them when they voted in an election, you can find out just by downloading the correct data set!</p>
+<p>But there is one important consideration when you are sharing a data set, and something that is very important to you if you are using a data set someone else has created - you need to know what the variables <em>mean</em>. This is made possible by the creation of something called a <em>codebook</em> (and sometimes called a <em>data dictionary</em>). This is a note that accompanies a data set, telling the user a bit about the data, including what each variable means.</p>
+<p>Have a look at the codebook for the CSEW <a href="http://doc.ukdataservice.ac.uk/doc/7889/mrdoc/excel/7889_csew_data_dictionary_2002-03_to_2014-15.xlsx">here</a> - note that this will open a force download. Just download it, save it to your working directory, and then open it up with excel.</p>
+<p>It will look something like this:</p>
+<p><img src="imgs/csew_dictionary.png" /></p>
+<p>You see there is quite a bit of information provided, including the variable name, the question that was asked, a label, which is a bit of a description about the variable, and the possible values which the variable can take.</p>
+<p>If we were to share our tweet data, we would have to create something similar to this for that as well. Something like this perhaps:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Variable</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Month</td>
+<td align="left">The month in which the tweet was sent</td>
+</tr>
+<tr class="even">
+<td align="left">Day</td>
+<td align="left">The day of the month in which the tweet was sent</td>
+</tr>
+<tr class="odd">
+<td align="left">Hour</td>
+<td align="left">The hour when the tweet was sent</td>
+</tr>
+</tbody>
+</table>
+<p>Is there anything else that you would include? Why or why not? Have a think, and if you want discuss with a friend. The important thing here is that you understand what a codebook (or data dictionary) is, and that if you come across a data set, always make sure to look for the associated codebook/ data dictionary to be able to understand what each variable means. If you download your data from the web, you will usually find a link to the data dictionary on the site where you downloaded the data from.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="getting-to-know-excel.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="questions-about-your-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-literature.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

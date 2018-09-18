@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Making Sense of Crim Data</title>
+  <meta name="description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Making Sense of Crim Data" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Making Sense of Crim Data" />
+  
+  <meta name="twitter:description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester" />
+  
+
+<meta name="author" content="Reka Solymosi">
+
+
+<meta name="date" content="2018-09-11">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="week2.html">
+<link rel="next" href="week4.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a><ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#disclaimer"><i class="fa fa-check"></i><b>0.1</b> Disclaimer</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#overview"><i class="fa fa-check"></i><b>0.2</b> Overview of course</a><ul>
+<li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#module-structure"><i class="fa fa-check"></i><b>0.2.1</b> Module structure</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="week1.html"><a href="week1.html"><i class="fa fa-check"></i><b>1</b> Week 1</a><ul>
+<li class="chapter" data-level="1.1" data-path="week1.html"><a href="week1.html#learning-outcomes"><i class="fa fa-check"></i><b>1.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="1.2" data-path="week1.html"><a href="week1.html#setting-up-your-working-environment"><i class="fa fa-check"></i><b>1.2</b> Setting up your working environment</a></li>
+<li class="chapter" data-level="1.3" data-path="week1.html"><a href="week1.html#getting-to-know-excel"><i class="fa fa-check"></i><b>1.3</b> Getting to know Excel</a></li>
+<li class="chapter" data-level="1.4" data-path="week1.html"><a href="week1.html#data-variables-and-observations"><i class="fa fa-check"></i><b>1.4</b> Data: Variables and observations</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="week1.html"><a href="week1.html#activity-1-building-your-own-data"><i class="fa fa-check"></i><b>1.4.1</b> Activity 1: Building your own data</a></li>
+<li class="chapter" data-level="1.4.2" data-path="week1.html"><a href="week1.html#code-books"><i class="fa fa-check"></i><b>1.4.2</b> Code books</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="week1.html"><a href="week1.html#questions-about-your-data"><i class="fa fa-check"></i><b>1.5</b> Questions about your data</a><ul>
+<li class="chapter" data-level="1.5.1" data-path="week1.html"><a href="week1.html#activity-2-thinking-about-what-our-data-tells-us"><i class="fa fa-check"></i><b>1.5.1</b> Activity 2: Thinking about what our data tells us</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="week1.html"><a href="week1.html#levels-of-measurement"><i class="fa fa-check"></i><b>1.6</b> Levels of measurement</a><ul>
+<li class="chapter" data-level="1.6.1" data-path="week1.html"><a href="week1.html#activity-3.1-levels-of-measurement-pt.-1"><i class="fa fa-check"></i><b>1.6.1</b> Activity 3.1: Levels of measurement pt. 1</a></li>
+<li class="chapter" data-level="1.6.2" data-path="week1.html"><a href="week1.html#activity-3.2-levels-of-measurement-pt.-2"><i class="fa fa-check"></i><b>1.6.2</b> Activity 3.2: Levels of measurement pt. 2</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="week1.html"><a href="week1.html#unit-of-analysis"><i class="fa fa-check"></i><b>1.7</b> Unit of analysis</a><ul>
+<li class="chapter" data-level="1.7.1" data-path="week1.html"><a href="week1.html#activity-4-abstract-ing-the-unit-of-analysis"><i class="fa fa-check"></i><b>1.7.1</b> Activity 4: <em>Abstract</em>-ing the unit of analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="week1.html"><a href="week1.html#summary"><i class="fa fa-check"></i><b>1.8</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="week2.html"><a href="week2.html"><i class="fa fa-check"></i><b>2</b> Week 2</a><ul>
+<li class="chapter" data-level="2.1" data-path="week2.html"><a href="week2.html#learning-outcomes-1"><i class="fa fa-check"></i><b>2.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="week2.html"><a href="week2.html#terms-for-today"><i class="fa fa-check"></i><b>2.1.1</b> Terms for today:</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="week2.html"><a href="week2.html#univariate-analysis"><i class="fa fa-check"></i><b>2.2</b> Univariate analysis</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="week2.html"><a href="week2.html#the-importance-of-level-of-measurement"><i class="fa fa-check"></i><b>2.2.1</b> The importance of level of measurement</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="week2.html"><a href="week2.html#summarising-categorical-data"><i class="fa fa-check"></i><b>2.3</b> Summarising categorical data</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="week2.html"><a href="week2.html#activity-1-crime-types"><i class="fa fa-check"></i><b>2.3.1</b> Activity 1: Crime types</a></li>
+<li class="chapter" data-level="2.3.2" data-path="week2.html"><a href="week2.html#frequency-tables"><i class="fa fa-check"></i><b>2.3.2</b> Frequency tables</a></li>
+<li class="chapter" data-level="2.3.3" data-path="week2.html"><a href="week2.html#creating-a-frequency-table-in-excel"><i class="fa fa-check"></i><b>2.3.3</b> Creating a frequency table in Excel</a></li>
+<li class="chapter" data-level="2.3.4" data-path="week2.html"><a href="week2.html#activity-2-looking-at-frequency"><i class="fa fa-check"></i><b>2.3.4</b> Activity 2: Looking at frequency</a></li>
+<li class="chapter" data-level="2.3.5" data-path="week2.html"><a href="week2.html#visualising-a-frequency-table-with-bar-charts"><i class="fa fa-check"></i><b>2.3.5</b> Visualising a frequency table with bar charts</a></li>
+<li class="chapter" data-level="2.3.6" data-path="week2.html"><a href="week2.html#activity-3-bar-charts-in-excel"><i class="fa fa-check"></i><b>2.3.6</b> Activity 3: Bar charts in Excel</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="week2.html"><a href="week2.html#summarising-numeric-data"><i class="fa fa-check"></i><b>2.4</b> Summarising numeric data</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="week2.html"><a href="week2.html#measures-of-central-tendency"><i class="fa fa-check"></i><b>2.4.1</b> Measures of central tendency</a></li>
+<li class="chapter" data-level="2.4.2" data-path="week2.html"><a href="week2.html#activity-4-mean-and-median-in-excel"><i class="fa fa-check"></i><b>2.4.2</b> Activity 4: Mean and median in excel</a></li>
+<li class="chapter" data-level="2.4.3" data-path="week2.html"><a href="week2.html#distributions"><i class="fa fa-check"></i><b>2.4.3</b> Distributions</a></li>
+<li class="chapter" data-level="2.4.4" data-path="week2.html"><a href="week2.html#histograms"><i class="fa fa-check"></i><b>2.4.4</b> Histograms</a></li>
+<li class="chapter" data-level="2.4.5" data-path="week2.html"><a href="week2.html#activity-5-histograms-in-excel"><i class="fa fa-check"></i><b>2.4.5</b> Activity 5: Histograms in Excel</a></li>
+<li class="chapter" data-level="2.4.6" data-path="week2.html"><a href="week2.html#five-number-summary"><i class="fa fa-check"></i><b>2.4.6</b> Five-number summary</a></li>
+<li class="chapter" data-level="2.4.7" data-path="week2.html"><a href="week2.html#activity-6-calculate-quartiles"><i class="fa fa-check"></i><b>2.4.7</b> Activity 6: Calculate quartiles</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="week2.html"><a href="week2.html#standard-deviation"><i class="fa fa-check"></i><b>2.5</b> Standard deviation</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="week2.html"><a href="week2.html#activity-7-standard-deviation-in-excel"><i class="fa fa-check"></i><b>2.5.1</b> Activity 7: Standard Deviation in Excel</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="week2.html"><a href="week2.html#writing-it-all-up"><i class="fa fa-check"></i><b>2.6</b> Writing it all up</a><ul>
+<li class="chapter" data-level="2.6.1" data-path="week2.html"><a href="week2.html#build-a-structure"><i class="fa fa-check"></i><b>2.6.1</b> Build a structure</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="week2.html"><a href="week2.html#summary-1"><i class="fa fa-check"></i><b>2.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="week3.html"><a href="week3.html"><i class="fa fa-check"></i><b>3</b> Week 3</a><ul>
+<li class="chapter" data-level="3.1" data-path="week3.html"><a href="week3.html#learning-outcomes-2"><i class="fa fa-check"></i><b>3.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="week3.html"><a href="week3.html#terms-for-today-1"><i class="fa fa-check"></i><b>3.1.1</b> Terms for today</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="week3.html"><a href="week3.html#categorical-v-categorical"><i class="fa fa-check"></i><b>3.2</b> Categorical v categorical</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="week3.html"><a href="week3.html#activity-1-surviving-the-titanic"><i class="fa fa-check"></i><b>3.2.1</b> Activity 1: Surviving the Titanic</a></li>
+<li class="chapter" data-level="3.2.2" data-path="week3.html"><a href="week3.html#row-percentage-column-percentage-or-total-percentage"><i class="fa fa-check"></i><b>3.2.2</b> Row percentage, column percentage, or total percentage</a></li>
+<li class="chapter" data-level="3.2.3" data-path="week3.html"><a href="week3.html#a-note-on-formatting-cells"><i class="fa fa-check"></i><b>3.2.3</b> A note on formatting cells</a></li>
+<li class="chapter" data-level="3.2.4" data-path="week3.html"><a href="week3.html#activity-3-visualising-the-relationship---stacked-bar-charts-and-conditional-formatting"><i class="fa fa-check"></i><b>3.2.4</b> Activity 3: Visualising the relationship - stacked bar charts, and conditional formatting</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="week3.html"><a href="week3.html#categorical-v-numeric"><i class="fa fa-check"></i><b>3.3</b> Categorical v numeric</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="week3.html"><a href="week3.html#activity-4-age-of-offenders"><i class="fa fa-check"></i><b>3.3.1</b> Activity 4: Age of offenders</a></li>
+<li class="chapter" data-level="3.3.2" data-path="week3.html"><a href="week3.html#activity-5-adding-a-column-for-median"><i class="fa fa-check"></i><b>3.3.2</b> Activity 5: Adding a column for median</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="week3.html"><a href="week3.html#numeric-v-numeric"><i class="fa fa-check"></i><b>3.4</b> Numeric v numeric</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="week3.html"><a href="week3.html#correlation-does-not-mean-causation"><i class="fa fa-check"></i><b>3.4.1</b> Correlation does not mean causation</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="week3.html"><a href="week3.html#summary-2"><i class="fa fa-check"></i><b>3.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="week4.html"><a href="week4.html"><i class="fa fa-check"></i><b>4</b> Week 4</a><ul>
+<li class="chapter" data-level="4.1" data-path="week4.html"><a href="week4.html#learning-outcomes-3"><i class="fa fa-check"></i><b>4.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="week4.html"><a href="week4.html#terms-for-today-2"><i class="fa fa-check"></i><b>4.1.1</b> Terms for today:</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="week4.html"><a href="week4.html#population-parameters-versus-sample-statistics"><i class="fa fa-check"></i><b>4.2</b> Population parameters versus sample statistics</a></li>
+<li class="chapter" data-level="4.3" data-path="week4.html"><a href="week4.html#conceptualisation"><i class="fa fa-check"></i><b>4.3</b> Conceptualisation</a></li>
+<li class="chapter" data-level="4.4" data-path="week4.html"><a href="week4.html#measurement"><i class="fa fa-check"></i><b>4.4</b> Measurement</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="week4.html"><a href="week4.html#measuring-constructs-with-composite-variables"><i class="fa fa-check"></i><b>4.4.1</b> Measuring constructs with composite variables</a></li>
+<li class="chapter" data-level="4.4.2" data-path="week4.html"><a href="week4.html#multi-item-scales-for-categorical-constructs"><i class="fa fa-check"></i><b>4.4.2</b> Multi-item scales for categorical constructs</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="week4.html"><a href="week4.html#a-note-on-validity-and-reliability"><i class="fa fa-check"></i><b>4.5</b> A note on Validity and Reliability</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="week4.html"><a href="week4.html#activity-1-calculating-a-summative-score"><i class="fa fa-check"></i><b>4.5.1</b> Activity 1: Calculating a summative score</a></li>
+<li class="chapter" data-level="4.5.2" data-path="week4.html"><a href="week4.html#activity-2-testing-your-questions-cronbachs-alpha"><i class="fa fa-check"></i><b>4.5.2</b> Activity 2: Testing your questions: Cronbach’s alpha</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="week4.html"><a href="week4.html#recoding-some-more-transforming-your-variables-to-fit-with-your-concepts"><i class="fa fa-check"></i><b>4.6</b> Recoding some more: Transforming your variables to fit with your concepts</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="week4.html"><a href="week4.html#activity-3-recoding-variables"><i class="fa fa-check"></i><b>4.6.1</b> Activity 3: Recoding Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="week4.html"><a href="week4.html#summary-3"><i class="fa fa-check"></i><b>4.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="week5.html"><a href="week5.html"><i class="fa fa-check"></i><b>5</b> Week 5</a><ul>
+<li class="chapter" data-level="5.1" data-path="week5.html"><a href="week5.html#learning-outcomes-4"><i class="fa fa-check"></i><b>5.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="week5.html"><a href="week5.html#terms-for-today-3"><i class="fa fa-check"></i><b>5.1.1</b> Terms for today</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="week5.html"><a href="week5.html#research-design"><i class="fa fa-check"></i><b>5.2</b> Research Design</a></li>
+<li class="chapter" data-level="5.3" data-path="week5.html"><a href="week5.html#experiments-and-evaluation"><i class="fa fa-check"></i><b>5.3</b> Experiments and evaluation</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="week5.html"><a href="week5.html#rct"><i class="fa fa-check"></i><b>5.3.1</b> RCT</a></li>
+<li class="chapter" data-level="5.3.2" data-path="week5.html"><a href="week5.html#designing-an-rtc"><i class="fa fa-check"></i><b>5.3.2</b> Designing an RTC</a></li>
+<li class="chapter" data-level="5.3.3" data-path="week5.html"><a href="week5.html#activity-1-research-planning-with-gantt-charts-design-an-rtc-example"><i class="fa fa-check"></i><b>5.3.3</b> Activity 1: Research Planning with Gantt Charts: Design an RTC example</a></li>
+<li class="chapter" data-level="5.3.4" data-path="week5.html"><a href="week5.html#activity-2-random-assignment-into-control-and-treatment"><i class="fa fa-check"></i><b>5.3.4</b> Activity 2: Random assignment into control and treatment</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="week5.html"><a href="week5.html#activity-3-stratified-randomisation"><i class="fa fa-check"></i><b>5.4</b> Activity 3: Stratified randomisation</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="week5.html"><a href="week5.html#freeze"><i class="fa fa-check"></i><b>5.4.1</b> Freeze!</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="week5.html"><a href="week5.html#a-final-note-on-evidence-meta-analysis"><i class="fa fa-check"></i><b>5.5</b> A final note on evidence: Meta Analysis</a></li>
+<li class="chapter" data-level="5.6" data-path="week5.html"><a href="week5.html#longitudinal-data"><i class="fa fa-check"></i><b>5.6</b> Longitudinal data</a><ul>
+<li class="chapter" data-level="5.6.1" data-path="week5.html"><a href="week5.html#what-does-longitudinal-data-look-like"><i class="fa fa-check"></i><b>5.6.1</b> What does longitudinal data look like?</a></li>
+<li class="chapter" data-level="5.6.2" data-path="week5.html"><a href="week5.html#activity-4-linking-data"><i class="fa fa-check"></i><b>5.6.2</b> Activity 4: Linking data</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="week5.html"><a href="week5.html#complete-cases-an-approach-to-missing-data"><i class="fa fa-check"></i><b>5.7</b> Complete cases (an approach to missing data)</a><ul>
+<li class="chapter" data-level="5.7.1" data-path="week5.html"><a href="week5.html#activity-5-selecting-complete-cases"><i class="fa fa-check"></i><b>5.7.1</b> Activity 5: Selecting Complete Cases</a></li>
+</ul></li>
+<li class="chapter" data-level="5.8" data-path="week5.html"><a href="week5.html#ethics"><i class="fa fa-check"></i><b>5.8</b> Ethics</a></li>
+<li class="chapter" data-level="5.9" data-path="week5.html"><a href="week5.html#summary-4"><i class="fa fa-check"></i><b>5.9</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="week6.html"><a href="week6.html"><i class="fa fa-check"></i><b>6</b> Week 6</a><ul>
+<li class="chapter" data-level="6.1" data-path="week6.html"><a href="week6.html#learning-outcomes-5"><i class="fa fa-check"></i><b>6.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="6.2" data-path="week6.html"><a href="week6.html#visualising-data"><i class="fa fa-check"></i><b>6.2</b> Visualising data</a></li>
+<li class="chapter" data-level="6.3" data-path="week6.html"><a href="week6.html#why-visualise-data"><i class="fa fa-check"></i><b>6.3</b> Why visualise data?</a></li>
+<li class="chapter" data-level="6.4" data-path="week6.html"><a href="week6.html#anatomy-of-a-plot---the-grammar-of-graphics"><i class="fa fa-check"></i><b>6.4</b> Anatomy of a plot - the Grammar of Graphics</a></li>
+<li class="chapter" data-level="6.5" data-path="week6.html"><a href="week6.html#principles-of-good-data-visualisation"><i class="fa fa-check"></i><b>6.5</b> Principles of good data visualisation</a><ul>
+<li class="chapter" data-level="6.5.1" data-path="week6.html"><a href="week6.html#criticisms"><i class="fa fa-check"></i><b>6.5.1</b> Criticisms</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="week6.html"><a href="week6.html#what-makes-a-bad-graph-bad"><i class="fa fa-check"></i><b>6.6</b> What makes a bad graph bad?</a></li>
+<li class="chapter" data-level="6.7" data-path="week6.html"><a href="week6.html#what-graph-should-i-use"><i class="fa fa-check"></i><b>6.7</b> What graph should I use?</a></li>
+<li class="chapter" data-level="6.8" data-path="week6.html"><a href="week6.html#edges-contrasts-and-colors"><i class="fa fa-check"></i><b>6.8</b> Edges, Contrasts and Colors</a></li>
+<li class="chapter" data-level="6.9" data-path="week6.html"><a href="week6.html#colour"><i class="fa fa-check"></i><b>6.9</b> Colour</a><ul>
+<li class="chapter" data-level="6.9.1" data-path="week6.html"><a href="week6.html#activity-1-custom-colours-in-excel-graphs."><i class="fa fa-check"></i><b>6.9.1</b> Activity 1: Custom colours in Excel graphs.</a></li>
+</ul></li>
+<li class="chapter" data-level="6.10" data-path="week6.html"><a href="week6.html#reading-between-the-lines-points"><i class="fa fa-check"></i><b>6.10</b> Reading between the lines (points)</a></li>
+<li class="chapter" data-level="6.11" data-path="week6.html"><a href="week6.html#exploratory-data-visualisation"><i class="fa fa-check"></i><b>6.11</b> Exploratory data visualisation</a><ul>
+<li class="chapter" data-level="6.11.1" data-path="week6.html"><a href="week6.html#comparing-categories"><i class="fa fa-check"></i><b>6.11.1</b> Comparing categories</a></li>
+<li class="chapter" data-level="6.11.2" data-path="week6.html"><a href="week6.html#activity-2-exploring-trends"><i class="fa fa-check"></i><b>6.11.2</b> Activity 2: Exploring trends</a></li>
+<li class="chapter" data-level="6.11.3" data-path="week6.html"><a href="week6.html#activity-3-making-a-chart-template"><i class="fa fa-check"></i><b>6.11.3</b> Activity 3: Making a chart template</a></li>
+<li class="chapter" data-level="6.11.4" data-path="week6.html"><a href="week6.html#activity-4-saving-your-graph"><i class="fa fa-check"></i><b>6.11.4</b> Activity 4: Saving your graph</a></li>
+</ul></li>
+<li class="chapter" data-level="6.12" data-path="week6.html"><a href="week6.html#acvitity-5-more-complex-graphs"><i class="fa fa-check"></i><b>6.12</b> Acvitity 5: More complex graphs</a></li>
+<li class="chapter" data-level="6.13" data-path="week6.html"><a href="week6.html#more-guidance-on-chart-design"><i class="fa fa-check"></i><b>6.13</b> More guidance on chart design</a></li>
+<li class="chapter" data-level="6.14" data-path="week6.html"><a href="week6.html#communicating-results"><i class="fa fa-check"></i><b>6.14</b> Communicating results</a><ul>
+<li class="chapter" data-level="6.14.1" data-path="week6.html"><a href="week6.html#activity-6-interpreting-results"><i class="fa fa-check"></i><b>6.14.1</b> Activity 6: Interpreting results</a></li>
+</ul></li>
+<li class="chapter" data-level="6.15" data-path="week6.html"><a href="week6.html#summary-5"><i class="fa fa-check"></i><b>6.15</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="week7.html"><a href="week7.html"><i class="fa fa-check"></i><b>7</b> Week 7</a><ul>
+<li class="chapter" data-level="7.1" data-path="week7.html"><a href="week7.html#learning-outcomes-6"><i class="fa fa-check"></i><b>7.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="7.2" data-path="week7.html"><a href="week7.html#crime-and-incident-trend-identification"><i class="fa fa-check"></i><b>7.2</b> Crime and incident trend identification</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="week7.html"><a href="week7.html#activity-1-extracting-temporal-variables-from-dates"><i class="fa fa-check"></i><b>7.2.1</b> Activity 1: Extracting temporal variables from dates</a></li>
+<li class="chapter" data-level="7.2.2" data-path="week7.html"><a href="week7.html#activity-2-extract-year-from-date-column"><i class="fa fa-check"></i><b>7.2.2</b> Activity 2: Extract year from date column</a></li>
+<li class="chapter" data-level="7.2.3" data-path="week7.html"><a href="week7.html#activity-3-extract-day-of-week-from-date-column"><i class="fa fa-check"></i><b>7.2.3</b> Activity 3: Extract day of week from date column</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="week7.html"><a href="week7.html#aggregating-to-simple-intervals"><i class="fa fa-check"></i><b>7.3</b> Aggregating to simple intervals</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="week7.html"><a href="week7.html#activity-4-aggregate-to-hour"><i class="fa fa-check"></i><b>7.3.1</b> Activity 4: Aggregate to hour</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="week7.html"><a href="week7.html#visualising-time"><i class="fa fa-check"></i><b>7.4</b> Visualising time</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="week7.html"><a href="week7.html#activity-5-line-graphs"><i class="fa fa-check"></i><b>7.4.1</b> Activity 5: Line graphs</a></li>
+<li class="chapter" data-level="7.4.2" data-path="week7.html"><a href="week7.html#activity-6-radar-graphs"><i class="fa fa-check"></i><b>7.4.2</b> Activity 6: Radar graphs</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="week7.html"><a href="week7.html#activity-7-heatmaps"><i class="fa fa-check"></i><b>7.5</b> Activity 7: Heatmaps</a></li>
+<li class="chapter" data-level="7.6" data-path="week7.html"><a href="week7.html#summary-6"><i class="fa fa-check"></i><b>7.6</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="week8.html"><a href="week8.html"><i class="fa fa-check"></i><b>8</b> Week 8</a><ul>
+<li class="chapter" data-level="8.1" data-path="week8.html"><a href="week8.html#learning-outcomes-7"><i class="fa fa-check"></i><b>8.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="8.2" data-path="week8.html"><a href="week8.html#why-use-software-in-qualitative-data-analysis"><i class="fa fa-check"></i><b>8.2</b> Why use software in qualitative data analysis?</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="week8.html"><a href="week8.html#activity-1"><i class="fa fa-check"></i><b>8.2.1</b> Activity 1:</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="week8.html"><a href="week8.html#what-kinds-of-data-can-i-input-into-nvivo-for-analysis"><i class="fa fa-check"></i><b>8.3</b> What kinds of data can I input into NVivo for analysis?</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="week8.html"><a href="week8.html#activity-2-find-some-data"><i class="fa fa-check"></i><b>8.3.1</b> Activity 2: Find some data…</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="week8.html"><a href="week8.html#creating-your-nvivo-project"><i class="fa fa-check"></i><b>8.4</b> Creating your NVivo project</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="week8.html"><a href="week8.html#activity-3-getting-started-with-nvivo"><i class="fa fa-check"></i><b>8.4.1</b> Activity 3: Getting started with NVivo</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="week8.html"><a href="week8.html#understanding-the-interface"><i class="fa fa-check"></i><b>8.5</b> Understanding the interface</a></li>
+<li class="chapter" data-level="8.6" data-path="week8.html"><a href="week8.html#navigation-view"><i class="fa fa-check"></i><b>8.6</b> Navigation View</a><ul>
+<li class="chapter" data-level="8.6.1" data-path="week8.html"><a href="week8.html#sources"><i class="fa fa-check"></i><b>8.6.1</b> Sources</a></li>
+<li class="chapter" data-level="8.6.2" data-path="week8.html"><a href="week8.html#the-internals-section"><i class="fa fa-check"></i><b>8.6.2</b> The ‘internals’ section:</a></li>
+<li class="chapter" data-level="8.6.3" data-path="week8.html"><a href="week8.html#memos"><i class="fa fa-check"></i><b>8.6.3</b> Memos</a></li>
+<li class="chapter" data-level="8.6.4" data-path="week8.html"><a href="week8.html#activity-4-folders"><i class="fa fa-check"></i><b>8.6.4</b> Activity 4: Folders</a></li>
+</ul></li>
+<li class="chapter" data-level="8.7" data-path="week8.html"><a href="week8.html#importing-data"><i class="fa fa-check"></i><b>8.7</b> Importing Data</a><ul>
+<li class="chapter" data-level="8.7.1" data-path="week8.html"><a href="week8.html#activity-5-import-data"><i class="fa fa-check"></i><b>8.7.1</b> Activity 5: Import data</a></li>
+</ul></li>
+<li class="chapter" data-level="8.8" data-path="week8.html"><a href="week8.html#memos-1"><i class="fa fa-check"></i><b>8.8</b> Memos</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="week8.html"><a href="week8.html#activity-6-memos"><i class="fa fa-check"></i><b>8.8.1</b> Activity 6: Memos</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="week8.html"><a href="week8.html#word-frequency"><i class="fa fa-check"></i><b>8.9</b> Word frequency</a><ul>
+<li class="chapter" data-level="8.9.1" data-path="week8.html"><a href="week8.html#activity-7-word-frequency"><i class="fa fa-check"></i><b>8.9.1</b> Activity 7: Word frequency</a></li>
+</ul></li>
+<li class="chapter" data-level="8.10" data-path="week8.html"><a href="week8.html#summary-7"><i class="fa fa-check"></i><b>8.10</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="week9.html"><a href="week9.html"><i class="fa fa-check"></i><b>9</b> Week 9</a><ul>
+<li class="chapter" data-level="9.1" data-path="week9.html"><a href="week9.html#learning-outcomes-8"><i class="fa fa-check"></i><b>9.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="9.2" data-path="week9.html"><a href="week9.html#deduction-induction-adaption-key-analytical-strategies-for-qualitative-data"><i class="fa fa-check"></i><b>9.2</b> Deduction, induction, adaption – key analytical strategies for qualitative data</a></li>
+<li class="chapter" data-level="9.3" data-path="week9.html"><a href="week9.html#coding-qualitative-data-using-nodes"><i class="fa fa-check"></i><b>9.3</b> ‘Coding’ qualitative data using ‘nodes’</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="week9.html"><a href="week9.html#what-are-nodes"><i class="fa fa-check"></i><b>9.3.1</b> What are ‘Nodes’?</a></li>
+<li class="chapter" data-level="9.3.2" data-path="week9.html"><a href="week9.html#activity-1-coding"><i class="fa fa-check"></i><b>9.3.2</b> Activity 1: Coding</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="week9.html"><a href="week9.html#using-mind-maps-to-organise-your-analytical-process-and-framework"><i class="fa fa-check"></i><b>9.4</b> Using ‘mind maps’ to organise your ‘analytical process and framework’</a><ul>
+<li class="chapter" data-level="9.4.1" data-path="week9.html"><a href="week9.html#activity-2-deductive-coding"><i class="fa fa-check"></i><b>9.4.1</b> Activity 2: Deductive coding</a></li>
+<li class="chapter" data-level="9.4.2" data-path="week9.html"><a href="week9.html#activity-3-inductive-coding"><i class="fa fa-check"></i><b>9.4.2</b> Activity 3: Inductive coding</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="week9.html"><a href="week9.html#abductive-coding"><i class="fa fa-check"></i><b>9.5</b> Abductive coding</a><ul>
+<li class="chapter" data-level="9.5.1" data-path="week9.html"><a href="week9.html#activity-4-retrieval-viewing-coded-data"><i class="fa fa-check"></i><b>9.5.1</b> Activity 4: Retrieval – viewing coded data</a></li>
+<li class="chapter" data-level="9.5.2" data-path="week9.html"><a href="week9.html#activity-5-viewing-more-context"><i class="fa fa-check"></i><b>9.5.2</b> Activity 5: Viewing more context</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="week9.html"><a href="week9.html#export-coded-data"><i class="fa fa-check"></i><b>9.6</b> Export coded data</a><ul>
+<li class="chapter" data-level="9.6.1" data-path="week9.html"><a href="week9.html#activity-6-exporting-via-the-list-pane"><i class="fa fa-check"></i><b>9.6.1</b> Activity 6: Exporting via the list pane</a></li>
+</ul></li>
+<li class="chapter" data-level="9.7" data-path="week9.html"><a href="week9.html#reports-note-windows-only-users-not-supported-by-mac-yet"><i class="fa fa-check"></i><b>9.7</b> Reports (NOTE: WINDOWS ONLY USERS! NOT SUPPORTED BY MAC, YET!!)</a></li>
+<li class="chapter" data-level="9.8" data-path="week9.html"><a href="week9.html#some-other-useful-things-to-do"><i class="fa fa-check"></i><b>9.8</b> Some other useful things to do</a><ul>
+<li class="chapter" data-level="9.8.1" data-path="week9.html"><a href="week9.html#create-another-word-cloud"><i class="fa fa-check"></i><b>9.8.1</b> Create another Word Cloud:</a></li>
+<li class="chapter" data-level="9.8.2" data-path="week9.html"><a href="week9.html#create-a-word-tree"><i class="fa fa-check"></i><b>9.8.2</b> Create a Word Tree:</a></li>
+<li class="chapter" data-level="9.8.3" data-path="week9.html"><a href="week9.html#create-a-concept-map-windows-only"><i class="fa fa-check"></i><b>9.8.3</b> Create a Concept Map (WINDOWS ONLY!!)</a></li>
+</ul></li>
+<li class="chapter" data-level="9.9" data-path="week9.html"><a href="week9.html#other-features"><i class="fa fa-check"></i><b>9.9</b> Other features…</a><ul>
+<li class="chapter" data-level="9.9.1" data-path="week9.html"><a href="week9.html#graphicspictures---making-linked-notes-and-coding"><i class="fa fa-check"></i><b>9.9.1</b> Graphics/pictures - making linked notes and coding</a></li>
+<li class="chapter" data-level="9.9.2" data-path="week9.html"><a href="week9.html#coding-audiovideo-data"><i class="fa fa-check"></i><b>9.9.2</b> Coding audio/video data</a></li>
+</ul></li>
+<li class="chapter" data-level="9.10" data-path="week9.html"><a href="week9.html#more-on-capturing-web-material"><i class="fa fa-check"></i><b>9.10</b> More on capturing web material</a></li>
+<li class="chapter" data-level="9.11" data-path="week9.html"><a href="week9.html#summary-8"><i class="fa fa-check"></i><b>9.11</b> Summary</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Making Sense of Crim Data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="week3" class="section level1">
+<h1><span class="header-section-number">Chapter 3</span> Week 3</h1>
+<div id="learning-outcomes-2" class="section level2">
+<h2><span class="header-section-number">3.1</span> Learning outcomes</h2>
+<p>Much of statistics is about making comparisons. Human beings are not good at sifting through large streams of data; we understand data much better when it is summarized for us. This is true for looking for patterns in both <em>uni</em>variate and <em>bi</em>variate analysis. As discussed last week with univariate, when presenting descriptive analysis, we often display summary statistics in one of two ways: with tables and figures.</p>
+<p>Tables of summary statistics are very common (we have already created some of these last week) – nearly all published studies in criminology will contain a table of basic summary statistics describing their sample. However, figures offer a visually more appealing interpretation of our data, that allows people to easily identify trends from large amounts of information. This is also true for exploring relationships between two variables. In this course we will have a look at ways of producing these visuals (and some tables) that can help you get started in thinking about the relationships between different variables in your data. Not only do we want to be able to summarise one variable, but we want to know, is it related to another variable. Because this is where the interesting questions are that we can start asking.</p>
+<p>For example here are some criminological papers that explore the relationship between two variables:</p>
+<ul>
+<li><a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1745-9125.1989.tb01051.x/full">Do older people have higher fear of crime?</a> compares the variables age and worry about crime</li>
+<li><a href="http://psycnet.apa.org/record/1990-22928-001">Is there a relationship between adolescent drug use and psychological health?</a> compares the variable measuring psychological health with drug use in adolescence</li>
+<li><a href="https://link.springer.com/article/10.1007/s10940-009-9084-8">Does design of a street affect burglary risk of the houses on it?</a> looks at the variable of design of street, and considers its relationship with increased burglary risk</li>
+<li><a href="http://journals.sagepub.com/doi/abs/10.1177/1098611104271105">Does ethnicity affect trust in the police?</a> looks at the variable of ethnicity, and its relationship with variable measuring trust in the police.</li>
+</ul>
+<p>And so on and so on and so on. You will notice that most of the research questions that criminological research attempts to address are based on comparisons. You want to be able to explore the relationship that one variable has with other variables. That is where exciting new insights come from. We will talk next week about how you can go about identifying what variables to test against each other to be able to answer your research questions, including how to measure these variables, or even define them in the first place. But today we will explore how to go about assessing any <em>bivariate</em> (meaning two-way) relationships - relationships between two variables.</p>
+<div id="terms-for-today-1" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> Terms for today</h3>
+<ul>
+<li>Bivariate analysis</li>
+<li>Categorical v categorical
+<ul>
+<li>Crosstabs with pivot tables</li>
+<li>Stacked column chart</li>
+</ul></li>
+<li>Categorical v numeric
+<ul>
+<li>Summaries by group with pivot tables</li>
+</ul></li>
+<li>Numeric v numeric
+<ul>
+<li>Scatterplot</li>
+<li>Association, strength, and form of relationship</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="categorical-v-categorical" class="section level2">
+<h2><span class="header-section-number">3.2</span> Categorical v categorical</h2>
+<p>Here’s an example of a bivariate frequency table. Remember <strong>bivariate</strong> just means that there are <strong>two variables</strong>. Let’s say we have this data set of waiters and waitresses who work at Lil’ Bits restaurant. But this time we don’t just have their gender, we also have some information about their tip earnings. We know whether they are high earners or low earners. Here is our data in table format:</p>
+<p><img src="imgs/waiter_height_and_tip.png" /></p>
+<p>Again, all we are doing with a frequency table is counting the number of occurrences. Except this time we need to know the number of occurrences of variable <em>pairs</em>. So we need to know not only the number of times that <em>female</em> appears, but when the pair of <em>female</em> and <em>high earner</em> appear. Again, I made a gif to illustrate:</p>
+<p><img src="imgs/bivar_freq_table_gif.gif" /></p>
+<p>This two-way frequency table is also called a <strong>cross table</strong> or <strong>crosstab</strong>. Also a <strong>contingency table</strong>. We like to give the same thing many names, but just know, if you hear any of these terms, people are referring to the frequency table that considers the relationship between <strong>two categorical variables</strong>.</p>
+<blockquote>
+<p>The table of counts for the various combinations of categories is a contingency table.</p>
+</blockquote>
+<ul>
+<li>Agresti, Alan, and Maria Kateri. “Categorical data analysis.” International encyclopedia of statistical science. Springer Berlin Heidelberg, 2011. 206-208.</li>
+</ul>
+<p>For example, a researcher might be investigating the relationship between the class on which a passenger was travelling on the RMS Titanic (which, in case you’re not familiar, was a British passenger liner that sank in the North Atlantic Ocean in 1912, after it collided with an iceberg) and whether that person survived or not. The two variables would be class (1st, 2nd, 3rd, or crew) and survived (yes/no). The question is “Is there a significant relationship between class of passenger and survival?” In this course, we don’t yet learn how to answer this question with <em>inferential statistics</em>. Instead, here we only begin to explore this question (and other questions of comparison) using <em>descriptive statistics</em>. If you are unsure about the difference, ask now, or consult your readings from the first week.</p>
+<div id="activity-1-surviving-the-titanic" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Activity 1: Surviving the Titanic</h3>
+<p><span style="color:#d95f02">
+So let’s return to our question about survival in the Titanic. We want to know the relationship between the variable for class of passenger, and the variable for survival. First, we need some data. Data about the fate of the RMS Titanic’s passengers is actually available open data, so we can use it to explore any questions we might have about it. <a href="http://www.public.iastate.edu/~hofmann/data/titanic.html">You can read a bit about the data here, and also find the data dictionary</a>. In this instance though, you can download the data from blackboard. As always it’s in a folder under course content &gt; week 3 &gt; data for week 3. It is the one labelled “Titanic survivors data”. Under it you will see a link to titanic3.xls. Right click and select “Save link as”, and save it in your working directory you had set up for this course.</p>
+<p>Once you download the data open it up in excel. You should see it’s the usual dimension of your variables in your columns, and your observations in your rows. Each observation is one passenger who was on board the ship. The variable “Class” tells whether the passenger was travelling 1st class, 2nd class, 3rd class, or as a member of the crew. The variable “Survived” tells whether that person has survived the RMS Titanic’s collision with the iceberg or not.</p>
+<p>We might be interested in looking at the rate of survival by passengers who were travelling on various class tickets. For example, we might have seen the 1997 classic film <a href="http://www.imdb.com/title/tt0120338/">Titanic</a> by James Cameron, and might be wondering - was there a priority given to first class passengers when boarding the lifeboats, and did that result in them being more likely to survive? Well to be able to answer questions like this, we would need to compare the survival (yes/no) between the class (1st/2nd/3rd/crew) variables. Both of these are categorical, and so to be able to talk about their relationship, we will have to build a <strong>crosstab</strong>.</p>
+<p>So to do this, we return to our trusty friend, the pivot table again. But this time, instead of using it to summarise one variable, we can use it to summarise the relationship between two variables. The same way that the gif above illustrated with gender and the tips example, what this does is it counts the frequency of the combination of each category. But lets see how to do this.</p>
+<p>So first just create the pivot table environment to be able to build our pivot table. Just like last week, click into the <strong>Insert</strong> tab, click on <strong>pivot table</strong> and then again on <strong>pivot table</strong>:</p>
+<p><img src="imgs/click_pivot.png" /></p>
+<p>This will open a popup window, where you want to make sure that you select ‘New worksheet’ where it asks where your pivot table should be placed, and then click OK, again just like last week. When you click OK, excel should take you to the new worksheet where it has set up a pivot table for you, ready to get into your data, again exactly the same as last week. Remember, if the toolbar doesn’t appear, or ever disappears, to summon it you have to do one simple step, which is to click <em>anywhere</em> inside the pivot table area.</p>
+<p><img src="imgs/pivot_shell.png" /></p>
+<p>Great, now you can create your two-way frequency table. First, drag the “Class” variable to the “Row labels” box, and also into the values box. This should produce a table that looks familiar, it’s a one-way frequency table. It’s what we would do if we were carrying out some <em>univariate</em> analysis on the “Class” variable. It should look something like this:</p>
+<p><img src="imgs/class_uni.png" /></p>
+<p>We can take a moment to look at the frequency table of just the class variable. It tells us how many passengers were travelling aboard the ship in each group. You can see there were the most people travelling as crew, while the least populous group is the 2nd class ticket holders.</p>
+<p>But to answer our question about the relationship between survival and class, we don’t want <em>univariate</em> analysis on the “Class” variable. We want to compare the survival of passengers between these classes, so we want <em>bivariate</em> analysis on the “Class” variable with the “Survival” variable.</p>
+<p>Luckily, there is really only one more step we need to take to achieve this, which is to introduce the Survived variable into our pivot table. To do this, drag the “Survived” variable into the “Column Labels” box. Once you’ve done that, you should see your frequency table appear:</p>
+<p><img src="imgs/crosstabl_pivot.png" /></p>
+<p>You can see that we have a frequency table that has the variable of <em>Class</em> as the rows, and the variable of <em>Survived</em> across the columns. Note that this is different from a data set, where each variable would be a column and each row an observation. This here is a frequency table (or cross tab, or contingency table).</p>
+<p>Now you might notice one thing that could be bothering you? So think back to <em>levels of measurement</em>. The “Survived” variable is categorical - nominal. However, the “Class” variable does have an order, it’s categorical - ordinal. But Excel here puts it in alphabetical order.</p>
+<p>You can rearrange this manually, and copy over into a new sheet.</p>
+<p>To rearrange the order manually just click on the arrow next to “Class” &gt; “More sort options” &gt; “Manual”. To open a new sheet just click on the little plus sign on the bottom of your current sheet:</p>
+<p><img src="imgs/new_sheet_2.png" /></p>
+<p>Then copy over the values from your pivot table, making sure that your rows are in order, from 1st, to 2nd, to 3rd, to crew. You can also add labels if you like. In the end you should have something like this:</p>
+<p><img src="imgs/titanic_freq.png" /></p>
+<p></span></p>
+<p>So you can see here the number of people who survived or died on the Titanic, by the class on which they were travelling. Do you see any interesting patterns? If you’ve heard of the incident, or watched that film with Kate Winslet and Leo Dicaprio, then you might be expecting to see more 1st class ticket holders amongst the survivors than 2nd and 3rd class, or crew. However if we look at the number of people who survived, is there a lot of difference? In fact it looks like more crew members survived than did 1st class passengers…</p>
+<p>But what about if you look at the column that represents the number of people who didn’t survive instead? Now we see that a lot more people, volume-wise, did not survive in the 3rd class and Crew groups. But how can we make meaningful comparisons between these groups? How do we make sense of this?</p>
+<p>One thing you will be able to use, which we approached last week, is the use of percentages, to make sense of your data. With a frequency table of only one variable, this was easy, you just consider what percentage of the whole, each cell represents. However with a <strong>bivariate</strong> frequency table, we have <em>three</em> different options for percentages. We can consider the <strong>row percentage</strong>, the <strong>column percentage</strong> or the <strong>total percentage</strong>. And all three tell us very different things. Let’s take a look.</p>
+</div>
+<div id="row-percentage-column-percentage-or-total-percentage" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Row percentage, column percentage, or total percentage</h3>
+<p>Column percentages are computed by dividing the counts for an individual cell by the total number of counts for the column. A column percent shows the proportion of observations in each row from among those in the column. Row percentages are computed by dividing the count for a cell by the total sample size for that row. A row percent shows the proportion of observations in a column category from among those in the row. Total percentages are computed by dividing the count for a cell by the total sample size - the grand total. A total percent shows the proportion of all observations in you sample that match that particular row and column combination.</p>
+<p>Simply put:</p>
+<ul>
+<li><strong>row percentage</strong> is the percent that each cell represents of the <strong>row total</strong></li>
+<li><strong>column percentage</strong> is the percent that each cell represents of the <strong>column total</strong></li>
+<li><strong>total percentage</strong> is the percent that each cell represents of the <strong>grand total</strong></li>
+</ul>
+<p>In the case of the Titanic survivors data, we might be wondering three things:</p>
+<ul>
+<li><strong>row percentage:</strong> what percent of the passengers in 1st class survived vs did not survive?</li>
+<li><strong>column percentage:</strong> what percent of the survivors were passengers in 1st class vs 2nd, 3rd class or Crew?</li>
+<li><strong>total percentage:</strong> what percent of all passengers were those who were 1st class and survived, 1st class and did not survive, 2nd class and survived, 2nd class and did not survive, etc etc</li>
+</ul>
+<p>So to calculate each one of these, we need to know each <strong>row total</strong>, each <strong>column total</strong>, and the <strong>grand total</strong>. In this case, if we look at our data, our rows are represented by the classes, and the columns represent the survival (or not) of passengers (and crew).</p>
+<p>So the row total for the 1st class row will just be the sum of all people (both those who survived and those who did not) who had 1st class tickets. And the row total for the 2nd class row will just be the sum of all people (both those who survived and those who did not) who had 2nd class tickets. And so on, and so on. Like this:</p>
+<p><img src="imgs/titanic_row_total_calc.png" /></p>
+<p>For column totals it’s the same thing, except you are calculating the total of each column, so the total number of people who survived, by adding up survivors in 1st class, 2nd class, 3rd class, and crew, and the total of those who did not survive, adding up non-survivors in 1st class, 2nd class, 3rd class, and crew. Like so:</p>
+<p><img src="imgs/titanic_col_total_calc.png" /></p>
+<p>Summing the observations in either way give you a column total and a row total column. If you take the sum of those (so the sum of the column totals, that is all the people who survived and all the people who did not, <strong>or</strong> the sum of the row totals, which is the sum of all people in all the classes and crew), that gives you the grand total, which, incidentally, is all the people who were on board the RMS Titanic, in all classes, and whether they survived or not. In this case, that is a total of 2201 people. You can get this from either the row total or the column total, they will both equal the same thing, which is <em>all your observations</em>.</p>
+<p><img src="imgs/titanic_w_total_cols.png" /></p>
+<p>###Activity 2: Calculating row vs column percentages</p>
+<p><span style="color:#d95f02">
+You can calculate these yourself, in the excel sheet you have downloaded from blackboard, using the <code>=SUM()</code> function, the way that we did this in the previous session.</p>
+<p>So now that we have these totals, we can calculate our percentages.</p>
+<p>To get your row percentage, you have to take each cell and divide it by the row total (and then times by 100 to get the percent value). You can do this in a new column, creating a new column for survived - Yes % and No % :</p>
+<p><img src="imgs/surv_perc_cols.png" /></p>
+<p>Now you can enter the calculation as a formula for each row. Remember for something to be a formula, you will start with <code>=</code>, and then follow with your equation. Here the equation will be:</p>
+<p><code>cell divided by the total, times 100</code></p>
+<p><code>cell/total*100</code></p>
+<p>So for example, for the Yes percent column for first class passengers, you have to find the cell reference for the cell that represents the number of people who survived and were 1st class ticket holders, and divide by the cell reference of the total number of first class ticket holders (your row total for this row). You can do this by typing in the reference for each cell (so typing out <code>C3</code> and <code>E3</code>) or you can do it by highlighting as well. If you’re not sure how to do the highlighting approach, raise your hand now, we will come to help!</p>
+<p>But in any case, for the cell that represents the row percentage for the yes survived and first class combination, you should have the below formula:</p>
+<p><code>=C3/E3*100</code></p>
+<p>Once you type this, you will see the percent value appear for the percent of all first class passengers who survived:</p>
+<p><img src="imgs/perc_surv_value.png" /></p>
+<p>You will see that in the formula bar at the top, you see the formula you typed, but in the cell you see the value appear. In this case we can see that about 62.5% of first class passengers survived the sinking of the RMS Titanic. Let’s calculate the values for the other cells as well:</p>
+<p><img src="imgs/all_row_perc.png" /></p>
+<p></span></p>
+<p>Row percentages allow you to talk about the percentage of each value in the variable that’s displayed along the rows, in terms of the outcomes displayed across the columns. What does that mean? Essentially, you can talk about the percent of each class that belong to each survival outcome. So you use row percentages to say: 62.5% of those in first class survived, but only 25% of third class passengers did. This is the kind of stuff we can say with row percentages. You get all sorts of better insight, than just talking about the number of passengers who survived. There were 203 1st class survivors, and 178 3rd class, however this doesn’t seem to be that much of a difference. But once you take into account, how many <em>more</em> 3rd class passengers were than 1st class, you can see that actually it does make a huge difference, as percentage wise, many more 1st class passengers survived. Turning your numbers into percentages tells you these kinds of things. Isn’t that exciting? Well, not for Leo…</p>
+<p><img src="https://media.giphy.com/media/sbtEb9csrlOda/giphy.gif" /></p>
+<p>But what about column percentages? What do those tell us? Well just as row percentages tell you about the percent of the <em>row</em> values, distributed across the categories of the <em>columns</em>, column percentages tell you about the percent of the <em>column</em> values, distributed across the categories of the <em>rows</em>. In this case, the column percentages would tell us what percent of the survivors were 1st, 2nd, 3rd class or crew. Similarly it can also tell us what percent of the non-survivors were 1st, 2nd, 3rd class or crew. This is a <em>slightly</em> different story to what the row percent says.</p>
+<p>So why is that? Well let’s look at the numbers to illustrate. To calculate the column percentages, you have to do the mirror image of what we did for row percentages, just create some new rows, one percentage equivalent for each class, so 1st %, 2nd %, 3rd % and crew %, and again for each one, populate it with a formula starting with the <code>=</code> sign, then the cell of the matching value (so C3 for 1st class survived) divided this time by the column total (C7), and again times by 100. As such:</p>
+<p><img src="imgs/col_perc_calc.png" /></p>
+<p>Repeat the same for all cells (remember how you can copy formulas by clicking on the bottom right corner of the cell there, and dragging? No? Raise your hand now to ask about it! It saves time, I swear…!)</p>
+<p>Then you will end up with some results like this:</p>
+<p><img src="imgs/all_col_perc.png" /></p>
+<p>So what does that tell you? Well this tells you about the % of Survivors who were travelling in each class. So we can now see that of all the survivors, 28.6% were 1st class, 16.6% were 2nd class, 25% were 3rd class, and 30% were crew. This doesn’t really illustrate any huge disproportionality, does it? Well again, that’s because it doesn’t compare to those who died. Instead it just looks at the distribution of the survivors between those travelling in different class. And this is why it’s really important for you to consider - what is the best way of presenting the data, that considers all angles, and presents the most truthful story? There is a popular book used to teach statistics called <a href="https://en.wikipedia.org/wiki/How_to_Lie_with_Statistics">How to Lie With Statistics</a>. This is a good point to illustrate again, how important it is for you to understand how to make sense of data, and how to draw meaning from it, in order to be able to scrutinize what stories people may tell you. Depending on what results would be presented from this analysis, we could easily write a different headline.</p>
+<p>Consider this:</p>
+<p><strong>Crew save themselves before passengers - 30% of the survivors were Crew members, with 1st class passengers lagging behind at 28.6%</strong></p>
+<p>The numbers in this headline are all correct. It is true that 30% of the survivors were crew members. But it doesn’t take into account the original number of crew members present, from which the survivors could be selected. A very different headline would be:</p>
+<p><strong>Rich leave the poor to sink into icy ocean - 62.5% of 1st class passengers survive, compared with 41.4% of 2nd class, 25.2% 3rd class, and only 24% of crew members who made it out</strong></p>
+<p>Very different conclusions, no? All from the same data. The numbers are correct, but they are framed very very differently. This is why it is so important to report all your findings, including the right statistics, as well as to be able to scrutinize other reports as well. To the first statement you might want to pose the question - OK but what percentage of the non-survivors were crew members? You would receive the figure of 45%, immediately indicating that they would be the largest group represented in the fatalities as well. Then you would begin to realise that the reason they might be a large proportion of the survivors, is because they made up such a large proportion of anyone on board, in the first place. There was simply more of them present! But when you consider their survival rate (which is illustrated better by the row percentages) you gain some insight into the inequalities. And our qualitative information from the movie Titanic further supports this finding, that we need to consider the proportion who did not make it out as well:</p>
+<p><img src="https://media.giphy.com/media/bQw045yld4nra/giphy.gif" /></p>
+<p>I hope that illustrated a bit how you can calculate your row and column percentages, as well as what they mean, and how they help you extract meaning from your data. Usually you will only display <em>either</em> row percentages <em>or</em> column percentages, <em>not both</em>. You will have to choose which one you think is most appropriate for telling your story.</p>
+<p>But what about total percentages?!?! The truth is, you will very rarely use these. Total percentages tell you what proportion of all your passengers were 1t class and survivors, or 2nd class and survivors, and so on and so on. They are not frequently used to show relationships between variables. If you want to calculate them, you just have to divide each cell by the grand total (all the passengers) and times that by 100. You can go ahead and try if you want. But you won’t really get a lot of insight from it, I have to tell you… So we won’t even bother with them any more.</p>
+<p>So which one you use (row or column) is dictated by the question you ask. There’s also this youtube video (made for someone called Michelle apparently… I’m not sure the backstory here, but it sounds like our video creator is excited for Michelle to get back from Spring Break, and talk about column vs. row percentages. But in any case, I’m sure that since it’s on YouTube, the rest of us can use it…) where the video’s creator switches between row and column percents, this can further illustrate how it makes a difference which one you use: <a href="https://www.youtube.com/watch?v=cdvTpnHwKjs">you can watch the video here</a>.</p>
+<p>If you’re still unsure about these let us know, raise your hand, and we will come to help!</p>
+</div>
+<div id="a-note-on-formatting-cells" class="section level3">
+<h3><span class="header-section-number">3.2.3</span> A note on formatting cells</h3>
+<p>Just before we move on, I quickly want to take a side step and talk about formatting of the cells. You can see that here we see our percentages appear to very accurate precision, displayed up to 7 decimal places. This isn’t always necessary. Do you think it makes a big difference to someone if you say “32% of all Titanic passengers survived” or if you say “32.303498% of all Titanic passengers survived”, in terms of their understanding of what that means? In some cases it might be important to retain such precision. But often, when talking about people, (or number of crimes) it doesn’t necessarily need to be so specific. So what if you wanted to format your results?</p>
+<p>Well you can always round your numbers manually. But as always, there is a way you can just do this using excel. To do this, highlight all the cells with the percentages inside. When you have done this, right-click anywhere inside this area that you have just highlighted. A menu of options will appear. Select the option to “Format Cells…”</p>
+<p><img src="imgs/format_cells.png" /></p>
+<p>This will bring up another window, where on the left hand side you will see a list of possible types of data that your cell could contain. Most likely this will be set to “General” which is a pretty meaningless category. Instead, choose the “Number” option, as your cells contain numbers (percentages). When you click on the “Number” option, you will see a text box, that says “Decimal places:” in front of it.</p>
+<p><img src="imgs/num_dec_set.png" /></p>
+<p>Here you can enter the number of decimal places you want to display. Change it to “1”. Then click OK. Once you’ve done that, your percentages should now be displayed with only one decimal point. A bit less noise, don’t you agree?</p>
+<p><img src="imgs/one_dec_row_perc.png" /></p>
+</div>
+<div id="activity-3-visualising-the-relationship---stacked-bar-charts-and-conditional-formatting" class="section level3">
+<h3><span class="header-section-number">3.2.4</span> Activity 3: Visualising the relationship - stacked bar charts, and conditional formatting</h3>
+<p>So last week we visualised frequency tables using a bar chart. This week we have two variables to visualise. Luckily we can still do this, but with a stacked bar chart. What is this? Well this time, the bar chart will have a consistent height (100%) but will be shaded according to which percentage each category takes up. Let’s illustrate to make this more clear.</p>
+<p><span style="color:#d95f02">
+We’ve decided that row percentages are the more meaningful of the two here for us, so let’s go ahead, and highlight the cells where we have our row percentages. Once this is highlighted, select the stacked bar chart.</p>
+<p><img src="imgs/stacked_col.png" /></p>
+<p>Once you click on that, our chart will appear:</p>
+<p><img src="imgs/stacked_col_2.png" /></p>
+<p>This looks about right, however you can see that our axes are not properly labelled. Each category is called 1, 2, 3, and 4, instead of 1st class, 2nd class, 3rd class, and crew. So to fix this, you can right click anywhere in the chart area, and as the little window of options appears, click on “Select data…”:</p>
+<p><img src="imgs/stacked_col_3.png" /></p>
+<p>This will open up another pop up window, where you should see the following:</p>
+<p><img src="imgs/stacked_col_4.png" /></p>
+<p>Above the right-hand box, you can see a label telling you that this is to do with the “Horizontal (Category) Axis Labels. You can click on the”Edit&quot; button under that which will open a selection window. Select the row labels by clicking and dragging to highlight them all:</p>
+<p><img src="imgs/add_labels.gif" /></p>
+<p>Once you hit enter it will populate, and you can click on “OK” to update your graph. You will see it updated hopefully looking like the graph below:</p>
+<p><img src="imgs/stacked_col_5.png" /></p>
+<p>you might have noticed there was an option for stacked bad with percentage next to it. This is quite handy if you have not computed row percentages. Excel will go ahead and do this for you in graph form. If you want to give this a go, go back and this time, highlight the count of the people who survived, not your percentage calculations. Now when you’ve highlighted that this time select the percentage graph bar charts:</p>
+<p><img src="imgs/stacked_col_perc.png" /></p>
+<p>When your new graph appears, you will see that it looks exactly the same as when you created the stacked chart from your calculations. Exciting!</p>
+<p><img src="imgs/stacked_col_perc_2.png" /></p>
+<p>You might be wondering - how does excel know that you want the row percentages, and not the column percentages, when you are creating your stacked percentage bar graph just from the counts? Well, tradition holds in data analysis that you should arrange your data in a way that the row percentages are the meaningful ones. Think about it, if I wrote the table with the survival in the rows, and the class in the columns, that still makes sense - it is still the same data, right? But then what is represented by column and by row percentages gets switched. The meaning is the same, but they are just calculated into different places.</p>
+<p>Another way to visually display the differences in your data, while still presenting the numbers in a table, is to use conditional formatting. To do this, select again the cells with your percentage values in it:</p>
+<p><img src="imgs/cond_form.png" /></p>
+<p>This time in the “Home” tab, you will see a little sign that says conditional formatting. Click on the little arrow next to it (with your data still highlighted):</p>
+<p><img src="imgs/cond_form_2.png" /></p>
+<p>Hover over “colour scales” and pick a colour scale that you think is appropriate. Often you will hear people talk about a “RAG” rating (red, amber, green). So you might want to choose a red-amber-green colour scale. However, you might want to consider that some people have red-green colour blindness. To make your representation accessible to people with this particular condition, you might actually want to use a scale that goes from red to blue. Also you want to decide what is coloured red. You can see the same colour scales on there twice, once with red at the top, and once flipped around with red at the bottom. Which one you choose is dependent on the <em>meaning</em> of your colour scale. Is a high number a good thing or a bad thing? In this case this changes between our two columns. However if we were colour-coding the number of crimes per borough for example, a table we created last week, then red would be better suited to illustrate higher numbers (so we would pick the scales with the red on top) to indicate more crimes in an area. You can also choose a neutral scale, going from yellow to green for example and so on. The choice is yours, you have options!</p>
+<p>Here’s mine anyway:</p>
+<p><img src="imgs/cond_form_3.png" /></p>
+<p>You can see that the yes % is quite a high value, an appears with an orange colour for the 1st class passengers, but for all others, it is their no % which contains the higher numbers, with dark red especially for 3rd class and crew members. Using conditional formatting in this way can help draw out patters, that further emphasise the story that the numbers in your crosstab are telling. They can be useful in reports (just make sure that whoever will be reading them will be reading on screen, or has access to a colour printer!).</p>
+<p></span></p>
+</div>
+</div>
+<div id="categorical-v-numeric" class="section level2">
+<h2><span class="header-section-number">3.3</span> Categorical v numeric</h2>
+<p>The Arrestee Survey, 2003-2006, was the first nationally representative survey of drugs and crime among the population of individuals representing arrest events in England and Wales. The survey aimed to provide information on a range of areas within the drugs and crime nexus, including the prevalence of problematic drug misuse among respondents representing arrest events; drug and/or alcohol consumption; availability of drugs; levels of demand (met and/or unmet) for drug and alcohol treatment services among respondents; levels of intravenous drug use among respondents; and gang membership. Topics covered include: demographic characteristics; arrest, prison history and past contact with CJS; offending and offence categories; drug and alcohol use; drug purchasing and availability; drug and alcohol treatment needs; treatment offered and received; and gang involvement. Some of the above questions were answered by self-completion questionnaire, and an oral fluid (saliva) sample was also taken.</p>
+<p>If you wanted to have a look at this data set, you can access it through the UK data service website <a href="https://discover.ukdataservice.ac.uk/catalogue/?sn=5807">here</a>. However to make things easier, I have selected just a few variables for you here, and uploaded this subset onto blackboard. So go now to blackboard (course content &gt; week 3 &gt; data for week 3) and download the arrestees_subset file. Once downloaded onto your PC, open it up with excel.</p>
+<p>So the first thing we want to do is have a look at our variables. We have 5 variables, which are:</p>
+<ul>
+<li><strong>Interview reference index:</strong> This is just a reference number to identify each person interviewed. For anonymity reasons, a number is used to identify them, rather than their names<br />
+</li>
+<li><strong>Age:</strong> Age of the person being interviewed, at the time of interview</li>
+<li><strong>Age at first arrest:</strong> The age at which they person had their first arrest<br />
+</li>
+<li><strong>Number of times arrested:</strong> The number of times this person has been arrested, up to this point.</li>
+<li><strong>Reason for arrest:</strong> The reason given for this particular arrest</li>
+</ul>
+<p>In the following questions, we will explore the relationship that age has with offending. In the first instance, we might want to find out the age profile for different offences. Do you think there would be a difference between the different offences that people are likely to get arrested for?</p>
+<p>For example <a href="http://www.tandfonline.com/doi/abs/10.1080/10683160512331316343">joy riding is a crime traditionally associated with younger people</a>. Joyriding is associated with ‘theft of vehicle’ which appears in our data as a possible value for the “Reason for Arrest” variable. So we might expect for the distribution for age (a numeric variable) to be different for those arrested for ‘theft of vehicle’ than a crime that might be associated with an older demographic. Any ideas what crime types those could be?</p>
+<div id="activity-4-age-of-offenders" class="section level3">
+<h3><span class="header-section-number">3.3.1</span> Activity 4: Age of offenders</h3>
+<p><span style="color:#d95f02">
+Let’s have a look at just the possible values that the “Reason for Arrest” variable. To do this, let’s start building a pivot table once again. You should be pretty comfortable with this by now. Make sure you are clicked anywhere on a cell that’s part of our data set, and then go to Insert (or Data on a mac) and choose pivot table:</p>
+<p><img src="imgs/click_pivot.png" /></p>
+<p>Now take the variable ‘reason for arrest’, and drag it to the “Row Labels” box. You should see all the values for the “Reason for arrest” variable :</p>
+<p><img src="imgs/reason_arr_values.png" /></p>
+<p>You can see here a list of all the possible values that the “Reason for arrest” variable can take. Let’s take some time to think about these categories. We’ve already discussed joyriding as something that is generally considered a crime to be committed more often by younger people. What about the other reasons above. Are there any other ones that you think would have a generally younger demographics? Let’s take some time to guess first, just to test your possible understanding, and then check our assumptions with data. After all, that’s what this course is about, right?</p>
+<p>So, answer the following questions for me, without peaking ahead, or checking the data, just in terms of your perceptions of the relationship between age and types of offences committed:</p>
+<ul>
+<li>Which reason for arrest do you think has the oldest arrestee?</li>
+<li>Which reason for arrest for you think has the highest average age of arrestees?</li>
+<li>Which reason for arrest for you think has the lowest average age of arrestees?</li>
+</ul>
+<p>Take some time to think about this.</p>
+<p>So now that you’ve hopefully chosen some categories that you think would fit the image of younger/ older age profiles, let’s have a look at what the data says. In order to be able to compare a numeric variable across values of a categorical variable, we can consider different summaries across each value. Remember last week when we looked into summaries of numeric variables when considering <em>uni</em>variate analysis? Well now we do the same, create these summaries for the numeric variables, but we do this <em>for each value of the categorical variable</em>. So we can consider the minimum, the maxiumum, the mean, the median, and the standard deviation for age across each one of the values given for ‘reason for arrest’. Let’s have a look on how to do this.</p>
+<p>On our pivot table panel, grab the age variable, and drag it into the “Values” box. When you let it go, your table should look something like this:</p>
+<p><img src="imgs/age_to_value.png" /></p>
+<p>Have a look at this table. What does it tell you? It looks a bit strange no, these are not really numbers that make sense when we are talking about people’s ages… What does 9882 mean when it comes to ‘Theft of vehicle’? Well if we look back at our “Values” box in the pivot table panel it gives us an indication as to what’s going on. Since we didn’t specify how we want the age variable summarised, Excel has decided to select the “sum” function for us. So what we are seeing here is essentially a sum of all the ages for all arrests made for reason of “theft of vehicle”. This is very hard to make sense of, and instead we would prefer to see some of our summaries that we discussed above, as well as last week when we were performing univariate analysis. So how do we do this?</p>
+<p>Well on the right hand side of the item “Sum of Age” in the Values box there is a little letter “i”. This is on a mac so on a PC it might be a downwards arrow. Whatever it is, click on it, and a new popup window will appear.</p>
+<p><img src="imgs/change_from_sum.png" /></p>
+<p>If you’re on a PC, when you click on the downward arrow this set of options will appear:</p>
+<p><img src="imgs/windows_pivot_change_sum.png" /></p>
+<p>In this case select “Value Field Settings…” - this is the same as the steps we followed last week to add the column of percentages for out univariate frequency table. Then the popup that appears will look roughly the same, with the option to change the Field Name (as “Custom Name”) and the Summarize by (as “Summarize Values By”).</p>
+<p>In the new popup window, you can see that you have a list of options in a window under the description that says “Summarize by”. You can see that initially (by default) this is set to sum:</p>
+<p><img src="imgs/set_to_sum.png" /></p>
+<p>Change this to select “Average”, like so:</p>
+<p><img src="imgs/set_to_avg.png" /></p>
+<p>Click OK, and you will see your column updated:</p>
+<p><img src="imgs/is_now_avg_col.png" /></p>
+<!--
+
+The label for the column in this table though still says "Total" which is not a hugely meaningful name, is it? Re-write this (simply by clicking in the cell and deleting "Total" and writing its new name). For example here I've re-labelled it to say "Average Age":
+
+
+![](relabel_avg_age.ong)
+
+-->
+<p>So now we have a column that tells us the average age of people arrested for each value of the variable “Reason for arrest”. So which one has the highest average age? It appears to be “Sex Offence” with an average age of 35 years old for people arrested for this reason. Is this what you were expecting? Did you choose something different? What is the average age for the value for reason of offence that you thought would be oldest? Were you far off? Take a moment to chat about this with the person next to you. Hopefully you might find these results interesting, and therefore are getting some insight into offender demographics for various crime types. Our youngest average age of offenders does appear to be in the theft of vehicle category.</p>
+<p><img src="https://i0.wp.com/thehappihippi.com/wp-content/uploads/2016/01/tumblr_nk2z5noRCH1t0093do1_540.gif" /></p>
+<p>But remember our first question - <em>Which reason for arrest do you think has the oldest arrestee</em>? Well this question is not answered by the average age column here. And also, we discussed last week why the mean alone is not always the best summary of our data. We might want to know about the spread, and the variance as well. So let’s add a few more columns to our summary statistics table here. To do this, just drag “Age” to the “Values” box again and again, and each time, click on the little i (or arrow) and select what summary you want to display. So to add a new column, for minimum value you would drag age, and select minimum, like so:</p>
+<p><img src="imgs/make_min_col.gif" /></p>
+<p>Now do this again to create a column for maximum, and another column for standard deviation to be able to talk about variance as well.</p>
+<p>In the end your table should look like this:</p>
+<p><img src="imgs/reason_v_age_no_med.png" /></p>
+<p>If it doesn’t, just raise your hand and we can come around to help you get there.</p>
+<p>Note: for creating the standard deviation column you have two choices there, StdDev and StdDevp. The one to choose will depend if you would like to know the standard deviation of your sample or your population. We will speak about this more next week, but you can imagine that the data we have come from a <em>sample</em> of people, who are used to draw conclusions about the whole <em>population</em>. Rather than interview everyone who has ever been arrested, we rely on gathering data from the interviews of enough people that we can make generalisations. These people who we actually speak to, they are our sample. Once we use inferential statistics, we can use data from the sample to make generalisations about the whole population. But with descriptive statistics we are actually talking only about our sample. So in this case you want to select <em>StdDev</em> and <strong>not</strong> <em>StdDevp</em>. If you’re confused about this ask now!</p>
+<p>Right, so now, we can finally answer our first question, <em>Which reason for arrest do you think has the oldest arrestee</em>? So, which is it?</p>
+<p><img src="https://uproxx.files.wordpress.com/2012/02/grampa-turtle.gif?w=650" /></p>
+<p>Well the oldest arrestee appears to have been arrested for <em>Assault</em>, at the age of 82 years old. Is this the category you were expecting the oldest offender in our sample to appear? Why or why not? Take a moment to try to interpret the data. It’s important to always return to the meaning that we can extract from our numbers. Talk to someone next to you about this.</p>
+<p></span></p>
+<p>The other interesting column here to pay attention to is the standard deviation (the minimum age column is not super exciting. People under 17 were excluded from the survey, and so the youngest possible age in the sample is 17. It appears that at least one 17-year-old was arrested in every single one of these offence categories.) But the standard deviation, that tells us something new. Remember that it is a measure by which we can describe the variation of our individual observations around the mean. So the larger the standard deviation the larger the variation around the mean age in a particular subset of our data. Which offence category has the highest standard deviation? Which has the lowest?</p>
+<p>Theft of and theft from vehicle both have a standard deviation of about 7, as well as young mean ages. It appears that these crimes are mostly committed by younger offenders, with only a few of them committed by older offenders. Sex offences however appear to have a greater standard deviation, where offenders come from all ages. Any particular reasons why you think this might be the case?</p>
+<p>Now finally, before we move on, there is something you might have noticed. We did not include the <strong>median</strong> in our summary. Did you see it anywhere in your drop down menu, when selecting how to summarise the “age” variable? Well for some reason it’s not as easy as calculating the other ones. Instead, to display the median we have to rely on building our own formulas. But you’re getting good at formulas by now, so let’s give it a go!</p>
+</div>
+<div id="activity-5-adding-a-column-for-median" class="section level3">
+<h3><span class="header-section-number">3.3.2</span> Activity 5: Adding a column for median</h3>
+<p><span style="color:#d95f02">
+To add a column for median, we will have to use something called an “IF” statement in Excel. The IF function is one of Excel’s logical functions, used to return one value if a condition is true and another value if it’s false. We can use that here, because we want to include a value in our calculations <em>if</em> if belongs to the value of reason for offence that we are calculating the median for. If it’s any of the other offences, we <em>do not</em> want to include it.</p>
+<p>It might help to think about this conceptually, before we write the formula. Let’s say we go through our data row by row. Remember in our data, each row is one arrestee who was interviewed. We want to go through every one of these people, and include their age in our calculation for the median ror each offence category, <strong>only if</strong> the reason that that particular person was arrested <em>is</em> the offence category for which we are calculating the median.</p>
+<p>So for every person, we want to check if their value for <em>reason for arrest</em> is the one we are currently interested in.</p>
+<p>For example, if we are calculating the median age for theft of vehicle, for every line we first need to make sure that the value in the <em>reason for arrest</em> column is equal to <em>assault</em>. If it does, then we use that person’s age to calculate mean age for theft of vehicle. If it is not, we do not.</p>
+<p>How would you write this in a formula? Well for assault we could say something like:</p>
+<p><code>include IF 'Reason for arrest column' = 'assault'</code></p>
+<p>Now we just have to translate this to excel language, and put it inside a median calculation formula. Remember this one from last week? It’s simply <code>=MEDIAN()</code>.</p>
+<p>Now we also have to refer to some cells. You can select these values by simply clicking on the cells that you need, but I’ll go through the notation here again, just as a refresher.</p>
+<p>To specity what sheet you are taking your data from, you put the sheet name followed by an exclamation mark (<code>!</code>). So to refer to columns that are on the arrestees_subset.csv sheet, Excel notation for that is: <code>arrestees_subset.csv!</code>.</p>
+<p>A cell you refer to by the letter of the column it’s in, and the number of the row that it’s in. So the cell that contains the value for “Assault” is “A5”. However, when you copy references, this will change. If you wanted to statically <strong>always</strong> refer to A5 you have to use the dollar sign in front of each element (row letter, column number). So if I always want A5 to be the cell I refer to, I would type: <code>$A$5</code>.</p>
+<p>And to refer to a range of values, you denote them as <code>first value:last value</code> . SO to get all the values from row 2 of column E to row number 19897 of column E, I would type: <code>E2:E19897</code>. And if I wanted to make sure that I <strong>always</strong> refer to these values, again I just inject a <code>$</code> in front of the column reference (E) and the row reference (2 and 19897). Like so: <code>$E$2:$E$19897</code>.</p>
+<p>Now building it all together, for assault, we could calculate the median like so:</p>
+<p><code>=MEDIAN(IF(arrestees_subset.csv!$E$2:$E$19897=A5,arrestees_subset.csv!$B$2:$B$19897))</code></p>
+<p>Just to re-iterate again, this is what each part of this formula does:</p>
+<p><img src="imgs/med_excel_equ.png" /></p>
+<p>When you are comfortable with this formula, paste it over into the cell in the new “median” column you’ve created in your table, and hit Ctrl+Shift+Enter.</p>
+<p><strong>NOTE: Hit Ctrl+Shift+Enter</strong> This is important! <em>Don’t just hit enter</em> to complete the formula. You must hold Ctrl+Shift+Enter down together to complete the formula and tell Excel that it is an array formula. Excel will add curly braces around the formula if this is done correctly:</p>
+<p><img src="imgs/curly_brack_formula.png" /></p>
+<p>You can simply copy the formula by double clicking on the bottom right hand corner of the cell, or grabbing it and dragging it down. Whichever option you prefer, they achieve the same thing. After which you will end up with a brand new column you made all on your own, for the median:</p>
+<p><img src="imgs/final_table_with_median.png" /></p>
+<p>Now, finally you have a median column in your pivot table as well. You can now begin to think about what the difference between mean and median means in terms of the skew in your data as well. We don’t seem to be getting huge differences, and this can potentially be put down to our <em>large sample size</em>. We have almost 20,000 rows in this data, which is 20,000 people who were interviewed and answered all these questions. We’ll speak more about the importance of sample size later in the course, but now you know, that your means and your medians are not too far apart in either of the offence categories people were arrested for, with a maximum difference of around 3 years.</p>
+<p></span></p>
+<!--
+
+### Visualising the differences between groups
+
+
+Remember that we spoke about box plots last week? You had the option of having a go at making one, but we didn't get too much into it. Well that's because the strength of the boxplot lies more in comparing groups, so in other words, in *bi*variate analysis, rather than *uni*variate analysis. 
+
+
+Now to be able to visualise the differences with boxplots, you will need all the 5 elements of the 5 number summary in your table, separated out by all the possible values for reason for arrest. We already have the minimum and the maximum, and the median, but we are missing Q1 and Q3, our first and third quartile. To calculate these, we can use the same approach as we used to calculate the median, by making use of the `IF` function of Excel. Except this time, instead of the `MEDIAN()` function, we use the `QUARTILE()` function. And remember that for the `QUARTILE()` function you also have to add a number at the end, between 0 and 4, indicating if you want the minimum value, the 1st quartile, the median, the 3rd quartile, or the maximum value. 
+
+
+So create two new columns, next to where you created the median column, one for Q1, and one for Q3: 
+
+
+Then you simply amend your formula. So to get the first quartile (Q1) for Assault, you simply put: 
+
+
+`=QUARTILE(IF(arrestees_subset.csv!$E$2:$E$19897=A5,arrestees_subset.csv!$B$2:$B$19897),1)`
+
+
+and to get the 3rd quartile, you would put:
+
+
+`=QUARTILE(IF(arrestees_subset.csv!$E$2:$E$19897=A5,arrestees_subset.csv!$B$2:$B$19897),3)`
+
+
+**Remember to hit ctrl+shift+enter instead of just enter** 
+
+
+
+Again, a breakdown of what everything in the formula means: 
+
+
+![](imgs/quart_excel_equ.png)
+
+
+
+In the end, you should end up with a table of values just like this: 
+
+
+![](imgs/table_w_q1_q3.png)
+
+
+
+Now we have all of our 5 numbers for our 5 number summaries for all of our possible values that the categorical variable *reason for arrest* can take. This is all the information that we need in order to be able to visualise the difference in the numeric variable (age) across the values for the categorical variable (reason for arrest). 
+
+
+So as a first step, you will have to compute some distances between some of our 5-numer summary values.
+We will put each one in a new column. We need: 
+
+- `Q1 - minimum`
+- `median - Q1`
+- `Q3 - median`
+- `maximum - Q3`
+
+
+You can create these with simple mathematical functions in excel. Remember that you always start a function with `=`, and you can identify cells by either naming them (so typing out `A5`, or by click on them). 
+
+
+![](imgs/calc_stats_for_box.gif)
+
+
+
+This final group of statistics holds the values you put directly into the box-and-whisker plot. Why is this group necessary?
+
+
+You can turn a Stacked Column chart into a box-and-whisker plot. In a stacked column, each segment’s size is proportional to how much it contributes to the size of the column. In a box-and-whisker box, however, the size of a segment represents a difference between one value and another — like the difference between the quartile and the median, or between the median and the first quartile.
+
+
+So the box is really a stacked column with three segments. The first segment is the first quartile. The second is the difference between the median and the first quartile. The third is the difference between the third quartile and the median.
+
+
+But wait. Won’t that just look like a column that starts at the x-axis? Not after you make the first segment disappear!
+
+
+The other two differences — between the maximum and the third quartile and between the first quartile and the minimum— become the whiskers. Let's see for ourselves. I've adapted the steps from [statistical Analysis with Excel For Dummies by Joseph Schmuller](http://www.dummies.com/education/math/statistics/box-and-whisker-charts-for-excel/) that make use of these statistics and a stacked bar chart to build your very own boxplots, to compare the distribution of the numeric variable of age across the values for the categorical variable of reason for arrest. 
+
+
+So first, highlight the columns for `Q1`, `med-Q1`, and `Q3-med`. You can highlight multiple columns that are not connected to each other by holding down the `cmd` button on a mac, or the *??* button on a PC. 
+
+
+So make sure all 3 columns are highlighted, and then select a stacked column graph from the *Charts* tab on a mac, or *Insert* tab on a PC: 
+
+
+![](imgs/box_step_1.png)
+
+
+
+A chart like this should appear: 
+
+
+![](imgs/box_step_2.png)
+
+
+First, let's create the bottom whisker. To do this click on any one of the bottom (blue in the chart above) segments of the stacked bar charts. Then select "Chart Layout" tab, and then on there, click on the "Error Bars" option: 
+
+
+
+![](imgs/box_step_3.png)
+
+
+
+Select "Error Bar Options...":
+
+
+
+![](imgs/box_step_4.png)
+
+
+
+This will bring up a new popup window. Make sure that the "Error Bars" tab is selected on the left hand side. Then select the "Minus" option under Display, and under "Error amount" tick the button next to "Custom". Once you've done that, click on the button that says "Specify value":
+
+
+
+![](imgs/box_step_5.png)
+
+
+
+This brings up a new window, where you can select the value for the positive and negative error. Leave the positive as it is, and click inside the box next to "Negative Error Value", and then highlight the values in the `Q1-Min' column. Then click OK, like so: 
+
+
+![](imgs/box_step_6.gif)
+
+
+
+
+This will take you back to the original window, where you just need to click "OK" and you will see the bars appear. 
+
+
+Now you want to take away the background bar so to do this, click on the blue bars again. Make sure that you click on the blue bars, and **not**  the error bars that you just created. When you have highlighted the blue bars, select the "Format" tab, and there you will see an option for "Fill" and "Line". Set the fill to "No fill" and the line to "No line": 
+
+
+![](imgs/box_step_7.png)
+
+
+This should make the blue part disappear. 
+
+
+Alright now let's make the top bar. This time click on the top bar (here in green) and again click on chart layout, error bars, error bar options... :  
+
+![](imgs/box_step_8.png)
+
+
+
+This will open the pop up window again. This time select "Plus" under "Display", and again check "Custom" and click on "Specify Value":
+
+
+![](imgs/box_step_9.png)
+
+
+This time, leave the "Negative Error Value" as it is, and click inside the box next to "Positive Error Value", and then highlight the values in the `Max-Q3` column:
+
+
+![](imgs/box_step_10.png)
+
+
+Click on OK, and then again, and you should see the top whiskers appear like so: 
+
+
+![](imgs/box_step_11.png)
+
+
+So now you just have to change the formatting on the green and red parts, by clicking on each, and going again into the formatting tab, and selecting "No fill" for fill, and just a black colour for the outline under "Line":
+
+
+![](imgs/box_step_12.png)
+
+
+
+Then, finally you should have a box plot that shows you the distribution of the numeric variable of age across each reason for offence: 
+
+
+![](imgs/box_step_13.png)
+
+
+There is one last step to do though. The labels aren't very meaningful. They are just 1-17. Let's change these to meaningful labels. To do this, click on the labels, and right click, which should make a set of options appear. Click on "select data...":
+
+
+![](imgs/box_step_14.png)
+
+
+
+This will open a new window. Click in the text box next to "Category (X) axis labels", and highlight the names of all the values for "reason for arrest" which we have here in column A: 
+
+
+![](imgs/box_step_15.png)
+
+
+Then click "OK" and ta-daa you have a boxplot comparing the age distribution of people arrested for each one of these offences:
+
+
+![](imgs/box_step_16.png)
+
+
+
+You can see that you tend to get younger arrestees for robbery as well as theft of vehicle. You can also see that the offences with older age groups being more represented are sexual offences, but also drink driving, drunk and disorderly, and also fraud. Of course there is quite a lot of overlap between the categories. 
+
+-->
+</div>
+</div>
+<div id="numeric-v-numeric" class="section level2">
+<h2><span class="header-section-number">3.4</span> Numeric v numeric</h2>
+<p>Regarding descriptive statistics to explore the relationship between two numeric variables in our sample, to analyse the relationship between two quantitative variables, we consider how one variable, called a response variable, changes in relation to changes in the other variable called an explanatory variable. Graphically we use scatterplots to display two quantitative variables, as comparing two numeric variables is best achieved through the use of graphics and visualisation. As you might imagine, it becomes very difficult to create any sort of crosstabs between numbers. Instead, you want to be able to determine whether there is a relationship between two numbers in other ways. We’ll illustrate with two other variables from the arrestee survey. Let’s consider the relationship between “Age at first arrest” and “Number of arrests”. We might be interested about this if we are thinking about criminal trajectories, for example <a href="http://www.journals.uchicago.edu/doi/abs/10.1086/449107">delinquency careers</a> or <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1745-9125.1995.tb01173.x/full">life course trajectories</a>.</p>
+<p>What would our inclination be? Clearly if the person has their first arrest earlier on in life, they have a lot more time to also have some more arrests. Or they might have an early arrest and part take in some sort of intervention whereby they turn their life around, and never offend again. In other words, we are thinking that either <strong>as age of 1st arrest decreases, number of arrests will increase</strong>, or we think that <strong>as age of 1st arrest decreases, number of arrests will also decrease</strong>. These two scenarios describe two different kinds of relationships, a positive relationship or a negative relationship. In either scenario we assume that as one goes up the other one goes up or as one goes up the other one goes down, but that this takes a linear relationship. If you imagine one numeric variable across the x axis and another cross the y axis, a positive and a negative relationship would look something like this:</p>
+<p><img src="http://www.statisticshowto.com/wp-content/uploads/2015/08/lin-rel.png" /></p>
+<p><em>Note:</em>
+The figure above shows you what a perfect positive relationship would look like, or a perfect negative relationship would look like. It also assume a <strong>linear</strong> relationship. This just means that we are looking at a “straight line trend” between the two variables.</p>
+<p>So as discussed, a graphical representation, in this case a scatterplot is the most useful display technique for comparing two quantitative variables. We plot on the y-axis the variable we consider the response variable and on the x-axis we place the explanatory or predictor variable.</p>
+<p>How do we determine which variable is which? In general, the explanatory variable attempts to explain, or predict, the observed outcome. The response variable measures the outcome of a study. One may even consider exploring whether one variable causes the variation in another variable – for example, a popular research study is that taller people are more likely to receive higher salaries. In this case, age at first arrest would be the explanatory variable used to explain the variation in the response variable number of arrests.</p>
+<p>In summarizing the relationship between two quantitative variables, we need to consider:</p>
+<ul>
+<li>Association/Direction (i.e. positive or negative)</li>
+<li>Form (i.e. linear or non-linear)</li>
+<li>Strength (weak, moderate, strong)</li>
+</ul>
+<p>A scatter plot is a useful visual representation of the relationship between two numerical variables (attributes) and is usually drawn before working out a linear correlation or fitting a regression line, which are the next steps that you would take, if you were to also perform <em>inferential statistics</em>. The resulting pattern indicates the elements of the relationship outlined above, the association, the form, and the strength of the relationship between two variables.</p>
+<p>So what are some examples of correlations? Here are a few:</p>
+<ul>
+<li><a href="http://asbcllc.com/blog/2014/december/nba_team_corr_matrix/scaled/">Interactive Correlation Matrix and Scatter Plot All NBA Team Statistical Data 1951-2015 Seasons</a></li>
+<li><a href="http://rebrn.com/re/relationship-between-rotten-tomatoes-tomatometer-score-and-box-o-2558335/">Scatterplot of the Relationship Between Rotten Tomatoes Tomatometer Score and Box Office Revenue for Movies, for each movie genre</a>
+-<a href="https://fsmedia.imgix.net/af/f3/d7/f5/b2df/470f/8f8c/4b41daf55348/the-correlation-between-trump-voters-and-obesity-has-a-strong-positive-correlation-at-0717.png?auto=format%2Ccompress&amp;w=700">Correlation between statewise obesity and voting for Trump</a></li>
+</ul>
+<p>You can understand the basic premise.
+### Activity 6: Does age at first arrest correlate with total number of arrests?</p>
+<p><span style="color:#d95f02">
+So let’s build one for our arrestees. Since we are trying to explain number of arrests with the age of first arrest, we would plot on the y-axis the variable we consider the response variable (number of arrests) and on the x-axis we place the explanatory or predictor variable (age of first arrest).</p>
+<p>First, just return to the excel spreadsheet where you have your data. Firstly arrest the two columns that contain our variables of interest:</p>
+<p><img src="imgs/scatter_1.png" /></p>
+<p>Then select charts &gt; scatter &gt; marked scatter:</p>
+<p><img src="imgs/scatter_2.png" /></p>
+<p>The graph that initially appears might look something like this:</p>
+<p><img src="imgs/scatter_3.png" /></p>
+<p>You can see that actually we have age of first arrest on the x axis, and number of arrests on the y axis, as we prefer. If this was not the case, you can change this by right clicking anywhere on the chart, and selecting “Select Data…” on the options that pop up:</p>
+<p><img src="imgs/scatter_4.png" /></p>
+<p>and then on the popup there is an option to switch row/column:</p>
+<p><img src="imgs/scatter_5.png" /></p>
+<p>But in this case we are alright. One thing you should do though, is label your axes. Although, we might be able to infer that the axis with a value that goes up to 300 is not <em>likely</em> to be the one for age, it’s always nice to have some certainty, and axis labels will provide this. To do this, click anywhere inside the chart, and click n the “Chart Layout” tab:</p>
+<p><img src="imgs/scatter_6.png" /></p>
+<p><img src="imgs/scatter_7.png" /></p>
+<p>Then click on the “Axes” option, and for both horizontal and vertical axes add a title:</p>
+<p><img src="imgs/scatter_8.png" /></p>
+<p>You can also stylize your scatterplot, make it look the way that you are most happy with it. <a href="http://strategyandanalytics.com/5-steps-creating-beautiful-eye-catching-charts-excel/">Here are some tips on making your graphs look pretty</a>. Here’s mine:</p>
+<p><img src="imgs/scatter_9.png" /></p>
+<p>So let’s try to infer our indicators of the relationship between the two variables. What about association/direction? Form? And strength? Well the easiest way to think about this is to think about drawing a <em>line of best fit</em>. Could you draw a straight line through the cloud of points? If yes what does this line look like?</p>
+<p>We can ask Excel to draw this line for us. You can do this by going back to the “Chart layout” tab, and this time clicking on the “Trendline” option:</p>
+<p><img src="imgs/scatter_10.png" /></p>
+<p>From the dropdown options, select “Linear trendline”:</p>
+<p><img src="imgs/scatter_11.png" /></p>
+<p>Now you can see your trendline appear:</p>
+<p><img src="imgs/scatter_12.png" />
+</span></p>
+<p>So what does this line look like? Well it definitely has a negative slope (it’s pointing down, rather than pointing up). Therefore, in terms of the direction of the relationship, we can conclude that it is negative. In terms of strength, we want to look at the slope of the line. We saw above what a perfect linear relationship looks like. It’s a slope of basically one-to-one. In this case it would mean that for every one year earlier that someone has their first arrest, they have one more arrest. We can see that the slope of our line is very close to <em>no slope</em> or a slope of zero, because it is essentially a straight line. To give you an idea of weak/strong relationships based on slope of a line, here is a handy image:</p>
+<p><img src="http://www.psychology.emory.edu/clinical/bliwise/Tutorials/SCATTER/scatterplots/examples2.jpg" /></p>
+<p>You can imagine here that our relationship is quite weak, as it is close to a zero slope. Finally is the relationship linear or non linear? Well how well does this straight line represent your data? And where the points deviate from the line, do they do so in a systematic manner? To be fair, this question is a bit tough to answer, just on visual assessment through a scatterplot alone. As is the strength without a numeric interpretation of the slope.</p>
+<p>So far we have visualized relationships between two quantitative variables using scatterplots, and described the overall pattern of a relationship by considering its direction, form, and strength. We noted that assessing the strength of a relationship just by looking at the scatterplot is quite difficult, and therefore we need to supplement the scatterplot with some kind of numerical measure that will help us assess the strength. This is what inferential statistics like correlation coefficients will be able to do, but that’s for the future.</p>
+<p>Even though in the rest of the time we talk about these we are going to focus only on linear relationships, it is important to remember that not every relationship between two quantitative variables has a linear form. There are several examples of relationships that are not linear. The statistical tools that will be introduced here are appropriate only for examining linear relationships, and as we will see, when they are used in nonlinear situations, these tools can lead to errors in reasoning. While we don’t require it for this session, if you wanted to read up a bit about identifying linear vs non-linear relationships <a href="http://blog.minitab.com/blog/adventures-in-statistics-2/linear-or-nonlinear-regression-that-is-the-question">here</a>.</p>
+<p>But based on our observations, we can say that there appears to be a very weak negative relationship between the age of first arrest, and the number of times that someone has been arrested to date, in our sample of arrestees interviewed as part of this arrestee survey. And we can support this with our scatterplot as well.</p>
+<div id="correlation-does-not-mean-causation" class="section level3">
+<h3><span class="header-section-number">3.4.1</span> Correlation does not mean causation</h3>
+<p>You may have heard this phrase before - that correlation does not mean causation. This is important to mention here, and for you to take this forward. Just because two variables show a relationship, even if it is a strong relationship, it does not mean that one actually causes the other, no matter how attractive telling that story would be.</p>
+<p>There is an interesting site here that has a lot of <strong>spurious</strong> correlations. Spurious correlations are when there is a strong correlation between two or more variables that are not causally related to each other, yet it may be wrongly inferred that they are, due to either coincidence, or the presence of a certain third, unseen factor (referred to as a “common response variable”, “confounding factor”, or “lurking variable”). A good example is the relationship between drownings and ice cream. Ice cream consumption per capita increases at the same rate as people drowning in pools. But if you think about why this might be, I think you might struggle to find a reason why ice cream would cause drownings. But there is something that would cause an increase in both…! And that is the temperature. As temperature increases, particularly in the summer, there are more people outside, buying ice cream, but also more people outside swimming in pools, lakes, and rivers.</p>
+<p>Have a listen to this <a href="https://www.youtube.com/watch?v=8B271L3NtAw">ted talk</a> which explains better.</p>
+<p>Spurious correlations are all over the place, and while sometimes they are very obvious, for example, here is one that correlates the number of films that Nicholas Cage has appeared in, and the number of people who drowned by falling into a pool:</p>
+<p><img src="imgs/supr_corr.png" /></p>
+<p>(<a href="http://www.tylervigen.com/spurious-correlations">and you can see more strange correlations here</a>)</p>
+<p>But in other cases its much more subtle. And can happen between variables that you can weave together a very nice story or explanation as for why they should be related. No matter what, you should think about these examples always when you are looking at correlations. We will talk later about study design, especially in relation to being able to infer causality, but do make a note now, to keep in mind in the future, that <em>correlation does not prove causation</em>.</p>
+<p><img src="https://imgs.xkcd.com/comics/correlation.png" /></p>
+</div>
+</div>
+<div id="summary-2" class="section level2">
+<h2><span class="header-section-number">3.5</span> Summary</h2>
+<p>In sum, you should now be able to begin to make comparisons between two variables in your data set, and talk about the possible relationships between them, and support (or question) the assumptions that you might have with some evidence. You should be comfortable with the following terms:</p>
+<ul>
+<li>bivariate</li>
+<li>crosstab (or two-way frequency table, or contingency table)</li>
+<li>row percentage</li>
+<li>column percentage</li>
+<li>stacked bar chart</li>
+<li>conditional formatting</li>
+<li>producing summary statistics by groups</li>
+<li>if statements in excel</li>
+<li>association/ direction of a relationship between numeric variables
+<ul>
+<li>positive relationship</li>
+<li>negative relationship</li>
+</ul></li>
+<li>form of a relationship between numeric variables
+<ul>
+<li>linear relationship</li>
+<li>non-linear relationship</li>
+</ul></li>
+<li>strength of a relationship between numeric variables
+<ul>
+<li>weak</li>
+<li>moderate</li>
+<li>strong</li>
+</ul></li>
+<li>scatterplot</li>
+<li>trendline</li>
+<li>correlation</li>
+<li>correlation does not mean causation</li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="week2.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="week4.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/004-week3.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Making Sense of Crim Data</title>
+  <meta name="description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Making Sense of Crim Data" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Making Sense of Crim Data" />
+  
+  <meta name="twitter:description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester" />
+  
+
+<meta name="author" content="Reka Solymosi">
+
+
+<meta name="date" content="2018-09-11">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="week4.html">
+<link rel="next" href="week6.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a><ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#disclaimer"><i class="fa fa-check"></i><b>0.1</b> Disclaimer</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#overview"><i class="fa fa-check"></i><b>0.2</b> Overview of course</a><ul>
+<li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#module-structure"><i class="fa fa-check"></i><b>0.2.1</b> Module structure</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="week1.html"><a href="week1.html"><i class="fa fa-check"></i><b>1</b> Week 1</a><ul>
+<li class="chapter" data-level="1.1" data-path="week1.html"><a href="week1.html#learning-outcomes"><i class="fa fa-check"></i><b>1.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="1.2" data-path="week1.html"><a href="week1.html#setting-up-your-working-environment"><i class="fa fa-check"></i><b>1.2</b> Setting up your working environment</a></li>
+<li class="chapter" data-level="1.3" data-path="week1.html"><a href="week1.html#getting-to-know-excel"><i class="fa fa-check"></i><b>1.3</b> Getting to know Excel</a></li>
+<li class="chapter" data-level="1.4" data-path="week1.html"><a href="week1.html#data-variables-and-observations"><i class="fa fa-check"></i><b>1.4</b> Data: Variables and observations</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="week1.html"><a href="week1.html#activity-1-building-your-own-data"><i class="fa fa-check"></i><b>1.4.1</b> Activity 1: Building your own data</a></li>
+<li class="chapter" data-level="1.4.2" data-path="week1.html"><a href="week1.html#code-books"><i class="fa fa-check"></i><b>1.4.2</b> Code books</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="week1.html"><a href="week1.html#questions-about-your-data"><i class="fa fa-check"></i><b>1.5</b> Questions about your data</a><ul>
+<li class="chapter" data-level="1.5.1" data-path="week1.html"><a href="week1.html#activity-2-thinking-about-what-our-data-tells-us"><i class="fa fa-check"></i><b>1.5.1</b> Activity 2: Thinking about what our data tells us</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="week1.html"><a href="week1.html#levels-of-measurement"><i class="fa fa-check"></i><b>1.6</b> Levels of measurement</a><ul>
+<li class="chapter" data-level="1.6.1" data-path="week1.html"><a href="week1.html#activity-3.1-levels-of-measurement-pt.-1"><i class="fa fa-check"></i><b>1.6.1</b> Activity 3.1: Levels of measurement pt. 1</a></li>
+<li class="chapter" data-level="1.6.2" data-path="week1.html"><a href="week1.html#activity-3.2-levels-of-measurement-pt.-2"><i class="fa fa-check"></i><b>1.6.2</b> Activity 3.2: Levels of measurement pt. 2</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="week1.html"><a href="week1.html#unit-of-analysis"><i class="fa fa-check"></i><b>1.7</b> Unit of analysis</a><ul>
+<li class="chapter" data-level="1.7.1" data-path="week1.html"><a href="week1.html#activity-4-abstract-ing-the-unit-of-analysis"><i class="fa fa-check"></i><b>1.7.1</b> Activity 4: <em>Abstract</em>-ing the unit of analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="week1.html"><a href="week1.html#summary"><i class="fa fa-check"></i><b>1.8</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="week2.html"><a href="week2.html"><i class="fa fa-check"></i><b>2</b> Week 2</a><ul>
+<li class="chapter" data-level="2.1" data-path="week2.html"><a href="week2.html#learning-outcomes-1"><i class="fa fa-check"></i><b>2.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="week2.html"><a href="week2.html#terms-for-today"><i class="fa fa-check"></i><b>2.1.1</b> Terms for today:</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="week2.html"><a href="week2.html#univariate-analysis"><i class="fa fa-check"></i><b>2.2</b> Univariate analysis</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="week2.html"><a href="week2.html#the-importance-of-level-of-measurement"><i class="fa fa-check"></i><b>2.2.1</b> The importance of level of measurement</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="week2.html"><a href="week2.html#summarising-categorical-data"><i class="fa fa-check"></i><b>2.3</b> Summarising categorical data</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="week2.html"><a href="week2.html#activity-1-crime-types"><i class="fa fa-check"></i><b>2.3.1</b> Activity 1: Crime types</a></li>
+<li class="chapter" data-level="2.3.2" data-path="week2.html"><a href="week2.html#frequency-tables"><i class="fa fa-check"></i><b>2.3.2</b> Frequency tables</a></li>
+<li class="chapter" data-level="2.3.3" data-path="week2.html"><a href="week2.html#creating-a-frequency-table-in-excel"><i class="fa fa-check"></i><b>2.3.3</b> Creating a frequency table in Excel</a></li>
+<li class="chapter" data-level="2.3.4" data-path="week2.html"><a href="week2.html#activity-2-looking-at-frequency"><i class="fa fa-check"></i><b>2.3.4</b> Activity 2: Looking at frequency</a></li>
+<li class="chapter" data-level="2.3.5" data-path="week2.html"><a href="week2.html#visualising-a-frequency-table-with-bar-charts"><i class="fa fa-check"></i><b>2.3.5</b> Visualising a frequency table with bar charts</a></li>
+<li class="chapter" data-level="2.3.6" data-path="week2.html"><a href="week2.html#activity-3-bar-charts-in-excel"><i class="fa fa-check"></i><b>2.3.6</b> Activity 3: Bar charts in Excel</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="week2.html"><a href="week2.html#summarising-numeric-data"><i class="fa fa-check"></i><b>2.4</b> Summarising numeric data</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="week2.html"><a href="week2.html#measures-of-central-tendency"><i class="fa fa-check"></i><b>2.4.1</b> Measures of central tendency</a></li>
+<li class="chapter" data-level="2.4.2" data-path="week2.html"><a href="week2.html#activity-4-mean-and-median-in-excel"><i class="fa fa-check"></i><b>2.4.2</b> Activity 4: Mean and median in excel</a></li>
+<li class="chapter" data-level="2.4.3" data-path="week2.html"><a href="week2.html#distributions"><i class="fa fa-check"></i><b>2.4.3</b> Distributions</a></li>
+<li class="chapter" data-level="2.4.4" data-path="week2.html"><a href="week2.html#histograms"><i class="fa fa-check"></i><b>2.4.4</b> Histograms</a></li>
+<li class="chapter" data-level="2.4.5" data-path="week2.html"><a href="week2.html#activity-5-histograms-in-excel"><i class="fa fa-check"></i><b>2.4.5</b> Activity 5: Histograms in Excel</a></li>
+<li class="chapter" data-level="2.4.6" data-path="week2.html"><a href="week2.html#five-number-summary"><i class="fa fa-check"></i><b>2.4.6</b> Five-number summary</a></li>
+<li class="chapter" data-level="2.4.7" data-path="week2.html"><a href="week2.html#activity-6-calculate-quartiles"><i class="fa fa-check"></i><b>2.4.7</b> Activity 6: Calculate quartiles</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="week2.html"><a href="week2.html#standard-deviation"><i class="fa fa-check"></i><b>2.5</b> Standard deviation</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="week2.html"><a href="week2.html#activity-7-standard-deviation-in-excel"><i class="fa fa-check"></i><b>2.5.1</b> Activity 7: Standard Deviation in Excel</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="week2.html"><a href="week2.html#writing-it-all-up"><i class="fa fa-check"></i><b>2.6</b> Writing it all up</a><ul>
+<li class="chapter" data-level="2.6.1" data-path="week2.html"><a href="week2.html#build-a-structure"><i class="fa fa-check"></i><b>2.6.1</b> Build a structure</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="week2.html"><a href="week2.html#summary-1"><i class="fa fa-check"></i><b>2.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="week3.html"><a href="week3.html"><i class="fa fa-check"></i><b>3</b> Week 3</a><ul>
+<li class="chapter" data-level="3.1" data-path="week3.html"><a href="week3.html#learning-outcomes-2"><i class="fa fa-check"></i><b>3.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="week3.html"><a href="week3.html#terms-for-today-1"><i class="fa fa-check"></i><b>3.1.1</b> Terms for today</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="week3.html"><a href="week3.html#categorical-v-categorical"><i class="fa fa-check"></i><b>3.2</b> Categorical v categorical</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="week3.html"><a href="week3.html#activity-1-surviving-the-titanic"><i class="fa fa-check"></i><b>3.2.1</b> Activity 1: Surviving the Titanic</a></li>
+<li class="chapter" data-level="3.2.2" data-path="week3.html"><a href="week3.html#row-percentage-column-percentage-or-total-percentage"><i class="fa fa-check"></i><b>3.2.2</b> Row percentage, column percentage, or total percentage</a></li>
+<li class="chapter" data-level="3.2.3" data-path="week3.html"><a href="week3.html#a-note-on-formatting-cells"><i class="fa fa-check"></i><b>3.2.3</b> A note on formatting cells</a></li>
+<li class="chapter" data-level="3.2.4" data-path="week3.html"><a href="week3.html#activity-3-visualising-the-relationship---stacked-bar-charts-and-conditional-formatting"><i class="fa fa-check"></i><b>3.2.4</b> Activity 3: Visualising the relationship - stacked bar charts, and conditional formatting</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="week3.html"><a href="week3.html#categorical-v-numeric"><i class="fa fa-check"></i><b>3.3</b> Categorical v numeric</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="week3.html"><a href="week3.html#activity-4-age-of-offenders"><i class="fa fa-check"></i><b>3.3.1</b> Activity 4: Age of offenders</a></li>
+<li class="chapter" data-level="3.3.2" data-path="week3.html"><a href="week3.html#activity-5-adding-a-column-for-median"><i class="fa fa-check"></i><b>3.3.2</b> Activity 5: Adding a column for median</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="week3.html"><a href="week3.html#numeric-v-numeric"><i class="fa fa-check"></i><b>3.4</b> Numeric v numeric</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="week3.html"><a href="week3.html#correlation-does-not-mean-causation"><i class="fa fa-check"></i><b>3.4.1</b> Correlation does not mean causation</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="week3.html"><a href="week3.html#summary-2"><i class="fa fa-check"></i><b>3.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="week4.html"><a href="week4.html"><i class="fa fa-check"></i><b>4</b> Week 4</a><ul>
+<li class="chapter" data-level="4.1" data-path="week4.html"><a href="week4.html#learning-outcomes-3"><i class="fa fa-check"></i><b>4.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="week4.html"><a href="week4.html#terms-for-today-2"><i class="fa fa-check"></i><b>4.1.1</b> Terms for today:</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="week4.html"><a href="week4.html#population-parameters-versus-sample-statistics"><i class="fa fa-check"></i><b>4.2</b> Population parameters versus sample statistics</a></li>
+<li class="chapter" data-level="4.3" data-path="week4.html"><a href="week4.html#conceptualisation"><i class="fa fa-check"></i><b>4.3</b> Conceptualisation</a></li>
+<li class="chapter" data-level="4.4" data-path="week4.html"><a href="week4.html#measurement"><i class="fa fa-check"></i><b>4.4</b> Measurement</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="week4.html"><a href="week4.html#measuring-constructs-with-composite-variables"><i class="fa fa-check"></i><b>4.4.1</b> Measuring constructs with composite variables</a></li>
+<li class="chapter" data-level="4.4.2" data-path="week4.html"><a href="week4.html#multi-item-scales-for-categorical-constructs"><i class="fa fa-check"></i><b>4.4.2</b> Multi-item scales for categorical constructs</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="week4.html"><a href="week4.html#a-note-on-validity-and-reliability"><i class="fa fa-check"></i><b>4.5</b> A note on Validity and Reliability</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="week4.html"><a href="week4.html#activity-1-calculating-a-summative-score"><i class="fa fa-check"></i><b>4.5.1</b> Activity 1: Calculating a summative score</a></li>
+<li class="chapter" data-level="4.5.2" data-path="week4.html"><a href="week4.html#activity-2-testing-your-questions-cronbachs-alpha"><i class="fa fa-check"></i><b>4.5.2</b> Activity 2: Testing your questions: Cronbach’s alpha</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="week4.html"><a href="week4.html#recoding-some-more-transforming-your-variables-to-fit-with-your-concepts"><i class="fa fa-check"></i><b>4.6</b> Recoding some more: Transforming your variables to fit with your concepts</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="week4.html"><a href="week4.html#activity-3-recoding-variables"><i class="fa fa-check"></i><b>4.6.1</b> Activity 3: Recoding Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="week4.html"><a href="week4.html#summary-3"><i class="fa fa-check"></i><b>4.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="week5.html"><a href="week5.html"><i class="fa fa-check"></i><b>5</b> Week 5</a><ul>
+<li class="chapter" data-level="5.1" data-path="week5.html"><a href="week5.html#learning-outcomes-4"><i class="fa fa-check"></i><b>5.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="week5.html"><a href="week5.html#terms-for-today-3"><i class="fa fa-check"></i><b>5.1.1</b> Terms for today</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="week5.html"><a href="week5.html#research-design"><i class="fa fa-check"></i><b>5.2</b> Research Design</a></li>
+<li class="chapter" data-level="5.3" data-path="week5.html"><a href="week5.html#experiments-and-evaluation"><i class="fa fa-check"></i><b>5.3</b> Experiments and evaluation</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="week5.html"><a href="week5.html#rct"><i class="fa fa-check"></i><b>5.3.1</b> RCT</a></li>
+<li class="chapter" data-level="5.3.2" data-path="week5.html"><a href="week5.html#designing-an-rtc"><i class="fa fa-check"></i><b>5.3.2</b> Designing an RTC</a></li>
+<li class="chapter" data-level="5.3.3" data-path="week5.html"><a href="week5.html#activity-1-research-planning-with-gantt-charts-design-an-rtc-example"><i class="fa fa-check"></i><b>5.3.3</b> Activity 1: Research Planning with Gantt Charts: Design an RTC example</a></li>
+<li class="chapter" data-level="5.3.4" data-path="week5.html"><a href="week5.html#activity-2-random-assignment-into-control-and-treatment"><i class="fa fa-check"></i><b>5.3.4</b> Activity 2: Random assignment into control and treatment</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="week5.html"><a href="week5.html#activity-3-stratified-randomisation"><i class="fa fa-check"></i><b>5.4</b> Activity 3: Stratified randomisation</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="week5.html"><a href="week5.html#freeze"><i class="fa fa-check"></i><b>5.4.1</b> Freeze!</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="week5.html"><a href="week5.html#a-final-note-on-evidence-meta-analysis"><i class="fa fa-check"></i><b>5.5</b> A final note on evidence: Meta Analysis</a></li>
+<li class="chapter" data-level="5.6" data-path="week5.html"><a href="week5.html#longitudinal-data"><i class="fa fa-check"></i><b>5.6</b> Longitudinal data</a><ul>
+<li class="chapter" data-level="5.6.1" data-path="week5.html"><a href="week5.html#what-does-longitudinal-data-look-like"><i class="fa fa-check"></i><b>5.6.1</b> What does longitudinal data look like?</a></li>
+<li class="chapter" data-level="5.6.2" data-path="week5.html"><a href="week5.html#activity-4-linking-data"><i class="fa fa-check"></i><b>5.6.2</b> Activity 4: Linking data</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="week5.html"><a href="week5.html#complete-cases-an-approach-to-missing-data"><i class="fa fa-check"></i><b>5.7</b> Complete cases (an approach to missing data)</a><ul>
+<li class="chapter" data-level="5.7.1" data-path="week5.html"><a href="week5.html#activity-5-selecting-complete-cases"><i class="fa fa-check"></i><b>5.7.1</b> Activity 5: Selecting Complete Cases</a></li>
+</ul></li>
+<li class="chapter" data-level="5.8" data-path="week5.html"><a href="week5.html#ethics"><i class="fa fa-check"></i><b>5.8</b> Ethics</a></li>
+<li class="chapter" data-level="5.9" data-path="week5.html"><a href="week5.html#summary-4"><i class="fa fa-check"></i><b>5.9</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="week6.html"><a href="week6.html"><i class="fa fa-check"></i><b>6</b> Week 6</a><ul>
+<li class="chapter" data-level="6.1" data-path="week6.html"><a href="week6.html#learning-outcomes-5"><i class="fa fa-check"></i><b>6.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="6.2" data-path="week6.html"><a href="week6.html#visualising-data"><i class="fa fa-check"></i><b>6.2</b> Visualising data</a></li>
+<li class="chapter" data-level="6.3" data-path="week6.html"><a href="week6.html#why-visualise-data"><i class="fa fa-check"></i><b>6.3</b> Why visualise data?</a></li>
+<li class="chapter" data-level="6.4" data-path="week6.html"><a href="week6.html#anatomy-of-a-plot---the-grammar-of-graphics"><i class="fa fa-check"></i><b>6.4</b> Anatomy of a plot - the Grammar of Graphics</a></li>
+<li class="chapter" data-level="6.5" data-path="week6.html"><a href="week6.html#principles-of-good-data-visualisation"><i class="fa fa-check"></i><b>6.5</b> Principles of good data visualisation</a><ul>
+<li class="chapter" data-level="6.5.1" data-path="week6.html"><a href="week6.html#criticisms"><i class="fa fa-check"></i><b>6.5.1</b> Criticisms</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="week6.html"><a href="week6.html#what-makes-a-bad-graph-bad"><i class="fa fa-check"></i><b>6.6</b> What makes a bad graph bad?</a></li>
+<li class="chapter" data-level="6.7" data-path="week6.html"><a href="week6.html#what-graph-should-i-use"><i class="fa fa-check"></i><b>6.7</b> What graph should I use?</a></li>
+<li class="chapter" data-level="6.8" data-path="week6.html"><a href="week6.html#edges-contrasts-and-colors"><i class="fa fa-check"></i><b>6.8</b> Edges, Contrasts and Colors</a></li>
+<li class="chapter" data-level="6.9" data-path="week6.html"><a href="week6.html#colour"><i class="fa fa-check"></i><b>6.9</b> Colour</a><ul>
+<li class="chapter" data-level="6.9.1" data-path="week6.html"><a href="week6.html#activity-1-custom-colours-in-excel-graphs."><i class="fa fa-check"></i><b>6.9.1</b> Activity 1: Custom colours in Excel graphs.</a></li>
+</ul></li>
+<li class="chapter" data-level="6.10" data-path="week6.html"><a href="week6.html#reading-between-the-lines-points"><i class="fa fa-check"></i><b>6.10</b> Reading between the lines (points)</a></li>
+<li class="chapter" data-level="6.11" data-path="week6.html"><a href="week6.html#exploratory-data-visualisation"><i class="fa fa-check"></i><b>6.11</b> Exploratory data visualisation</a><ul>
+<li class="chapter" data-level="6.11.1" data-path="week6.html"><a href="week6.html#comparing-categories"><i class="fa fa-check"></i><b>6.11.1</b> Comparing categories</a></li>
+<li class="chapter" data-level="6.11.2" data-path="week6.html"><a href="week6.html#activity-2-exploring-trends"><i class="fa fa-check"></i><b>6.11.2</b> Activity 2: Exploring trends</a></li>
+<li class="chapter" data-level="6.11.3" data-path="week6.html"><a href="week6.html#activity-3-making-a-chart-template"><i class="fa fa-check"></i><b>6.11.3</b> Activity 3: Making a chart template</a></li>
+<li class="chapter" data-level="6.11.4" data-path="week6.html"><a href="week6.html#activity-4-saving-your-graph"><i class="fa fa-check"></i><b>6.11.4</b> Activity 4: Saving your graph</a></li>
+</ul></li>
+<li class="chapter" data-level="6.12" data-path="week6.html"><a href="week6.html#acvitity-5-more-complex-graphs"><i class="fa fa-check"></i><b>6.12</b> Acvitity 5: More complex graphs</a></li>
+<li class="chapter" data-level="6.13" data-path="week6.html"><a href="week6.html#more-guidance-on-chart-design"><i class="fa fa-check"></i><b>6.13</b> More guidance on chart design</a></li>
+<li class="chapter" data-level="6.14" data-path="week6.html"><a href="week6.html#communicating-results"><i class="fa fa-check"></i><b>6.14</b> Communicating results</a><ul>
+<li class="chapter" data-level="6.14.1" data-path="week6.html"><a href="week6.html#activity-6-interpreting-results"><i class="fa fa-check"></i><b>6.14.1</b> Activity 6: Interpreting results</a></li>
+</ul></li>
+<li class="chapter" data-level="6.15" data-path="week6.html"><a href="week6.html#summary-5"><i class="fa fa-check"></i><b>6.15</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="week7.html"><a href="week7.html"><i class="fa fa-check"></i><b>7</b> Week 7</a><ul>
+<li class="chapter" data-level="7.1" data-path="week7.html"><a href="week7.html#learning-outcomes-6"><i class="fa fa-check"></i><b>7.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="7.2" data-path="week7.html"><a href="week7.html#crime-and-incident-trend-identification"><i class="fa fa-check"></i><b>7.2</b> Crime and incident trend identification</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="week7.html"><a href="week7.html#activity-1-extracting-temporal-variables-from-dates"><i class="fa fa-check"></i><b>7.2.1</b> Activity 1: Extracting temporal variables from dates</a></li>
+<li class="chapter" data-level="7.2.2" data-path="week7.html"><a href="week7.html#activity-2-extract-year-from-date-column"><i class="fa fa-check"></i><b>7.2.2</b> Activity 2: Extract year from date column</a></li>
+<li class="chapter" data-level="7.2.3" data-path="week7.html"><a href="week7.html#activity-3-extract-day-of-week-from-date-column"><i class="fa fa-check"></i><b>7.2.3</b> Activity 3: Extract day of week from date column</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="week7.html"><a href="week7.html#aggregating-to-simple-intervals"><i class="fa fa-check"></i><b>7.3</b> Aggregating to simple intervals</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="week7.html"><a href="week7.html#activity-4-aggregate-to-hour"><i class="fa fa-check"></i><b>7.3.1</b> Activity 4: Aggregate to hour</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="week7.html"><a href="week7.html#visualising-time"><i class="fa fa-check"></i><b>7.4</b> Visualising time</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="week7.html"><a href="week7.html#activity-5-line-graphs"><i class="fa fa-check"></i><b>7.4.1</b> Activity 5: Line graphs</a></li>
+<li class="chapter" data-level="7.4.2" data-path="week7.html"><a href="week7.html#activity-6-radar-graphs"><i class="fa fa-check"></i><b>7.4.2</b> Activity 6: Radar graphs</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="week7.html"><a href="week7.html#activity-7-heatmaps"><i class="fa fa-check"></i><b>7.5</b> Activity 7: Heatmaps</a></li>
+<li class="chapter" data-level="7.6" data-path="week7.html"><a href="week7.html#summary-6"><i class="fa fa-check"></i><b>7.6</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="week8.html"><a href="week8.html"><i class="fa fa-check"></i><b>8</b> Week 8</a><ul>
+<li class="chapter" data-level="8.1" data-path="week8.html"><a href="week8.html#learning-outcomes-7"><i class="fa fa-check"></i><b>8.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="8.2" data-path="week8.html"><a href="week8.html#why-use-software-in-qualitative-data-analysis"><i class="fa fa-check"></i><b>8.2</b> Why use software in qualitative data analysis?</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="week8.html"><a href="week8.html#activity-1"><i class="fa fa-check"></i><b>8.2.1</b> Activity 1:</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="week8.html"><a href="week8.html#what-kinds-of-data-can-i-input-into-nvivo-for-analysis"><i class="fa fa-check"></i><b>8.3</b> What kinds of data can I input into NVivo for analysis?</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="week8.html"><a href="week8.html#activity-2-find-some-data"><i class="fa fa-check"></i><b>8.3.1</b> Activity 2: Find some data…</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="week8.html"><a href="week8.html#creating-your-nvivo-project"><i class="fa fa-check"></i><b>8.4</b> Creating your NVivo project</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="week8.html"><a href="week8.html#activity-3-getting-started-with-nvivo"><i class="fa fa-check"></i><b>8.4.1</b> Activity 3: Getting started with NVivo</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="week8.html"><a href="week8.html#understanding-the-interface"><i class="fa fa-check"></i><b>8.5</b> Understanding the interface</a></li>
+<li class="chapter" data-level="8.6" data-path="week8.html"><a href="week8.html#navigation-view"><i class="fa fa-check"></i><b>8.6</b> Navigation View</a><ul>
+<li class="chapter" data-level="8.6.1" data-path="week8.html"><a href="week8.html#sources"><i class="fa fa-check"></i><b>8.6.1</b> Sources</a></li>
+<li class="chapter" data-level="8.6.2" data-path="week8.html"><a href="week8.html#the-internals-section"><i class="fa fa-check"></i><b>8.6.2</b> The ‘internals’ section:</a></li>
+<li class="chapter" data-level="8.6.3" data-path="week8.html"><a href="week8.html#memos"><i class="fa fa-check"></i><b>8.6.3</b> Memos</a></li>
+<li class="chapter" data-level="8.6.4" data-path="week8.html"><a href="week8.html#activity-4-folders"><i class="fa fa-check"></i><b>8.6.4</b> Activity 4: Folders</a></li>
+</ul></li>
+<li class="chapter" data-level="8.7" data-path="week8.html"><a href="week8.html#importing-data"><i class="fa fa-check"></i><b>8.7</b> Importing Data</a><ul>
+<li class="chapter" data-level="8.7.1" data-path="week8.html"><a href="week8.html#activity-5-import-data"><i class="fa fa-check"></i><b>8.7.1</b> Activity 5: Import data</a></li>
+</ul></li>
+<li class="chapter" data-level="8.8" data-path="week8.html"><a href="week8.html#memos-1"><i class="fa fa-check"></i><b>8.8</b> Memos</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="week8.html"><a href="week8.html#activity-6-memos"><i class="fa fa-check"></i><b>8.8.1</b> Activity 6: Memos</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="week8.html"><a href="week8.html#word-frequency"><i class="fa fa-check"></i><b>8.9</b> Word frequency</a><ul>
+<li class="chapter" data-level="8.9.1" data-path="week8.html"><a href="week8.html#activity-7-word-frequency"><i class="fa fa-check"></i><b>8.9.1</b> Activity 7: Word frequency</a></li>
+</ul></li>
+<li class="chapter" data-level="8.10" data-path="week8.html"><a href="week8.html#summary-7"><i class="fa fa-check"></i><b>8.10</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="week9.html"><a href="week9.html"><i class="fa fa-check"></i><b>9</b> Week 9</a><ul>
+<li class="chapter" data-level="9.1" data-path="week9.html"><a href="week9.html#learning-outcomes-8"><i class="fa fa-check"></i><b>9.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="9.2" data-path="week9.html"><a href="week9.html#deduction-induction-adaption-key-analytical-strategies-for-qualitative-data"><i class="fa fa-check"></i><b>9.2</b> Deduction, induction, adaption – key analytical strategies for qualitative data</a></li>
+<li class="chapter" data-level="9.3" data-path="week9.html"><a href="week9.html#coding-qualitative-data-using-nodes"><i class="fa fa-check"></i><b>9.3</b> ‘Coding’ qualitative data using ‘nodes’</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="week9.html"><a href="week9.html#what-are-nodes"><i class="fa fa-check"></i><b>9.3.1</b> What are ‘Nodes’?</a></li>
+<li class="chapter" data-level="9.3.2" data-path="week9.html"><a href="week9.html#activity-1-coding"><i class="fa fa-check"></i><b>9.3.2</b> Activity 1: Coding</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="week9.html"><a href="week9.html#using-mind-maps-to-organise-your-analytical-process-and-framework"><i class="fa fa-check"></i><b>9.4</b> Using ‘mind maps’ to organise your ‘analytical process and framework’</a><ul>
+<li class="chapter" data-level="9.4.1" data-path="week9.html"><a href="week9.html#activity-2-deductive-coding"><i class="fa fa-check"></i><b>9.4.1</b> Activity 2: Deductive coding</a></li>
+<li class="chapter" data-level="9.4.2" data-path="week9.html"><a href="week9.html#activity-3-inductive-coding"><i class="fa fa-check"></i><b>9.4.2</b> Activity 3: Inductive coding</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="week9.html"><a href="week9.html#abductive-coding"><i class="fa fa-check"></i><b>9.5</b> Abductive coding</a><ul>
+<li class="chapter" data-level="9.5.1" data-path="week9.html"><a href="week9.html#activity-4-retrieval-viewing-coded-data"><i class="fa fa-check"></i><b>9.5.1</b> Activity 4: Retrieval – viewing coded data</a></li>
+<li class="chapter" data-level="9.5.2" data-path="week9.html"><a href="week9.html#activity-5-viewing-more-context"><i class="fa fa-check"></i><b>9.5.2</b> Activity 5: Viewing more context</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="week9.html"><a href="week9.html#export-coded-data"><i class="fa fa-check"></i><b>9.6</b> Export coded data</a><ul>
+<li class="chapter" data-level="9.6.1" data-path="week9.html"><a href="week9.html#activity-6-exporting-via-the-list-pane"><i class="fa fa-check"></i><b>9.6.1</b> Activity 6: Exporting via the list pane</a></li>
+</ul></li>
+<li class="chapter" data-level="9.7" data-path="week9.html"><a href="week9.html#reports-note-windows-only-users-not-supported-by-mac-yet"><i class="fa fa-check"></i><b>9.7</b> Reports (NOTE: WINDOWS ONLY USERS! NOT SUPPORTED BY MAC, YET!!)</a></li>
+<li class="chapter" data-level="9.8" data-path="week9.html"><a href="week9.html#some-other-useful-things-to-do"><i class="fa fa-check"></i><b>9.8</b> Some other useful things to do</a><ul>
+<li class="chapter" data-level="9.8.1" data-path="week9.html"><a href="week9.html#create-another-word-cloud"><i class="fa fa-check"></i><b>9.8.1</b> Create another Word Cloud:</a></li>
+<li class="chapter" data-level="9.8.2" data-path="week9.html"><a href="week9.html#create-a-word-tree"><i class="fa fa-check"></i><b>9.8.2</b> Create a Word Tree:</a></li>
+<li class="chapter" data-level="9.8.3" data-path="week9.html"><a href="week9.html#create-a-concept-map-windows-only"><i class="fa fa-check"></i><b>9.8.3</b> Create a Concept Map (WINDOWS ONLY!!)</a></li>
+</ul></li>
+<li class="chapter" data-level="9.9" data-path="week9.html"><a href="week9.html#other-features"><i class="fa fa-check"></i><b>9.9</b> Other features…</a><ul>
+<li class="chapter" data-level="9.9.1" data-path="week9.html"><a href="week9.html#graphicspictures---making-linked-notes-and-coding"><i class="fa fa-check"></i><b>9.9.1</b> Graphics/pictures - making linked notes and coding</a></li>
+<li class="chapter" data-level="9.9.2" data-path="week9.html"><a href="week9.html#coding-audiovideo-data"><i class="fa fa-check"></i><b>9.9.2</b> Coding audio/video data</a></li>
+</ul></li>
+<li class="chapter" data-level="9.10" data-path="week9.html"><a href="week9.html#more-on-capturing-web-material"><i class="fa fa-check"></i><b>9.10</b> More on capturing web material</a></li>
+<li class="chapter" data-level="9.11" data-path="week9.html"><a href="week9.html#summary-8"><i class="fa fa-check"></i><b>9.11</b> Summary</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Making Sense of Crim Data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="week5" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Week 5</h1>
+<div id="learning-outcomes-4" class="section level2">
+<h2><span class="header-section-number">5.1</span> Learning outcomes</h2>
+<p>This week we are interested in in taking a step back even further from the analysis of data than last week. Last week we spoke about conceptualisation and operationalisation, the steps that you take as a researcher to turn your ideas and topics of interest into variables to measure. But how do you then go about designing your research study? We talked a bit about sampling, the ways that you select your sample to collect information from, and how you ensure that this is done in a way that reflects the population, about which you want to be drawing conclusions. This week we take a step back, conceptually, to the highest level of research oversight, to consider the process of research design, and consider the various ways that you can go about collecting data.</p>
+<p>Much of the data that we work with are collected as part of research. There are many many different approaches to this process, and you will have come across a good sample of them in your readings. Research design can be described as a general plan about what you will do to answer your research question. Research design is the overall plan for connecting the conceptual research problems to the pertinent (and achievable) empirical research. In other words, the research design articulates what data will be required, what methods are going to be used to collect and analyse the data, and how all of this is going to answer your research question. Both data and methods, and the way in which these will be configured in the research project, need to be the most effective in producing the answers to the research question (taking into account practical and other constraints of the study). Different design logics are used for different types of study, and the best choice depends on what sorts of reaserach questions you want to be able to answer.</p>
+<p>Since your reading provides a comprehensive overview of different types of research designs, I will not attempt to replicate this here. Instead I will cover some general practical points, with focus on two different study designs. These are experiments, and longitudinal studies. However the skills we will practice today are relevant for data collected from various research resigns. For example, missing data is something that is an issue for cross sectional studies as well as longitudinal ones. Similarly, the Gantt chart as a way to plan your study design can be applied to any form of research design.</p>
+<div id="terms-for-today-3" class="section level3">
+<h3><span class="header-section-number">5.1.1</span> Terms for today</h3>
+<ul>
+<li>Research Design</li>
+<li>Evaluation &amp; Experiments
+<ul>
+<li>RCT</li>
+<li>Working with experimental data</li>
+<li>Meta-analysis (a note on the tip of the evidence-pyramid)</li>
+</ul></li>
+<li>Longitudinal Study Designs
+<ul>
+<li>The importance of time</li>
+<li>Linking data</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="research-design" class="section level2">
+<h2><span class="header-section-number">5.2</span> Research Design</h2>
+<p>When you’re designing your research, and developing your research design, you can imagine yourself as the architect of the research project. You lay down the blueprints and identify all the tasks and elements that will need to be realised in order for your research project to be successful. The type of research design used in a crime and justice study influences its conclusions. Studies suggest that design does have a systematic effect on outcomes in criminal justice studies. For example, when determining the effect of an intervention (known as evaluation research, as you are <em>evaluating</em> the effect of the intervention), when comparing randomized studies with strong quasi-experimental research designs, systematic and statistically significant differences are observed (<a href="http://cebcp.org/wp-content/publications/Does%20Research%20Design%20Affect%20Study%20Outcomes.pdf">Weisburd et al 2001</a>).</p>
+<p>Those interested in the study of criminology and criminal justice have at their disposal a wide range of research methods. Which of the particular research methods to use is entirely contingent upon the question being studied. Research questions typically fall into four categories of research:</p>
+<ul>
+<li><ol style="list-style-type: decimal">
+<li><em>descriptive</em> (define and describe the social phenomena),</li>
+</ol></li>
+<li><ol start="2" style="list-style-type: decimal">
+<li><em>exploratory</em> (identify the underlying meaning behind the phenomena),</li>
+</ol></li>
+<li><ol start="3" style="list-style-type: decimal">
+<li><em>explanatory</em> (identify causes and effects of social phenomena), and</li>
+</ol></li>
+<li><ol start="4" style="list-style-type: decimal">
+<li><em>evaluative</em> (determine the effects of an intervention on an outcome).</li>
+</ol></li>
+</ul>
+<p>Your readings will have gone through a lot of examples and details about each one of these approaches, and what research design you can use to answer which sort of categories of research questions. These books give you a fantastic theoretical overview of the methods, and so I will not reiterate those here. Instead I will try to focus on the practicalities associated with some research designs. While I will use the example of evaluative research here, you can use similar methods when appropriate for all sorts of research design.</p>
+<!--
+
+With this background, the purpose of this entry will be to introduce the reader to the two major research paradigms and issues that organize the field of criminology and criminal justice: quantitative and qualitative research strategies. After describing the different research methodologies several issues related to internal and external validity are identified that are important to bear in mind when assessing the adequacies of distinct research methodologies. The entry closes by highlighting what appears to be the most promising research strategy for criminology and criminal justice.
+
+Criminal justice Jobs - Search For Criminal justice Jobs.
+Search For Criminal justice Jobs. Find Your New Job Today!
+indeed.co.uk/Criminal+justice | Sponsored▼
+Quantitative research methods
+Quantitative research methods are typically concerned with measuring criminological or criminal justice reality. To understand this process several terms must first be identified. Concepts are abstract tags placed on reality that are assigned numerical values, thus making them variables. Variables are then studied to examine patterns of relation, covariation, and cause and effect. At the most basic level, there exists at least one dependent variable and one independent variable. The dependent variable is commonly referred to as the outcome variable. This is what the researcher is attempting to predict. The independent variable is commonly referred to as the predictor variable, and it is the variable that causes, determines, or precedes in time the dependent variable (Hagan). Consider the following examples.
+
+Criminological theorists may be interested in studying the relationship between impulsivity (independent variable) and criminal behavior (dependent variable). In studying such a relationship, scholars create a summated scale of items that is designed to indirectly measure the concept of impulsivity. Then, this impulsivity scale is used to predict involvement in criminal behavior. Criminal justice scholars may be interested in studying the effects of a mandatory arrest policy (independent variable) on future patterns of domestic violence (dependent variable). In studying such a question, scholars typically evaluate the effect of an arrest, compared to some other sanction, on the future criminal behavior of the arrestee. Thus, quantitative research methods involve a pattern of studying the relationship(s) between sets of variables to determine cause and effect.
+
+
+
+Three criteria are needed to establish causality. The first is association. That is, the independent and dependent variables must be related to one another. The second is time order; the independent variable must precede the dependent variable in time. Finally, there is the issue of nonspuriousness. This occurs if the relationship between the independent and dependent variables is not due to variation in some unobserved third variable.
+
+There are a number of different quantitative research methods available to researchers, most of which fall under the rubric of a research design, which loosely can be defined as the plan or blueprint for a study that includes the who, what, where, when, why and how of an investigation (Hagan). These research methods include: survey research, experimental and quasi-experimental research, cross-sectional research, longitudinal research, time series research, and meta-analysis.
+
+Survey research. Serving as the most frequently used mode of observation within the social sciences, including criminology (Maxfield and Babbie), survey research involves the collection of information from a sample of individuals through their responses to questions (Schutt). Survey research is generally carried out via mail, telephone, computer, or in person.
+
+Typically, surveys contain a combination of open- and closed-ended questions. Open-ended questions ask the respondent to provide an answer to a particular question. For example, the respondent may be asked: "What do you think is the most important problem facing residents in your neighborhood today?" Then in their own words, the respondent would provide his or her answer. On the other hand, closed-ended questions ask the respondents to select an answer from a list of choices provided. For example, the question asked above would read exactly the same only now respondents are provided with a list of options to choose from: "What do you think is the most important problem facing residents in your neighborhood today? (a) crime, (b) drugs, (c) education, (d) employment, (e) family structure, (f ) poverty, (g) health care, (h) child care, (i) extracurricular activities, ( j) other."
+
+Surveys offer a number of attractive features that make them a popular method of doing research. They are versatile, efficient, inexpensive, and generalizable. At the same time, survey methods may be limited due to problems in sampling, measurement, and overall survey design. When creating a survey, researchers should take care in making sure that the items in the survey are clear and to the point.
+
+
+Cross-sectional research. Cross-sectional designs involve studies of one group at one point in time. Therefore, they offer a quick glimpse or snapshot of the phenomena being studied. Typically, they refer to a representative sample of the group and thus allow researchers to generalize their findings (Hagan). Cross-sectional research designs permeate criminology and criminal justice research. Hirschi's famous study of causes of delinquency utilized a cross-sectional design in which he asked male respondents a series of questions related to involvement in delinquent activities and emotional ties to social bonds.
+
+Longitudinal research. There are two commonly used longitudinal research designs, panel and cohort studies. Both study the same group over a period of time and are generally concerned with assessing within- and between-group change. Panel studies follow the same group or sample over time, while cohort studies examine more specific populations (i.e., cohorts) as they change over time. Panel studies typically interview the same set of people at two or more periods of time. For example, the National Crime Victimization Survey (NCVS) randomly selects a certain number of households from across the United States and interviews a member from each a series of seven times at six-month intervals. Cohort studies follow individuals or specific cohorts as they change over time. One classic example of a cohort study was conducted by Marvin Wolfgang and his colleagues in Philadelphia. The authors traced the criminal records of all boys born in Philadelphia in 1945 through the age of eighteen. Similarly, Tracy, Wolfgang and Figlio tracked the criminal history of males and females born in Philadelphia in 1958.
+
+Time-series designs. Time-series designs typically involve variations of multiple observations of the same group (i.e., person, city, area, etc.) over time or at successive points in time. Typically, they analyze a single variable (such as the crime rate) at successive time periods, and are especially useful for studies of the impact of new laws or social programs (Schutt). An example of a time-series design would be to examine the murder rate in the United States over the last twenty years or to compare the murder rate of the United States and Canada over the same period of time.
+
+An interrupted time-series design analyzes a single variable at successive time periods with measures taken prior to some form of interruption (i.e., intervention) and other observations taken after the intervention. An example of an interrupted time-series design may be found in Spelman and Eck (1987). These authors studied the number of larcenies from automobiles in Newport News, Virginia. The intervention in this study was a problem-oriented policing program that consisted of special tracking and investigation of crime incidents. The results showed that the number of larcenies dropped significantly immediately after the intervention took place and remained significantly small for over one year after the intervention. In another interrupted time series study, D'Alessio and Stolzenberg investigated the impact of Minnesota sentencing guidelines on jail incarceration. They found that the onset of the sentencing guidelines increased judicial use of the jail sanction beyond the effect of preexisting trends.
+
+Although time-series designs are especially useful in studying trends over time and how such trends are influenced by some sort of intervention, researchers should be aware of one key feature of time-series designs: the inability to control for all potential spurious effects. Consider the following example. Suppose that a researcher is studying the effect on robberies of a mandatory convenience store law that requires stores to have at least two clerks working during hours of operation. After examining the number of robberies before and after the law took effect, the researcher observed that the number of robberies significantly decreased after the law was instituted. Therefore, the researcher claimed that the law led to the decrease in the number of robberies committed and concluded that the law should be generalized to other locales. However, what the researcher may have failed to consider was the recent capture of two offenders who were committing 75 percent of all convenience store robberies, and who just happened to be captured about the time the law took effect. In sum, researchers need to be careful in making sure that their interpretations of interrupted time-series analyses take into consideration as much information, both empirical and nonempirical, as possible.
+
+Meta-analysis. A recent advent in research methodology is the use of meta-analysis. This research approach is the quantitative analysis of findings from multiple studies. At its core, meta-analysis involves researchers pulling together the results of several studies and making summary, empirical statements about some cause and effect relationship. A classic example of meta-analysis in criminology was performed by Wells and Rankin and concerned the relationship between broken homes and delinquency.
+
+After observing a series of findings showing that the broken-homes-causes-delinquency hypothesis was inconclusive, Wells and Rankin identified fifty studies that tested this hypothesis. After coding the key characteristics of the studies, such as the population sampled, age range, measures (both independent and dependent) used, the authors found that the average effect of broken homes across the studies was to increase the probability of delinquency by about 10 to 15 percent. Perhaps more importantly, they found that the different methods used across the studies accounted for much of the variation in estimating the effect of broken homes. For example, the effect of broken homes on delinquency tended to be greater in studies using official records rather than self-report surveys.
+
+Although the research community has not spoken with one voice regarding the usefulness of meta-analysis, one thing is clear: meta-analysis makes the research community aware that it is inappropriate to base conclusions on the findings of one study. It is because of this important lesson that meta-analysis has become a popular technique in criminological and criminal justice research (Lipsey and Wilson).
+
+Threats to validity
+Validity refers to the accuracy of measurement or whether the instrument is in fact measuring what it is suppose to measure (Hagan). While quantitative research methods have permeated criminological and criminal justice research, they are not without problems. Threats to validity are perhaps the most profound and should be acknowledged. Some of these threats are internal and are concerned with whether the observational process itself produced the findings, while external threats are concerned with whether the results were unique and applicable only to the group or target studied (Hagan).
+
+Internal threats. According to Campbell and Stanley, a number of internal threats need to be considered, including: (1) history, (2) maturation, (3) testing, (4) instrumentation, (5) statistical regression, (6) selection bias, (7) experimental mortality, and (8) selectionmaturation interaction. In determining whether a particular design rules out threats to internal validity, Cook and Campbell suggest that "estimating the internal validity of a relationship is a deductive process in which the investigator has to systematically think through how each of the internal validity threats can be ruled out" (p. 55).
+
+External threats. Campbell and Stanley also identify several threats to external validity, including: (1) testing effects, (2) selection bias, (3) reactivity or awareness of being studied, and (4) multiple-treatment interference. These threats are greater for experiments conducted under more carefully controlled conditions (Maxfield and Babbie). Perhaps one of the best methods for assessing threats to external validity is replication, or the repetition of experiments or studies utilizing the same methodology. By replication of key findings, researchers can gain confidence that the results observed in one study may not be due to external validity threats. One of the key examples of replication occurred in the late 1980s when the Minneapolis Domestic Violence Experiment was replicated in six cities throughout the United States (Sherman). Importantly, these replications yielded both similar and contradictory conclusions to those observed in the initial experiment.
+-->
+<!--
+##Qual
+
+Unlike quantitative research methods, qualitative approaches are designed to capture life as participants experience it, rather than in categories predetermined by the researcher. These methods typically involve exploratory research questions, inductive reasoning, an orientation to social context and human subjectivity, and the meanings attached by participants to events and to their lives (Schutt). There are a number of distinctive research designs under this paradigm: (1) participant observation, (2) intensive interviewing, (3) focus groups, and (4) case studies and life histories. Each of these will be discussed in turn.
+
+Participant observation. At its most basic level, participant observation involves a variety of strategies in data gathering in which the researcher observes a group by participating, to varying degrees, in the activities of the group (Hagan). Gold discusses four different positions on a continuum of roles that field researchers may play in this regard: (1) complete participant, (2) participant-as-observer, (3) observer-as-participant, and (4) complete observer. Complete participation takes place when the researcher joins in and actually begins to manipulate the direction of group activity. In the participant-as-observer strategy, the researcher usually makes himself known and tries to objectively observe the activities of the group. The observer-as-participant strategy is very much like a one-visit interview, where the interviewees are also short-term participant observers. Typically, these interviews are conducted with individuals who are known to participate in a designated activity. For example, Jacobs interviewed known active drug dealers in order to gain a better understanding of how the crack business actually operates on the streets. Finally, the complete observer strategy relies on sole observation absent participation from the researcher.
+
+Although several issues must be confronted when engaging in this sort of research, two are of vital importance: (1) objectivity, and (2) "going native." The former deals with the researcher's ability to avoid not only overidentification with the study group, but also aversion to it (Hagan). The latter deals with a situation in which the researcher identifies with and becomes a member of the study group, and in the process abandons his or her role as an objective researcher (Hagan). Even with these cautions, a number of important participant observation studies have been undertaken in criminology and criminal justice including Polsky's study of pool hustlers and con artists, as well as Marquart's study of prison life.
+
+Intensive interviewing. Intensive interviewing consists of open-ended, relatively unstructured questioning in which the interviewer seeks in-depth information on the interviewee's feelings, experiences, or perceptions (Schutt, 1999). Unlike the participant observation strategy, intensive interviewing does not require systematic observation of respondents in their natural setting. Typically, interviewing sample members, and identification and interviewing of more sample members, continues until the saturation point is reached, the point when new interviews seems to yield little additional information (Schutt).
+
+A prominent example of the intensive interviewing technique can be found in a series of studies with active residential burglars (Wright and Decker, 1994) and robbers (Wright and Decker, 1997) in St. Louis. These authors have conducted in-depth interviews with active criminals in their natural environment. Some of these interviews have yielded important theoretical insights that perhaps may not have been garnered via traditional survey methods. Other prominent examples may be found in Fagan and Wilkinson's study of gun-related violence in New York and Jacobs's study of crack addicts in St. Louis.
+
+Focus groups. Focus groups are groups of unrelated individuals that are formed by a researcher and then led in group discussions of a topic (Schutt). Typically, the researcher asks specific questions and guides the discussion to ensure that group members address these questions, but the resulting information is qualitative and relatively unstructured (Schutt).
+
+Although generalizations from focus groups to target populations cannot be precise (Maxfield and Babbie), research suggests that focus group information, combined with survey information, can be quite consistent under certain conditions (Ward et al.). One such criminal justice example is provided by Schneider and her colleagues. These authors examined the implementation process and the role of risk/need assessment instruments for decisions about the proper level of supervision among parolees and probationers. Their use of focus group was able to provide a context for a more complete understanding of the survey results from the probation officers interviewed.
+
+Case studies and life histories. In general, case studies and life histories are in-depth, qualitative studies of one or a few illustrative cases (Hagan). Several criminological examples using this approach exist, and a few in particular have produced some of the most important, baseline information in the discipline today. The classic example is Sutherland's The Professional Thief (1937). In this case study, Sutherland's informant, Chic Conwell, described the world of the professional thief. Other examples include Shaw's The Jack-Roller (1930), which tells the autobiographical story of a delinquent's own experiences, influences, attitudes, and values. Finally, Horatio Alger's tale of street life in New York tells the story of Young Dick, a street boy who is involved in a delinquent life but who is also honest and hardworking. Life-history methods generally involve the analysis of diaries, letters, biographies, and autobiographies to obtain a detailed view of either a unique or representative individual (Hagan). A classic example of the life-history method is Teresa and Renner's My Life in the Mafia (1973).
+
+Future of research methods in criminology and criminal justice
+Although the preceding discussion has portrayed the two main research paradigms, quantitative and qualitative research methods, as two ends of the research continuum, it was not meant to imply that the two are mutually exclusive. On the contrary, the future of research methods in criminology and criminal justice lies in the combination of quantitative and qualitative research approaches. Illustrated below are two successful integrations.
+
+The first, by Eric Hirsch, used a combination of methods, including participant observation, intensive interviewing, and a standardized survey, to study the 1985 student movement that attempted to make Columbia University divest its stock in companies dealing with South Africa. Hirsch believed that the combination of research methodologies provided a more comprehensive picture of student's motivations.
+
+The second example is from John Laub and Robert Sampson. For quite some time, these two scholars have been working on the reanalysis of one of the classic data sets in criminology, the Unraveling Juvenile Delinquency (UJD) study that was initiated by Sheldon and Eleanor Glueck in 1940. The data contain the original case records of all one thousand sample members as well as detailed archival life records that included information from the "home investigation," which consisted of an interview with family members and offered an opportunity for the investigators to observe the home and family life of sample members. Furthermore, the UJD study included interviews with key informants such as social workers, settlement house workers, clergymen, schoolteachers, neighbors, employers, and criminal justice and social welfare officials. When this detailed information is combined with the statistical information on criminal behavior and other life events, one can begin to appreciate the richness with which Laub and Sampson have been able to document these one thousand lives and contribute much needed information regarding crime over the life course.
+
+The future of criminological and criminal justice research will likely come full circle. Early studies of crime and criminality began with qualitative observations almost to the exclusion of quantitative research. New research topics were observed and highlighted by scholars who wished to forge ahead in the understanding of crime and criminality. Once these topics were brough to the forefront of the field, quantitative research became the choice method of analysis. The future of criminological research must focus on the blending of the two. As John Clausen notes, both case history and statistical data are required "if we are to understand the influences on the lives of persons who have lived through a particular slice of American history" (p. 43).
+
+
+What is
+
+How to
+
+-->
+</div>
+<div id="experiments-and-evaluation" class="section level2">
+<h2><span class="header-section-number">5.3</span> Experiments and evaluation</h2>
+<p>Experimental criminology is a family of research methods that involves the controlled study of cause and effect. Research designs fall into two broad classes: quasi-experimental and experimental. In experimental criminology, samples of people, places, schools, prisons, police beats, or other units of analysis are typically assigned (either randomly or through statistical matching) to one of two groups: either a new, innovative <strong>treatment</strong>, or an alternate intervention condition (<strong>control</strong>). Any observed and measured differences between the two groups across a set of “outcome measures” (such as crime rates, self-reported delinquency, perceptions of disorder) can be attributed to the differences in the treatment and control conditions. Exponential growth in the field of experimental criminology began in the 1990s, leading to the establishment of a number of key entities (such as the Campbell Collaboration, the Academy of Experimental Criminology, the Journal of Experimental Criminology, and the Division of Experimental Criminology within the American Society of Criminology) that have significantly advanced the field of experimental criminology into the 21st century. These initiatives have extended the use of experiments (including randomized field experiments as well as quasi-experiments) to answer key questions about the causes and effects of crime and the ways criminal justice agencies might best prevent or control crime problems. The use of experimental methods is very important for building a solid evidence base for policymakers, and a number of advocacy organizations (such as the Coalition for Evidence- Based Policy) argue for the use of scientifically rigorous studies, such as randomized controlled trials, to identify criminal justice programs and practices capable of improving policy-relevant outcomes.</p>
+<ul>
+<li><p><a href="http://www.oxfordbibliographies.com/view/document/obo-9780195396607/obo-9780195396607-0085.xml">Experimental Criminology by Lorraine Mazerolle, Sarah Bennett</a></p></li>
+<li>How much crime does prison prevent–or cause–for different kinds of offenders?</li>
+<li>Does visible police patrol prevent crime everywhere or just in certain locations?</li>
+<li>What is the best way for societies to prevent crime from an early age?</li>
+<li><p>How can murder be prevented among high-risk groups of young men?</p></li>
+</ul>
+<p>These and other urgent questions can be answered most clearly by the use of a research design called the “randomized controlled trial.” This method takes large samples of people–or places, or schools, prisons, police beats or other units of analysis–who might become, or have already been, involved in crimes, either as victims or offenders. It then uses a statistical formula to select a portion of them for one treatment, and (with equal likelihood) another portion to receive a different treatment. Any difference, on average, in the two groups in their subsequent rates of crime or other dimensions of life can then be interpreted as having been caused by the randomly assigned difference in the treatment. All other differences, on average, between the two groups can usually be ruled out as potential causes of the difference in outcome. That is because with large enough samples, random assignment usually assures that there will be no other differences between the two groups except the treatment being tested.</p>
+<p>Watch this <a href="https://www.youtube.com/watch?v=IGDF1-B1Yjs&amp;feature=player_embedded">6 minute video from Cambridge University to learn a bit more about experimental crim</a></p>
+<p>And then <a href="http://www.cla.temple.edu/cj/center-for-security-and-crime-science/the-philadelphia-foot-patrol-experiment/">this video that describes the Philadelphia foot patrol experiment</a>. Pay attention to how the blocks are assigned to the treatment (foot patrol) and the control (normal, business as usual policing) groups.</p>
+<p>Do take the time to watch the videos above, they will help you understand how and why we can use experiments in criminological research! Take time to get through these, it will help, but also I hope that they are interesting examples of criminological research in action! Quantitative criminology isn’t all about sitting around playing with spreadsheets and reading equations - we do get out sometimes, and get to have an impact on things like policing :) So watch the above two films, I’ll wait here.</p>
+<p><img src="https://media.giphy.com/media/pUeXcg80cO8I8/giphy.gif" /></p>
+<p>Evaluation of programmes is very important. As you heard the police chiefs explain in the Philadelphia video above, it can make the difference between investing in a helpful intervention (foot patrols in this case) or not. By being able to quantify the crime reduction effect that foot patrols had on particular areas, it became possible to support and lobby for these to be implemented.</p>
+<p>While it’s great that evaluations can be used to build a case for effective interventions, it is equally important to know whether something doesn’t work. Have you heard of the scared straight program? The term “scared straight” dates to 1978, and a hit documentary by the same name. The film featured hardened convicts who shared their prison horror stories with juvenile offenders convicted of arson, assault, and other crimes. The convicts screamed, yelled, and swore at the young people. The concept behind the approach was that kids could be frightened into avoiding criminal acts.</p>
+<p>It is an idea that has also been tested in drivers’ education classes across the US. For several decades beginning in the 1960s, many soon-to-be-drivers watched a graphic video of mangled bodies being pulled from automobile wreckage – described in one magazine review as a “twenty-eight-minute gorefest” meant to deter reckless driving.</p>
+<p>You can see how people are immediately averse to this idea. It is, quite obviously distressing to kids that are being subjected to these scared straight programmes, through the yelling, the gruesome violence, and so on. But if the end result is that this shock and horror deters kids from offending, or young drivers from being careless on the roads, then it might be considered a “necessary evil”, right? It might be short-term pain inflicted, but in the interest of long-term gain, whereby these kids will avoid a life of offending, or ending up in a horrible road traffic collision. But in order to make this argument, we need to be able to tell - does this work?</p>
+<p>To be able to answer such questions we can devise experiments, in the form of research design of experimental and quasi-experimental research. Some scholars believe that experimental research is the best type of research to assess cause and effect (Sherman; Weisburd). True experiments must have at least three features:</p>
+<ul>
+<li>at least two comparison groups (i.e., a treatment group and a control group),</li>
+<li>variation in the independent variable before assessment of change in the dependent variable, and</li>
+<li>random assignment to the groups.</li>
+</ul>
+<p><em>What do each of these mean?</em></p>
+<p>Well first we need to establish our dependent and independent variables, to determine what we expect is evoking a change in what.</p>
+<p>What is a <strong>dependent variable</strong>? It’s what you are looking to explain. Remember in week 3, when we were talking about bivariate analysis to assess the relationship between two variables? And we spoke about one of them being a <strong>response</strong> variable and the other the <strong>predictor</strong> variable, and how do we determine which variable is which? In general, the explanatory variable attempts to explain, or predict, the observed outcome. The response variable measures the outcome of a study. One may even consider exploring whether one variable causes the variation in another variable – for example, a popular research study is that taller people are more likely to receive higher salaries. In this case, age at first arrest would be the explanatory variable used to explain the variation in the response variable number of arrests.</p>
+<p>Well these variables can also be called <strong>dependent</strong> and <strong>independent</strong> variables. <strong>Dependent variables</strong> are another name for response variables. They <em>depend</em> on the values of the independent variable. It can also have a third name, and be called an <em>outcome variable</em>. The <strong>independent variable</strong> on the other hand is another name for predictor variables.</p>
+<p>For example, if you are trying to predict fear of crime using age (so your research question might ask: <em>are older people more worried about crime?</em>) then in this case, you belueve that age will be influencing fear, right? Old age will cause high fear, and young age will cause low fear. In this case, since age is influencing fear, a person’s level of fear of crime <em>depends</em> on their age. So your <em>dependent</em> variable is age. And since it’s influenced by fear, fear if the <em>independent</em> variable.</p>
+<p>So what about in the case of an experiment? Let’s return to our example with the scared straight programmes. We want to know whether scared straight has an effect on future offending, correct? So what are our variables here? Remember last week, when we were identifying concepts in research questions in the feedback session? That might help. So we want to know the effect of <em>scared straight</em> on the people’s <em>future offending</em>. Our variables are in italics; they are:</p>
+<ul>
+<li>exposure to scared straight programme</li>
+<li>future offending behaviour.</li>
+</ul>
+<p>Now which influences which one? Well the clue is always in our question. And our question is whether kids who participate in scared straight offend less than they would have if they didn’t participate. So for this we know that we have one variable (in this case offending) that <em>depends on</em> the other (participating in scared straight or not). So what does this mean for which is dependent variable and which is the independent?</p>
+<p>Take a moment to try to answer this yourself. Think about which one is <em>predicting</em> which <em>outcome</em> if the dependent/independent division doesn’t work for you. You should definitely have a go at trying to guess here, because I will give you the answer later, and it will help you check your understanding, and if you are unsure, then do ask now. The dependent/independent variable distinction will be important throughout your data analysis career, even if that is only this one course.</p>
+<p>So take a moment to think through, and decide which variable is dependent or independent. Here is a corgi running around in circles to separate the answer, so you don’t accidentally read ahead:</p>
+<p><img src="https://media.giphy.com/media/RrFZIzK3coIMg/giphy.gif" /></p>
+<p>Right so now you’re hopefully read after your own consideration, and you may have found that your <strong>dependent variable</strong> is the one that depends on the intervention, which is - whether the young person exposed to the scared straight programme offends or not. So your <em>dependent</em> variable is <em>future offending</em>. This would have to be conceptualised (how far in the future, what counts as offending, etc) and then in turn operationalised, to be measured somehow.</p>
+<p>Your independent variable on the other hand is the thing that you want to see the effect of, in this case, it’s participation in the scared straight programme. Right? You are interested in whether participation causes less offending in the future. So your <em>independent</em> variable is <em>participating in scared straight</em>. Again you would have to conceptualise scared straight participation (can they go to one event, do they have to attend many? does it matter what happens to them? whether they get yelled at or not? whether they go into prison or not, etc) and then also operationalised in a way (do we just measure did this young person ever take part as a yes/no categorical variable? Do we count the number of times they took part?)</p>
+<p>But no matter how you conceptualise and operationalise these variables, you will still have to be able to determine the effect of one or the other. And the <em>research design</em> of your study will greatly affect whether or not you can do that.</p>
+<p>Experiments provide you with a research design that <em>does</em> allow you to make these cause and effect conclusions. If you design your study as experiments, you will be able to control for certain variation, and employ methods that give you certainty about what causes what, and which event came first. This is a huge strength of experimental design. When talking about causation, or in evaluations, experimental design has features that mean that it is an optimal methodology for evaluation. Of course this does <em>not</em> mean it’s the <em>only</em> appropriate design. But it’s one approach that we will cover here in detail.</p>
+<p>So for your research design to be considered an experiment the three criteria listed above should be met. You need your dependent and independent variables, but you also need variation in your independent variable (usually between 2 groups). So the first thing you need is two groups, between who you can compare the value of the dependent variable, after having exposed them to some difference in the independent variable. What you need from these two groups, is that they are <em>different</em> on this value of the independent variable. This is because you want to compare them. As you will have picked up from your readings, these two groups are often called your <strong>treatment</strong> and your <strong>control</strong> groups, because one group is administered some treatment (such as they took part in the intervention you are hoping to evaluate) while the other one receives the business as usual approach. Think back to the Philadelphia foot patrol video above: one group of street segments (treatment) received foot patrols, right? That’s where beats were drawn up to, and where foot patrol officers went on their shifts, to do their thing, and keep the streets safe. But there were also another set of street segments, right? The ones that were assigned to the control groups did <em>not</em> receive foot patrol. Police still responses to calls for service, and everything went on as usual, but there was no patrol there - this is the control group.</p>
+<p>So you have 2 groups - treatment and control - and you also have a difference in the independent variable between the two - for example where one group is given the treatment, and the other is not.</p>
+<p>Watch <a href="https://www.youtube.com/watch?v=igm0oanTFJI">this video</a> to make sure that you get this concept.</p>
+<p>For another angle <a href="https://www.youtube.com/watch?v=aLesk8fujH8">this video</a> is also worth a watch (if for nothing else then for the beautiful MS Paint style graphics)</p>
+<p>Now the last point there is to do with random assignment. Our main goal is to assess change in the dependent variable between the two groups, after exposing them differently to the independent variable. But we want to be entirely sure that one group isn’t systematically different to the other. One way to achieve this is to use random assignment into the groups. Randomization is what makes the comparison group in a true experiment a powerful approach for identifying the effects of the treatment. Assigning groups randomly to the experimental and comparison groups ensures that systematic bias does not affect the assignment of subjects to groups. This is important if researchers wish to generalize their findings regarding cause and effect among key variables within and across groups. Remember all our discussion around validity and reliability last week!</p>
+<p>Random assignment is a criteria for experiment research. A research (or evaluation) design is experimental if subjects are randomly assigned to treatment groups and to control (comparison) groups. A research (or evaluation) design is quasi-experimental if subjects are not randomly assigned to the treatment or control conditions but rather if statistical controls are used to study cause and effect. You will have learned about quasi-experimental design in your readings, so here I will focus on experimental designs.</p>
+<!--
+Many experiments contain both a pre-test and a post-test. The former test measures the dependent variable prior to the experimental intervention while the latter test measures the outcome variable after the experimental group has received the treatment. The classic experimental design is one in which there is a pre-test for both groups, an intervention for one group (i.e., the experimental group), and then a post-test for both groups. 
+-->
+<blockquote>
+<p>Consider the following criminal justice example. Two police precincts alike in all possible respects are chosen to participate in a study that examines fear of crime in neighborhoods. Both precincts would be pre-tested to obtain information on crime rates and citizen perceptions of crime. The experimental precinct would receive a treatment (i.e., increase in police patrols), while the comparison precinct would not receive a treatment. Then, twelve months later, both precincts would be post-tested to determine changes in crime rates and citizen perceptions.</p>
+</blockquote>
+<p>-<a href="http://law.jrank.org/pages/923/Criminology-Criminal-Justice-Research-Methods-Quantitative-research-methods.html">Criminology and Criminal Justice Research: Methods - Quantitative Research Methods</a></p>
+<!--
+> There have been several experimental designs in criminology and criminal justice including the Domestic Violence Experiment (Sherman), where offenders were randomly assigned to one of three interventions (arrest, mediation, separation). The Jersey City Police Department's Program to Control Violent Places also utilized an experimental design (Braga et al.). For this study, twenty-four high-activity, violent crime places were matched into twelve pairs and one member of each pair was allocated to treatment conditions in a randomized block field experiment.
+
+-[Criminology and Criminal Justice Research: Methods - Quantitative Research Methods](http://law.jrank.org/pages/923/Criminology-Criminal-Justice-Research-Methods-Quantitative-research-methods.html)
+
+
+On the other hand, quasi-experimental research lacks the random assignment to experimental and control groups, but can be approximated by close and careful matching of subjects across the two groups on several key variables. The two major types of quasi-experimental designs are: (1) nonequivalent control group designs, which have experimental and comparison groups that are designated before the treatment occurs and are not created by random assignment; and (2) before-and-after designs, which have both a pre- and post-test but no comparison group (Schutt).
+
+An example of a nonequivalent control group design is a study of the effect of police actions on seat-belt law violations. For example, Watson selected two communities of comparable size where police enforcement of the law was low. In the experimental community, Watson instituted a media campaign to increase seat-belt usage, followed by increased police enforcement of the seat-belt law. Watson found that the percentage of drivers using seat belts increased in the experimental community but remained stable or declined slightly in the comparison community.
+
+An example of the before-and-after design is the Pierce and Bowers analysis of the impact of the Massachusetts Bartley-Fox gun law. This law carried a one-year minimum prison sentence for the unlicensed carrying of firearms. Their early evaluation showed a decrease in gun-related assaults, robberies, and homicides, but was offset by increases in nongun assaults and robberies using other weapons.
+-->
+<p>You can read about these studies above for some examples of experiments in criminal justice research. The Philadelphia foot patrol experiment was just one of many. In particular, the Philadelphia foot patrol experiment is an example of a <strong>randomised control trial</strong>. You will have read about a few types of experimental design in your textbooks, but here we will focus on this particular one. The randomised controlled trial (RCT for short) is considered often as the most rigorous method of determining whether a cause-effect relationship exists between an intervention and outcome . The strength of the RCT lies in the process of randomisation that is unique to this type of research study design.</p>
+<div id="rct" class="section level3">
+<h3><span class="header-section-number">5.3.1</span> RCT</h3>
+<p>An RCT presents a study design that randomly assigns participants into an experimental group or a control group. As the study is conducted, the only expected difference between the control and experimental groups in the RCT is the outcome variable being studied.</p>
+<p>There are several advantages and disadvantages to RCTs:</p>
+<p>Advantages</p>
+<ul>
+<li>Good randomization will “wash out” any population bias</li>
+<li>Results can be analyzed with well known statistical tools</li>
+<li>Populations of participating individuals are clearly identified</li>
+</ul>
+<p>Disadvantages</p>
+<ul>
+<li>Expensive in terms of time and money</li>
+<li>Volunteer biases: the population that participates may not be representative of the whole</li>
+</ul>
+<!--
+Design pitfalls to look out for
+
+Was the randomization actually “random,” or are there really two populations being studied?
+The variables being studied should be the only variables between the experimental group and the control group.
+
+Are there any confounding variables between the groups?
+
+
+
+-->
+<p>Do engage with the reading around the advantages and disadvantages of RCTs. They are often looked at as the gold standard for determining the effect of a particular intervention, but that does not mean they are without flaws, or are the only way forward, there are situations where they may or may not be appropriate. But here we are getting practical, so let’s make the assumption, that for our evaluation of scared straight, we have decided that we are going to evaluate using an RCT.</p>
+<p>So the first step is to design our study.</p>
+</div>
+<div id="designing-an-rtc" class="section level3">
+<h3><span class="header-section-number">5.3.2</span> Designing an RTC</h3>
+<p>When you are designing any research, you will have to map out all the elements of the study in detail. One of the key issues with designing your research that you have to keep in mind is that it is feasible to carry out, given the resources which you have. These resources include your time, funding, any available staff, and basically everything that you need to be able to carry out your work. It can be write a large task to try to estimate all elements of a study. In order to help you break down your tasks into individual elements, and to be able to assign a time element to each one, to be able to more accurately estimate the time it will take you to carry out your study, you can use all sorts of project planning tools. One of these is a Gantt chart. We will illustrate the use of a Gantt chart here through planning an RCT, to evaluate the effectiveness of the scared straight programme. But you can use a Gantt chart to plan any sort of research project. You could even use it to plan your dissertations next year!</p>
+<div id="what-is-a-gantt-chart" class="section level4">
+<h4><span class="header-section-number">5.3.2.1</span> What is a Gantt chart?!</h4>
+<p>A Gantt chart, commonly used in project management, is one of the most popular and useful ways of showing activities (tasks or events) displayed against time. On the left of the chart is a list of the activities and along the top is a suitable time scale. Each activity is represented by a bar; the position and length of the bar reflects the start date, duration and end date of the activity. This allows you to see at a glance:</p>
+<ul>
+<li>What the various activities are</li>
+<li>When each activity begins and ends</li>
+<li>How long each activity is scheduled to last</li>
+<li>Where activities overlap with other activities, and by how much</li>
+<li>The start and end date of the whole project</li>
+</ul>
+<p>To summarize, a Gantt chart shows you what has to be done (the activities) and when (the schedule). It looks like this:</p>
+<p><img src="https://d2myx53yhj7u4b.cloudfront.net/sites/default/files/2excel-gantt-chart-temp1.jpg" /></p>
+<p>In order to be able to build a Gantt chart, you need to know the following about your project:</p>
+<ul>
+<li>The tasks required to carry it out</li>
+<li>The length of time available for the whole project</li>
+<li>Approximate start and finish dates for the individual tasks</li>
+</ul>
+<p>Gantt charts can help you make sure that your project is feasible in the time you have. It can also be a way for you to think about all the tasks that are involved with your project. The goal is for you to identify overarching tasks (eg “data collection”) and be able to sub-divide into the individual elements that make up that task (eg “identify population”, “plan sampling strategy”, “recruit sample”, “deploy survey”, “collect completed surveys”, “input data into excel”). Once you consider each element required for you to complete a particular part of your project, you can start thinking about how long each will take, and how feasible it is within your given set of resources (including your time).</p>
+<p>So how is this helpful in research design? Well let’s consider the example of designing an RCT to evaluate Scared Straight. In order to be able to carry out this RCT, we need to be able to grab a basic outline for one, and turn it into a Gantt chart. Then we can assess how long this will take, what resources we will need, and whether or not this would be feasible for us to carry out.</p>
+<p>Let’s start with the basic outline</p>
+</div>
+</div>
+<div id="activity-1-research-planning-with-gantt-charts-design-an-rtc-example" class="section level3">
+<h3><span class="header-section-number">5.3.3</span> Activity 1: Research Planning with Gantt Charts: Design an RTC example</h3>
+<p>The basic outline of the design of a randomised controlled trial will vary from trial to trial. It depends on many many factors. The rough outline for all research designs will follow something like this:</p>
+<ul>
+<li>Planning and conceptualisation</li>
+<li>Operationalisation and data collection</li>
+<li>Data analysis</li>
+<li>Writing up of results</li>
+</ul>
+<p>This is not necessarily always a linear process. It can be that after data analysis you return for more data collection, or even go back to the conceptualisation stage.
+But as I mentioned above, the aim of the Gantt chart is to break down these tasks into the smallest possible components. Why is this?</p>
+<p>Well let’s try to build a Gantt chart with just these elements first to illustrate. As I said you need to know the approximate duration for your project, the tasks, and how long they will take.</p>
+<p>Let’s say that we have 1.5 years to carry out our RCT for Scared Straight. This is our approximate duration. We also have our list of tasks, up there. But how long will each of these take? How long should you budget for Planning and conceptualisation? What about for Operationalisation and data collection or the Data analysis? Take a moment to think about this.</p>
+<p>Was it difficult to estimate? Why would you think that is? Do you think it would be easier if you had more experience with research? Well probably not by much. Each research project comes with its own complexity and nuance, and to estimate how long something as vague as “data analysis” will take, would be an incredible tough task even for the most seasoned researcher. Instead, the way to be able to better guestimate the length for tasks is to break them into their components, which can give you a better indicator of how long things will take.</p>
+<p><span style="color:#d95f02">
+Let’s try this for the Scared Straight RCT.</p>
+<p>Let’s start with our main overarching categories for above, but break each one down into its components. Something like this:</p>
+<ul>
+<li>Planning and conceptualisation
+<ul>
+<li>Background/review of published literature</li>
+<li>Formulation of hypotheses</li>
+<li>Set the objectives of the trial</li>
+<li>Development of a comprehensive study protocol</li>
+<li>Ethical considerations</li>
+</ul></li>
+<li>Operationalisation and data collection
+<ul>
+<li>Sample size calculations</li>
+<li>Define reference population</li>
+<li>Define way variables will be measured</li>
+<li>Choose comparison treatment (what happens to control group)</li>
+<li>Selection of intervention and control groups, including source, inclusion and exclusion criteria, and methods of recruitment</li>
+<li>Informed consent procedures</li>
+<li>Collection of baseline measurements, including all variables considered or known to affect the outcome(s) of interest</li>
+<li>Random allocation of study participants to treatment groups (standard or placebo vs. new)</li>
+<li>Follow-up of all treatment groups, with assessment of outcomes continuously or intermittently</li>
+</ul></li>
+<li>Data analysis
+<ul>
+<li>Descriptive analysis</li>
+<li>Comparison of treatment groups</li>
+</ul></li>
+<li>Writing up of results
+<ul>
+<li>Interpretation (assess the strength of effect, alternative explanations such as sampling variation, bias)</li>
+<li>First draft</li>
+<li>Get feedback &amp; make changes</li>
+<li>Final write-up of results</li>
+</ul></li>
+</ul>
+<p>So how do you come up with individual sub-elements? Well there is no simple answer to this, the way that you come up with these categories is by thinking about what it is that you need to do in each stage to achieve your goals. What do you need to do to collect your data? What are all the steps, all the actions that you need to take, to reach your end goal of a set of data that you can analyse in order to be able to talk about the difference between your control and treatment groups? What do you need to do when you write up? What are the stages of writing up? How long do each one of these normally take you? There are some people who can write a rough 1st draft quickly, and send it to a colleague for comments and feedback. Others need to be very comfortable with their draft first, and spend more time on it, before they can show someone else to receive comments. Because of this, not only does each project have its nuances and differences when building a Gantt chart, but each person will as well.</p>
+<p>This exercise is aimed to help you get thinking about projects in this way, but also to illustrate, once you have the above information for a project, how you can draw it up into a visual timeline that can help you plan your research project, and make sure that it runs on time. So let’s build a Gantt chart for our RCT of the Scared Straight programme, using the tasks above to guide us.</p>
+<p>First you will have to open a new Excel spreadsheet. Just a blank one. We’ll be building our Gantt chart from scratch.</p>
+<p>So once you have your blank Excel sheet, create 4 columns:</p>
+<ul>
+<li>Task</li>
+<li>Start date</li>
+<li>End date</li>
+<li>Duration</li>
+</ul>
+<p>Something like this:</p>
+<p><img src="imgs/gantt_headers.png" /></p>
+<!--
+The *tasks* column refers to the overarching, large categories. You need to include these, because you can use these to colour-code the tasks in your Gantt chart. These are your main overall steps, that you've broken down into smaller steps, so they're an easy way to keep a rough eye on where you are spending a lot of time in your project. 
+-->
+<p>The <em>Task</em> column refers to each individual activity, that are the detailed steps that we have to take, in order to be able to complete our project. These are all the activities that we’ve broken the tasks into. If we were considering this Gantt chart table as a data set, you can now begin to guess, that our unit of analysis is the <em>task</em>. Each one activity we have to do is one row. These include the bigger group that each sub-task it belongs to as well as the sub tasks themselves. This will be meaningful later on.</p>
+<p>In the other columns, <em>start date</em>, <em>end date</em>, and <em>duration</em> we will record the temporal information around each task - that is - when will it start? when will it end? how long will it take?</p>
+<p>So as a first step, let’s populate the <em>task</em> column. You can copy and paste from the list above. Should look something like this:</p>
+<p><img src="imgs/task_subtask_pop.png" /></p>
+<p>Great, now how will we populate the start date and end date columns. This is where the Gantt chart is very much a tool for you to plan your research project. How can we know how long will something take? The short answer is: we can’t. We don’t have a crystal ball. But we can <em>guess</em>. We can start with the project start date (or if you work better counting backwards, you can start with the project end date if it’s a known hard deadline), and then just try to estimate how long each phase will take to complete, and when we can start the next.</p>
+<p>Tasks can run simultaneously. You don’t always have to wait for one task to finish before you start the next. Sometimes one task needs to finish for the next to start, for example: you cannot begin data analysis until you have finished data collection. On the other hand, you can (and should) begin writing while still continuing your data analysis. So you can have temporal overlap - or be working on multiple projects at once.</p>
+<p>Now let’s say that we are starting our Scared Straight evaluation quite soon, we have a start date of the 1st of November. Using some very rough guessing, this is the relative timeline that I’ve come up with:</p>
+<ul>
+<li>Background/review of published literature: 01/11/17 to 01/12/17</li>
+<li>Formulation of hypotheses 01/12/17 07/12/17</li>
+<li>Set the objectives of the trial 02/12/17 08/12/17</li>
+<li>Development of a comprehensive study protocol 08/12/17 to 18/12/17</li>
+<li>Ethical considerations 08/12/17 to 18/12/17</li>
+<li>Sample size calculations 18/12/17 to 19/12/17</li>
+<li>Define reference population 18/12/17 to 28/12/17</li>
+<li>Define way variables will be measured 28/12/17 to 07/01/18</li>
+<li>Choose comparison treatment (what happens to control group) 01/01/18 to 07/01/18</li>
+<li>Selection of intervention and control groups, including source, inclusion and exclusion criteria, and methods of recruitment 18/01/18 to 21/01/18</li>
+<li>Informed consent procedures 22/01/18 to 23/01/18</li>
+<li>Collection of baseline measurements, including all variables considered or known to affect the outcome(s) of interest 23/01/18 to 23/01/18</li>
+<li>Random allocation of study participants to treatment groups (standard or placebo vs. new) 21/01/18 to 23/01/18</li>
+<li>Follow-up of all treatment groups, with assessment of outcomes continuously or intermittently 24/01/18 to 23/01/19</li>
+<li>Descriptive analysis 24/01/19 to 24/02/19</li>
+<li>Comparison of treatment groups 30/01/19 to 24/02/19</li>
+<li>Interpretation (assess the strength of effect, alternative explanations such as sampling variation, bias) 20/02/19 to 20/03/19</li>
+<li>First draft 20/03/19 to 25/03/19</li>
+<li>Get feedback &amp; make changes 25/03/19 to 05/04/19</li>
+<li>Final write-up of results 05/04/19 to 30/04/19</li>
+</ul>
+<p>You should be able to copy this over into Excel if you roughly agree with these time scales. If not, you can do this yourself, and come up with how long you think each stage would take you.</p>
+<p>Notice that I did not give a start or end time to the <em>overarching categories</em> of planning and conceptualisation
+, operationalisation and data collection
+, data analysis
+, and writing up of results? We mentioned earlier, that these categories are so vague, that it becomes a very difficult task indeed to be able to guess their duration. Instead we break them down into smaller tasks, and calculate those. Well to get the start and end date for the overarching tasks, you just need the first start date for the first task, and the last end date for the last task that belongs to this overarching group. How can we find this? Well we can use the <code>=MIN()</code> and the <code>=MAX()</code> functions in Excel.</p>
+<p><img src="imgs/%20gantt_min.png" /></p>
+<p><img src="imgs/gantt_max.png" /></p>
+<p>Make sure that you only select the sub-tasks that belong to each individual overarching task. So for example, for Planning and conceptualisation, only select up until “Ethical considerations” and <em>do not</em> also include the “Operationalisation and data collection” stage!</p>
+<p>Once you have all your start and end dates, your table should look something like this:</p>
+<p><img src="imgs/gantt_start_end.png" /></p>
+<p>You might find that Excel changes the formatting of your dates in some of the cells, like mine did on the first 8 rows. You can see in those, the date is formatted as 01-Dec for example, whereas later it is formatted the way we entered it, such as 22/01/19. This is because Excel <em>knows</em> that the value you are entering here is a <em>date</em>. It doesn’t just think you’re entering some weird words, it deduces that if what you are entering follows this rough format of 2 digits/ 2 digits / 2 digits, then it’s likely to be a date. This is really handy, because you can do calculations on these cells now, that you would not be able to do, if Excel just thought that these were weird words. We will take advantage of this to calculate the duration column here. Do you really want to count out how many days are between the start and end date? Well in some cases it might be easy. It could be that you thought, “well I will start my random allocation of study participants into treatment and control groups on the 21st of January, and I think it will take about 2 days to do this, so I will end on the 23rd of January”, but often you will have deadlines, that you need to work towards, or you might want to double check that you are counting correctly. In any case, to get the last, <em>duration</em> column, you can simply use an equation, where you subtract the start date from the end date, and you get the number of days that are inbetween. Isn’t that neat? You can simply apply some simple maths notations to your date data in Excel, and you get meaningful results, such as the number of days that exist between two dates! We will play around more with dates and such in week 7 of this course, so you can see some more date-related tricks then!</p>
+<p>Right, back to our dates, so remember, all formulas start with the <code>=</code> equation, and here all we are doing is subtracting the value of one cell (start date) from another cell (end date). Like so:</p>
+<p><img src="imgs/calc_dur.png" /></p>
+<p>Copy and paste the formatting all the way down, and ta-daa you have your column for the duration of each task:</p>
+<p><img src="imgs/all_cols_gantt.png" /></p>
+<p>Now you have all the columns you need, to be able to build your Gantt chart.</p>
+<p>To do this, click on an empty cell, anywhere <em>outside</em> your table, and select Charts &gt; Stacked Bar Chart:</p>
+<p><img src="imgs/gantt_select_bar.png" /></p>
+<p>An empty chart will appear like so:</p>
+<p><img src="imgs/gantt_empty_chart.png" /></p>
+<p>Right-click anywhere in the empty chart space, and choose the option “Select Data…”:</p>
+<p><img src="imgs/gantt_select_data.png" /></p>
+<p>This will open a dialogue box. This dialogue box might look different if you’re on PC or on Mac (and even on Mac your version will be newer than mine, so might look slightly different) but the basic commands should be the same. If you cannot find anything, let us know!</p>
+<p>So on this popup window, select the option to <em>Add</em> data.</p>
+<p>On PC:</p>
+<p><img src="https://www.officetimeline.com/Content/images/articles/gantt-chart/3_Select-Data-Add.png" /></p>
+<p>On Mac:</p>
+<p><img src="imgs/mac_add_data.png" /></p>
+<p>When you select this option, you have to supply 2 values to this series. First you have to tell it the name. This is simply the cell that contains your column header. Then you have to tell it the values. These are all your start dates. You can select by clicking in the blank box for each value, and then clicking/ drag dropping on the spreadsheet. Like so:</p>
+<p><img src="imgs/gantt_select_data_1.gif" /></p>
+<p>When you’re done, click “OK”.</p>
+<p>On a PC, when you click the “Add” button it will open a new window, but again, all you have to enter in that new window is the name and the values, the exact same way. Here is an illustrative example of what this will look like on PC:</p>
+<p><img src="https://www.officetimeline.com/Content/images/articles/gantt-chart/3_Select-Data-Start-Date-Added.png" /></p>
+<p>Now click OK, and you will see some bars appear, reaching to each start date that we have. Now we have to add the <em>duration</em>. To do this, just repeat the steps, for adding a series, but with the duration column this time.</p>
+<p><img src="imgs/gantt_select_data_2.gif" /></p>
+<p>The part that appears in red above represents the duration of each task. The blue part now is actually redundant. We just needed it there, so that the red part (the actual task) begins at the correct point. So just like we did when making that box plot a few weeks ago, we clear the fill, we clear the line, and in case there is a shadow there, we clear that as well, so that we don’t confuse ourselves by having that blue part there.</p>
+<p>Just to show something new, I will show you a different way of going about this here, buy you can just as easily follow the same steps you took when making things invisible in your boxplot.</p>
+<p>But the other things you can do is to click on the blue section of the graph to select it:</p>
+<p><img src="imgs/gantt_select_blue.png" /></p>
+<p>And then right click and choose ‘Format Data Series…’:</p>
+<p><img src="imgs/gantt_format.png" /></p>
+<p>Then on the side tabs, you can go through and select fill, and line, and even shadow, and make sure that they are all set to no fill/ no line/ no shadow:</p>
+<p><img src="imgs/gant_no_fill.png" /></p>
+<p><img src="imgs/gantt_no_line.png" /></p>
+<p><img src="imgs/gantt_no_snadow.png" /></p>
+<p>Then click OK, and you will see only the red parts of your graph, which represent each task and the duration it lasts:</p>
+<p><img src="imgs/gantt_blue_cleared.png" /></p>
+<p>But what is each task? I just see numbers? Well we need to add the labels, from the task column of your data, to give it some sort of meaning. To do this, once again right click anywhere on your chart area, and select “Select Data…”, and this time, for where it asks for axis labels, click in that box, and then highlight the column with the tasks in it:</p>
+<p><img src="imgs/axis_labels_gantt.png" /></p>
+<p>On a PC you will have to click the “Edit” button under the “Horizontal category axis labels” box. This will look something like this:</p>
+<p><img src="https://www.officetimeline.com/Content/images/articles/gantt-chart/5_Select-Data-Source.png" /></p>
+<p>When you then select the column with the tasks in it and click OK, it should label your tasks properly now:</p>
+<p><img src="imgs/gantt_labelled.png" /></p>
+<p>Now your Gantt chart is basically ready. It can be that yours looks sort of in a different order? If this is the case, go back to your data, and sort your data on the “End date” column. If you do this, then you will have your fist tasks at your top, and the last tasks at the bottom. This should help you plan your tasks. You can take some time to edit your Gantt chart formatting to make it look the way that you would find it the most helpful. For example, here’s mine:</p>
+<p><img src="imgs/final_gantt.png" /></p>
+<p></span></p>
+<p>So what’s going to take the longest? As you can see there, the longest duration is for the operationalisation and data collection tab. It’s an overarching category, but there are not any sub-tasks associated with it for the majority of its duration. Well, the thing is, even though we are not actively collecting data in that longer period, we are still in the data collection phase. Can you think why?</p>
+<p>Well we want to know if scared straight works on reducing offending right? So for this, we need to recruit our people, assign them into a control and a treatment group, and then <em>wait for a pre-determined amount of time</em> before we can collect the follow-up data - or the <em>after</em> data.</p>
+<p>Remember back ton conceptualisation. How do we conceptualise reoffending? Well in this case, we conceptualise it as if the person has offended in the 12 months following taking part in the scared straight programme. Because of this, we have to wait 12 months until we collect our “after” data.</p>
+<p>Planning is a very important part of the research project, and the research design which you pick will greatly affect your research plan. Think about if we considered instead a one-time survey? We could ask people - “have you ever taken part in a scared straight programme?” And then ask them “have you offended in the last 12 months?”. But this is a <strong>cross-sectional</strong> study design, in which we only take measurement at one point in time. This is a very different study design, and the advantages of an RCT over a cross-sectional survey in terms of determining the effect of an intervention are widely discussed in your readings. However you can also imagine how it would be an easier study to carry out, right? The data collection part of your Gantt chart there would reduce significantly, from over 12 months, to something much shorter, just the length of time it takes to conduct one survey. Maybe a month.</p>
+<p>Hopefully you are beginning to get an idea into the nuances of finding your optimal research design. To a certain extent this is dictated by your research question. If you want to know whether scared straight works or not, and you want to design a study to assess this, an RCT is your ideal way forward. However your hands may be tied. If you wanted to do this as part of an undergraduate dissertation project for example, you cannot just wait 12 months to follow up people’s offending, as your deadlines will have all passed by then.</p>
+<p>The Gantt chart is a handy tool for research planning, and considering all the tasks that you need to carry out, as dictated by your research design. We illustrated here with the example of planning an RCT. To get the steps for these we can consult the reading, we can look at previous studies, or we can browse around for outlines others have used. For example, the RCT one is based on <a href="https://www.healthknowledge.org.uk/e-learning/epidemiology/practitioners/introduction-study-design-is-rct">this proposed outline</a> for RCTs. Your readings around each research design will give you an indication of what tasks are involved with each one, and you should be able to produce such an outline for any kind of project. It is a good way to keep yourself on track, to make sure that you do not take on too many tasks, and also to show your supervisor/ employer/ person marking your project proposal, in case that is the stream you choose for your dissertation, that you are thinking about feasibility of your tasks.</p>
+<p>Once you have planned your project, you need to carry out each task. Something like a literature review you will be familiar with from your work on other modules. You have to have a read through the relevant literature, in order to be able to identify whether your research question has already been answered, to look into what other people are researching in your topic area, to consider the approached to conceptualisation and operationalisation that others before you have taken, and to engage with what is currently happening in this topic you’re interested in. This will lead you to your research question, and your hypotheses. Hypotheses are the testable versions of your questions.</p>
+<p>For example if our research question is: does scared straight deter reoffending in young people? your hypothesis would look something like this: those who did not receive scared straight program intervention will offend more than those who did.</p>
+<p>Once you have this you’re almost good to go, except you will have to make sure that you are addressing any ethical considerations with the research. We’ll return to this a bit later, in its own section.</p>
+<p>But fast forward to the point where you have your sample. Let’s say you’ve carried out all your planning, all your calculations, and you now have a set of people who you want to assign to your control and your treatment groups. The distinguishing feature of an RCT is the random assignment of people in your sample to either group. How does this work? Well the next section will explore just this.</p>
+</div>
+<div id="activity-2-random-assignment-into-control-and-treatment" class="section level3">
+<h3><span class="header-section-number">5.3.4</span> Activity 2: Random assignment into control and treatment</h3>
+<p>So how does random assignment work? Well we could achieve this by going old-school, and writing everyone’s name on a piece of paper, and drawing the names out of a hat. But here we will use Excel’s ability to programmatically assign people into treatment or control. You are all Excel pros by now, with your formulas, and your lookups and pivot tables. So might as well hone these skills some more.</p>
+<div class="figure">
+<img src="http://resources.infosecinstitute.com/wp-content/uploads/121411_1611_SecureRando1.png" alt="http://dilbert.com/strip/2001-10-25" />
+<p class="caption"><a href="http://dilbert.com/strip/2001-10-25" class="uri">http://dilbert.com/strip/2001-10-25</a></p>
+</div>
+<p>So to have random assignment to a group, each member of your sample has to have the same probability of being selected for each group. Let’s say we want to assign two groups. We want to assign people to a <strong>control group</strong> and a <strong>treatment group</strong>. Remember that the control and the treatment must be must be coming from the same sample, so that they are similar in all characteristics <em>except</em> in the particular thing you are interested in finding out the effect of. By random assignment, each person has the same probability of being in the treatment or the control group, and so there is no chance for systematic bias, as there would be for example if you were asking people to <em>self-select</em> into treatment or control. If people were given the chance to volunteer (<em>self-select</em>) it would leave open a possibility that people with certain traits are more likely to volunteer, and there might be some systematic differences between your two groups.</p>
+<p><span style="color:#d95f02">
+So let’s say we have our sample of people who will be assigned either to the treatment group, of recieving the scared straigh treatment, or the control group, who do not have to go through this treatment. Well let’s say we have our class here. We’ve got a total of 58 students enrolled in the class. Go ahead and download this list, from Blackboard. You can find it under week 5 &gt; data &gt; student.xlsx</p>
+<p>Once you have downloaded the data, open it with excel, and have a look at it. You can see that we have 58 rows, one for each student. You can also see that we have 3 variables: ID, Name, and Program.</p>
+<p>To assign people randomly to a group, we can use Excel’s <code>=RAND()</code> function. The Excel RAND function returns a random number between 0 and 1. For example, <code>=RAND()</code> will generate a number like 0.422245717. RAND recalculates when a worksheet is opened or changed. This will become important later.</p>
+<p>So give it a go. Create a new column called “random number” on our data. Like so:</p>
+<p><img src="imgs/rand_col.png" /></p>
+<p>Now simply type <code>=RAND()</code> into the first cell and press Enter:</p>
+<p><img src="imgs/type_rand.png" /></p>
+<p>When you hit enter, the formula will generate a random number, between 0 and 1. Something like this:</p>
+<p><img src="imgs/first_rand.png" /></p>
+<p>Did you get a different number for Julia there, than I did? Chances are, you did. This <code>RAND()</code> function generates a random number each time used. If I did this again (and try this on your data), it will give a different number. Try. Go into the cell, where you’ve typed =RAND(), and instead of exiting out of the formula with the tick mark next to the formula bar, just press enter again. You should, now, have another random number appear. Now copy and paste the formula (and make sure its the formula you’re copying, and not the value) to every single student in our sample. You will end up with a whole range of values, between 0 and 1, randomly assigned to everyone. Something like this:</p>
+<p><img src="imgs/rand_nums.png" /></p>
+<p>Now we can use these values, which have been assigned <em>randomly</em> to assign students to a control or treatment groups. Remember last week when we were doing some re-coding? Remember when we were recoding the numeric variable into a categorical one? And I left a little bonus question at the end? Well the bonus question was asking essentially, what value can you use, as a cut-off point, to make sure that 50% of your data get put into one group, and 50% of your data into the other group? This question should already be familir to you, but let me re-phrase: what measure of central tendency cuts your data right in half based on considering the values on a numeric variable?</p>
+<p>Are you thinking <strong>median</strong>??</p>
+<p><img src="https://media.giphy.com/media/YcMs3OGd89Pxu/giphy.gif" /></p>
+<p>Nice work! Indeed the median is the value that divides our data right smack in half. Now are you starting to realise where I’m going with this? Basically, if you want to assign each student, based on this randomly assigned score, to either control or treatment groups, and we want to make sure that equal amounts of students go to either group, then what we can do is use the <code>IF()</code> statements we were using last week to re-code data!</p>
+<p>How? Well remember what we did to assign people into tall or short categorical variable values, based on the numeric value for height? We decided that if a person is taller than average, they will be labelled “Tall” and “Short” if they are not. So what are the elements of our statement? We need to check <em>if</em> the person height is <em>greater than</em> the <em>average height</em> and if it is, type “Tall”, else type “Short”. Remember now?</p>
+<p>We can apply this again here. So to recap, we know that the <code>IF()</code> function takes 3 arguments. 1st the logical statement, that has to be either true or false. Then the other 2 values that the <code>IF()</code> function needs is what to do if the statement is true, and what to do if the statement is false.
+So altogether, your function will look like this:</p>
+<p><code>=IF(condition, do if true, do if false)</code></p>
+<p>What is our condition here. Well we are using this time the median to divide our randomly assigned numbers into 2. So we want to assign people into treatment or control, if they are above or below the median in their random number, that was allocated to them randomly. This ensures the <em>random</em> element of the randomized control trial, and ensures that people have equal probability of ending up in either group.</p>
+<p>Let’s say anyone with a random number above the median will be in the treatment group, and anyone with a random number below the median will be in the control group. What is our condition in this case? What is it that we are testing each number against?</p>
+<p>Well in this case we are testing people against whether their random number is greater than the median of all the random numbers. If their random number is greater than the median of all random numbers, then they are part of the treatment group (what happens if condition is true). On the other hand, if their random number is <strong>not</strong> greater than the median of all the random numbers, then they are assigned to the control group (what happens if condition is false). If any of this is unclear for you at the moment, then please raise your hand, and make one of us explain this.</p>
+<p>Translated into Excel language, our formula is:</p>
+<p><code>=IF(random number value &gt; median(all random numbers), &quot;Treatment&quot;, &quot;Control&quot;)</code></p>
+<p>For example, for our first person in the list there, the formula will look like:</p>
+<p><code>=IF(D2 &gt; MEDIAN(D:D), &quot;Treatment&quot;, &quot;Control&quot;)</code></p>
+<p>As such :</p>
+<p><img src="imgs/first_rand_assig.png" /></p>
+<p>Hit Enter, and then copy the formatting all the way down, so that everyone in the class has been assigned to the control and treatment groups.</p>
+<p>You should have something like this:</p>
+<p><img src="imgs/students_assigned.png" /></p>
+<p>Don’t worry if you don’t get the same values, as I said this is <em>random</em> and so you should not get consistently the same answers. In fact you should get different ones to your friends next to you as well.</p>
+<p>One way that you can sense check your results is to have a look at your treatment and control groups. Let’s see how many students we have in each. You can use a pivot table to do this, and create a <em>univariate</em> <em>frequency table</em> to look at this new “Group” variable.</p>
+<p>You’ve built enough of these by now that you should be OK making this pivot table on your own, without guidance. If you get stuck on something though, let us know!</p>
+<p>If all goes well, your pivot table should let you know that you have 29 students in your control group, and 29 students in your treatment group:</p>
+<p><img src="imgs/freq_groups.png" /></p>
+<p></span></p>
+<p>So, how did it go? Who’s in your treatment and who’s in your control group? Where did you end up? Find your name in your sample. Are you in the treatment or the control group? What about in the spreadsheet of the person next to you?</p>
+<p>If you were assigned to the treatment group, as treatment <a href="https://www.youtube.com/watch?v=sw1vm_PO8ss">watch this Saturday Night Live skit on Scared Straight</a>. Let’s see what it does for your offending…</p>
+<p>If you were assigned to the control group, you can instead <a href="https://www.youtube.com/watch?v=-T_pjMr7-n0">watch this Saturday Night Live skit on Star Wars auditions</a>.</p>
+<p>Now you’ve been exposed to either the treatment or the control condition. I’ll be in touch in 12 months time to follow up, and find out about your offending behaviour. I’ll report the results back in a paper. Science…!</p>
+<p><img src="https://media.giphy.com/media/l41lI4bYmcsPJX9Go/giphy.gif" /></p>
+</div>
+</div>
+<div id="activity-3-stratified-randomisation" class="section level2">
+<h2><span class="header-section-number">5.4</span> Activity 3: Stratified randomisation</h2>
+<p>Randomization is important because it is almost the only way to assign all the other variables equally except for the factor (A and B) in which we are interested. However, some very important confounding variables can often be assigned unequally to the two groups. This possibility increases when the number of samples is smaller, and we can stratify the variables and assign the two groups equally in this case.</p>
+<p>For example, if the smoking status is very important, what will you do? First, we have our method of randomization that we learned previously. Just to put a name to this, the approach we had followed was <strong>simple randomisation</strong> There are two randomly assigned separate sequences for smokers and non-smokers. Smokers are assigned to the smoker’s sequences, and non-smokers are assigned to the non-smoker’s sequences. Therefore, both smokers and non-smokers groups will be placed equally with the same numbers.</p>
+<p>So we can use ‘simple randomization with/without stratification’. However, if there are multiple stratified variables, it is difficult to place samples in both groups equally with the same numbers. Usually two or fewer stratified variables are recommended.</p>
+<p><span style="color:#d95f02">
+What does that look like? Well let’s illustrate again with assigning you, the class, into control and treatment groups for the scared straight programme. Let’s say that we knew that there was a different effect of Scared Straight possibly on those in BA Criminology and BA Social Sciences programme participants. This means that we’ve identified the <em>program</em> variable to be a <strong>confounding variable</strong>. A confounding variable is an outside influence that changes the effect of a dependent and independent variable. To account for this, we want the same number of BA Crim and BA Social Science students in both groups. Because if we didn’t control for this, it could be that through the random assignment alone, one group would have only BA Crim students, and the other have all the BA Social Science students. Now if we think that program is a <strong>confounding variable</strong>, in other words it’s something that might influence our dependent variable, then we want to account for this, because otherwise, even if we find a difference between the two groups, we’ll be unable to say whether it’s due to the Scared Straigh intervention, or this variable of degree program!</p>
+<p>So how can we make sure that both BA Criminology and BA Social Sciences groups will be placed equally with the same numbers?</p>
+<p>Well to do this, you would go back to your random numbers that we created with the <code>=RAND()</code> function. The important thing here is, that you consider how we assigned people into control/treatment groups. We decided that everyone with a random number above the total group median gets treatment, and everyone below gets control. The total group median was used to divide the total group into two. So what do you think can be done to do this for 2 groups? You guessed it, <em>you have to assign each group based on their own group median!</em>.</p>
+<p>There are two ways of doing this, the long manual hard way, or the easy lazy code way. Let’s start with the code way.</p>
+<p>Just like before, we use an IF statement. Except this time the condition will change. Instead of saying, if this person’s random score is above the median score for all students, we have to change it to say that “if this person’s random number is above the median <em>for his/her group</em>” then assign him/her to the treatment. Else assign him/her to the group. The important extra addition there is the <em>for his/her group</em>. This means that we are changing what data to calculate the median from.</p>
+<p>We’ve calculated conditional medians before. Do you remember? This was in the third week, when we were carrying out bivariate analysis between a categorical and a numeric variable, and you had to calculate the median for each possible value of the categorical variable.</p>
+<p>Here we apply the exact same logic, but we select for each person to calculate the median for all the others who match his/her value for the program variable.</p>
+<p>The outer IF statement remains exactly the same procedure as it was for the one group, but now you are doing it for the two. This means that only your <em>condition</em> in your “IF” statement changes. Remember our IF statement for assigning based on the total median?</p>
+<p><code>=IF(D2&gt;MEDIAN(D:D), &quot;Treatment&quot;, &quot;Control&quot;)</code></p>
+<p>To change, we change only the condition. The condition here is the <code>D2&gt;MEDIAN(D:D)</code> part. That part assesses whether the person’s random number was above the total median. Well now we need to introduce another IF into this equation, to make sure that we are calculating the appropriate group median, for the program. So if they student’s value for the program variable is BA Crim, we should calculate the crim median, and if it’s BA Soc Sci, then we should calculate the soc sci median. Sounds familiar?</p>
+<p>So if total median is <code>MEDIAN(D:D)</code>, then our conditional mean calculation is…:</p>
+<p><code>MEDIAN(IF(C2=C2:C59, D2:D59))</code></p>
+<p>Where you are saying, if the cell value of C2 (so the program for the person in row 2) is equal to the values in the program column (c column), then include those random numbers in the calculation of the median. So if you just replace the median statement from the initial IF with this, creating a new condition, like so:</p>
+<p><code>D2 &gt; MEDIAN(IF(C2=C2:C59, D2:D59))</code></p>
+<p>And now, all you need to do, is plug in this new condition into your outer IF statement:</p>
+<p><code>=IF(D2 &gt; MEDIAN(IF(C2=C2:C59, D2:D59)), &quot;Treatment&quot;, &quot;Control&quot;)</code></p>
+<p>Don’t forget to add your dollar signs, for copy and pasting the formula:</p>
+<p><code>=IF(D2 &gt; MEDIAN(IF(C2=$C$2:$C$59, $D$2:$D$59)), &quot;Treatment&quot;, &quot;Control&quot;)</code></p>
+<p>And also don’t forget to hit <code>Ctrl</code> + <code>Shift</code> + <code>Enter</code> instead of <em>just</em> Enter.</p>
+<p>You should get, for each person, an evaluation against the median of the particular group that this person belongs to. Again you can check whether or not this has worked, in terms of assigning half the people to treatment and the other half to control, by producing a pivot table to look at the frequency of the stratified group variable, that you’ve now created.</p>
+<p>You might notice that your pivot table shows a no longer even distribution between the groups:</p>
+<p><img src="imgs/uneven_pivot.png" /></p>
+<p>Take a moment to think about why this might be? Maybe consider the number of people in each group. Is this an even or an odd number? In the event that there is an odd number, then when you divide the data into half, since we are splitting people, you will end up with one group larger than the other (by 1 person). Unless someone volunteers to be split in half, and half of them being put in one group, and the other half in the other, this can happen. So what can you do? Well I’ll leave this here as something for you to think about. If you have an idea, or if you have no idea, and want to discuss, raise your hand now, we will come around to talk through it.</p>
+<p>But create a bivariate frequency table though, using your stratified group variable and the program variable:</p>
+<p><img src="imgs/biv_prog_tc.png" /></p>
+<p>You can see that both BA Crim and BA Soc Sci are split about half and half, assigned into treatment and control.</p>
+<p>What about using the other treatment/control grouping, the one where we <strong>did not</strong> stratify by programme?</p>
+<p>You will all have different results here, since it’s randomly assigned, but it’s possible that for some of you BA Soc Sci might be overrepresented in one group versus the other. If this were the case, and we knew (or suspected) that this variable of what program you’re enrolled in had an effect on offending behaviour, then this might influence the validity and generalisability from your study.
+</span></p>
+<div id="freeze" class="section level3">
+<h3><span class="header-section-number">5.4.1</span> Freeze!</h3>
+<p>Now before you’re done here there is one last thing to note. Remember when describing the <code>=RAND()</code> formula, I mentioned that RAND recalculates when a worksheet is opened or changed? Now let’s say we’ve assigned everyone to treatment or control conditions, we make you all watch your appropriate videos, and then, we save our worksheet, to return to it 12 months later. In 12 months, we may not wholly remember who was assigned to which group. You yourself might not remember either. But if upon reopening, the random numbers are changed, then the assigned groups will also change! So since we don’t want this, we want to somehow “freeze the values”.</p>
+<p>You can do this by highlighting the column and going to Formulas &gt; Settings &gt; and selecting “Calculate Manually”.</p>
+<p>On mac:</p>
+<p><img src="imgs/calc_man.png" /></p>
+<p>And on PC:</p>
+<p><embed src="https://www.extendoffice.com/images/stories/doc-excel/keep-random-number/xdoc-keep-random-number-2.png.pagespeed.ic.7AQei1qtqU.webp" /></p>
+<p>This way you will be able to keep track of who was assigned to control and who was assigned to the treatment groups.</p>
+</div>
+</div>
+<div id="a-final-note-on-evidence-meta-analysis" class="section level2">
+<h2><span class="header-section-number">5.5</span> A final note on evidence: Meta Analysis</h2>
+<p>So let’s say we ran our RCT on Straight and we found some sort of effect between those exposed to it and those not. While we make all arrangements possible to ensure the reliability, validity, and generalisability of our study, we are only human, and we can make mistakes. Even if we don’t make mistakes, the way that inferential statistics works, is that one out of every 20 studies will be wrong, just probabilistically. This will make more sense if you move on to study inferential statistics, but basically we, as social scientists, resign ourselves to work with a 95% confidence rate, so on the whole, we are admitting to be wrong about 5% of the time (1 out of 20). So yes, while RCTs are strong, robust evidence for or against a programme, often they can still be disputed.</p>
+<p>This is very well illustrated in reception of actual evaluations of Straight programmes. And there are many. This is mostly because studies either find <strong>no effect</strong> or a <strong>negative effect</strong> of the programme on at-risk youth. This means that it either doesn’t stop their offending, OR MAKES IT WORSE, compared with control groups. Hold on a second?!? Why are we implementing programmes that <em>at best</em> don’t work, and at worst, make offending worse? Well like all businesses, Scared Straight programmes will tug at the credibility of individual studies, and if you are up against something that is making a lot of money for someone, you will need to produce quite robust evidence to bring it down.</p>
+<p>You may have come across something called the “evidence pyramid”. This is a visual representation of the hierarchy of evidence, so basically the credibility of a study in evaluating an intervention, based on its study design. The most robust evidence is at the top, while the least is at the bottom.</p>
+<p>Here it is:</p>
+<p><img src="http://integratedtreatmentservices.co.uk/wp-content/uploads/2014/12/Screen-Shot-2014-12-18-at-10.20.50.png" /></p>
+<p>Well here is <em>a</em> version. There are many versions of this out there. But you can see, for all we’ve been praising RCTs here, there is actually a step above. This is <em>systematic reviews</em>. I’m not going to hugely go into this, but essentially these represent the <em>study of studies</em>. So what a systematic review, and in particular, it’s subset, the <strong>meta-analysis</strong> do, is consider <em>all previous studies</em> and evaluate their results. That way, you can draw conclusions and say that many studies are all finding that Scared Straight has no or negative effect, and it becomes much harder to criticise!</p>
+<p>Meta-analysis is the quantitative analysis of findings from multiple studies. At its core, meta-analysis involves researchers pulling together the results of several studies and making summary, empirical statements about some cause and effect relationship. A classic example of meta-analysis in criminology was performed by Wells and Rankin and concerned the relationship between broken homes and delinquency.</p>
+<p>After observing a series of findings showing that the broken-homes-causes-delinquency hypothesis was inconclusive, Wells and Rankin identified fifty studies that tested this hypothesis. After coding the key characteristics of the studies, such as the population sampled, age range, measures (both independent and dependent) used, the authors found that the average effect of broken homes across the studies was to increase the probability of delinquency by about 10 to 15 percent. Perhaps more importantly, they found that the different methods used across the studies accounted for much of the variation in estimating the effect of broken homes. For example, the effect of broken homes on delinquency tended to be greater in studies using official records rather than self-report surveys.</p>
+<p>Although the research community has not spoken with one voice regarding the usefulness of meta-analysis, one thing is clear: meta-analysis makes the research community aware that it is inappropriate to base conclusions on the findings of one study. It is because of this important lesson that meta-analysis has become a popular technique in criminological and criminal justice research.</p>
+<p>If you are still interested in the outcomes of Scared Straight, you can read a <a href="http://onlinelibrary.wiley.com/doi/10.1002/14651858.CD002796.pub2/full">meta analysis here</a>. TL;DR: It doesn’t work</p>
+</div>
+<div id="longitudinal-data" class="section level2">
+<h2><span class="header-section-number">5.6</span> Longitudinal data</h2>
+<p>There are two commonly used longitudinal research designs,** panel <strong>and </strong>cohort** studies. Both study the same group over a period of time and are generally concerned with assessing within- and between-group change. Panel studies follow the same group or sample over time, while cohort studies examine more specific populations (i.e., cohorts) as they change over time. Panel studies typically interview the same set of people at two or more periods of time.</p>
+<p>For example, the 1970 British Cohort Study (BCS70) follows the lives of more than 17,000 people born in England, Scotland and Wales in a single week of 1970. Over the course of cohort members’ lives, the BCS70 has broadened from a strictly medical focus at birth to collect information on health, physical, educational and social development, and economic circumstances among other factors.</p>
+<p>The Millennium Cohort Study (MCS), which began in 2000, is conducted by the Centre for Longitudinal Studies (CLS). It aims to chart the conditions of social, economic and health advantages and disadvantages facing children born at the start of the 21st century.</p>
+<p>Our Future (formerly the Longitudinal Study of Young People in England (LSYPE2)), is a major longitudinal study of young people that began in 2013. It aims to track a sample of over 13,000 young people from the age of 13/14 annually through to the age of 20 (seven waves).</p>
+<p>These are some examples from the UK Data Service (<a href="https://www.ukdataservice.ac.uk/get-data/key-data/cohort-and-longitudinal-studies">see those and more here</a>)</p>
+<p>The main advantage of longitudinal studies is that you can track change over time, and you meet the temporal criteria for causality. You collect data from people across multiple <strong>waves</strong>. Waves refer to the times of data collection in your data. For example, if you follow a cohort from birth until their 30th birthday, and you take measurements every 10 years, once at point of birth, once at age 10, once at age 20, and finally at age 30, then you will have 4 waves in this longitudinal data about these people you’re following.</p>
+<div id="what-does-longitudinal-data-look-like" class="section level3">
+<h3><span class="header-section-number">5.6.1</span> What does longitudinal data look like?</h3>
+<p>So far we’ve only shown you cross-sectional data. Each row was one observation, each column as one variable, and they were collected at a single point in time. So what do longitudinal data look like?
+A longitudinal study generally yields multiple or “repeated” measurements on each subject. So you will have many, repeated measure, from the same person, or neighbourhood, or whatever it is that you are studying (most likely people though… when you take repeated observations about places it’s more likely to be a time-series designs. Time-series designs typically involve variations of multiple observations of the same group (i.e., person, city, area, etc.) over time or at successive points in time. Typically, they analyze a single variable (such as the crime rate) at successive time periods, and are especially useful for studies of the impact of new laws or social programs. An example of a time-series design would be to examine the burglary rate across the boroughs of Greater Manchester over the last five years. We’ll be dealing with time series in week 7.)</p>
+<p>Okay so what do these data actually look like? Well have a look at the description for the <a href="https://discover.ukdataservice.ac.uk/series/?sn=2000030">Next Steps (formerly the Longitudinal Study of Young People in England (LSYPE1))</a>. Briefly mentioned above, the Next Steps (formerly the Longitudinal Study of Young People in England (LSYPE1)) is a major longitudinal study that follows the lives of around 16,000 people born in 1989-90 in England. The first seven sweeps of the study (2004-2010) were funded and managed by the Department for Education (DfE) and mainly focused on the educational and early labour market experiences of young people.</p>
+<p>The study began in 2004 and included young people in Year 9 who attended state and independent schools in England. Following the initial survey at age 13-14, the cohort members were interviewed every year until 2010. The survey data have also been linked to the National Pupil Database (NPD) records, including cohort members’ individual scores at Key Stage 2, 3 and 4.</p>
+<p>In 2013 the management of Next Steps was transferred to the Centre for Longitudinal Studies (CLS) at the UCL Institute of Education and in 2015 Next Steps was restarted, under the management of CLS, to find out how the lives of the cohort members had turned out at age 25. It maintained the strong focus on education, but the content was broadened to become a more multi-disciplinary research resource.</p>
+<p>There are now two separate studies that began under the LSYPE programme. The second study, Our Future (formerly LSYPE2), began in 2013 and will track a sample of over 13,000 young people from the age of 13/14 annually through to the age of 20 (seven waves).</p>
+<p>There are a lot of interesting variables in there for those interested in young people and delinquent behaviour. There is some data about drug and alcohol, some about offending such as graffiti, vandalism, shoplifting, as well as social control factors such as family relationship, bullying, and so on. If you are interested in the data, you can always have a browse through the <a href="https://discover.ukdataservice.ac.uk/Catalogue/?sn=5545&amp;type=Data%20catalogue&amp;lt">site here</a> and <a href="http://doc.ukdataservice.ac.uk/doc/5545/mrdoc/pdf/5545age_25_survey_questionnaire.pdf">have a read of one of the questionnaires as well</a>.</p>
+<p>In any case, we should get back to our question, what does this data look like. And it looks exactly as you would imagine, it looks like the results of survey questionnaires, completed by people, but over time. If you were to download the next steps data for example, you will end up with a separate file for each wave. But in each wave, you would have <strong>repeat measures</strong> of the same variables, from the same people. So each wave you see the exact same variables, and the exact same people making up the rows of answers, but you know that time has passed.</p>
+<p>The benefit of a longitudinal study is that researchers are able to detect developments or changes in the characteristics of the target population at both the group and the individual level. The key here is that longitudinal studies extend beyond a single moment in time. As a result, they can establish sequences of events. It is generally admitted that causes precede their effects in time. This usually justifies the preference for longitudinal studies over cross-sectional ones, because the former allow the modelling of the dynamic process generating the outcome, while the latter cannot. Supporters of the longitudinal view make two interrelated claims: (i) causal inference requires following the same individuals over time, and (ii) no causal inference can be drawn from cross-sectional data.</p>
+<p>Anyway have a look at a small subset of 3 waves of the data. There are 4 variables in each wave. The first one, “NSID” is the unique identifier for each person. Then there are three variables that contain the answers that each person gave to some questions. * W1canntryYP* is the answer to whether the young person ever tried Cannabis. <em>W1alceverYP</em> is the answer to whether the young person ever had proper alcoholic drink, and <em>W1cignowYP</em> is the answer to whether the young person ever smoked cigarettes.</p>
+<p>So you can download these three waves of young people being surveyed from blackboard. You can find them labelled wave_1.xlsx, wave_2.xlsx, and wave_3.xlsx in the data folder for this week on BB. Download all three onto your computer, and open them up in excel.</p>
+</div>
+<div id="activity-4-linking-data" class="section level3">
+<h3><span class="header-section-number">5.6.2</span> Activity 4: Linking data</h3>
+<p>So hopefully if I’ve taught you anything about the structure of data, is that you have <em>all</em> your observations in your rows and <em>all</em> your variables in your columns. So if you want to be able to look at changes in people’s responses over time, for example, you will need to be able to link these data sets together into one spreadsheet.</p>
+<p>So how do we do this? Well what you can do is to link one data set with another. Data linking is used to bring together information from different sources in order to create a new, richer dataset. This involves identifying and combining information from corresponding records on each of the different source datasets. The records in the resulting linked dataset contain some data from each of the source datasets. Most linking techniques combine records from different datasets if they refer to the same entity. (An entity may be a person, organisation, household or even a geographic region.)</p>
+<p>You can merge (combine) rows from one table into another just by pasting them in the first empty cells below the target table—the table grows in size to include the new rows. And if the rows in both tables match up, you can merge columns from one table with another by pasting them in the first empty cells to the right of the table—again, the table grows, this time to include the new columns.</p>
+<p>Merging rows is pretty straightforward, but merging columns can be tricky if the rows of one table don’t always line up with the rows in the other table. By using <code>VLOOKUP()</code>, you can avoid some of the alignment problems.</p>
+<p>To merge tables, you can use the VLOOKUP function to lookup and retrieve data from one table to the other. To use <code>VLOOKUP()</code> this way, both tables must share a common id or key.</p>
+<p>This is a standard “exact match” <code>VLOOKUP()</code> formula (remember that means you have to set the last parameter to ‘FALSE’ for an exact match).</p>
+<p>So first things first, open up all three waves in three separate excel spreadsheets. Have a look at them all. You can see the first one has the following columns:</p>
+<ul>
+<li><em>NSID</em>: the unique ID</li>
+<li><em>W1canntryYP</em>: ever tried cannabis<br />
+</li>
+<li><em>W1cignowYP</em>: ever smoked</li>
+<li><em>W1alceverYP</em>: ever had alcohol</li>
+</ul>
+<p>Then you can have a look at wave 2. You will see in wave two that the unique ID column stays the same (<em>NSID</em>: the unique ID), but the other three columns are named slightly different:</p>
+<ul>
+<li><em>W2canntryYP</em>: ever tried cannabis<br />
+</li>
+<li><em>W2cignowYP</em>: ever smoked</li>
+<li><em>W2alceverYP</em>: ever had alcohol</li>
+</ul>
+<p>It might be a subtle difference, but the first two characters in the variable name actually refer to the wave in which this variable was collected. This is very handy, because if you imagine that they were just called “canntryYP” and “cignowYP” and “alceverYP”, once they would be joined together into one data set, then how would you be able to tell which one came from which wave? You could rename them yourself (which is what you would do in this case) but it’s very nice that these data were already collected with this joining in mind, and so the variable naming was addressed for us in this way.</p>
+<p>If you’re still curious, have a look at wave 3, where you will see the familiar NSID column, as well as these three:</p>
+<ul>
+<li><em>W3canntryYP</em>: ever tried cannabis<br />
+</li>
+<li><em>W3cignowYP</em>: ever smoked</li>
+<li><em>W3alceverYP</em>: ever had alcohol</li>
+</ul>
+<p>So why doesn’t the NSID column change? Well this is the same value for all participants all throughout. This is so that we can identify each one. Due to ethics and the data protection act, we cannot share data that contains personally identifiable information, especially in cases where it refers to some pretty sensitive stuff, such as someone’s drug use, alcohol use, or some delinquent behaviour. Instead each person is given a unique code. This code can be used to track them, over time, without identifying them personally.</p>
+<p><img src="imgs/fn2187.png" /></p>
+<p>You need a unique identifier to be present for each row in all the data sets that you wish to join. This is how Excel knows what values belong to what row! What you are doing is matching each value from one table to the next, using this unique identified column, that exists in both tables. For example, let’s say we have two data sets from some people in Hawkins, Indiana. In one data set we collected information about their age. In another one, we collected information about their hair colour. If we collected some information that is unique to each observation, and this is the <em>same</em> in both sets of data, for example their names, then we can link them up, based on this information. Something like this:</p>
+<p><img src="imgs/merge_logic_1.png" /></p>
+<p>And by doing so, we produce a final table that contains all values, lined up <em>correctly</em> for each individual observation, like this:</p>
+<p><img src="imgs/merge_logic_2.png" /></p>
+<p>This is all we are doing, when merging tables, is we are making use that we line up the correct value for all the variables, for all our observations.</p>
+<p>So let’s do this with our young people. Let’s say we want to look at the extent of cannabis, alcohol, and cigarette trying in each wave of our cohort, as they age. To do this, we need to link all the waves in to one data set. We have established that the variable <em>NSID</em> is an anonymous identifier, that is unique to each person, so we can use that to link their answers in each wave.</p>
+<p>So remember the parameters you need to pass to the <code>VLOOKUP()</code> function, from last week? You need to tell it:</p>
+<ul>
+<li>first <em>what value to match</em>,</li>
+<li>then <em>where the lookup table is</em>,</li>
+<li>then <em>which column of this table you want</em>,</li>
+<li>and finally <em>whether or not you want exact match</em>.</li>
+</ul>
+<p>In this case, we want to match the unique identifier, found for each person in the <em>NSID</em> column. This is the value to match. Then our lookup table is now <em>the other data set</em> which we want to link. The column will be the matching column to what we are copying over, and the exact match parameter we will set to “FALSE” (meaning we <em>do</em> want exact matches only).</p>
+<p><span style="color:#d95f02"></p>
+<p>So what does this look like in practice?</p>
+<p>Well let’s open up our wave 1 (well technically you have them all open, so just bring wave 1 to the front). Now we don’t want to overwrite this file, so save it as something new. Do this by selecting File &gt; Save As… and choosing where to save it, and giving it a name. Here I will save it in the same folder where I’ve saved the individual waves data, and call it “next_stepsw1-3.xlsx” as it will contain waves one through three of the next steps longitudinal survey:</p>
+<p><img src="imgs/rename.png" /></p>
+<p>Now that you have this as a new file (which already contains the data from wave 1), you can get ready to merge in the data from waves 2 and 3. First, lets create column headers for the variables we will copy over. You can do this by simply copying over the column headers from the other data sets (waves 2 and 3). Like so:</p>
+<p><img src="imgs/merge_copy_headers.png" /></p>
+<p>Notice that I’m not copying over the NSID column. This is because it would be exactly the same. It’s enough to have this once, there is no need for three replications of the same exact column. If you are participant NS23533L, you will always have this value for the NSID column. This is used to match all your answers, and to copy over into this sheet, but it is <em>not</em> itself copied over. If this is confusing as to why, just raise your hand now, and we will come around to talk through it.</p>
+<p>Right so now we have all our column headers, let’s copy over the column contents. When you type in the <code>VLOOKUP()</code> function into Excel, it gives you a handy reminder of all the elements you need to complete:</p>
+<p><img src="imgs/vlookup_hints.png" /></p>
+<ul>
+<li><em>lookup value</em> - what value to match,</li>
+<li><em>table array</em> - where the lookup table is,</li>
+<li><em>col index num</em> - which column of this table you want,</li>
+<li>and finally <em>range lookup</em> - whether or not you want exact match.</li>
+</ul>
+<p>Our lookup value will be the NSID for this particular person. Here we find this in cell A2:</p>
+<p><img src="imgs/lookup_val_nsid.png" /></p>
+<p>Now the table array is the lookup table. Where can we find the values for “W2canntryYP”? Well this is in the data set for wave 2. We’ve grabbed data from other sheets before, but never from a totally different file…! However the process is exactly the same. All you need to do, is find the data set, and select the range that represents your lookup table, which is all the data in this sheet!</p>
+<p>Something like this:</p>
+<p><img src="imgs/select_from_w2.gif" /></p>
+<p>You can see that by going to the sheet and highlighting the appropriate columns, your formula bar there, in your original file, is populated with the code to refer to those columns in that file! Just like we did when grabbing data from a different sheet within the same file.</p>
+<p>Remember the reference of a cell is <code>column letter + row number</code>? The reference for a cell from a sheet is <code>sheet name + ! + column letter + row number</code>? Well the reference for a cell from a sheet on an entirely different file is <code>[ + file name + ] + sheet name + ! + column letter + row number</code>.</p>
+<p>So you can see that by clicking and highlighting, excel has automatically populated with the reference, which in my case is:</p>
+<p><code>[wave_2.xlsx]wave_2.csv!$A:$D</code> - which means I want from wave_2.xlsx file, the wave_2.csv sheet, columns A through D (static, because I’ve included the dollar signs there).</p>
+<p>If any of this is unclear flag us down to talk through these now. You’ve been slowly building up to this though. We have gradually made formulas more and more complex, so all these are, are formulas you’ve learned before, but all patched together, to be making some new formulas.</p>
+<p>So now we still have two parameters to define, the column index number, and the range lookup. Column index number asks you, which column, from your reference table do you want to grab. Since we’ve copied over our headings in order, we know that the first heading will be column number 2 (column 1 contains the reference IDs in the NSID variable. Remember the reference tables you made for recoding last week? Same concept, the values <em>to match</em> are in the first column). Then the second one will be column number 3, and the third, column number 4. So in this case, our column index number is 2, and the range lookup is FALSE, because we want an <em>exact match</em>.</p>
+<p>So our final formula looks like this:</p>
+<p><code>=VLOOKUP(A2,[wave_2.xlsx]wave_2.csv!$A:$D,2,FALSE)</code></p>
+<p><img src="imgs/merge_first_form.png" /></p>
+<p><strong>NOTE</strong> it’s possible that for some of you (likely those on PCs) there will be quotes around the sheet reference in this formula, something like this:</p>
+<p><code>=VLOOKUP(A2,'[wave_2(1).xlsx]wave_2.csv'!$A:$D,4,FALSE)</code></p>
+<p>see the <code>'</code> around the <code>[wave_2(1).xlsx]wave_2.csv</code>? You <em>might</em> see this in your version. But still achieves the same thing.</p>
+<p>Double click on the little blue square on the bottom right hand of the blue frame around this cell to copy the formula all the way to the bottom.</p>
+<p>To get the other two columns from the same sheet, you use the <em>exact same formula</em> except you change the column index number. Does it make sense why you do this? Because you’re grabbing a <em>different column</em>. You’re always grabbing the one that corresponds to your header, which you’ve copied over. If this is unclear make sure to raise your hand, so we can go through this. It’s worth going through it even if you feel like you get it, as you will be doing this again in your task, and it’s something much easier explained in person!</p>
+<p>So now, copy the formula for the next two columns, change the column index number to 3 and to 4 as appropriate:</p>
+<p><img src="imgs/VLOOKUP.JPG" /></p>
+<p>and you will see the values for each person from both wave 1 and wave 2 in there:</p>
+<p><img src="imgs/nas_present.png" /></p>
+<p>You can see that for some rows, in wave 2 we have a value of <code>#N/A</code>. This is because, that NSID is <em>not</em> found in the wave 2 data.</p>
+<p></span></p>
+<p>One issue with longitudinal studies is something called <strong>attrition</strong>. Attrition occurs when cases are lost from a sample over time or over a series of sequential processes. One form of sample attrition occurs in longitudinal research when the subjects studied drop out of the research for a variety of reasons, which can include: unwillingness of subjects to continue to participate in research, difficulties in tracing original respondents for follow-up (for example, because of change of address) and nonavailability for other reasons (for example, death, serious illness). A survey of major longitudinal studies in the United States found that the average attrition rate was 17 per cent (Capaldi and Patterson, 1987, cited in Sapsford and Jupp, 1996). Therefore, quite a lot of cases may be lost. Attrition is one of the major methodological problems in longitudinal studies. It can deteriorate generalizability of findings if participants who stay in a study differ from those who drop out.</p>
+<p>What you are seeing here are the presence of people who took part in wave 1, but not in wave 2. Attrition rates are important to know and mention in analysis of longitudinal data, to be able to discuss the issues which it may cause, as described above and in your readings.</p>
+<p>Attrition is only one cause of <strong>missing data</strong>. Sooner or later (usually sooner), anyone who does statistical analysis runs into problems with missing data. In a typical data set, information is missing for some variables for some cases. In surveys that ask people to report their income, for example, a sizable fraction of the respondents typically refuse to answer. Outright refusals are only one cause of missing data. In self-administered surveys, people often overlook or forget to answer some of the questions. Even trained interviewers occasionally may neglect to ask some questions. Sometimes respondents say that they just do not know the answer or do not have the information available to them. Sometimes the question is inapplicable to some respondents, such as asking unmarried people to rate the quality of their marriage. In longitudinal studies, people who are interviewed in one wave may die or move away before the next wave. When data are collated from multiple administrative records, some records may have become inadvertently lost.</p>
+<p>You can see our second person with NAs there, NS15760C, also has NA values for the first wave. This means that while NS15760C was interviewed in the 1st wave (and potentially in waves 2 and 3 as well), they did not answer these questions! This could be because they put one of the answers that were coded as “NA”, such as Refused to answer, wrote “Not applicable”, or responses “Don’t know”, or because they were unable to complete or refused this whole section. Missing data is important, and it’s important to know <em>why</em> your data is missing. When people refuse to answer something, it might be motivated by very different things than when people say “don’t know” to something. If people with certain characteristics are more likely to not respond, then there might be systematic biases introduced through missing data. This is important to keep in mind.</p>
+<p><span style="color:#d95f02">
+OK so let’s copy over wave 3 as well, and then we can have a look at our attrition and so on rates.</p>
+<p>Have a go at doing this on your own, following the steps from when we copied over wave 2, but this time from the wave 3 file.</p>
+<p>If you need a little nudge, the formula which I ended up with was: <code>=VLOOKUP(A2,[wave_3.xls]wave_3.csv!$A:$D,2,FALSE)</code>. Yours might look something similar.</p>
+<p>Then, when that is done, you will see a final data set with all the three waves of these questions present in your data:</p>
+<p><img src="imgs/merged_data_final.png" /></p>
+<p>We picked up in the #N/A last time, there is another issue with longitudinal, and generally self-report data collection methods, available to spot here. Remember that all of our questions are asking people whether they have <em>ever</em> smoked, or <em>ever</em> tried cannabis, or <em>ever</em> had an alcoholic drink. So surely, once someone answers yes, you would expect them to keep answering yes, correct? Well, have a look at respondent number “NS23533L”. While in wave 2, they admit to trying all cannabis and cigarettes and alcohol, in wave three they seem to have forgotten this experience, and report that they have not ever tried either cannabis or cigarettes. The issue here is called <strong>response bias</strong>.</p>
+<p></span></p>
+<p>Response bias is a general term for anything that influences the responses of participants away from an accurate or truthful response. These biases are most prevalent in the types of studies and research that involve participant self-report, such as structured interviews or surveys. It can be caused by a variety of factors, for example the phrasing of questions in surveys, the demeanour of the researcher, the way the experiment is conducted, or the desires of the participant to be a good experimental subject and to provide socially desirable responses may affect the response in some way. All of these &quot; artefact&quot; of survey and self-report research may have the potential to damage the validity of a measure or study. Because of response bias, it is possible that some study results are due to a systematic response bias rather than the hypothesized effect, which can have a profound effect on psychological and other types of research using questionnaires or surveys. It is therefore important for researchers to be aware of response bias and the effect it can have on their research so that they can attempt to prevent it from impacting their findings in a negative manner. Response biases can have a large impact on the validity of questionnaires or surveys.</p>
+<p>There isn’t much that we can do (at the stage of data analysis) to control for this. If you suspect that you will encounter response bias, you should consider this in your research design, and build measures into the data collection phase, that try to account for or at least identify sources of response bias in your survey.</p>
+</div>
+</div>
+<div id="complete-cases-an-approach-to-missing-data" class="section level2">
+<h2><span class="header-section-number">5.7</span> Complete cases (an approach to missing data)</h2>
+<p>There are a vast range of statistical techniques for accommodating missing data (see <a href="www.missingdata.org.uk" class="uri">www.missingdata.org.uk</a>). Perhaps the most commonly adopted is to simply exclude those participants in our dataset who have any data missing (in those variables we are concerned with) from our analysis. This is what is commonly known as a ‘<strong>complete case analysis</strong>’ or ‘listwise deletion’ - we analyse only the complete cases. This approach simply says “we will not deal with any of the missing data”, and instead subsets the analysis to the sample where participants have answered every question - in other words, only use the rows which do not have missing data.</p>
+<p>If data are missing complete randomly, meaning that the chance of data being missing is unrelated to any of the variables involved in our analysis, a complete case analysis is unbiased. This is because the subset of complete cases represent a random (albeit smaller than intended) sample from the population. In general, if the complete cases are systematically different from the sample as a whole (i.e. different to the incomplete cases), i.e. the data are not missing completely randomly, analysing only the complete cases will lead to biased estimates.</p>
+<p>For example, suppose we are interested in estimating the median income of the some population. We send out an email asking a questionnaire to be completed, amongst which participants are asked to say how much they earn. But only a proportion of the target sample return the questionnaire, and so we have missing incomes for the remaining people. If those that returned an answer to the income question have systematically higher or lower incomes than those who did not return an answer, the median income of the complete cases will be biased. This is something to keep in mind when choosing the route of complete case analysis.</p>
+<div id="activity-5-selecting-complete-cases" class="section level3">
+<h3><span class="header-section-number">5.7.1</span> Activity 5: Selecting Complete Cases</h3>
+<p><span style="color:#d95f02"></p>
+<p>But how can we include only the compete cases? Well for this you can use the filter function of Excel. Remember the little funnel icon? Well if you go to the Data tab, you will see it:</p>
+<p><img src="imgs/cc_filter.png" /></p>
+<p>If you click on the Filter icon, you will see small downwards arrows appear on the column headers for your data, like so:</p>
+<p><img src="imgs/cc_arrows.png" /></p>
+<p>If you click on these arrows, you can see all the possible values that the variable can take, and you can see little check boxes next to these values. If you click in them you can toggle the tick/untick of these boxes, which means that you can hide the values which are not ticked. So in the first column, untick any value that is not “Yes” or “No”, like so:</p>
+<p><img src="imgs/untick_not_yn.png" /></p>
+<p>You can see that any rows that had an NA value have been hidden. For example in the above image you can see that row 18 is gone, and instead we see row 17 followed by row 19. You can repeat this for all your rows, and you will end up with only cases where the person has answered “Yes” or “No” to these questions across all three waves of the study. You now have only the <em>complete cases</em> for your analysis.</p>
+<p>Filtering only hides these rows though, and they could still show up in your analysis. You don’t really want to delete data, because that’s never a good idea in case you make a mistake, or want to go back and re-do some analysis this time including some missing variables as well. Instead, one thing that you could do is to copy the complete cases only, over to a new sheet called “complete cases”. To do this, create a new sheet (remember, plus sign at bottom of spreadsheet) and call it “complete cases”.</p>
+<p><img src="imgs/cc_new_sheet.png" /></p>
+<p>Then go back to your wave_1 sheet and copy all the columns, and then go back to your new, complete cases sheet, and paste in the values. You now have a new sheet, in your excel workbook, that has only the complete cases.</p>
+<p>So what do these complete cases look like? I can tell you, that there were originally 1000 people in this sample that I’ve subset for you. So now, after you’ve removed all the NAs, and have only complete cases, how many complete cases do you have?</p>
+<p>If you did the same thing to me, you should have 622 cases left. Pretty big attrition rate, eh? Something to think about…!</p>
+<p>Now, finally, since we’ve worked so hard on this data, let’s have a look at it. Can you tell me, whether the percent of those who answered all questions in all three waves who <em>have</em> tried cannabis increases from wave to wave?</p>
+<p>If your gut reaction to this question was to do with fear and confusion, one thing you could do is think back to all the skills that we’ve learned so far, and which one of these you would need to draw on, to be able to answer this question. First, if you want to know if the percent of people who have tried cannabis (that is - answered yes to the question about trying cannabis) is greater for each wave than the wave before, you need to find out: what percent of people tried cannabis in wave 1, what about wave 2, and what about wave 3? In our newly created, complete cases data set, we know that we have one variable for cannabis trying in each wave. These are W1canntryYP for wave 1, W2canntryYP for wave 2, and W3canntryYP for wave 3. How can you find out the % who said yes for each one of these? Well remember our univariate analysis of a categorical variable, where we can find out the count of values for each variable with a pivot table? And then how we can translate those into percentages?</p>
+<p>If not, then refer back to your notes from the 2nd week on univariate analysis. If yes, you now know you need to make 3 pivot tables, and save the answers from each. You can then combine those into a <strong>complex table</strong>. Remember complex tables from the feedback session after the bivariate analysis labs, on week 3?</p>
+<p>So you can do something like this:</p>
+<p><img src="imgs/cc_build_ct.gif" /></p>
+<p>In the end you will end up with a table like this:</p>
+<p><img src="imgs/final_cc_ct.png" /></p>
+<p>And you can even get fancy and plot this change over time, to emphasise that indeed, there is an increase in the percent of respondents who answer yes to trying cannabis wave on wave:</p>
+<p><img src="imgs/incr_yes_can.png" /></p>
+<p>But we’ll do more plotting and visualisation after reading week, when we have our data viz session.</p>
+<!--
+
+##Drawing causal inference
+
+Note about time etc
+
+
+#Cross sectional data
+
+Surveys etc
+
+
+##Secondary Data Analysis
+
+What is
+
+Why 
+
+How
+
+##A brief notes on survey weights
+
+
+#New forms of data
+
+##Social media data
+
+##Webscraping
+
+
+
+##Bias in 
+
+-->
+</div>
+</div>
+<div id="ethics" class="section level2">
+<h2><span class="header-section-number">5.8</span> Ethics</h2>
+<p>I wanted to leave you with a final note on research ethics. It’s an essential part of your research design that you consider the ethical implication of your study, both on your participants, on your researchers (including yourself), and on the wider community.</p>
+<p>Watch <a href="https://www.youtube.com/watch?v=Zbi7nIbAuMQ">this 7 minute video that gives a good introduction to research ethics</a>, and pay particular attention to the concepts of:</p>
+<ul>
+<li>informed consent</li>
+<li>beneficence (benefits and harms to society)</li>
+<li>justice</li>
+</ul>
+<p>The “IRB” section is specific to the USA, however, we also have our own code of ethics, and all research needs to undergo an ethical review. Internally, the University of Manchester has created an ethics decision tool. You can navigate through this tool to determine whether or not your research requires ethical approval. You can access the tool, and read more about the university’s ethics procedures <a href="https://www.manchester.ac.uk/research/environment/governance/ethics/">here</a></p>
+</div>
+<div id="summary-4" class="section level2">
+<h2><span class="header-section-number">5.9</span> Summary</h2>
+<p>In sum, you should now be able to think about the research design that either you need to create to collect data, or that someone else has created in order to collect the data that you are working with. There are many decisions that go into designing a research study, and there are pros and cons associated with each approach. When you use randomised control trials, you have to consider the random assignment, when you use longitudinal data, you will have to join the data sets collected at different points in time, and think about things like attrition. The study design has implications for what research questions the data you collect will allow you to answer, and what analysis you’ll be able to carry out. You should be comfortable with the following terms:</p>
+<ul>
+<li>dependent (response/ outcome) variable</li>
+<li>independent (predictor) variable</li>
+<li>treatment</li>
+<li>control</li>
+<li>evaluation</li>
+<li>simple randomization</li>
+<li>stratified randomisation</li>
+<li>confounding variable</li>
+<li>waves</li>
+<li>attrition</li>
+<li>missing data</li>
+<li>response bias</li>
+<li>complete cases</li>
+<li>ethics
+<ul>
+<li>informed consent</li>
+<li>beneficence (benefits and harms to society)</li>
+<li>justice</li>
+</ul></li>
+</ul>
+<!--
+#Sources
+
+- [Alex R. Piquero & Nicole Leeper Piquero](http://www.encyclopedia.com/law/legal-and-political-magazines/criminology-and-criminal-justice-research-methods)
+- [Jonathan Bartlett](http://thestatsgeek.com/2013/07/06/when-is-complete-case-analysis-unbiased/)
+
+-->
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="week4.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="week6.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/006-week5.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

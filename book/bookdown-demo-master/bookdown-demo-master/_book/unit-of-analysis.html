@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Making Sense of Crim Data</title>
+  <meta name="description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Making Sense of Crim Data" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Making Sense of Crim Data" />
+  
+  <meta name="twitter:description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester" />
+  
+
+<meta name="author" content="Reka Solymosi">
+
+
+<meta name="date" content="2018-09-09">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="levels-of-measurement.html">
+<link rel="next" href="methods.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#disclaimer"><i class="fa fa-check"></i><b>1.1</b> Disclaimer</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>2</b> Overview of course</a></li>
+<li class="chapter" data-level="3" data-path="module-structure.html"><a href="module-structure.html"><i class="fa fa-check"></i><b>3</b> Module structure</a><ul>
+<li class="chapter" data-level="3.1" data-path="module-structure.html"><a href="module-structure.html#preparatory-reading"><i class="fa fa-check"></i><b>3.1</b> 1) Preparatory reading</a></li>
+<li class="chapter" data-level="3.2" data-path="module-structure.html"><a href="module-structure.html#lab-session"><i class="fa fa-check"></i><b>3.2</b> 2) Lab session</a></li>
+<li class="chapter" data-level="3.3" data-path="module-structure.html"><a href="module-structure.html#post-lab-task"><i class="fa fa-check"></i><b>3.3</b> 3) Post-lab task</a></li>
+<li class="chapter" data-level="3.4" data-path="module-structure.html"><a href="module-structure.html#homework-quiz"><i class="fa fa-check"></i><b>3.4</b> 4) Homework quiz</a></li>
+<li class="chapter" data-level="3.5" data-path="module-structure.html"><a href="module-structure.html#lectures"><i class="fa fa-check"></i><b>3.5</b> 5) Lectures</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="week1.html"><a href="week1.html"><i class="fa fa-check"></i><b>4</b> Week 1</a></li>
+<li class="chapter" data-level="5" data-path="setting-up-your-working-environment.html"><a href="setting-up-your-working-environment.html"><i class="fa fa-check"></i><b>5</b> Setting up your working environment</a></li>
+<li class="chapter" data-level="6" data-path="getting-to-know-excel.html"><a href="getting-to-know-excel.html"><i class="fa fa-check"></i><b>6</b> Getting to know Excel</a></li>
+<li class="chapter" data-level="7" data-path="data-variables-and-observations.html"><a href="data-variables-and-observations.html"><i class="fa fa-check"></i><b>7</b> Data: Variables and observations</a><ul>
+<li class="chapter" data-level="7.1" data-path="data-variables-and-observations.html"><a href="data-variables-and-observations.html#activity-1-building-your-own-data"><i class="fa fa-check"></i><b>7.1</b> Activity 1: Building your own data</a></li>
+<li class="chapter" data-level="7.2" data-path="data-variables-and-observations.html"><a href="data-variables-and-observations.html#code-books"><i class="fa fa-check"></i><b>7.2</b> Code books</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="questions-about-your-data.html"><a href="questions-about-your-data.html"><i class="fa fa-check"></i><b>8</b> Questions about your data</a><ul>
+<li class="chapter" data-level="8.1" data-path="questions-about-your-data.html"><a href="questions-about-your-data.html#activity-2-thinking-about-what-our-data-tells-us"><i class="fa fa-check"></i><b>8.1</b> Activity 2: Thinking about what our data tells us</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="levels-of-measurement.html"><a href="levels-of-measurement.html"><i class="fa fa-check"></i><b>9</b> Levels of measurement</a><ul>
+<li class="chapter" data-level="9.1" data-path="levels-of-measurement.html"><a href="levels-of-measurement.html#activity-3.1-levels-of-measurement-pt.-1"><i class="fa fa-check"></i><b>9.1</b> Activity 3.1: Levels of measurement pt. 1</a></li>
+<li class="chapter" data-level="9.2" data-path="levels-of-measurement.html"><a href="levels-of-measurement.html#activity-3.2-levels-of-measurement-pt.-2"><i class="fa fa-check"></i><b>9.2</b> Activity 3.2: Levels of measurement pt. 2</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="unit-of-analysis.html"><a href="unit-of-analysis.html"><i class="fa fa-check"></i><b>10</b> Unit of analysis</a><ul>
+<li class="chapter" data-level="10.1" data-path="unit-of-analysis.html"><a href="unit-of-analysis.html#activity-4-abstract-ing-the-unit-of-analysis"><i class="fa fa-check"></i><b>10.1</b> Activity 4: <em>Abstract</em>-ing the unit of analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>11</b> Methods</a></li>
+<li class="chapter" data-level="12" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>12</b> Applications</a><ul>
+<li class="chapter" data-level="12.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>12.1</b> Example one</a></li>
+<li class="chapter" data-level="12.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>12.2</b> Example two</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>13</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Making Sense of Crim Data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="unit-of-analysis" class="section level1">
+<h1><span class="header-section-number">Chapter 10</span> Unit of analysis</h1>
+<p>We’ve been speaking (reading) about our variables (columns) a lot, but let’s also not forget to discuss the importance and meaning of our rows. We know by now that each row is an observation. So in the original data set about crimes, every single crime incident represents one row. Here are 3 crimes:</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">X</th>
+<th align="left">Month</th>
+<th align="left">Reported.by</th>
+<th align="left">Falls.within</th>
+<th align="right">Longitude</th>
+<th align="right">Latitude</th>
+<th align="left">Location</th>
+<th align="left">LSOA.code</th>
+<th align="left">LSOA.name</th>
+<th align="left">Crime.type</th>
+<th align="left">Last.outcome.category</th>
+<th align="left">Context</th>
+<th align="left">borough</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>420226</td>
+<td align="right">420226</td>
+<td align="left">2017-05</td>
+<td align="left">Greater Manchester Police</td>
+<td align="left">Greater Manchester Police</td>
+<td align="right">-2.563888</td>
+<td align="right">53.47228</td>
+<td align="left">On or near Laburnum Road</td>
+<td align="left">E01006341</td>
+<td align="left">Wigan 040D</td>
+<td align="left">Violence and sexual offences</td>
+<td align="left">Unable to prosecute suspect</td>
+<td align="left">NA</td>
+<td align="left">Wigan</td>
+</tr>
+<tr class="even">
+<td>420227</td>
+<td align="right">420227</td>
+<td align="left">2017-05</td>
+<td align="left">Greater Manchester Police</td>
+<td align="left">Greater Manchester Police</td>
+<td align="right">-2.570889</td>
+<td align="right">53.46971</td>
+<td align="left">On or near Elton Close</td>
+<td align="left">E01006347</td>
+<td align="left">Wigan 040E</td>
+<td align="left">Burglary</td>
+<td align="left">Investigation complete; no suspect identified</td>
+<td align="left">NA</td>
+<td align="left">Wigan</td>
+</tr>
+<tr class="odd">
+<td>420228</td>
+<td align="right">420228</td>
+<td align="left">2017-05</td>
+<td align="left">Greater Manchester Police</td>
+<td align="left">Greater Manchester Police</td>
+<td align="right">-2.570947</td>
+<td align="right">53.46844</td>
+<td align="left">On or near Fulwood Road</td>
+<td align="left">E01006347</td>
+<td align="left">Wigan 040E</td>
+<td align="left">Other theft</td>
+<td align="left">Investigation complete; no suspect identified</td>
+<td align="left">NA</td>
+<td align="left">Wigan</td>
+</tr>
+</tbody>
+</table>
+<p>But we also saw above a case where we were looking at the number of crimes per borough. In that case, there were only 10 rows, because there are 10 boroughs, and we only had one observation per borough. Here is that data set again:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">borough</th>
+<th align="right">number.of.burglaries</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Manchester</td>
+<td align="right">8028</td>
+</tr>
+<tr class="even">
+<td align="left">Stockport</td>
+<td align="right">3765</td>
+</tr>
+<tr class="odd">
+<td align="left">Wigan</td>
+<td align="right">3525</td>
+</tr>
+<tr class="even">
+<td align="left">Bolton</td>
+<td align="right">3433</td>
+</tr>
+<tr class="odd">
+<td align="left">Rochdale</td>
+<td align="right">2958</td>
+</tr>
+<tr class="even">
+<td align="left">Oldham</td>
+<td align="right">2834</td>
+</tr>
+<tr class="odd">
+<td align="left">Tameside</td>
+<td align="right">2754</td>
+</tr>
+<tr class="even">
+<td align="left">Salford</td>
+<td align="right">2647</td>
+</tr>
+<tr class="odd">
+<td align="left">Bury</td>
+<td align="right">2106</td>
+</tr>
+<tr class="even">
+<td align="left">Trafford</td>
+<td align="right">1795</td>
+</tr>
+</tbody>
+</table>
+<p>What is the significance of this?</p>
+<p>The unit of analysis is the major entity that is being analyzed in a study. It is the <em>what</em> or <em>who</em> that is being studied. Your unit of analysis will depend on the questions that you are going to be asking. You will always want your rows to represent your unit of analysis, so that you can collect data <em>about</em> these in the variables, and you can answer your questions.</p>
+<p>Take this example:</p>
+<p>We want to see whether boroughs with higher population count have higher numbers of crimes. To be able to explore this question, we need information about the number of crimes, and the number of the population in each…</p>
+<p>…</p>
+<p>…</p>
+<p>… borough!</p>
+<p>What about this one:</p>
+<p>We want to see whether men consume more illegal drugs than women. To be able to explore this we need information about the gender and the drug consupmtion of each…
+…</p>
+<p>…</p>
+<p>…</p>
+<p>… person!</p>
+<p>Are you seeing the pattern? If you are comparing things, whether thats population and crime, or gender and drug consumption, you are comparing this between <em>things</em>. You are comparind population and crime rates between <em>boroughs</em> and you are comparing gender and drug consumption between <em>people</em>. These are your <strong>units of analysis</strong>.</p>
+<div id="activity-4-abstract-ing-the-unit-of-analysis" class="section level2">
+<h2><span class="header-section-number">10.1</span> Activity 4: <em>Abstract</em>-ing the unit of analysis</h2>
+<p><span style="color:#d95f02">
+Let’s do an exercise. Read this abstract:</p>
+<blockquote>
+<p>Over the last 40 years, the question of how crime varies across places has gotten greater attention. At the same time, as data and computing power have increased, the definition of a ‘place’ has shifted farther down the geographic cone of resolution. This has led many researchers to consider places as small as single addresses, group of addresses, face blocks or street blocks. Both cross-sectional and longitudinal studies of the spatial distribution of crime have consistently found crime is strongly concentrated at a small group of ‘micro’ places. Recent longitudinal studies have also revealed crime concentration across micro places is relatively stable over time. A major question that has not been answered in prior research is the degree of block to block variability at this local ‘micro’ level for all crime. To answer this question, we examine both temporal and spatial variation in crime across street blocks in the city of Seattle Washington. This is accomplished by applying trajectory analysis to establish groups of places that follow similar crime trajectories over 16 years. Then, using quantitative spatial statistics, we establish whether streets having the same temporal trajectory are collocated spatially or whether there is street to street variation in the temporal patterns of crime. In a surprising number of cases we find that individual street segments have trajectories which are unrelated to their immediately adjacent streets. This finding of heterogeneity suggests it may be particularly important to examine crime trends at very local geographic levels. At a policy level, our research reinforces the importance of initiatives like ‘hot spots policing’ which address specific streets within relatively small areas.</p>
+</blockquote>
+<ul>
+<li><a href="https://link.springer.com/article/10.1007/s10940-009-9081-y">Is it Important to Examine Crime Trends at a Local “Micro” Level?: A Longitudinal Analysis of Street to Street Variability in Crime Trajectories</a></li>
+</ul>
+<p>What is the unit of analysis here? Take a moment again, turn to the person next to you, or if you will, get up, stretch your legs, and go speak to someone on the other side of the room. Go! Get some steps in! Discuss what you think the unit of analysis is, and more importantly, why you think this! Then come back.</p>
+<p></span></p>
+<p>What did you decide on? The helpful thing here, is to look at what is the question they are asking - and what are they asking this about? The key sentence here is this one: <em>“Indeed, just 86 street segments in Seattle include one-third of crime incidents in which a juvenile was arrested during the study period.”</em> You can see that they are talking about the <em>number of arrests</em> per each <em>street segment</em>. So your unit of analysis is street segments.</p>
+<p>Want to play again?</p>
+<p>Try this one:</p>
+<blockquote>
+<p>This paper examines the importance of neighbourhood context in explaining violence in London. Exploring in a new context Sampson’s work on the relationship between interdependent spatial patterns of concentrated disadvantage and crime, we assess whether collective efficacy (i.e. shared expectations about norms, values and goals, as well as the ability of members of the community to realize these goals) mediates the potential impact on violence of neighbourhood deprivation, residential stability and population heterogeneity. Reporting findings from a dataset based on face-to-face interviews with 60,000 individuals living in 4,700 London neighbourhoods, we find that collective efficacy is negatively related to police-recorded violence. But, unlike previous research, we find that collective efficacy does not mediate the statistical relationship between structural characteristics of the neighbourhood and violence. After finding that collective efficacy is unrelated to an alternative measure of neighbourhood violence, we discuss limitations and possible explanations for our results, before setting out plans for further research.</p>
+</blockquote>
+<p>-<a href="https://academic.oup.com/bjc/article-abstract/53/6/1050/418215">Collective Efficacy, Deprivation and Violence in London</a></p>
+<p>This one is a bit trciky. You can see they talk about how they collected data, in the sentence <em>“Reporting findings from a dataset based on face-to-face interviews with 60,000 individuals living in 4,700 London neighbourhoods…”</em>. But remember, we want to look at the questions they were asking - and you can see they are talking about <strong>neighbourhood violence</strong>. You can see this because they talk about looking into <em>“statistical relationship between structural characteristics of the neighbourhood and violence”</em>. Their unit of analysis is the neighbourhood.</p>
+<p>Of course, you could have also cheated and read the paper. It will not always be obvious from the paper abstract what the unit of analysis is. Unless of course, you come across a helpful abstract like this one:</p>
+<blockquote>
+<p>Objectives: To test the generalizability of previous crime and place trajectory analysis research on a different geographic location, Vancouver BC, and using alternative methods.
+Methods: A longitudinal analysis of a 16-year data set <strong>using the street segment as the unit of analysis</strong>. We use both the group-based trajectory model and a non-parametric cluster analysis technique termed k-means that does not require the same degree of assumptions as the group-based trajectory model.
+Results: The majority of street blocks in Vancouver evidence stable crime trends with a minority that reveal decreasing crime trends. The use of the k-means has a significant impact on the results of the analysis through a reduction in the number of classes, but the qualitative results are similar.
+Conclusions: The qualitative results of previous crime and place trajectory analyses are confirmed. Though the different trajectory analysis methods generate similar results, the non-parametric k-means model does significantly change the results. As such, any data set that does not satisfy the assumptions of the group-based trajectory model should use an alternative such as k-means.</p>
+</blockquote>
+<p>-<a href="https://link.springer.com/article/10.1007/s10940-014-9228-3">Crime and Place: A Longitudinal Examination of Street Segment Patterns in Vancouver, BC</a></p>
+<p>But the most important thing here is that you understand what is meant by unit of analysis. It is not always the level at which your data is collected. For example, we have the crime data from <a href="police.uk" class="uri">police.uk</a> where each row is one measurement. This is called <strong>individual level</strong> unit of analysis. But we can still use that to talk about the number of crimes per neighbourhood. But for us to be able to do that we need to convert that into a table where each row is the borough, we need to aggregate up, and just count the number of crimes in each one. Therefore this is an <strong>aggregate level</strong> unit of analysis.</p>
+<p>Have a watch of this quick video <a href="https://www.youtube.com/watch?v=XHXTR8jeEUg">here</a> for some more examples and explanation.</p>
+<!--
+
+# Data quality
+
+> There are three separate factors that affect the quality of a measure. The researcher should strive for a measure that has (1) a high scale of measurement (one that uses the most information); (2) a high level of validity (one that provides an accurate reflection of the concept being studied); and (3) a high level of reliability (one that provides consistent results across subjects or units of study).
+
+- Weisburd & Britt (2014)
+
+
+There are some very important considerations about considering the quality of your data. You want to consider the **validity** - is it measuring what you think it's measuring, and the **reliability** - is it consistently measuring the thing it's measuring, of your data. There is a lot of emphasis on this in your textbooks and in social science methods teaching in general. You will be able to read up on these, and so I will not spend too much time on that in the exercises. Instead I want to cover something here that is not so much discussed, but if you will be dealing with data, it will be a large part of your everyday life. And a source of great pain and misery. But it needs to be done. [Data scientists spend about 80% of their time cleaning data](https://www.forbes.com/sites/gilpress/2016/03/23/data-preparation-most-time-consuming-least-enjoyable-data-science-task-survey-says/#5d6a72af6f63) and I can tell you, it's that much or more for crime analysts. Yet no one teaches you this. Well I'm changing that. I would like to initiate you to the pain of messy data. 
+
+
+
+> Happy families are all alike; every unhappy family is unhappy in its own way.” 
+–– Leo Tolstoy
+
+> Tidy datasets are all alike, but every messy dataset is messy in its own way.” 
+–– Hadley Wickham
+
+
+But what makes data messy? What is it like when it's clean? Most of the time, in this course, in the one next term, and working with secondary data from sources like the [UK Data Service](https://www.ukdataservice.ac.uk/) you will receive 'tidy data'. And all that means is that the data looks the way we expect it to, as I've been describing here today with your (say it with me) **variables in the columns and your observations in the rows**. 
+
+
+> Tidy data is important because the consistent structure lets you focus your struggle on questions about the data, not fighting to get the data into the right form for different functions. 
+Getting your data into this format requires some upfront work, but that work pays off in the long term. Once you have tidy data and the tidy tools provided by packages in the tidyverse, you will spend much less time munging data from one representation to another, allowing you to spend more time on the analytic questions at hand.
+
+- [Garret Grolemund & Hadley Wickham](http://r4ds.had.co.nz/) 
+
+(If you’d like to learn more about the underlying theory, you might enjoy the Tidy Data paper published in the Journal of Statistical Software, [http://www.jstatsoft.org/v59/i10/paper](http://www.jstatsoft.org/v59/i10/paper).)
+
+
+So how do we tidy data? You can do this many ways. The ideal approach is to do it programatically, and you will deal with this more in the second semester. For now, I just want you to have a go at thinking about turning some messy data into tidy data. And that leads us to our final activity for today. 
+
+
+##Activity 5: Tidy data
+
+
+The Home Office collects statistics on [football related arrests and banning orders in England and Wales](https://www.gov.uk/government/publications/football-related-arrests-and-banning-orders-england-and-wales-season-2015-to-2016/football-related-arrests-and-banning-orders-england-and-wales-season-2015-to-2016). Isn't that exciting? We can ask all sorts of questions. For example, we could ask which club's supporters have the most banning orders. Or whether supporters of teams in Premier League or Championship League have more banning orders? 
+
+
+The questions we want to ask are important. They determine the variables we will want. 
+
+
+If we want to ask about the number of banning orders, and we want to look at which league has more, and which team has more - what variables will we need here? 
+
+
+It might help to draw the table you think you will need. Take a piece of paper. Or open up MS Paint. Lucky for us, the Uni is still on Windows 7, far from the [newest release which kills MS Paint](https://www.theguardian.com/technology/2017/jul/24/microsoft-paint-kill-off-after-32-years-graphics-editing-program). I hope that you guys are not too young to have missed the glory that is MS paint. If I keep teaching this course for long enough, students eventually will be. This is a terrifying thought, but for now, we are young, and we still have paint. So let's draw our ideal data set. Take a moment to draw yours. You can discuss with a neighbour. I'll draw mine in the meantime. Don't look ahead though, try to come up with it yourself. 
+
+
+
+OK are you ready? Do you have your beautiful perfect data set all drawn out?
+
+
+Here's mine: 
+
+
+
+![](imgs/ideal_fbo_paint.png)
+
+
+I know this seems silly, you might be thinking, *SHOW ME THE DATA!*. But it's actually very important to know from the outset what you need the data to look like, in order for you to be able to answer your questions. You need 3 variables, the name of the club, the league of the club, and the number of banning orders. When your data is tidy you will have these variables as columns. You will have each observation, in this case each club, as the rows. Every row should have only one observarion, that is every row should correspond to only 1 club. Like the beautiful illustration above. 
+
+
+Did your drawing look similar? If you are at all confused at this point stick your hand up in the air, and ask us to talk you through it. Don't be shy, we're here to help. Ask away. 
+
+
+Right. So now we know what we want our data to look like. Go ahead and download the .csv file from blackboard. Remember that whenever you need some data for the activities in the course, you will find this data in the relevant week's folder. Do in this case, the data will be in:
+
+
+`Course Content > Week 1 > Data for week 1` 
+
+
+You will see an item called football banning order data, you should be able to download this, and save it to your working directory. Once you've saved it to your working directory, open it up with excel. You can either double click the icon for it, and excel shoul dbe the default programme to open it, or you can right-click on the icon, and select "open with..." and then select excel as the application to open your data with. 
+
+
+Once you've opened it, it will look something like this: 
+
+![](imgs/messy_fbo.png)
+
+
+It's awful isn't it. BUT you are well prepared to deal with it. Because you know how your data *should* look, you can rearrange these data here, to match what your ideal setting would be. To do this, create a new tab by clicing on the little plus sign next to the current tab's label, on the bottom of your spreadsheet: 
+
+
+![](imgs/new_sheet.png)
+
+
+Now create columns for each variable: 
+
+
+![](imgs/creat_bo_cols.png)
+
+
+Now you could copy and paste the relevant information into each cell. This would be the manual way of going about it. But I thought for our final task we could learn some neat excel tricks. The power of excel really lies in using formulas. If you go on a job interview and they ask if you can use excel - this is usually what they mean. Have a look at questions 3, 4, 5, and 6 in these [top excel interview questions](https://www.deskbright.com/excel/excel-interview-questions/), 
+
+
+So let's learn some formulas. For you to tell excel that you are writing a formula, you have to start typing with an `=`. For example, if you wanted to add numbers in some cells together, you would use the `SUM()` function, by typing `=SUM(` then highlighting the relevant cells, then typing a close bracket `)` to end your equation, and hitting enter. Like this: 
+
+![](imgs/sum_fun.gif)<!-- -->
+<p>Now, to copy over some values from one cell to the other, you simply use the <code>=</code> sign and name the cell you want to copy from. Cells are names by combining their column letter and row number. So the topmost left hand cell is A1. You can either type the name of the cell you want to copy from, or you can click on it. This is called a cell reference. Cell references allow users to include the values of external cells in formulas dynamically — rather than hard-coding particular values manually. To copy from another sheet, simply select from that sheet.</p>
+<p>So in this case, let’s start by copying over the first cell. You just click in the first column of the first row, type <code>=</code>, and then click to the other tab, and select the first value for club name, in this case <em>Arsenal</em>. Once you clicked on the cell, just press <strong>Enter</strong>. Please note that you need to hit enter while still on the original sheet of data in order for it to fill the cells on your new sheet you are creating. If you type the =, go to the other sheet and click on the cell you want, then go back to the new sheet without having already hit enter, it will fill the cell with the wrong sheet’s info. So instead of it being =‘fbo-table-2’!A5 it will be =Sheet1!A5.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;imgs/copy_over_sh.gif&quot;</span>)</a></code></pre></div>
+<p><img src="imgs/copy_over_sh.gif" /><!-- --></p>
+<p>So excel makes our life easy, in that you can copy formatting from a cell to the one next to it, or the one under it, by clickin on the cell, and dragging the corner to the other cells, where we would like the formula copied to.</p>
+<p>So if we want to copy over the cells next to the one that said ‘Arsenal’, we don’t need to go back to the first sheet. Like so:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;imgs/drag_copy.gif&quot;</span>)</a></code></pre></div>
+<p><img src="imgs/drag_copy.gif" /><!-- --></p>
+<p>Keep dragging until you get 0s as results. You don’t want that, so you can drag back up, to make sure you’re only copying data over, not empty cells. Now you want to copy over the league as well.</p>
+<p>Click on the first row of the ‘league’ column, type <code>=</code> and go back to the first sheet and click on ‘Premier League’. The same process as we did for copying over ‘Arsenal’ above.</p>
+<p>We can see that everything under the Premier League heading belongs to the Premier League. So the value for the ‘league’ variable is Premier league for all of these clubs. Therefore, we just need to replicate this for every one of these observations.</p>
+<p>Now there is another neat trick here. If you were to drag the cell to copy the formatting again, you would be copying the cells below, rather than replicating ‘Premier League’, it would start to copy the cells below. Like this:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;imgs/wrong_copy.gif&quot;</span>)</a></code></pre></div>
+<p><img src="imgs/wrong_copy.gif" /><!-- --></p>
+<p>This is because excel adjusts the formatting for you to match what you are moving - you are using <strong>relative cell references</strong>. By default, Excel uses relative cell references, which change dynamically as they are copied and pasted around a sheet. For example, if a reference to cell A1 is copied and pasted one row down and one column to the right, the new reference will point to cell B2. This allows users to perform similar calculations on different ranges of cells quickly and easily. We made use of this function when copying over the club names and the associated number of banning orders.</p>
+<p>In contrast, <strong>absolute cell references</strong> do not change when they are copied and pasted to other locations within a sheet. Absolute cell references can be used on either rows, columns, or both at the same time, and are indicated using the $ sign. For example, if a reference to cell $A$1 is copied and pasted one row down and one column to the right, the new reference will point to cell A1 — it won’t change at all, because both the row and column are locked. If a reference to cell $A1 is copied and pasted one row down and one column to the right, the new reference will point to cell A2 — only the row number will change, because the column letter is locked.</p>
+<p><a href="https://www.youtube.com/watch?v=b3i6AgMEssI">Here is a quick video to explain the use of the $ symbol</a></p>
+<p>So in this case, we want to put in two <code>$</code>s because you want it to fix both column and row. So click on the cell where it now says <em>Premier League</em> and you will see the formula appear in the formula bar. Click in the formula bar, and insert two <code>$</code>s to change the formula from <code>=banning_orders.csv!A4</code> to <code>=banning_orders.csv!$A$4</code>.</p>
+<p><img src="imgs/formula_bar.png" /></p>
+<p>Now try to drag the Premier League cell again, to copy its value for all these clubs. You will see that it will work this time. Exciting!</p>
+<p>So now you repeat this by clicking in the next cell, and copying over all the data, filling in the blanks, until your data set looks something like this:</p>
+<p><img src="imgs/fbo_overview.png" /></p>
+<p>OK now we can answer questions like this one:</p>
+<ul>
+<li><em>Which Club had the highest number of banning orders?</em></li>
+</ul>
+<p>Tip: if you don’t want to go reading through them all and making sure that you didn’t miss one with an even higher value, you can <strong>sort</strong> your data. To sort by a specific variable, click on the ‘Data’ tab, then on the little black downwards pointing triange next to the sort icon:</p>
+<p><img src="imgs/sort_icon.png" /></p>
+<p>This will allow you to select how you want to sort your data. Select the ‘Custom sort…’ option.</p>
+<p><img src="imgs/custom_sort.png" /></p>
+<p>Now you can choose which variable you want to sort by:</p>
+<p>And you can also select if you want to sort in ascending (smallest to largest) or descending (largest to smallest) order:</p>
+<p><img src="imgs/sort_by_col.png" /></p>
+<p><img src="imgs/large_to_small.png" /></p>
+<p>Ta-daa. This should reveal to you your result, something like this:</p>
+<p><img src="imgs/top_fbo.png" /></p>
+<p>Is Newcastle United a surprising result? Also which leagues would you expect at the top. We see a lot of ‘Premier League’ and ‘Championship’, but there is also a team fro ‘League One’ (Bristol City) and one from ‘Football Conference3’. They appear to both be Bristol based teams. Is this interesting? Take a moment to discuss these results from this final task with someone. If you know anything about this raise your hand and tell me. I actually know nothing about football, so would be interested to hear any possible explanations for these results!</p>
+<p>–&gt;
+# Summary</p>
+<p>In sum, you should now be more familiar with data than you were when you started. And you should be comfortable with the following terms:</p>
+<ul>
+<li>working directory</li>
+<li>data</li>
+<li>codebook/ data dictionary</li>
+<li>variable</li>
+<li>observation</li>
+<li>levels of measurement
+<ul>
+<li>nominal, ordinal, numeric</li>
+</ul></li>
+<li>unit of analysis</li>
+</ul>
+<p>From your readings you should also be comfortable with:</p>
+<ul>
+<li>reliability</li>
+<li>validity</li>
+<li>descriptive statistics</li>
+<li>inferential statistics</li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="levels-of-measurement.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="methods.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-literature.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

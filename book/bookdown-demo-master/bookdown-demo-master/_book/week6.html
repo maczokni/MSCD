@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Making Sense of Crim Data</title>
+  <meta name="description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Making Sense of Crim Data" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Making Sense of Crim Data" />
+  
+  <meta name="twitter:description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester" />
+  
+
+<meta name="author" content="Reka Solymosi">
+
+
+<meta name="date" content="2018-09-11">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="week5.html">
+<link rel="next" href="week7.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a><ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#disclaimer"><i class="fa fa-check"></i><b>0.1</b> Disclaimer</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#overview"><i class="fa fa-check"></i><b>0.2</b> Overview of course</a><ul>
+<li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#module-structure"><i class="fa fa-check"></i><b>0.2.1</b> Module structure</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="week1.html"><a href="week1.html"><i class="fa fa-check"></i><b>1</b> Week 1</a><ul>
+<li class="chapter" data-level="1.1" data-path="week1.html"><a href="week1.html#learning-outcomes"><i class="fa fa-check"></i><b>1.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="1.2" data-path="week1.html"><a href="week1.html#setting-up-your-working-environment"><i class="fa fa-check"></i><b>1.2</b> Setting up your working environment</a></li>
+<li class="chapter" data-level="1.3" data-path="week1.html"><a href="week1.html#getting-to-know-excel"><i class="fa fa-check"></i><b>1.3</b> Getting to know Excel</a></li>
+<li class="chapter" data-level="1.4" data-path="week1.html"><a href="week1.html#data-variables-and-observations"><i class="fa fa-check"></i><b>1.4</b> Data: Variables and observations</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="week1.html"><a href="week1.html#activity-1-building-your-own-data"><i class="fa fa-check"></i><b>1.4.1</b> Activity 1: Building your own data</a></li>
+<li class="chapter" data-level="1.4.2" data-path="week1.html"><a href="week1.html#code-books"><i class="fa fa-check"></i><b>1.4.2</b> Code books</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="week1.html"><a href="week1.html#questions-about-your-data"><i class="fa fa-check"></i><b>1.5</b> Questions about your data</a><ul>
+<li class="chapter" data-level="1.5.1" data-path="week1.html"><a href="week1.html#activity-2-thinking-about-what-our-data-tells-us"><i class="fa fa-check"></i><b>1.5.1</b> Activity 2: Thinking about what our data tells us</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="week1.html"><a href="week1.html#levels-of-measurement"><i class="fa fa-check"></i><b>1.6</b> Levels of measurement</a><ul>
+<li class="chapter" data-level="1.6.1" data-path="week1.html"><a href="week1.html#activity-3.1-levels-of-measurement-pt.-1"><i class="fa fa-check"></i><b>1.6.1</b> Activity 3.1: Levels of measurement pt. 1</a></li>
+<li class="chapter" data-level="1.6.2" data-path="week1.html"><a href="week1.html#activity-3.2-levels-of-measurement-pt.-2"><i class="fa fa-check"></i><b>1.6.2</b> Activity 3.2: Levels of measurement pt. 2</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="week1.html"><a href="week1.html#unit-of-analysis"><i class="fa fa-check"></i><b>1.7</b> Unit of analysis</a><ul>
+<li class="chapter" data-level="1.7.1" data-path="week1.html"><a href="week1.html#activity-4-abstract-ing-the-unit-of-analysis"><i class="fa fa-check"></i><b>1.7.1</b> Activity 4: <em>Abstract</em>-ing the unit of analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="week1.html"><a href="week1.html#summary"><i class="fa fa-check"></i><b>1.8</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="week2.html"><a href="week2.html"><i class="fa fa-check"></i><b>2</b> Week 2</a><ul>
+<li class="chapter" data-level="2.1" data-path="week2.html"><a href="week2.html#learning-outcomes-1"><i class="fa fa-check"></i><b>2.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="week2.html"><a href="week2.html#terms-for-today"><i class="fa fa-check"></i><b>2.1.1</b> Terms for today:</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="week2.html"><a href="week2.html#univariate-analysis"><i class="fa fa-check"></i><b>2.2</b> Univariate analysis</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="week2.html"><a href="week2.html#the-importance-of-level-of-measurement"><i class="fa fa-check"></i><b>2.2.1</b> The importance of level of measurement</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="week2.html"><a href="week2.html#summarising-categorical-data"><i class="fa fa-check"></i><b>2.3</b> Summarising categorical data</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="week2.html"><a href="week2.html#activity-1-crime-types"><i class="fa fa-check"></i><b>2.3.1</b> Activity 1: Crime types</a></li>
+<li class="chapter" data-level="2.3.2" data-path="week2.html"><a href="week2.html#frequency-tables"><i class="fa fa-check"></i><b>2.3.2</b> Frequency tables</a></li>
+<li class="chapter" data-level="2.3.3" data-path="week2.html"><a href="week2.html#creating-a-frequency-table-in-excel"><i class="fa fa-check"></i><b>2.3.3</b> Creating a frequency table in Excel</a></li>
+<li class="chapter" data-level="2.3.4" data-path="week2.html"><a href="week2.html#activity-2-looking-at-frequency"><i class="fa fa-check"></i><b>2.3.4</b> Activity 2: Looking at frequency</a></li>
+<li class="chapter" data-level="2.3.5" data-path="week2.html"><a href="week2.html#visualising-a-frequency-table-with-bar-charts"><i class="fa fa-check"></i><b>2.3.5</b> Visualising a frequency table with bar charts</a></li>
+<li class="chapter" data-level="2.3.6" data-path="week2.html"><a href="week2.html#activity-3-bar-charts-in-excel"><i class="fa fa-check"></i><b>2.3.6</b> Activity 3: Bar charts in Excel</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="week2.html"><a href="week2.html#summarising-numeric-data"><i class="fa fa-check"></i><b>2.4</b> Summarising numeric data</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="week2.html"><a href="week2.html#measures-of-central-tendency"><i class="fa fa-check"></i><b>2.4.1</b> Measures of central tendency</a></li>
+<li class="chapter" data-level="2.4.2" data-path="week2.html"><a href="week2.html#activity-4-mean-and-median-in-excel"><i class="fa fa-check"></i><b>2.4.2</b> Activity 4: Mean and median in excel</a></li>
+<li class="chapter" data-level="2.4.3" data-path="week2.html"><a href="week2.html#distributions"><i class="fa fa-check"></i><b>2.4.3</b> Distributions</a></li>
+<li class="chapter" data-level="2.4.4" data-path="week2.html"><a href="week2.html#histograms"><i class="fa fa-check"></i><b>2.4.4</b> Histograms</a></li>
+<li class="chapter" data-level="2.4.5" data-path="week2.html"><a href="week2.html#activity-5-histograms-in-excel"><i class="fa fa-check"></i><b>2.4.5</b> Activity 5: Histograms in Excel</a></li>
+<li class="chapter" data-level="2.4.6" data-path="week2.html"><a href="week2.html#five-number-summary"><i class="fa fa-check"></i><b>2.4.6</b> Five-number summary</a></li>
+<li class="chapter" data-level="2.4.7" data-path="week2.html"><a href="week2.html#activity-6-calculate-quartiles"><i class="fa fa-check"></i><b>2.4.7</b> Activity 6: Calculate quartiles</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="week2.html"><a href="week2.html#standard-deviation"><i class="fa fa-check"></i><b>2.5</b> Standard deviation</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="week2.html"><a href="week2.html#activity-7-standard-deviation-in-excel"><i class="fa fa-check"></i><b>2.5.1</b> Activity 7: Standard Deviation in Excel</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="week2.html"><a href="week2.html#writing-it-all-up"><i class="fa fa-check"></i><b>2.6</b> Writing it all up</a><ul>
+<li class="chapter" data-level="2.6.1" data-path="week2.html"><a href="week2.html#build-a-structure"><i class="fa fa-check"></i><b>2.6.1</b> Build a structure</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="week2.html"><a href="week2.html#summary-1"><i class="fa fa-check"></i><b>2.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="week3.html"><a href="week3.html"><i class="fa fa-check"></i><b>3</b> Week 3</a><ul>
+<li class="chapter" data-level="3.1" data-path="week3.html"><a href="week3.html#learning-outcomes-2"><i class="fa fa-check"></i><b>3.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="week3.html"><a href="week3.html#terms-for-today-1"><i class="fa fa-check"></i><b>3.1.1</b> Terms for today</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="week3.html"><a href="week3.html#categorical-v-categorical"><i class="fa fa-check"></i><b>3.2</b> Categorical v categorical</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="week3.html"><a href="week3.html#activity-1-surviving-the-titanic"><i class="fa fa-check"></i><b>3.2.1</b> Activity 1: Surviving the Titanic</a></li>
+<li class="chapter" data-level="3.2.2" data-path="week3.html"><a href="week3.html#row-percentage-column-percentage-or-total-percentage"><i class="fa fa-check"></i><b>3.2.2</b> Row percentage, column percentage, or total percentage</a></li>
+<li class="chapter" data-level="3.2.3" data-path="week3.html"><a href="week3.html#a-note-on-formatting-cells"><i class="fa fa-check"></i><b>3.2.3</b> A note on formatting cells</a></li>
+<li class="chapter" data-level="3.2.4" data-path="week3.html"><a href="week3.html#activity-3-visualising-the-relationship---stacked-bar-charts-and-conditional-formatting"><i class="fa fa-check"></i><b>3.2.4</b> Activity 3: Visualising the relationship - stacked bar charts, and conditional formatting</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="week3.html"><a href="week3.html#categorical-v-numeric"><i class="fa fa-check"></i><b>3.3</b> Categorical v numeric</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="week3.html"><a href="week3.html#activity-4-age-of-offenders"><i class="fa fa-check"></i><b>3.3.1</b> Activity 4: Age of offenders</a></li>
+<li class="chapter" data-level="3.3.2" data-path="week3.html"><a href="week3.html#activity-5-adding-a-column-for-median"><i class="fa fa-check"></i><b>3.3.2</b> Activity 5: Adding a column for median</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="week3.html"><a href="week3.html#numeric-v-numeric"><i class="fa fa-check"></i><b>3.4</b> Numeric v numeric</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="week3.html"><a href="week3.html#correlation-does-not-mean-causation"><i class="fa fa-check"></i><b>3.4.1</b> Correlation does not mean causation</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="week3.html"><a href="week3.html#summary-2"><i class="fa fa-check"></i><b>3.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="week4.html"><a href="week4.html"><i class="fa fa-check"></i><b>4</b> Week 4</a><ul>
+<li class="chapter" data-level="4.1" data-path="week4.html"><a href="week4.html#learning-outcomes-3"><i class="fa fa-check"></i><b>4.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="week4.html"><a href="week4.html#terms-for-today-2"><i class="fa fa-check"></i><b>4.1.1</b> Terms for today:</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="week4.html"><a href="week4.html#population-parameters-versus-sample-statistics"><i class="fa fa-check"></i><b>4.2</b> Population parameters versus sample statistics</a></li>
+<li class="chapter" data-level="4.3" data-path="week4.html"><a href="week4.html#conceptualisation"><i class="fa fa-check"></i><b>4.3</b> Conceptualisation</a></li>
+<li class="chapter" data-level="4.4" data-path="week4.html"><a href="week4.html#measurement"><i class="fa fa-check"></i><b>4.4</b> Measurement</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="week4.html"><a href="week4.html#measuring-constructs-with-composite-variables"><i class="fa fa-check"></i><b>4.4.1</b> Measuring constructs with composite variables</a></li>
+<li class="chapter" data-level="4.4.2" data-path="week4.html"><a href="week4.html#multi-item-scales-for-categorical-constructs"><i class="fa fa-check"></i><b>4.4.2</b> Multi-item scales for categorical constructs</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="week4.html"><a href="week4.html#a-note-on-validity-and-reliability"><i class="fa fa-check"></i><b>4.5</b> A note on Validity and Reliability</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="week4.html"><a href="week4.html#activity-1-calculating-a-summative-score"><i class="fa fa-check"></i><b>4.5.1</b> Activity 1: Calculating a summative score</a></li>
+<li class="chapter" data-level="4.5.2" data-path="week4.html"><a href="week4.html#activity-2-testing-your-questions-cronbachs-alpha"><i class="fa fa-check"></i><b>4.5.2</b> Activity 2: Testing your questions: Cronbach’s alpha</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="week4.html"><a href="week4.html#recoding-some-more-transforming-your-variables-to-fit-with-your-concepts"><i class="fa fa-check"></i><b>4.6</b> Recoding some more: Transforming your variables to fit with your concepts</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="week4.html"><a href="week4.html#activity-3-recoding-variables"><i class="fa fa-check"></i><b>4.6.1</b> Activity 3: Recoding Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="week4.html"><a href="week4.html#summary-3"><i class="fa fa-check"></i><b>4.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="week5.html"><a href="week5.html"><i class="fa fa-check"></i><b>5</b> Week 5</a><ul>
+<li class="chapter" data-level="5.1" data-path="week5.html"><a href="week5.html#learning-outcomes-4"><i class="fa fa-check"></i><b>5.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="week5.html"><a href="week5.html#terms-for-today-3"><i class="fa fa-check"></i><b>5.1.1</b> Terms for today</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="week5.html"><a href="week5.html#research-design"><i class="fa fa-check"></i><b>5.2</b> Research Design</a></li>
+<li class="chapter" data-level="5.3" data-path="week5.html"><a href="week5.html#experiments-and-evaluation"><i class="fa fa-check"></i><b>5.3</b> Experiments and evaluation</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="week5.html"><a href="week5.html#rct"><i class="fa fa-check"></i><b>5.3.1</b> RCT</a></li>
+<li class="chapter" data-level="5.3.2" data-path="week5.html"><a href="week5.html#designing-an-rtc"><i class="fa fa-check"></i><b>5.3.2</b> Designing an RTC</a></li>
+<li class="chapter" data-level="5.3.3" data-path="week5.html"><a href="week5.html#activity-1-research-planning-with-gantt-charts-design-an-rtc-example"><i class="fa fa-check"></i><b>5.3.3</b> Activity 1: Research Planning with Gantt Charts: Design an RTC example</a></li>
+<li class="chapter" data-level="5.3.4" data-path="week5.html"><a href="week5.html#activity-2-random-assignment-into-control-and-treatment"><i class="fa fa-check"></i><b>5.3.4</b> Activity 2: Random assignment into control and treatment</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="week5.html"><a href="week5.html#activity-3-stratified-randomisation"><i class="fa fa-check"></i><b>5.4</b> Activity 3: Stratified randomisation</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="week5.html"><a href="week5.html#freeze"><i class="fa fa-check"></i><b>5.4.1</b> Freeze!</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="week5.html"><a href="week5.html#a-final-note-on-evidence-meta-analysis"><i class="fa fa-check"></i><b>5.5</b> A final note on evidence: Meta Analysis</a></li>
+<li class="chapter" data-level="5.6" data-path="week5.html"><a href="week5.html#longitudinal-data"><i class="fa fa-check"></i><b>5.6</b> Longitudinal data</a><ul>
+<li class="chapter" data-level="5.6.1" data-path="week5.html"><a href="week5.html#what-does-longitudinal-data-look-like"><i class="fa fa-check"></i><b>5.6.1</b> What does longitudinal data look like?</a></li>
+<li class="chapter" data-level="5.6.2" data-path="week5.html"><a href="week5.html#activity-4-linking-data"><i class="fa fa-check"></i><b>5.6.2</b> Activity 4: Linking data</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="week5.html"><a href="week5.html#complete-cases-an-approach-to-missing-data"><i class="fa fa-check"></i><b>5.7</b> Complete cases (an approach to missing data)</a><ul>
+<li class="chapter" data-level="5.7.1" data-path="week5.html"><a href="week5.html#activity-5-selecting-complete-cases"><i class="fa fa-check"></i><b>5.7.1</b> Activity 5: Selecting Complete Cases</a></li>
+</ul></li>
+<li class="chapter" data-level="5.8" data-path="week5.html"><a href="week5.html#ethics"><i class="fa fa-check"></i><b>5.8</b> Ethics</a></li>
+<li class="chapter" data-level="5.9" data-path="week5.html"><a href="week5.html#summary-4"><i class="fa fa-check"></i><b>5.9</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="week6.html"><a href="week6.html"><i class="fa fa-check"></i><b>6</b> Week 6</a><ul>
+<li class="chapter" data-level="6.1" data-path="week6.html"><a href="week6.html#learning-outcomes-5"><i class="fa fa-check"></i><b>6.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="6.2" data-path="week6.html"><a href="week6.html#visualising-data"><i class="fa fa-check"></i><b>6.2</b> Visualising data</a></li>
+<li class="chapter" data-level="6.3" data-path="week6.html"><a href="week6.html#why-visualise-data"><i class="fa fa-check"></i><b>6.3</b> Why visualise data?</a></li>
+<li class="chapter" data-level="6.4" data-path="week6.html"><a href="week6.html#anatomy-of-a-plot---the-grammar-of-graphics"><i class="fa fa-check"></i><b>6.4</b> Anatomy of a plot - the Grammar of Graphics</a></li>
+<li class="chapter" data-level="6.5" data-path="week6.html"><a href="week6.html#principles-of-good-data-visualisation"><i class="fa fa-check"></i><b>6.5</b> Principles of good data visualisation</a><ul>
+<li class="chapter" data-level="6.5.1" data-path="week6.html"><a href="week6.html#criticisms"><i class="fa fa-check"></i><b>6.5.1</b> Criticisms</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="week6.html"><a href="week6.html#what-makes-a-bad-graph-bad"><i class="fa fa-check"></i><b>6.6</b> What makes a bad graph bad?</a></li>
+<li class="chapter" data-level="6.7" data-path="week6.html"><a href="week6.html#what-graph-should-i-use"><i class="fa fa-check"></i><b>6.7</b> What graph should I use?</a></li>
+<li class="chapter" data-level="6.8" data-path="week6.html"><a href="week6.html#edges-contrasts-and-colors"><i class="fa fa-check"></i><b>6.8</b> Edges, Contrasts and Colors</a></li>
+<li class="chapter" data-level="6.9" data-path="week6.html"><a href="week6.html#colour"><i class="fa fa-check"></i><b>6.9</b> Colour</a><ul>
+<li class="chapter" data-level="6.9.1" data-path="week6.html"><a href="week6.html#activity-1-custom-colours-in-excel-graphs."><i class="fa fa-check"></i><b>6.9.1</b> Activity 1: Custom colours in Excel graphs.</a></li>
+</ul></li>
+<li class="chapter" data-level="6.10" data-path="week6.html"><a href="week6.html#reading-between-the-lines-points"><i class="fa fa-check"></i><b>6.10</b> Reading between the lines (points)</a></li>
+<li class="chapter" data-level="6.11" data-path="week6.html"><a href="week6.html#exploratory-data-visualisation"><i class="fa fa-check"></i><b>6.11</b> Exploratory data visualisation</a><ul>
+<li class="chapter" data-level="6.11.1" data-path="week6.html"><a href="week6.html#comparing-categories"><i class="fa fa-check"></i><b>6.11.1</b> Comparing categories</a></li>
+<li class="chapter" data-level="6.11.2" data-path="week6.html"><a href="week6.html#activity-2-exploring-trends"><i class="fa fa-check"></i><b>6.11.2</b> Activity 2: Exploring trends</a></li>
+<li class="chapter" data-level="6.11.3" data-path="week6.html"><a href="week6.html#activity-3-making-a-chart-template"><i class="fa fa-check"></i><b>6.11.3</b> Activity 3: Making a chart template</a></li>
+<li class="chapter" data-level="6.11.4" data-path="week6.html"><a href="week6.html#activity-4-saving-your-graph"><i class="fa fa-check"></i><b>6.11.4</b> Activity 4: Saving your graph</a></li>
+</ul></li>
+<li class="chapter" data-level="6.12" data-path="week6.html"><a href="week6.html#acvitity-5-more-complex-graphs"><i class="fa fa-check"></i><b>6.12</b> Acvitity 5: More complex graphs</a></li>
+<li class="chapter" data-level="6.13" data-path="week6.html"><a href="week6.html#more-guidance-on-chart-design"><i class="fa fa-check"></i><b>6.13</b> More guidance on chart design</a></li>
+<li class="chapter" data-level="6.14" data-path="week6.html"><a href="week6.html#communicating-results"><i class="fa fa-check"></i><b>6.14</b> Communicating results</a><ul>
+<li class="chapter" data-level="6.14.1" data-path="week6.html"><a href="week6.html#activity-6-interpreting-results"><i class="fa fa-check"></i><b>6.14.1</b> Activity 6: Interpreting results</a></li>
+</ul></li>
+<li class="chapter" data-level="6.15" data-path="week6.html"><a href="week6.html#summary-5"><i class="fa fa-check"></i><b>6.15</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="week7.html"><a href="week7.html"><i class="fa fa-check"></i><b>7</b> Week 7</a><ul>
+<li class="chapter" data-level="7.1" data-path="week7.html"><a href="week7.html#learning-outcomes-6"><i class="fa fa-check"></i><b>7.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="7.2" data-path="week7.html"><a href="week7.html#crime-and-incident-trend-identification"><i class="fa fa-check"></i><b>7.2</b> Crime and incident trend identification</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="week7.html"><a href="week7.html#activity-1-extracting-temporal-variables-from-dates"><i class="fa fa-check"></i><b>7.2.1</b> Activity 1: Extracting temporal variables from dates</a></li>
+<li class="chapter" data-level="7.2.2" data-path="week7.html"><a href="week7.html#activity-2-extract-year-from-date-column"><i class="fa fa-check"></i><b>7.2.2</b> Activity 2: Extract year from date column</a></li>
+<li class="chapter" data-level="7.2.3" data-path="week7.html"><a href="week7.html#activity-3-extract-day-of-week-from-date-column"><i class="fa fa-check"></i><b>7.2.3</b> Activity 3: Extract day of week from date column</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="week7.html"><a href="week7.html#aggregating-to-simple-intervals"><i class="fa fa-check"></i><b>7.3</b> Aggregating to simple intervals</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="week7.html"><a href="week7.html#activity-4-aggregate-to-hour"><i class="fa fa-check"></i><b>7.3.1</b> Activity 4: Aggregate to hour</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="week7.html"><a href="week7.html#visualising-time"><i class="fa fa-check"></i><b>7.4</b> Visualising time</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="week7.html"><a href="week7.html#activity-5-line-graphs"><i class="fa fa-check"></i><b>7.4.1</b> Activity 5: Line graphs</a></li>
+<li class="chapter" data-level="7.4.2" data-path="week7.html"><a href="week7.html#activity-6-radar-graphs"><i class="fa fa-check"></i><b>7.4.2</b> Activity 6: Radar graphs</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="week7.html"><a href="week7.html#activity-7-heatmaps"><i class="fa fa-check"></i><b>7.5</b> Activity 7: Heatmaps</a></li>
+<li class="chapter" data-level="7.6" data-path="week7.html"><a href="week7.html#summary-6"><i class="fa fa-check"></i><b>7.6</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="week8.html"><a href="week8.html"><i class="fa fa-check"></i><b>8</b> Week 8</a><ul>
+<li class="chapter" data-level="8.1" data-path="week8.html"><a href="week8.html#learning-outcomes-7"><i class="fa fa-check"></i><b>8.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="8.2" data-path="week8.html"><a href="week8.html#why-use-software-in-qualitative-data-analysis"><i class="fa fa-check"></i><b>8.2</b> Why use software in qualitative data analysis?</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="week8.html"><a href="week8.html#activity-1"><i class="fa fa-check"></i><b>8.2.1</b> Activity 1:</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="week8.html"><a href="week8.html#what-kinds-of-data-can-i-input-into-nvivo-for-analysis"><i class="fa fa-check"></i><b>8.3</b> What kinds of data can I input into NVivo for analysis?</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="week8.html"><a href="week8.html#activity-2-find-some-data"><i class="fa fa-check"></i><b>8.3.1</b> Activity 2: Find some data…</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="week8.html"><a href="week8.html#creating-your-nvivo-project"><i class="fa fa-check"></i><b>8.4</b> Creating your NVivo project</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="week8.html"><a href="week8.html#activity-3-getting-started-with-nvivo"><i class="fa fa-check"></i><b>8.4.1</b> Activity 3: Getting started with NVivo</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="week8.html"><a href="week8.html#understanding-the-interface"><i class="fa fa-check"></i><b>8.5</b> Understanding the interface</a></li>
+<li class="chapter" data-level="8.6" data-path="week8.html"><a href="week8.html#navigation-view"><i class="fa fa-check"></i><b>8.6</b> Navigation View</a><ul>
+<li class="chapter" data-level="8.6.1" data-path="week8.html"><a href="week8.html#sources"><i class="fa fa-check"></i><b>8.6.1</b> Sources</a></li>
+<li class="chapter" data-level="8.6.2" data-path="week8.html"><a href="week8.html#the-internals-section"><i class="fa fa-check"></i><b>8.6.2</b> The ‘internals’ section:</a></li>
+<li class="chapter" data-level="8.6.3" data-path="week8.html"><a href="week8.html#memos"><i class="fa fa-check"></i><b>8.6.3</b> Memos</a></li>
+<li class="chapter" data-level="8.6.4" data-path="week8.html"><a href="week8.html#activity-4-folders"><i class="fa fa-check"></i><b>8.6.4</b> Activity 4: Folders</a></li>
+</ul></li>
+<li class="chapter" data-level="8.7" data-path="week8.html"><a href="week8.html#importing-data"><i class="fa fa-check"></i><b>8.7</b> Importing Data</a><ul>
+<li class="chapter" data-level="8.7.1" data-path="week8.html"><a href="week8.html#activity-5-import-data"><i class="fa fa-check"></i><b>8.7.1</b> Activity 5: Import data</a></li>
+</ul></li>
+<li class="chapter" data-level="8.8" data-path="week8.html"><a href="week8.html#memos-1"><i class="fa fa-check"></i><b>8.8</b> Memos</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="week8.html"><a href="week8.html#activity-6-memos"><i class="fa fa-check"></i><b>8.8.1</b> Activity 6: Memos</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="week8.html"><a href="week8.html#word-frequency"><i class="fa fa-check"></i><b>8.9</b> Word frequency</a><ul>
+<li class="chapter" data-level="8.9.1" data-path="week8.html"><a href="week8.html#activity-7-word-frequency"><i class="fa fa-check"></i><b>8.9.1</b> Activity 7: Word frequency</a></li>
+</ul></li>
+<li class="chapter" data-level="8.10" data-path="week8.html"><a href="week8.html#summary-7"><i class="fa fa-check"></i><b>8.10</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="week9.html"><a href="week9.html"><i class="fa fa-check"></i><b>9</b> Week 9</a><ul>
+<li class="chapter" data-level="9.1" data-path="week9.html"><a href="week9.html#learning-outcomes-8"><i class="fa fa-check"></i><b>9.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="9.2" data-path="week9.html"><a href="week9.html#deduction-induction-adaption-key-analytical-strategies-for-qualitative-data"><i class="fa fa-check"></i><b>9.2</b> Deduction, induction, adaption – key analytical strategies for qualitative data</a></li>
+<li class="chapter" data-level="9.3" data-path="week9.html"><a href="week9.html#coding-qualitative-data-using-nodes"><i class="fa fa-check"></i><b>9.3</b> ‘Coding’ qualitative data using ‘nodes’</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="week9.html"><a href="week9.html#what-are-nodes"><i class="fa fa-check"></i><b>9.3.1</b> What are ‘Nodes’?</a></li>
+<li class="chapter" data-level="9.3.2" data-path="week9.html"><a href="week9.html#activity-1-coding"><i class="fa fa-check"></i><b>9.3.2</b> Activity 1: Coding</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="week9.html"><a href="week9.html#using-mind-maps-to-organise-your-analytical-process-and-framework"><i class="fa fa-check"></i><b>9.4</b> Using ‘mind maps’ to organise your ‘analytical process and framework’</a><ul>
+<li class="chapter" data-level="9.4.1" data-path="week9.html"><a href="week9.html#activity-2-deductive-coding"><i class="fa fa-check"></i><b>9.4.1</b> Activity 2: Deductive coding</a></li>
+<li class="chapter" data-level="9.4.2" data-path="week9.html"><a href="week9.html#activity-3-inductive-coding"><i class="fa fa-check"></i><b>9.4.2</b> Activity 3: Inductive coding</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="week9.html"><a href="week9.html#abductive-coding"><i class="fa fa-check"></i><b>9.5</b> Abductive coding</a><ul>
+<li class="chapter" data-level="9.5.1" data-path="week9.html"><a href="week9.html#activity-4-retrieval-viewing-coded-data"><i class="fa fa-check"></i><b>9.5.1</b> Activity 4: Retrieval – viewing coded data</a></li>
+<li class="chapter" data-level="9.5.2" data-path="week9.html"><a href="week9.html#activity-5-viewing-more-context"><i class="fa fa-check"></i><b>9.5.2</b> Activity 5: Viewing more context</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="week9.html"><a href="week9.html#export-coded-data"><i class="fa fa-check"></i><b>9.6</b> Export coded data</a><ul>
+<li class="chapter" data-level="9.6.1" data-path="week9.html"><a href="week9.html#activity-6-exporting-via-the-list-pane"><i class="fa fa-check"></i><b>9.6.1</b> Activity 6: Exporting via the list pane</a></li>
+</ul></li>
+<li class="chapter" data-level="9.7" data-path="week9.html"><a href="week9.html#reports-note-windows-only-users-not-supported-by-mac-yet"><i class="fa fa-check"></i><b>9.7</b> Reports (NOTE: WINDOWS ONLY USERS! NOT SUPPORTED BY MAC, YET!!)</a></li>
+<li class="chapter" data-level="9.8" data-path="week9.html"><a href="week9.html#some-other-useful-things-to-do"><i class="fa fa-check"></i><b>9.8</b> Some other useful things to do</a><ul>
+<li class="chapter" data-level="9.8.1" data-path="week9.html"><a href="week9.html#create-another-word-cloud"><i class="fa fa-check"></i><b>9.8.1</b> Create another Word Cloud:</a></li>
+<li class="chapter" data-level="9.8.2" data-path="week9.html"><a href="week9.html#create-a-word-tree"><i class="fa fa-check"></i><b>9.8.2</b> Create a Word Tree:</a></li>
+<li class="chapter" data-level="9.8.3" data-path="week9.html"><a href="week9.html#create-a-concept-map-windows-only"><i class="fa fa-check"></i><b>9.8.3</b> Create a Concept Map (WINDOWS ONLY!!)</a></li>
+</ul></li>
+<li class="chapter" data-level="9.9" data-path="week9.html"><a href="week9.html#other-features"><i class="fa fa-check"></i><b>9.9</b> Other features…</a><ul>
+<li class="chapter" data-level="9.9.1" data-path="week9.html"><a href="week9.html#graphicspictures---making-linked-notes-and-coding"><i class="fa fa-check"></i><b>9.9.1</b> Graphics/pictures - making linked notes and coding</a></li>
+<li class="chapter" data-level="9.9.2" data-path="week9.html"><a href="week9.html#coding-audiovideo-data"><i class="fa fa-check"></i><b>9.9.2</b> Coding audio/video data</a></li>
+</ul></li>
+<li class="chapter" data-level="9.10" data-path="week9.html"><a href="week9.html#more-on-capturing-web-material"><i class="fa fa-check"></i><b>9.10</b> More on capturing web material</a></li>
+<li class="chapter" data-level="9.11" data-path="week9.html"><a href="week9.html#summary-8"><i class="fa fa-check"></i><b>9.11</b> Summary</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Making Sense of Crim Data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="week6" class="section level1">
+<h1><span class="header-section-number">Chapter 6</span> Week 6</h1>
+<div id="learning-outcomes-5" class="section level2">
+<h2><span class="header-section-number">6.1</span> Learning outcomes</h2>
+<p>This week is the most fun week in all of data analysis - the week where we learn about the principles of data visualisation. The visual display of your data is so important because it gives you a chance to communicate what is interesting in pictures. Simple, neat graphs can tell you in one glance, what you might have to read many paragraphs of text to otherwise learn. Visualisation is an art and a science, and this week we will explore the work in this area, and hopefully you will only produce beautiful, and meaningful visualisations of your data from now on.</p>
+<p>Here are some terms that we will cover today:</p>
+<ul>
+<li>Visualising data</li>
+<li>Principles of good data visualisation
+<ul>
+<li>Ink to data ratio</li>
+</ul></li>
+<li>Grammar of graphics</li>
+<li>Exploratory viz</li>
+<li>Communicating results</li>
+</ul>
+</div>
+<div id="visualising-data" class="section level2">
+<h2><span class="header-section-number">6.2</span> Visualising data</h2>
+<p>A picture is worth a thousand words; when presenting and interpreting data this basic idea also applies. There has been, indeed, a growing shift in data analysis toward more visual approaches to both interpretation and dissemination of numerical analysis. Part of the new data revolution consists in the mixing of ideas from visualisation of statistical analysis and visual design. Indeed data visualisation is one of the most interesting areas of development in the field.</p>
+<p>Good graphics not only help researchers to make their data easier to understand by the general public. They are also a useful way for understanding the data ourselves. In many ways it is very often a more intuitive way to understand patterns in our data than trying to look at numerical results presented in a tabular form.</p>
+<p>Recent research has revealed that papers which have good graphics are perceived as overall more clear and more interesting, and their authors perceived as smarter (see <a href="https://vimeo.com/181771433">this presentation</a>)</p>
+</div>
+<div id="why-visualise-data" class="section level2">
+<h2><span class="header-section-number">6.3</span> Why visualise data?</h2>
+<p>New insights. Visualising data can give you new insights into your own data (exploratory data visualisation) as well as effectively communicate the results from your studies to your audiences.</p>
+<p>Interactive data visualisation is something that has the power to really engage people with a topic. Instead of just passively telling people numbers in a table, visualisations can help engage your reader. But don’t take my word for it, give it a go yourself! Have a look at <a href="https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html">this article in The Upshot (NYT’s data-driven venture, focused on politics, policy and economic analysis)</a>. It should be an interesting little activity - you can draw the graph that represents the trends you think are happening, and then compare with the actual figures. Seriously try it out, it should be fun!</p>
+<p>So we won’t quite be learning how to make these kinds of interactive visualisations, but we will learn some basic principles behind effective data visualization. By the end of today you should also have a practical sense for why some graphs and figures work well, while others may fail to inform or actively mislead. You will know how to create a wide range of plots in Excel as well as how to refine plots for effective presentation.</p>
+</div>
+<div id="anatomy-of-a-plot---the-grammar-of-graphics" class="section level2">
+<h2><span class="header-section-number">6.4</span> Anatomy of a plot - the Grammar of Graphics</h2>
+<blockquote>
+<p>The grammar of graphics takes us beyond a limited set
+of charts (words) to an almost unlimited world of graphical forms (statements).
+The rules of graphics grammar are sometimes mathematical and
+sometimes aesthetic.</p>
+</blockquote>
+<ul>
+<li>Leland Wilkinson (2005) <em>The Grammar of Graphics</em></li>
+</ul>
+<p>The grammar of graphics is about creating graphs mathematically. Essentially the philosophy behind this as that all graphics are made up of layers, the idea that you can build every graph from the same few components: a data set, a set of geoms—visual marks that represent data points, and a coordinate system.</p>
+<p>Take this example (taken from <em>Wickham, H. (2010). A layered grammar of graphics. Journal of Computational and Graphical Statistics, 19(1), 3-28.</em>)</p>
+<p>You have a table such as:</p>
+<p><img src="/Users/reka/Desktop/course-incubator/images/table.png" /></p>
+<p>You then want to plot this. To do so, you want to create a plot that combines the following layers:</p>
+<p><img src="/Users/reka/Desktop/course-incubator/images/layers.png" /></p>
+<p>This will result in a final plot:</p>
+<p><img src="/Users/reka/Desktop/course-incubator/images/combined.png" /></p>
+<blockquote>
+<p>We often call graphics charts (from or Latin charta, a leaf of paper or papyrus). There are pie charts, bar charts, line charts, and so on. [The Grammar of Graphics] shuns chart typologies. For one thing, charts are usually instances of much more general objects. Once we understand that a pie is a divided bar in polar coordinates, we can construct other polar graphics that are less well known. We will also come to realize why a histogram is not a bar chart and why many other graphics that look similar nevertheless have different grammars. (…) The concept of a graphic is so general that we need organizing principles to create instances of graphics. We may not want to put a pie chart in a catalog, but we need to give users some simple way to produce one.</p>
+</blockquote>
+<ul>
+<li>Leland Wilkinson (2005) <em>The Grammar of Graphics</em></li>
+</ul>
+</div>
+<div id="principles-of-good-data-visualisation" class="section level2">
+<h2><span class="header-section-number">6.5</span> Principles of good data visualisation</h2>
+<p>There is a vast amount of research into what works in displaying quantitative information.
+The classic book is <a href="https://www.edwardtufte.com/tufte/books_vdqi">The Visual Dispay of Quantitative Information by Edward Tufte</a>, but since him there are many other researchers as well who focus on approaches to displaying data. Your reading for this week will provide you a crash course into data viz.</p>
+<p>The <strong>Data-Ink ratio</strong> is a concept introduced by Edward Tufte, the expert whose work has contributed significantly to designing effective data presentations. In his 1983 book, The Visual Display of Quantitative Data, he stated the goal is to “Above all else show the data”.</p>
+<blockquote>
+<p>A large share of ink on a graphic should present data-information, the ink changing as the data change. Data-ink is the non-erasable core of a graphic, the non-redundant ink arranged in response to variation in the numbers represented</p>
+</blockquote>
+<ul>
+<li><a href="https://www.edwardtufte.com/tufte/books_vdqi">Tufte, 1983</a></li>
+</ul>
+<p>Tufte refers to data-ink as the non-erasable ink used for the presentation of data. If data-ink would be removed from the image, the graphic would lose the content. Non-Data-Ink is accordingly the ink that does not transport the information but it is used for scales, labels and edges. The data-ink ratio is the proportion of Ink that is used to present actual data compared to the total amount of ink (or pixels) used in the entire display. (Ratio of Data-Ink to non-Data-Ink).</p>
+<p><img src="http://www.infovis-wiki.net/images/thumb/5/55/DIR.jpg/600px-DIR.jpg" /></p>
+<p>Good graphics should include only data-Ink. Non-Data-Ink is to be deleted everywhere where possible. The reason for this is to avoid drawing the attention of viewers of the data presentation to irrelevant elements.
+The goal is to design a display with the highest possible data-ink ratio (that is, as close to the total of 1.0), without eliminating something that is necessary for effective communication.</p>
+<p>### An example:</p>
+<p>This is an example of a graph with a low Data-Ink Ratio:</p>
+<p><img src="http://www.infovis-wiki.net/images/thumb/2/2e/Dir1.png/400px-Dir1.png" /></p>
+<p>The border around the graph, the background color and the grid lines are all unnecessary data ink.</p>
+<p>Now an example of a graph with a high Data-Ink Ratio:</p>
+<p><img src="http://www.infovis-wiki.net/images/thumb/1/1b/Dir2.png/400px-Dir2.png" /></p>
+<p>We have deleted the border around the graph, the background color and the grid lines and have thus drawn the viewer’s attention to horizontal scales that are data-ink. There is nothing else to distract and the key features of the data stand out clearly.</p>
+<div id="criticisms" class="section level3">
+<h3><span class="header-section-number">6.5.1</span> Criticisms</h3>
+<p>Inbar, et al, evaluated in 2007 the people’s acceptance of the minimalist approach to visualize information. They asked 87 students to rate their preference for two different graphs displaying identical information - a standard bar-graph and a minimalist version <a href="http://portal.acm.org/citation.cfm?id=1362587">Inbar, 2007</a>. The results showed that the majority students did not like Tufte’s minimalist design of bar-graphs - instead they seem to prefer “chartjunk”. <a href="http://portal.acm.org/citation.cfm?id=1362587">Inbar, 2007</a>.</p>
+<p>In the example shown above, increasing the data-ink ratio made it harder to read most of the data. For example, removing the top border of the chart removed an implied 20% line. It also made it harder to see how much the graph lies (in that it does not show a range from 0% to 100%, and/or does not show the domain from January through December). <a href="https://www.librarysearch.manchester.ac.uk/primo-explore/fulldisplay?docid=44MAN_ALMA_DS21134626320001631&amp;context=L&amp;vid=MU_NUI&amp;search_scope=BLENDED&amp;isFrbr=true&amp;tab=local&amp;lang=en_US">How to Lie with Statistics</a> discusses this flaw in the example charts.</p>
+</div>
+</div>
+<div id="what-makes-a-bad-graph-bad" class="section level2">
+<h2><span class="header-section-number">6.6</span> What makes a bad graph bad?</h2>
+<p>Whether or not you subscribe to Tufte’s school of minimalism, you should be able to recognise <em>bad</em> graphs. What makes a bad graph bad though? The generic overview answer to this is that bad graphs are the ones where it becomes difficult for your audience to interpret the meaning you are trying to convey.</p>
+<p>On the other hand, your audience might have some sort of expectations for what they require from you. You will have to manage a route between what you might be told that you need to produce, for example by a boss, and what is the best method for visualising your data in a way that communicates your results effectively.</p>
+<p>A good example of this dilemma is the pie chart.</p>
+<blockquote>
+<p>A pie chart is perhaps the most ubiquitous of modern graphics. It has been reviled by statisticians (unjustifiably) and adored by managers (unjustifiably). It may be the most concrete chart, in the sense that it is a pie. A five-year-old can look at a slice and be a fairly good judge of proportion. (To prevent bias, give the child the knife and someone else the first choice of slices.) The pie is so popular nowadays that graphical operating systems include a primitive function for drawing a pie slice.</p>
+</blockquote>
+<ul>
+<li>Leland Wilkinson (2005) <em>The Grammar of Graphics</em></li>
+</ul>
+<p>Indeed, a lot of people shun the pie chart (see for example this blog entry titled <a href="http://www.storytellingwithdata.com/blog/2011/07/death-to-pie-charts">death to pie charts</a>) or this story from Business Insider titled <a href="http://www.businessinsider.com/pie-charts-are-the-worst-2013-6?IR=T">pie charts are the words</a>, but managers have a particular affinity towards it. While these seem emotional and unfair, there is actually justification for these. People are actually <em>not</em> that great in telling proportions from pie charts. If you are interested, have a look at <a href="https://eagereyes.org/blog/2016/a-reanalysis-of-a-study-about-square-pie-charts-from-2009">this study</a>, where researchers found that a square pie chart performs the best, when people have to guess the proportion that it represents.</p>
+<p>There are other charts as well, which are less popular to hate, but in certain situations may obscure important information. In some cases bar plots can hide important features of your data, and might not be the most appropriate means for comparison. See the below image for example, where the same data about 2 groups, green and purple, are visualised using 3 different methods, a histogram, which shows the green group following a normal distribution, and the purple group following a heavily skewed distribution (remember week 5), a boxplot that shows the same, and finally a bar plot, which makes the green and purple group appear identical:</p>
+<p><img src="https://pagepiccinini.files.wordpress.com/2016/02/barplot_psa1.jpg" /></p>
+<p>Now potentially, the <a href="https://www.kickstarter.com/projects/1474588473/barbarplots/description">kickstarter campaign</a> around actually banning bar plots might be a bit of an extreme leap, but it is important to keep in mind that the kind of visualisation that you choose might greatly impact the conclusions that people will draw about your data, and the story that you are able to tell.</p>
+<p>There are some recommendations on what to use (and not use) in certain contexts, which can help you avoid making a bad graph. For example, most data visualisation experts agree that you should not use 3D graphics unless there is a meaning to the third dimension. So using 3D graphics just for decoration, as in <a href="https://mir-s3-cdn-cf.behance.net/project_modules/disp/2505dd10837923.56030acd2ef20.jpg">this case</a> is normally frowned upon. However there are cases when including a third dimension is vital to communicating your findings. See this <a href="http://www.visualisingdata.com/2015/03/when-3d-works/">example</a>.</p>
+<p>You can see also an example in the graph below:</p>
+<p><img src="http://socviz.co/assets/ch-02-chartjunk-life-expectancy.png" /></p>
+<p>Because of the angle and the 3D you cannot really read off the extent of differences between regions.</p>
+<p>We want to create pictures of data that people, including ourselves, can look at and learn from.</p>
+<p>But it is not always enough for you to know the perfect visualisation, it is important that you also know that your audience is comfortable interpreting these types of visualisations. Before I became a lecturer at Manchester, I worked as a crime analyst. I love data, and I was just coming out of my education, so I felt very comfortable with stats and data analysis, however my lack of real-world experience was made very evident when I entered my first ever briefing, with 3 Chief Inspectors from the Met Police to present them the work I’d done analysing confidence in police. My second slide was a set of boxplots, comparing the scores on a public attitudes survey between their sectors. It might have looked something like this (the data is fictitious by the way):</p>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+<p>It was useless. I spent basically all my alloted time trying to talk through the graph, and it achieved the opposite effect of clearly displaying information, and telling the story of the different levels of confidence in each Sector. I did not take my audience into account, and that made my visualisation ineffective. It was not a great moment, but at least I got an embarrassing story to tell when teaching people about data visualisation.</p>
+</div>
+<div id="what-graph-should-i-use" class="section level2">
+<h2><span class="header-section-number">6.7</span> What graph should I use?</h2>
+<p>There are a lot of points to consider when you are choosing what graph to use to visually represent your data. There are some best practice guidelines, but at the end of the day, you need to consider what is best for your data. What do you want to show? What graph will best communicate your message? Is it a comparison between groups? Is it the frequency distribution of 1 variable?</p>
+<p>As some guidance, you can use the below <a href="https://flowingdata.com/2009/01/15/flow-chart-shows-you-what-chart-to-use/">cheatsheet, taken from Nathan Yau’s blog Flowingdata</a>:</p>
+<p><img src="https://i1.wp.com/flowingdata.com/wp-content/uploads/2009/01/chart-chart1.jpg" /></p>
+<p>However, keep in mind that this is more of a guideline, aimed to nudge you in the right direction. There are many ways to visualise the same data, and sometimes you might want to experiment with some of these, see what the differences are. You can also consider some inspiration <a href="http://datavizproject.com/">here</a>.</p>
+<p>Channels for mapping ordered data (continuous or other quantitative measures), arranged top-to-bottom from more to less effective, after Munzer (2014, 102) created by <a href="http://socviz.co/">Kieran Healy</a>:</p>
+<p><img src="http://socviz.co/assets/ch-02-channels-for-cont-data-vertical.png" /></p>
+<p>Channels for mapping unordered categorical data, arranged top-to-bottom from more to less effective, after Munzer (2014, 102) created by <a href="http://socviz.co/">Kieran Healy</a>:</p>
+<p><img src="http://socviz.co/assets/ch-02-channels-for-cat-data-vertical.png" /></p>
+</div>
+<div id="edges-contrasts-and-colors" class="section level2">
+<h2><span class="header-section-number">6.8</span> Edges, Contrasts and Colors</h2>
+<p>Looking at pictures of data means looking at lines, shapes, and colors. Our visual system works in a way that makes some things easier for us to see than others. I am speaking in slightly vague terms here because the underlying details are the remit of vision science, and the exact mechanisms responsible are often the subject of ongoing research. I will not pretend to summarize or evaluate this material. In any case, independent of detailed explanation, the existence of the perceptual phenomena themselves can often be directly demonstrated through visual effects or “optical illusions” of various kinds. These effects demonstrate that, perception is not a simple matter of direct visual inputs producing straightforward mental representations of their content. Rather, our visual system is tuned to accomplish some tasks very well, and this comes at a cost in other ways.</p>
+<p>The active nature of perception has long been recognized. The Hermann grid effect, shown in the figure below, was discovered in 1870. Ghostly blobs seem to appear at the intersections in the grid but only as long as one is not looking at them directly.</p>
+<p><img src="http://socviz.co/assets/wk-02-perception-hermann-grid-effect.jpg" /></p>
+<p>A related effect is shown below. These are Mach bands. When the gray bars share a boundary, the apparent contrast between them appears to increase. Speaking loosely, we can say that our visual system is trying to construct a representation of what it is looking at based more on relative differences in the luminance (or brightness) of the bars, rather than their absolute value.</p>
+<p><img src="http://socviz.co/assets/ch-02-mach-bands-horizontal.png" /></p>
+<p>Similarly, the ghostly blobs in the Hermann grid effect can be thought of as a side-effect of the visual system being tuned for a different task.</p>
+<p>These sorts of effects extend to the role of background contrasts. The same shade of gray will be perceived very differently depending on whether it is against a darker background our a lighter one. Our ability to distinguish shades of brightness is not uniform, either. We are better at distinguishing darker shades than we are at distinguishing lighter ones. And the effects interact, too. We will do better at distinguishing very light shades of gray when they are set against a light background. When set against a dark background, differences in the middle-range of the light-to-dark spectrum are easier to distinguish.</p>
+<p>Our visual system is attracted to edges, and we assess contrast and brightness in terms of relative rather than absolute values. Some of the more spectacular visual effects exploit our mostly successful efforts to construct representations of surfaces, shapes, and objects based on what we are seeing. Edward Adelson’s checkershadow illusion, shown below, is a good example.</p>
+<p><img src="http://socviz.co/assets/ch-02-perception-adelson-checkershow.jpg" /></p>
+</div>
+<div id="colour" class="section level2">
+<h2><span class="header-section-number">6.9</span> Colour</h2>
+<p>When choosing color schemes, we will want mappings from data to color that are not just numerically but also perceptually uniform. The goal in each case is to generate a perceptually uniform scheme, where hops from one level to the next are seen as having the same magnitude. Excel will take care of these for you, by offering colour palettes in the “Design” section of the Chart Layout tab:</p>
+<p><img src="http://www.java2s.com/Tutorial/Microsoft-Office-Excel-2007Images/Apply_Chart_Style___Click_More_List_Arrow_In_Chart_Styl.PNG" /></p>
+<p>Gradients or sequential scales from low to high are one of three sorts of color palettes. When we are representing a scale with a neutral mid-point (as when we are showing temperatures, for instance, or variance in either direction from a zero point or a mean value), we want a diverging scale, where the steps away from the midpoint are perceptually even in both directions. The blue-to-red palette in the design layouts above is one example. Finally, perceptual uniformity matters for unordered categorical variables as well. We often use color to represent data for different countries, or political parties, or types of people, and so on. In those cases we want the colors in our qualitative palette to be easily distinguishable, but also have the same valence for the viewer. Unless we are doing it deliberately, we do not want one color to perceptually dominate the others.</p>
+<p>The main message here is that you should generally not put together your color palettes in an ad hoc way. It is too easy to go astray. In addition to the considerations we have been discussing, there we might also want to avoid producing plots that confuse people who are colour blind, for example, and color blindness comes in a variety of forms. Fortunately for us, almost all of the work has been done for us already. Different color spaces have been defined and standardized in ways that account for these uneven or nonlinear aspects of human color perception.</p>
+<p>A good resource website is <a href="http://colorbrewer2.org/">colorbrewer</a>. This site offers many colour schemes that you can use in your graphs if you wanted to introduce manual colours. The site looks somewhat like this:</p>
+<p><img src="http://pic.accessify.com/thumbnails/777x423/c/colorbrewer2.org.png" /></p>
+<p>Go to the site, and select a colour scheme that you like. When you do you can see that you can adjust the number of categories that you need to create a colour scheme for:</p>
+<p><img src="imgs/choose_col_num.png" /></p>
+<p>You will set these to the number of values in your categorical variable for example.</p>
+<p>Then you can also select the colur scheme that is most appropriate for your variable. If you have ordinal categories for example, then you could use a sequential scale - going from dark blue to light blue. On the other hand, if you have nominal variable, then a sequential colour scale would not make sense. In this case you would use a qualitative scale. If you are unsure why this is the case, raise your hand now, and we can help explain.</p>
+<p><img src="imgs/choose_col_vartyp.png" /></p>
+<p>You might be thinking that that’s real nice, but how do we get these colours into our excel graphs? Well you may notice the code next to the colours:</p>
+<p><img src="imgs/how_to_copy_cols.png" /></p>
+<p>These are ways for the computer to be able to understand what the value is for that colour. There are a few options. Here we see HEX values for each colour.</p>
+<p>A hex triplet is a six-digit, three-byte hexadecimal number used in HTML, CSS, SVG, and other computing applications to represent colors. The bytes represent the red, green and blue components of the color. One byte represents a number in the range 00 to FF (in hexadecimal notation), or 0 to 255 in decimal notation. This represents the least (0) to the most (255) intensity of each of the color components. Thus web colors specify colors in the True Color (24-bit RGB) color scheme. The hex triplet is formed by concatenating three bytes in hexadecimal notation, in the following order:</p>
+<ul>
+<li>Byte 1: red value (color type red)</li>
+<li>Byte 2: green value (color type green)</li>
+<li>Byte 3: blue value (color type blue)</li>
+</ul>
+<p>Not sure if you might still be the generation that had any interaction with MySpace, but that was an excellent venue to learn about hex colours and html customisation. I guess a potentially more relevant venue would be tumlbr, if any of you use this and want to customise your pager, <a href="https://www.tumblr.com/docs/en/custom_themes">you can use html to do this</a>. Now you don’t need to do this at all, but you should now know, that if you want to change the colour of something, you need to know the hex code for this colour. And this is what colourbrewer is telling you above.</p>
+<p>If you want the three colours you see there you have to use the codes <code>#ffeda0</code>, <code>#feb24c</code>, <code>#f03b20</code>.</p>
+<p>You can also change the display, from HEX to RGB or CMYK codes, which are just used in different contexts. You can ask colourbrewer to display these codes instead by changing the value in the dropdown menu:</p>
+<p><img src="imgs/choose_col_code.png" /></p>
+<p>If this is something you’re interested in I’m happy to chat about these, raise your hand now.</p>
+<p>Right, but how do we get these colours into our excel graph? Well let’s give it a go.</p>
+<div id="activity-1-custom-colours-in-excel-graphs." class="section level3">
+<h3><span class="header-section-number">6.9.1</span> Activity 1: Custom colours in Excel graphs.</h3>
+<p><span style="color:#d95f02">
+Download the FBI crime statistics data from Blackboard under the Week 6 materials in course content.</p>
+<p>Open the data up in excel, and have a look at it. You can see that it include the number of crimes for various crime types for each year from 1994 to 2013, as well as some columns for crime rate. Crime rate is important because it normalises the <em>number</em> of crimes by the population at risk. Why is this important?</p>
+<p>Well think about this - where do you expect more pickpocketing incidents, outside Piccadilly station, or in Platt Fields Park? Why?</p>
+<p>My guess is that you said Piccadilly station, and because there are more people close together. There are <strong>more possible targets</strong>. That’s what you are accounting for when calculating crime rate. In this case, they are accounting for changes in the population between the years, to make sure that you can compare the crimes between the years. It might not make a lot of sense to say that a particular crime is increasing if the population is also increasing, because as a percentage, the crime might not actually be increasing at all. So instead we consider the population.</p>
+<p>But is the population increasing? Well lets create a column graph of the population.</p>
+<p>To do this, select the <em>Population</em> column, and choose the clustered column graph option:</p>
+<p><img src="imgs/desc_viz_1.png" /></p>
+<p>You can see however that the category axis labels are not very meaningful. They are only numbers, from 1 to 20, and do not help you answer whether population changes between the years.</p>
+<p><img src="imgs/pop_blue.png" /></p>
+<p>To add axis labels, right click anywhere on the chart area, and select the “Select Data…” option:</p>
+<p><img src="imgs/pb2.png" /></p>
+<p>Then, click into the text box next to the <em>Category (X) axis labels</em>, and then select the values in the <em>Year</em> column. Make sure to select only the values, and not also the column header:</p>
+<p><img src="imgs/pb3.png" /></p>
+<p>Now we can see the differences. However what we wanted to demonstrate here is how to change the colour of your graphs to what you wanted, potentially some colours from colourbrewer.</p>
+<p>Well to do this, you can double click on any of the bars, which should open up a popup window.</p>
+<p><img src="imgs/manual_fill_1.png" /></p>
+<p>On this, select the “Fill” option. On this you can see there is a dropdown menu, where you can select the fill.</p>
+<p>If you’re on a PC, if you double click on the bars to change the fill, the pop up window doesn’t have the color option immediately like what is shown above (for mac). Instead you will have to first select the option for “Solid fill”, an then the colour option will appear:</p>
+<p><img src="imgs/pc_solid_fill.png" /></p>
+<p>Click on the option for “More Colours…”</p>
+<p><img src="imgs/manual_fill_2.png" /></p>
+<p>This opens up a new set of options. You can see it’s set to RGB sliders. If you wanted to, you could use the RGB code, and set the red, green, and blue levels in a way that gets you your colour. If you are using a PC you will have to use the RGB code for the rest of the exercise (we’ll get to this in a second). If you’re using a mac, you can also just paste your hex code in the box below the sliders, that says “Hex Color #”.</p>
+<p><img src="imgs/manual_fill_4.png" /></p>
+<p>So let’s say that we want to change the colour to the middle value from the colourbrewer scale above. Well we can see that the hex code for that is <code>#feb24c</code>. So what we need to do is change the code in the text box above, where it says “FFFFFF” to “feb24c”:</p>
+<p><img src="imgs/manual_fill_5.png" /></p>
+<p>If you’re on a PC, then you will have to change the drop down selection menu on the colorbrewer2.org:</p>
+<p><img src="imgs/choose_col_code.png" /></p>
+<p>and set it to “RGB” scale. This will give you the values for the red, green, and blue sliders. In this case, that will be:</p>
+<ul>
+<li>R: 254</li>
+<li>G: 178</li>
+<li>B: 76</li>
+</ul>
+<p>Enter those values in the pop-up window that appears:</p>
+<p><img src="imgs/pc_rbg.png" /></p>
+<p>So set each colour to this value, and click “OK”, and ta-daaa, your graphs will appear with manual colour:</p>
+<p><img src="imgs/manual_fill_6.png" /></p>
+<p></span></p>
+<p>In this case we don’t have a stacked bar, we just have the one variable, so it’s not hugely useful, but I wanted to demonstrate how you can insert your own colours there. You might want to do this later, in the more complex graphs. Your decisions about color will focus more on when and how it should be used. Colour is a powerful channel for picking out visual elements of interest, and can really make a difference to your graph. You are very welcome to use the excel default colours in your graphs within this course, but if you’re interested in learning more about colour <a href="https://lisacharlotterost.github.io/2016/04/22/Colors-for-DataVis/">have a look at this page</a>.</p>
+</div>
+</div>
+<div id="reading-between-the-lines-points" class="section level2">
+<h2><span class="header-section-number">6.10</span> Reading between the lines (points)</h2>
+<p>What sorts of relationships are inferred, and under what circumstances? In general we want to identify groupings, classifications, or entities than can be treated as the same thing or part of the same thing:</p>
+<ul>
+<li><strong>Proximity:</strong> Things that are spatially near to one another are related.</li>
+<li><strong>Similarity:</strong> Things that look alike are related.</li>
+<li><strong>Connection:</strong> Things that are visually tied to one another are related.</li>
+<li><strong>Continuity:</strong> Partially hidden objects are completed into familiar shapes.</li>
+<li><strong>Closure:</strong> Incomplete shapes are perceived as complete.</li>
+<li><strong>Figure/Ground:</strong> Visual elements are either in the foreground or the background.</li>
+<li><strong>Common Fate:</strong> Elements sharing a direction of movement are perceived as a unit.</li>
+</ul>
+</div>
+<div id="exploratory-data-visualisation" class="section level2">
+<h2><span class="header-section-number">6.11</span> Exploratory data visualisation</h2>
+<p>Data visualisation helps you unlock the hidden meaning in your data. It is the first tool of the data analyst. When you are given a heap of data, the only way to start getting some insight into it is to start making some visualisations. If you remember in weeks 2 and 3, when we did our univariate and bivariate analyses, we always started with graphing our data. And in some instances, visualising data itself can lead to surprising insights.</p>
+<p>I suggest that in your own time, you listen to <a href="http://datastori.es/66-iquantnyc/">this episode of the datastories podcast</a> which consists of an interview with Ben Wellington, the author of the blog <a href="http://iquantny.tumblr.com/">I Quant NY</a>. I mentioned him in the opening lecture, he’s the guy who found the <a href="http://iquantny.tumblr.com/post/87573867759/success-how-nyc-open-data-and-reddit-saved-new">fire hydrant that earns $30,000 a year</a>. It’s a good interview, so definitely bookmark it for later!</p>
+<p>Exploratory data visualisation is a way for you to get to know your data. It is a way to explore patterns and trends that you might not immediately see. We’ve covered some of this when we were performing univariate and bivariate analyses, but we will focus on how data visualisation can help you answer questions about your data, and also spend some time on making sure these graphs are in line with good practice.</p>
+<div id="comparing-categories" class="section level3">
+<h3><span class="header-section-number">6.11.1</span> Comparing categories</h3>
+<p><span style="color:#d95f02">
+Let’s practice answering questions with data. Go back to the FBI data you downloaded from Blackboard.</p>
+<p>So firstly, let’s say we want to know the answer to the following question:</p>
+<ul>
+<li><strong>What year had the highest violent crime rate?</strong></li>
+</ul>
+<p>You can see that the appropriate data is in the column labelled <em>Violent Crime Rate</em>. So what do you think is the best way to visualise this? You could look at your chart selection thought starter above, and see that one option for comparisons is to use column graphs. So let’s give that a go:</p>
+<p>Select the column that contains the data for violent crime rate. Highlight it. When you have highlighted that column then go to your chart selector, and select <em>Column</em> &gt; <em>2-D Column</em> &gt; <em>Clustered Column</em>. Like so:</p>
+<p><img src="imgs/desc_viz_1.png" /></p>
+<p>Once you select this, a default column chart should appear. You can see however that the category axis labels are not very meaningful. They are only numbers, from 1 to 20, and do not help you answer your question, <em>What year had the highest violent crime rate?</em>.</p>
+<p><img src="imgs/desc_viz_2.png" /></p>
+<p>To add axis labels, right click anywhere on the chart area, and select the “Select Data…” option:</p>
+<p><img src="imgs/desc_viz_3.png" /></p>
+<p>Then, click into the text box next to the <em>Category (X) axis labels</em>, and then select the values in the <em>Year</em> column. Make sure to select only the values, and not also the column header:</p>
+<p><img src="imgs/desc_viz_4.png" /></p>
+<p>Once you’ve done that, click on “OK”, and you will see the labels updated:</p>
+<p><img src="imgs/desc_viz_5.png" /></p>
+<p>Now you can see that your x-axis labels are meaningful, and essentially from this point on, you can use this graph to answer your question: <em>What year had the highest violent crime rate?</em>.</p>
+<p>We can see that 1994 had the highest violent crime rate.</p>
+<p>But this graph is not necessarily in line with the best practice around data ink, and around all of the visuals introduced having meaning.</p>
+<p>Firstly, we are talking about number of crimes per 100,000 population. Since we are talking about <strong>number of crimes</strong> we know that we will be talking about whole numbers. Even if we end up with some decimal points after dividing by population to get the rate, it would not necessarily be meaningful to report fractions of crimes. So we can remove the .0 from the y-axis labels, as it adds no value to our graph. To do this, double click on the text in the y-axis labels. It will bring up a window where you can see some choices to select what to edit, in the left hand side of the window.</p>
+<p>It might automatically be selected to “Scale”:</p>
+<p><img src="imgs/desc_viz_7.png" /></p>
+<p>Click on the next one down, the one that says “Number”. In the options that come up, <em>untick</em> the box next to “Linked to source”. Once you untick this box you should have available some options for you to make changes. You can then edit the text box next to where it says “Decimal places”, and set it to 0, like so:</p>
+<p><img src="imgs/desc_viz_8.png" /></p>
+<p>You can now also go to the other options, and make changes there. For example, you might decide that you want to increase the font size, to make your graph easier to read, and also that you might want to change your font to something easier to read, such as Arial:</p>
+<p><img src="imgs/desc_viz_9.png" /></p>
+<p>On a PC, the “format axis” window has different options. There is no font or text box options for example. However you can do those things on the main screen of Excel (using the toolbar at the top). Just select the axis and change the fonts from there. Or you can change the font with this menu as well:</p>
+<p><img src="imgs/pc_change_font.jpg" /></p>
+<p>Click “OK” when you are finished.</p>
+<p>If you change your font, and also your font size, you should make sure to apply to all of your axis labels. To do this, just double click on the x-axis labels (the years) and the same pop-up window will appear. Make sure to set the font to the same font, and the font size to the same size for both axes, to ensure consistency:</p>
+<p><img src="imgs/desc_viz_10.png" /></p>
+<p>The other bit of information you’re providing here that doesn’t really have much meaning attached to it here is colour. What does the blue in the bars mean? And why is there a gradient? Why are the bars lighter blue on the top, and darker blue on the bottom? These are questions that people looking at this chart might ask, and we, the people who made the chart, do not actually have any good answers to!
+(actually on the PC there might not be a gradient, but on a mac there is, and just in case, it’s good to note this).</p>
+<p>So to get around this, let’s set our bars to solid black, to get around any possible issues with introducing colour. To do this, this time double click on any of the bars, to open up a popup window. Again there will be options on the left hand side. First select the option for “Line” and make sure that you set this to “No Line”:</p>
+<p><img src="imgs/desc_viz_11.png" /></p>
+<p>Then click on “Shadow” and make sure to just untick the box next to where it says “Shadow”. Again there is no point to introduce a shadow here, as it would give you no additional information, it represents no data, and therefore can only introduce confusion into your chart.</p>
+<p><img src="imgs/desc_viz_12.png" /></p>
+<p>Finally, select fill, and set your fill colour to black:</p>
+<p><img src="imgs/desc_viz_13.png" /></p>
+<p>Once you are done with all this, you can click on “OK” and you will have your final bar graph ready to be inserted into a report:</p>
+<p><img src="imgs/final_bar.png" /></p>
+<p></span></p>
+<p>Ta-daaa. So is this the best graph to answer our question? Well you could explore a few more, and see what happens.</p>
+<!--
+Let's try a pie chart. We keep hating on it, let's see if we should give it another chance. 
+
+
+Once again, select the column you're interested in , which is the rate of violent crimes. Now, instead of choosing a column chart, choose a pie chart as your visualisation strategy. 
+
+
+Now how does that look? Is it something like this: 
+
+
+
+![](imgs/desc_viz_pie.png)
+
+
+
+Can you answer your question using this chart? Do you know, from this, which year had the highest violent crime rate? 
+
+
+How about from a donut chart:
+
+
+![](imgs/desc_viz_donut.png)
+
+
+
+Not really, eh? Well it takes some time and thought to be able to determine what is best, and you can always try out a couple of options, and see which one you like best, and which one best helps you tell your story, and answer the question you are asking. And there might be more than one right answer. 
+
+
+For example, to answer our question *What year had the highest violent crime rate?*, we could have just as well used a bar graph, as a column graph. A bar graph is basically a column graph on it's side:
+
+
+![](imgs/bar_same_col.png)
+-->
+</div>
+<div id="activity-2-exploring-trends" class="section level3">
+<h3><span class="header-section-number">6.11.2</span> Activity 2: Exploring trends</h3>
+<p>We’ll be talking about changes over time and trends and such next week, but it’s interesting to note here how it would (or at least should) influence your chart choice if the question we ask is slightly different. Let’s say we are still interested in trends in violent crime rate, but instead of asking which year had the highest violent crime rate, instead this time we are interested in a new question:</p>
+<ul>
+<li><strong>Is violent crime rate going up, going down, or staying the same?</strong></li>
+</ul>
+<p>Now we could, in theory, answer this question by looking at our bar graphs above. But the slight difference is, bar graphs are good at comparing <strong>categories</strong>. But what they dont do, is they do <em>not</em> link up these categories. And rightly so. Such charts are for visualising categorical variables, which should not hugely link.</p>
+<p>However, those of you still on top of your <em>levels of measurement</em> will have noticed, that year can actually be considered a continuous variable. And so it might lend itself to better <em>trend</em> visualisation by being presented through a <em>line graph</em>.</p>
+<p><span style="color:#d95f02">
+To select this, once again highlight the column with the data of interest (violent crime rate) and then this time select Line &gt; Line for chart type:</p>
+<p><img src="imgs/desc_line_1.png" /></p>
+<p>Once again you will see that your x-axis labels are not very helpful, they are numbersfrom 1 to 20, rather than labelled with the years that each data point represents. To address this, once again right-click anywhere in the chart, and select the “Select Data…” option:</p>
+<p><img src="imgs/desc_line_2.png" /></p>
+<p>In the popup, once again click into the text box next to the <em>Category (X) axis labels</em>, and then select the values in the <em>Year</em> column. Make sure to select only the values, and not also the column header:</p>
+<p><img src="imgs/desc_viz_4.png" /></p>
+<p>When you click OK, the labels should appear on your chart:</p>
+<p><img src="imgs/desc_line_3.png" /></p>
+<p>Now you don’t always have to manually change the bits of the graph, you can also use some pre-created layouts that exist. You can find this in the top bar of excel, under a label called “Chart Quick Layouts”:</p>
+<p><img src="imgs/desc_line_layout.png" /></p>
+<p>Again, a difference on the PC: When editing the line graph, there is not a heading called “Chart Quick Layouts”. Instead, you can find the options for different layouts under the <strong>“chart tools”</strong> section and the tab called <strong>“design”</strong>.</p>
+<p><img src="imgs/pc_chart_tools.png" /></p>
+<p>You can browse through and select one that looks like something you would like.</p>
+<p>Once you pick a quick chart format, you can still make edits to your graphs. For example, you can double click on the line to make another popup window appear.</p>
+<p>On this new window, you can click on “Line” option, and choose the colour you would like for the line.</p>
+<p><img src="imgs/desc_line_edit.png" /></p>
+<p>You can also see 3 options along the topic there, where you can choose between whether you want to edit the line etc, under the “Solid” option, but also change gradients under the “Gradient” option, and also edit the style of the line using the “Weights &amp; Arrows” option. Click on this, and have a play with this as well:</p>
+<p><img src="imgs/desc_line_type.png" /></p>
+<p>Again these might be slightly different on your version, or on a PC to a mac. For editing the line, all the options there are different as well. The main point here is for you to just play around and see what is available to change in the graph, so have a look, but here is the equivalent PC screen shot to show you:</p>
+<p><img src="imgs/pc_line_2.png" /></p>
+<p><img src="imgs/pc_edit_line.png" /></p>
+<p>You can also add point markers to the line, this can help add clarity to your graph. Select the “Marker Style” option and you can choose a marker.</p>
+<p><img src="imgs/desc_line_markers.png" /></p>
+<p>On PC:</p>
+<p><img src="imgs/pc_line_1.png" /></p>
+<p><img src="imgs/pc_edit_marker.png" /></p>
+<p>Make any changes you would like, and finally click “OK” to produce your final graph.</p>
+<p><img src="imgs/desc_line_final.png" /></p>
+<p></span></p>
+</div>
+<div id="activity-3-making-a-chart-template" class="section level3">
+<h3><span class="header-section-number">6.11.3</span> Activity 3: Making a chart template</h3>
+<p><span style="color:#d95f02">
+Now you will probably find your own style for a graph, and you might not want to change these settings every time you create a graph. Let’s say we want to create a separate graph for the rates of various crime types in this data. To make our lives easier, once we’ve gotten one graph to look just how we would like, we can save this as a template.</p>
+<p>To do this, click anywhere in the graph, and select “Save as Template…”.</p>
+<p><img src="imgs/save_as_template.png" /></p>
+<p>On a PC you won’t have this option appear from the right-clicked menu, but you can find the “Save As Template” on the Chart tools &gt; Design tab on the top menu in Excel:</p>
+<p><img src="imgs/pc_save_template.png" /></p>
+<p>Choose a location to save, give it a name you might remember (here I call this “bw”, short for black and white):</p>
+<p><img src="imgs/name_template.png" /></p>
+<p>On PC:</p>
+<p><img src="imgs/pc_save_template_3.png" /></p>
+<p>Now, next time you build a graph you can use this template. Let’s try, let’s create another line graph this time for the rate of murder and nonnegligent manslaughter. So as you would, select the column with the data for rate of murder and nonnegligent manslaughter:</p>
+<p><img src="imgs/select_mm_col.png" /></p>
+<p>but instead of selecting Line graph, click on the “Other” option for graphs, and scroll to the bottom. You should see your template appear as one of the possible selections!</p>
+<p><img src="imgs/choose_template.png" /></p>
+<p>Again on the PC this is slightly different, you first create your graph with the line graph, and then when it’s created, you right click anywhere in the chart and choose:</p>
+<p><img src="imgs/pc_apply_template.png" /></p>
+<p>Then go to templates, and choose “My templates”:</p>
+<p><img src="imgs/pc_my_templates.png" /></p>
+<p>Click on the template, then click OK, and you should have your graph be updated to the new template.
+</span></p>
+<p>You can now see that the default chart that appears follows the formatting that you have carefully devised as your ideal format. You will still have to add any sort of data addition (for example specify where to find the years to populate the Category (X) axis labels). But it definitely saves you some time in terms of formatting.</p>
+</div>
+<div id="activity-4-saving-your-graph" class="section level3">
+<h3><span class="header-section-number">6.11.4</span> Activity 4: Saving your graph</h3>
+<p><span style="color:#d95f02">
+When you are making your reports, there are two ways you can include your graph.</p>
+<p>One approach is just to save your graphs as pictures. To do this, you can just right click anywhere in the graph area, and select the “Save as picture…” option.</p>
+<p><img src="imgs/save_as_pic.png" /></p>
+<p>Navigate to a folder where you collect your results, and save the image there.</p>
+<p><img src="imgs/save_pic_2.png" /></p>
+<p>Of course, because nothing is easy, this option does not exist on PC. Instead, perhaps the best option may just be copying the graph and pasting it into a word doc and saving it there.</p>
+<p>Then when you are writing your essay, you can insert an image using the Insert &gt; Picture from file option:</p>
+<p><img src="imgs/find_pic.png" /></p>
+<p>This will open up a popup window you can use to navigate to the picture you just saved, and selecting it. When you are done, click “OK”, and your graph will appear :</p>
+<p><img src="imgs/inserted_graph.png" /></p>
+<p>It is important that you label your graphs. You should include a short and to-the-point caption for the graph. You should also refer to the graph in your writing. Something like this:</p>
+<p><img src="imgs/ref_and_caption.png" /></p>
+<p></span></p>
+</div>
+</div>
+<div id="acvitity-5-more-complex-graphs" class="section level2">
+<h2><span class="header-section-number">6.12</span> Acvitity 5: More complex graphs</h2>
+<p>While we only covered descriptive analysis for univariate and bivariate analysis, when it comes to making sense of your data graphically, you can include further variables.</p>
+<p><span style="color:#d95f02">
+Let’s show an example now.</p>
+<p>In the FBI data, you can see that we have quite a few columns (variables) for crime rates for various crime types. We looked at rates of violent crime and also murder and nonnegligent manslaughter, but there is also robbery, Aggravated assault, burglary, and some more. Let’s say that we want to compare the trajectories of all these variables over the years, over time.</p>
+<p>You can start with a simple line graph for one of the variables. Let’s select the violent crime rate, and build a line chart for this variable. You should be able to do this by now without guidance, but if you need assistance, just scroll up to where we did this earlier.</p>
+<p>Now once you’ve created this graph, right-click anywhere on the chart itself, and select the “Select Data…” option:</p>
+<p><img src="imgs/comp_c_1.png" /></p>
+<p>In the popup that appears, under the series box, click on the “Add” button:</p>
+<p><img src="imgs/comp_c_2.png" /></p>
+<p>Once you clicked on the “Add” button, the field for “Name” and “Y values” should appear empty. Click in the text box next to name, and then click on the column header (variable name) for the next variable. Select “Robbery Rate”:</p>
+<p><img src="imgs/comp_c_3.png" /></p>
+<p>Then, click in the text box next to the “Y values:” and then select the values in the robbery rate column:</p>
+<p><img src="imgs/comp_c_4.png" /></p>
+<p>Then repeat this for every variable you want to add. For every variable, click on “Add”, then for “Name” select the column header, and for “Y values” select the values for that variable.</p>
+<p>Repeat this for “Aggravated Assault Rate” and again for “Burglary Rate”:</p>
+<p><img src="imgs/comp_c_5.png" /></p>
+<p>Finally, when you have added all these variables, click on OK, make any changes you’d like to, to the graph, and then ta-daa you will see all 4 variables on one graph:</p>
+<p><img src="imgs/comp_c_6.png" /></p>
+<p>You could also create a stacked column chart, that shows you the cumulative crime rate in each year, while separating out for categories, using all the same variables.</p>
+<p>Again, start with building a column chart for just one of the variables. Let’s build this for rate of violent crimes:</p>
+<p><img src="imgs/stackedbar_1.png" /></p>
+<p>So that will create this column chart:</p>
+<p><img src="imgs/stackedbar_2.png" /></p>
+<p>Now, just as we did with the line charts, just right-click anywhere on the chart area, and again select “Select Data…”.</p>
+<p><img src="imgs/stackedbar_3.png" /></p>
+<p>And again this will bring up a popup. Here, once again you can add variables with the “Add” button:</p>
+<p><img src="imgs/stackedbar_4.png" /></p>
+<p>Once you clicked on the “Add” button, the field for “Name” and “Y values” should appear empty. Click in the text box next to “Name”, and then click on the column header (variable name) for the next variable. Select “Robbery Rate” column header. Then click in the text box next to “Y values”, and then select the values for robbery rate:</p>
+<p><img src="imgs/stackedbar_5.png" /></p>
+<p>Then repeat this for every variable you want to add. For every variable, click on “Add”, then for “Name” select the column header, and for “Y values” select the values for that variable. So in this case, again as we did for the line graphs, repeat this for “Aggravated Assault Rate” and again for “Burglary Rate”:</p>
+<p><img src="imgs/comp_c_5.png" /></p>
+<p>Then finally you should end up with a stacked bar chart of all these variables, that allows you to compare the rate of each crime type between years, but also allows you to compare a cumulative crime rate, if you consider the crimes of Violent crimes, Robbery, Assault, and Burglary together:</p>
+<p><img src="imgs/stackedbar_final.png" /></p>
+<p></span></p>
+<p>So you can see that you can use data visualisation as a way of putting together many variables into one graph.</p>
+</div>
+<div id="more-guidance-on-chart-design" class="section level2">
+<h2><span class="header-section-number">6.13</span> More guidance on chart design</h2>
+<p>Read through this list on <a href="https://guides.library.duke.edu/datavis/topten">“Dos and Don’ts of Charts and Graphs”</a> and have a look at some of <a href="http://datajournalismhandbook.org/1.0/en/introduction_3.html">these examples</a> as well for some further inspiration.</p>
+</div>
+<div id="communicating-results" class="section level2">
+<h2><span class="header-section-number">6.14</span> Communicating results</h2>
+<p>We have been covering exploratory data analysis, where you take your data, and produce visualisations from that, but sometimes you can also compliment your results by visualising your tables and other outputs. An example would be the conditional formatting, which we covered in week 3.</p>
+<p>The most important thing when communicating your results is that you know your audience. Know what they understand, what they don’t, and what you can tell them in one graph. Your graph has to tell a story. Think about why you are making it? What is the message that you want to convey? What is the story this graph is telling? You need to be clear with this to yourself, to make sure that your graph accomplishes it’s mission in telling an interesting story about your data.</p>
+<blockquote>
+<p>You should look at your data. Graphs and charts let you explore and learn about the structure of the information you collect. Good data visualizations also make it easier to communicate your ideas and findings to other people. Beyond that, producing effective plots from your own data is the best way to develop a good eye for reading and understanding graphs—good and bad—made by others, whether presented in research articles, business slide decks, public policy advocacy, or media reports.</p>
+</blockquote>
+<ul>
+<li><a href="http://socviz.co/">Kieran Healy</a></li>
+</ul>
+<div id="activity-6-interpreting-results" class="section level3">
+<h3><span class="header-section-number">6.14.1</span> Activity 6: Interpreting results</h3>
+<p>You should, by becoming a maker of good graphs, become literate about graphs as well. If you are interested in something like a role as a crime analyst, part of your interview process might include something like a numeracy test, which will test your ability to interpret trends and data from graphs (amongst some other things).</p>
+<p><span style="color:#d95f02">
+Here’s an example:</p>
+<div id="question-1" class="section level4 unnumbered">
+<h4>Question 1</h4>
+<p><img src="imgs/numtest_1.png" /></p>
+<p>Then the test question could be something like this:</p>
+<p>Tick all the true statements:</p>
+<ul>
+<li>68% of observed lessons were graded ‘Good’ or ‘Outstanding’ in 2011.</li>
+<li>In 2011 the percentage of lessons that were graded ‘Good’ or ‘Outstanding’ was twice the percentage of lessons that were graded ‘Good’ or ‘Outstanding’ in 2007.</li>
+<li>The percentage of lessons graded ‘Inadequate’ was halved between 2007 and 2011.</li>
+</ul>
+<p>So, which one of these do you think are true statements?</p>
+<p>OK try again:</p>
+</div>
+<div id="question-2" class="section level4 unnumbered">
+<h4>Question 2</h4>
+<p><img src="imgs/numtest_2.png" /></p>
+<p>Tick all the true statements:</p>
+<ul>
+<li>The range of marks in Test A was greater than in Test B.</li>
+<li>The median mark in Test B was approximately 10 percentage points higher than the median mark in Test A.</li>
+<li>In Test B one-quarter of the pupils achieved 75% or more.</li>
+</ul>
+<p>And again:</p>
+</div>
+<div id="question-3" class="section level4 unnumbered">
+<h4>Question 3</h4>
+<p><img src="imgs/numtest_3.png" /></p>
+<p>Tick all the true statements:</p>
+<ul>
+<li>Two-thirds of the pupils spent 15 minutes or less on planning.</li>
+<li>The range of time used for planning was 22 minutes.</li>
+<li>The pupil with the median planning time achieved a final mark of 54.</li>
+</ul>
+<p>And finally:</p>
+</div>
+<div id="question-4" class="section level4 unnumbered">
+<h4>Question 4</h4>
+<p><img src="imgs/numtest_4.png" /></p>
+<p>Tick all the true statements:</p>
+<ul>
+<li>All the pupils completed the test within the maximum time allowed.</li>
+<li>The median time taken was 40 minutes.</li>
+<li>No pupils recorded a time less than 29 minutes.</li>
+</ul>
+<p>Alright. Make a note of all of your answers before reading the results ahead.
+</span></p>
+</div>
+<div id="results" class="section level4 unnumbered">
+<h4>Results</h4>
+<p>OK I have the answers for you now:</p>
+<ul>
+<li>For question 1 the correct answers were Options A and C</li>
+<li>For question 2 the correct answers were Option B</li>
+<li>For question 3 the correct answers were Options A, B and C</li>
+<li>For question 4 the correct answers were Options A and B</li>
+</ul>
+<p>So, how did you do? If you are unsure about any of the answers, ask us now!</p>
+<!--
+## Note on your feedback session 
+
+The session next Tuesday will be a joint session between Lisa Williams, who will give you a brief overview of the Q-step programme, and also a chance to ask any questions that you have about this, and followed by an embedded employability session, where you will be taught an employable skill. Attendance will still be taken, the same way as I usually do, but there is no feedback lecture for this session. Instead, it is up to you to take your own time to watch the below video to learn more about data visualisation: 
+
+- [video to watch for feedback session](https://vimeo.com/124674889)
+
+
+If you have any questions about this just post on the discussion board where I will try to answer, or book office hours or ask away in the lab session. 
+
+-->
+</div>
+</div>
+</div>
+<div id="summary-5" class="section level2">
+<h2><span class="header-section-number">6.15</span> Summary</h2>
+<p>In sum, you should now be able to select a graph that represents your data in a meaningful way, that helps you describe your data as well as communicate your results to your audiences. You should be familiar with the following terms:</p>
+<ul>
+<li>bar chart</li>
+<li>column chart</li>
+<li>line chart</li>
+<li>data ink ratio</li>
+<li>stacked bar chart</li>
+<li>conditional formatting</li>
+<li>producing summary statistics by groups</li>
+<li>if statements in excel</li>
+<li>box plots in excel</li>
+<li>association/ direction of a relationship between numeric variables
+<ul>
+<li>positive relationship</li>
+<li>negative relationship</li>
+</ul></li>
+<li>form of a relationship between numeric variables
+<ul>
+<li>linear relationship</li>
+<li>non-linear relationship</li>
+</ul></li>
+<li>strength of a relationship between numeric variables
+<ul>
+<li>weak</li>
+<li>moderate</li>
+<li>strong</li>
+</ul></li>
+<li>scatterplot</li>
+<li>trendline</li>
+<li>correlation</li>
+<li>correlation does not mean causation</li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="week5.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="week7.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/007-week6.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
