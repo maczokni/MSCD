@@ -1,0 +1,80 @@
+## Overview of course {#overview}
+<!--
+You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+
+Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+
+```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
+par(mar = c(4, 4, .1, .1))
+plot(pressure, type = 'b', pch = 19)
+```
+
+Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+
+```{r nice-tab, tidy=FALSE}
+knitr::kable(
+  head(iris, 20), caption = 'Here is a nice table!',
+  booktabs = TRUE
+)
+```
+
+You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+
+
+-->
+
+### Module structure
+
+Hi there and welcome to this course for making sense of criminological data. This introduction will explain the structure of the course.  
+
+The course is 10 weeks, each week made up of 5 elements: 
+
+1) Preparatory reading
+2) Lab session
+3) Post-lab task
+4) Homework quiz
+5) Lecture
+
+
+#### 1) Preparatory reading
+
+For each week you will receive some preliminary reading or videos to watch, before coming to the session. It is very important that you read these before coming to the lab session, as it will make engaging with the lab material easier. Also, you can take the labs as an opportunity to ask questions about the readings, and discuss with myself and the teaching assistants during the 2-hour lab sessions. 
+
+#### 2) Lab session
+Lab sessions are the two-hour sessions in computer labs, where you are to work through the lab notes included in this book. You should take time to engage with these notes, and ask lots of questions from myself and the teaching assistants present. This is a time to really engage with the materials. 
+
+When you come into a lesson, you will be able to sit at a PC and get started straight away. You will find the instructions for each week in this booklet. You can open up the link via Blackboard, and read through the instructions chronologically. That just means start at the top, and read through to the bottom. 
+
+Usually within the notes there are some general introduction to the topic covered that week, with links to [videos](http://www.gapminder.org/videos/the-joy-of-stats/) or further [reading](http://flowingdata.com/2015/10/26/top-brewery-road-trip-routed-algorithmically/). You should come equipped with headphones to watch the videos. 
+
+
+These lab notes also contain within them activities. <span style="color:#d95f02">Activities will be denoted by red colour text, just like this one </span> You should do these activities in the lab, and ask for our help when you are stuck, or if you do not understand a concept. These activities will help you with your learning, but also will contribute towards your homework. You are welcome to discuss with each other, and with us, but please do make sure that when it comes to understanding the learning behind these activities, you are confident in your ability. The final essay will rely heavily on your ability to take the concepts you learn duing the activities, and apply them in a way that shows your understanding. 
+
+#### 3) Post-lab task
+
+Each week, after you have completed the lab notes, you must complete some post-lab tasks. These will take the form of a worksheet. You can find each worksheet and relevant material (eg: data) on Blackboard in the folder for that week. There will also always be a link at the bottom of the lab notes. You have to complete these tasks in order to be able to take the homework quiz (which is assessed). The tasks will always mirror the in-lab activities, so if you get through those, the task should be a breeze. 
+
+#### 4) Homework quiz
+
+Each week you will have to complete a homework quiz. This quiz is assessed, and your score on all the quizzes combined counts for 20% of your final mark (the other 80% is your final essay). The questions in the homework quiz will ask about key concepts from your reading, and about the answers to the post-lab task. Make sure that you have finished the task before you begin your homework quiz, and have it with you while you do so. The homework quiz will be available on Blackboard, and will be open on each Friday at 11:00am, and close the following Thursday at 9:00am. You can take the homework quiz any time between these times. You can take it only once. Once you activate the quiz, you will have only 30 minutes to complete it. Please make sure you are in a quiet environment where you will not be disturbed, with your reading notes and your post-lab task with you, so you can complete the homework quiz successfully. Upon submission you will receive immediate feedback. 
+
+Don't forget your homework is graded, and counts towards your final mark. But you get to practice for completing the tasks with the activities in the lab. And if you have time left over, you can always complete these tasks here in the lab. No matter where you do them, by havign the tasks completed and with you when you take the quiz, you will be more confident in the homework quiz exercises. 
+
+
+#### 5) Lectures
+
+In the lectures we will go over one last time the basic concepts covered in that week. The lecture is the final event that should pull together all your learning from that week. It is your chance to ask questions, discuss, and further interrogate the material we cover. I encourage you to bring your own examples to lectures wherever you encounter them. Lectures are podcast, however they are also attendance monitored. You must attend, and sign in to these lectures to receive attendance credit. 
+
+<!--
+
+
+, which will be indicated by special notation (colour):
+
+
+<span style="color:#a50026">Where you see text in red, this is an instruction to carry out a task or activity. Make sure you do these in the lab, so if you have any questions about it, you can ask the teaching team!</span>
+
+<span style="color:#313695">Where you see text in blue, this is an instruction to carry out a task or activity that will then feed into your final assignment. You can do these in the lab, or you can do these on your own time and bring them to get some feedback, however you will not get as much feedback as you would on the homework, as this will be all going into your final assignment. There is a list of all of these tasks available on your [document about the final assigment](), however they are included in each week's lab notes to help you build towards it, and not have to do everything in one large panicked go at the end of term. Because you wouldn't do that would you. You are a forward planning, non-procastinating student. Good. </span>
+-->
+
+
+
