@@ -13,10 +13,10 @@ This is the reading that should be done for each lecture **before you attend the
 If you want to read something cover to cover, I would recommend [Tiger That Isn`t, written by Michael Blastland & Andrew Dilnot.](https://www.dawsonera.com/abstract/9781847650795). Very easy, very light, and will give you a good feeling about stats (I hope). I will also put other recommended reading at the end of this list. 
 
 
-#Mandatory reading for *before* the session
+# Mandatory reading for *before* the session
 
 
-##Week 1. Data sets & variables
+## Week 1. Data sets & variables
 	
 - Watch: [Hans Rosling The Joy of Stats](http://www.gapminder.org/videos/the-joy-of-stats/)
 - Chapter 1 (p.1-5): [The Tiger that Isn't](https://www.dawsonera.com/readonline/9781847650795)
@@ -24,35 +24,35 @@ If you want to read something cover to cover, I would recommend [Tiger That Isn`
 - Chapter 2 (p.13-27): [Statistics in Criminal Justice](https://link.springer.com/chapter/10.1007/978-1-4614-9170-5_2) (not the exercises)
 
 
-##Week 2. Describing and visualising single variables
+## Week 2. Describing and visualising single variables
 
 - Chapter 5, (p.68-87): [The tiger that isn't](https://www.dawsonera.com/readonline/9781847650795)
 - Chapter 5: (p.61-78): [Just plain data analysis](https://www.dawsonera.com/readonline/9781442215092)
 - Chapter 3 (p.31-61): [Statistical Methods for the Social Sciences: Pearson New International Edition](https://www.dawsonera.com/readonline/9781292034898).
 
-##Week 3. Making comparisons I: the basics
+## Week 3. Making comparisons I: the basics
 
 - Chapters 2 and 3 (p.6-36): [The Tiger that Isn't](https://www.dawsonera.com/readonline/9781847650795) 
 - Chapter 3 (p.36-64): [Statistics in Criminal Justice](https://link.springer.com/chapter/10.1007/978-1-4614-9170-5_3)
 
-##Week 4. Concepts, operationalisation, measurement, and Sampling
+## Week 4. Concepts, operationalisation, measurement, and Sampling
 
 - Chapters 6 and 8 (p.88-106 and 124-146): [The Tiger tht Isn't](https://www.dawsonera.com/readonline/9781847650795)
 - Chapters 5 and 6 (p.123-196): [The Practice of Social Research, International Edition](https://www.dawsonera.com/abstract/9781408093153)
 - Chapters 4 and 5 (p.65-124) in [Statistics in Criminal Justice](https://link.springer.com/book/10.1007%2F978-1-4614-9170-5)
 - Chapter 2 (p.11-25): [Statistical Methods for the Social Sciences: Pearson New International Edition](https://www.dawsonera.com/readonline/9781292034898).
 
-##Week 5. Making comparisons II: the relevance of research design
+## Week 5. Making comparisons II: the relevance of research design
 
 - Chapter 4 (p.88-122): [The Practice of Social Research, International Edition](https://www.dawsonera.com/abstract/9781408093153).
 - Chapter 1 (p.1-22): [Just Plain Data Analysis](https://www.dawsonera.com/readonline/9781442215092) 
 - Chapter 1 and half of 2 (p.1-21): [Principles of Applied Statistics](https://www.cambridge.org/core/books/principles-of-applied-statistics/E7225E64F86B2C8193CA3C57621B6338) (stop after section 2.3)
 
-##Week 6. Data visualisation
+## Week 6. Data visualisation
 - Watch: [David Mccandless on the beauty of data visualisation](https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization) 
 - Chapters 1 and 2 (p.27-65) [The Truthful Art by Alerto Cairo](https://www.vlebooks.com/vleweb/Product/Index/819451?page=0)
 
-##Week 7. Looking at trends
+## Week 7. Looking at trends
 
 
 - Chapter 13 (p.95-102)['Models Are Stories Are Not Real Life' in Statistics in Society]()
@@ -61,13 +61,38 @@ If you want to read something cover to cover, I would recommend [Tiger That Isn`
 - Chapter 14: Time (p.407-449) [Grammar of Graphics](https://link-springer-com.manchester.idm.oclc.org/chapter/10.1007/0-387-28695-0_14)
 - This paper on [Crime seasonality and its variations across space](http://www.sciencedirect.com/science/article/pii/S0143622813001410)
 
-##Week 8. Qualitative data
-- TBD
+## Week 8. Qualitative data
 
-##Week 9. Qualitative data analysis
-- TBD
+Read:
 
-##Week 10. Wrap up and project support
+- Silver, C. and Lewins, A. (2014) 'Chapter 1 Qualitative Data Analysis and CAQDAS' from their book Using Software in Qualitative Research: A Step-By-Step Guide (p.9-34) - link on Blackboard.
+- Silver, C. and Lewins, A. (2014) 'Chapter 5 Early Steps in Software: Practical Tasks and Familiarisation', again from the same book book (p.106-133) - link on blackboard.
+
+Also watch the following two videos. These are taken from the QSR NVivo website where there are lots of good tutorials on how to use NVivo to analyse and manage your qualitative data. Feel free to explore further too...
+
+ - [Explore NVivo 11 Pro for Windows - video here.](https://www.youtube.com/watch?v=S7Z8izUiQjA&index=2&list=PLNjHMRgHS4Fcx3NfpKsaqXuGdcxI9y-Qa)
+- [Using Nodes and Cases in NVivo - video here](https://www.youtube.com/watch?v=l5dJOKkJZxs&index=4&list=PLNjHMRgHS4Fcx3NfpKsaqXuGdcxI9y-Qa)
+
+[If you're a Mac user  you can also watch the equivalent tutorials for Mac here](https://www.youtube.com/playlist?list=PLNjHMRgHS4FfTN-GoztTaPLshavAb0NxR).
+
+## Week 9. Qualitative data analysis
+
+Read: 
+
+- Silver, C. and Lewins, A. (2014) 'Chapter 7 Qualitative Coding in Software: Principles and Processes' from their book Using Software in Qualitative Research: A Step-By-Step Guide (p.9-34) - [link on Blacboard](https://online.manchester.ac.uk/bbcswebdav/pid-6513809-dt-content-rid-26831733_1/xid-26831733_1)
+- Seale, C. (2004) '24 Quality In Qualitative Research' in Seale, C., Gobo, G. Gubrium, J. F. and Silverman, D. (eds) Qualitative Research Practice, London: Sage (p.379-390) - [link on Blacboard](https://online.manchester.ac.uk/bbcswebdav/pid-6513809-dt-content-rid-26831736_1/xid-26831736_1)
+
+
+Also watch the following two videos: 
+
+- [Developing 'Mind Maps' - video here](https://www.youtube.com/watch?v=OZy1sgKQ4KY&list=PLNjHMRgHS4Fcx3NfpKsaqXuGdcxI9y-Qa&index=7). These are useful at the start of your project when you're developing your initial ideas.
+- [Visualising 'Concept Maps' - video here.](https://www.youtube.com/watch?v=3R5gZKdOJD4&list=PLNjHMRgHS4Fcx3NfpKsaqXuGdcxI9y-Qa&index=8) These enable you to build connections between your concepts, nodes and ideas - i.e. theorise!
+
+[If you're a Mac user (like me, and Reka!) you can also watch the equivalent tutorials for Mac here.](https://www.youtube.com/playlist?list=PLNjHMRgHS4FfTN-GoztTaPLshavAb0NxR)
+
+## Week 10. Wrap up and project support
+
+No preparatory reading required
 
 
 
