@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Making Sense of Crim Data</title>
+  <meta name="description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Making Sense of Crim Data" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Making Sense of Crim Data" />
+  
+  <meta name="twitter:description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester" />
+  
+
+<meta name="author" content="Reka Solymosi">
+
+
+<meta name="date" content="2018-09-23">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="index.html">
+<link rel="next" href="week2.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Making Sense of Criminological Data</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a><ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#disclaimer"><i class="fa fa-check"></i><b>0.1</b> Disclaimer</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#overview"><i class="fa fa-check"></i><b>0.2</b> Overview of course</a><ul>
+<li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#module-structure"><i class="fa fa-check"></i><b>0.2.1</b> Module structure</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="week1.html"><a href="week1.html"><i class="fa fa-check"></i><b>1</b> Week 1</a><ul>
+<li class="chapter" data-level="1.1" data-path="week1.html"><a href="week1.html#learning-outcomes"><i class="fa fa-check"></i><b>1.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="1.2" data-path="week1.html"><a href="week1.html#setting-up-your-working-environment"><i class="fa fa-check"></i><b>1.2</b> Setting up your working environment</a></li>
+<li class="chapter" data-level="1.3" data-path="week1.html"><a href="week1.html#getting-to-know-excel"><i class="fa fa-check"></i><b>1.3</b> Getting to know Excel</a></li>
+<li class="chapter" data-level="1.4" data-path="week1.html"><a href="week1.html#data-variables-and-observations"><i class="fa fa-check"></i><b>1.4</b> Data: Variables and observations</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="week1.html"><a href="week1.html#activity-1-building-your-own-data"><i class="fa fa-check"></i><b>1.4.1</b> Activity 1: Building your own data</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="week1.html"><a href="week1.html#questions-about-your-data"><i class="fa fa-check"></i><b>1.5</b> Questions about your data</a><ul>
+<li class="chapter" data-level="1.5.1" data-path="week1.html"><a href="week1.html#activity-2-thinking-about-what-our-data-tells-us"><i class="fa fa-check"></i><b>1.5.1</b> Activity 2: Thinking about what our data tells us</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="week1.html"><a href="week1.html#looking-at-real-data"><i class="fa fa-check"></i><b>1.6</b> Looking at real data</a></li>
+<li class="chapter" data-level="1.7" data-path="week1.html"><a href="week1.html#code-books"><i class="fa fa-check"></i><b>1.7</b> Code books</a></li>
+<li class="chapter" data-level="1.8" data-path="week1.html"><a href="week1.html#levels-of-measurement"><i class="fa fa-check"></i><b>1.8</b> Levels of measurement</a><ul>
+<li class="chapter" data-level="1.8.1" data-path="week1.html"><a href="week1.html#activity-3.1-levels-of-measurement-pt.-1"><i class="fa fa-check"></i><b>1.8.1</b> Activity 3.1: Levels of measurement pt. 1</a></li>
+<li class="chapter" data-level="1.8.2" data-path="week1.html"><a href="week1.html#activity-3.2-levels-of-measurement-pt.-2"><i class="fa fa-check"></i><b>1.8.2</b> Activity 3.2: Levels of measurement pt. 2</a></li>
+</ul></li>
+<li class="chapter" data-level="1.9" data-path="week1.html"><a href="week1.html#unit-of-analysis"><i class="fa fa-check"></i><b>1.9</b> Unit of analysis</a><ul>
+<li class="chapter" data-level="1.9.1" data-path="week1.html"><a href="week1.html#activity-4-abstract-ing-the-unit-of-analysis"><i class="fa fa-check"></i><b>1.9.1</b> Activity 4: <em>Abstract</em>-ing the unit of analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="1.10" data-path="week1.html"><a href="week1.html#summary"><i class="fa fa-check"></i><b>1.10</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="week2.html"><a href="week2.html"><i class="fa fa-check"></i><b>2</b> Week 2</a><ul>
+<li class="chapter" data-level="2.1" data-path="week2.html"><a href="week2.html#learning-outcomes-1"><i class="fa fa-check"></i><b>2.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="week2.html"><a href="week2.html#terms-for-today"><i class="fa fa-check"></i><b>2.1.1</b> Terms for today:</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="week2.html"><a href="week2.html#univariate-analysis"><i class="fa fa-check"></i><b>2.2</b> Univariate analysis</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="week2.html"><a href="week2.html#the-importance-of-level-of-measurement"><i class="fa fa-check"></i><b>2.2.1</b> The importance of level of measurement</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="week2.html"><a href="week2.html#summarising-categorical-data"><i class="fa fa-check"></i><b>2.3</b> Summarising categorical data</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="week2.html"><a href="week2.html#activity-1-crime-types"><i class="fa fa-check"></i><b>2.3.1</b> Activity 1: Crime types</a></li>
+<li class="chapter" data-level="2.3.2" data-path="week2.html"><a href="week2.html#frequency-tables"><i class="fa fa-check"></i><b>2.3.2</b> Frequency tables</a></li>
+<li class="chapter" data-level="2.3.3" data-path="week2.html"><a href="week2.html#creating-a-frequency-table-in-excel"><i class="fa fa-check"></i><b>2.3.3</b> Creating a frequency table in Excel</a></li>
+<li class="chapter" data-level="2.3.4" data-path="week2.html"><a href="week2.html#activity-2-looking-at-frequency"><i class="fa fa-check"></i><b>2.3.4</b> Activity 2: Looking at frequency</a></li>
+<li class="chapter" data-level="2.3.5" data-path="week2.html"><a href="week2.html#visualising-a-frequency-table-with-bar-charts"><i class="fa fa-check"></i><b>2.3.5</b> Visualising a frequency table with bar charts</a></li>
+<li class="chapter" data-level="2.3.6" data-path="week2.html"><a href="week2.html#activity-3-bar-charts-in-excel"><i class="fa fa-check"></i><b>2.3.6</b> Activity 3: Bar charts in Excel</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="week2.html"><a href="week2.html#summarising-numeric-data"><i class="fa fa-check"></i><b>2.4</b> Summarising numeric data</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="week2.html"><a href="week2.html#measures-of-central-tendency"><i class="fa fa-check"></i><b>2.4.1</b> Measures of central tendency</a></li>
+<li class="chapter" data-level="2.4.2" data-path="week2.html"><a href="week2.html#activity-4-mean-and-median-in-excel"><i class="fa fa-check"></i><b>2.4.2</b> Activity 4: Mean and median in excel</a></li>
+<li class="chapter" data-level="2.4.3" data-path="week2.html"><a href="week2.html#distributions"><i class="fa fa-check"></i><b>2.4.3</b> Distributions</a></li>
+<li class="chapter" data-level="2.4.4" data-path="week2.html"><a href="week2.html#histograms"><i class="fa fa-check"></i><b>2.4.4</b> Histograms</a></li>
+<li class="chapter" data-level="2.4.5" data-path="week2.html"><a href="week2.html#activity-5-histograms-in-excel"><i class="fa fa-check"></i><b>2.4.5</b> Activity 5: Histograms in Excel</a></li>
+<li class="chapter" data-level="2.4.6" data-path="week2.html"><a href="week2.html#five-number-summary"><i class="fa fa-check"></i><b>2.4.6</b> Five-number summary</a></li>
+<li class="chapter" data-level="2.4.7" data-path="week2.html"><a href="week2.html#activity-6-calculate-quartiles"><i class="fa fa-check"></i><b>2.4.7</b> Activity 6: Calculate quartiles</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="week2.html"><a href="week2.html#standard-deviation"><i class="fa fa-check"></i><b>2.5</b> Standard deviation</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="week2.html"><a href="week2.html#activity-7-standard-deviation-in-excel"><i class="fa fa-check"></i><b>2.5.1</b> Activity 7: Standard Deviation in Excel</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="week2.html"><a href="week2.html#writing-it-all-up"><i class="fa fa-check"></i><b>2.6</b> Writing it all up</a><ul>
+<li class="chapter" data-level="2.6.1" data-path="week2.html"><a href="week2.html#build-a-structure"><i class="fa fa-check"></i><b>2.6.1</b> Build a structure</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="week2.html"><a href="week2.html#summary-1"><i class="fa fa-check"></i><b>2.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="week3.html"><a href="week3.html"><i class="fa fa-check"></i><b>3</b> Week 3</a><ul>
+<li class="chapter" data-level="3.1" data-path="week3.html"><a href="week3.html#learning-outcomes-2"><i class="fa fa-check"></i><b>3.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="week3.html"><a href="week3.html#terms-for-today-1"><i class="fa fa-check"></i><b>3.1.1</b> Terms for today</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="week3.html"><a href="week3.html#categorical-v-categorical"><i class="fa fa-check"></i><b>3.2</b> Categorical v categorical</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="week3.html"><a href="week3.html#activity-1-surviving-the-titanic"><i class="fa fa-check"></i><b>3.2.1</b> Activity 1: Surviving the Titanic</a></li>
+<li class="chapter" data-level="3.2.2" data-path="week3.html"><a href="week3.html#row-percentage-column-percentage-or-total-percentage"><i class="fa fa-check"></i><b>3.2.2</b> Row percentage, column percentage, or total percentage</a></li>
+<li class="chapter" data-level="3.2.3" data-path="week3.html"><a href="week3.html#a-note-on-formatting-cells"><i class="fa fa-check"></i><b>3.2.3</b> A note on formatting cells</a></li>
+<li class="chapter" data-level="3.2.4" data-path="week3.html"><a href="week3.html#activity-3-visualising-the-relationship---stacked-bar-charts-and-conditional-formatting"><i class="fa fa-check"></i><b>3.2.4</b> Activity 3: Visualising the relationship - stacked bar charts, and conditional formatting</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="week3.html"><a href="week3.html#categorical-v-numeric"><i class="fa fa-check"></i><b>3.3</b> Categorical v numeric</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="week3.html"><a href="week3.html#activity-4-age-of-offenders"><i class="fa fa-check"></i><b>3.3.1</b> Activity 4: Age of offenders</a></li>
+<li class="chapter" data-level="3.3.2" data-path="week3.html"><a href="week3.html#activity-5-adding-a-column-for-median"><i class="fa fa-check"></i><b>3.3.2</b> Activity 5: Adding a column for median</a></li>
+<li class="chapter" data-level="3.3.3" data-path="week3.html"><a href="week3.html#visualising-the-differences-between-groups"><i class="fa fa-check"></i><b>3.3.3</b> Visualising the differences between groups</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="week3.html"><a href="week3.html#numeric-v-numeric"><i class="fa fa-check"></i><b>3.4</b> Numeric v numeric</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="week3.html"><a href="week3.html#activity-6-does-age-at-first-arrest-correlate-with-total-number-of-arrests"><i class="fa fa-check"></i><b>3.4.1</b> Activity 6: Does age at first arrest correlate with total number of arrests?</a></li>
+<li class="chapter" data-level="3.4.2" data-path="week3.html"><a href="week3.html#correlation-does-not-mean-causation"><i class="fa fa-check"></i><b>3.4.2</b> Correlation does not mean causation</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="week3.html"><a href="week3.html#summary-2"><i class="fa fa-check"></i><b>3.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="week4.html"><a href="week4.html"><i class="fa fa-check"></i><b>4</b> Week 4</a><ul>
+<li class="chapter" data-level="4.1" data-path="week4.html"><a href="week4.html#learning-outcomes-3"><i class="fa fa-check"></i><b>4.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="week4.html"><a href="week4.html#terms-for-today-2"><i class="fa fa-check"></i><b>4.1.1</b> Terms for today:</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="week4.html"><a href="week4.html#population-parameters-versus-sample-statistics"><i class="fa fa-check"></i><b>4.2</b> Population parameters versus sample statistics</a></li>
+<li class="chapter" data-level="4.3" data-path="week4.html"><a href="week4.html#conceptualisation"><i class="fa fa-check"></i><b>4.3</b> Conceptualisation</a></li>
+<li class="chapter" data-level="4.4" data-path="week4.html"><a href="week4.html#measurement"><i class="fa fa-check"></i><b>4.4</b> Measurement</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="week4.html"><a href="week4.html#measuring-constructs-with-composite-variables"><i class="fa fa-check"></i><b>4.4.1</b> Measuring constructs with composite variables</a></li>
+<li class="chapter" data-level="4.4.2" data-path="week4.html"><a href="week4.html#multi-item-scales-for-categorical-constructs"><i class="fa fa-check"></i><b>4.4.2</b> Multi-item scales for categorical constructs</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="week4.html"><a href="week4.html#a-note-on-validity-and-reliability"><i class="fa fa-check"></i><b>4.5</b> A note on Validity and Reliability</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="week4.html"><a href="week4.html#activity-1-calculating-a-summative-score"><i class="fa fa-check"></i><b>4.5.1</b> Activity 1: Calculating a summative score</a></li>
+<li class="chapter" data-level="4.5.2" data-path="week4.html"><a href="week4.html#activity-2-testing-your-questions-cronbachs-alpha"><i class="fa fa-check"></i><b>4.5.2</b> Activity 2: Testing your questions: Cronbach’s alpha</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="week4.html"><a href="week4.html#recoding-some-more-transforming-your-variables-to-fit-with-your-concepts"><i class="fa fa-check"></i><b>4.6</b> Recoding some more: Transforming your variables to fit with your concepts</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="week4.html"><a href="week4.html#activity-3-recoding-variables"><i class="fa fa-check"></i><b>4.6.1</b> Activity 3: Recoding Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="week4.html"><a href="week4.html#summary-3"><i class="fa fa-check"></i><b>4.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="week5.html"><a href="week5.html"><i class="fa fa-check"></i><b>5</b> Week 5</a><ul>
+<li class="chapter" data-level="5.1" data-path="week5.html"><a href="week5.html#learning-outcomes-4"><i class="fa fa-check"></i><b>5.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="week5.html"><a href="week5.html#terms-for-today-3"><i class="fa fa-check"></i><b>5.1.1</b> Terms for today</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="week5.html"><a href="week5.html#research-design"><i class="fa fa-check"></i><b>5.2</b> Research Design</a></li>
+<li class="chapter" data-level="5.3" data-path="week5.html"><a href="week5.html#experiments-and-evaluation"><i class="fa fa-check"></i><b>5.3</b> Experiments and evaluation</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="week5.html"><a href="week5.html#rct"><i class="fa fa-check"></i><b>5.3.1</b> RCT</a></li>
+<li class="chapter" data-level="5.3.2" data-path="week5.html"><a href="week5.html#designing-an-rtc"><i class="fa fa-check"></i><b>5.3.2</b> Designing an RTC</a></li>
+<li class="chapter" data-level="5.3.3" data-path="week5.html"><a href="week5.html#activity-1-research-planning-with-gantt-charts-design-an-rtc-example"><i class="fa fa-check"></i><b>5.3.3</b> Activity 1: Research Planning with Gantt Charts: Design an RTC example</a></li>
+<li class="chapter" data-level="5.3.4" data-path="week5.html"><a href="week5.html#activity-2-random-assignment-into-control-and-treatment"><i class="fa fa-check"></i><b>5.3.4</b> Activity 2: Random assignment into control and treatment</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="week5.html"><a href="week5.html#activity-3-stratified-randomisation"><i class="fa fa-check"></i><b>5.4</b> Activity 3: Stratified randomisation</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="week5.html"><a href="week5.html#freeze"><i class="fa fa-check"></i><b>5.4.1</b> Freeze!</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="week5.html"><a href="week5.html#a-final-note-on-evidence-meta-analysis"><i class="fa fa-check"></i><b>5.5</b> A final note on evidence: Meta Analysis</a></li>
+<li class="chapter" data-level="5.6" data-path="week5.html"><a href="week5.html#longitudinal-data"><i class="fa fa-check"></i><b>5.6</b> Longitudinal data</a><ul>
+<li class="chapter" data-level="5.6.1" data-path="week5.html"><a href="week5.html#what-does-longitudinal-data-look-like"><i class="fa fa-check"></i><b>5.6.1</b> What does longitudinal data look like?</a></li>
+<li class="chapter" data-level="5.6.2" data-path="week5.html"><a href="week5.html#activity-4-linking-data"><i class="fa fa-check"></i><b>5.6.2</b> Activity 4: Linking data</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="week5.html"><a href="week5.html#complete-cases-an-approach-to-missing-data"><i class="fa fa-check"></i><b>5.7</b> Complete cases (an approach to missing data)</a><ul>
+<li class="chapter" data-level="5.7.1" data-path="week5.html"><a href="week5.html#activity-5-selecting-complete-cases"><i class="fa fa-check"></i><b>5.7.1</b> Activity 5: Selecting Complete Cases</a></li>
+</ul></li>
+<li class="chapter" data-level="5.8" data-path="week5.html"><a href="week5.html#ethics"><i class="fa fa-check"></i><b>5.8</b> Ethics</a></li>
+<li class="chapter" data-level="5.9" data-path="week5.html"><a href="week5.html#summary-4"><i class="fa fa-check"></i><b>5.9</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="week6.html"><a href="week6.html"><i class="fa fa-check"></i><b>6</b> Week 6</a><ul>
+<li class="chapter" data-level="6.1" data-path="week6.html"><a href="week6.html#learning-outcomes-5"><i class="fa fa-check"></i><b>6.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="6.2" data-path="week6.html"><a href="week6.html#visualising-data"><i class="fa fa-check"></i><b>6.2</b> Visualising data</a></li>
+<li class="chapter" data-level="6.3" data-path="week6.html"><a href="week6.html#why-visualise-data"><i class="fa fa-check"></i><b>6.3</b> Why visualise data?</a></li>
+<li class="chapter" data-level="6.4" data-path="week6.html"><a href="week6.html#anatomy-of-a-plot---the-grammar-of-graphics"><i class="fa fa-check"></i><b>6.4</b> Anatomy of a plot - the Grammar of Graphics</a></li>
+<li class="chapter" data-level="6.5" data-path="week6.html"><a href="week6.html#principles-of-good-data-visualisation"><i class="fa fa-check"></i><b>6.5</b> Principles of good data visualisation</a><ul>
+<li class="chapter" data-level="6.5.1" data-path="week6.html"><a href="week6.html#criticisms"><i class="fa fa-check"></i><b>6.5.1</b> Criticisms</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="week6.html"><a href="week6.html#what-makes-a-bad-graph-bad"><i class="fa fa-check"></i><b>6.6</b> What makes a bad graph bad?</a></li>
+<li class="chapter" data-level="6.7" data-path="week6.html"><a href="week6.html#what-graph-should-i-use"><i class="fa fa-check"></i><b>6.7</b> What graph should I use?</a></li>
+<li class="chapter" data-level="6.8" data-path="week6.html"><a href="week6.html#edges-contrasts-and-colors"><i class="fa fa-check"></i><b>6.8</b> Edges, Contrasts and Colors</a></li>
+<li class="chapter" data-level="6.9" data-path="week6.html"><a href="week6.html#colour"><i class="fa fa-check"></i><b>6.9</b> Colour</a><ul>
+<li class="chapter" data-level="6.9.1" data-path="week6.html"><a href="week6.html#activity-1-custom-colours-in-excel-graphs."><i class="fa fa-check"></i><b>6.9.1</b> Activity 1: Custom colours in Excel graphs.</a></li>
+</ul></li>
+<li class="chapter" data-level="6.10" data-path="week6.html"><a href="week6.html#reading-between-the-lines-points"><i class="fa fa-check"></i><b>6.10</b> Reading between the lines (points)</a></li>
+<li class="chapter" data-level="6.11" data-path="week6.html"><a href="week6.html#exploratory-data-visualisation"><i class="fa fa-check"></i><b>6.11</b> Exploratory data visualisation</a><ul>
+<li class="chapter" data-level="6.11.1" data-path="week6.html"><a href="week6.html#comparing-categories"><i class="fa fa-check"></i><b>6.11.1</b> Comparing categories</a></li>
+<li class="chapter" data-level="6.11.2" data-path="week6.html"><a href="week6.html#activity-2-exploring-trends"><i class="fa fa-check"></i><b>6.11.2</b> Activity 2: Exploring trends</a></li>
+<li class="chapter" data-level="6.11.3" data-path="week6.html"><a href="week6.html#activity-3-making-a-chart-template"><i class="fa fa-check"></i><b>6.11.3</b> Activity 3: Making a chart template</a></li>
+<li class="chapter" data-level="6.11.4" data-path="week6.html"><a href="week6.html#activity-4-saving-your-graph"><i class="fa fa-check"></i><b>6.11.4</b> Activity 4: Saving your graph</a></li>
+</ul></li>
+<li class="chapter" data-level="6.12" data-path="week6.html"><a href="week6.html#acvitity-5-more-complex-graphs"><i class="fa fa-check"></i><b>6.12</b> Acvitity 5: More complex graphs</a></li>
+<li class="chapter" data-level="6.13" data-path="week6.html"><a href="week6.html#more-guidance-on-chart-design"><i class="fa fa-check"></i><b>6.13</b> More guidance on chart design</a></li>
+<li class="chapter" data-level="6.14" data-path="week6.html"><a href="week6.html#communicating-results"><i class="fa fa-check"></i><b>6.14</b> Communicating results</a><ul>
+<li class="chapter" data-level="6.14.1" data-path="week6.html"><a href="week6.html#activity-6-interpreting-results"><i class="fa fa-check"></i><b>6.14.1</b> Activity 6: Interpreting results</a></li>
+</ul></li>
+<li class="chapter" data-level="6.15" data-path="week6.html"><a href="week6.html#note-on-your-feedback-session"><i class="fa fa-check"></i><b>6.15</b> Note on your feedback session</a></li>
+<li class="chapter" data-level="6.16" data-path="week6.html"><a href="week6.html#summary-5"><i class="fa fa-check"></i><b>6.16</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="week7.html"><a href="week7.html"><i class="fa fa-check"></i><b>7</b> Week 7</a><ul>
+<li class="chapter" data-level="7.1" data-path="week7.html"><a href="week7.html#learning-outcomes-6"><i class="fa fa-check"></i><b>7.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="7.2" data-path="week7.html"><a href="week7.html#crime-and-incident-trend-identification"><i class="fa fa-check"></i><b>7.2</b> Crime and incident trend identification</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="week7.html"><a href="week7.html#activity-1-extracting-temporal-variables-from-dates"><i class="fa fa-check"></i><b>7.2.1</b> Activity 1: Extracting temporal variables from dates</a></li>
+<li class="chapter" data-level="7.2.2" data-path="week7.html"><a href="week7.html#activity-2-extract-year-from-date-column"><i class="fa fa-check"></i><b>7.2.2</b> Activity 2: Extract year from date column</a></li>
+<li class="chapter" data-level="7.2.3" data-path="week7.html"><a href="week7.html#activity-3-extract-day-of-week-from-date-column"><i class="fa fa-check"></i><b>7.2.3</b> Activity 3: Extract day of week from date column</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="week7.html"><a href="week7.html#aggregating-to-simple-intervals"><i class="fa fa-check"></i><b>7.3</b> Aggregating to simple intervals</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="week7.html"><a href="week7.html#activity-4-aggregate-to-hour"><i class="fa fa-check"></i><b>7.3.1</b> Activity 4: Aggregate to hour</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="week7.html"><a href="week7.html#visualising-time"><i class="fa fa-check"></i><b>7.4</b> Visualising time</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="week7.html"><a href="week7.html#activity-5-line-graphs"><i class="fa fa-check"></i><b>7.4.1</b> Activity 5: Line graphs</a></li>
+<li class="chapter" data-level="7.4.2" data-path="week7.html"><a href="week7.html#activity-6-radar-graphs"><i class="fa fa-check"></i><b>7.4.2</b> Activity 6: Radar graphs</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="week7.html"><a href="week7.html#activity-7-heatmaps"><i class="fa fa-check"></i><b>7.5</b> Activity 7: Heatmaps</a><ul>
+<li class="chapter" data-level="7.5.1" data-path="week7.html"><a href="week7.html#more-charts"><i class="fa fa-check"></i><b>7.5.1</b> More charts?</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="week7.html"><a href="week7.html#time-series"><i class="fa fa-check"></i><b>7.6</b> Time series</a><ul>
+<li class="chapter" data-level="7.6.1" data-path="week7.html"><a href="week7.html#moving-averages"><i class="fa fa-check"></i><b>7.6.1</b> Moving averages</a></li>
+<li class="chapter" data-level="7.6.2" data-path="week7.html"><a href="week7.html#activity-8-moving-average-in-excel"><i class="fa fa-check"></i><b>7.6.2</b> Activity 8: Moving average in Excel</a></li>
+</ul></li>
+<li class="chapter" data-level="7.7" data-path="week7.html"><a href="week7.html#summary-6"><i class="fa fa-check"></i><b>7.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="week8.html"><a href="week8.html"><i class="fa fa-check"></i><b>8</b> Week 8</a><ul>
+<li class="chapter" data-level="8.1" data-path="week8.html"><a href="week8.html#learning-outcomes-7"><i class="fa fa-check"></i><b>8.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="8.2" data-path="week8.html"><a href="week8.html#why-use-software-in-qualitative-data-analysis"><i class="fa fa-check"></i><b>8.2</b> Why use software in qualitative data analysis?</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="week8.html"><a href="week8.html#activity-1"><i class="fa fa-check"></i><b>8.2.1</b> Activity 1:</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="week8.html"><a href="week8.html#what-kinds-of-data-can-i-input-into-nvivo-for-analysis"><i class="fa fa-check"></i><b>8.3</b> What kinds of data can I input into NVivo for analysis?</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="week8.html"><a href="week8.html#activity-2-find-some-data"><i class="fa fa-check"></i><b>8.3.1</b> Activity 2: Find some data…</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="week8.html"><a href="week8.html#creating-your-nvivo-project"><i class="fa fa-check"></i><b>8.4</b> Creating your NVivo project</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="week8.html"><a href="week8.html#activity-3-getting-started-with-nvivo"><i class="fa fa-check"></i><b>8.4.1</b> Activity 3: Getting started with NVivo</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="week8.html"><a href="week8.html#understanding-the-interface"><i class="fa fa-check"></i><b>8.5</b> Understanding the interface</a></li>
+<li class="chapter" data-level="8.6" data-path="week8.html"><a href="week8.html#navigation-view"><i class="fa fa-check"></i><b>8.6</b> Navigation View</a><ul>
+<li class="chapter" data-level="8.6.1" data-path="week8.html"><a href="week8.html#sources"><i class="fa fa-check"></i><b>8.6.1</b> Sources</a></li>
+<li class="chapter" data-level="8.6.2" data-path="week8.html"><a href="week8.html#the-internals-section"><i class="fa fa-check"></i><b>8.6.2</b> The ‘internals’ section:</a></li>
+<li class="chapter" data-level="8.6.3" data-path="week8.html"><a href="week8.html#memos"><i class="fa fa-check"></i><b>8.6.3</b> Memos</a></li>
+<li class="chapter" data-level="8.6.4" data-path="week8.html"><a href="week8.html#activity-4-folders"><i class="fa fa-check"></i><b>8.6.4</b> Activity 4: Folders</a></li>
+</ul></li>
+<li class="chapter" data-level="8.7" data-path="week8.html"><a href="week8.html#importing-data"><i class="fa fa-check"></i><b>8.7</b> Importing Data</a><ul>
+<li class="chapter" data-level="8.7.1" data-path="week8.html"><a href="week8.html#activity-5-import-data"><i class="fa fa-check"></i><b>8.7.1</b> Activity 5: Import data</a></li>
+</ul></li>
+<li class="chapter" data-level="8.8" data-path="week8.html"><a href="week8.html#memos-1"><i class="fa fa-check"></i><b>8.8</b> Memos</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="week8.html"><a href="week8.html#activity-6-memos"><i class="fa fa-check"></i><b>8.8.1</b> Activity 6: Memos</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="week8.html"><a href="week8.html#word-frequency"><i class="fa fa-check"></i><b>8.9</b> Word frequency</a><ul>
+<li class="chapter" data-level="8.9.1" data-path="week8.html"><a href="week8.html#activity-7-word-frequency"><i class="fa fa-check"></i><b>8.9.1</b> Activity 7: Word frequency</a></li>
+</ul></li>
+<li class="chapter" data-level="8.10" data-path="week8.html"><a href="week8.html#summary-7"><i class="fa fa-check"></i><b>8.10</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="week9.html"><a href="week9.html"><i class="fa fa-check"></i><b>9</b> Week 9</a><ul>
+<li class="chapter" data-level="9.1" data-path="week9.html"><a href="week9.html#learning-outcomes-8"><i class="fa fa-check"></i><b>9.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="9.2" data-path="week9.html"><a href="week9.html#deduction-induction-adaption-key-analytical-strategies-for-qualitative-data"><i class="fa fa-check"></i><b>9.2</b> Deduction, induction, adaption – key analytical strategies for qualitative data</a></li>
+<li class="chapter" data-level="9.3" data-path="week9.html"><a href="week9.html#coding-qualitative-data-using-nodes"><i class="fa fa-check"></i><b>9.3</b> ‘Coding’ qualitative data using ‘nodes’</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="week9.html"><a href="week9.html#what-are-nodes"><i class="fa fa-check"></i><b>9.3.1</b> What are ‘Nodes’?</a></li>
+<li class="chapter" data-level="9.3.2" data-path="week9.html"><a href="week9.html#activity-1-coding"><i class="fa fa-check"></i><b>9.3.2</b> Activity 1: Coding</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="week9.html"><a href="week9.html#using-mind-maps-to-organise-your-analytical-process-and-framework"><i class="fa fa-check"></i><b>9.4</b> Using ‘mind maps’ to organise your ‘analytical process and framework’</a><ul>
+<li class="chapter" data-level="9.4.1" data-path="week9.html"><a href="week9.html#activity-2-deductive-coding"><i class="fa fa-check"></i><b>9.4.1</b> Activity 2: Deductive coding</a></li>
+<li class="chapter" data-level="9.4.2" data-path="week9.html"><a href="week9.html#activity-3-inductive-coding"><i class="fa fa-check"></i><b>9.4.2</b> Activity 3: Inductive coding</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="week9.html"><a href="week9.html#abductive-coding"><i class="fa fa-check"></i><b>9.5</b> Abductive coding</a><ul>
+<li class="chapter" data-level="9.5.1" data-path="week9.html"><a href="week9.html#activity-4-retrieval-viewing-coded-data"><i class="fa fa-check"></i><b>9.5.1</b> Activity 4: Retrieval – viewing coded data</a></li>
+<li class="chapter" data-level="9.5.2" data-path="week9.html"><a href="week9.html#activity-5-viewing-more-context"><i class="fa fa-check"></i><b>9.5.2</b> Activity 5: Viewing more context</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="week9.html"><a href="week9.html#export-coded-data"><i class="fa fa-check"></i><b>9.6</b> Export coded data</a><ul>
+<li class="chapter" data-level="9.6.1" data-path="week9.html"><a href="week9.html#activity-6-exporting-via-the-list-pane"><i class="fa fa-check"></i><b>9.6.1</b> Activity 6: Exporting via the list pane</a></li>
+</ul></li>
+<li class="chapter" data-level="9.7" data-path="week9.html"><a href="week9.html#reports-note-windows-only-users-not-supported-by-mac-yet"><i class="fa fa-check"></i><b>9.7</b> Reports (NOTE: WINDOWS ONLY USERS! NOT SUPPORTED BY MAC, YET!!)</a></li>
+<li class="chapter" data-level="9.8" data-path="week9.html"><a href="week9.html#some-other-useful-things-to-do"><i class="fa fa-check"></i><b>9.8</b> Some other useful things to do</a><ul>
+<li class="chapter" data-level="9.8.1" data-path="week9.html"><a href="week9.html#create-another-word-cloud"><i class="fa fa-check"></i><b>9.8.1</b> Create another Word Cloud:</a></li>
+<li class="chapter" data-level="9.8.2" data-path="week9.html"><a href="week9.html#create-a-word-tree"><i class="fa fa-check"></i><b>9.8.2</b> Create a Word Tree:</a></li>
+<li class="chapter" data-level="9.8.3" data-path="week9.html"><a href="week9.html#create-a-concept-map-windows-only"><i class="fa fa-check"></i><b>9.8.3</b> Create a Concept Map (WINDOWS ONLY!!)</a></li>
+</ul></li>
+<li class="chapter" data-level="9.9" data-path="week9.html"><a href="week9.html#other-features"><i class="fa fa-check"></i><b>9.9</b> Other features…</a><ul>
+<li class="chapter" data-level="9.9.1" data-path="week9.html"><a href="week9.html#graphicspictures---making-linked-notes-and-coding"><i class="fa fa-check"></i><b>9.9.1</b> Graphics/pictures - making linked notes and coding</a></li>
+<li class="chapter" data-level="9.9.2" data-path="week9.html"><a href="week9.html#coding-audiovideo-data"><i class="fa fa-check"></i><b>9.9.2</b> Coding audio/video data</a></li>
+</ul></li>
+<li class="chapter" data-level="9.10" data-path="week9.html"><a href="week9.html#more-on-capturing-web-material"><i class="fa fa-check"></i><b>9.10</b> More on capturing web material</a></li>
+<li class="chapter" data-level="9.11" data-path="week9.html"><a href="week9.html#summary-8"><i class="fa fa-check"></i><b>9.11</b> Summary</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Making Sense of Crim Data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="week1" class="section level1">
+<h1><span class="header-section-number">Chapter 1</span> Week 1</h1>
+<div id="learning-outcomes" class="section level2">
+<h2><span class="header-section-number">1.1</span> Learning outcomes</h2>
+<p>Welcome to week 1! This week is all about getting set up, and taking some first steps in learning about what is <em>data</em>. These are the building blocks of all the weeks to come, so pay special attention, and do set a pattern of asking questions! Now without further ado, let’s get started.</p>
+</div>
+<div id="setting-up-your-working-environment" class="section level2">
+<h2><span class="header-section-number">1.2</span> Setting up your working environment</h2>
+<p>There is a myth about the scientist and the messy workspace, typically illustrated with Albert Einstein:
+<img src="imgs/einstein_desk.jpg" width="480" /></p>
+<p>However many of us need order to be able to work properly. An organised workspace is also prominent, as we can see with these famous work spaces of : Galileo, Marie Curie, John Dalton, Alan Turing, and Charles Dickens:</p>
+<p><img src="imgs/galileo_desk.jpg" width="118" /><img src="imgs/marie_curie.jpg" width="118" /><img src="imgs/Dalton_John_desk.jpg" width="226" /><img src="imgs/alan_turing_desk.jpg" width="250" /><img src="imgs/charles_dickens_desk.jpg" width="250" /></p>
+<p>When working with data, you have to consider your workspace. You can think of your computer folders as your desk. It helps immensely to keep our data, your code and your notes organised. You will likely have a project folder, where you save your data, your graphs, your analysis outputs, etc. You want to consider the layout of this folder, how many subfolders will you have, what is the best structure to work for you? You might think this is trivial, but when you are working on a project with multiple data sets, or many graphs, it can get very messy very quickly. I recommend going through <a href="https://www.data.cam.ac.uk/data-management-guide/organising-your-data">this resource from the university of Cambridge data management guide</a> to consider Naming and Organising Files, Documentation and Metadata, Managing References, and Organising E-mail.</p>
+<p>Normally, say when you are working on a Windows PC at home, you can save files to your C: drive, and easily access them the next time you turn the computer on. When you are using computers at the university, however, you cannot be certain of being able to use the same computer again when you want to find and use your file again. Fortunately, once you have logged on to a computer at the university, a personal drive is available for you to use, and in effect, this drive follows you around to whichever PC you are logged on to. All students and staff have a personal file storage space on the network - known as the P: drive as this is usually the network drive letter allocated to it. Wherever you log on to the campus network your P: drive is available (in PC Clusters the My Documents icon on the desktop is a shortcut to the P: drive).</p>
+<p>You should already have a username and password with which to log on. Your username has 7 or 8 letters/digits, typically beginning ‘m…’. On the computers in the Faculty clusters (where you work in class time) you will see the Faculty computer ‘image’ and a version of the operating systems Windows 7.</p>
+<p>Away from the campus you can download and upload files to and from your P: drive over an Internet connection - for example to and from your home computer, but please remember that large files may take a long time to upload/download depending on the speed of your home internet connection. <a href="http://servicedesk.manchester.ac.uk/portal/app/portlets/results/viewsolution.jsp?solutionid=040918305513985&amp;SToken=A9F6241A4BCC47E813D7C92C68B579F7">See here for details about remote access</a>.</p>
+<p>It’s generally good to create a folder to save your data and our outputs in, which we will call a <strong>working directory</strong>. So firstly, before we begin to do any work, we should create our <strong>working directory</strong>. This is simply a folder where you will save all our data, and also where you will be reading data in from. You can create a new folder, where you will save everything for this course, or you can choose an existing folder. It’s advised that you create a folder, and also give it some name you remember, that will be meaningful. Generally try to avoid spaces and special characters in folder (and file) names. <a href="http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf">Here is a handy guide you should read about naming files and folders that will be relevant for all your future work</a>.</p>
+<p>It’s not necessarily a good idea to just dump everything into ‘Desktop’ either, as you want to be able to find things later, and maybe keep things tidy. We will now show you where your personal drive is and how to save your word file to it.</p>
+<p><span style="color:#d95f02"> Just to have some practice with doing this, create a Word document to put into the folder. Open Microsoft Word now (you can find this on the ‘Start’ button in the bottom left corner of your screen). The only thing you have to type in the document is your name.</p>
+<p><span style="color:#d95f02"> Save the file to your p: drive as follows. Click on the <em>save</em> button (or click File then Save in the drop down menus). The dialogue box below will appear. Click on the down arrow in the ‘Save in:’ box to change the default directory to your P: drive. The P: drive is the one that starts with your user name. Click on this drive.</p>
+<p><img src="imgs/save_doc_as.png" /></p>
+<p><span style="color:#d95f02"> Now create a new folder within your P: drive, especially for material for this course. To do so, click on the ‘Create new folder’ icon, as shown in the dialogue box below.</p>
+<p><img src="imgs/create_folder.png" /></p>
+<p><span style="color:#d95f02"> Label the new folder ‘LAWS20441’. You will now have a series of folders in your p: drive (some of these you haven’t created yourself, they have been provided for you by the university), one of which you can store course material in.
+Finally, name your Word document ‘Trial Document’ (in the filename box) and click ‘Save’. As noted above, you can remotely access your p: drive (from home or elsewhere). You can do this by logging into your personalised university portal (<a href="https://my.manchester.ac.uk" class="uri">https://my.manchester.ac.uk</a>).
+</span></p>
+<p>A word of caution, if your P: drive is full (and this tends to happen when you save image or sound files to it), there is a chance that some of the applications you want to use do not work. So make sure you keep your P: drive tidy if you don’t want to run into problems.</p>
+</div>
+<div id="getting-to-know-excel" class="section level2">
+<h2><span class="header-section-number">1.3</span> Getting to know Excel</h2>
+<p>Besides having a folder where you save something, you should also get comfortable with the tools which you will be using throughout this course. The main tool you’ll be using is <a href="https://en.wikipedia.org/wiki/Microsoft_Excel">Microsoft Excel</a>. You will be using it to explore, learn about, and manipulate criminological data throughout this course.</p>
+<div class="figure">
+<img src="imgs/bill_gates_excel.jpg" alt="I excel" />
+<p class="caption">I excel</p>
+</div>
+<p>If you are following along on your own laptop (I encourage this strongly) you can download microsoft excel <strong>for free</strong>, courtesy of the UoM library. <a href="http://www.itservices.manchester.ac.uk/students/office365/">Follow the instructions here to get Microsoft Office on your laptops</a>.</p>
+<p>Now you likely have come across Excel before, but it’s also possible that you have not, so I will start with the assumption that this is your first time opening it up. Exciting. So let’s get to it. To open excel, click on the windows icon, and select Microsoft Excel from the Microsoft Office bundle.</p>
+<p><img src="imgs/open_excel.png" /></p>
+<p>Now you should have Excel open, and you will see an empty spreadsheet. We will be using this just a little bit later on. But for now there is one more step we need to do, to be fully set up. We need to install the data analysis toolpak.</p>
+<p>To do this, click on the ‘File’ tab, and click on ‘Options’:</p>
+<p><img src="imgs/file_tab_options.png" /></p>
+<p>This will bring up a popup window. Here click on ‘Add-Ins’, then highlight ‘Analysis Toolpak’ and click on ‘Go’:</p>
+<p><img src="imgs/install_analysis_toolpak.png" /></p>
+<p>This will open another popup window. Here make sure you tick the box next to ‘Analysis Toolpak’ and click ‘OK’:</p>
+<p><img src="imgs/install_toolpak_after_go_popup.png" /></p>
+<p>Click ‘OK’ and you should be done! You can check by clicking on the ‘Data’ tab, and checking to see if a little Data Analysis icon has appeared:</p>
+<p><img src="imgs/data_tab_analysis_appears.png" /></p>
+<p>If you are confused, see <a href="https://support.office.com/en-gb/article/Load-the-Analysis-ToolPak-6a63e598-cd6d-42e3-9317-6b40ba1a66b4">here</a> for instructions how to get this. Once you have successfully installed the data analysis toolpak it will appear.</p>
+<p>And that’s it you are now set up! Excellent!</p>
+<p>You can now move on to the subtantive part of today’s course. In the next section we will learn about variables and data.</p>
+</div>
+<div id="data-variables-and-observations" class="section level2">
+<h2><span class="header-section-number">1.4</span> Data: Variables and observations</h2>
+<p>We know that in the period from May 2016 to May 2017, Greater Manchester police recorded a total of 420228 crimes. We also know that the largest number were recorded in Anti-social behaviour crime categeory, with 122443 instances, while the fewest in Possession of weapons, with 2009 instances.</p>
+<p>We can also track changes in the number of crimes over time:</p>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>How do we do this? Well, in the United Kingdom, since 2011 data regarding individual police recorded crimes have been made openly available to the public via the <a href="http://www.police.uk/">police.uk</a> website <a href="http://www.tandfonline.com/doi/abs/10.1080/15230406.2014.972456">1</a>. This means that by visiting the <a href="https://data.police.uk/">data.police.uk/</a> website you can access data about street-level crime, outcome, and stop and search information, broken down by police force. What does this mean? What do these data look like? Let’s have a look:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">X</th>
+<th align="left">Month</th>
+<th align="left">Reported.by</th>
+<th align="left">Falls.within</th>
+<th align="right">Longitude</th>
+<th align="right">Latitude</th>
+<th align="left">Location</th>
+<th align="left">LSOA.code</th>
+<th align="left">LSOA.name</th>
+<th align="left">Crime.type</th>
+<th align="left">Last.outcome.category</th>
+<th align="left">Context</th>
+<th align="left">borough</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">2016-05</td>
+<td align="left">Greater Manchester Police</td>
+<td align="left">Greater Manchester Police</td>
+<td align="right">-2.462774</td>
+<td align="right">53.6221</td>
+<td align="left">On or near Scout Road</td>
+<td align="left">E01012628</td>
+<td align="left">Blackburn with Darwen 018D</td>
+<td align="left">Violence and sexual offences</td>
+<td align="left">Unable to prosecute suspect</td>
+<td align="left">NA</td>
+<td align="left">Blackburn with Darwen</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="left">2016-05</td>
+<td align="left">Greater Manchester Police</td>
+<td align="left">Greater Manchester Police</td>
+<td align="right">-2.464422</td>
+<td align="right">53.6125</td>
+<td align="left">On or near Parking Area</td>
+<td align="left">E01004768</td>
+<td align="left">Bolton 001A</td>
+<td align="left">Anti-social behaviour</td>
+<td align="left"></td>
+<td align="left">NA</td>
+<td align="left">Bolton</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="left">2016-05</td>
+<td align="left">Greater Manchester Police</td>
+<td align="left">Greater Manchester Police</td>
+<td align="right">-2.464422</td>
+<td align="right">53.6125</td>
+<td align="left">On or near Parking Area</td>
+<td align="left">E01004768</td>
+<td align="left">Bolton 001A</td>
+<td align="left">Anti-social behaviour</td>
+<td align="left"></td>
+<td align="left">NA</td>
+<td align="left">Bolton</td>
+</tr>
+</tbody>
+</table>
+<p>In this data set each row is one crime record:</p>
+<div class="figure">
+<img src="imgs/rowIsObservation.png" alt="Each row is one observation" />
+<p class="caption">Each row is one observation</p>
+</div>
+<p>For every single crime event recorded in this data, there is a row, and it contains all the information that we know about this crime incident. It will have a value for each variable that we are interested in. The variables are the columns.</p>
+<p>So for example, <em>month</em> is a variable in our data, and for every row (which is every crime incident) this variable can take a value. Every crime incident occurred at one specific month, and that month when each incident happened will be the value that the <em>month</em> variable will take. And the month column will contain all the instances of the month variable for each crime incident recorded. Each observation (crime) will have a value for this variable (the month that it was recorded).</p>
+<div class="figure">
+<img src="imgs/columnIsVariable.png" alt="Each column is a variable" />
+<p class="caption">Each column is a variable</p>
+</div>
+<p>Let’s have a go at recording some data observations and putting them into a database, to give you some hands on experience here.</p>
+<div id="activity-1-building-your-own-data" class="section level3">
+<h3><span class="header-section-number">1.4.1</span> Activity 1: Building your own data</h3>
+<!--Often you will have data readily created for you, such as we saw with the police.uk data set, which can be downloaded in the rectangle format, where your columns are your variables, and your rows are your observations. But data can take many forms. So we will have a go at dealing with some data that comes in a very unruly form: tweets!-->
+<p><span style="color:#d95f02"> You will get a better understanding of how data represents what you are measuring if you have a go at building your own data set. We will do this here by using data from twitter. You are most likely familiar with twitter. You probably even tweet yourself. But even if you have never used twitter, you will no doubt know someone who does. In fact, many police forces use twitter. GMP is one of these forces, and in particular, GMP city centre like to keep their followers updated. Recently, the MEN had an article based on following GMP city centre’s tweets for one Saturday night. <a href="http://www.manchestereveningnews.co.uk/news/greater-manchester-news/what-police-city-centre-deal-13441129">You can read about that here</a>.</p>
+<p>Evidently tweets present really exciting and rich data. However they do not come in a format that is readily available for analysis in the form that we just presented here. But what you can do is collect data from tweets. And this is your task for your first lab activity.</p>
+<p>I have collected for you a set of tweets. Your task is to turn this into a rectangular data format, with the columns as variables, and the rows as observations (tweets). Let’s go through how to do this, setp-by-step.</p>
+<p>So first things first, we need a tool. As discussed we’ll mostly be using Excel in this course. So open up excel and create a brand new spreadsheet.</p>
+<p>Your first activity is to create a column header for each variable we want to collect. The easiest way to do this is just to make the first row your column headers. You can go ahead and create a column for each of the variables we are interested in collecting about each tweet. These are:</p>
+<ul>
+<li>Month: The month in which the tweet was sent</li>
+<li>Day: The day of the month in which the tweet was sent</li>
+<li>Hour: The hour when the tweet was sent, in 24h format (where 13:00 is 1pm and 01:00 is 1am)</li>
+<li>Account: The account who tweeted this tweet</li>
+<li>Tweet: The content of the tweet</li>
+<li>Likes: Number of likes for this tweet</li>
+<li>Retweets: Number of times this tweet was retweeted</li>
+<li>Comments: Number of comments made as reply to this tweet</li>
+</ul>
+<p><img src="imgs/column_headers_tweets.png" /></p>
+<p>Now you will just have to create a new row for each tweet, and populate a value for each variable we are collecting in our data. I’ll go through the first tweet with you, so we’re clear on what’s happening.
+This is tweet number 1:</p>
+<ul>
+<li><a href="https://twitter.com/GMPCityCentre/status/891900693585506304">Tweet 1</a></li>
+</ul>
+<p>You will see this open in a new window. Now let’s try to find the value for each variable in this tweet:</p>
+<div class="figure">
+<img src="imgs/tweet1.png" alt="Tweet1" />
+<p class="caption">Tweet1</p>
+</div>
+<ul>
+<li><em>Month</em>: July</li>
+<li><em>Day</em>: 31</li>
+<li><em>Hour</em>: 06</li>
+<li><em>Account</em>: GMPCityCentre</li>
+<li><em>Tweet</em>: Man left £1000 Stella McCartney bag on seat in Village bar with person he had just met, and when returned, woman and his bag had gone</li>
+<li><em>Likes</em>: 14</li>
+<li><em>Retweets</em>: 49</li>
+<li><em>Comments</em>: 22</li>
+</ul>
+<p>So when you enter these values, your data will look like this:</p>
+<p><img src="imgs/tweet1_entered.png" /></p>
+<p>Make sure that you are copy and pasting the ‘Tweet’ variable, rather than typing it out yourself, to save time and also ensure accuracy.</p>
+<p><strong>NOTE:</strong> It is possible that you see a slightly different time than what I have here. This could be because you are logged into your own twitter account, and <a href="http://www.adweek.com/digital/tweet-timestamps/">twitter shows you the time in your own time zone</a>. If this is the case, just log out of twitter (or open an incognito window in Chrome) and it will give you the time in Pacific Time Zone, which is the time zone they are on in California. Now that means they are 9 hours behind us (most of the time, sometimes this varies with daylight savings changes, but should be OK for this exercise). So if you have this problem,</p>
+<!--you can enter the "hour" variable like this, to get the Greenwich Mean Time version: 
+
+
+`= hour + 9`
+
+
+So for example, if you see the time of 10:57pm for the above tweet, you should have
+
+
+`= 22 + 9`
+
+
+If this number is greater than 24 (which in this case it is), just subtract 24 - this is because we've ventured over to the following day: 
+
+
+`= 22 + 9 - 24`
+
+
+Some of you by now are thinking: "but then we also have to chane the date!" Indeed, if you have stepped ahead to the next day, then the date provided with the tweet is also wrong. I don't know why twitter prefers to display things in Pactific time zone instead of the time zone from which it was tweeted, but unfortunately this is the case. So if you do have a twitter account, -->
+<p>I would recommend you log in, and set your time zone to GMT (<a href="https://support.twitter.com/articles/20169405">see how to here</a>) as it just makes life easier…</p>
+<p>OK, ready? Then let’s build our data by adding the following tweets as additional rows:</p>
+<ul>
+<li><a href="https://twitter.com/GMPCityCentre/status/891762454337867776">Tweet 2</a></li>
+<li><a href="https://twitter.com/GMPCityCentre/status/894515606321590273">Tweet 3</a></li>
+<li><a href="https://twitter.com/GMPCityCentre/status/894024570109386752">Tweet 4</a></li>
+<li><a href="https://twitter.com/GMPCityCentre/status/891247668772708352">Tweet 5</a></li>
+<li><a href="https://twitter.com/GMPCityCentre/status/891254643078176768">Tweet 6</a></li>
+<li><a href="https://twitter.com/GMPCityCentre/status/890871354924421120">Tweet 7</a></li>
+<li><a href="https://twitter.com/GMPCityCentre/status/890594946536927233">Tweet 8</a></li>
+<li><a href="https://twitter.com/GMPCityCentre/status/890161961626996736">Tweet 9</a></li>
+<li><a href="https://twitter.com/GMPCityCentre/status/889084990495051776">Tweet 10</a></li>
+</ul>
+<p>Once you have entered all these, you should have a pretty solid set of tweets, looking something like this:</p>
+<p><img src="imgs/gmp_tweets.png" /></p>
+<p>While entering your data you probably noticed that there was variation in when the tweets were made, how much like and retweet they received, and possibly also started interpreting the meaning of the tweet. Some disseminate stats, for example about the number of arrests, or share info about an operation, some appeal for information, for example about the woman wanted for questions about the racial abuse incident, and some are just one-off cases presented to the public.</p>
+<p>But now, you turned the unstructured data of tweets into a structured data set, where your observations (tweets) are the rows and the variables you’re interested in (month, day, hour, account, tweet, likes, retweets, comments) are all columns.</p>
+<p>Once you are done, save your data. You can do this by clicking on “file” and then “save as” and navigating to your working directory to save your file. You can save it as a <em>comma separated value</em> file, or .csv . Next term you will be dealing with data in this format. This way any formatting that you do to the spreadsheet (eg making the column titles bold etc) will <em>not</em> be preserved, however the data is available to read by more software, not just excel. It doesn’t hugely matter at this stage how you save your data.</p>
+<p>In any case, if you follow these steps, you will have a saved set of data, in a csv file, hopefully with some meaningful name:</p>
+<p><img src="imgs/save_tweets.png" /></p>
+<p>And now you have created your first data set. Your columns are your variables, which correspond to Month, Day, Hour, Account, Tweet, Likes, Retweets, and Comments. Your rows are the 10 tweets which you have collected this information about.
+</span></p>
+</div>
+</div>
+<div id="questions-about-your-data" class="section level2">
+<h2><span class="header-section-number">1.5</span> Questions about your data</h2>
+<p>Why would we do this? Well turning information into data allows us to ask questions, and draw meaningful conclusions. For example, by looking at your newly created data set of tweets, you can easily answer the question below:</p>
+<ul>
+<li><em>Which tweet has the highest number of likes?</em></li>
+</ul>
+<div id="activity-2-thinking-about-what-our-data-tells-us" class="section level3">
+<h3><span class="header-section-number">1.5.1</span> Activity 2: Thinking about what our data tells us</h3>
+<p><span style="color:#d95f02">Take a moment to look at your data to answer this question (<em>Which tweet has the highest number of likes?</em>). Which one is it? Read the content, have a think, and turn to the person next to you to ask them, why they think that this particular tweet has the highest number of likes in the group. Now try to come up with an alternative explanation. I would like you to now talk about your two possible explanations for why this tweet has the highest number of likes.</p>
+</div>
+</div>
+<div id="looking-at-real-data" class="section level2">
+<h2><span class="header-section-number">1.6</span> Looking at real data</h2>
+<p>So the above exercise gave you an idea about how observations (in that case tweets) can be turned into data sets where each row is one observation, and earch column is one variable.</p>
+<p>I demonstrated this above with the police.uk data, which is some real data that is released about crime statistics, as I mentioned, and something that you can see and download for yourself.</p>
+<p>We can play around with police recorded crime data, which can be downloaded from the <a href="https://data.police.uk/data/">police.uk</a> website.</p>
+<p>Let’s stick local and download some data for crime in Manchester.</p>
+<p>To do this, open the <a href="https://data.police.uk/data/">data.police.uk/data</a> website.</p>
+<ul>
+<li>In <code>Date range</code> just select a range you want to look at. I selected June 2016 - June 2016, but you can choose something more recent if you like.</li>
+<li>In <code>Force</code> find <code>Greater Manchester Police</code>, and tick the box next to it.</li>
+<li>In <code>Data sets</code> tick <code>Include crime data</code>.</li>
+<li>Finally click on <code>Generate File</code> button.</li>
+</ul>
+<p>This will take you to a download page, where you have to click the <code>Download now</code> button. This will open a dialogue to save a .zip file. Navigate to the working directory folder you’ve readet and save it there. Unzip the file, by either double clicking it, or by using right click, and then click on “extract”. Then open the file in excel (by double clicking it).</p>
+<p>You should be looking at one month worth of crime data from Greater Manchester Police. Isn’t that exciting? Real data, at your fingertips!</p>
+</div>
+<div id="code-books" class="section level2">
+<h2><span class="header-section-number">1.7</span> Code books</h2>
+<p>So to understand what the variables (columns) in our data mean, we usually look for resources that can tell us about this. A reference guide that tells you what the variables mean is usually called a <strong>code book</strong>.</p>
+<p>Creating data is a gift that keeps on giving, not just for yourself, but for others as well. Data collected by researchers is often shared and made available for others to use as well, so that they can explore their own research questions. For example, the <a href="https://www.ukdataservice.ac.uk/">UK Data Service</a> is a large repository of data where you can sign up, and access secondary data to analyse. You may have heard of the <a href="http://www.crimesurvey.co.uk/">Crime Survey for England and Wales</a> or the <a href="http://content.digital.nhs.uk/catalogue/PUB17879">Smoking, Drinking and Drug Use among Young People Survey</a>. The data collected by these surveys are online. Many many variables collected about individuals, neighbourhoods, and other units of analysis (to be returned to later) are available to us. Isn’t that really cool!? If you want to know, what thousands of people replied to the question asking them what the most important issue was to them when they voted in an election, you can find out just by downloading the correct data set!</p>
+<p>But there is one important consideration when you are sharing a data set, and something that is very important to you if you are using a data set someone else has created - you need to know what the variables <em>mean</em>. This is made possible by the creation of something called a <em>codebook</em> (and sometimes called a <em>data dictionary</em>). This is a note that accompanies a data set, telling the user a bit about the data, including what each variable means.</p>
+<p>Have a look at the codebook for the CSEW <a href="http://doc.ukdataservice.ac.uk/doc/7889/mrdoc/excel/7889_csew_data_dictionary_2002-03_to_2014-15.xlsx">here</a> - note that this will open a force download. Just download it, save it to your working directory, and then open it up with excel.</p>
+<p>It will look something like this:</p>
+<p><img src="imgs/csew_dictionary.png" /></p>
+<p>You see there is quite a bit of information provided, including the variable name, the question that was asked, a label, which is a bit of a description about the variable, and the possible values which the variable can take.</p>
+<p>This is very important for you to be able to think about what questions you can answer with these data.</p>
+<p>If we were to share our tweet data, we would have to create something similar to this for that as well. Something like this perhaps:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Variable</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Month</td>
+<td align="left">The month in which the tweet was sent</td>
+</tr>
+<tr class="even">
+<td align="left">Day</td>
+<td align="left">The day of the month in which the tweet was sent</td>
+</tr>
+<tr class="odd">
+<td align="left">Hour</td>
+<td align="left">The hour when the tweet was sent</td>
+</tr>
+</tbody>
+</table>
+<p>Is there anything else that you would include? Why or why not? Have a think, and if you want discuss with a friend. The important thing here is that you understand what a codebook (or data dictionary) is, and that if you come across a data set, always make sure to look for the associated codebook/ data dictionary to be able to understand what each variable means. If you download your data from the web, you will usually find a link to the data dictionary on the site where you downloaded the data from.</p>
+<p>Similarly, access to anonymised crime data through <a href="www.police.uk">police.uk</a> which you just downloaded, allows us to ask questions about levels of crime in our local area, and use these data to answer them. Access to this data allows us to study crime trends across the UK. It allows us to answer questions that we might have - such as, which crime category had the highest number of recorded crimes in the last year? Or is the volume of crime increasing, decreasing, or staying the same?</p>
+<p>To answer these questions we need <strong>data</strong>. The data you can see above, on crimes that fall under GMP between May 2016 and May 2017 can be used to measure crime during this time period in this area. You can access the data dictionary for these data <a href="https://data.police.uk/about/#columns">on the police.uk site here</a>.</p>
+<p>It is important to always seek out a data dictionary when using data, to know what the variables represent, and if you’re making your own data set, then to create a data dictionary to let others (and even your future self) know what your data set is all about.</p>
+</div>
+<div id="levels-of-measurement" class="section level2">
+<h2><span class="header-section-number">1.8</span> Levels of measurement</h2>
+<blockquote>
+<p>The word data is the plural of the Latin datum, meaning a given, or that which we take for granted and use as the basis of our calculations. This meaning is carried in the French word for statistical data, données. We ordinarily think of data as derived from measurements from a machine, survey, census, test, rating, or questionnaire — most frequently numerical. In a more general sense, however, data are symbolic representations of observations or thoughts about the world. As we have seen, we do not need to begin with numerals to create a graphic. Text strings, symbols, shapes, pictures, graphs themselves, can all be graphed.</p>
+</blockquote>
+<ul>
+<li>Leland Wilkinson (2005) <em>The Grammar of Graphics</em></li>
+</ul>
+<p>As Leland Wilkinson points out, data can be numeric, but it can be other things as well. Data could be text, such as the tweets. It can also be a date, which is a special kind of number, because it has some meaning. Pictures can also be data, as can video, or audio. You can also have spatial data, perhaps in the form of the coordinates for where a particular crime event took place. These are all possible sources of data, and we could collect them as variables, or column in our data set. In the tweets, we collected the text of the tweet, as well as the text of the account, and the month, but also some numbers such as number of likes, retweets etc. So we know that a variable is something that varies, that you can note about an observation. But it’s improtant to spot, not only that variables you’re using, but what <em>type</em> of variables these are. When we talk about kinds of variables, we begin to talk about <strong>levels of measurement</strong>.</p>
+<p>We can speak about the <strong>level of measurement</strong> of a variable, which refers to whether that variable belongs to the category of <em>nominal</em>, <em>ordinal</em>, or <em>numeric</em>. Let’s explore what these categories mean.</p>
+<p>If we set out to collect our own data, we make sure that we collect all the variables needed to answer our question, from all the observations that we have. The kinds of variables we have, determine the kinds of questions that we ask. For example, if we want to ask questions such as the one about the tweets above: “<em>Which tweet has the highest number of likes?</em>” we need to have <strong>numeric</strong> a variable. <strong>Numeric</strong> variables let us answer questions about quantity. For example, if we want to know the <em>average number of crimes per month</em>, we will need a numeric variable of number of crimes, for each month. Just like for the tweets, we had a numeric variable of the <em>number of likes</em> for each tweet. Put simply, number questions are answered by <strong>numeric</strong> variables.</p>
+<div id="activity-3.1-levels-of-measurement-pt.-1" class="section level3">
+<h3><span class="header-section-number">1.8.1</span> Activity 3.1: Levels of measurement pt. 1</h3>
+<p><span style="color:#d95f02">
+Have a look back at your tweet data that you created. Which variables are numeric?</p>
+<p>Stop here again and turn to the person next to you. Discuss with them which variables you think are numeric. Do you agree on your choices?</p>
+<p></span></p>
+<p><strong>NOTE:</strong> It’s important that you take some time to actually try to think of this on your own - and I would recommend that you talk this through with someone. If you are happy to chat to the person next to you - do this now. If not, then raise your hand, and myself or one of the TAs will come over. Tell us that you don’t want the answer, you just want to talk through which variables you think are numeric. We will listen, and not judge. I’ll just wait a moment while you take time to speak to someone now.</p>
+<p>…</p>
+<p>…
+…</p>
+<p>…</p>
+<p>…ready?</p>
+<p>OK, here’s your answer:</p>
+<p><img src="imgs/num_vars.png" /></p>
+<p>So is this the same as you thought? If yes, nice work!</p>
+<p>If you did not get this right, was that because you also selected the <strong>day</strong> and the <strong>hour</strong> variables? If it was, then that is perfect, because that is what I was secretly hoping you would do! But that’s not quite correct.</p>
+<p>Why are day and hour <strong>not</strong> numeric variables? After all they <em>are</em> numbers, right? Well a simple way to think about that is - does it make sense to calculate the average hour for tweets to be sent? If I told you, the average hour for GMP tweets if 13.5, is that something meaningful? Or if I told you that the average day is 15? Not hugely. Hour of the day, and day of the month, which is what these variables represent, are variables which fall into a different level of measurement. These are <strong>ordinal</strong> variables. What does that mean? Well the clue is in the name, <strong>ordinal</strong> variables that are not numeric, but they do fall into a natural order.</p>
+<p><em>Natural order</em>?? What’s that? Well natural order just means that there is a meaningful order that you can put these variables in. You know which comes after which one. For example you can consider letters of the alphabet to follow a natural order, so common we call it alphabetical order. If I tell you to arrange medium, large, small, you know that what I mean is to put them in this order: small, medium, large. <strong>Ordinal variables</strong> are variables where such a known order exists.</p>
+</div>
+<div id="activity-3.2-levels-of-measurement-pt.-2" class="section level3">
+<h3><span class="header-section-number">1.8.2</span> Activity 3.2: Levels of measurement pt. 2</h3>
+<p><span style="color:#d95f02">
+So now you know that hour in the day, and day in the month are ordinal variables. There are many more, such as attitudes towards something (Strongly agree, agree, neutral, disagree, strongly disagree) or fear of crime. There is also one more ordinal variable in our twitter data set - can you find the other ordinal variables in your tweets data? Again take some time to think about this.
+</span></p>
+<p>…
+…
+…
+…
+…
+…
+…</p>
+<p>Ready? The other ordinal variable is <em>Month</em>. You know that if I say January, February, March, then the value to follow is April, and not November. There is an order that these values fall, making <em>Month</em> an <strong>ordinal</strong> variable.</p>
+<p>So what about the others? <em>Account</em> and <em>Tweet</em>? These are <strong>nominal</strong> variables. These are sometimes also referred to qualitative variables. But you can still carry out quantitative analysis on them. You will very often see <strong>nominal</strong> variables in quantitative analysis. In this case, the <em>Account</em> variable tells you who is tweeting, and if you have tweets from many different accounts, for example if we also looked at @gmptraffic and @GMPMcrAirport, we could compare tweets between them. These variables are <strong>nominal</strong> and <strong>not</strong> ordinal, because they do not fall into any particular order. You can arrange them in any order, and it would look just as legitimate as any other order. For example if I say January, February, September, May, August … you immediately look and see that is not in it’s natural order. However if I say @gmptraffic, @GMPMcrAirport, @GMPCityCentre or @GMPMcrAirport, @GMPCityCentre, @gmptraffic, you don’t feel a need to reorder one way or the other. <strong>Nominal</strong> variables have no natural order.</p>
+<p>Starting to make sense? To recap, there are levels of measurement that each variable can fall into , and these are <strong>numeric</strong>, <strong>ordinal</strong>, or <strong>nominal</strong>. By the way, <strong>ordinal</strong> and <strong>nominal</strong> are also called <strong>categorical</strong> variables, because they assign each observation into a <em>category</em>. Then, depending on whether the category values can be put in a meaningful order or not, you can tell if it’s an ordinal-categorical, or nominal-categorical variable.</p>
+<p>Confused? Let’s look at this again, but with the crimes data.</p>
+<!--
+
+
+
+
+> In science, we use measurement to make accurate observations. All measurement must begin with a classification process—a process that in science is carried out according to systematic criteria. This process implies that we can place units of scientific study in clearly defined categories. The end result of classification is the development of variables.
+
+- *Chapter 2 Statistics in Criminal Justice - David Weisburd, Chester Britt*
+
+
+We will talk more about how to create these measurements, and what that means for your research in week 4, but for now it is enough to understand that data are a way of representing information about the world, which can be used to answer questions that we may have. 
+
+
+For example, we can ask the question: Which borough in Greater Manchester had the highest number of burglaries in this time period. Take a moment to think about this - what sort of data would you need to be able to answer this question? 
+
+
+You would need to know firstly the name of all the boroughs - right? So you would know how to identify them. Then you would also need to know the number of burglaries that occurred in each borough. Can you imagine what the data will look like? 
+
+
+Well 
+
+
+
+> The word variable is derived from the Latin variare, to vary. A variable gives
+us a method for associating a concept like income with a set of data. 
+
+- Leland Wilkinson (2005) *The Grammar of Graphics*
+-->
+<p>Let’s glance at the crimes data set first:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">X</th>
+<th align="left">Month</th>
+<th align="left">Reported.by</th>
+<th align="left">Falls.within</th>
+<th align="right">Longitude</th>
+<th align="right">Latitude</th>
+<th align="left">Location</th>
+<th align="left">LSOA.code</th>
+<th align="left">LSOA.name</th>
+<th align="left">Crime.type</th>
+<th align="left">Last.outcome.category</th>
+<th align="left">Context</th>
+<th align="left">borough</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">2016-05</td>
+<td align="left">Greater Manchester Police</td>
+<td align="left">Greater Manchester Police</td>
+<td align="right">-2.462774</td>
+<td align="right">53.6221</td>
+<td align="left">On or near Scout Road</td>
+<td align="left">E01012628</td>
+<td align="left">Blackburn with Darwen 018D</td>
+<td align="left">Violence and sexual offences</td>
+<td align="left">Unable to prosecute suspect</td>
+<td align="left">NA</td>
+<td align="left">Blackburn with Darwen</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="left">2016-05</td>
+<td align="left">Greater Manchester Police</td>
+<td align="left">Greater Manchester Police</td>
+<td align="right">-2.464422</td>
+<td align="right">53.6125</td>
+<td align="left">On or near Parking Area</td>
+<td align="left">E01004768</td>
+<td align="left">Bolton 001A</td>
+<td align="left">Anti-social behaviour</td>
+<td align="left"></td>
+<td align="left">NA</td>
+<td align="left">Bolton</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="left">2016-05</td>
+<td align="left">Greater Manchester Police</td>
+<td align="left">Greater Manchester Police</td>
+<td align="right">-2.464422</td>
+<td align="right">53.6125</td>
+<td align="left">On or near Parking Area</td>
+<td align="left">E01004768</td>
+<td align="left">Bolton 001A</td>
+<td align="left">Anti-social behaviour</td>
+<td align="left"></td>
+<td align="left">NA</td>
+<td align="left">Bolton</td>
+</tr>
+</tbody>
+</table>
+<p>One variable you can see there is the one called <strong>Crime.type</strong>. This variable can take a value that corresponds to one of the crime types listed in the <a href="https://www.police.uk/about-this-site/faqs/#what-do-the-crime-categories-mean">Police.UK FAQ</a>. For every crime incident recorded, an officer will have to classify this crime incident into one of these categories. All of these categories are all the possible <strong>values</strong> that the Crime.type <strong>variable</strong> can take. This is a <strong>categorical</strong> variable, as its possible values are categories. Further subset, this is a <strong>nominal</strong> variable, because the categories do not fall into a natural order. These categories are mutually exclusive (a crime is classed as either a Burglary or Vehicle Crime, but not both at the same time) and cannot be ordered in a meaningful way (alphabetical is not meaningful!). If they did have a meaningful order (for example days of the week have an order, or the values <em>small, medium, large</em> have an order) they would be <strong>ordinal</strong> variables. Both ordinal and nominal variables are categorical, because they deal with values that can take a finite number of values, or in other words, belong to a set number of categories. They group your data into one of the available categories.</p>
+<p>We will talk in the coming weeks about creating frequency tables, where you group your data by categories, and create a new data set, where you have the group, and the number of observations in each group. For example, we can look at the <strong>numeric</strong> variable of <em>number of burglaries</em>. For example, suppose we have created this data set, which has 2 variables, one <em>Borough</em> variable with the name of each borough, and one <em>Number of burglaries</em> variable, with… you guessed it… the number of burglaries in that borough.</p>
+<p>It would look something like this:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">borough</th>
+<th align="right">number.of.burglaries</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Manchester</td>
+<td align="right">8028</td>
+</tr>
+<tr class="even">
+<td align="left">Stockport</td>
+<td align="right">3765</td>
+</tr>
+<tr class="odd">
+<td align="left">Wigan</td>
+<td align="right">3525</td>
+</tr>
+<tr class="even">
+<td align="left">Bolton</td>
+<td align="right">3433</td>
+</tr>
+<tr class="odd">
+<td align="left">Rochdale</td>
+<td align="right">2958</td>
+</tr>
+<tr class="even">
+<td align="left">Oldham</td>
+<td align="right">2834</td>
+</tr>
+<tr class="odd">
+<td align="left">Tameside</td>
+<td align="right">2754</td>
+</tr>
+<tr class="even">
+<td align="left">Salford</td>
+<td align="right">2647</td>
+</tr>
+<tr class="odd">
+<td align="left">Bury</td>
+<td align="right">2106</td>
+</tr>
+<tr class="even">
+<td align="left">Trafford</td>
+<td align="right">1795</td>
+</tr>
+</tbody>
+</table>
+<p>This data set is made up of 10 <strong>observations</strong> and 2 <strong>variables</strong>. You might notice that this maps nicely onto your 10 rows of 2 columns. As noted in the previous section, the columns represent your <strong>variables</strong>. The rows reporesent your <strong>observations</strong>. Your observations (or rows) are every single record in your data. So in the case above, every borough has one observation, or the number of crimes in each area. For each observation, we record 2 variables. One variable is the name of the borough. This variable is called <em>borough</em>. The other varible is the number of burglaries that took place in that borough. It’s called <em>number.of.burglaries</em>, and it is a <strong>numeric</strong> variable.</p>
+<p><strong>Numeric</strong> variables can also be assigned into sub groups. <strong>Interval</strong> variables have values of equal intervals that mean something. For example, if you have results from an IQ score, the difference of 1 score between 90 and 91 is the same as 91 to 92. But there is no <em>true</em> zero value, and it doesn’t make sense to say someone is twice as smart as someone else. <strong>Ratio</strong> variables however have an absolute zero (a point where none of the quality being measured exists), and using a ratio scale permits comparisons such as being twice as high, or one-half as much. This can get somewhat confusing, and there are sometimes people who argue that a particular type of variable belongs to one group or the other. For example, if you have a Likert scale of Strongly agree, Agree, Neutral, Disagree, Strongly disagree, you can say that this is an ordinal variable (categories that have a natural order). But you could also translate them into numbers, saying it measures agreement from a scale of 1 (Strongly disagree) to 5 (Strongly agree). In this case it is possible to treat this as an interval scale variable. The truth is, you can choose either option, <strong>but you have to have some good justification why</strong>. Did someone else do this before you? Did you read a recent paper where one method was argued to be better than the other? For some instances it will always be clear what type of variable you have. But you should always take time to consider what the level of measurement of your variable is, and what that means for what you can say about your data. As a personal preference, I’d advise against treating ordinal data as numeric, but others will advise that it’s generally OK to take means and apply statistical tests to ordinal data, just be careful about making interval claims such as “twice as satisfied.” <a href="http://www.usablestats.com/lessons/noir">2</a></p>
+<p>See reading: Chapter 2 Statistics in Criminal Justice - David Weisburd, Chester Britt for interval/ratio, or for discrete/continuous)</p>
+<p>The reason we need to know what type of variable we are dealing with, is because this will determine the kinds of analyses we can do to it, further down the line. For example, next week we’ll talk about summarising data. As discussed above, for a numeric variable, we can take the average, and use this to summarise it, whereas for a categorical variable you can’t.Think about if someone asked you: “what is the average gender in the class?” This doesn’t make sense, instead you would look at the proportions. Gender is a categorical variable. However, if someone asked you what is the average age in the class, that is a more possible query to answer. Because age is a numeric variable.</p>
+<p>Here are some more examples of each:</p>
+<ul>
+<li>Nominal variables:
+<ul>
+<li>Gender: Male, Female, Other.</li>
+<li>Hair Color: Brown, Black, Blonde, Red, Other.</li>
+<li>Type of living accommodation: House, Apartment, Trailer, Other.</li>
+<li>Religious preference: Buddhist, Mormon, Muslim, Jewish, Christian, Other.</li>
+</ul></li>
+<li>Ordinal variables:
+<ul>
+<li>Socioeconomic status: poor, middle class, rich.</li>
+<li>The Likert Scale: strongly disagree, disagree, neutral, agree, strongly agree.</li>
+<li>Level of Agreement: yes, maybe, no.</li>
+<li>Time of Day: dawn, morning, noon, afternoon, evening, night.</li>
+</ul></li>
+<li>Interval variables:
+<ul>
+<li>Celsius Temperature.</li>
+<li>Fahrenheit Temperature.</li>
+<li>IQ (intelligence scale).</li>
+<li>SAT scores.</li>
+</ul></li>
+<li>Ratio variables:
+<ul>
+<li>Bank account balance</li>
+<li>Age in years</li>
+<li>Height in cm</li>
+<li>Number of children</li>
+</ul></li>
+</ul>
+<p>Now before we move on to the exercise, have another dose of these concepts through the power of video. Remember in school when the teacher put on the video to watch? That was the best. Here I will do this too, keep the nostalgia alive.</p>
+<p>Start with this quick one: - <a href="https://www.youtube.com/watch?v=hZxnzfnt5v8">Levels of measurement summary here</a> 6.19min</p>
+<p>and then continue by watching Chris Wilde describe them:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=_ROBwTFVldo&amp;list=PL8CRAVedURQpYNoFt7w6maxaQCn3ZLytu&amp;index=3">Data Organisation</a> 5.18min</li>
+<li><a href="https://www.youtube.com/watch?v=38oQwFeCEag&amp;list=PL8CRAVedURQrlxeFfme0TEgaj1_h67JUR&amp;index=2">Categorical variables</a> 4.58min</li>
+<li><a href="https://www.youtube.com/watch?v=xmRuRRHsUeg&amp;index=3&amp;list=PL8CRAVedURQrlxeFfme0TEgaj1_h67JUR">Ordering categories</a> 2.27min</li>
+<li><a href="https://www.youtube.com/watch?v=U3lk2nQYfAQ&amp;list=PL8CRAVedURQrlxeFfme0TEgaj1_h67JUR&amp;index=4">Numeric variables</a> 5.52min</li>
+</ul>
+<p>Great, by now you are an expert on levels of measurement.</p>
+</div>
+</div>
+<div id="unit-of-analysis" class="section level2">
+<h2><span class="header-section-number">1.9</span> Unit of analysis</h2>
+<p>We’ve been speaking (reading) about our variables (columns) a lot, but let’s also not forget to discuss the importance and meaning of our rows. We know by now that each row is an observation. So in the original data set about crimes, every single crime incident represents one row. Here are 3 crimes:</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">X</th>
+<th align="left">Month</th>
+<th align="left">Reported.by</th>
+<th align="left">Falls.within</th>
+<th align="right">Longitude</th>
+<th align="right">Latitude</th>
+<th align="left">Location</th>
+<th align="left">LSOA.code</th>
+<th align="left">LSOA.name</th>
+<th align="left">Crime.type</th>
+<th align="left">Last.outcome.category</th>
+<th align="left">Context</th>
+<th align="left">borough</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>420226</td>
+<td align="right">420226</td>
+<td align="left">2017-05</td>
+<td align="left">Greater Manchester Police</td>
+<td align="left">Greater Manchester Police</td>
+<td align="right">-2.563888</td>
+<td align="right">53.47228</td>
+<td align="left">On or near Laburnum Road</td>
+<td align="left">E01006341</td>
+<td align="left">Wigan 040D</td>
+<td align="left">Violence and sexual offences</td>
+<td align="left">Unable to prosecute suspect</td>
+<td align="left">NA</td>
+<td align="left">Wigan</td>
+</tr>
+<tr class="even">
+<td>420227</td>
+<td align="right">420227</td>
+<td align="left">2017-05</td>
+<td align="left">Greater Manchester Police</td>
+<td align="left">Greater Manchester Police</td>
+<td align="right">-2.570889</td>
+<td align="right">53.46971</td>
+<td align="left">On or near Elton Close</td>
+<td align="left">E01006347</td>
+<td align="left">Wigan 040E</td>
+<td align="left">Burglary</td>
+<td align="left">Investigation complete; no suspect identified</td>
+<td align="left">NA</td>
+<td align="left">Wigan</td>
+</tr>
+<tr class="odd">
+<td>420228</td>
+<td align="right">420228</td>
+<td align="left">2017-05</td>
+<td align="left">Greater Manchester Police</td>
+<td align="left">Greater Manchester Police</td>
+<td align="right">-2.570947</td>
+<td align="right">53.46844</td>
+<td align="left">On or near Fulwood Road</td>
+<td align="left">E01006347</td>
+<td align="left">Wigan 040E</td>
+<td align="left">Other theft</td>
+<td align="left">Investigation complete; no suspect identified</td>
+<td align="left">NA</td>
+<td align="left">Wigan</td>
+</tr>
+</tbody>
+</table>
+<p>But we also saw above a case where we were looking at the number of crimes per borough. In that case, there were only 10 rows, because there are 10 boroughs, and we only had one observation per borough. Here is that data set again:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">borough</th>
+<th align="right">number.of.burglaries</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Manchester</td>
+<td align="right">8028</td>
+</tr>
+<tr class="even">
+<td align="left">Stockport</td>
+<td align="right">3765</td>
+</tr>
+<tr class="odd">
+<td align="left">Wigan</td>
+<td align="right">3525</td>
+</tr>
+<tr class="even">
+<td align="left">Bolton</td>
+<td align="right">3433</td>
+</tr>
+<tr class="odd">
+<td align="left">Rochdale</td>
+<td align="right">2958</td>
+</tr>
+<tr class="even">
+<td align="left">Oldham</td>
+<td align="right">2834</td>
+</tr>
+<tr class="odd">
+<td align="left">Tameside</td>
+<td align="right">2754</td>
+</tr>
+<tr class="even">
+<td align="left">Salford</td>
+<td align="right">2647</td>
+</tr>
+<tr class="odd">
+<td align="left">Bury</td>
+<td align="right">2106</td>
+</tr>
+<tr class="even">
+<td align="left">Trafford</td>
+<td align="right">1795</td>
+</tr>
+</tbody>
+</table>
+<p>What is the significance of this?</p>
+<p>The unit of analysis is the major entity that is being analyzed in a study. It is the <em>what</em> or <em>who</em> that is being studied. Your unit of analysis will depend on the questions that you are going to be asking. You will always want your rows to represent your unit of analysis, so that you can collect data <em>about</em> these in the variables, and you can answer your questions.</p>
+<p>Take this example:</p>
+<p>We want to see whether boroughs with higher population count have higher numbers of crimes. To be able to explore this question, we need information about the number of crimes, and the number of the population in each…</p>
+<p>…</p>
+<p>…</p>
+<p>… borough!</p>
+<p>What about this one:</p>
+<p>We want to see whether men consume more illegal drugs than women. To be able to explore this we need information about the gender and the drug consupmtion of each…
+…</p>
+<p>…</p>
+<p>…</p>
+<p>… person!</p>
+<p>Are you seeing the pattern? If you are comparing things, whether thats population and crime, or gender and drug consumption, you are comparing this between <em>things</em>. You are comparind population and crime rates between <em>boroughs</em> and you are comparing gender and drug consumption between <em>people</em>. These are your <strong>units of analysis</strong>.</p>
+<div id="activity-4-abstract-ing-the-unit-of-analysis" class="section level3">
+<h3><span class="header-section-number">1.9.1</span> Activity 4: <em>Abstract</em>-ing the unit of analysis</h3>
+<p><span style="color:#d95f02">
+Let’s do an exercise. Read this abstract:</p>
+<blockquote>
+<p>Over the last 40 years, the question of how crime varies across places has gotten greater attention. At the same time, as data and computing power have increased, the definition of a ‘place’ has shifted farther down the geographic cone of resolution. This has led many researchers to consider places as small as single addresses, group of addresses, face blocks or street blocks. Both cross-sectional and longitudinal studies of the spatial distribution of crime have consistently found crime is strongly concentrated at a small group of ‘micro’ places. Recent longitudinal studies have also revealed crime concentration across micro places is relatively stable over time. A major question that has not been answered in prior research is the degree of block to block variability at this local ‘micro’ level for all crime. To answer this question, we examine both temporal and spatial variation in crime across street blocks in the city of Seattle Washington. This is accomplished by applying trajectory analysis to establish groups of places that follow similar crime trajectories over 16 years. Then, using quantitative spatial statistics, we establish whether streets having the same temporal trajectory are collocated spatially or whether there is street to street variation in the temporal patterns of crime. In a surprising number of cases we find that individual street segments have trajectories which are unrelated to their immediately adjacent streets. This finding of heterogeneity suggests it may be particularly important to examine crime trends at very local geographic levels. At a policy level, our research reinforces the importance of initiatives like ‘hot spots policing’ which address specific streets within relatively small areas.</p>
+</blockquote>
+<ul>
+<li><a href="https://link.springer.com/article/10.1007/s10940-009-9081-y">Is it Important to Examine Crime Trends at a Local “Micro” Level?: A Longitudinal Analysis of Street to Street Variability in Crime Trajectories</a></li>
+</ul>
+<p>What is the unit of analysis here? Take a moment again, turn to the person next to you, or if you will, get up, stretch your legs, and go speak to someone on the other side of the room. Go! Get some steps in! Discuss what you think the unit of analysis is, and more importantly, why you think this! Then come back.</p>
+<p></span></p>
+<p>What did you decide on? The helpful thing here, is to look at what is the question they are asking - and what are they asking this about? The key sentence here is this one: <em>“Indeed, just 86 street segments in Seattle include one-third of crime incidents in which a juvenile was arrested during the study period.”</em> You can see that they are talking about the <em>number of arrests</em> per each <em>street segment</em>. So your unit of analysis is street segments.</p>
+<p>Want to play again?</p>
+<p>Try this one:</p>
+<blockquote>
+<p>This paper examines the importance of neighbourhood context in explaining violence in London. Exploring in a new context Sampson’s work on the relationship between interdependent spatial patterns of concentrated disadvantage and crime, we assess whether collective efficacy (i.e. shared expectations about norms, values and goals, as well as the ability of members of the community to realize these goals) mediates the potential impact on violence of neighbourhood deprivation, residential stability and population heterogeneity. Reporting findings from a dataset based on face-to-face interviews with 60,000 individuals living in 4,700 London neighbourhoods, we find that collective efficacy is negatively related to police-recorded violence. But, unlike previous research, we find that collective efficacy does not mediate the statistical relationship between structural characteristics of the neighbourhood and violence. After finding that collective efficacy is unrelated to an alternative measure of neighbourhood violence, we discuss limitations and possible explanations for our results, before setting out plans for further research.</p>
+</blockquote>
+<p>-<a href="https://academic.oup.com/bjc/article-abstract/53/6/1050/418215">Collective Efficacy, Deprivation and Violence in London</a></p>
+<p>This one is a bit trciky. You can see they talk about how they collected data, in the sentence <em>“Reporting findings from a dataset based on face-to-face interviews with 60,000 individuals living in 4,700 London neighbourhoods…”</em>. But remember, we want to look at the questions they were asking - and you can see they are talking about <strong>neighbourhood violence</strong>. You can see this because they talk about looking into <em>“statistical relationship between structural characteristics of the neighbourhood and violence”</em>. Their unit of analysis is the neighbourhood.</p>
+<p>Of course, you could have also cheated and read the paper. It will not always be obvious from the paper abstract what the unit of analysis is. Unless of course, you come across a helpful abstract like this one:</p>
+<blockquote>
+<p>Objectives: To test the generalizability of previous crime and place trajectory analysis research on a different geographic location, Vancouver BC, and using alternative methods.
+Methods: A longitudinal analysis of a 16-year data set <strong>using the street segment as the unit of analysis</strong>. We use both the group-based trajectory model and a non-parametric cluster analysis technique termed k-means that does not require the same degree of assumptions as the group-based trajectory model.
+Results: The majority of street blocks in Vancouver evidence stable crime trends with a minority that reveal decreasing crime trends. The use of the k-means has a significant impact on the results of the analysis through a reduction in the number of classes, but the qualitative results are similar.
+Conclusions: The qualitative results of previous crime and place trajectory analyses are confirmed. Though the different trajectory analysis methods generate similar results, the non-parametric k-means model does significantly change the results. As such, any data set that does not satisfy the assumptions of the group-based trajectory model should use an alternative such as k-means.</p>
+</blockquote>
+<p>-<a href="https://link.springer.com/article/10.1007/s10940-014-9228-3">Crime and Place: A Longitudinal Examination of Street Segment Patterns in Vancouver, BC</a></p>
+<p>But the most important thing here is that you understand what is meant by unit of analysis. It is not always the level at which your data is collected. For example, we have the crime data from <a href="police.uk" class="uri">police.uk</a> where each row is one measurement. This is called <strong>individual level</strong> unit of analysis. But we can still use that to talk about the number of crimes per neighbourhood. But for us to be able to do that we need to convert that into a table where each row is the borough, we need to aggregate up, and just count the number of crimes in each one. Therefore this is an <strong>aggregate level</strong> unit of analysis.</p>
+<p>Have a watch of this quick video <a href="https://www.youtube.com/watch?v=XHXTR8jeEUg">here</a> for some more examples and explanation.</p>
+</div>
+</div>
+<div id="summary" class="section level2">
+<h2><span class="header-section-number">1.10</span> Summary</h2>
+<p>In sum, you should now be more familiar with data than you were when you started. And you should be comfortable with the following terms:</p>
+<ul>
+<li>working directory</li>
+<li>data</li>
+<li>codebook/ data dictionary</li>
+<li>variable</li>
+<li>observation</li>
+<li>levels of measurement
+<ul>
+<li>nominal, ordinal, numeric</li>
+</ul></li>
+<li>unit of analysis</li>
+</ul>
+<p>From your readings you should also be comfortable with:</p>
+<ul>
+<li>reliability</li>
+<li>validity</li>
+<li>descriptive statistics</li>
+<li>inferential statistics</li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="week2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/002-week1.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
