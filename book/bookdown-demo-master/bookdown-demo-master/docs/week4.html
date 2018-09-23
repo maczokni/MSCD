@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Making Sense of Crim Data</title>
+  <meta name="description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Making Sense of Crim Data" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Making Sense of Crim Data" />
+  
+  <meta name="twitter:description" content="This is a companion workbook for the 2nd year undergraduate module LAWS20441 Making Sense of Criminological Data at the Universit of Manchester" />
+  
+
+<meta name="author" content="Reka Solymosi">
+
+
+<meta name="date" content="2018-09-23">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="week3.html">
+<link rel="next" href="week5.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Making Sense of Criminological Data</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a><ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#disclaimer"><i class="fa fa-check"></i><b>0.1</b> Disclaimer</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#overview"><i class="fa fa-check"></i><b>0.2</b> Overview of course</a><ul>
+<li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#module-structure"><i class="fa fa-check"></i><b>0.2.1</b> Module structure</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="week1.html"><a href="week1.html"><i class="fa fa-check"></i><b>1</b> Week 1</a><ul>
+<li class="chapter" data-level="1.1" data-path="week1.html"><a href="week1.html#learning-outcomes"><i class="fa fa-check"></i><b>1.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="1.2" data-path="week1.html"><a href="week1.html#setting-up-your-working-environment"><i class="fa fa-check"></i><b>1.2</b> Setting up your working environment</a></li>
+<li class="chapter" data-level="1.3" data-path="week1.html"><a href="week1.html#getting-to-know-excel"><i class="fa fa-check"></i><b>1.3</b> Getting to know Excel</a></li>
+<li class="chapter" data-level="1.4" data-path="week1.html"><a href="week1.html#data-variables-and-observations"><i class="fa fa-check"></i><b>1.4</b> Data: Variables and observations</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="week1.html"><a href="week1.html#activity-1-building-your-own-data"><i class="fa fa-check"></i><b>1.4.1</b> Activity 1: Building your own data</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="week1.html"><a href="week1.html#questions-about-your-data"><i class="fa fa-check"></i><b>1.5</b> Questions about your data</a><ul>
+<li class="chapter" data-level="1.5.1" data-path="week1.html"><a href="week1.html#activity-2-thinking-about-what-our-data-tells-us"><i class="fa fa-check"></i><b>1.5.1</b> Activity 2: Thinking about what our data tells us</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="week1.html"><a href="week1.html#looking-at-real-data"><i class="fa fa-check"></i><b>1.6</b> Looking at real data</a></li>
+<li class="chapter" data-level="1.7" data-path="week1.html"><a href="week1.html#code-books"><i class="fa fa-check"></i><b>1.7</b> Code books</a></li>
+<li class="chapter" data-level="1.8" data-path="week1.html"><a href="week1.html#levels-of-measurement"><i class="fa fa-check"></i><b>1.8</b> Levels of measurement</a><ul>
+<li class="chapter" data-level="1.8.1" data-path="week1.html"><a href="week1.html#activity-3.1-levels-of-measurement-pt.-1"><i class="fa fa-check"></i><b>1.8.1</b> Activity 3.1: Levels of measurement pt. 1</a></li>
+<li class="chapter" data-level="1.8.2" data-path="week1.html"><a href="week1.html#activity-3.2-levels-of-measurement-pt.-2"><i class="fa fa-check"></i><b>1.8.2</b> Activity 3.2: Levels of measurement pt. 2</a></li>
+</ul></li>
+<li class="chapter" data-level="1.9" data-path="week1.html"><a href="week1.html#unit-of-analysis"><i class="fa fa-check"></i><b>1.9</b> Unit of analysis</a><ul>
+<li class="chapter" data-level="1.9.1" data-path="week1.html"><a href="week1.html#activity-4-abstract-ing-the-unit-of-analysis"><i class="fa fa-check"></i><b>1.9.1</b> Activity 4: <em>Abstract</em>-ing the unit of analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="1.10" data-path="week1.html"><a href="week1.html#summary"><i class="fa fa-check"></i><b>1.10</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="week2.html"><a href="week2.html"><i class="fa fa-check"></i><b>2</b> Week 2</a><ul>
+<li class="chapter" data-level="2.1" data-path="week2.html"><a href="week2.html#learning-outcomes-1"><i class="fa fa-check"></i><b>2.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="week2.html"><a href="week2.html#terms-for-today"><i class="fa fa-check"></i><b>2.1.1</b> Terms for today:</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="week2.html"><a href="week2.html#univariate-analysis"><i class="fa fa-check"></i><b>2.2</b> Univariate analysis</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="week2.html"><a href="week2.html#the-importance-of-level-of-measurement"><i class="fa fa-check"></i><b>2.2.1</b> The importance of level of measurement</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="week2.html"><a href="week2.html#summarising-categorical-data"><i class="fa fa-check"></i><b>2.3</b> Summarising categorical data</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="week2.html"><a href="week2.html#activity-1-crime-types"><i class="fa fa-check"></i><b>2.3.1</b> Activity 1: Crime types</a></li>
+<li class="chapter" data-level="2.3.2" data-path="week2.html"><a href="week2.html#frequency-tables"><i class="fa fa-check"></i><b>2.3.2</b> Frequency tables</a></li>
+<li class="chapter" data-level="2.3.3" data-path="week2.html"><a href="week2.html#creating-a-frequency-table-in-excel"><i class="fa fa-check"></i><b>2.3.3</b> Creating a frequency table in Excel</a></li>
+<li class="chapter" data-level="2.3.4" data-path="week2.html"><a href="week2.html#activity-2-looking-at-frequency"><i class="fa fa-check"></i><b>2.3.4</b> Activity 2: Looking at frequency</a></li>
+<li class="chapter" data-level="2.3.5" data-path="week2.html"><a href="week2.html#visualising-a-frequency-table-with-bar-charts"><i class="fa fa-check"></i><b>2.3.5</b> Visualising a frequency table with bar charts</a></li>
+<li class="chapter" data-level="2.3.6" data-path="week2.html"><a href="week2.html#activity-3-bar-charts-in-excel"><i class="fa fa-check"></i><b>2.3.6</b> Activity 3: Bar charts in Excel</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="week2.html"><a href="week2.html#summarising-numeric-data"><i class="fa fa-check"></i><b>2.4</b> Summarising numeric data</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="week2.html"><a href="week2.html#measures-of-central-tendency"><i class="fa fa-check"></i><b>2.4.1</b> Measures of central tendency</a></li>
+<li class="chapter" data-level="2.4.2" data-path="week2.html"><a href="week2.html#activity-4-mean-and-median-in-excel"><i class="fa fa-check"></i><b>2.4.2</b> Activity 4: Mean and median in excel</a></li>
+<li class="chapter" data-level="2.4.3" data-path="week2.html"><a href="week2.html#distributions"><i class="fa fa-check"></i><b>2.4.3</b> Distributions</a></li>
+<li class="chapter" data-level="2.4.4" data-path="week2.html"><a href="week2.html#histograms"><i class="fa fa-check"></i><b>2.4.4</b> Histograms</a></li>
+<li class="chapter" data-level="2.4.5" data-path="week2.html"><a href="week2.html#activity-5-histograms-in-excel"><i class="fa fa-check"></i><b>2.4.5</b> Activity 5: Histograms in Excel</a></li>
+<li class="chapter" data-level="2.4.6" data-path="week2.html"><a href="week2.html#five-number-summary"><i class="fa fa-check"></i><b>2.4.6</b> Five-number summary</a></li>
+<li class="chapter" data-level="2.4.7" data-path="week2.html"><a href="week2.html#activity-6-calculate-quartiles"><i class="fa fa-check"></i><b>2.4.7</b> Activity 6: Calculate quartiles</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="week2.html"><a href="week2.html#standard-deviation"><i class="fa fa-check"></i><b>2.5</b> Standard deviation</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="week2.html"><a href="week2.html#activity-7-standard-deviation-in-excel"><i class="fa fa-check"></i><b>2.5.1</b> Activity 7: Standard Deviation in Excel</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="week2.html"><a href="week2.html#writing-it-all-up"><i class="fa fa-check"></i><b>2.6</b> Writing it all up</a><ul>
+<li class="chapter" data-level="2.6.1" data-path="week2.html"><a href="week2.html#build-a-structure"><i class="fa fa-check"></i><b>2.6.1</b> Build a structure</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="week2.html"><a href="week2.html#summary-1"><i class="fa fa-check"></i><b>2.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="week3.html"><a href="week3.html"><i class="fa fa-check"></i><b>3</b> Week 3</a><ul>
+<li class="chapter" data-level="3.1" data-path="week3.html"><a href="week3.html#learning-outcomes-2"><i class="fa fa-check"></i><b>3.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="week3.html"><a href="week3.html#terms-for-today-1"><i class="fa fa-check"></i><b>3.1.1</b> Terms for today</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="week3.html"><a href="week3.html#categorical-v-categorical"><i class="fa fa-check"></i><b>3.2</b> Categorical v categorical</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="week3.html"><a href="week3.html#activity-1-surviving-the-titanic"><i class="fa fa-check"></i><b>3.2.1</b> Activity 1: Surviving the Titanic</a></li>
+<li class="chapter" data-level="3.2.2" data-path="week3.html"><a href="week3.html#row-percentage-column-percentage-or-total-percentage"><i class="fa fa-check"></i><b>3.2.2</b> Row percentage, column percentage, or total percentage</a></li>
+<li class="chapter" data-level="3.2.3" data-path="week3.html"><a href="week3.html#a-note-on-formatting-cells"><i class="fa fa-check"></i><b>3.2.3</b> A note on formatting cells</a></li>
+<li class="chapter" data-level="3.2.4" data-path="week3.html"><a href="week3.html#activity-3-visualising-the-relationship---stacked-bar-charts-and-conditional-formatting"><i class="fa fa-check"></i><b>3.2.4</b> Activity 3: Visualising the relationship - stacked bar charts, and conditional formatting</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="week3.html"><a href="week3.html#categorical-v-numeric"><i class="fa fa-check"></i><b>3.3</b> Categorical v numeric</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="week3.html"><a href="week3.html#activity-4-age-of-offenders"><i class="fa fa-check"></i><b>3.3.1</b> Activity 4: Age of offenders</a></li>
+<li class="chapter" data-level="3.3.2" data-path="week3.html"><a href="week3.html#activity-5-adding-a-column-for-median"><i class="fa fa-check"></i><b>3.3.2</b> Activity 5: Adding a column for median</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="week3.html"><a href="week3.html#numeric-v-numeric"><i class="fa fa-check"></i><b>3.4</b> Numeric v numeric</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="week3.html"><a href="week3.html#correlation-does-not-mean-causation"><i class="fa fa-check"></i><b>3.4.1</b> Correlation does not mean causation</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="week3.html"><a href="week3.html#summary-2"><i class="fa fa-check"></i><b>3.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="week4.html"><a href="week4.html"><i class="fa fa-check"></i><b>4</b> Week 4</a><ul>
+<li class="chapter" data-level="4.1" data-path="week4.html"><a href="week4.html#learning-outcomes-3"><i class="fa fa-check"></i><b>4.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="week4.html"><a href="week4.html#terms-for-today-2"><i class="fa fa-check"></i><b>4.1.1</b> Terms for today:</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="week4.html"><a href="week4.html#population-parameters-versus-sample-statistics"><i class="fa fa-check"></i><b>4.2</b> Population parameters versus sample statistics</a></li>
+<li class="chapter" data-level="4.3" data-path="week4.html"><a href="week4.html#conceptualisation"><i class="fa fa-check"></i><b>4.3</b> Conceptualisation</a></li>
+<li class="chapter" data-level="4.4" data-path="week4.html"><a href="week4.html#measurement"><i class="fa fa-check"></i><b>4.4</b> Measurement</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="week4.html"><a href="week4.html#measuring-constructs-with-composite-variables"><i class="fa fa-check"></i><b>4.4.1</b> Measuring constructs with composite variables</a></li>
+<li class="chapter" data-level="4.4.2" data-path="week4.html"><a href="week4.html#multi-item-scales-for-categorical-constructs"><i class="fa fa-check"></i><b>4.4.2</b> Multi-item scales for categorical constructs</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="week4.html"><a href="week4.html#a-note-on-validity-and-reliability"><i class="fa fa-check"></i><b>4.5</b> A note on Validity and Reliability</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="week4.html"><a href="week4.html#activity-1-calculating-a-summative-score"><i class="fa fa-check"></i><b>4.5.1</b> Activity 1: Calculating a summative score</a></li>
+<li class="chapter" data-level="4.5.2" data-path="week4.html"><a href="week4.html#activity-2-testing-your-questions-cronbachs-alpha"><i class="fa fa-check"></i><b>4.5.2</b> Activity 2: Testing your questions: Cronbach’s alpha</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="week4.html"><a href="week4.html#recoding-some-more-transforming-your-variables-to-fit-with-your-concepts"><i class="fa fa-check"></i><b>4.6</b> Recoding some more: Transforming your variables to fit with your concepts</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="week4.html"><a href="week4.html#activity-3-recoding-variables"><i class="fa fa-check"></i><b>4.6.1</b> Activity 3: Recoding Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="week4.html"><a href="week4.html#summary-3"><i class="fa fa-check"></i><b>4.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="week5.html"><a href="week5.html"><i class="fa fa-check"></i><b>5</b> Week 5</a><ul>
+<li class="chapter" data-level="5.1" data-path="week5.html"><a href="week5.html#learning-outcomes-4"><i class="fa fa-check"></i><b>5.1</b> Learning outcomes</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="week5.html"><a href="week5.html#terms-for-today-3"><i class="fa fa-check"></i><b>5.1.1</b> Terms for today</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="week5.html"><a href="week5.html#research-design"><i class="fa fa-check"></i><b>5.2</b> Research Design</a></li>
+<li class="chapter" data-level="5.3" data-path="week5.html"><a href="week5.html#experiments-and-evaluation"><i class="fa fa-check"></i><b>5.3</b> Experiments and evaluation</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="week5.html"><a href="week5.html#rct"><i class="fa fa-check"></i><b>5.3.1</b> RCT</a></li>
+<li class="chapter" data-level="5.3.2" data-path="week5.html"><a href="week5.html#designing-an-rtc"><i class="fa fa-check"></i><b>5.3.2</b> Designing an RTC</a></li>
+<li class="chapter" data-level="5.3.3" data-path="week5.html"><a href="week5.html#activity-1-research-planning-with-gantt-charts-design-an-rtc-example"><i class="fa fa-check"></i><b>5.3.3</b> Activity 1: Research Planning with Gantt Charts: Design an RTC example</a></li>
+<li class="chapter" data-level="5.3.4" data-path="week5.html"><a href="week5.html#activity-2-random-assignment-into-control-and-treatment"><i class="fa fa-check"></i><b>5.3.4</b> Activity 2: Random assignment into control and treatment</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="week5.html"><a href="week5.html#activity-3-stratified-randomisation"><i class="fa fa-check"></i><b>5.4</b> Activity 3: Stratified randomisation</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="week5.html"><a href="week5.html#freeze"><i class="fa fa-check"></i><b>5.4.1</b> Freeze!</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="week5.html"><a href="week5.html#a-final-note-on-evidence-meta-analysis"><i class="fa fa-check"></i><b>5.5</b> A final note on evidence: Meta Analysis</a></li>
+<li class="chapter" data-level="5.6" data-path="week5.html"><a href="week5.html#longitudinal-data"><i class="fa fa-check"></i><b>5.6</b> Longitudinal data</a><ul>
+<li class="chapter" data-level="5.6.1" data-path="week5.html"><a href="week5.html#what-does-longitudinal-data-look-like"><i class="fa fa-check"></i><b>5.6.1</b> What does longitudinal data look like?</a></li>
+<li class="chapter" data-level="5.6.2" data-path="week5.html"><a href="week5.html#activity-4-linking-data"><i class="fa fa-check"></i><b>5.6.2</b> Activity 4: Linking data</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="week5.html"><a href="week5.html#complete-cases-an-approach-to-missing-data"><i class="fa fa-check"></i><b>5.7</b> Complete cases (an approach to missing data)</a><ul>
+<li class="chapter" data-level="5.7.1" data-path="week5.html"><a href="week5.html#activity-5-selecting-complete-cases"><i class="fa fa-check"></i><b>5.7.1</b> Activity 5: Selecting Complete Cases</a></li>
+</ul></li>
+<li class="chapter" data-level="5.8" data-path="week5.html"><a href="week5.html#ethics"><i class="fa fa-check"></i><b>5.8</b> Ethics</a></li>
+<li class="chapter" data-level="5.9" data-path="week5.html"><a href="week5.html#summary-4"><i class="fa fa-check"></i><b>5.9</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="week6.html"><a href="week6.html"><i class="fa fa-check"></i><b>6</b> Week 6</a><ul>
+<li class="chapter" data-level="6.1" data-path="week6.html"><a href="week6.html#learning-outcomes-5"><i class="fa fa-check"></i><b>6.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="6.2" data-path="week6.html"><a href="week6.html#visualising-data"><i class="fa fa-check"></i><b>6.2</b> Visualising data</a></li>
+<li class="chapter" data-level="6.3" data-path="week6.html"><a href="week6.html#why-visualise-data"><i class="fa fa-check"></i><b>6.3</b> Why visualise data?</a></li>
+<li class="chapter" data-level="6.4" data-path="week6.html"><a href="week6.html#anatomy-of-a-plot---the-grammar-of-graphics"><i class="fa fa-check"></i><b>6.4</b> Anatomy of a plot - the Grammar of Graphics</a></li>
+<li class="chapter" data-level="6.5" data-path="week6.html"><a href="week6.html#principles-of-good-data-visualisation"><i class="fa fa-check"></i><b>6.5</b> Principles of good data visualisation</a><ul>
+<li class="chapter" data-level="6.5.1" data-path="week6.html"><a href="week6.html#criticisms"><i class="fa fa-check"></i><b>6.5.1</b> Criticisms</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="week6.html"><a href="week6.html#what-makes-a-bad-graph-bad"><i class="fa fa-check"></i><b>6.6</b> What makes a bad graph bad?</a></li>
+<li class="chapter" data-level="6.7" data-path="week6.html"><a href="week6.html#what-graph-should-i-use"><i class="fa fa-check"></i><b>6.7</b> What graph should I use?</a></li>
+<li class="chapter" data-level="6.8" data-path="week6.html"><a href="week6.html#edges-contrasts-and-colors"><i class="fa fa-check"></i><b>6.8</b> Edges, Contrasts and Colors</a></li>
+<li class="chapter" data-level="6.9" data-path="week6.html"><a href="week6.html#colour"><i class="fa fa-check"></i><b>6.9</b> Colour</a><ul>
+<li class="chapter" data-level="6.9.1" data-path="week6.html"><a href="week6.html#activity-1-custom-colours-in-excel-graphs."><i class="fa fa-check"></i><b>6.9.1</b> Activity 1: Custom colours in Excel graphs.</a></li>
+</ul></li>
+<li class="chapter" data-level="6.10" data-path="week6.html"><a href="week6.html#reading-between-the-lines-points"><i class="fa fa-check"></i><b>6.10</b> Reading between the lines (points)</a></li>
+<li class="chapter" data-level="6.11" data-path="week6.html"><a href="week6.html#exploratory-data-visualisation"><i class="fa fa-check"></i><b>6.11</b> Exploratory data visualisation</a><ul>
+<li class="chapter" data-level="6.11.1" data-path="week6.html"><a href="week6.html#comparing-categories"><i class="fa fa-check"></i><b>6.11.1</b> Comparing categories</a></li>
+<li class="chapter" data-level="6.11.2" data-path="week6.html"><a href="week6.html#activity-2-exploring-trends"><i class="fa fa-check"></i><b>6.11.2</b> Activity 2: Exploring trends</a></li>
+<li class="chapter" data-level="6.11.3" data-path="week6.html"><a href="week6.html#activity-3-making-a-chart-template"><i class="fa fa-check"></i><b>6.11.3</b> Activity 3: Making a chart template</a></li>
+<li class="chapter" data-level="6.11.4" data-path="week6.html"><a href="week6.html#activity-4-saving-your-graph"><i class="fa fa-check"></i><b>6.11.4</b> Activity 4: Saving your graph</a></li>
+</ul></li>
+<li class="chapter" data-level="6.12" data-path="week6.html"><a href="week6.html#acvitity-5-more-complex-graphs"><i class="fa fa-check"></i><b>6.12</b> Acvitity 5: More complex graphs</a></li>
+<li class="chapter" data-level="6.13" data-path="week6.html"><a href="week6.html#more-guidance-on-chart-design"><i class="fa fa-check"></i><b>6.13</b> More guidance on chart design</a></li>
+<li class="chapter" data-level="6.14" data-path="week6.html"><a href="week6.html#communicating-results"><i class="fa fa-check"></i><b>6.14</b> Communicating results</a><ul>
+<li class="chapter" data-level="6.14.1" data-path="week6.html"><a href="week6.html#activity-6-interpreting-results"><i class="fa fa-check"></i><b>6.14.1</b> Activity 6: Interpreting results</a></li>
+</ul></li>
+<li class="chapter" data-level="6.15" data-path="week6.html"><a href="week6.html#summary-5"><i class="fa fa-check"></i><b>6.15</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="week7.html"><a href="week7.html"><i class="fa fa-check"></i><b>7</b> Week 7</a><ul>
+<li class="chapter" data-level="7.1" data-path="week7.html"><a href="week7.html#learning-outcomes-6"><i class="fa fa-check"></i><b>7.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="7.2" data-path="week7.html"><a href="week7.html#crime-and-incident-trend-identification"><i class="fa fa-check"></i><b>7.2</b> Crime and incident trend identification</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="week7.html"><a href="week7.html#activity-1-extracting-temporal-variables-from-dates"><i class="fa fa-check"></i><b>7.2.1</b> Activity 1: Extracting temporal variables from dates</a></li>
+<li class="chapter" data-level="7.2.2" data-path="week7.html"><a href="week7.html#activity-2-extract-year-from-date-column"><i class="fa fa-check"></i><b>7.2.2</b> Activity 2: Extract year from date column</a></li>
+<li class="chapter" data-level="7.2.3" data-path="week7.html"><a href="week7.html#activity-3-extract-day-of-week-from-date-column"><i class="fa fa-check"></i><b>7.2.3</b> Activity 3: Extract day of week from date column</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="week7.html"><a href="week7.html#aggregating-to-simple-intervals"><i class="fa fa-check"></i><b>7.3</b> Aggregating to simple intervals</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="week7.html"><a href="week7.html#activity-4-aggregate-to-hour"><i class="fa fa-check"></i><b>7.3.1</b> Activity 4: Aggregate to hour</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="week7.html"><a href="week7.html#visualising-time"><i class="fa fa-check"></i><b>7.4</b> Visualising time</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="week7.html"><a href="week7.html#activity-5-line-graphs"><i class="fa fa-check"></i><b>7.4.1</b> Activity 5: Line graphs</a></li>
+<li class="chapter" data-level="7.4.2" data-path="week7.html"><a href="week7.html#activity-6-radar-graphs"><i class="fa fa-check"></i><b>7.4.2</b> Activity 6: Radar graphs</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="week7.html"><a href="week7.html#activity-7-heatmaps"><i class="fa fa-check"></i><b>7.5</b> Activity 7: Heatmaps</a></li>
+<li class="chapter" data-level="7.6" data-path="week7.html"><a href="week7.html#summary-6"><i class="fa fa-check"></i><b>7.6</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="week8.html"><a href="week8.html"><i class="fa fa-check"></i><b>8</b> Week 8</a><ul>
+<li class="chapter" data-level="8.1" data-path="week8.html"><a href="week8.html#learning-outcomes-7"><i class="fa fa-check"></i><b>8.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="8.2" data-path="week8.html"><a href="week8.html#why-use-software-in-qualitative-data-analysis"><i class="fa fa-check"></i><b>8.2</b> Why use software in qualitative data analysis?</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="week8.html"><a href="week8.html#activity-1"><i class="fa fa-check"></i><b>8.2.1</b> Activity 1:</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="week8.html"><a href="week8.html#what-kinds-of-data-can-i-input-into-nvivo-for-analysis"><i class="fa fa-check"></i><b>8.3</b> What kinds of data can I input into NVivo for analysis?</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="week8.html"><a href="week8.html#activity-2-find-some-data"><i class="fa fa-check"></i><b>8.3.1</b> Activity 2: Find some data…</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="week8.html"><a href="week8.html#creating-your-nvivo-project"><i class="fa fa-check"></i><b>8.4</b> Creating your NVivo project</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="week8.html"><a href="week8.html#activity-3-getting-started-with-nvivo"><i class="fa fa-check"></i><b>8.4.1</b> Activity 3: Getting started with NVivo</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="week8.html"><a href="week8.html#understanding-the-interface"><i class="fa fa-check"></i><b>8.5</b> Understanding the interface</a></li>
+<li class="chapter" data-level="8.6" data-path="week8.html"><a href="week8.html#navigation-view"><i class="fa fa-check"></i><b>8.6</b> Navigation View</a><ul>
+<li class="chapter" data-level="8.6.1" data-path="week8.html"><a href="week8.html#sources"><i class="fa fa-check"></i><b>8.6.1</b> Sources</a></li>
+<li class="chapter" data-level="8.6.2" data-path="week8.html"><a href="week8.html#the-internals-section"><i class="fa fa-check"></i><b>8.6.2</b> The ‘internals’ section:</a></li>
+<li class="chapter" data-level="8.6.3" data-path="week8.html"><a href="week8.html#memos"><i class="fa fa-check"></i><b>8.6.3</b> Memos</a></li>
+<li class="chapter" data-level="8.6.4" data-path="week8.html"><a href="week8.html#activity-4-folders"><i class="fa fa-check"></i><b>8.6.4</b> Activity 4: Folders</a></li>
+</ul></li>
+<li class="chapter" data-level="8.7" data-path="week8.html"><a href="week8.html#importing-data"><i class="fa fa-check"></i><b>8.7</b> Importing Data</a><ul>
+<li class="chapter" data-level="8.7.1" data-path="week8.html"><a href="week8.html#activity-5-import-data"><i class="fa fa-check"></i><b>8.7.1</b> Activity 5: Import data</a></li>
+</ul></li>
+<li class="chapter" data-level="8.8" data-path="week8.html"><a href="week8.html#memos-1"><i class="fa fa-check"></i><b>8.8</b> Memos</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="week8.html"><a href="week8.html#activity-6-memos"><i class="fa fa-check"></i><b>8.8.1</b> Activity 6: Memos</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="week8.html"><a href="week8.html#word-frequency"><i class="fa fa-check"></i><b>8.9</b> Word frequency</a><ul>
+<li class="chapter" data-level="8.9.1" data-path="week8.html"><a href="week8.html#activity-7-word-frequency"><i class="fa fa-check"></i><b>8.9.1</b> Activity 7: Word frequency</a></li>
+</ul></li>
+<li class="chapter" data-level="8.10" data-path="week8.html"><a href="week8.html#summary-7"><i class="fa fa-check"></i><b>8.10</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="week9.html"><a href="week9.html"><i class="fa fa-check"></i><b>9</b> Week 9</a><ul>
+<li class="chapter" data-level="9.1" data-path="week9.html"><a href="week9.html#learning-outcomes-8"><i class="fa fa-check"></i><b>9.1</b> Learning outcomes</a></li>
+<li class="chapter" data-level="9.2" data-path="week9.html"><a href="week9.html#deduction-induction-adaption-key-analytical-strategies-for-qualitative-data"><i class="fa fa-check"></i><b>9.2</b> Deduction, induction, adaption – key analytical strategies for qualitative data</a></li>
+<li class="chapter" data-level="9.3" data-path="week9.html"><a href="week9.html#coding-qualitative-data-using-nodes"><i class="fa fa-check"></i><b>9.3</b> ‘Coding’ qualitative data using ‘nodes’</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="week9.html"><a href="week9.html#what-are-nodes"><i class="fa fa-check"></i><b>9.3.1</b> What are ‘Nodes’?</a></li>
+<li class="chapter" data-level="9.3.2" data-path="week9.html"><a href="week9.html#activity-1-coding"><i class="fa fa-check"></i><b>9.3.2</b> Activity 1: Coding</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="week9.html"><a href="week9.html#using-mind-maps-to-organise-your-analytical-process-and-framework"><i class="fa fa-check"></i><b>9.4</b> Using ‘mind maps’ to organise your ‘analytical process and framework’</a><ul>
+<li class="chapter" data-level="9.4.1" data-path="week9.html"><a href="week9.html#activity-2-deductive-coding"><i class="fa fa-check"></i><b>9.4.1</b> Activity 2: Deductive coding</a></li>
+<li class="chapter" data-level="9.4.2" data-path="week9.html"><a href="week9.html#activity-3-inductive-coding"><i class="fa fa-check"></i><b>9.4.2</b> Activity 3: Inductive coding</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="week9.html"><a href="week9.html#abductive-coding"><i class="fa fa-check"></i><b>9.5</b> Abductive coding</a><ul>
+<li class="chapter" data-level="9.5.1" data-path="week9.html"><a href="week9.html#activity-4-retrieval-viewing-coded-data"><i class="fa fa-check"></i><b>9.5.1</b> Activity 4: Retrieval – viewing coded data</a></li>
+<li class="chapter" data-level="9.5.2" data-path="week9.html"><a href="week9.html#activity-5-viewing-more-context"><i class="fa fa-check"></i><b>9.5.2</b> Activity 5: Viewing more context</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="week9.html"><a href="week9.html#export-coded-data"><i class="fa fa-check"></i><b>9.6</b> Export coded data</a><ul>
+<li class="chapter" data-level="9.6.1" data-path="week9.html"><a href="week9.html#activity-6-exporting-via-the-list-pane"><i class="fa fa-check"></i><b>9.6.1</b> Activity 6: Exporting via the list pane</a></li>
+</ul></li>
+<li class="chapter" data-level="9.7" data-path="week9.html"><a href="week9.html#reports-note-windows-only-users-not-supported-by-mac-yet"><i class="fa fa-check"></i><b>9.7</b> Reports (NOTE: WINDOWS ONLY USERS! NOT SUPPORTED BY MAC, YET!!)</a></li>
+<li class="chapter" data-level="9.8" data-path="week9.html"><a href="week9.html#some-other-useful-things-to-do"><i class="fa fa-check"></i><b>9.8</b> Some other useful things to do</a><ul>
+<li class="chapter" data-level="9.8.1" data-path="week9.html"><a href="week9.html#create-another-word-cloud"><i class="fa fa-check"></i><b>9.8.1</b> Create another Word Cloud:</a></li>
+<li class="chapter" data-level="9.8.2" data-path="week9.html"><a href="week9.html#create-a-word-tree"><i class="fa fa-check"></i><b>9.8.2</b> Create a Word Tree:</a></li>
+<li class="chapter" data-level="9.8.3" data-path="week9.html"><a href="week9.html#create-a-concept-map-windows-only"><i class="fa fa-check"></i><b>9.8.3</b> Create a Concept Map (WINDOWS ONLY!!)</a></li>
+</ul></li>
+<li class="chapter" data-level="9.9" data-path="week9.html"><a href="week9.html#other-features"><i class="fa fa-check"></i><b>9.9</b> Other features…</a><ul>
+<li class="chapter" data-level="9.9.1" data-path="week9.html"><a href="week9.html#graphicspictures---making-linked-notes-and-coding"><i class="fa fa-check"></i><b>9.9.1</b> Graphics/pictures - making linked notes and coding</a></li>
+<li class="chapter" data-level="9.9.2" data-path="week9.html"><a href="week9.html#coding-audiovideo-data"><i class="fa fa-check"></i><b>9.9.2</b> Coding audio/video data</a></li>
+</ul></li>
+<li class="chapter" data-level="9.10" data-path="week9.html"><a href="week9.html#more-on-capturing-web-material"><i class="fa fa-check"></i><b>9.10</b> More on capturing web material</a></li>
+<li class="chapter" data-level="9.11" data-path="week9.html"><a href="week9.html#summary-8"><i class="fa fa-check"></i><b>9.11</b> Summary</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Making Sense of Crim Data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="week4" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Week 4</h1>
+<div id="learning-outcomes-3" class="section level2">
+<h2><span class="header-section-number">4.1</span> Learning outcomes</h2>
+<p>We as researchers all start off with a general area that we’re interested in. As someone studying Criminology, you are likely to be interested in Criminology-related topics. You might want to learn about policing, or criminal justice practices, or you might be interested in something like <a href="http://criminology.oxfordre.com/view/10.1093/acrefore/9780190264079.001.0001/acrefore-9780190264079-e-3">situational crime prevention</a>. These are very broad interests that you may have, and within these there are many many sub-topics, and potentially research questions that you might want to explore. During the research process, the researcher becomes an expert in his or her field and the methods and techniques to be used for research. The researcher goes through several stages and must deal with the concept of variable and the assumption of its measurement.</p>
+<p>So far in this course we have always started with our variables. We obtain a data set which has variables that measure the things that we are interested in. The police.uk data has crime records, that we can use to explore difference in volume of different crim types, or difference in number of crimes between neighbourhoods, or potentially look at home crime rates change over time, with seasons for example. Or with the arrestee survey we saw variables that related to people’s experiences with their arrests, and in the business victimisation survey with businesse’s experiences of victimisation, and their perceptions of safety, as well as the precautions they take, measured in terms of their spending on IT security for example.</p>
+<p>In all these cases, we were presented with a set of variables, but without having much say in how the variables are defined in terms of representing the concepts that we want to be able to talk about when making sense of our data. A variable is a structure of characteristics, qualities, or quantities that in some form provide information about a specific descriptive phenomenon. Information that is provided by variables that are under study is fundamental for the researcher and data analyst. However, this information and its quality will depend on how variables are quantified and on the quality of its measurements. In all these cases we started with the data, but actually, most of the time, you are much more likely to start with the research questions you’re answering. As a researcher you are interested to learn more about your chosen topic. Whether that’s drugs, probation, stop and search practices of the police, online cryptomarkets, fear of crime, transport crime, police use of twitter, hate crimes, whatever it is, you want to focus on exploring your topic. You can explore these topics through data, if you can collect data, or data is already available for you to analyse. But how do you go from research topics and ideas and questions to actual variables? Well this is what we will learn today.</p>
+<p>Also we will discuss the manner in which you can collect these variables about a <em>sample</em> of people who represent the <em>population</em> in which you are interested. The term “<strong>population</strong>” is used in statistics to represent all possible measurements or outcomes that are of interest to us in a particular study. On the other hand, the term “<strong>sample</strong>” refers to a portion of the population that is representative of the population from which it was selected. The sample is the set of people from whom you take measurements. Everyone in your sample has one row that represents them in your data set. For example, in the arrestee survey used last week, every person arrested was a part of the <strong>sample</strong>, of people interviewed. Then, the results of any data analysis based on this sample can be used to make inferences about the <strong>population</strong> of all people arrested, if this sample was representative.</p>
+<p>This distinction might seem intuitive, but whether we’re talking about our population or our sample when discussing our data, as well as whether we refer to <em>sample statistics</em> or <em>population parameters</em> will also surface as important in this week’s material.</p>
+<div id="terms-for-today-2" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> Terms for today:</h3>
+<ul>
+<li>Sample and population</li>
+<li>Conceptualisation</li>
+<li>Operationalisation</li>
+<li>Measurement</li>
+<li>Constructs and composite variables</li>
+<li>Multi-item scales</li>
+<li>Reliability and validity (round 2)</li>
+<li>Recoding</li>
+</ul>
+</div>
+</div>
+<div id="population-parameters-versus-sample-statistics" class="section level2">
+<h2><span class="header-section-number">4.2</span> Population parameters versus sample statistics</h2>
+<p><em>Hold on a second!</em> Population standard deviation? But so far we have only been talking about samples? Well, this week we also discuss sampling, right? And the differences between sample statistics and population parameters. A statistic and a parameter are very similar. They are both descriptions of groups, like “50% of dog owners prefer X Brand dog food.” The difference between a statistic and a parameter is that statistics describe a sample. A parameter describes an entire population.</p>
+<p>For example, say you want to know the mean income of the subscribers to a particular magazine—a parameter of a population. You draw a random sample of 100 subscribers and determine that their mean income is $27,500 (a statistic). You conclude that the population mean income μ is likely to be close to $27,500 as well. This example is one of <strong>statistical inference</strong>.</p>
+<p>If you are taking the second term module, Modeling Criminological Data, you will be introduced to techniques for making <strong>statistical inference</strong>. But essentially it refers to any process where you draw conclusions about a population based on the data analysis you perform on a sample of that population. Because you’re using the statistics to make inferences, this process is called <strong>inferential statistics</strong>.</p>
+<p>With <strong>inferential statistics</strong>, you are trying to reach conclusions that extend beyond the immediate data alone. For instance, we use inferential statistics to try to infer from the sample data what the population might think. Or, we use inferential statistics to make judgments of the probability that an observed difference between groups is a dependable one or one that might have happened by chance in this study. Thus, we use inferential statistics to make inferences from our data to more general conditions; we use descriptive statistics simply to describe what’s going on in our data.</p>
+<p>Take the example of the Crime Survey for England and Wales. The Crime Survey for England and Wales has measured crime in since 1981. Used alongside police recorded crime data it is a valuable source of information for the government about the extent and nature of crime in England and Wales. The survey measures crime by asking members of the public, such as yourself, about their experiences of crime over the last 12 months. In this way the survey records all types of crimes experienced by people, including those crimes that may not have been reported to the police. It is important that we hear from people who have experienced crime and also those who have not experienced any crime in the last 12 months, so that we can show an accurate picture of crime in the country.</p>
+<p>Each year around 50,000 households across England and Wales will be invited to participate in the survey. In previous years three quarters of households invited to take part agreed to participate. While this does encompass a lot of people, you can see how it’s not the entire population of England and Wales. Instead it is a <strong>representative sample</strong>.</p>
+<p>While reporting sample statistics from the sample might be interesting (ie to talk about whether men or women have higher worry about crime), the more interesting approach is to make inferences about the population at large. Do men and women <em>generally</em> have different approached to fear of crime? In order to answer these questions, criminologists use *<strong>p-values</strong> and <strong>effect sizes</strong> to talk about the relationships between two variables in a population. Since in this course we mostly talk about the relationships between variables n a sample, we talk about the sample statistics. So you will learn about inferential statistics in the future. But for now it is important that you note this different between <strong>sample statistics</strong> and <strong>population parameters</strong>.</p>
+<p>They even have different notation. For example, you would use x-bar (x̄) to talk about your sample mean, but mew (μ) to talk about your population mean. Similarly, you can calculate the standard deviation for your sample, or for your population. In each instance, you can measure each for your sample, and then infer it for your population. How do you do this? Well, you make use of something called the <strong>sampling distribution of the mean</strong>.</p>
+<p>The mean of the sampling distribution of the mean is the mean of the population from which the scores were sampled. Therefore, if a population has a mean μ, then the mean of the sampling distribution of the mean is also μ. The symbol μM is used to refer to the mean of the sampling distribution of the mean.</p>
+<p>Let’s explore this with some data. Download the heightsAndNames.xlsx file from Blackboard.</p>
+<p>Open this data with Excel. You can see we have 3 variables. One variable is the people’s names, one is their height, and the third variable, I created, putting these people into 6 different samples, assigning them randomly. Let’s assume that everyone in this excel spreadsheet is our population. Everyone here is everyone who exists, these 300 people are the only people that exist in our population. Now let’s suppose that we don’t have all their heights. Let’s suppose that we do not have the budget to measure the height of all these 300 people, and instead we have to measure the height of a sample of 50 people.</p>
+<p>Let’s say we initially select sample 1. You can filter to show only sample 1 in excel by using the “filter” option. Click on the data tab in excel, and the filter option (the little funnel icon):</p>
+<p><img src="imgs/filter_data.png" /></p>
+<p>When you click this, little downward arrows should appear next to the column names for each one of your variables. Click on the one next to the “sample” variable:</p>
+<p><img src="imgs/filter_arrows.png" /></p>
+<p>When you do this a little window will appear. In this window you will see all the possible values that the “sample” variable can take. In this case, it’s the numbers 1 through 6, as there are 6 possible samples of 50 people that we have, from these total population of 300 people. Everything that has a ticked box next to it will appear, while everything that does not will get filtered out.</p>
+<p><img src="imgs/filter_options.png" /></p>
+<p>Untick the box next to every single sample, except sample 1. Like so:</p>
+<p><img src="imgs/filter_sample_1.png" /></p>
+<p>When you do this you should see in your data that all the other rows will disappear, and you will see only the ones where the value for the “sample” variable is “1”.</p>
+<p>So now we have our first sample of our population. We have a sample of 50 people, and we use these 50 people to collect data. In this case, the data we collect is their heights. Let’s say we’re interested in their average height. We can get this, using the <code>=AVERAGE()</code> function in excel.</p>
+<p>So let’s create a small table in another sheet in our excel spreadsheet, that calculated the average height for our sample 1. To do this, create a new sheet (by clicking on the little plus sign at the bottom of your excel page):</p>
+<p><img src="imgs/new_sheet_2.png" /></p>
+<p>Then in this new sheet, create a cell for each sample, from sample 1 to sample 6. Like so:</p>
+<p><img src="imgs/set_for_avgs.png" /></p>
+<p>Then, in the cell next to the “sample 1” cell, enter the <code>=AVERAGE()</code> formula. Click inside the brackets, and go select the values for height, in your sample 1.</p>
+<p><img src="imgs/avg_sample_1.gif" /></p>
+<p>Repeat this for each one of the samples. So each time, go to the little down arrow next to the “Sample” column, select the next sample (so first 2, then 3, then 4, and so on), and each time, calculate the average height for the sample.</p>
+<p>You should end up with the average height for 6 different samples of your 300 people:</p>
+<p><img src="imgs/avg_per_sample.png" /></p>
+<p>Now this is interesting. Depending on which sample you end up with, you get a different <strong>sample statistic</strong> for the mean. With only one of the samples, you would use that sample statistic to make inferences about the population parameter. So if you ended up with sample 1, you would assume the average height is 169.7 centimetres. On the other hand, if you ended up with sample 5, you would say the average height is 173.1 centimetres.</p>
+<p>Well, in our special case, we can know the population parameter. To get this, simply get rid of your filters, so you have all 300 observations, and get the average for these. I’ll let you figure out yourself how to do this. Add it as a row in our table of averages, under the “sample 6” average.</p>
+<p>So… did you get it?</p>
+<p>The average height for our population is about 172.1 centimetres. So our sample statistics are all sort of near this measure, but depending on which sample we end up with, we do better, or worse with getting near this number. Now I’m going to show you something neat.</p>
+<p>Take the average of the averages. That’s right. What is the average of all 6 sample averages? You guessed it, it’s equal to our population average! It’s also about 172.1 centimetres. Now I cheated a bit here, because we have non-overlapping samples without replacement, so you do end up taking your population sample, but actually, if you repeatedly sampled from a population, over and over again, and then took the average height in each sample, and then finally, after infinitely many samples, you took the average of all of the averages, it would be equal to the population parameter.</p>
+<p>This is something called the <strong>sampling distribution of the mean</strong>.</p>
+<p>We will never have many many many samples of the same thing, right? Surveys are costly, and we are happy if we can run it once. So instead of running the same survey many many times on different samples of the population, we can rely on another mathematical rule, called the <strong>central limit theorem</strong>. The Central Limit Theorem states that the sampling distribution of the sampling means approaches a normal distribution as the sample size gets larger. The Central Limit Theorem tell us that as the sample size tends to infinity, the of the distribution of sample means approaches the normal distribution. This is a statement about the SHAPE of the distribution. A normal distribution is bell shaped so the shape of the distribution of sample means begins to look bell shaped as the sample size increases.</p>
+<p>You can watch <a href="https://www.youtube.com/watch?v=JNm3M9cqWyc">this video</a> to learn about central limit theorem some more.</p>
+<p>Further, something called the <strong>Law of Large Numbers</strong> tells us where the center (maximum point) of the bell is located. Again, as the sample size approaches infinity the center of the distribution of the sample means becomes very close to the population mean. Basically, it means that the larger our sample, to more we can trust that our sample statistic reflects the population parameter.</p>
+<p>Give this a go in our heights data in excel. Let’s select a mega sample of 150 people. Let’s use odd numbered samples: 1, 3, and 5 to do this. Calculate the average height of all the people who are in these 3 samples. To do this, go back to your filtering, and make sure that the boxes next to 1, 3, and 5 are all ticked. Then calculate the average. Add this as a new row in your sheet where you’ve already calculated all the averages. Pretty close to our population mean, no?</p>
+<p>Let’s try also for the even numbered samples, 2, 4, and 6. Add this as a new row as well. So? Close? I would say so:</p>
+<p><img src="imgs/larger_samples.png" /></p>
+<p>If you’re still unsure, <a href="https://www.youtube.com/watch?v=agBcvkyi6sg">this video may help</a> as well as <a href="https://www.youtube.com/watch?v=iN-77YVqLDw">this one</a>.</p>
+<p>This might not seem obvious at first, but really, it’s something that you probably already use in your everyday life. Think about when you are visiting a new city and you are looking to find a nice place to eat. You might use tripadvisor. Or yelp. In case you’re not familiar, these are review sites, where people can give a star rating (usually out of 5) to an establishment, and then others looking to visit these venues can see what ratings others have given them. You probably have used something like this, when you are exploring a new part of town, or in an area you might be unfamiliar with. And chances are, you refer to the law of large number when deciding where to eat. Take this example. You come across the below reviews:</p>
+<p><img src="imgs/review_1.png" /></p>
+<p>and</p>
+<p><img src="imgs/review_2.png" /></p>
+<p>You can see that actually review 1 has the higher mean score, right? It’s got a score of 5 stars, the maximum amount of stars which you can have. Compared to that, the restaurant in review 2 has only 4 stars. So based on this rating alone, and no additional information, your ideal option is to choose the restaurant in the first review, “Fantasy Manchester”. But you most likely wouldn’t. Chances are, if you were going by the rating information only, then you would be more likely to select the restaurant in the 2nd review, Little Yang Sing. And that is because of the number of reviews. With only 2 reviews for “Fantasy Manchester”, you cannot be certain that a diverse set of opinions is represented. It could be two people who are really biased for all you know, such as friends of the owner. On the other hand, you know that the 33 people who reviewed “Little Yang Sing” will represent enough variation that it might include some biased people, but on the whole will be a better representation of the experience that all diners have, and therefore a better indication of what your experience will be like. In other words, the sample statistic of the 4 stars, is probably closer to the population parameter, which is the possible star rating that the restaurant would get if everyone who ever visited, and will ever visit, were to rate it. On the other hand, the true score for “Fantasy Manchester” might be very different to the 5 stars we see from the sample, if we were to be able to get a hold of the population parameter.</p>
+<p>Hopefully this illustrates little bit about the difference between a sample and the population, but also how we can make inferences from the sample about the population, and how the larger your sample is, the more you can rely on the sample statistics reliably representing the population parameters.</p>
+<p>The population standard deviation you can also estimate from your sample, and the relevant sample statistics. In fact, we very briefly touched on this last week. Remember the possible options for STDEV and STDEVP? When we were calculating the standard deviation column there were two choices there, StdDev and StdDevp. The one to choose will depend if you would like to know the standard deviation of your sample or your population. There is a slight difference in how you calculate your standard deviation, based on whether we are talking about our sample or our population. The first part is all the same. We still look at the difference between each measurement and the mean. And then we still take the square of these differences. However, the next step, where we calculate the standard deviation for the sample, we divide by the number of observations in our sample. <em>However</em> if we were calculating the standard deviation for our <em>population</em> we would divide by the number of observations in our sample <strong>minus one</strong>. Why minus one? Well this is because instead of dividing by the sample size, we are dividing by another values, one called the <strong>degrees of freedom</strong>.</p>
+<p>What is <strong>degrees of freedom</strong>? In statistics, the number of degrees of freedom is the number of values in the final calculation of a statistic that are free to vary. What does this mean? Well imagine that we know what our sample statistic for the mean is. Let’s say that it’s 172. And we also know how many people are in our sample. Let’s assume we have a mini sample of 5 people. The degrees of freedom here represent the number of people for whom we can freely choose any height we wanted. Which just happens to be one minus the sample size. Why? Let me illustrate:</p>
+<p>Here are our 5 people: Alice, Bob, Cecilia, Daniel, and Elizabeth. We know that their average height has to be 172 centimetres. This is a given.</p>
+<p>So how tall can Alice be? Alice can be any height we want. Pick a number for Alice. Let’s say she’s tall. Alice is 195cm tall. Good. Now Bob. How tall is Bob? Again you are free to pick any number. Bob can be 185 cm tall. Cecilia? Again, any height we want. Let’s say 156. Daniel? Again we can pick any height for Danuel. Let’s say he’s a tall one, at 200cm. What about Elizabeth? Well for her, she can only take one possible height. Why? Well we know the height of the other 4 now, and we also know the average. If we treat Daniel’s height as an unknown <code>X</code> cm tall, we can write this as the following equation:</p>
+<p><code>(195 + 185 + 156 + 200 + X) / 5 = 172</code></p>
+<p>From your days of maths this might look familiar, but even if it does not, you should be able to know that this equation only has one solution. X can only be one value. Because we <em>know</em> what the final average will be, and because we could freely choose the heights of the first 4 people, the 5th height is restricted (in this case it will have to be 124cm, so Daniel is the shortest in our sample). Therefore we are only <em>free</em> to choose the first 4 heights, which is our sample <em>minus 1</em>. Our degrees of freedom are sample <em>minus 1</em>. As degrees of freedom refers to the number of independent ways by which a dynamic system can move, without violating any constraint imposed on it, this is why it is called number of degrees of freedom. In other words, the number of degrees of freedom can be defined as the minimum number of independent coordinates that can specify the position of the system completely. As illustrated above, in this case that is the sample size minus one.</p>
+<p>So when you are calculating the standard deviation for <em>the population</em> you divide by the degrees of freedom, rather than by the number of observations in your sample. This is the difference between the StdDev and StdDevp functions in Excel to calculate your standard deviation.</p>
+<p>Now, why are we talking about this again? Well this will all come in handy when we’re calculating and validating our measures for the various concepts that we’re going to study and collect data on to be able to draw meaningful conclusions about. But I’m jumping a bit ahead. Let’s first start with the concepts.</p>
+</div>
+<div id="conceptualisation" class="section level2">
+<h2><span class="header-section-number">4.3</span> Conceptualisation</h2>
+<p>We will start this week with introducing the term <strong>conceptualisation</strong>, which seems appropriate, as you would start most of your research with this step of the data analysis process. <strong>Conceptualisation</strong> is the first step in the process of turning your research questions and topics of interest into variables that you can measure and collect data, in order to be able to answer your questions. <strong>Conceptualisation</strong> is the process by which you define the things you’re interested in, and define them as <strong>concepts</strong>. This means you have to decide what you will and what you won’t include as relevant to your topic, or to your concept. Let’s illustrate with an example.</p>
+<p>Let’s say we’re interested in studying education. Defining what we mean by education here is the process of conceptualisation of this topic. Let’s say we conceptualise education as “Amount of knowledge and training acquired in school.” Then we can say that we want to consider all the education that people learned while enrolled in the K-12 system, but that means that we would not include in this definition non-traditional approaches to education, such as home schooling, or people who return to school later, or take classes from prison, for example. You can start to get a sense of what impact conceptualisation can have on your findings, no?</p>
+<p>Let’s take another example, let’s consider that we want to study “social status”. How we conceptualise social status will have implications for what it is that we might consider in the scope of our study, and what we would not. For example, if we consider social status to be made up of the <em>dimensions</em> of wealth, prestige, and power, then we want to somehow collect data about these particular elements of social status. But we might ignore other elements of the concept, which others might deem relevant, such as social capital (the networks of relationships among people who live and work in a particular society, enabling that society to function effectively). Now this is important, because if someone else wants to also study social status, and has a look at our study, they should be clear on what was and what was not included, and so they can make their own decisions about our study and approach, but at least we are transparent about this, and can use this to make sure that we can justify our results.</p>
+<p>To really demonstrate this, it’s a good idea for you to have a go at conceptualising something yourself. Let’s assume that you are interested in studying hate crime. In particular you are interested in hate speech over social media. Let’s say you pick twitter as your case study. Now you have to <strong>conceptualise</strong> what it is that you mean by hate speech. This is important so that both you, and anyone reading your study later is clear about what should be included in your study, and what should be excluded. You can imagine that this is a very important step, since what is included/ excluded.</p>
+<p>So imagine you are about to embark on a study of <em>hate speech</em>. You have some twitter data, which includes 100,000 tweets, and you want to be able to select which one of these tweets includes hate speech, and which one does not. For you to be able to carry out this research, and be transparent about it as well, ensuring reproducibility of your work, you need to conceptualise hate speech in a clear, detailed, and specific way. So take a moment now, and working with someone near you, conceptualise hate speech. Write down your conceptualisation of hate speech - how you define hate speech for the purposes of your study. When you have your concept ready, talk it over, and make sure that this is a comprehensive definition that you are all happy with.</p>
+<p>It’s important that you play along and do this step. I’ll wait here while you discuss.</p>
+<p><img src="https://media.giphy.com/media/3o6ZsUdQYvPAyT1hxm/giphy.gif" /></p>
+<p>OK, ready? Great, now let’s test your conceptualisation of hate speech. <em>Relying strictly on the way that you conceptualised hate crime in the steps above</em>, for each of the following tweets, record whether it would be included in your study as exhibiting hate speech or not:</p>
+<p><img src="http://www.pressgazette.co.uk/wp-content/uploads/2017/05/Katie-Hopkins-Western-Men-TWEET.jpg" /></p>
+<p>What about this one?</p>
+<p><img src="https://ichef.bbci.co.uk/news/624/media/images/80000000/jpg/_80000045_sweaty.jpg" /></p>
+<p>And finally this third one?</p>
+<p><img src="http://www.pressgazette.co.uk/wp-content/uploads/2017/05/hoops.jpg" /></p>
+<p>All three tweets were considered hateful and as exhibiting hate speech by many people (see <a href="http://www.pressgazette.co.uk/katie-hopkins-leaving-lbc-radio-effective-immediately-station-announces/">here for the first and last one</a>, and <a href="http://www.bbc.co.uk/news/uk-scotland-glasgow-west-30641705">here about the second one</a>). By reading them, with our human sentiment, we can appreciate that all three tweets are hateful. But how did they do against the way that you conceptualised hate speech? Would they all be included in your study? Did you include everything according to your criteria that you would have liked to include, based on your human understanding of what hate speech means?</p>
+<p>If you did, that is very impressive. If you did not, don’t despair, I started you off with a tough one. Hate crime in general is very complex, and therefore tough to conceptualise and define. There is no criminological consensus on the definition or even the validity of the concept of hate crime. There is legislation in this country to account for hate crime, and generally they reflect the core belief that hate crime policy should support a basic human right to be free from crime fuelled by hostility because of an individual’s personal characteristics, but even in legislation this is quite hard to pin down.</p>
+<p>But conceptualising what you mean (and therefore also what you don’t mean) by hate crime a is very important step in your research, as it can influence what data you collect, and therefore the outcomes of your study, and the findings you’ll be able to report. For the purposes of a research study, it can influence who your results are relevant for. Remember when we spoke about generalisability and validity in the first week’s feedback session? I’ll return to these later, but it’s important to consider that the way that you conceptualise your concepts will determine how much you can generalise from your results, or how valid your measurements are. For example, did you include hate against all the protected characteristics? Did you consider hate as only threats of violence, or also general antagony as well? Conceptualisation is a very important step, that affects the measurement we will discuss in the next section, but that affects all the next steps in your study. How you decide what to measure has implications for what sorts of conclusions you can draw from your data after analysis.</p>
+<p>You will have seen this in your preparatory reading, in Chapter 5 (“Research Design”) of the book ‘The Practice of Social Research’ by Earl Babbie, but I will quickly re-iterate here: based on your conceptualisation of your variable, it will fall into one of three categories:</p>
+<ul>
+<li><em>Directly observable</em>: something that you can observe through measuring or counting or physical observation. Examples include physical characteristics of a person.</li>
+<li><em>Indirectly observable</em>: something that you can measure with a single question. Examples include the person’s salary, or their ethnicity - you can just ask one question and this will be enough to identify the value for that variable for the person responding.</li>
+<li><em>Constructs</em> : a more abstract concept, something that isn’t necessarily “out there” to be measured using simple measurement tools. Constructs are often representative of complex social processes, and require more intricate measurement approaches. Examples include fear of crime, and trust in the police.</li>
+</ul>
+<p>So our concept of hate speech, which one of these objectives does it fall under? Can you measure it directly or indirectly with a simple question? Or is it a more complex concept, that perhaps requires the measurement of multiple indicators of hate, in order to build a fully complete picture of what is hate speech?</p>
+<p>Think about this for a moment. Turn to someone next to you and talk through which one of these you think hate speech would fall under. Discuss why you think this. Then read on, to see if you thought the same.</p>
+<p>So you’ve hopefully taken some time to formulate your own thoughts on this topic, and now I can go on to discuss some approaches conceptualising hate speech. First let’s consult the legislation:</p>
+<p>Not all hate incidents will amount to criminal offences, but those that do become hate crimes. The Association of Chief Police Officers and the CPS have agreed a common definition of hate crime: “Any criminal offence which is perceived by the victim or any other person, to be motivated by hostility or prejudice based on a person’s race or perceived race; religion or perceived religion; sexual orientation or perceived sexual orientation; disability or perceived disability and any crime motivated by hostility or prejudice against a person who is transgender or perceived to be transgender.”</p>
+<p>This definition is quite an important one, because it has an effect on sentencing, when it comes to criminal offences. If evidence can be presented that the offence was motivated by hate, or for any other strand of hate crime, the CPS can request enhanced sentencing. So this seems a pretty important definition. But how can we translate this into a concept of hate speech? How do we make sure that our concept encapsulates all the possible versions of hate speech that we are interested to study?</p>
+<p>One approach could be to conceptualise hate speech as an <strong>indirectly observable</strong> variable. You, could, as was done in this paper looking at <a href="http://onlinelibrary.wiley.com/doi/10.1002/poi3.85/full">Cyber Hate Speech on Twitter</a> consider hate speech to be the extent to which people consider a tweet offensive or antagonistic. In this case (we are jumping slightly ahead into measurement, but it all link in any way), this would be measured with a single-item question where you just present people with a tweet, and ask “is this text offensive or antagonistic in terms of race ethnicity or religion?”, providing people with a set of possible answers of yes, no, or undecided. (You might notice that this study did <em>not</em> include all protected characteristics, mentioned in the CPS definition, instead they focus on race ethnicity and religion only). In this particular study, they presented the same tweets to many many people, and so possibly the single-item measure could have worked as an indicator of hate, since multiple people rating the same tweet would eventually cancel out people who have a very high or very low threshold for classifying something as offensive or antagonistic. In this case, hate speech is conceptualised as people considering a tweet as antagonistic or offensive in terms of race ethnicity or religion.</p>
+<p>However if you were surveying individuals only about each tweet, and were interested in what certain people class as hate speech or not hate speech, you might want to consider a more complex assessment. You might conceptualise something being hate speech as something that evokes a variety of emotions from people and you might want to ask about all these measures in separate questions, to make sure that you are really tapping into what hate crime means to people. In this case, you would be conceptualising hate speech as a <strong>construct</strong>. If you recall from the reading (or above) <em>constructs are theoretical creations tat are based on observations, but that cannot be observed directly or indirectly. Concepts such as compassion and prejudice are construcs created from your conception of them, my conception of them, and the conceptions of all those who have ever used these terms, They cannot be observed directly or indirectly, because they don’t exist. We made them up.</em> Constructs are usually complex and not easily measured with a single item. Instead we tend to approach them my measuring their many indicators, and assembling the responses to those to create a measure that is more reliable and less prone to random measurement errors than single-item measures, since a single item often cannot discriminate between fine degrees of an attribute. So if you have conceptualised hate crime as something more abstract and complex, and therefore a construct, that would mean you would have to measure in a different way, than the example given from the paper above. In the next section we’ll explore exactly how conceptualisation affects measurement.</p>
+</div>
+<div id="measurement" class="section level2">
+<h2><span class="header-section-number">4.4</span> Measurement</h2>
+<blockquote>
+<p>In science, we use measurement to make accurate observations. All measurement must begin with a classification process—a process that in science is carried out according to systematic criteria. This process implies that we can place units of scientific study in clearly defined categories. The end result of classification is the development of variables.</p>
+</blockquote>
+<ul>
+<li><em>Chapter 2 Statistics in Criminal Justice - David Weisburd, Chester Britt</em></li>
+</ul>
+<p>The point of conceptualising your topics into concepts is to be able to come up with the optimal approach to measuring them, in order to be able to draw conclusions, and talk about criminological concepts with the support of empirical data. Data that arises from measurement are referred to as <strong>empirical</strong> data. So what can be empirical data? Well it’s anything that criminologists, data analysts, or anyone interested in and carrying our research will measure, in order to be able to answer their research questions, and be able to talk about their topics of study.</p>
+<blockquote>
+<p>Empirical data arise from our observations of the world. (…) Among the many prevailing views of the role of empirical data in modern science, there are two opposing extremes. On the one hand, the realist assumes data are manifestations of latent phenomena. In this view, data are pointers to universal, underlying truths. On the other hand, the nominalist assumes data are what they describe. From this latter point of view, as the philosopher Ludwig Feuerbach noted, “you are what you eat.” We use the historical realist-nominalist terminology to emphasize that these differing perspectives, in one form or another, have origins in Medieval theological controversies and their classical antecedents in Greek philosophy. Many working scientists adopt some form of a realist position, particularly those in the natural sciences. Even social scientists, despite the myriad particulars of their field, have often endorsed a similar position.</p>
+</blockquote>
+<ul>
+<li>Leland Wilkinson (2005) <em>The Grammar of Graphics</em></li>
+</ul>
+<p>Depending on how you’ve conceptualised your topics you’re interested in will affect how you can measure them. To measure is a process that involves observing and registering information to reflect qualities or quantities of a particular concept of interest.</p>
+<p>Think back to some of the studies you might be learning about in your other courses. What sort of questions do they answer? How do they decide how to measure the concepts that they are interested in? It’s worth going through some papers you might be interested in, in order to see how they all go about these steps. You will normally find this sort of detail in the <em>methodology</em> section of a paper.</p>
+<p>For example, in this paper by Tom R. Tyler about <a href="http://journals.sagepub.com/doi/abs/10.1177/1098611104271105">ethnic group differences in trust and confidence in the police</a> if you find the <em>method</em> section, you will see a brief discussion of the sample, followed by a list of the concepts of interest (which will be the variables in the analysis, if you skip ahead to results, you will see this), and a description of how they were measured. For example these are a few listed:</p>
+<ul>
+<li><em>Cooperation with the police</em>: People responded to three questions, which asked “How likely would you be to call the police to report a crime that was occurring in your neighborhood?” “How likely would you be to help the police to find someone suspected of committing a crime by providing them with information?” “How likely would you be to report dangerous or suspicious activities in your neighborhood to the police?”</li>
+<li><em>Cooperation with the community</em>: People responded to three questions, which asked the following: “How likely would you be to volunteer your time on nights or weekends to help the police in your community?” “How likely would you be to volunteer your time on nights or weekends to patrol the streets as part of a neighborhood watch program?” “How likely would you be to volunteer your time on nights or weekends to attend a community meeting to discuss crime in your community?”</li>
+</ul>
+<p>So how do we get to this step of measurement, from the conceptualisation step?</p>
+<p>Remember the points from above, and from the reading about how concepts can be directly observable, indirectly observable, or constructs? Well depending on what these are, will affect their operationalisation, or how we can go about measuring them.</p>
+<p>Exact sciences work with directly observable variables, such as people’s height, body temperature, heart rate, and so on. These are easy to measure through direct observation. There are instances when variables of interest in social sciences as well would fall into the category of directly observable. Directly observable variables are those which you can measure by observing. Can you think of any?</p>
+<p><img src="https://media.giphy.com/media/e5nFlFChqFC0M/giphy.gif" /></p>
+<p>One example of directly observable variables would be the number of people on the street, at any given time. This would be an important variable to know if we are trying to accurately estimate crime risk. Crime risk is calculated by dividing the number of crimes in an area by a relevant measure of the population at risk. For example, you will often hear about crimes per 100,000 population. This would be important to calculate because sometimes a location can seem like it has very high crime counts, but perhaps that’s because there are a lot more people there. Remember when we compared the number of crimes per borough in Greater Manchester, and actually found that Manchester had significantly more than anywhere else? Well Manchester has also a lot more people going through it. So if we are trying to estimate <em>risk</em> it’s a different question. So if there are two streets, both had 100 robberies on them last year, but one street is oxford road, and the other is a quiet side street with much fewer people passing by, then even thought the count is the same, the risk to each individual is very different. So to be able to calculate this, we would need to count the number of people who walk down each street, to find an accurate measure of the total possible people who <em>could</em> become victims, and be able to use this number to calculate risk. This is a <strong>directly observable</strong> variable, and so the approach to measuring it can be something like counting the number of people who walk down the street.</p>
+<p>The next category is the <strong>indirectly observable</strong> variable. They are “terms whose application calls for relatively more subtle, complex, or indirect observations, in which inferences play an acknowledged part. Such inferences concern presumed connections, usually causal, between what is directly observed and what the term signifies” <a href="https://books.google.co.uk/books?id=wxwuDwAAQBAJ&amp;pg=PT89&amp;lpg=PT89&amp;dq=%22terms+whose+application+calls+for+relatively+more+subtle,+complex,+or+indirect+observations,+in+which+inferences+play+an+acknowledged+part.+Such+inferences+concern+presumed+connections,+usually+causal,+between+what+is+directly+observed+and+what+the+term+signifies%22&amp;source=bl&amp;ots=0_ySczx0oG&amp;sig=WVdwNE7mUzF_d8dfBk2R_Tq4clw&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwihna-v5OrWAhXMYVAKHXvEBpIQ6AEIJjAA#v=onepage&amp;q=%22terms%20whose%20application%20calls%20for%20relatively%20more%20subtle%2C%20complex%2C%20or%20indirect%20observations%2C%20in%20which%20inferences%20play%20an%20acknowledged%20part.%20Such%20inferences%20concern%20presumed%20connections%2C%20usually%20causal%2C%20between%20what%20is%20directly%20observed%20and%20what%20the%20term%20signifies%22&amp;f=false">Kaplan, A. (1964). The conduct of inquiry: Methodology for behavioral science. San Francisco, CA: Chandler Publishing Company, p. 55.</a>. If we conducted a study for which we wished to know a person’s income, we’d probably have to ask them their income, perhaps in an interview or a survey. Thus we have observed income, even if it has only been observed indirectly. Birthplace might be another indirect observable. We can ask study participants where they were born, but chances are good we won’t have directly observed any of those people being born in the locations they report. The way that you would measure these concepts is usually through single-item questionnaires. What does this mean? Single-item just means that you ask one single question , and the answer given to that one question is sufficient to measure your concept.</p>
+<p>The next category is where it gets a bit more complicated, but this is where the beauty of social science measurement really comes to life. Because we are interested in complex behaviours, interactions, relationships, and perceptions and opinions, our concepts in social sciences are often too abstract to be approaches through direct or indirect observation. Consider the example from the paper on ethnicity and trust in the police linked above. You can see that each one of those concepts is measured by people’s answers to multiple questions, which all come together to indicate the concept. These sort of complex concepts, that require such measurements are our last category, the <strong>constructs</strong>. Constructs such as <em>cooperation with the police</em> or <em>cooperation with the community</em> are more abstract than either observational terms or indirect observables, but we can detect them based on the observation of some collection of observables. Let’s explore how this works, in the section below.</p>
+<div id="measuring-constructs-with-composite-variables" class="section level3">
+<h3><span class="header-section-number">4.4.1</span> Measuring constructs with composite variables</h3>
+<p>As you see above, <strong>constructs</strong> are complex variables. As researchers we try to measure our constructs as best as we can. Often we can see and measure indicators of the constructs, but we can not directly observe or measure the constructs themselves. Instead we infer these constructs, which are unobserved, hidden, or latent, from the data we collect on <em>related variables</em> which we <em>can</em> observe and directly measure.</p>
+<p>We can combine the results from these related variables into a <strong>composite variable</strong>. A <strong>composite variable</strong> is a variable created by combining two or more individual variables, called indicators, into a single variable. Each indicator alone doesn’t provide sufficient information, but altogether they can represent the more complex concept. Think of the indicators as pieces of a puzzle that must be fit together to see the big picture.</p>
+<p>A lot of work goes into creating composite variables. The indicators of the multidimensional concept must be specified. It’s important that each indicator contribute unique information to the final score. The formula for combining the indicators into a single score, called aggregating data, must be established. The computation involved will depend on the type of data that is being aggregated. To aggregate the data, raw scores might be summed, averaged, transformed, and/or weighted.</p>
+<p>One example of a composite measure of health is the Body Mass Index. The BMI was developed by Lambert A. J. Quetelet in the early 19th century as a means for assessing the degree of obesity of the general population. The indicators are height, weight, and age.</p>
+<p>A person’s BMI is calculated like this: Multiply height in inches by itself (i.e., if x = height, find x^2). Next you would divide the same person’s weight in lbs by the first number (the square of his or her height). Last, you would multiply that answer (the quotient) by 705. The result is a person’s final score for the composite variable, BMI. Based on this score, we can determine a person’s relative degree of obesity - a component of health.</p>
+<p>Methods of simple averaging, weighted averaging, and meaningful grouping can all be used to create composite variables. Different methods are more appropriate in different contexts. Each approach to creating composite variables has advantages and disadvantages that researchers should weigh carefully.</p>
+<p>There are several ways to accomplish averaging. The specific method of averaging can be chosen based on whether the original variables intended to be combined are <em>numeric</em> or <em>categorical</em>. When original variables are <em>numeric</em>, simple averaging can be considered. I say simple averaging, but nothing’s ever truly <em>simple</em> is it? Let me briefly touch on this complication:</p>
+<p>When you are working with numbers, the unit of measurement can influence how big or small these numbers are. Consider height for example. If I measure your height in centimetres, milimeters, or inches, I will get very different numbers. But if I measured everyone’s heights in the class, and plotted them, no matter what unit I used (<em>cm</em>, <em>mm</em>, or <em>in</em>) I would end up with the sample plot right? You might be taller (or shorter) than the person sat next to you, and no matter what unit I use to measure your height, this will stay true.</p>
+<p>Similarly, where your height sits in comparison to the average height in the class with stay too. Remember how we measured the distribution of data points around the mean in the past weeks? We used the <em>standard deviation</em>, right? Standard deviation was something we used to indicate the distribution of the individual points we measured around the mean. And above we discussed how to calculate the standard deviation for the population, and how that’s different to the standard deviation for the sample. The standard deviation is a tool that we can use, in order to be able to standardize our numeric measurements. We can do this using <strong>z-scores</strong>.</p>
+<p><em>What is a z-score???</em> Simply put, a *z-score** is the number of standard deviations from the mean a data point is. But more technically it’s a measure of how many standard deviations below or above the population mean a raw score is. A z-score is also known as a standard score and it can be placed on a normal distribution curve. Z-scores range from -3 standard deviations (which would fall to the far left of the normal distribution curve) up to +3 standard deviations (which would fall to the far right of the normal distribution curve). However you can get z-scores larger (or smaller) than 3, in the case of outliers, which are data points that are very far away from the mean. So don’t worry when you get z-scores outside this range. In order to use a z-score, you need to know the mean μ and also the population standard deviation σ.</p>
+<p>Z-scores are a way to compare results from a test to a “normal” population. Results from tests or surveys have thousands of possible results and units. However, those results can often seem meaningless. For example, knowing that someone’s weight is 150 pounds might be good information, but if you want to compare it to the “average” person’s weight, looking at a vast table of data can be overwhelming (especially if some weights are recorded in kilograms). A z-score can tell you where that person’s weight is compared to the average population’s mean weight.</p>
+<p>Let’s have a go at calculating z-scores. The basic z score formula for a sample is:</p>
+<p><code>z = (x – μ) / σ</code></p>
+<p>For example, let’s say you are 180 cm tall. Given our mean (μ) of 172.1 and a calculating a standard deviation (σ, in the case of our heights data, it’s 5), we can calculate the z score.</p>
+<p>But first, to calculate the z-score, our data needs to meet some assumptions. First it needs to be a numeric variable. To be fair though, in order to calculate a mean and a standard deviation in the first place, we needed this variable to be numeric. But the other assumption it makes is that this numeric variable follows a <strong>normal distribution</strong>. You might remember this concept from the very first week, when you watched the <a href="http://www.gapminder.org/videos/the-joy-of-stats/">joy of stats</a> video by Hans Rosling. If you didn’t watch it, well you definitely should! But in any case, here’s a quick video to re-cap normal distribution to you, this time by Chris Wilde:</p>
+<p>You can identify a normal distribution, because it follows a normal distribution curve, also called a <em>bell curve</em>:</p>
+<p><img src="https://www.mathsisfun.com/data/images/normal-distribution-1.svg" /></p>
+<p>So how do you test if your numeric variable is normally distributed? Well, for now we can simply decide this by plotting it in a histogram, and see if it (roughly) looks like it follows a bell-curve shape or not. So let’s build a histogram of our height variable. Do you remember how to do this? If not, look back to our week of univariate analysis. You will need 3 things, your data, the data analysis toolpak, and a list of bins. You can choose whatever bins you like, I went for 5 cm intervals. My histogram looks like this:</p>
+<p><img src="imgs/histo.png" /></p>
+<p>Looks like to me this follows our normal distribution curve. There are also numeric ways that test whether our data follows a normal distribution or not, and also ways that you can manipulate the data to make it follow a normal distribution curve, but we don’t cover those just yet. For now we will rely on our eyeball measure - does this <em>look</em> like it follows a bell curve? I think it does. So now that we know that our numeric variable of height meets the assumptions that it’s numeric, and also it follows a normal distribution, we can calculate z-scores for each individual height.</p>
+<p>To calculate the z-score, we just need to subtract the mean from the score, and then divide the result by the standard deviation:</p>
+<p><code>z = (score - mean) / standard deviation</code></p>
+<p><code>z = (x – μ) / σ</code></p>
+<p><code>z = (180 – 172.1) / 5</code></p>
+<p><code>z = 1.58</code></p>
+<p>So the z-score for the individual data point (ie: person) who’s height is 180cm tall, is 1.58. That means that they are 1.58 standard deviations from the mean. If we think back to the bell curve, they sit somewhere here:</p>
+<p><img src="imgs/your_height_here.png" /></p>
+<p>To compute the z-score for each person in excel, you simply have to turn the formula above into excel formula language. We know that all our variables are in the “height” column, which is column “B”. So we need to get the values for each cell, then the (population) standard deviation for height, and the mean for height. So for example, for the first row (row 2, since row 1 contains our column headers, or variable names) your cell is B2. In this case you would translate the formula as follows:</p>
+<p><code>z = (score - mean) / standard deviation</code></p>
+<p><code>z = (x – μ) / σ</code></p>
+<p><code>=(B2-AVERAGE(B:B))/STDEVP(B:B)</code></p>
+<p>If any one of these steps doesn’t quite make sense, raise your hand now, and ask us to explain!</p>
+<p>Now create a column called “z-score”, and populate it with the z-scores of each individual’s height, using the formula above. You should end up with something like this:</p>
+<p><img src="imgs/z-score-col.png" /></p>
+<p>If you had multiple variables, for example we also had measurement for these people for the length of their arms and legs and so on, we could combine all the z-scores into a composite variable, that would be able to tell us about that person’s “tallness” is that was a variable we conceptualised as made up of these factors, and operationalised with this composite measure.</p>
+<p>Let’s demonstrate with some actual data, that is relevant to criminology. Let’s suppose that we are interested in the popularity of tweets sent out by greater manchester police, city centre division. How would we go about measuring popularity? Well it depends on how we conceptualise this. But let’s say that we conceptualise the popularity of a tweet, but considering the amount of responses it was getting from the public, both in favourites, in retweets, and in comments. Let’s grab a large-ish sample of GMP tweets. Don’t worry, I won’t make you manually input these again. Instead, you can just download some tweets that I’ve collected using the <a href="https://developer.twitter.com/en/docs">twitter API</a>. You can download this data from Blackboard.</p>
+<p>Now if you open it up in excel you will see a column for unique ID to identify each tweet, one for the date created which represents when the tweet was written, one for the text of the tweet, then 3 numeric columns, one for the number of favourites, one for the number of retweets, and one for the number of replies. Finally you have a column for the hashtags used by GMP in that tweet.</p>
+<p>So let’s say we want to be able to talk about the popularity of these tweets. As discussed, we conceptualise the popularity as having to do with favourites, retweets and responses. We believe that these three dimensions quantify the engagement that each individual tweet is getting. So then, what we can do is use these three <strong>indicators</strong> to create a <strong>composite variable</strong> that takes into account all three directly observable measures to produce an estimate for our construct of popularity of tweet.</p>
+<p>To do this, we have to first convert each column to a z-score, rather than just the count, and then we have to take the average of the z-scores.</p>
+<p>So let’s first create 3 columns, one for each z-score:</p>
+<p><img src="imgs/z-cols_created.png" /></p>
+<p>Now remember our equation. For each cell, we need to subtract the mean, and then from that divide by the standard deviation, for the appropriate column. So for us to make a z-score for favourites, we must for each number of favourites, subtract the mean number of favourites, and divide by the standard deviation number of favourites. Like so:</p>
+<p><img src="imgs/fave_z.png" /></p>
+<p>When you are done, you should have three columns for z-scores, one for favourites, one for retweets, and one for replies.</p>
+<p><img src="imgs/3_z_cols.png" /></p>
+<p>Now you can use these z-scores to calculate an average between them, which will give you your measure for your composite variable. To take the average of 3 values, you can just use the <code>=AVERAGE()</code> formula, and highlight the columns from which you want to use the values to calculate the average from, in this case the new z-score values you’ve just created:</p>
+<p><img src="imgs/calc_popul.png" /></p>
+<p>Now, finally, you have a popularity score, that tells you which tweets by GMP city centre were most popular, depending on the number of favourites, retweets, and replies, taking into account all these three dimensions that we decided are important indicators of our construct, popularity. Hint: sort your data using the sort option by the popularity variable, from largest to smallest (or in descending order).</p>
+<p>So, based on this measure, which tweet is the most popular?</p>
+<p>It appears that the most popular tweet GMP has made is a pun… :</p>
+<p><em>“Several shoplifters detained today, including woman who stole a vibrator - Why do they do it - is it just for the buzz…’”</em></p>
+<p>Very good GMP, very good. But something really interesting as well, if you look at a few of the tweets below, that show up as quite highly ranked based on our popularity score, it comes up as high on retweets, but earning 0 favourites! See:</p>
+<p><img src="imgs/low_fave_high_rt.png" /></p>
+<p>This should illustrate the importance of measuring something as a construct. We could have conceptualised popularity of GMP’s tweets as an indirectly observable concept, which we could then operationalise as “number of favourites per tweet”. However, this would be a one-dimensional measure of our concept. Instead, by choosing to conceptualise popularity as a construct, made up of favourites, retweets, and replies, we create a composite variable, that reflects more the nuances of our concept.</p>
+<p>In fact most of the things we study in the social sciences, and in criminology, are very complex social processes and often best represented by constructs, which can be measured this way through composite variables.</p>
+<p>Another thing to mention regarding measurement in social sciences, and criminology, is that often times our data come from surveys. And in surveys you don’t only deal with numeric variables, but indeed with categorical as well. And it is in these surveys that we can ask people some questions about the really nuanced and complex issues, such as trust in the police, or fear of crime. Of course the responses to such questions tend to be categorical, often ordinal, asking people to rank their agreement with various statements. So we should also take time to consider the other case, where your indicator variables that you wish to combine into a composite measure are <em>categorical</em>. These are most often made up of multi-item scales, which we’ll move on to in the next section.</p>
+<p>Meaningful grouping is the nonstatistical combination of selected original variables based on the interpretation of the variables’ values or scores, guided by the science of the field. Meaningful grouping can be used to create a composite outcome variable from multiple continuous or categorical variables or both. These original variables, when combined into a composite, can indicate an attribute (e.g., high risk for mortality) that is meaningful. A composite variable created by meaningful grouping is often categorical. For example, a composite variable may include categories improved, no change, and worse to indicate the direction of overall change from baseline, to determine whether or not an intervention was efficacious. The key point is that the composite should be meaningful with respect to the context and purpose of the study and should be determined based on the science of the field, with a predefined algorithm.</p>
+<p>Three common composite measures include:</p>
+<ul>
+<li><strong>indexes</strong> - measures that summarize and rank specific observations, usually on the ordinal scale</li>
+<li><strong>scales</strong> - advanced indexes whose observations are further transformed (scaled) due to their logical or empirical relationships</li>
+<li><strong>typologies</strong> - measures that classify observations in terms of their attributes on multiple variables, usually on a nominal scale</li>
+</ul>
+<p>Here we will consider scales for creating composite variables from numeric indicators, and indexes for creating composite variables from categorical indicators.</p>
+<!--
+Sometimes latent variables correspond to aspects of physical reality, which could in principle be measured, but may not be for practical reasons. In this situation, the term hidden variables is commonly used (reflecting the fact that the variables are "really there", but hidden). Other times, latent variables correspond to abstract concepts, like categories, behavioral or mental states, or data structures. The terms hypothetical variables or hypothetical constructs may be used in these situations.
+
+One advantage of using latent variables is that they can serve to reduce the dimensionality of data. A large number of observable variables can be aggregated in a model to represent an underlying concept, making it easier to understand the data. In this sense, they serve a function similar to that of scientific theories. At the same time, latent variables link observable ("sub-symbolic") data in the real world to symbolic data in the modeled world.
+
+
+
+Latent refers to the fact that even though these variables were not measured directly in the research design, finding out about them is the ultimate goal of the project.
+
+
+In statistics, **latent variables** (as opposed to observable variables), are variables that are not directly observed but are rather inferred from the measurement of other variables. Latent variables can correspond to constructs, like *confidence in the police*, or the *fear of crime*, or they can represent aspects of physical reality that potentially *could* be measures, but it may not be practical to do so. They are calculated from their indicators using a latent variable model, which is a statistical model that relates a set of variables (so-called manifest variables) to a set of latent variables.
+
+
+Characteristics of a latent variable: 
+
+- abstract concept
+- cannot be measured directly 
+- examples: attitudes, satisfaction
+
+
+So if we can't measure these concepts, how can we collect data about them? Well, it is possible to measure **indicators** of the **latent variable**. Indicators are use observed responses to questionnaire items, which can then be combined together to create a measure for our contrsuct - the latent variable. Constructs/ latent variables are normally measured using a multi-item scale. 
+-->
+</div>
+<div id="multi-item-scales-for-categorical-constructs" class="section level3">
+<h3><span class="header-section-number">4.4.2</span> Multi-item scales for categorical constructs</h3>
+<p>A lot of criminological research uses multi-item scales to measure constructs. For example we saw in the paper earlier how the constructs of <em>cooperation with the police</em> or <em>cooperation with the community</em> were measured through asking various questions which were compiled together into these variables.</p>
+<p>One primary technique for measuring concepts important for theory development is the use of multi-item scales. In many cases, single-item questions pertaining to a construct are not reliable and should not be used in drawing conclusions. There have been examination of the performance of single-item questions versus multi-item scaled in terms of reliability, and <a href="https://scholarworks.iupui.edu/handle/1805/344">By comparing the reliability of a summated, multi-item scale versus a single-item question, the authors show how unreliable a single item is; and therefore it is not appropriate to make inferences based upon the analysis of single-item questions which are used in measuring a construct</a>.</p>
+<p>Oftentimes information gathered in the social sciences, including criminology, will make use of Likert-type scales. Rensis Likert was one of the researchers who worked in a systematized way with this type of variable. The Likert methodology is one of most used in many fields of social sciences, and even health sciences and medicine. When responding to a Likert item, respondents specify their level of agreement or disagreement on a symmetric agree-disagree scale for a series of statements. Thus, the range captures the intensity of their feelings for a given item.</p>
+<p>You will have definitely seen Likert scales before, but you might have just not known they were called as such. Here is one example:</p>
+<p><img src="http://hosted.jalt.org/test/Graphics/bro34.gif" /></p>
+<p>So in sum a Likert scale must have:</p>
+<ul>
+<li>a set of items, composed of approximately an equal number of favorable and unfavorable
+statements concerning the attitude object</li>
+<li>for each item, respondents select one of five responses: strongly agree, agree,
+undecided, disagree, or strongly disagree.<br />
+</li>
+<li>the specific responses to the items combined so that individuals with the most favorable attitudes will have the highest scores while individuals with the least favorable (or unfavorable) attitudes will have the lowest scores</li>
+</ul>
+<p>After studies of reliability and analysis of different items, Rensis Likert suggested that attitude, behavior, or other variables measured could be a result of the sum of values of eligible items, which is something referred to as <strong>summated scales</strong>. While not all summated scales are created according to Likert’s specific procedures, all such scales share the basic logic associated with Likert scaling described in the steps above.</p>
+<!--(pp. 22-
+23)
+Spector (1992) identified four characteristics that make a scale a summated rating scale
+as follows:
+First, a scale must contain multiple items. The use of 
+summated 
+in the name implies that
+multiple items will be combined or summed.  Second, each individual item must measure
+something that has an underlying, quantitative measurement continuum.  In other words,
+it measures a property of something that can vary quantitatively rather than qualitatively
+
+An attitude, for example, can vary from being very favorable to being very unfavorable.
+Third, each item has no “right” answer, which makes the summated rating scale different
+from a multiple-choice test.  Thus summated rating scales cannot be used to test for
+knowledge or ability.  Finally, each item in a scale is a statement, and respondents are
+asked to give rating about each statement.  This involves asking subjects to indicate
+which of several response choices best reflects their response to the item.  (pp. 1-2)
+Nunnally and Bernstein (1994), McIver and Carmines (1981), and Spector (1992) discuss
+the reasons for using multi-item measures instead of a single item for measuring psychological
+attributes.  They identify the following: First, individual items have considerable random
+measurement error, i.e. are unreliable.  Nunnally and Bernstein (1994) state, “Measurement error
+averages out when individual scores are summed to obtain a total score” (p. 67).  Second, an
+individual item can only categorize people into a relatively small number of groups.  An
+individual item cannot discriminate among fine degrees of an attribute.  For example, with a
+dichotomously scored item one can only distinguish between two levels of the attribute, i.e. they
+lack precision.  Third, individual items lack scope.  McIver and Carmines (1981) say, “It is very
+unlikely that a single item can fully represent a complex theoretical concept or any specific
+attribute for that matter” (p. 15).  They go on to say,
+The most fundamental problem with single item measures is not merely that they tend to
+be less valid, less accurate, and less reliable than their multiitem equivalents.  It is rather,
+that the social scientist rarely has sufficient information to estimate their measurement
+properties.  Thus their degree of validity, accuracy, and reliability is often unknowable.
+(p. 15).
+Blalock (1970) has observed, “With a single measure of each variable, one can remain blissfully
+unaware of the possibility of measurement [error], but in no sense will this make his inferences
+more valid” (p. 111).
+Given this brief background on the benefits of Likert-type scales with their associated
+multi-item scales and summated rating scores, many individuals consistently invalidate research
+findings due to improper data analysis.  This paper will show how data analysis errors can
+adversely affect the inferences one wishes to make.
+
+
+-->
+<p>In general, constructs are best measured using multi-item scales. Since they are usually complex, they are not easily measured with a single item. Multi-item scales are usually more reliable and less prone to random measurement errors than single-item measures, as a single item often cannot discriminate between fine degrees of an attribute.</p>
+<p>Creating multi-item scales is associated with test results for validity and reliability with respect to each scale are disclosed.</p>
+<p>One important reason for constructing multi-item scales, as opposed to single-item measurements, is that the nature of the multiple items permits us to validate the consistency of the scales. For example, if all the items that belong to one multi-item scale are expected to be correlated and behave in a similar manner to each other, rogue items that do not reflect the investigator’s intended construct can be detected. With single items, validation possibilities are far more restricted.</p>
+<blockquote>
+<p>Under most conditions typically encountered in practical applications, multi-item scales clearly outperform single items in terms of predictive validity. Only under very specific conditions do single items perform equally well as multi-item scales. Therefore, the use of single-item measures in empirical research should be approached with caution, and the use of such measures should be limited to special circumstances.</p>
+</blockquote>
+<ul>
+<li><a href="https://link.springer.com/article/10.1007/s11747-011-0300-3">Guidelines for choosing between multi-item and single-item scales for construct measurement: a predictive validity perspective</a></li>
+</ul>
+<p>So how do you make one of these? Well you have to consider many factors, and consult both theory, and analysis in order to make sure that your measurement covers everything you need to be able to talk about the construct it is meant to represent. You need theory to identify the indicators of the construct, which you will need to include, as your items that make up the multi-item scale. So let us first consider the construct of feeling unsafe in one’s neighbourhood. We can conceptualise this as people feeling unsafe in their neighbourhoods in three separate settings. They can feel unsafe walking around in the daytime. They can feel unsafe walking around after dark. And they can also feel unsafe in their homes. We can consider a 3-item Likert scale, with responses that range from Very safe
+to Fairly safe
+to A bit unsafe
+to Very unsafe. This is the example we’ll use throughout this lab. So, download this data set from Blackboard (it’s under csew_small.xlsx). You can see that there are the three variables, of walking in day, walking after dark, and feeling safe in home alone. I have included responses from 10 people, so that we can use this to assess reliability and validity of the measures.</p>
+<p>Multi-item scales open up a whole range of techniques for construct validity. For multi-item scales comprised of itemswith discrete response choices, reliability is most commonly assessed using Cronbach’s coefficient alpha, but I’m jumping ahead, we will now explore further the validity and reliability of measures, and how you can test this in the next section.</p>
+</div>
+</div>
+<div id="a-note-on-validity-and-reliability" class="section level2">
+<h2><span class="header-section-number">4.5</span> A note on Validity and Reliability</h2>
+<p>All measurements should satisfy basic properties if they are to be useful in helping researchers draw meaningful conclusions about the world around us. These are primarily validity, reliability, repeatability, sensitivity and responsiveness. We have, briefly, touched on reliability in the first session, and these two are the main concepts which we will cover today as well. but I wanted to mention the others as well, so that you have a complete picture of the expectations your variables need to be able to meet in order to be robust and reliable when used to describe the world of criminology.</p>
+<p><strong>Validation</strong> is the process of determining whether there are grounds for believing that the instrument measures what it is intended to measure. For example, to what extent is it reasonable to claim that a ‘fear of crime questionnaire’ really is assessing someone’s fear of crime? Since we are attempting to measure an ill-defined and unobservable construct, we can only infer that the instrument is valid in so far as it correlates with other observable behaviour. Validity can be sub-divided into:</p>
+<ul>
+<li><strong>Content validity</strong>: is the measurement sensible? Do the indicators they reflect the intended construct?</li>
+<li><strong>Criterion validity</strong>: is the measurement associated with the external criteria, for example other measurements of the same construct?</li>
+<li><strong>Construct validity</strong>: what is the relationship of the indicators to one another? And to the construct it is intended to measure? Construct validity has two sub-types:
+<ul>
+<li><strong>convergent validity</strong>: extent to which indicators are associated with one-another (they measure the same thing)</li>
+<li><strong>divergent validity</strong>: extent to which indicators differ (they measure distinct things)</li>
+</ul></li>
+</ul>
+<p><strong>Reliability</strong> and <strong>repeatability</strong> attempt to address the variability associated with the measure. You want to have a measure that repeatedly produces the same results when administered in the same circumstances, and that any differences in answers between people is the result of their differing attitudes on the construct which you are measuring, rather than due to any variation introduced by the measurement itself.</p>
+<p>The below image might help you conceptualise reliability and validity. Reliability refers to getting consistent results each time you measure your concept. Validity refers to the extent to which your measurement of the concept actually reflects the concept itself.</p>
+<blockquote>
+<p>Validity answers the question, “Am I measuring what I think I am?” In shooting terms, this is “accuracy.” My shots may or may not be loosely clustered, but they’re all relatively close to the bull’s-eye. Reliability answer the question, “Am I consistent?” In shooting terms, this is “precision.” My shots may or may not be relatively close to the bull’s-eye, but they’re tightly clustered. This leads us to four possible outcomes as illustrated below.</p>
+</blockquote>
+<ul>
+<li><a href="http://www.socingoutloud.com/2012/10/teaching-validity-and-reliability-in.html">Bradley A. Koch</a></li>
+</ul>
+<p>So you can have a reliable but not valid measure, or a valid but not reliable measure. Imagine it like this:</p>
+<p><img src="http://4.bp.blogspot.com/-Px8qzh8Umy0/UHxrSqVczCI/AAAAAAAABLE/oRAbLSGTQUM/s1600/bullseye.jpg" /></p>
+<blockquote>
+<p>The worst-case scenario, when we have low validity and low reliability (lower left), looks like buckshot, scattered all over the target. We are neither accurate nor precise. We’re not measuring what we think we are, and at that even, we’re doing it inconsistently.
+When we have high validity but low reliability (upper left), our packing may be loose, but the shots are near the bull’s-eye. We are accurate but not precise. We’re likely measuring what we think we are, just not consistently.
+When we have high reliability but low validity (upper right), we may be off of the bull’s-eye, but our packing is tight. We are precise but not accurate. We’re not measuring what we think we are, but whatever we’re measuring, we’re doing so consistently.
+The best-case scenario, high validity and high reliability (lower right), is when the shots are clustered on the bull’s-eye. We are both accurate and precise. In other words, our question/variable consistently measures the intended concept.</p>
+</blockquote>
+<p>-<a href="http://www.socingoutloud.com/2012/10/teaching-validity-and-reliability-in.html">Bradley A. Koch</a></p>
+<p><strong>Sensitivity</strong> is the ability of measurements to detect differences between people or groups of people. Your measurement approach should be sensitive enough to detect differences between people for example those who have differing levels of worry about crime.</p>
+<p><strong>Responsiveness</strong> is similar to sensitivity, but relates to the ability to detect changes when a person fluctuates in the construct being measured. If your measure is meant to detect change over time, for example in fear of crime, it needs to be able to detect changes. A sensitive measurement is usually, but not necessarily, also responsive to changes.</p>
+<p>These are the main criteria that your measurements need to meet, in order to be considered robust. Pretty daunting, eh? No wonder secondary data analysis is so popular! (Is it though? Well it should be. It is amongst lazy people like myself, who would much rather acquire data and make pretty graphs, than design multi-scale items for measuring complex constructs in the first place….!) It is much nicer when someone has gone through the hard work of designing great measures for us, and we can use the excellent data provided. And also, we should appreciate the work that these people have put in. There are many initiatives to try to encourage the rest of us to use the data they’ve collected. Organisations such as the <a href="https://www.ukdataservice.ac.uk/">UK Data Service</a> (UKDS) collate all sorts of data, and make them easily available and ready for us to use, to make these data more enticing. They also like to reward analysis of their data. For example, next year you will have the option to take a <strong>secondary data analysis pathway</strong> for your dissertation. If you do this, and you make use of a data set from the UKDS, you can enter to win the <a href="https://www.ukdataservice.ac.uk/use-data/student-resources/dissertation-prize">dissertation prize</a>! It’s a pretty awesome thing to have on your CV, and it also comes with a cash prize of £500 for first place. Not bad…! And we have <a href="https://www.ukdataservice.ac.uk/news-and-events/newsitem/?id=4650">already had a BA Crim student win from Manchester before</a>, so it’s definitely an attainable goal with your training and skills!</p>
+<p>But as I was saying, building reliable and valid measurement is tough work. People at the Office of National Statistics work tirelessly to come up with multi-item scales to measure fear of crime, trust in the police, and similar constructs using the Crime Survey for England and Wales. For them to introduce a new construct, and some new questions takes, <em>literally</em> years of work. So it’s definitely a good approach to try to make use of the data which they collect. If you are interested, have a watch of <a href="https://www.youtube.com/watch?v=cCpHnqn0Q2c&amp;list=PLG87Imnep1SljSqc0yLIHYBP1w0saMJn-&amp;index=2">this video on what sorts of data they have</a>, and <a href="https://www.youtube.com/watch?list=PLG87Imnep1SljSqc0yLIHYBP1w0saMJn-&amp;v=TzRWJK1MtrU">this other video on how to acquire data</a>.</p>
+<p>But if I’ve still not convinced you, and you want to go out and collect your own data, by taking the topics that you are interested in and conceptualising and operationalising them your way, and you want to develop your own multi-item scales, and then test their validity and reliability, well then, I guess I should equip you with some basic abilities to know how. You might get asked to create a questionnaire in your next workplace. While creating questionnaires is very tough and nuanced job, and I could write a whole course on only that, replying this to your line manager, when they ask you to build a survey will not win you many brownie points. Instead it’s best that you make at least some sort of attempt to ensure that your constructs are being measured by the most valid and reliable measures possible, or at least you can have some indication as to the error produced by your measurement. Later in this lab we will address this through something called Cronbach’s alpha. But first, let’s calculate a summative score for “feelings of unsafety”.</p>
+<div id="activity-1-calculating-a-summative-score" class="section level3">
+<h3><span class="header-section-number">4.5.1</span> Activity 1: Calculating a summative score</h3>
+<p>So back to our data about collecting people’s feelings of unsafety, in their neighbourhoods. We have our three indicator questions:</p>
+<ul>
+<li>To what extent do you feel safe walking alone in the day?</li>
+<li>To what extent do you feel safe walking alone after dark?</li>
+<li>To what extent do you feel safe at home alone at night?</li>
+</ul>
+<p>Well how can we tell if these measures are any good? One approach is to calculate Cronbach’s alpha. There is some debate around what this approach can tell you about your questions, but Cronbach’s alpha is used frequently as a measure in constructing a summary scale for Likert type questions or opinions. The Cronbach’s alpha gives a measure of the internal consistency or reliability of such a multi-item scale. It essentially considers the variation in one person’s answers between the many indicators of the construct. If they are all supposed to measure the same thing, then you should have little variation, and therefore get a high Cronbach’s alpha. If on the other hand you have high variation, and get a low Cronbach’s alpha, that might mean that your indicators are not so inter-linked as you had imagined, and perhaps measure distinct things, rather than elements of the same construct.</p>
+<p><span style="color:#d95f02">
+So let’s give it a go. Open up your data (csew_small.xlsx) and have a look at the answers people provide. Does it look consistent, from question to question? What are your initial thoughts?</p>
+<p>Well now we can consider calculating the variation in answers, to be able to support (or challenge) your perceptions with data. But the first step to this is to <strong>re-code</strong> your variables from the text value (very worried, etc) to a number that indicates the <strong>rank</strong> of the ordinal response. How we do this is important. While the order of an ordinal variable is fixed, whether you go from high to low or low to high score is not. How do you determine what your score should be? Well on the first instance, I would suggest that you think about what your construct is. In this case, our construct is fear - or unsafety. In this case, it would make sense for a higher score to represent <em>more fear</em>. For the scores to reflect this, lower scores of worry should have lower numbers, and higher scores of worry should have higher numbers. So “very safe” should be equal to 1, and “very unsafe” should be equal to 4.</p>
+<p>Once we’ve decided on a scoring system like this, we can write it down in a little table. This is both for ourselves, so we know what the numbers mean later (and maybe also for anyone else using our data afterwards), but also so that we can use this as a lookup table for our re-coding.</p>
+<p>So create a mini table in your data, that has your codes and values. Something like this:</p>
+<p><img src="imgs/lookup_table.png" /></p>
+<p>Now also create headings for 3 new columns, one for each of our indicator variables:</p>
+<p><img src="imgs/num_cols_lookup.png" /></p>
+<p>So now we can recode these variables into these new columns, where we will see the numeric value for each text value. We could do this manually. But we don’t want to. Remember we are lazy. And also remember that this is a very small subset of the actual Crime Survey for England and Wales (CSEW) data. The actual data has thousands of rows. 46,031 in the 2011/12 sweep to be exact. So that is not something that you would want to do manually, right? No.</p>
+<p>Instead we will learn a new function in excel, one which you will often use, called <code>VLOOKUP()</code>. What this function does, is it uses a lookup table, in order to assign variables to a new column. In this case, our lookup table is the one on the bottom there, that we created, that tells excel that for us, Very safe is 1, and Fairly safe is 2, and A bit unsafe is 3, and Very unsafe is 4. We can use this, in order to create our new, re-coded variables.</p>
+<p>The <code>VLOOKUP()</code> function takes 4 parameters. You have to tell it the <strong>lookup_value</strong> - the value to search for. This can be either a value (number, date or text) or a cell reference (reference to a cell containing a lookup value), or the value returned by some other Excel function. For example:</p>
+<pre><code>Look up for number: =VLOOKUP(40, A2:B15, 2) - the formula will search for the number 40.</code></pre>
+<p>You then have to tell it the <strong>table_array</strong> - which is your lookup table, with two columns of data. The VLOOKUP function <em>always</em> searches for the lookup value in the first column of table_array. Your table_array may contain various values such as text, dates, numbers, or logical values. Values are case-insensitive, meaning that uppercase and lowercase text are treated as identical.</p>
+<pre><code>So, our formula =VLOOKUP(40, A2:B15,2) will search for &quot;40&quot; in cells A2 to A15 because A is the first column of the table_array A2:B15. </code></pre>
+<p>You then have to tell it the <strong>col_index_num</strong> - the column number in table_array from which the value in the corresponding row should be returned. The left-most column in the specified table_array is 1, the second column is 2, the third column is 3, and so on. Well, now you can read the entire formula =VLOOKUP(40, A2:B15,2). The formula searches for “40” in cells A2 through A15 and returns a matching value from column B (because B is the 2nd column in the specified table_array A2:B15).</p>
+<p>But finally, you still have to specify the <strong>range_lookup</strong>. This determines whether you are looking for an exact match (when you set to FALSE) or approximate match (when you set to TRUE or you omit it). This final parameter is optional but very important. In this case, we want an exact match, so we will set this parameter to “FALSE”.</p>
+<p>So, to look up the value for the cell B2, in the lookup table that ranges from $E<span class="math inline">\(20:\)</span>F$23 (remember to include dollar signs to make sure nothing changes when you copy an paste), find the values in the 2nd column of our lookup table, and return only exact matches, we can put the below formula into the first cell for our Walkdark_num variable:</p>
+<p><code>=VLOOKUP(B2,$E$20:$F$23,2, FALSE)</code></p>
+<p>To return this:</p>
+<p><img src="imgs/first_lookup.png" /></p>
+<p>We can quickly verify that this looks right, since the value there in the ‘Walkdark’ column is “very safe”, we know that this should numerically return “1”. And it does, so we are happy. Now copy the formula down the column, and also repeat for the other two variables as well. You should finally end up with a table like this:</p>
+<p><img src="imgs/final_lookup.png" /></p>
+<p>Now you have your numeric values for the indicators of the constrcut. As this is a summative score, it just means that the score is the result of the <strong>sum</strong> of the indicators. So to calculate the value for our composite variable, we need to calculate the total score people achieved, by summing their answers to all three questions. I can do this by creating a new “total” column, and populating it with the sums using the <code>SUM()</code> function:</p>
+<p><img src="imgs/tot_sum_alpha.png" /></p>
+<p>And the values in this column represent the score that these people have on the composite variable “feelings of unsafety”. That’s it, now you’ve created this summative score. Woohoo! You can see that the person with the highest score has achieved a score of 10 - this is the hightest score on feeling unsafe in this mini sample. On the other hand, the person with the lowest score are actually two people who achieved a score of 3. They score low on feeling unsafe.
+</span></p>
+<p>But to what extent do these measures all indicate the same concept? Is someone who feels the same towards their safety going to answer similarly on all onf these questions? We want to try to find this out, in order to be able to speak about the our measure confidently. And as mentioned earlier, you can put a number to the extent to which you can rely on your measures, using Cronbach alpha.</p>
+</div>
+<div id="activity-2-testing-your-questions-cronbachs-alpha" class="section level3">
+<h3><span class="header-section-number">4.5.2</span> Activity 2: Testing your questions: Cronbach’s alpha</h3>
+<p>Cronbach’s alpha is a measure of internal consistency, that is, how closely related a set of items are as a group. It is considered to be a measure of scale reliability. Cronbach’s alpha is a measure used to assess the reliability, or internal consistency, of a set of scale or test items. In other words, the reliability of any given measurement refers to the extent to which it is a consistent measure of a concept, and Cronbach’s alpha is one way of measuring the strength of that consistency.</p>
+<p>Cronbach’s alpha can be written as a function of the number of test items and the average inter-correlation among the items.</p>
+<p><code>(number of items/(number of items-1))*(1 - the variance associated with each item/ the variance associated with the observed total scores)</code></p>
+<p><span style="color:#d95f02">
+With this in mind, we can apply this formula to excel, and use excel to calculate our Cronbach alpha. As I mentioned, Cronbach alpha has to do with variance across the different indicators for the same construct, in this case the three questions about feeling unsafe, within each individual person’s answers. Remember that each row is one person, so in each row you have the answers to the questions from the same individual.</p>
+<p>So to do this, you first need some values:</p>
+<p><img src="https://i0.wp.com/www.real-statistics.com/wp-content/uploads/2013/02/Picture11.png" /></p>
+<p>I’ll go through each of these but, k is the number of indicators, sigma (sum of) theta^2 is the sum of the variance between people’s answers, and theta^2 is the population variance. Alpha is the end result, that you’re calculating.</p>
+<p>So you need:</p>
+<ul>
+<li>the number of indicators,</li>
+<li>the sum of variance, and</li>
+<li>the population variance.</li>
+</ul>
+<p>The last value in there is the alpha, which we obtain at the end.</p>
+<p>So, in cell B19, I put the count of the number of indicators for this construct. As I know there are three, I could simply write in “3”. If you want, you can use the <code>COUNTA()</code> function as above. It just counts the number of cells with text in them. But since you’re highlighting them anyway, it’s not much of a time saver. Unless you had a construct with many many many indicators. I guess then it would save some time. But honestly, you should always know how many indicators your construct has, as it should be based in theory and your expert domain knowledge…!</p>
+<p>Now the next one is a bit more complex. In order to get the sum of the variance for each question, I will need first to calculate the variance for each question. Let’s use the <code>VARP()</code> function to do this. I can place these values as the bottom row to my data. Like so:</p>
+<p><img src="imgs/varp_alpha.png" /></p>
+<p>Repeat these for the other two columns as well. Now I have my variance for each indicator question, and I can add them up using the <code>SUM()</code> function, in the cell B20:</p>
+<p><img src="imgs/sum_var_alpha.png" /></p>
+<p>Now finally I need the variance between the total scores, between the people. For this, in cell B21 you just have to calculate the variance of these values, again using the <code>VARP()</code> function:</p>
+<p><img src="imgs/pop_var_alpha.png" /></p>
+<p>So now you have absolutely everything to calculate your Cronbach alpha. All you have to do, is calculate it using the values for number of indicators, variation within people in their answers to the indicators, and variation between people to their answers to the indicators. And you do this with the following formula:</p>
+<p><code>=B19/(B19-1)*(1-B20/B21)</code></p>
+<p>Like so:</p>
+<p><img src="imgs/final_calc_alpha.png" /></p>
+<p>So that leaves us a value of 0.79. So what does this mean? Well it’s a value between 0 and 1, so obviously 0 is the absolute words, and 1 is the perfect score. But what sorts of scores are realistic? Well it depends on the concept you’re measuring most likely. But in terms of acceptable thresholds, here is some guidance:</p>
+<p><img src="http://www.statisticshowto.com/wp-content/uploads/2014/12/CA2.png" /></p>
+<p>Our value is acceptable, and so we can rest assured, that these three indicators all tap in to a relatively similar thing, and we can use this result as our justification for bringing them together as multi-item indicators for feeling unsafe in one’s neighbourhood.
+</span></p>
+<p>Yay!</p>
+<p>A note of caution though. There are some issues with Cronbach alphas. For example, you might see quite high scored for scales with lots and lots of question items. As one increases the numbers of items in a scale, it is more likely that the alpha will be high, but score may be meaningless because it does not represent an underlying construct or worse - it represents multiple underlying constructs. Cronbach’s Alpha measures only the reliability of scale of measurement of responses of the cases, in a Likert Scale. But it does not measure the reliability of the respondents’ opinion leading to the latent construct. In that case, useful measurements are those of validity. Usually, for the sake of the integrity of the research, it is recommended that the researcher run a series of tests to test reliability and validity of questionnaires. While the Cronbach’s alpha is one of these tests, further tests include principle components analysis, factor analysis, and other indicators. Having an integrated set of tests adds more to the value of the research in question. If you are interested, you can read up a bit more <a href="http://onlinelibrary.wiley.com.manchester.idm.oclc.org/doi/10.1002/9780470024522.ch5/pdf">detail on validation here</a>. But that is not something that we will worry about now, instead we can move on to the final part of the day, recoding.</p>
+</div>
+</div>
+<div id="recoding-some-more-transforming-your-variables-to-fit-with-your-concepts" class="section level2">
+<h2><span class="header-section-number">4.6</span> Recoding some more: Transforming your variables to fit with your concepts</h2>
+<blockquote>
+<p>Transforms are transformations on variables. One purpose of transforms is to make statistical operations on variables appropriate and meaningful. Another is to create new variables, aggregates, or other types of summaries.</p>
+</blockquote>
+<ul>
+<li>Leland Wilkinson (2005) <em>The Grammar of Graphics</em></li>
+</ul>
+<p>So we’ve already covered some re-coding of our variables, transforming them from text values into their rank orders, as they sit in the ordinal variable above, using the <code>VLOOKUP()</code> function. The last thing we’ll cover today is addressing re-coding of the second variety mentioned above by Leland Wilkindon, when you want to create aggregate summaries of a variable. You might want to do this if you want to turn a numeric variable into a categorical variable for example, or when you want to turn a categorical variable with many possible values into a <strong>binary</strong> variable, a variable with only two possible values.</p>
+<p>Let’s start with the second option, because I can demonstrate this on our fear of crime table, that you should still have open, after having just finished calculating your Cronbach’s alpha. Let’s say that we no longer care about the distinction between all 4 types of worry, and instead wanted to only distinguish between those who are worried or not worried. We only want 2 possible categories. How can we achieve this?</p>
+<p>Well one option is to use the <code>VLOOKUP()</code> function again. Create another lookup table, but this time, change the column that contains the items to change the values into from numbers, to the corresponding text values. Like so:</p>
+<p><img src="imgs/new_lookup_tab.png" /></p>
+<p>And then create a column for your new variable, for <strong>Walkdark_binary</strong>. Now in this new column, use the <code>VLOOKUP()</code> function to change the values to the corresponding binary options. Can you guess what the function will look like, based on what the function looked like above, when translating to the numbers?</p>
+<p>Remember you have to specify:
+- what you want to reference
+- your lookup table
+- the number for the column where your new values are
+- that you want <em>exact</em> matches</p>
+<p>So, got your formula yet? Well if not, I’ll help you. It’s this:</p>
+<p><code>=VLOOKUP(B2,H20:I23,2,FALSE)</code></p>
+<p>Like so:</p>
+<p><img src="imgs/binary_vlookup.png" /></p>
+<p>Of course, remember to add your dollar signs if you want to copy and paste that formula:</p>
+<p><img src="imgs/add_dolla_lookup.png" /></p>
+<p>The result should be a new, binary variable, that re-coded your 4 possible values for the walkdark variable into 2: safe/ unsafe. Like so:</p>
+<p><img src="imgs/final_binary_recode.png" /></p>
+<p>Now the last task is to re-code your numeric variables, into categorical. You may remember from the first week’s reading that you can always go up the resolution, but not down, for levels of measurement for variables. This means that you can change a numeric variable into categorical, but you can’t change categorical into numeric. Just remember this!</p>
+<div id="activity-3-recoding-variables" class="section level3">
+<h3><span class="header-section-number">4.6.1</span> Activity 3: Recoding Variables</h3>
+<p><span style="color:#d95f02">
+OK so final thing, to turn a numeric variable into a categorical, go back to your data of people’s heights. Let’s say we don’t want any sophisticated analysis with numbers, we just want to know whether people are short or they are tall. We will decide this, by checking whether they are taller than the group average, or shorter than the group average.</p>
+<p>To achieve this, we will return to our trusty <code>IF()</code> function. So open up the data set with the heights again, and create a new column, for a new variable called <strong>tall_or_short</strong>:</p>
+<p><img src="imgs/tall_or_not_col.png" /></p>
+<p>Great, now this column, we want to populate with the word “Tall” if the person is taller than average and “Short” if they are not. So what are the elements of our statement? We need to check <em>if</em> the person height is <em>greater than</em> the <em>average height</em> and if it is, type “Tall”, else type “Short”.</p>
+<p>So we know that the <code>IF()</code> function takes 3 arguments. 1st the logical statement, that has to be either true or false. In this case, that statement will test whether person height is greater than the average height. This would look something like this: <code>cell value &gt; average(column)</code>.</p>
+<p>In the example of our first person, Samuel Carmona, that would be the value of the cell <code>B2</code>, being checked against the average for the whole column (<code>B:B</code>). So this part of the statement would look like:</p>
+<p><code>B2 &gt; AVERAGE(B:B)</code></p>
+<p>Then the other 2 values that the <code>IF()</code> function needs is what to do if the statement is true, and what to do if the statement is false. These are simple. If true, write “Tall”, and if false then write “Short”.</p>
+<p>So altogether, your function will look like this:</p>
+<p><code>=IF(B2&gt;AVERAGE(B:B),&quot;Tall&quot;,&quot;Short&quot;)</code></p>
+<p>Like so:</p>
+<p><img src="imgs/ifelse_tallshort.png" /></p>
+<p>And finally, copy and paste for your whole column, and you will have a range of values of tall and short. Since we used the average as our divider, there should be about as many tall people as short people. You can quickly make a pivot table to see if this is the case:</p>
+<p>You can see that we are close enough:</p>
+<p><img src="imgs/tallshort_pivot.png" /></p>
+<p>What could we do to split our data exactly in half? Well I’ll leave this question as extra credit. Raise your hand and tell one of us what the solution is, and we’ll come up with some reward.
+</span></p>
+</div>
+</div>
+<div id="summary-3" class="section level2">
+<h2><span class="header-section-number">4.7</span> Summary</h2>
+<p>In sum, you should now be able to begin to think about the concepts you wish to study, and the way in which you can turn them into data to be collected, to allow you to talk about htese concepts. You should be able to discuss composite variables, and talk about validity and reliability of measures and research. You should be comfortable with the following terms:</p>
+<ul>
+<li>conceptualisation</li>
+<li>measurement</li>
+<li>empirical data</li>
+<li>directly measurable concept</li>
+<li>indirectly measurable concept</li>
+<li>construct</li>
+<li>composite variables</li>
+<li>multi-item scale</li>
+<li>single-item scale</li>
+<li>summated scale</li>
+<li>Likert scale</li>
+<li>population</li>
+<li>sample</li>
+<li>sample statistics</li>
+<li>population parameters</li>
+<li>z-score</li>
+<li>degrees of freedom</li>
+<li>law of large numbers</li>
+<li>central limit theorem</li>
+<li>VLOOKUP()</li>
+<li>reliability</li>
+<li>validity</li>
+<li>Cronbach’s alpha</li>
+<li>re-coding variables</li>
+<li>binary variable</li>
+</ul>
+<p>#Sources
+- <a href="http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S0080-62342014000100146">Analysis of variables that are not directly observable: influence on decision-making during the research process</a>
+- <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5459482/">Composite Variables: When and How</a>
+- <a href="http://onlinelibrary.wiley.com.manchester.idm.oclc.org/doi/10.1002/9780470024522.ch4/pdf">Scores and measurements: validity, reliability, sensitivity</a></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="week3.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="week5.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/005-week4.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
