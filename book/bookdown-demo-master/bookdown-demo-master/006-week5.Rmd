@@ -843,12 +843,11 @@ If you were assigned to the control group, you can instead [watch this Saturday 
 Now you've been exposed to either the treatment or the control condition. I'll be in touch in 12 months time to follow up, and find out about your offending behaviour. I'll report the results back in a paper. Science...!
 
 
-![](https://media.giphy.com/media/l41lI4bYmcsPJX9Go/giphy.gif)
 
 
 
 
-## Activity 3: Stratified randomisation
+### Activity 3: Stratified randomisation
 
 
 Randomization is important because it is almost the only way to assign all the other variables equally except for the factor (A and B) in which we are interested. However, some very important confounding variables can often be assigned unequally to the two groups. This possibility increases when the number of samples is smaller, and we can stratify the variables and assign the two groups equally in this case.
@@ -957,7 +956,9 @@ You will all have different results here, since it's randomly assigned, but it's
 Now before you're done here there is one last thing to note. Remember when describing the `=RAND()` formula, I mentioned that RAND recalculates when a worksheet is opened or changed? Now let's say we've assigned everyone to treatment or control conditions, we make you all watch your appropriate videos, and then, we save our worksheet, to return to it 12 months later. In 12 months, we may not wholly remember who was assigned to which group. You yourself might not remember either. But if upon reopening, the random numbers are changed, then the assigned groups will also change! So since we don't want this, we want to somehow "freeze the values". 
 
 
-You can do this by highlighting the column and going to Formulas > Settings > and selecting "Calculate Manually". 
+You can do this by highlighting the column and going to Formulas > Settings > and selecting "Calculate Manually":
+
+![](imgs/calc_man_pc.png)
 
 
 On mac: 
@@ -1381,42 +1382,6 @@ And you can even get fancy and plot this change over time, to emphasise that ind
 But we'll do more plotting and visualisation after reading week, when we have our data viz session. 
 
 
-
-
-<!--
-
-##Drawing causal inference
-
-Note about time etc
-
-
-#Cross sectional data
-
-Surveys etc
-
-
-##Secondary Data Analysis
-
-What is
-
-Why 
-
-How
-
-##A brief notes on survey weights
-
-
-#New forms of data
-
-##Social media data
-
-##Webscraping
-
-
-
-##Bias in 
-
--->
 
 ## Ethics
 
