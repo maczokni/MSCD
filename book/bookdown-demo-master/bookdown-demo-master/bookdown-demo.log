@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.14)  23 SEP 2018 12:27
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.14)  8 OCT 2018 10:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -907,12 +907,18 @@ LaTeX Info: Redefining \nameref on input line 112.
 \@outlinefile=\write3
 \openout3 = `bookdown-demo.out'.
 
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 [1
 
 
 ] [2
 
-] (./bookdown-demo.toc)
+]
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
 \tf@toc=\write4
 \openout4 = `bookdown-demo.toc'.
 
@@ -64893,6 +64899,4 @@ Invalid UTF-8 byte or sequence at line 1602 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 1602 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 1602 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 1602 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1602 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1602 replaced by U+FFFD.
-Invalid UTF-8 by
+Invalid UTF-8 byte or sequenc

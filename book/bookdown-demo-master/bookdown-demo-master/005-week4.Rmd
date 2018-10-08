@@ -35,7 +35,7 @@ This distinction might seem intuitive, but whether we're talking about our popul
 ## Population parameters versus sample statistics
 
 
-*Hold on a second!* Population standard deviation? But so far we have only been talking about samples? Well, this week we also discuss sampling, right? And the differences between sample statistics and population parameters.  A statistic and a parameter are very similar. They are both descriptions of groups, like “50% of dog owners prefer X Brand dog food.” The difference between a statistic and a parameter is that statistics describe a sample. A parameter describes an entire population.
+*Hold on a second!* Population standard deviation? But so far we have only been talking about samples? Well, this week we also discuss sampling, right? And the differences between sample statistics and population parameters.  A statistic and a parameter are very similar. They are both descriptions of groups, like “50% of dog owners prefer X Brand dog food.” The difference between a statistic and a parameter is that statistics describe a sample. A parameter describes an entire population. (You might recall this from week 1 readings.)
 
 
 For example, say you want to know the mean income of the subscribers to a particular magazine—a parameter of a population. You draw a random sample of 100 subscribers and determine that their mean income is \$27,500 (a statistic). You conclude that the population mean income μ is likely to be close to $27,500 as well. This example is one of **statistical inference**.
@@ -62,7 +62,7 @@ They even have different notation. For example, you would use x-bar (x̄) to tal
 The mean of the sampling distribution of the mean is the mean of the population from which the scores were sampled. Therefore, if a population has a mean μ, then the mean of the sampling distribution of the mean is also μ. The symbol μM is used to refer to the mean of the sampling distribution of the mean.
 
 
-
+### Activity 1: Sample statistisc vs population parameters
 
 Let's explore this with some data. Download the heightsAndNames.xlsx file from Blackboard. 
 
@@ -155,6 +155,8 @@ Take the average of the averages. That's right. What is the average of all 6 sam
 This is something called the **sampling distribution of the mean**.  
 
 
+## Central Limit Theorem
+
 
 We will never have many many many samples of the same thing, right? Surveys are costly, and we are happy if we can run it once. So instead of running the same survey many many times on different samples of the population, we can rely on another mathematical rule, called the **central limit theorem**. The Central Limit Theorem states that the sampling distribution of the sampling means approaches a normal distribution as the sample size gets larger. The Central Limit Theorem tell us that as the sample size tends to infinity, the of the distribution of sample means approaches the normal distribution. This is a statement about the SHAPE of the distribution. A normal distribution is bell shaped so the shape of the distribution of sample means begins to look bell shaped as the sample size increases. 
 
@@ -241,8 +243,12 @@ Let's take another example, let's consider that we want to study "social status�
 To really demonstrate this, it's a good idea for you to have a go at conceptualising something yourself. Let's assume that you are interested in studying hate crime. In particular you are interested in hate speech over social media. Let's say you pick twitter as your case study. Now you have to **conceptualise** what it is that you mean by hate speech. This is important so that both you, and anyone reading your study later is clear about what should be included in your study, and what should be excluded. You can imagine that this is a very important step, since what is included/ excluded. 
 
 
+### Activity 2: Conceptualise 'hate speech'. 
 
-So imagine you are about to embark on a study of *hate speech*. You have some twitter data, which includes 100,000 tweets, and you want to be able to select which one of these tweets includes hate speech, and which one does not. For you to be able to carry out this research, and be transparent about it as well, ensuring reproducibility of your work, you need to conceptualise hate speech in a clear, detailed, and specific way. So take a moment now, and working with someone near you, conceptualise hate speech. Write down your conceptualisation of hate speech - how you define hate speech for the purposes of your study. When you have your concept ready, talk it over, and make sure that this is a comprehensive definition that you are all happy with. 
+
+So imagine you are about to embark on a study of *hate speech*. Remember in the first session we spoke about some examples of research,[ and one was looking at radicalisation towards the alt right using twitter data](https://www.washingtonpost.com/news/the-intersect/wp/2016/09/26/these-charts-show-exactly-how-racist-and-radical-the-alt-right-has-gotten-this-year/?noredirect=on&utm_term=.aeb311ab060c). Let's say we want to carry out a similar study. 
+
+You have some twitter data, which includes 100,000 tweets, and you want to be able to select which one of these tweets includes hate speech, and which one does not. For you to be able to carry out this research, and be transparent about it as well, ensuring reproducibility of your work, you need to conceptualise hate speech in a clear, detailed, and specific way. So take a moment now, and working with someone near you, conceptualise hate speech. Write down your conceptualisation of hate speech - how you define hate speech for the purposes of your study. When you have your concept ready, talk it over, and make sure that this is a comprehensive definition that you are all happy with. 
 
 
 
@@ -272,13 +278,30 @@ And finally this third one?
 ![](http://www.pressgazette.co.uk/wp-content/uploads/2017/05/hoops.jpg)
 
 
-All three tweets were considered hateful and as exhibiting hate speech by many people (see [here for the first and last one](http://www.pressgazette.co.uk/katie-hopkins-leaving-lbc-radio-effective-immediately-station-announces/), and [here about the second one](http://www.bbc.co.uk/news/uk-scotland-glasgow-west-30641705)). By reading them, with our human sentiment, we can appreciate that all three tweets are hateful. But how did they do against the way that you conceptualised hate speech? Would they all be included in your study?  Did you include everything according to your criteria that you would have liked to include, based on your human understanding of what hate speech means? 
+
+So would you categorise these tweets as hate speech according to your criteria that you wrote out above? Why or why not? In fact, the included tweets have all been considered hateful by various people (see [here for the first and last one](http://www.pressgazette.co.uk/katie-hopkins-leaving-lbc-radio-effective-immediately-station-announces/), and [here about the second one](http://www.bbc.co.uk/news/uk-scotland-glasgow-west-30641705)). But when you are studying a concept as comlex as hate speech, it's important that you can justify why or why not you include something as hate speech. 
+
+Reading these tweets, using our human sentiment, we can appreciate that the tweets are hateful. But how did they do against the way that you conceptualised hate speech? Would they all be included in your study?  Did you include everything according to your criteria that you would have liked to include, based on your human understanding of what hate speech means? 
 
 
-If you did, that is very impressive. If you did not, don't despair,  I started you off with a tough one. Hate crime in general is very complex, and therefore tough to conceptualise and define. There is no criminological consensus on the definition or even the validity of the concept of hate crime. There is legislation in this country to account for hate crime, and generally they reflect the core belief that hate crime policy should support a basic human right to be free from crime fuelled by hostility because of an individual’s personal characteristics, but even in legislation this is quite hard to pin down.
+If you did, that is very impressive. If you did not, don't despair, hate speach is a very complex concept, and therefore tough to conceptualise and define. There is no criminological consensus on the definition or even the validity of the concept of hate crime. There is legislation in this country to account for hate crime, and generally they reflect the core belief that hate crime policy should support a basic human right to be free from crime fuelled by hostility because of an individual’s personal characteristics, but even in legislation this is quite hard to pin down.
 
 
-But conceptualising what you mean (and therefore also what you don't mean) by hate crime a is very important step in your research, as it can influence what data you collect, and therefore the outcomes of your study, and the findings you'll be able to report. For the purposes of a research study, it can influence who your results are relevant for. Remember when we spoke about generalisability and validity in the first week's feedback session? I'll return to these later, but it's important to consider that the way that you conceptualise your concepts will determine how much you can generalise from your results, or how valid your measurements are. For example, did you include hate against all the protected characteristics? Did you consider hate as only threats of violence, or also general antagony as well? Conceptualisation is a very important step, that affects the measurement we will discuss in the next section, but that affects all the next steps in your study. How you decide what to measure has implications for what sorts of conclusions you can draw from your data after analysis. 
+One study looking at hate speech is [Burnap, P., & Williams, M. L. (2016). Us and them: identifying cyber hate on Twitter across multiple protected characteristics. EPJ Data Science, 5(1), 1. Chicago](https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-016-0072-6). They defined hate speech to include as the following: 
+
+> "Text that is offensive or antagonistic in terms of race ethnicity/sexual orientation/disability"
+
+So by these definitions they may include the above tweets. However, in their conceptualisation of hate crime, they are explicit about not only what is included, but what may be excluded from their concept: 
+They specifically not: 
+
+> “Transgender cyber hate was not considered as part of the study. “
+
+
+
+As you can see, conceptualising what you mean (and therefore also what you don't mean) by hate crime a is very important step in your research, as it can influence what data you collect, and therefore the outcomes of your study, and the findings you'll be able to report. For the purposes of a research study, it can influence who your results are relevant for. Remember when we spoke about generalisability and validity in the first week's feedback session? I'll return to these later, but it's important to consider that the way that you conceptualise your concepts will determine how much you can generalise from your results, or how valid your measurements are. For example, did you include hate against all the protected characteristics? Did you consider hate as only threats of violence, or also general antagony as well? Conceptualisation is a very important step, that affects the measurement we will discuss in the next section, but that affects all the next steps in your study. How you decide what to measure has implications for what sorts of conclusions you can draw from your data after analysis. 
+
+
+## The importance of conceptualisation
 
 
 You will have seen this in your preparatory reading, in Chapter 5 ("Research Design") of the book 'The Practice of Social Research' by Earl Babbie, but I will quickly re-iterate here: based on your conceptualisation of your variable, it will fall into one of three categories: 
@@ -473,6 +496,8 @@ So the z-score for the individual data point (ie: person) who's height is 180cm 
 ![](imgs/your_height_here.png)
 
 
+### Activity 3: Computing a z-score in Excel
+
 
 To compute the z-score for each person in excel, you simply have to turn the formula above into excel formula language. We know that all our variables are in the "height" column, which is column "B". So we need to get the values for each cell, then the (population) standard deviation for height, and the mean for height. So for example, for the first row (row 2, since row 1 contains our column headers, or variable names) your cell is B2. In this case you would translate the formula as follows: 
 
@@ -498,6 +523,10 @@ Now create a column called "z-score", and populate it with the z-scores of each 
 
 
 If you had multiple variables, for example we also had measurement for these people for the length of their arms and legs and so on, we could combine all the z-scores into a composite variable, that would be able to tell us about that person's "tallness" is that was a variable we conceptualised as made up of these factors, and operationalised with this composite measure. 
+
+
+
+### Activity 4: Twitter data revisited
 
 
 
@@ -565,6 +594,7 @@ This should illustrate the importance of measuring something as a construct. We 
 
 In fact most of the things we study in the social sciences, and in criminology, are very complex social processes and often best represented by constructs, which can be measured this way through composite variables. 
 
+## Composite variables created from categorical variables
 
 Another thing to mention regarding measurement in social sciences, and criminology, is that often times our data come from surveys. And in surveys you don't only deal with numeric variables, but indeed with categorical as well. And it is in these surveys that we can ask people some questions about the really nuanced and complex issues, such as trust in the police, or fear of crime. Of course the responses to such questions tend to be categorical, often ordinal, asking people to rank their agreement with various statements. So we should also take time to consider the other case, where your indicator variables that you wish to combine into a composite measure are *categorical*. These are most often made up of multi-item scales, which we'll move on to in the next section. 
 
@@ -584,29 +614,6 @@ Three common composite measures include:
 Here we will consider scales for creating composite variables from numeric indicators, and indexes for creating composite variables from categorical indicators.
 
 
-
-<!--
-Sometimes latent variables correspond to aspects of physical reality, which could in principle be measured, but may not be for practical reasons. In this situation, the term hidden variables is commonly used (reflecting the fact that the variables are "really there", but hidden). Other times, latent variables correspond to abstract concepts, like categories, behavioral or mental states, or data structures. The terms hypothetical variables or hypothetical constructs may be used in these situations.
-
-One advantage of using latent variables is that they can serve to reduce the dimensionality of data. A large number of observable variables can be aggregated in a model to represent an underlying concept, making it easier to understand the data. In this sense, they serve a function similar to that of scientific theories. At the same time, latent variables link observable ("sub-symbolic") data in the real world to symbolic data in the modeled world.
-
-
-
-Latent refers to the fact that even though these variables were not measured directly in the research design, finding out about them is the ultimate goal of the project.
-
-
-In statistics, **latent variables** (as opposed to observable variables), are variables that are not directly observed but are rather inferred from the measurement of other variables. Latent variables can correspond to constructs, like *confidence in the police*, or the *fear of crime*, or they can represent aspects of physical reality that potentially *could* be measures, but it may not be practical to do so. They are calculated from their indicators using a latent variable model, which is a statistical model that relates a set of variables (so-called manifest variables) to a set of latent variables.
-
-
-Characteristics of a latent variable: 
-
-- abstract concept
-- cannot be measured directly 
-- examples: attitudes, satisfaction
-
-
-So if we can't measure these concepts, how can we collect data about them? Well, it is possible to measure **indicators** of the **latent variable**. Indicators are use observed responses to questionnaire items, which can then be combined together to create a measure for our contrsuct - the latent variable. Constructs/ latent variables are normally measured using a multi-item scale. 
--->
 
 ### Multi-item scales for categorical constructs
 
@@ -642,51 +649,6 @@ After studies of reliability and analysis of different items, Rensis Likert sugg
 
 
 
-
-
-<!--(pp. 22-
-23)
-Spector (1992) identified four characteristics that make a scale a summated rating scale
-as follows:
-First, a scale must contain multiple items. The use of 
-summated 
-in the name implies that
-multiple items will be combined or summed.  Second, each individual item must measure
-something that has an underlying, quantitative measurement continuum.  In other words,
-it measures a property of something that can vary quantitatively rather than qualitatively
-
-An attitude, for example, can vary from being very favorable to being very unfavorable.
-Third, each item has no “right” answer, which makes the summated rating scale different
-from a multiple-choice test.  Thus summated rating scales cannot be used to test for
-knowledge or ability.  Finally, each item in a scale is a statement, and respondents are
-asked to give rating about each statement.  This involves asking subjects to indicate
-which of several response choices best reflects their response to the item.  (pp. 1-2)
-Nunnally and Bernstein (1994), McIver and Carmines (1981), and Spector (1992) discuss
-the reasons for using multi-item measures instead of a single item for measuring psychological
-attributes.  They identify the following: First, individual items have considerable random
-measurement error, i.e. are unreliable.  Nunnally and Bernstein (1994) state, “Measurement error
-averages out when individual scores are summed to obtain a total score” (p. 67).  Second, an
-individual item can only categorize people into a relatively small number of groups.  An
-individual item cannot discriminate among fine degrees of an attribute.  For example, with a
-dichotomously scored item one can only distinguish between two levels of the attribute, i.e. they
-lack precision.  Third, individual items lack scope.  McIver and Carmines (1981) say, “It is very
-unlikely that a single item can fully represent a complex theoretical concept or any specific
-attribute for that matter” (p. 15).  They go on to say,
-The most fundamental problem with single item measures is not merely that they tend to
-be less valid, less accurate, and less reliable than their multiitem equivalents.  It is rather,
-that the social scientist rarely has sufficient information to estimate their measurement
-properties.  Thus their degree of validity, accuracy, and reliability is often unknowable.
-(p. 15).
-Blalock (1970) has observed, “With a single measure of each variable, one can remain blissfully
-unaware of the possibility of measurement [error], but in no sense will this make his inferences
-more valid” (p. 111).
-Given this brief background on the benefits of Likert-type scales with their associated
-multi-item scales and summated rating scores, many individuals consistently invalidate research
-findings due to improper data analysis.  This paper will show how data analysis errors can
-adversely affect the inferences one wishes to make.
-
-
--->
 
 In general, constructs are best measured using multi-item scales. Since they are usually complex, they are not easily measured with a single item. Multi-item scales are usually more reliable and less prone to random measurement errors than single-item measures, as a single item often cannot discriminate between fine degrees of an attribute. 
 
@@ -782,7 +744,7 @@ But if I've still not convinced you, and you want to go out and collect your own
 
 
 
-### Activity 1: Calculating a summative score
+### Activity 5: Calculating a summative score
 
 
 
@@ -884,7 +846,7 @@ But to what extent do these measures all indicate the same concept? Is someone w
 
 
 
-### Activity 2: Testing your questions: Cronbach’s alpha
+### Activity 6: Testing your questions: Cronbach’s alpha
 
 
 Cronbach's alpha is a measure of internal consistency, that is, how closely related a set of items are as a group. It is considered to be a measure of scale reliability. Cronbach’s alpha is a measure used to assess the reliability, or internal consistency, of a set of scale or test items. In other words, the reliability of any given measurement refers to the extent to which it is a consistent measure of a concept, and Cronbach’s alpha is one way of measuring the strength of that consistency.
@@ -1037,7 +999,7 @@ The result should be a new, binary variable, that re-coded your 4 possible value
 
 Now the last task is to re-code your numeric variables, into categorical. You may remember from the first week's reading that you can always go up the resolution, but not down, for levels of measurement for variables. This means that you can change a numeric variable into categorical, but you can't change categorical into numeric. Just remember this!
 
-### Activity 3: Recoding Variables
+### Activity 7: Recoding Variables
 
 <span style="color:#d95f02">
 OK so final thing, to turn a numeric variable into a categorical, go back to your data of people's heights. Let's say we don't want any sophisticated analysis with numbers, we just want to know whether people are short or they are tall. We will decide this, by checking whether they are taller than the group average, or shorter than the group average.
