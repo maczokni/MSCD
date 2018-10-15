@@ -18,48 +18,70 @@ If you want to read something cover to cover, I would recommend [Tiger That Isn`
 
 ## Week 1. Data sets & variables
 	
-- Watch: [Hans Rosling The Joy of Stats](http://www.gapminder.org/videos/the-joy-of-stats/)
-- Chapter 1 (p.1-5): [The Tiger that Isn't](https://www.dawsonera.com/readonline/9781847650795)
-- Chapter 1 (p.1-7): [Statistical Methods for the Social Sciences: Pearson New International Edition](https://www.dawsonera.com/readonline/9781292034898)
-- Chapter 2 (p.13-27): [Statistics in Criminal Justice](https://link.springer.com/chapter/10.1007/978-1-4614-9170-5_2) (not the exercises)
+- Watch this video: [Hans Rosling The Joy of Stats](http://www.gapminder.org/videos/the-joy-of-stats/)
+- [Blastland, M., & Dilnot, A. W. (2008). The tiger that isn't: seeing through a world of numbers. Profile books](https://www.librarysearch.manchester.ac.uk/discovery/fulldisplay?docid=proquest1536009109&context=PC&vid=44MAN_INST:MU_NUI&search_scope=MyInst_and_CI&tab=Everything&lang=en)
+  + Introduction
+- [Weisburd D., Britt C. (2014)  Statistics in Criminal Justice. Springer, Boston, MA](https://link.springer.com/chapter/10.1007/978-1-4614-9170-5_2) 
+  + Chapter 2: Measurement: The Basic Building Block of Research (not the exercises)
+- [Agresti, A., & Finlay, B. (2013). Statistical Methods for the Social Sciences: Pearson New International Edition. Place of publication not identified: Pearson Education Limited.](https://www.librarysearch.manchester.ac.uk/discovery/fulldisplay?docid=alma992975763714001631&context=L&vid=44MAN_INST:MU_NUI&search_scope=MyInst_and_CI&tab=Everything&lang=en)
+  + Chapter 1: Introduction
+
 
 
 ## Week 2. Describing and visualising single variables
 
-- Chapter 5, (p.68-87): [The tiger that isn't](https://www.dawsonera.com/readonline/9781847650795)
-- Chapter 5: (p.61-78): [Just plain data analysis](https://www.dawsonera.com/readonline/9781442215092)
-- Chapter 3 (p.31-61): [Statistical Methods for the Social Sciences: Pearson New International Edition](https://www.dawsonera.com/readonline/9781292034898).
+- [Blastland, M., & Dilnot, A. W. (2008). The tiger that isn't: seeing through a world of numbers. Profile books](https://www.librarysearch.manchester.ac.uk/discovery/fulldisplay?docid=proquest1536009109&context=PC&vid=44MAN_INST:MU_NUI&search_scope=MyInst_and_CI&tab=Everything&lang=en)
+  + Chapter 5: Averages: The White Rainbow
+- [Gary M. Klass (2012) Just Plain Data Analysis. Rowman & Littlefield Publishers](https://www.librarysearch.manchester.ac.uk/discovery/fulldisplay?docid=alma9959928450001631&context=L&vid=44MAN_INST:MU_NUI&search_scope=MyInst_and_CI&tab=Everything&lang=en)
+  + Chapter 5: Tabulating the Data and Writing about the Numbers
+- [Agresti, A., & Finlay, B. (2013). Statistical Methods for the Social Sciences: Pearson New International Edition. Place of publication not identified: Pearson Education Limited.](https://www.librarysearch.manchester.ac.uk/discovery/fulldisplay?docid=alma992975763714001631&context=L&vid=44MAN_INST:MU_NUI&search_scope=MyInst_and_CI&tab=Everything&lang=en)
+  + Chapter 3: Descriptive Statistics
 
 ## Week 3. Making comparisons I: the basics
 
-- Chapters 2 and 3 (p.6-36): [The Tiger that Isn't](https://www.dawsonera.com/readonline/9781847650795) 
-- Chapter 3 (p.36-64): [Statistics in Criminal Justice](https://link.springer.com/chapter/10.1007/978-1-4614-9170-5_3)
+- [Blastland, M., & Dilnot, A. W. (2008). The tiger that isn't: seeing through a world of numbers. Profile books](https://www.librarysearch.manchester.ac.uk/discovery/fulldisplay?docid=proquest1536009109&context=PC&vid=44MAN_INST:MU_NUI&search_scope=MyInst_and_CI&tab=Everything&lang=en): 
+  + Chapter 1: Counting: Use Mushy Peas and Chapter 
+  + Chapter 2: Size: It's Personal
+- [Gary M. Klass (2012) Just Plain Data Analysis. Rowman & Littlefield Publishers](https://www.librarysearch.manchester.ac.uk/discovery/fulldisplay?docid=alma9959928450001631&context=L&vid=44MAN_INST:MU_NUI&search_scope=MyInst_and_CI&tab=Everything&lang=en)
+  + Chapter 4: Examining a relationship: New York City Crime Rates
+- [Weisburd D., Britt C. (2014)  Statistics in Criminal Justice. Springer, Boston, MA](https://link.springer.com/chapter/10.1007/978-1-4614-9170-5_2) 
+  + Chapter 3: Representing and Displaying Data
+
 
 ## Week 4. Concepts, operationalisation, measurement, and Sampling
 
-- Chapters 6 and 8 (p.88-106 and 124-146): [The Tiger tht Isn't](https://www.dawsonera.com/readonline/9781847650795)
-- Chapters 5 and 6 (p.123-196): [The Practice of Social Research, International Edition](https://www.dawsonera.com/abstract/9781408093153)
-- Chapters 4 and 5 (p.65-124) in [Statistics in Criminal Justice](https://link.springer.com/book/10.1007%2F978-1-4614-9170-5)
-- Chapter 2 (p.11-25): [Statistical Methods for the Social Sciences: Pearson New International Edition](https://www.dawsonera.com/readonline/9781292034898).
+- [Blastland, M., & Dilnot, A. W. (2008). The tiger that isn't: seeing through a world of numbers. Profile books](https://www.librarysearch.manchester.ac.uk/discovery/fulldisplay?docid=proquest1536009109&context=PC&vid=44MAN_INST:MU_NUI&search_scope=MyInst_and_CI&tab=Everything&lang=en)
+ + Chapter 6: Targets: The Whole Elephant
+ + Chapter 8: Sampling: Drinking from the Firehose
+- [Babbie, E. (2016). The practice of social research (Fourteenth edition.). Australia: Cengage Learning.](https://www.librarysearch.manchester.ac.uk/discovery/fulldisplay?docid=alma992975996319901631&context=L&vid=44MAN_INST:MU_NUI&search_scope=MyInst_and_CI&isFrbr=true&tab=Everything&lang=en)
+  + Chapter 5: Conceptualization, Operationalization, and Measurement
+  + Chapter 6: Indexes, Scales, and Typologies
 
 ## Week 5. Making comparisons II: the relevance of research design
 
-- Chapter 4 (p.88-122): [The Practice of Social Research, International Edition](https://www.dawsonera.com/abstract/9781408093153).
-- Chapter 1 (p.1-22): [Just Plain Data Analysis](https://www.dawsonera.com/readonline/9781442215092) 
-- Chapter 1 and half of 2 (p.1-21): [Principles of Applied Statistics](https://www.cambridge.org/core/books/principles-of-applied-statistics/E7225E64F86B2C8193CA3C57621B6338) (stop after section 2.3)
+- [Babbie, E. (2016). The practice of social research (Fourteenth edition.). Australia: Cengage Learning.](https://www.librarysearch.manchester.ac.uk/discovery/fulldisplay?docid=alma992975996319901631&context=L&vid=44MAN_INST:MU_NUI&search_scope=MyInst_and_CI&isFrbr=true&tab=Everything&lang=en)
+  + Chapter 4: Research Design
+- [Gary M. Klass (2012) Just Plain Data Analysis. Rowman & Littlefield Publishers](https://www.librarysearch.manchester.ac.uk/discovery/fulldisplay?docid=alma9959928450001631&context=L&vid=44MAN_INST:MU_NUI&search_scope=MyInst_and_CI&tab=Everything&lang=en)
+  + Chapter 1: Measuring Political, Social, and Economic Conditions
+- [Cox, D., & Donnelly, C. (n.d.). Principles of applied statistics. Cambridge ;: Cambridge University Press.](https://www.librarysearch.manchester.ac.uk/discovery/fulldisplay?docid=alma9957439210001631&context=L&vid=44MAN_INST:MU_NUI&search_scope=MyInst_and_CI&tab=Everything&lang=en)
+  + Chapter 1: Some General Concepts
+  + half of Chaptaer 2: Design of Studies. Note: STOP AFTER SECTION 2.3: Types of Study 
+  
 
 ## Week 6. Data visualisation
 - Watch: [David Mccandless on the beauty of data visualisation](https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization) 
-- Chapters 1 and 2 (p.27-65) [The Truthful Art by Alerto Cairo](https://www.vlebooks.com/vleweb/Product/Index/819451?page=0)
+- [Cairo, A. (n.d.). The truthful art data, charts, and maps for communication . Berkeley: New Riders.](https://www.librarysearch.manchester.ac.uk/discovery/fulldisplay?docid=alma992975992516101631&context=L&vid=44MAN_INST:MU_NUI&search_scope=MyInst_and_CI&tab=Everything&lang=en)
+  + Chapter 1: What We Talk About When We Talk About Visualisation
+  + Chapter 2: The FIve QUalitites of Great Visualisations
 
 ## Week 7. Looking at trends
 
-
-- Chapter 13 (p.95-102)['Models Are Stories Are Not Real Life' in Statistics in Society]()
-
+- [Dorling, D., & Simpson, S. (n.d.). Statistics in society : the arithmetic of politics . London: Arnold.](https://www.librarysearch.manchester.ac.uk/discovery/fulldisplay?docid=alma9913496214401631&context=L&vid=44MAN_INST:MU_NUI&search_scope=MyInst_and_CI&tab=Everything&lang=en)
+  + Chapter 13: 'Models Are Stories Are Not Real Life' NOTE: THIS IS NOT AVAILABLE ONLINE YOU HAVE TO GO TO LIBRARY TO FIND HARD COPY
 - [Read this ONS report on the seasonality of crime](www.ons.gov.uk/ons/guide-method/method-quality/specific/crime-statistics-methodology/methodological-note--seasonality-of-property-crime.pdf) - download link
-- Chapter 14: Time (p.407-449) [Grammar of Graphics](https://link-springer-com.manchester.idm.oclc.org/chapter/10.1007/0-387-28695-0_14)
-- This paper on [Crime seasonality and its variations across space](http://www.sciencedirect.com/science/article/pii/S0143622813001410)
+- [Wilkinson, L. (2005). The Grammar of Graphics (Second Edition.). New York, NY: Springer New York. https://doi.org/10.1007/0-387-28695-0](https://link-springer-com.manchester.idm.oclc.org/chapter/10.1007/0-387-28695-0_14)
+  + Chapter 14: Time 
+- This paper on crime seasonality and its variations across space: [Andresen, M. A., & Malleson, N. (2013). Crime seasonality and its variations across space. Applied Geography, 43, 25-35.](http://www.sciencedirect.com/science/article/pii/S0143622813001410)
 
 ## Week 8. Qualitative data
 
