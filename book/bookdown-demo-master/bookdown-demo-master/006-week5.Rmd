@@ -43,88 +43,6 @@ Those interested in the study of criminology and criminal justice have at their 
 
 Your readings will have gone through a lot of examples and details about each one of these approaches, and what research design you can use to answer which sort of categories of research questions. These books give you a fantastic theoretical overview of the methods, and so I will not reiterate those here. Instead I will try to focus on the practicalities associated with some research designs. While I will use the example of evaluative research here, you can use similar methods when appropriate for all sorts of research design. 
 
-<!--
-
-With this background, the purpose of this entry will be to introduce the reader to the two major research paradigms and issues that organize the field of criminology and criminal justice: quantitative and qualitative research strategies. After describing the different research methodologies several issues related to internal and external validity are identified that are important to bear in mind when assessing the adequacies of distinct research methodologies. The entry closes by highlighting what appears to be the most promising research strategy for criminology and criminal justice.
-
-Criminal justice Jobs - Search For Criminal justice Jobs.
-Search For Criminal justice Jobs. Find Your New Job Today!
-indeed.co.uk/Criminal+justice | Sponsored▼
-Quantitative research methods
-Quantitative research methods are typically concerned with measuring criminological or criminal justice reality. To understand this process several terms must first be identified. Concepts are abstract tags placed on reality that are assigned numerical values, thus making them variables. Variables are then studied to examine patterns of relation, covariation, and cause and effect. At the most basic level, there exists at least one dependent variable and one independent variable. The dependent variable is commonly referred to as the outcome variable. This is what the researcher is attempting to predict. The independent variable is commonly referred to as the predictor variable, and it is the variable that causes, determines, or precedes in time the dependent variable (Hagan). Consider the following examples.
-
-Criminological theorists may be interested in studying the relationship between impulsivity (independent variable) and criminal behavior (dependent variable). In studying such a relationship, scholars create a summated scale of items that is designed to indirectly measure the concept of impulsivity. Then, this impulsivity scale is used to predict involvement in criminal behavior. Criminal justice scholars may be interested in studying the effects of a mandatory arrest policy (independent variable) on future patterns of domestic violence (dependent variable). In studying such a question, scholars typically evaluate the effect of an arrest, compared to some other sanction, on the future criminal behavior of the arrestee. Thus, quantitative research methods involve a pattern of studying the relationship(s) between sets of variables to determine cause and effect.
-
-
-
-Three criteria are needed to establish causality. The first is association. That is, the independent and dependent variables must be related to one another. The second is time order; the independent variable must precede the dependent variable in time. Finally, there is the issue of nonspuriousness. This occurs if the relationship between the independent and dependent variables is not due to variation in some unobserved third variable.
-
-There are a number of different quantitative research methods available to researchers, most of which fall under the rubric of a research design, which loosely can be defined as the plan or blueprint for a study that includes the who, what, where, when, why and how of an investigation (Hagan). These research methods include: survey research, experimental and quasi-experimental research, cross-sectional research, longitudinal research, time series research, and meta-analysis.
-
-Survey research. Serving as the most frequently used mode of observation within the social sciences, including criminology (Maxfield and Babbie), survey research involves the collection of information from a sample of individuals through their responses to questions (Schutt). Survey research is generally carried out via mail, telephone, computer, or in person.
-
-Typically, surveys contain a combination of open- and closed-ended questions. Open-ended questions ask the respondent to provide an answer to a particular question. For example, the respondent may be asked: "What do you think is the most important problem facing residents in your neighborhood today?" Then in their own words, the respondent would provide his or her answer. On the other hand, closed-ended questions ask the respondents to select an answer from a list of choices provided. For example, the question asked above would read exactly the same only now respondents are provided with a list of options to choose from: "What do you think is the most important problem facing residents in your neighborhood today? (a) crime, (b) drugs, (c) education, (d) employment, (e) family structure, (f ) poverty, (g) health care, (h) child care, (i) extracurricular activities, ( j) other."
-
-Surveys offer a number of attractive features that make them a popular method of doing research. They are versatile, efficient, inexpensive, and generalizable. At the same time, survey methods may be limited due to problems in sampling, measurement, and overall survey design. When creating a survey, researchers should take care in making sure that the items in the survey are clear and to the point.
-
-
-Cross-sectional research. Cross-sectional designs involve studies of one group at one point in time. Therefore, they offer a quick glimpse or snapshot of the phenomena being studied. Typically, they refer to a representative sample of the group and thus allow researchers to generalize their findings (Hagan). Cross-sectional research designs permeate criminology and criminal justice research. Hirschi's famous study of causes of delinquency utilized a cross-sectional design in which he asked male respondents a series of questions related to involvement in delinquent activities and emotional ties to social bonds.
-
-Longitudinal research. There are two commonly used longitudinal research designs, panel and cohort studies. Both study the same group over a period of time and are generally concerned with assessing within- and between-group change. Panel studies follow the same group or sample over time, while cohort studies examine more specific populations (i.e., cohorts) as they change over time. Panel studies typically interview the same set of people at two or more periods of time. For example, the National Crime Victimization Survey (NCVS) randomly selects a certain number of households from across the United States and interviews a member from each a series of seven times at six-month intervals. Cohort studies follow individuals or specific cohorts as they change over time. One classic example of a cohort study was conducted by Marvin Wolfgang and his colleagues in Philadelphia. The authors traced the criminal records of all boys born in Philadelphia in 1945 through the age of eighteen. Similarly, Tracy, Wolfgang and Figlio tracked the criminal history of males and females born in Philadelphia in 1958.
-
-Time-series designs. Time-series designs typically involve variations of multiple observations of the same group (i.e., person, city, area, etc.) over time or at successive points in time. Typically, they analyze a single variable (such as the crime rate) at successive time periods, and are especially useful for studies of the impact of new laws or social programs (Schutt). An example of a time-series design would be to examine the murder rate in the United States over the last twenty years or to compare the murder rate of the United States and Canada over the same period of time.
-
-An interrupted time-series design analyzes a single variable at successive time periods with measures taken prior to some form of interruption (i.e., intervention) and other observations taken after the intervention. An example of an interrupted time-series design may be found in Spelman and Eck (1987). These authors studied the number of larcenies from automobiles in Newport News, Virginia. The intervention in this study was a problem-oriented policing program that consisted of special tracking and investigation of crime incidents. The results showed that the number of larcenies dropped significantly immediately after the intervention took place and remained significantly small for over one year after the intervention. In another interrupted time series study, D'Alessio and Stolzenberg investigated the impact of Minnesota sentencing guidelines on jail incarceration. They found that the onset of the sentencing guidelines increased judicial use of the jail sanction beyond the effect of preexisting trends.
-
-Although time-series designs are especially useful in studying trends over time and how such trends are influenced by some sort of intervention, researchers should be aware of one key feature of time-series designs: the inability to control for all potential spurious effects. Consider the following example. Suppose that a researcher is studying the effect on robberies of a mandatory convenience store law that requires stores to have at least two clerks working during hours of operation. After examining the number of robberies before and after the law took effect, the researcher observed that the number of robberies significantly decreased after the law was instituted. Therefore, the researcher claimed that the law led to the decrease in the number of robberies committed and concluded that the law should be generalized to other locales. However, what the researcher may have failed to consider was the recent capture of two offenders who were committing 75 percent of all convenience store robberies, and who just happened to be captured about the time the law took effect. In sum, researchers need to be careful in making sure that their interpretations of interrupted time-series analyses take into consideration as much information, both empirical and nonempirical, as possible.
-
-Meta-analysis. A recent advent in research methodology is the use of meta-analysis. This research approach is the quantitative analysis of findings from multiple studies. At its core, meta-analysis involves researchers pulling together the results of several studies and making summary, empirical statements about some cause and effect relationship. A classic example of meta-analysis in criminology was performed by Wells and Rankin and concerned the relationship between broken homes and delinquency.
-
-After observing a series of findings showing that the broken-homes-causes-delinquency hypothesis was inconclusive, Wells and Rankin identified fifty studies that tested this hypothesis. After coding the key characteristics of the studies, such as the population sampled, age range, measures (both independent and dependent) used, the authors found that the average effect of broken homes across the studies was to increase the probability of delinquency by about 10 to 15 percent. Perhaps more importantly, they found that the different methods used across the studies accounted for much of the variation in estimating the effect of broken homes. For example, the effect of broken homes on delinquency tended to be greater in studies using official records rather than self-report surveys.
-
-Although the research community has not spoken with one voice regarding the usefulness of meta-analysis, one thing is clear: meta-analysis makes the research community aware that it is inappropriate to base conclusions on the findings of one study. It is because of this important lesson that meta-analysis has become a popular technique in criminological and criminal justice research (Lipsey and Wilson).
-
-Threats to validity
-Validity refers to the accuracy of measurement or whether the instrument is in fact measuring what it is suppose to measure (Hagan). While quantitative research methods have permeated criminological and criminal justice research, they are not without problems. Threats to validity are perhaps the most profound and should be acknowledged. Some of these threats are internal and are concerned with whether the observational process itself produced the findings, while external threats are concerned with whether the results were unique and applicable only to the group or target studied (Hagan).
-
-Internal threats. According to Campbell and Stanley, a number of internal threats need to be considered, including: (1) history, (2) maturation, (3) testing, (4) instrumentation, (5) statistical regression, (6) selection bias, (7) experimental mortality, and (8) selectionmaturation interaction. In determining whether a particular design rules out threats to internal validity, Cook and Campbell suggest that "estimating the internal validity of a relationship is a deductive process in which the investigator has to systematically think through how each of the internal validity threats can be ruled out" (p. 55).
-
-External threats. Campbell and Stanley also identify several threats to external validity, including: (1) testing effects, (2) selection bias, (3) reactivity or awareness of being studied, and (4) multiple-treatment interference. These threats are greater for experiments conducted under more carefully controlled conditions (Maxfield and Babbie). Perhaps one of the best methods for assessing threats to external validity is replication, or the repetition of experiments or studies utilizing the same methodology. By replication of key findings, researchers can gain confidence that the results observed in one study may not be due to external validity threats. One of the key examples of replication occurred in the late 1980s when the Minneapolis Domestic Violence Experiment was replicated in six cities throughout the United States (Sherman). Importantly, these replications yielded both similar and contradictory conclusions to those observed in the initial experiment.
--->
-<!--
-##Qual
-
-Unlike quantitative research methods, qualitative approaches are designed to capture life as participants experience it, rather than in categories predetermined by the researcher. These methods typically involve exploratory research questions, inductive reasoning, an orientation to social context and human subjectivity, and the meanings attached by participants to events and to their lives (Schutt). There are a number of distinctive research designs under this paradigm: (1) participant observation, (2) intensive interviewing, (3) focus groups, and (4) case studies and life histories. Each of these will be discussed in turn.
-
-Participant observation. At its most basic level, participant observation involves a variety of strategies in data gathering in which the researcher observes a group by participating, to varying degrees, in the activities of the group (Hagan). Gold discusses four different positions on a continuum of roles that field researchers may play in this regard: (1) complete participant, (2) participant-as-observer, (3) observer-as-participant, and (4) complete observer. Complete participation takes place when the researcher joins in and actually begins to manipulate the direction of group activity. In the participant-as-observer strategy, the researcher usually makes himself known and tries to objectively observe the activities of the group. The observer-as-participant strategy is very much like a one-visit interview, where the interviewees are also short-term participant observers. Typically, these interviews are conducted with individuals who are known to participate in a designated activity. For example, Jacobs interviewed known active drug dealers in order to gain a better understanding of how the crack business actually operates on the streets. Finally, the complete observer strategy relies on sole observation absent participation from the researcher.
-
-Although several issues must be confronted when engaging in this sort of research, two are of vital importance: (1) objectivity, and (2) "going native." The former deals with the researcher's ability to avoid not only overidentification with the study group, but also aversion to it (Hagan). The latter deals with a situation in which the researcher identifies with and becomes a member of the study group, and in the process abandons his or her role as an objective researcher (Hagan). Even with these cautions, a number of important participant observation studies have been undertaken in criminology and criminal justice including Polsky's study of pool hustlers and con artists, as well as Marquart's study of prison life.
-
-Intensive interviewing. Intensive interviewing consists of open-ended, relatively unstructured questioning in which the interviewer seeks in-depth information on the interviewee's feelings, experiences, or perceptions (Schutt, 1999). Unlike the participant observation strategy, intensive interviewing does not require systematic observation of respondents in their natural setting. Typically, interviewing sample members, and identification and interviewing of more sample members, continues until the saturation point is reached, the point when new interviews seems to yield little additional information (Schutt).
-
-A prominent example of the intensive interviewing technique can be found in a series of studies with active residential burglars (Wright and Decker, 1994) and robbers (Wright and Decker, 1997) in St. Louis. These authors have conducted in-depth interviews with active criminals in their natural environment. Some of these interviews have yielded important theoretical insights that perhaps may not have been garnered via traditional survey methods. Other prominent examples may be found in Fagan and Wilkinson's study of gun-related violence in New York and Jacobs's study of crack addicts in St. Louis.
-
-Focus groups. Focus groups are groups of unrelated individuals that are formed by a researcher and then led in group discussions of a topic (Schutt). Typically, the researcher asks specific questions and guides the discussion to ensure that group members address these questions, but the resulting information is qualitative and relatively unstructured (Schutt).
-
-Although generalizations from focus groups to target populations cannot be precise (Maxfield and Babbie), research suggests that focus group information, combined with survey information, can be quite consistent under certain conditions (Ward et al.). One such criminal justice example is provided by Schneider and her colleagues. These authors examined the implementation process and the role of risk/need assessment instruments for decisions about the proper level of supervision among parolees and probationers. Their use of focus group was able to provide a context for a more complete understanding of the survey results from the probation officers interviewed.
-
-Case studies and life histories. In general, case studies and life histories are in-depth, qualitative studies of one or a few illustrative cases (Hagan). Several criminological examples using this approach exist, and a few in particular have produced some of the most important, baseline information in the discipline today. The classic example is Sutherland's The Professional Thief (1937). In this case study, Sutherland's informant, Chic Conwell, described the world of the professional thief. Other examples include Shaw's The Jack-Roller (1930), which tells the autobiographical story of a delinquent's own experiences, influences, attitudes, and values. Finally, Horatio Alger's tale of street life in New York tells the story of Young Dick, a street boy who is involved in a delinquent life but who is also honest and hardworking. Life-history methods generally involve the analysis of diaries, letters, biographies, and autobiographies to obtain a detailed view of either a unique or representative individual (Hagan). A classic example of the life-history method is Teresa and Renner's My Life in the Mafia (1973).
-
-Future of research methods in criminology and criminal justice
-Although the preceding discussion has portrayed the two main research paradigms, quantitative and qualitative research methods, as two ends of the research continuum, it was not meant to imply that the two are mutually exclusive. On the contrary, the future of research methods in criminology and criminal justice lies in the combination of quantitative and qualitative research approaches. Illustrated below are two successful integrations.
-
-The first, by Eric Hirsch, used a combination of methods, including participant observation, intensive interviewing, and a standardized survey, to study the 1985 student movement that attempted to make Columbia University divest its stock in companies dealing with South Africa. Hirsch believed that the combination of research methodologies provided a more comprehensive picture of student's motivations.
-
-The second example is from John Laub and Robert Sampson. For quite some time, these two scholars have been working on the reanalysis of one of the classic data sets in criminology, the Unraveling Juvenile Delinquency (UJD) study that was initiated by Sheldon and Eleanor Glueck in 1940. The data contain the original case records of all one thousand sample members as well as detailed archival life records that included information from the "home investigation," which consisted of an interview with family members and offered an opportunity for the investigators to observe the home and family life of sample members. Furthermore, the UJD study included interviews with key informants such as social workers, settlement house workers, clergymen, schoolteachers, neighbors, employers, and criminal justice and social welfare officials. When this detailed information is combined with the statistical information on criminal behavior and other life events, one can begin to appreciate the richness with which Laub and Sampson have been able to document these one thousand lives and contribute much needed information regarding crime over the life course.
-
-The future of criminological and criminal justice research will likely come full circle. Early studies of crime and criminality began with qualitative observations almost to the exclusion of quantitative research. New research topics were observed and highlighted by scholars who wished to forge ahead in the understanding of crime and criminality. Once these topics were brough to the forefront of the field, quantitative research became the choice method of analysis. The future of criminological research must focus on the blending of the two. As John Clausen notes, both case history and statistical data are required "if we are to understand the influences on the lives of persons who have lived through a particular slice of American history" (p. 43).
-
-
-What is
-
-How to
-
--->
 
 ## Experiments and evaluation
 
@@ -144,7 +62,7 @@ These and other urgent questions can be answered most clearly by the use of a re
 
 
 
-Watch this [6 minute video from Cambridge University to learn a bit more about experimental crim](https://www.youtube.com/watch?v=IGDF1-B1Yjs&feature=player_embedded) 
+Watch this [6 minute video from Cambridge University to learn a bit more about experimental crim](https://www.youtube.com/watch?v=IGDF1-B1Yjs&feature=player_embedded) If you are on the BA Crim programme, you may have seen this video in your lecture for Criminal Justice in Action, when learning about how criminology has an impact. 
 
 
 
@@ -152,7 +70,7 @@ And then [this video that describes the Philadelphia foot patrol experiment](htt
 
 
 
-Do take the time to watch the videos above, they will help you understand how and why we can use experiments in criminological research! Take time to get through these, it will help, but also I hope that they are interesting examples of criminological research in action! Quantitative criminology isn't all about sitting around playing with spreadsheets and reading equations - we do get out sometimes, and get to have an impact on things like policing :)  So watch the above two films, I'll wait here. 
+**Do take the time to watch the videos above**, they will help you understand how and why we can use experiments in criminological research! Take time to get through these, it will help, but also I hope that they are interesting examples of criminological research in action! Quantitative criminology isn't all about sitting around playing with spreadsheets and reading equations - we do get out sometimes, and get to have an impact on things like policing :)  So watch the above two films, I'll wait here. 
 
 
 ![](https://media.giphy.com/media/pUeXcg80cO8I8/giphy.gif)
@@ -216,7 +134,7 @@ So take a moment to think through, and decide which variable is dependent or ind
 
 
 
-Right so now you're hopefully read after your own consideration, and you may have found that your **dependent variable** is the one that depends on the intervention, which is - whether the young person exposed to the scared straight programme offends or not. So your *dependent* variable is *future offending*. This would have to be conceptualised (how far in the future, what counts as offending, etc) and then in turn operationalised, to be measured somehow. 
+Right so now you're hopefully reading on after your own consideration, and you may have found that your **dependent variable** is the one that depends on the intervention, which is - whether the young person exposed to the scared straight programme offends or not. So your *dependent* variable is *future offending*. This would have to be conceptualised (how far in the future, what counts as offending, etc) and then in turn operationalised, to be measured somehow. 
 
 
 Your independent variable on the other hand is the thing that you want to see the effect of, in this case, it's participation in the scared straight programme. Right? You are interested in whether participation causes less offending in the future. So your *independent* variable is *participating in scared straight*. Again you would have to conceptualise scared straight participation (can they go to one event, do they have to attend many? does it matter what happens to them? whether they get yelled at or not? whether they go into prison or not, etc) and then also operationalised in a way (do we just measure did this young person ever take part as a yes/no categorical variable? Do we count the number of times they took part?)
@@ -248,34 +166,17 @@ Now the last point there is to do with random assignment. Our main goal is to as
 Random assignment is a criteria for experiment research. A research (or evaluation) design is experimental if subjects are randomly assigned to treatment groups and to control (comparison) groups. A research (or evaluation) design is quasi-experimental if subjects are not randomly assigned to the treatment or control conditions but rather if statistical controls are used to study cause and effect. You will have learned about quasi-experimental design in your readings, so here I will focus on experimental designs. 
 
 
-<!--
-Many experiments contain both a pre-test and a post-test. The former test measures the dependent variable prior to the experimental intervention while the latter test measures the outcome variable after the experimental group has received the treatment. The classic experimental design is one in which there is a pre-test for both groups, an intervention for one group (i.e., the experimental group), and then a post-test for both groups. 
--->
-
 
 > Consider the following criminal justice example. Two police precincts alike in all possible respects are chosen to participate in a study that examines fear of crime in neighborhoods. Both precincts would be pre-tested to obtain information on crime rates and citizen perceptions of crime. The experimental precinct would receive a treatment (i.e., increase in police patrols), while the comparison precinct would not receive a treatment. Then, twelve months later, both precincts would be post-tested to determine changes in crime rates and citizen perceptions.
 
 -[Criminology and Criminal Justice Research: Methods - Quantitative Research Methods](http://law.jrank.org/pages/923/Criminology-Criminal-Justice-Research-Methods-Quantitative-research-methods.html)
-
-<!--
-> There have been several experimental designs in criminology and criminal justice including the Domestic Violence Experiment (Sherman), where offenders were randomly assigned to one of three interventions (arrest, mediation, separation). The Jersey City Police Department's Program to Control Violent Places also utilized an experimental design (Braga et al.). For this study, twenty-four high-activity, violent crime places were matched into twelve pairs and one member of each pair was allocated to treatment conditions in a randomized block field experiment.
-
--[Criminology and Criminal Justice Research: Methods - Quantitative Research Methods](http://law.jrank.org/pages/923/Criminology-Criminal-Justice-Research-Methods-Quantitative-research-methods.html)
-
-
-On the other hand, quasi-experimental research lacks the random assignment to experimental and control groups, but can be approximated by close and careful matching of subjects across the two groups on several key variables. The two major types of quasi-experimental designs are: (1) nonequivalent control group designs, which have experimental and comparison groups that are designated before the treatment occurs and are not created by random assignment; and (2) before-and-after designs, which have both a pre- and post-test but no comparison group (Schutt).
-
-An example of a nonequivalent control group design is a study of the effect of police actions on seat-belt law violations. For example, Watson selected two communities of comparable size where police enforcement of the law was low. In the experimental community, Watson instituted a media campaign to increase seat-belt usage, followed by increased police enforcement of the seat-belt law. Watson found that the percentage of drivers using seat belts increased in the experimental community but remained stable or declined slightly in the comparison community.
-
-An example of the before-and-after design is the Pierce and Bowers analysis of the impact of the Massachusetts Bartley-Fox gun law. This law carried a one-year minimum prison sentence for the unlicensed carrying of firearms. Their early evaluation showed a decrease in gun-related assaults, robberies, and homicides, but was offset by increases in nongun assaults and robberies using other weapons.
--->
 
 
 You can read about these studies above for some examples of experiments in criminal justice research. The Philadelphia foot patrol experiment was just one of many. In particular, the Philadelphia foot patrol experiment is an example of a **randomised control trial**. You will have read about a few types of experimental design in your textbooks, but here we will focus on this particular one. The randomised controlled trial (RCT for short) is considered often as the most rigorous method of determining whether a cause-effect relationship exists between an intervention and outcome . The strength of the RCT lies in the process of randomisation that is unique to this type of research study design.
 
 
 
-### RCT
+## Randomised Conrtol Trial: RCT
 
 
 An RCT presents a study design that randomly assigns participants into an experimental group or a control group. As the study is conducted, the only expected difference between the control and experimental groups in the RCT is the outcome variable being studied.
@@ -295,17 +196,6 @@ Disadvantages
 - Volunteer biases: the population that participates may not be representative of the whole
 
 
-<!--
-Design pitfalls to look out for
-
-Was the randomization actually “random,” or are there really two populations being studied?
-The variables being studied should be the only variables between the experimental group and the control group.
-
-Are there any confounding variables between the groups?
-
-
-
--->
 
 Do engage with the reading around the advantages and disadvantages of RCTs. They are often looked at as the gold standard for determining the effect of a particular intervention, but that does not mean they are without flaws, or are the only way forward, there are situations where they may or may not be appropriate. But here we are getting practical, so let's make the assumption, that for our evaluation of scared straight, we have decided that we are going to evaluate using an RCT. 
 
@@ -438,10 +328,6 @@ Something like this:
 
 
 
-<!--
-The *tasks* column refers to the overarching, large categories. You need to include these, because you can use these to colour-code the tasks in your Gantt chart. These are your main overall steps, that you've broken down into smaller steps, so they're an easy way to keep a rough eye on where you are spending a lot of time in your project. 
--->
-
 The *Task* column refers to each individual activity, that are the detailed steps that we have to take, in order to be able to complete our project. These are all the activities that we've broken the tasks into. If we were considering this Gantt chart table as a data set, you can now begin to guess, that our unit of analysis is the *task*. Each one activity we have to do is one row. These include the bigger group that each sub-task it belongs to as well as the sub tasks themselves. This will be meaningful later on. 
 
 In the other columns, *start date*, *end date*, and *duration* we will record the temporal information around each task - that is - when will it start? when will it end? how long will it take?
@@ -463,26 +349,26 @@ Tasks can run simultaneously. You don't always have to wait for one task to fini
 
 Now let's say that we are starting our Scared Straight evaluation quite soon, we have a start date of the 1st of November. Using some very rough guessing, this is the relative timeline that I've come up with: 
 
-- Background/review of published literature:	01/11/17	to 01/12/17
-- Formulation of hypotheses	01/12/17	07/12/17
-- Set the objectives of the trial	02/12/17	08/12/17
-- Development of a comprehensive study protocol	08/12/17 to 18/12/17
-- Ethical considerations	08/12/17 to	18/12/17
-- Sample size calculations	18/12/17 to	19/12/17
-- Define reference population	18/12/17 to	28/12/17
-- Define way variables will be measured	28/12/17 to	07/01/18
-- Choose comparison treatment (what happens to control group)	01/01/18 to	07/01/18
-- Selection of intervention and control groups, including source, inclusion and exclusion criteria, and methods of recruitment	18/01/18 to	21/01/18
-- Informed consent procedures	22/01/18 to	23/01/18
-- Collection of baseline measurements, including all variables considered or known to affect the outcome(s) of interest	23/01/18 to	23/01/18
-- Random allocation of study participants to treatment groups (standard or placebo vs. new)	21/01/18 to	23/01/18
-- Follow-up of all treatment groups, with assessment of outcomes continuously or intermittently	24/01/18 to	23/01/19
-- Descriptive analysis	24/01/19 to	24/02/19
-- Comparison of treatment groups	30/01/19 to	24/02/19
- - Interpretation (assess the strength of effect, alternative explanations such as sampling variation, bias)	20/02/19 to	20/03/19
-- First draft	20/03/19 to	25/03/19
-- Get feedback & make changes	25/03/19 to	05/04/19
-- Final write-up of results	05/04/19 to	30/04/19
+- Background/review of published literature:	01/11/18	to 01/12/18
+- Formulation of hypotheses	01/12/18	07/12/18
+- Set the objectives of the trial	02/12/18	08/12/18
+- Development of a comprehensive study protocol	08/12/18 to 18/12/18
+- Ethical considerations	08/12/18 to	18/12/18
+- Sample size calculations	18/12/18 to	19/12/18
+- Define reference population	18/12/18 to	28/12/18
+- Define way variables will be measured	28/12/18 to	07/01/19
+- Choose comparison treatment (what happens to control group)	01/01/19 to	07/01/19
+- Selection of intervention and control groups, including source, inclusion and exclusion criteria, and methods of recruitment	18/01/19 to	21/01/19
+- Informed consent procedures	22/01/19 to	23/01/19
+- Collection of baseline measurements, including all variables considered or known to affect the outcome(s) of interest	23/01/19 to	23/01/19
+- Random allocation of study participants to treatment groups (standard or placebo vs. new)	21/01/19 to	23/01/19
+- Follow-up of all treatment groups, with assessment of outcomes continuously or intermittently	24/01/19 to	23/01/20
+- Descriptive analysis	24/01/20 to	24/02/20
+- Comparison of treatment groups	30/01/20 to	24/02/20
+ - Interpretation (assess the strength of effect, alternative explanations such as sampling variation, bias)	20/02/20 to	20/03/20
+- First draft	20/03/20 to	25/03/20
+- Get feedback & make changes	25/03/20 to	05/04/20
+- Final write-up of results	05/04/20 to	30/04/20
 
 
 
@@ -591,7 +477,7 @@ When you're done, click "OK".
 On a PC, when you click the "Add" button it will open a new window, but again, all you have to enter in that new window is the name and the values, the exact same way. Here is an illustrative example of what this will look like on PC: 
 
 
-![](https://www.officetimeline.com/Content/images/articles/gantt-chart/3_Select-Data-Start-Date-Added.png)
+![](https://img.officetimeline.com/website/Content/images/articles/gantt-chart/3_select-data-start-date-added.png)
 
 
 Now click OK, and you will see some bars appear, reaching to each start date that we have. Now we have to add the *duration*. To do this, just repeat the steps, for adding a series, but with the duration column this time.
@@ -642,8 +528,17 @@ Then click OK, and you will see only the red parts of your graph, which represen
 
 
 
+**NOTE**: you might have an issue where Excel starts counting at the year 1900 for some reason. In that case your chart might have looked like this: 
 
-But what is each task? I just see numbers? Well we need to add the labels, from the task column of your data, to give it some sort of meaning. To do this, once again right click anywhere on your chart area, and select "Select Data...", and this time, for where it asks for axis labels, click in that box, and then highlight the column with the tasks in it: 
+![](imgs/1900_chart_default.JPG)
+
+
+In this case, you can fix this by editing the axis through right click, format axis, put in the correct minimum, like so: 
+
+![](imgs/Fixing_Gantt.JPG)
+
+
+Now you have a timeline for each task.. but how do you know what is each task? I just see numbers? Well we need to add the labels, from the task column of your data, to give it some sort of meaning. To do this, once again right click anywhere on your chart area, and select "Select Data...", and this time, for where it asks for axis labels, click in that box, and then highlight the column with the tasks in it: 
 
 
 ![](imgs/axis_labels_gantt.png)
@@ -721,10 +616,10 @@ So how does random assignment work? Well we could achieve this by going old-scho
 So to have random assignment to a group, each member of your sample has to have the same probability of being selected for each group. Let's say we want to assign two groups. We want to assign people to a **control group** and a **treatment group**. Remember that the control and the treatment must be must be coming from the same sample, so that they are similar in all characteristics *except* in the particular thing you are interested in finding out the effect of. By random assignment, each person has the same probability of being in the treatment or the control group, and so there is no chance for systematic bias, as there would be for example if you were asking people to *self-select* into treatment or control. If people were given the chance to volunteer (*self-select*) it would leave open a possibility that people with certain traits are more likely to volunteer, and there might be some systematic differences between your two groups.  
 
 <span style="color:#d95f02">
-So let's say we have our sample of people who will be assigned either to the treatment group, of recieving the scared straigh treatment, or the control group, who do not have to go through this treatment. Well let's say we have our class here. We've got a total of 58 students enrolled in the class. Go ahead and download this list, from Blackboard. You can find it under week 5 > data > student.xlsx
+So let's say we have our sample of people who will be assigned either to the treatment group, of recieving the scared straigh treatment, or the control group, who do not have to go through this treatment. Well let's say we have our class here. We've got a total of 83 students enrolled in the class. Go ahead and download this list, from Blackboard. You can find it under week 5 > data > student.xlsx
 
 
-Once you have downloaded the data, open it with excel, and have a look at it. You can see that we have 58 rows, one for each student. You can also see that we have 3 variables: ID,	Name, and	Program. 
+Once you have downloaded the data, open it with excel, and have a look at it. You can see that we have 83 rows, one for each student. You can also see that we have 3 variables: ID,	Name, and	Program. 
 
 
 
@@ -824,7 +719,7 @@ One way that you can sense check your results is to have a look at your treatmen
 You've built enough of these by now that you should be OK making this pivot table on your own, without guidance. If you get stuck on something though, let us know!
 
 
-If all goes well, your pivot table should let you know that you have 29 students in your control group, and 29 students in your treatment group: 
+If all goes well, your pivot table should let you know that you have either 41 or 42 students in your control group, and that minus 83 (your total) students in your treatment group: 
 
 
 ![](imgs/freq_groups.png)
@@ -845,7 +740,7 @@ Now you've been exposed to either the treatment or the control condition. I'll b
 
 
 
-
+<!--
 
 ### Activity 3: Stratified randomisation
 
@@ -949,6 +844,7 @@ What about using the other treatment/control grouping, the one where we **did no
 You will all have different results here, since it's randomly assigned, but it's possible that for some of you BA Soc Sci might be overrepresented in one group versus the other. If this were the case, and we knew (or suspected) that this variable of what program you're enrolled in had an effect on offending behaviour, then this might influence the validity and generalisability from your study. 
 </span>
 
+-->
 
 ### Freeze!
 
@@ -1062,7 +958,7 @@ So you can download these three waves of young people being surveyed from blackb
 
 
 
-### Activity 4: Linking data
+### Activity 3: Linking data
 
 
 So hopefully if I've taught you anything about the structure of data, is that you have *all* your observations in your rows and *all* your variables in your columns. So if you want to be able to look at changes in people's responses over time, for example, you will need to be able to link these data sets together into one spreadsheet. 
@@ -1311,7 +1207,7 @@ If data are missing complete randomly, meaning that the chance of data being mis
 For example, suppose we are interested in estimating the median income of the some population. We send out an email asking a questionnaire to be completed, amongst which participants are asked to say how much they earn. But only a proportion of the target sample return the questionnaire, and so we have missing incomes for the remaining people. If those that returned an answer to the income question have systematically higher or lower incomes than those who did not return an answer, the median income of the complete cases will be biased. This is something to keep in mind when choosing the route of complete case analysis. 
 
 
-### Activity 5: Selecting Complete Cases
+### Activity 4: Selecting Complete Cases
 
 <span style="color:#d95f02">
 

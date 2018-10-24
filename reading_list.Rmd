@@ -70,7 +70,7 @@ If you want to read something cover to cover, I would recommend [Tiger That Isn`
 
 ## Week 6. Data visualisation
 - Watch: [David Mccandless on the beauty of data visualisation](https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization) 
-- [Cairo, A. (n.d.). The truthful art data, charts, and maps for communication . Berkeley: New Riders.](https://www.librarysearch.manchester.ac.uk/discovery/fulldisplay?docid=alma992975992516101631&context=L&vid=44MAN_INST:MU_NUI&search_scope=MyInst_and_CI&tab=Everything&lang=en)
+- [Cairo, A. (2016). The truthful art data, charts, and maps for communication . Berkeley: New Riders.](https://www.librarysearch.manchester.ac.uk/discovery/fulldisplay?docid=alma992975992516101631&context=L&vid=44MAN_INST:MU_NUI&search_scope=MyInst_and_CI&tab=Everything&lang=en)
   + Chapter 1: What We Talk About When We Talk About Visualisation
   + Chapter 2: The FIve QUalitites of Great Visualisations
 
