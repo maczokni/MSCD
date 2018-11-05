@@ -57,15 +57,15 @@ Take this example (taken from *Wickham, H. (2010). A layered grammar of graphics
 
 You have a table such as: 
 
-![](/Users/reka/Desktop/course-incubator/images/table.png)
+![](imgs/table.png)
 
 You then want to plot this. To do so, you want to create a plot that combines the following layers: 
 
-![](/Users/reka/Desktop/course-incubator/images/layers.png)
+![](imgs/layers.png)
 
 This will result in a final plot: 
 
-![](/Users/reka/Desktop/course-incubator/images/combined.png)
+![](imgs/combined.png)
 
 
 > We often call graphics charts (from or Latin charta, a leaf of paper or papyrus). There are pie charts, bar charts, line charts, and so on. [The Grammar of Graphics] shuns chart typologies. For one thing, charts are usually instances of much more general objects. Once we understand that a pie is a divided bar in polar coordinates, we can construct other polar graphics that are less well known. We will also come to realize why a histogram is not a bar chart and why many other graphics that look similar nevertheless have different grammars. (...) The concept of a graphic is so general that we need organizing principles to create instances of graphics. We may not want to put a pie chart in a catalog, but we need to give users some simple way to produce one. 
@@ -91,21 +91,19 @@ The **Data-Ink ratio** is a concept introduced by Edward Tufte, the expert whose
 
 Tufte refers to data-ink as the non-erasable ink used for the presentation of data. If data-ink would be removed from the image, the graphic would lose the content. Non-Data-Ink is accordingly the ink that does not transport the information but it is used for scales, labels and edges. The data-ink ratio is the proportion of Ink that is used to present actual data compared to the total amount of ink (or pixels) used in the entire display. (Ratio of Data-Ink to non-Data-Ink).
 
-![](http://www.infovis-wiki.net/images/thumb/5/55/DIR.jpg/600px-DIR.jpg)
-
-
+![](imgs/data_ink_ratio.jpg)
 
 Good graphics should include only data-Ink. Non-Data-Ink is to be deleted everywhere where possible. The reason for this is to avoid drawing the attention of viewers of the data presentation to irrelevant elements.
 The goal is to design a display with the highest possible data-ink ratio (that is, as close to the total of 1.0), without eliminating something that is necessary for effective communication.
 
 
-### An example: 
+###  An example: 
 
 
 This is an example of a graph with a low Data-Ink Ratio:
 
 
-![](http://www.infovis-wiki.net/images/thumb/2/2e/Dir1.png/400px-Dir1.png)
+![](imgs/low_data_ink_ratio.png)
 
 
 The border around the graph, the background color and the grid lines are all unnecessary data ink.
@@ -114,7 +112,7 @@ The border around the graph, the background color and the grid lines are all unn
 Now an example of a graph with a high Data-Ink Ratio:
 
 
-![](http://www.infovis-wiki.net/images/thumb/1/1b/Dir2.png/400px-Dir2.png)
+![](imgs/high_data_ink_ratio.png)
 
 We have deleted the border around the graph, the background color and the grid lines and have thus drawn the viewer's attention to horizontal scales that are data-ink. There is nothing else to distract and the key features of the data stand out clearly. 
 
