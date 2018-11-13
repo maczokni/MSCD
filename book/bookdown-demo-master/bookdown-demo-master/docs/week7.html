@@ -25,7 +25,7 @@
 <meta name="author" content="Reka Solymosi">
 
 
-<meta name="date" content="2018-11-05">
+<meta name="date" content="2018-11-13">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -355,7 +355,7 @@
 <h3><span class="header-section-number">7.2.1</span> Activity 1: Extracting temporal variables from dates</h3>
 <p>This week we will be looking at crime data from the USA. As you saw, the data from police.uk is aggregated by months. We do not know when the offences happened, only the month, but nothing more granular than that. American police data on the other hand is much more granular.</p>
 <p><span style="color:#d95f02">
-Cities release their own data. Here, we will be looking at crimes from Dallas, Texas. <a href="https://www.dallasopendata.com/Public-Safety/All-Crime/p9zb-d4n6/about">You can see more about these data, and find the download link to the data dictionary here</a>. You can download a subset of Dallas crime data from blackboard. Go to course content &gt; week 7 &gt; Data for week 7, and the file is <em>dallas_burg.xlsx</em>. Download this and open it up in excel.</p>
+Cities release their own data. Here, we will be looking at crimes from Dallas, Texas. <a href="https://www.dallasopendata.com/Public-Safety/Police-Bulk-Data/ftja-9jxd">You can see more about these data, and find the download link to the data dictionary here</a>. You can download a subset of Dallas crime data from blackboard. Go to course content &gt; week 7 &gt; Data for week 7, and the file is <em>dallas_burg.xlsx</em>. Download this and open it up in excel.</p>
 <p>When you open the excel spreadsheet, you will see that there is a column for date called <strong>Date.of.Occurrence</strong>. The date is in the format dd/mm/yyyy. So the first date on there you can see is 16/11/2016.</p>
 <p>But what if I asked you the question: which year had the most residential burglaries? Or what if I want to know if residential burglaries happen more in the weekday, when people are at work, or in the weekends, maybe when people are away for a holiday? You have the date, so you should be able to answer these questions, right?</p>
 <p>Well you need to be able to have the right variables to answer these questions. To know what year saw the most residential burglaries, you need to have a variable for year. To know what day of the week has the most burglaries, you need to have a variable for day of the week. So how can we extract these variables from your date column? Well luckily excel can help us do this.</p>
@@ -380,7 +380,7 @@ Now, let’s start by answering our first question: which year had the most burg
 <p>So go ahead, build a pivot table to count the frequency of each variable for year. Try to do this now with no further guidance. If you do need some help, have a look at your notes from the univariate analysis lab, in week 2. But try to have a go.</p>
 <p>So which year had the most residential burglaries?</p>
 <p><img src="https://media.giphy.com/media/8nZnnnvX5A4so/giphy.gif" /></p>
-<p>TO answer this question, hopefully you built a pivot table with the year variable, and your table look should like this:</p>
+<p>To answer this question, hopefully you built a pivot table with the year variable, and your table look should like this:</p>
 <p><img src="imgs/count_of_yr.png" /></p>
 <p></span></p>
 <p>If not raise your hand now, and we will come around and help!</p>
@@ -517,7 +517,7 @@ To make a line graph, we need to think about what we will represent on our horiz
 <p><img src="http://dougmccune.com/blog/wp-content/uploads/2011/04/crimespotting_time_pie.png" /></p>
 <p>The inspiration for this time selector, which is documented in Tom Carden’s blog post, was the real-life timer control used for automating lights in your house.</p>
 <p><img src="http://dougmccune.com/blog/wp-content/uploads/2011/04/real_life_time_pie-150x150.png" /></p>
-<p>This above is known as a radial chart. We will now learn how to build one in Excel. But before we do, I wanted to tell you guys the story of Florence Nightingale, the original data visualisation pioneer. I know, I know, we covered data visualisation last week, can I please get over it. But it’s one of the most fun aspects of data analysis so no, I cannot, and now I will tell you about why Florence Nightingale wasn’t just a famour nurse, she was a famous data pioneer!</p>
+<p>This above is known as a radial chart. We will now learn how to build one in Excel. But before we do, I wanted to remind you guys the story of Florence Nightingale, the original data visualisation pioneer (I spoke about her in the lecture about data visualusation on Tuesday). I know, I know, we covered data visualisation last week, can I please get over it. But it’s one of the most fun aspects of data analysis so no, I cannot, and now I will tell you about why Florence Nightingale wasn’t just a famour nurse, she was a famous data pioneer!</p>
 <p>This is Florence Nightingale’s ‘coxcomb’ diagram on mortality in the army:</p>
 <p><img src="http://bigbangdata.somersethouse.org.uk/wp-content/uploads/2015/12/FlorenceData900.jpg" /></p>
 <p>We all have an image of Nightingale - who died 100 years ago today - as a nurse, lady with the lamp, medical reformer and campaigner for soldiers’ health. But she was also a datajournalist. After the disasters of the Crimean war, Florence Nightingale returned to become a passionate campaigner for improvements in the health of the British army. She developed the visual presentation of information, including the pie chart, first developed by William Playfair in 1801. Nightingale also used statistical graphics in reports to Parliament, realising this was the most effective way of bringing data to life.</p>

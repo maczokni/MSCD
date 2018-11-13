@@ -42,7 +42,7 @@ Three types of trend can be identified:
 This week we will be looking at crime data from the USA. As you saw, the data from police.uk is aggregated by months. We do not know when the offences happened, only the month, but nothing more granular than that. American police data on the other hand is much more granular. 
 
 <span style="color:#d95f02">
-Cities release their own data. Here, we will be looking at crimes from Dallas, Texas. [You can see more about these data, and find the download link to the data dictionary here](https://www.dallasopendata.com/Public-Safety/All-Crime/p9zb-d4n6/about). You can download a subset of Dallas crime data from blackboard. Go to course content > week 7 > Data for week 7, and the file is *dallas_burg.xlsx*. Download this and open it up in excel. 
+Cities release their own data. Here, we will be looking at crimes from Dallas, Texas. [You can see more about these data, and find the download link to the data dictionary here](https://www.dallasopendata.com/Public-Safety/Police-Bulk-Data/ftja-9jxd). You can download a subset of Dallas crime data from blackboard. Go to course content > week 7 > Data for week 7, and the file is *dallas_burg.xlsx*. Download this and open it up in excel. 
 
 
 
@@ -118,7 +118,7 @@ So which year had the most residential burglaries?
 
 
 
-TO answer this question, hopefully you built a pivot table with the year variable, and your table look should like this:
+To answer this question, hopefully you built a pivot table with the year variable, and your table look should like this:
 
 ![](imgs/count_of_yr.png)
 
@@ -465,7 +465,7 @@ The inspiration for this time selector, which is documented in Tom Carden’s bl
 
 
 
-This above is known as a radial chart. We will now learn how to build one in Excel. But before we do, I wanted to tell you guys the story of Florence Nightingale, the original data visualisation pioneer. I know, I know, we covered data visualisation last week, can I please get over it. But it's one of the most fun aspects of data analysis so no, I cannot, and now I will tell you about why Florence Nightingale wasn't just a famour nurse, she was a famous data pioneer!
+This above is known as a radial chart. We will now learn how to build one in Excel. But before we do, I wanted to remind you guys the story of Florence Nightingale, the original data visualisation pioneer (I spoke about her in the lecture about data visualusation on Tuesday). I know, I know, we covered data visualisation last week, can I please get over it. But it's one of the most fun aspects of data analysis so no, I cannot, and now I will tell you about why Florence Nightingale wasn't just a famour nurse, she was a famous data pioneer!
 
 
 This is Florence Nightingale's 'coxcomb' diagram on mortality in the army:
