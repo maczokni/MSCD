@@ -670,7 +670,7 @@ In this case, red is bad because it means more burglaries! So select this colour
 
 
 Now your eyes are immediately drawn to where the high values are, which apparently is Monday to Friday, 7 and 8 AM. We can see that on Saturday and Sunday even burglars want a lie-in, and therefore you see the green low burglary rate creep up later than on weekdays. Exciting stuff!
-</span 
+</span> 
 
 
 

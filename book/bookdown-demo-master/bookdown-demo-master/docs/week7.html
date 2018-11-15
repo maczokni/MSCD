@@ -25,7 +25,7 @@
 <meta name="author" content="Reka Solymosi">
 
 
-<meta name="date" content="2018-11-13">
+<meta name="date" content="2018-11-15">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -238,8 +238,14 @@
 <li class="chapter" data-level="7.4.1" data-path="week7.html"><a href="week7.html#activity-5-line-graphs"><i class="fa fa-check"></i><b>7.4.1</b> Activity 5: Line graphs</a></li>
 <li class="chapter" data-level="7.4.2" data-path="week7.html"><a href="week7.html#activity-6-radar-graphs"><i class="fa fa-check"></i><b>7.4.2</b> Activity 6: Radar graphs</a></li>
 </ul></li>
-<li class="chapter" data-level="7.5" data-path="week7.html"><a href="week7.html#activity-7-heatmaps"><i class="fa fa-check"></i><b>7.5</b> Activity 7: Heatmaps</a></li>
-<li class="chapter" data-level="7.6" data-path="week7.html"><a href="week7.html#summary-6"><i class="fa fa-check"></i><b>7.6</b> Summary</a></li>
+<li class="chapter" data-level="7.5" data-path="week7.html"><a href="week7.html#activity-7-heatmaps"><i class="fa fa-check"></i><b>7.5</b> Activity 7: Heatmaps</a><ul>
+<li class="chapter" data-level="7.5.1" data-path="week7.html"><a href="week7.html#more-charts"><i class="fa fa-check"></i><b>7.5.1</b> More charts?</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="week7.html"><a href="week7.html#time-series"><i class="fa fa-check"></i><b>7.6</b> Time series</a><ul>
+<li class="chapter" data-level="7.6.1" data-path="week7.html"><a href="week7.html#moving-averages"><i class="fa fa-check"></i><b>7.6.1</b> Moving averages</a></li>
+<li class="chapter" data-level="7.6.2" data-path="week7.html"><a href="week7.html#activity-8-moving-average-in-excel"><i class="fa fa-check"></i><b>7.6.2</b> Activity 8: Moving average in Excel</a></li>
+</ul></li>
+<li class="chapter" data-level="7.7" data-path="week7.html"><a href="week7.html#summary-6"><i class="fa fa-check"></i><b>7.7</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="week8.html"><a href="week8.html"><i class="fa fa-check"></i><b>8</b> Week 8</a><ul>
 <li class="chapter" data-level="8.1" data-path="week8.html"><a href="week8.html#learning-outcomes-7"><i class="fa fa-check"></i><b>8.1</b> Learning outcomes</a></li>
@@ -584,128 +590,60 @@ So, how do we make these in Excel. Well let’s return to our within-day variati
 <p>In this case, red is bad because it means more burglaries! So select this colourscheme and as if by magic, our table will now be highlighted in the form of a heatmap:</p>
 <p><img src="imgs/cond_3.png" /></p>
 <p>Now your eyes are immediately drawn to where the high values are, which apparently is Monday to Friday, 7 and 8 AM. We can see that on Saturday and Sunday even burglars want a lie-in, and therefore you see the green low burglary rate creep up later than on weekdays. Exciting stuff!
-</span 
-
-
-
-### More charts?
-
-
-The Gantt chart is also a way to visualise the passage of time, or rather the tasks that you must complete as this time passes. You learned in the session covering research design about Gantt chards, which are essentially horizontal bar charts showing work completed in a certain period of time with respect to the time allocated for that particular task.
-
-
-
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/GanttChartAnatomy.svg/300px-GanttChartAnatomy.svg.png)
-
-
-It is named after the American engineer and management consultant Henry Gantt who extensively used this framework for project management. We covered how to do these in the research design session, so please do refer back to those if you are not sure how to make them any more...!
-
-
-
-There are also some non-conventional line-graph based timelines. While these appear initially like linear representations, it's actually possible for these to loop back, and reverse in time, making them slightly different. For example [this one about gas prices and driving practices](http://www.nytimes.com/imagepages/2010/05/02/business/02metrics.html), or this one about [driving safely](http://www.nytimes.com/interactive/2012/09/17/science/driving-safety-in-fits-and-starts.html) demonstrate this approach quite neatly. 
-
-
-
-You could also have a stacked line chart to represent time: 
-
-
-![](imgs/other_time_graph_1.png)
-
-
-Stacked area charts are useful to show how both a cumulative total and individual components of that total changed over time.
-
-The order in which we stack the variables is crucial because there can sometimes be a difference in the actual plot versus human perception. The chart plots the value vertically whereas we perceive the value to be at right angles to the general direction of the chart. For instance, in the case below, a bar graph would be a cleaner alternative.
-
-
-![](imgs/other_time_graph_2.jpg)
-
-
-
-
-Time is dynamic, and as a result there are many dynamic visualisations of time as well. For example, it is possible to build a gif as a graph output, with each measurement in time being one frame. This example, which represents time as frames in a gif, shows how the percent of the US population by age group has changed, and is predicted to change over time: 
-
-
-![](http://www.pewresearch.org/files/2014/04/847889448.gif)
-
-
-Similarly Hans Rosling, who you might remember from the Joy of Stats video, was known for his dynamic representation of time, using videos and gifs:
-
-
-![](https://media.giphy.com/media/3o6Ygfw40tlnPhX87m/giphy.gif)
-
-
-
-You can see that there are many cool ways to represent time, and I've shown you only few. I hope you are interested to explore more!
-
-
-
-
-## Time series
-
-A Time Series is an ordered sequence of values of a variable at equally spaced time intervals.
-Time series occur frequently when looking at industrial data. The usage of time series models is threefold:
-
-- To help reveal or clarify trends by obtaining an understanding of the underlying forces and structure that produced the observed data
-- To forecast future patterns of events by fitting a model
-– To test the impact of interventions 
-
-
-Time Series Analysis is an analytic technique that uses a sequence of data points, measured typically at successive, uniform time intervals, to identify trends and other characteristics of the data. For example, a time series analysis may be used to study a city’s crime rate over time and predict future crime trends.
-
-
-
-All time-series data have three basic parts:
-
-- A trend component;
-- A seasonal component; and
-- A random component.
-
-
-Trends are often masked because of the combination of these three components – especially the random noise!
-
-
-Two types of patterns are important:
+</span></p>
+<div id="more-charts" class="section level3">
+<h3><span class="header-section-number">7.5.1</span> More charts?</h3>
+<p>The Gantt chart is also a way to visualise the passage of time, or rather the tasks that you must complete as this time passes. You learned in the session covering research design about Gantt chards, which are essentially horizontal bar charts showing work completed in a certain period of time with respect to the time allocated for that particular task.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/GanttChartAnatomy.svg/300px-GanttChartAnatomy.svg.png" /></p>
+<p>It is named after the American engineer and management consultant Henry Gantt who extensively used this framework for project management. We covered how to do these in the research design session, so please do refer back to those if you are not sure how to make them any more…!</p>
+<p>There are also some non-conventional line-graph based timelines. While these appear initially like linear representations, it’s actually possible for these to loop back, and reverse in time, making them slightly different. For example <a href="http://www.nytimes.com/imagepages/2010/05/02/business/02metrics.html">this one about gas prices and driving practices</a>, or this one about <a href="http://www.nytimes.com/interactive/2012/09/17/science/driving-safety-in-fits-and-starts.html">driving safely</a> demonstrate this approach quite neatly.</p>
+<p>You could also have a stacked line chart to represent time:</p>
+<p><img src="imgs/other_time_graph_1.png" /></p>
+<p>Stacked area charts are useful to show how both a cumulative total and individual components of that total changed over time.</p>
+<p>The order in which we stack the variables is crucial because there can sometimes be a difference in the actual plot versus human perception. The chart plots the value vertically whereas we perceive the value to be at right angles to the general direction of the chart. For instance, in the case below, a bar graph would be a cleaner alternative.</p>
+<p><img src="imgs/other_time_graph_2.jpg" /></p>
+<p>Time is dynamic, and as a result there are many dynamic visualisations of time as well. For example, it is possible to build a gif as a graph output, with each measurement in time being one frame. This example, which represents time as frames in a gif, shows how the percent of the US population by age group has changed, and is predicted to change over time:</p>
+<p><img src="http://www.pewresearch.org/files/2014/04/847889448.gif" /></p>
+<p>Similarly Hans Rosling, who you might remember from the Joy of Stats video, was known for his dynamic representation of time, using videos and gifs:</p>
+<p><img src="https://media.giphy.com/media/3o6Ygfw40tlnPhX87m/giphy.gif" /></p>
+<p>You can see that there are many cool ways to represent time, and I’ve shown you only few. I hope you are interested to explore more!</p>
+</div>
+</div>
+<div id="time-series" class="section level2">
+<h2><span class="header-section-number">7.6</span> Time series</h2>
+<p>A Time Series is an ordered sequence of values of a variable at equally spaced time intervals.
+Time series occur frequently when looking at industrial data. The usage of time series models is threefold:</p>
+<ul>
+<li>To help reveal or clarify trends by obtaining an understanding of the underlying forces and structure that produced the observed data</li>
+<li>To forecast future patterns of events by fitting a model
+– To test the impact of interventions</li>
+</ul>
+<p>Time Series Analysis is an analytic technique that uses a sequence of data points, measured typically at successive, uniform time intervals, to identify trends and other characteristics of the data. For example, a time series analysis may be used to study a city’s crime rate over time and predict future crime trends.</p>
+<p>All time-series data have three basic parts:</p>
+<ul>
+<li>A trend component;</li>
+<li>A seasonal component; and</li>
+<li>A random component.</li>
+</ul>
+<p>Trends are often masked because of the combination of these three components – especially the random noise!</p>
+<p>Two types of patterns are important:
 - Linear or non-linear trends - i.e., upwards or downwards or both (quadratic); and
-- Seasonal effects which follow the same overall trend but repeat themselves in systematic intervals over time. 
-
-
-Smoothing data removes random variation and shows trends and cyclic components. Inherent in the collection of data taken over time is some form of random variation. There exist methods for reducing of canceling the effect due to random variation. An often-used technique in industry is "smoothing". This technique, when properly applied, reveals more clearly the underlying trend, seasonal and cyclic components.
-
-
-In this course we will stick to the first option, and in particular we will look into producing *moving averages*. You should also know about the existence of *smoothing techniques*, and the sophisticated method for revealing trends is known as *seasonal decomposition*, however we will not be performing these ourselves today. 
-
-
-
-
-
-### Moving averages
-
-
-A moving average is a technique to get an overall idea of the trends in a data set; it is an average of any subset of numbers. The moving average is extremely useful for forecasting long-term trends. You can calculate it for any period of time. For example, if you have sales data for a twenty-year period, you can calculate a five-year moving average, a four-year moving average, a three-year moving average and so on. Stock market analysts will often use a 50 or 200 day moving average to help them see trends in the stock market and (hopefully) forecast where the stocks are headed.
-
-
-
-An average represents the “middling” value of a set of numbers. The moving average is exactly the same, but the average is calculated several times for several subsets of data. For example, if you want a two-year moving average for a data set from 2000, 2001, 2002 and 2003 you would find averages for the subsets 2000/2001, 2001/2002 and 2002/2003. Moving averages are usually plotted and are best visualized.
-
-
-Among the most popular technical indicators, moving averages are used to gauge the direction of the current trend. Every type of moving average (commonly written in this tutorial as MA) is a mathematical result that is calculated by averaging a number of past data points. Once determined, the resulting average is then plotted onto a chart in order to allow traders to look at smoothed data rather than focusing on the day-to-day price fluctuations that are inherent in all financial markets. 
-
-
-The simplest form of a moving average, appropriately known as a simple moving average (SMA), is calculated by taking the arithmetic mean of a given set of values. For example, to calculate a basic 10-day moving average you would add up the closing prices from the past 10 days and then divide the result by 10. In Figure 1, the sum of the prices for the past 10 days (110) is divided by the number of days (10) to arrive at the 10-day average. If a trader wishes to see a 50-day average instead, the same type of calculation would be made, but it would include the prices over the past 50 days. The resulting average below (11) takes into account the past 10 data points in order to give traders an idea of how an asset is priced relative to the past 10 days. 
-
-
-
-Perhaps you're wondering why technical traders call this tool a "moving" average and not just a regular mean? The answer is that as new values become available, the oldest data points must be dropped from the set and new data points must come in to replace them. Thus, the data set is constantly "moving" to account for new data as it becomes available. This method of calculation ensures that only the current information is being accounted for. In Figure 2, once the new value of 5 is added to the set, the red box (representing the past 10 data points) moves to the right and the last value of 15 is dropped from the calculation. Because the relatively small value of 5 replaces the high value of 15, you would expect to see the average of the data set decrease, which it does, in this case from 11 to 10. 
-- [Moving Averages: What Are They?](http://www.investopedia.com/university/movingaverage/movingaverages1.asp#ixzz4xbKq8xgI )
-
-
-
-It is important that you understand the concept of what we are covering, before we move on to the excel part of things, so I really want you to take time and watch this  [video on how to calculate moving average by hand](https://www.youtube.com/watch?v=vvbvVJiJ2fI). If you have any questions about this, ask now!
-
-
-### Activity 8: Moving average in Excel
-
-<span style="color:#d95f02">
+- Seasonal effects which follow the same overall trend but repeat themselves in systematic intervals over time.</p>
+<p>Smoothing data removes random variation and shows trends and cyclic components. Inherent in the collection of data taken over time is some form of random variation. There exist methods for reducing of canceling the effect due to random variation. An often-used technique in industry is “smoothing”. This technique, when properly applied, reveals more clearly the underlying trend, seasonal and cyclic components.</p>
+<p>In this course we will stick to the first option, and in particular we will look into producing <em>moving averages</em>. You should also know about the existence of <em>smoothing techniques</em>, and the sophisticated method for revealing trends is known as <em>seasonal decomposition</em>, however we will not be performing these ourselves today.</p>
+<div id="moving-averages" class="section level3">
+<h3><span class="header-section-number">7.6.1</span> Moving averages</h3>
+<p>A moving average is a technique to get an overall idea of the trends in a data set; it is an average of any subset of numbers. The moving average is extremely useful for forecasting long-term trends. You can calculate it for any period of time. For example, if you have sales data for a twenty-year period, you can calculate a five-year moving average, a four-year moving average, a three-year moving average and so on. Stock market analysts will often use a 50 or 200 day moving average to help them see trends in the stock market and (hopefully) forecast where the stocks are headed.</p>
+<p>An average represents the “middling” value of a set of numbers. The moving average is exactly the same, but the average is calculated several times for several subsets of data. For example, if you want a two-year moving average for a data set from 2000, 2001, 2002 and 2003 you would find averages for the subsets 2000/2001, 2001/2002 and 2002/2003. Moving averages are usually plotted and are best visualized.</p>
+<p>Among the most popular technical indicators, moving averages are used to gauge the direction of the current trend. Every type of moving average (commonly written in this tutorial as MA) is a mathematical result that is calculated by averaging a number of past data points. Once determined, the resulting average is then plotted onto a chart in order to allow traders to look at smoothed data rather than focusing on the day-to-day price fluctuations that are inherent in all financial markets.</p>
+<p>The simplest form of a moving average, appropriately known as a simple moving average (SMA), is calculated by taking the arithmetic mean of a given set of values. For example, to calculate a basic 10-day moving average you would add up the closing prices from the past 10 days and then divide the result by 10. In Figure 1, the sum of the prices for the past 10 days (110) is divided by the number of days (10) to arrive at the 10-day average. If a trader wishes to see a 50-day average instead, the same type of calculation would be made, but it would include the prices over the past 50 days. The resulting average below (11) takes into account the past 10 data points in order to give traders an idea of how an asset is priced relative to the past 10 days.</p>
+<p>Perhaps you’re wondering why technical traders call this tool a “moving” average and not just a regular mean? The answer is that as new values become available, the oldest data points must be dropped from the set and new data points must come in to replace them. Thus, the data set is constantly “moving” to account for new data as it becomes available. This method of calculation ensures that only the current information is being accounted for. In Figure 2, once the new value of 5 is added to the set, the red box (representing the past 10 data points) moves to the right and the last value of 15 is dropped from the calculation. Because the relatively small value of 5 replaces the high value of 15, you would expect to see the average of the data set decrease, which it does, in this case from 11 to 10.
+- <a href="http://www.investopedia.com/university/movingaverage/movingaverages1.asp#ixzz4xbKq8xgI">Moving Averages: What Are They?</a></p>
+<p>It is important that you understand the concept of what we are covering, before we move on to the excel part of things, so I really want you to take time and watch this <a href="https://www.youtube.com/watch?v=vvbvVJiJ2fI">video on how to calculate moving average by hand</a>. If you have any questions about this, ask now!</p>
+</div>
+<div id="activity-8-moving-average-in-excel" class="section level3">
+<h3><span class="header-section-number">7.6.2</span> Activity 8: Moving average in Excel</h3>
+<p><span style="color:#d95f02">
 Right now let’s calculate the moving average in excel, using some example data on temperature measurement. You can download this data from the week 7 folder, in the data for week 7 subfolder. It should be called mov_avg_temp_example.xlsx. Then you can use it to follow along below this tutorial taken from <a href="http://www.dummies.com/software/microsoft-office/excel/how-to-calculate-moving-averages-in-excel/">dummies.com</a></p>
 <p>The Data Analysis command provides a tool for calculating moving and exponentially smoothed averages in Excel. Suppose, for sake of illustration, that you’ve collected daily temperature information. You want to calculate the three-day moving average — the average of the last three days — as part of some simple weather forecasting. To calculate moving averages for this data set, take the following steps.</p>
 <p><img src="http://d2r5da613aq50s.cloudfront.net/wp-content/uploads/430314.image0.jpg" /></p>
@@ -745,8 +683,9 @@ If you want to calculate standard errors for the data, select the Standard Error
 
 -->
 </div>
+</div>
 <div id="summary-6" class="section level2">
-<h2><span class="header-section-number">7.6</span> Summary</h2>
+<h2><span class="header-section-number">7.7</span> Summary</h2>
 <p>In sum, you should now be able to begin to make sense of temporal data in criminology. You should know how to extract variables from a date variable, how to aggregate into meaningful intervals, know how to best visualise temporal trends, and knwo the appraoch of the moving average in order to be able to find the signal amidst the noise. You should be comfortable with the following terms:</p>
 <ul>
 <li>time-series</li>
