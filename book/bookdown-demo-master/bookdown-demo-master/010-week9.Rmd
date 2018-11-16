@@ -119,7 +119,6 @@ At this point, we need to give our coding some focus. To do this we can use ‘m
 ### Activity 2: Deductive coding
 
 First, single click on ‘Maps’ in the Navigation Pane, then right click in the List Pane to create a new mind map. Call it Deductive Approach to Probation Interview Data. You should end up with the following:
-
  
  ![](imgs/qual_39.png)
 
