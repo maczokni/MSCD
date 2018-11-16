@@ -25,7 +25,7 @@ Note: the directions below are for the Mac version of NVivo. For those of you us
 
 I know some of you are Mac users too. If you prefer to use your Mac, you’ll need to download the latest version of NVivo. You can do this from the QSR website [here](http://www.qsrinternational.com/nvivo/support-overview/downloads).  Download NVivo for Mac (Version 11). 
 
-You’ll need the License code to complete installation: **NVT11-LZ000-BHA2U-CI6N7-WNTJ0**
+You’ll need the License code to complete installation: **NVT11-LZ000-ADA20-WX6WD-D55VO**
 
 The lab sessions will be accompanied by chapter readings from this:
 
@@ -74,7 +74,7 @@ In brief, and just for your information, you can analyse the following kinds of 
 
 Before we start with NVivo, I’d like you to find some data that you’ll use in the session today – you can use the data that I use and which are available on Blackboard but I think it’s more interesting for you (and will help you remember the processes better!) if you find some data that reflect your own criminological interests.
 
-For instance, given my research expertise and the recent news coverage of the Panama Papers, in my example I’ve collected the top 5 Google news stories on Lewis Hamilton and Tax Avoidance:
+For instance, given my research expertise and the major news coverage of the Panama Papers last year, in my example I collected the top 5 Google news stories on Lewis Hamilton and Tax Avoidance from the end of 2017:
 
 
 ![](imgs/qual_02.png)
@@ -105,7 +105,7 @@ Nice and tidy.
 
 They are now ready for ‘importing’ into NVivo later. 
 
-So, go and find your own media articles (x 5), academic journal articles (x 5) and non-academic official sources (x  5). Save these to your p:Drive or in an accessible location. 
+So, go and find your own media articles (x 5), academic journal articles (x 5) and non-academic official sources (x 5). Save these to your p:Drive or in an accessible location. 
 
 **NOTE: this is just an example data set, in a real research project, your literature and data search would need to be much more extensive and systematic, but for the purposes of demonstrating NVivo, it will suffice!.**
 
@@ -254,7 +254,9 @@ When you import documents they can sometimes look a bit messy as below:
  ![](imgs/qual_16.png)
 
 So you might want to tidy these up. To do this, simply open the document by double-clicking on it in the List View. Then ensure the ‘edit’ option is selected on the right hand side. You can then highlight text you wish to delete to tidy up your documents. 
+
 NOTE: Edit mode/Read only mode: note that it is always possible to make changes to textual documents once you’ve imported them, but unless you change the default option, your files by default will be in protected Read only format when on display in the Detail pane.
+
 Everything is now neat and tidy:
 
  ![](imgs/qual_17.png) 
