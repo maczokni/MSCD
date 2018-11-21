@@ -25,7 +25,7 @@
 <meta name="author" content="Reka Solymosi">
 
 
-<meta name="date" content="2018-11-15">
+<meta name="date" content="2018-11-21">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -655,7 +655,7 @@ So let’s give it a go. Open up your data (csew_small.xlsx) and have a look at 
 <p><img src="imgs/lookup_table.png" /></p>
 <p>Now also create headings for 3 new columns, one for each of our indicator variables:</p>
 <p><img src="imgs/num_cols_lookup.png" /></p>
-<p>So now we can recode these variables into these new columns, where we will see the numeric value for each text value. We could do this manually. But we don’t want to. Remember we are lazy. And also remember that this is a very small subset of the actual Crime Survey for England and Wales (CSEW) data. The actual data has thousands of rows. 46,031 in the 2011/12 sweep to be exact. So that is not something that you would want to do manually, right? No.</p>
+<p>So now we can recode these variables into these new columns, where we will see the numeric value for each text value. We could do this manually. But we don’t want to. Remember we are lazy. And also remember that this is a very small subset of the actual Crime Survey for England and Wales (CSEW) data. The actual data has thousands of rows. 46,031 in the 2011/12 sweep to be exact. So that is not something that you would want to do manually, right? No. </p>
 <p>Instead we will learn a new function in excel, one which you will often use, called <code>VLOOKUP()</code>. What this function does, is it uses a lookup table, in order to assign variables to a new column. In this case, our lookup table is the one on the bottom there, that we created, that tells excel that for us, Very safe is 1, and Fairly safe is 2, and A bit unsafe is 3, and Very unsafe is 4. We can use this, in order to create our new, re-coded variables.</p>
 <p>The <code>VLOOKUP()</code> function takes 4 parameters. You have to tell it the <strong>lookup_value</strong> - the value to search for. This can be either a value (number, date or text) or a cell reference (reference to a cell containing a lookup value), or the value returned by some other Excel function. For example:</p>
 <pre><code>Look up for number: =VLOOKUP(40, A2:B15, 2) - the formula will search for the number 40.</code></pre>
